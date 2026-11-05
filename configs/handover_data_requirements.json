@@ -1,0 +1,331 @@
+{
+  "version": 1,
+  "canonical_project_relative": "MyDrive/ML_Projects/disease-prediction-ml",
+  "phase2_manifest_sha256": "50308d250d874b1b653a71c31f38dece0ec9fbb4dbc9d94f68bc1461e80b8fe9",
+  "phase2_files": {
+    "artifacts/metadata/phase2/feature_schema.json": {
+      "bytes": 19501,
+      "sha256": "dd07a3c73dd41558daa9c08e816e0a93d9efc4155f98b7e2b73325bffe31c5c0"
+    },
+    "artifacts/metadata/phase2/label_mapping.json": {
+      "bytes": 48977,
+      "sha256": "d2ef711e5e04062e8b5b949ce434b1383e1ca2fef6eb31a0865acb2f470ab5b5"
+    },
+    "artifacts/metadata/phase2/preprocessing_policy.json": {
+      "bytes": 1741,
+      "sha256": "ae4694b6a4fa7f32c6bee937b125d78f4053394933f90fe631b6a7475d2e5909"
+    },
+    "artifacts/metadata/phase2/split_assignments.csv.gz": {
+      "bytes": 1415738,
+      "sha256": "e2428a610019ddf62236e4a82bd39ae7dabd9b89a048bf63dd807fd8d9a42c51"
+    },
+    "artifacts/metadata/phase2/split_metadata.json": {
+      "bytes": 164744,
+      "sha256": "254aa34dd635f08d7037bd75d0e43148efe01bdfa13a9b6de20195b7dabf58c7"
+    },
+    "data/processed/test.csv.gz": {
+      "bytes": 292558,
+      "sha256": "d71a040a6ead853931cfc75452e456906e5277a3081dc97e8af5688ed4268dd0"
+    },
+    "data/processed/train.csv.gz": {
+      "bytes": 1262444,
+      "sha256": "3dfd77eb71ad3a2917a3a390917953f437ae6afb5220ac9feb28fec132e11e12"
+    },
+    "data/processed/validation.csv.gz": {
+      "bytes": 292793,
+      "sha256": "a203b9c0f1f124fa25d4cae6f5299d986bba23859ceca80660bc8bcb843570f2"
+    }
+  },
+  "processed": {
+    "classes": 587,
+    "features": 375,
+    "fingerprint_encoding": "SHA256(UTF8(json.dumps({features,target,classes}, ensure_ascii=False, sort_keys=True, indent=2, allow_nan=False) + LF) + packed X bits big-endian row-major + label IDs uint32 little-endian row-major)",
+    "records": 187434,
+    "schema_sha256": "441709695f8b878e65d848309361838fa0367b6c031ed665a1472a9aee43b734",
+    "sha256": "afde00ce35bf4fd31c9c76edcc3c8b64104e53fb81dd98d4a56d7b3a884b16b3"
+  },
+  "raw": {
+    "filename": "Disease and symptoms dataset.csv",
+    "sha256": "8de90603ebada467fc2703db2ee4292856e52d64e94982ef926df22fa0c21320",
+    "bytes": 190786867
+  },
+  "baseline_id": "baseline-v1-f8a5bfdb7b4c12cd",
+  "baseline_identity": {
+    "phase": 3,
+    "config": {
+      "phase": 3,
+      "seed": 42,
+      "selection_metric": "macro_f1",
+      "zero_division": 0,
+      "run_tag": "baseline-v1",
+      "expected_phase2": {
+        "records": 187434,
+        "classes": 587,
+        "features": 375,
+        "sha256": "afde00ce35bf4fd31c9c76edcc3c8b64104e53fb81dd98d4a56d7b3a884b16b3"
+      },
+      "resources": {
+        "max_workers": 2,
+        "blas_threads": 1,
+        "working_memory_mb": 128,
+        "prediction_batch_size": 64,
+        "min_available_ram_gb": 2.0
+      },
+      "models": {
+        "logistic_regression": {
+          "solver": "saga",
+          "C": 1.0,
+          "max_iter": 200,
+          "tol": 0.001
+        },
+        "random_forest": {
+          "n_estimators": 100,
+          "max_depth": 24,
+          "max_leaf_nodes": 512,
+          "min_samples_leaf": 2,
+          "max_features": "sqrt"
+        },
+        "linear_svc": {
+          "C": 1.0,
+          "dual": "auto",
+          "max_iter": 3000,
+          "tol": 0.001
+        },
+        "knn": {
+          "n_neighbors": 5,
+          "weights": "distance",
+          "algorithm": "brute",
+          "metric": "manhattan"
+        },
+        "bernoulli_nb": {
+          "alpha": 1.0,
+          "binarize": null
+        }
+      }
+    },
+    "processed_fingerprint": "afde00ce35bf4fd31c9c76edcc3c8b64104e53fb81dd98d4a56d7b3a884b16b3",
+    "phase2_manifest_sha256": "50308d250d874b1b653a71c31f38dece0ec9fbb4dbc9d94f68bc1461e80b8fe9",
+    "training_data_fingerprint": "3dfd77eb71ad3a2917a3a390917953f437ae6afb5220ac9feb28fec132e11e12",
+    "validation_data_fingerprint": "a203b9c0f1f124fa25d4cae6f5299d986bba23859ceca80660bc8bcb843570f2",
+    "feature_schema_identity": "dd07a3c73dd41558daa9c08e816e0a93d9efc4155f98b7e2b73325bffe31c5c0",
+    "label_mapping_identity": "d2ef711e5e04062e8b5b949ce434b1383e1ca2fef6eb31a0865acb2f470ab5b5",
+    "versions": {
+      "python": "3.13.18",
+      "sklearn": "1.6.1",
+      "numpy": "2.1.3",
+      "scipy": "1.16.3",
+      "joblib": "1.6.0"
+    },
+    "source_sha256": {
+      "src/models/training.py": "d48022c38d06712e028387e99a1563da8782af408749f436da54d17c825dc652",
+      "src/models/runtime.py": "ae3f4258bfd1029ed13aa1021e3905fee8cfdd53b5651a18f770e74e766ca500",
+      "src/data/preprocessing.py": "648c43f722a1c30e49e7f3279431c8136bbc5396f42ec9b51212679663fb845d",
+      "src/data/loader.py": "37397527ec5b5d48e233776fa5ef040a4bc476e23a45dd26d81ed5144c5ab17b",
+      "src/data/paths.py": "89ab450a76fffe92bb30fd6aa11b69567d69293916da2fda78123a8f29249eeb",
+      "src/data/audit.py": "41ff075c529ecf7200caf3717b660f655bc344e558d52d1448045aa2dd91672f"
+    },
+    "experiment_id": "baseline-v1-f8a5bfdb7b4c12cd"
+  },
+  "baseline_files": {
+    "artifacts/models/phase3/baseline-v1-f8a5bfdb7b4c12cd/bernoulli_nb/fit.json": {
+      "sha256": "6957d56c5d4f1f3add725e6d26f5e9e731b3d50bfe03209f0fcde593be4c2ec0",
+      "bytes": 3856
+    },
+    "artifacts/models/phase3/baseline-v1-f8a5bfdb7b4c12cd/bernoulli_nb/metadata.json": {
+      "sha256": "01d068c35c8780a7f7d2d8991b8429889188517511ba1b3e0f8770bbca9bb937",
+      "bytes": 4861
+    },
+    "artifacts/models/phase3/baseline-v1-f8a5bfdb7b4c12cd/bernoulli_nb/pipeline.joblib": {
+      "sha256": "9c2060b47431f17d99ddd5acd0e80201075f05fb368e459e840aeeffc3504560",
+      "bytes": 102624
+    },
+    "artifacts/models/phase3/baseline-v1-f8a5bfdb7b4c12cd/bernoulli_nb/validation_predictions.npz": {
+      "sha256": "8ba9e35a5de0d9c47c9dbadccd2a34b5c8e79763592c12af7059fde5d4319625",
+      "bytes": 108380
+    },
+    "artifacts/models/phase3/baseline-v1-f8a5bfdb7b4c12cd/knn/fit.json": {
+      "sha256": "0d0fff844d37200049fbb433ad18dfa5d2750e3fb0cd4968b70c0faa71cb1037",
+      "bytes": 3906
+    },
+    "artifacts/models/phase3/baseline-v1-f8a5bfdb7b4c12cd/knn/metadata.json": {
+      "sha256": "d2bbf589e64197186eb888ae5a2caad97be5c5574cfd3a8d0575f5ae5c48fd98",
+      "bytes": 10870
+    },
+    "artifacts/models/phase3/baseline-v1-f8a5bfdb7b4c12cd/knn/pipeline.joblib": {
+      "sha256": "592253e4982299e22a7476c383eee582d434af845a3b79b1347760aac1e79d3a",
+      "bytes": 652535
+    },
+    "artifacts/models/phase3/baseline-v1-f8a5bfdb7b4c12cd/knn/validation_predictions.npz": {
+      "sha256": "a602a575f9d19e70ee2519f047d67d02842a25258827a293c5822f74fde36c1e",
+      "bytes": 110676
+    },
+    "artifacts/models/phase3/baseline-v1-f8a5bfdb7b4c12cd/linear_svc/fit.json": {
+      "sha256": "4ce0c3119fc141a9639cbbf298d713bd2b182c999e1b2161ba09163079595532",
+      "bytes": 4515
+    },
+    "artifacts/models/phase3/baseline-v1-f8a5bfdb7b4c12cd/linear_svc/metadata.json": {
+      "sha256": "b23745a0c340d04504aada791cdf433320369c3988818880ef16f81e92a0fd29",
+      "bytes": 5520
+    },
+    "artifacts/models/phase3/baseline-v1-f8a5bfdb7b4c12cd/linear_svc/pipeline.joblib": {
+      "sha256": "8b3cb64d8a9bc991ac96e489bb410388258b9517e4285f009b8fac5c84a6db17",
+      "bytes": 1463693
+    },
+    "artifacts/models/phase3/baseline-v1-f8a5bfdb7b4c12cd/linear_svc/validation_predictions.npz": {
+      "sha256": "dba5ad41107b0eeb3604948528b7d270b2a2511fc2738fa291ad00a80f57e20a",
+      "bytes": 109456
+    },
+    "artifacts/models/phase3/baseline-v1-f8a5bfdb7b4c12cd/logistic_regression/fit.json": {
+      "sha256": "37168ee6148681bd4454fae02895ad62426c3682f2b2b0a5fdc05bfc5e167d92",
+      "bytes": 4810
+    },
+    "artifacts/models/phase3/baseline-v1-f8a5bfdb7b4c12cd/logistic_regression/metadata.json": {
+      "sha256": "a647476b871a3f15e3251d3162541c53b269bed54aabd6e5192ad746dd8ad764",
+      "bytes": 5813
+    },
+    "artifacts/models/phase3/baseline-v1-f8a5bfdb7b4c12cd/logistic_regression/pipeline.joblib": {
+      "sha256": "54f124240fd2bb8fb61c39594a55663e1b67f5f5b67595faeaa350504d0376da",
+      "bytes": 1438385
+    },
+    "artifacts/models/phase3/baseline-v1-f8a5bfdb7b4c12cd/logistic_regression/validation_predictions.npz": {
+      "sha256": "1fb23e0505f4328be254d4efb14fe471287647882ad4c4329389269a8243aad4",
+      "bytes": 109003
+    },
+    "artifacts/models/phase3/baseline-v1-f8a5bfdb7b4c12cd/random_forest/fit.json": {
+      "sha256": "6f0b452e1a5817e4f9a709190d470ae702fb035134d3e1ed7aa02a64267b0a6e",
+      "bytes": 4230
+    },
+    "artifacts/models/phase3/baseline-v1-f8a5bfdb7b4c12cd/random_forest/metadata.json": {
+      "sha256": "81d0f06adc508914333c98d840bf6de5bb106df2d45d6050ad0d09aa284adfd7",
+      "bytes": 5446
+    },
+    "artifacts/models/phase3/baseline-v1-f8a5bfdb7b4c12cd/random_forest/pipeline.joblib": {
+      "sha256": "8dc69097e04297eb7fcc10feaf8e7cf74dedc03513ee832e31505fe9b8974fd5",
+      "bytes": 14420893
+    },
+    "artifacts/models/phase3/baseline-v1-f8a5bfdb7b4c12cd/random_forest/validation_predictions.npz": {
+      "sha256": "f227fafca902b0ab7e1d615c41006896791edf7c1ec68aae75a209011d081d02",
+      "bytes": 110243
+    }
+  },
+  "tuning_id": "tuning-v1-9c4dd013abbba14a",
+  "tuned_identity": {
+    "phase": 3,
+    "config": {
+      "phase": 3,
+      "seed": 42,
+      "selection_metric": "macro_f1",
+      "zero_division": 0,
+      "run_tag": "tuned-v1",
+      "expected_phase2": {
+        "records": 187434,
+        "classes": 587,
+        "features": 375,
+        "sha256": "afde00ce35bf4fd31c9c76edcc3c8b64104e53fb81dd98d4a56d7b3a884b16b3"
+      },
+      "resources": {
+        "max_workers": 2,
+        "blas_threads": 1,
+        "working_memory_mb": 128,
+        "prediction_batch_size": 64,
+        "min_available_ram_gb": 2.0
+      },
+      "models": {
+        "bernoulli_nb": {
+          "alpha": 0.5,
+          "binarize": null
+        },
+        "knn": {
+          "algorithm": "brute",
+          "metric": "manhattan",
+          "n_neighbors": 7,
+          "weights": "distance"
+        },
+        "linear_svc": {
+          "C": 2.0,
+          "dual": "auto",
+          "max_iter": 3000,
+          "tol": 0.001
+        },
+        "logistic_regression": {
+          "C": 2.0,
+          "max_iter": 200,
+          "solver": "saga",
+          "tol": 0.001
+        },
+        "random_forest": {
+          "max_depth": 32,
+          "max_features": "sqrt",
+          "max_leaf_nodes": 512,
+          "min_samples_leaf": 2,
+          "n_estimators": 100
+        }
+      }
+    },
+    "processed_fingerprint": "afde00ce35bf4fd31c9c76edcc3c8b64104e53fb81dd98d4a56d7b3a884b16b3",
+    "phase2_manifest_sha256": "50308d250d874b1b653a71c31f38dece0ec9fbb4dbc9d94f68bc1461e80b8fe9",
+    "training_data_fingerprint": "3dfd77eb71ad3a2917a3a390917953f437ae6afb5220ac9feb28fec132e11e12",
+    "validation_data_fingerprint": "a203b9c0f1f124fa25d4cae6f5299d986bba23859ceca80660bc8bcb843570f2",
+    "feature_schema_identity": "dd07a3c73dd41558daa9c08e816e0a93d9efc4155f98b7e2b73325bffe31c5c0",
+    "label_mapping_identity": "d2ef711e5e04062e8b5b949ce434b1383e1ca2fef6eb31a0865acb2f470ab5b5",
+    "versions": {
+      "python": "3.13.18",
+      "sklearn": "1.6.1",
+      "numpy": "2.1.3",
+      "scipy": "1.16.3",
+      "joblib": "1.6.0"
+    },
+    "source_sha256": {
+      "src/models/training.py": "d48022c38d06712e028387e99a1563da8782af408749f436da54d17c825dc652",
+      "src/models/runtime.py": "ae3f4258bfd1029ed13aa1021e3905fee8cfdd53b5651a18f770e74e766ca500",
+      "src/data/preprocessing.py": "648c43f722a1c30e49e7f3279431c8136bbc5396f42ec9b51212679663fb845d",
+      "src/data/loader.py": "37397527ec5b5d48e233776fa5ef040a4bc476e23a45dd26d81ed5144c5ab17b",
+      "src/data/paths.py": "89ab450a76fffe92bb30fd6aa11b69567d69293916da2fda78123a8f29249eeb",
+      "src/data/audit.py": "41ff075c529ecf7200caf3717b660f655bc344e558d52d1448045aa2dd91672f",
+      "src/models/tuning.py": "00a07b2d5a2e1754b3c63d32342cf54a8c781ee1df1af5c029c9e7289bc59f02",
+      "src/models/tuned_ensemble.py": "a507f8cb9065009585b79a4f1275ca2c6d7c3ecf2690367d7a366f99c1ffcf3b"
+    },
+    "tuning_experiment": "tuning-v1-9c4dd013abbba14a",
+    "selection_sha256": "6191034dcc4a9c2393645929ea8942bc6eedc40206942b8384f30921bf727703",
+    "experiment_id": "tuned-v1-b8a5602679b3dc5c"
+  },
+  "manifests": {
+    "artifacts/metadata/runs/phase4-20261028T091711786379Z-c1c66643/phase4_manifest.json": "d9d45b1972bb3f880f11db12a74b5258c1cc0e350075012e30dc9b42e5867281",
+    "artifacts/metadata/tuning/tuning-v1-9c4dd013abbba14a/manifest.json": "4a10ddd5deba5fff7927f84ea334196a3f6d127b9777ced2b127f5b5e9389355",
+    "artifacts/metadata/runs/tuned-ensemble-20261029T041701354242Z-6c84dbfe/tuned_ensemble_manifest.json": "858893c442f1966eb8c7508a74cf6318b820004278342a1b958942151c049060"
+  },
+  "evidence_files": {
+    "artifacts/metadata/phase3_audit/colab_evidence.json": {
+      "bytes": 29626,
+      "sha256": "41a4ad3b0c3b8c783382b807688fd0958b00666b6e46bb84c3d3fe1e8c16fb48"
+    },
+    "artifacts/metadata/phase4_audit/colab_validation_evidence.json": {
+      "bytes": 23171,
+      "sha256": "42cf30dc39547656c572cf5ca4bb6a0eae3a6d31f0a923e6518e8618e835dd44"
+    },
+    "artifacts/metadata/structured_inference/colab_evidence.json": {
+      "bytes": 26833,
+      "sha256": "5dacef332521d797a74c00441bb00161ff21502078ebb12426c7dd4c4be5fd01"
+    },
+    "artifacts/metadata/post_tuning_audit/colab_evidence.json": {
+      "bytes": 64212,
+      "sha256": "70849a69a0d2cd571e2d93a938b98a9167b9d46ceb0db9d6cb1859f6a2e415e8"
+    },
+    "artifacts/metadata/model_analysis/colab_supplement.json": {
+      "bytes": 53841,
+      "sha256": "4ccfa85ac4639778ffae6d11a435fb78af825bb4e1c294792356bec7236b4d28"
+    },
+    "artifacts/metadata/final_ml_gaps/colab_evidence.json": {
+      "bytes": 36429,
+      "sha256": "7c2ed8e6705347a850bb90e88cdea54067d0d12ec5553588ce03fbd0a99725ac"
+    }
+  },
+  "model_names": [
+    "logistic_regression",
+    "random_forest",
+    "linear_svc",
+    "knn",
+    "bernoulli_nb"
+  ],
+  "deployment": "owner-approved LR tuned C=2; hard tuned best observed validation Macro F1; final test NOT executed"
+}

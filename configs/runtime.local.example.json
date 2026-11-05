@@ -1,0 +1,8 @@
+{
+  "runtime": "local",
+  "storage_root": "../disease-prediction-ml-data",
+  "raw_dir": "data/raw",
+  "raw_dataset": null,
+  "output_dir": ".",
+  "copy_raw_to_local": false
+}

@@ -1,0 +1,9 @@
+{
+  "_note": "Legacy resolver example only. Notebooks 00-03 use configs/runtime.json through the shared Colab bootstrap; do not select this override in notebooks.",
+  "runtime": "colab",
+  "storage_root": null,
+  "raw_dir": "data/raw",
+  "raw_dataset": null,
+  "output_dir": null,
+  "copy_raw_to_local": true
+}

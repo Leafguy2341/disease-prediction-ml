@@ -1,0 +1,19 @@
+{
+  "title": "Disease and symptoms dataset 2023",
+  "url": "https://data.mendeley.com/datasets/2cxccsxydc/1",
+  "doi": "10.17632/2cxccsxydc.1",
+  "contributor": "Bran Stark",
+  "version": "1",
+  "published": "2025-03-03",
+  "accessed": "2026-10-21",
+  "license": "CC BY 4.0",
+  "reported_classes": 773,
+  "reported_features": 377,
+  "generation": "artificially generated (the publisher's description)",
+  "local_file_binding": "Candidate source: matching filename and schema/counts; no publisher checksum or original download history available to verify identity.",
+  "limitations": [
+    "The publisher describes artificial generation; local rows are not verified real patient observations.",
+    "No generation code, patient identifiers, institution/time fields or clinical validation protocol is provided on the inspected landing page.",
+    "Claims about severity and real-world prevalence in the publisher description are not independently validated here."
+  ]
+}

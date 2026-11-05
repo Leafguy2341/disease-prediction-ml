@@ -1,0 +1,67 @@
+{
+  "status": "LIVE FAILURE VERIFIED; MITIGATION NOT LIVE VERIFIED",
+  "date": "2026-10-30",
+  "model": "gemini-3.8-flash",
+  "endpoint": "https://generativelanguage.googleapis.com/v1beta/interactions",
+  "live_generation_requests_used": 3,
+  "live_request_limit": 3,
+  "attempts": [
+    {
+      "number": 1,
+      "source": "agent request through existing localhost8001 chat",
+      "backend_http_status": 503,
+      "reason": "timeout",
+      "timeout_seconds": 20,
+      "provider_http_status": null
+    },
+    {
+      "number": 2,
+      "source": "owner one-request CLI diagnostic",
+      "reason": "timeout",
+      "timeout_seconds": 60,
+      "latency_ms": 60207.883599970955,
+      "provider_http_status": null
+    },
+    {
+      "number": 3,
+      "source": "owner one-request CLI transport trace",
+      "provider_http_status": 400,
+      "reason": "schema_or_request_rejected",
+      "latency_ms": 48267.606299952604,
+      "tls_completed_ms": 158.56760001042858,
+      "body_bytes": 20016,
+      "body_send_completed_ms": 158.73550000833347,
+      "response_headers_received_ms": 48267.509899975266,
+      "redacted_provider_message": "The specified schema produces a constraint that has too many states for serving. Typical causes of this error are schemas with lots of text (for example, very long property or enum names), schemas with long array length limits (especially when nested), or schemas using complex value matchers (for example, integers or numbers with minimum/maximum bounds or strings with complex formats like date-time)"
+    }
+  ],
+  "verified_failure_stage": "provider serving constraint compilation; HTTP400 before response parser/extraction validator/ML inference",
+  "not_established": [
+    "which particular keyword or feature name dominates state count",
+    "account Free Tier eligibility/quota limits",
+    "acceptance or semantic quality after mitigation"
+  ],
+  "mitigation": {
+    "source": "src/agent/provider.py::_serving_schema",
+    "removed_decoder_constraints": [
+      "$defs.span.properties.start.minimum",
+      "$defs.span.properties.end.minimum"
+    ],
+    "feature_enum_count": 375,
+    "feature_enum_unchanged": true,
+    "original_schema_sha256": "b9684bcd5684f941784243d1a3f9b44ab199e4f61a9238a274da817d80b7cea2",
+    "wire_schema_sha256": "59059f2b360e5d41a8a73fd3a8b3c70b875b3ad8fa34a7bc166958a143da8088",
+    "local_schema_and_evidence_bounds_unchanged": true,
+    "model_endpoint_and_production_timeout_unchanged": true,
+    "live_verified": false
+  },
+  "offline_tests": {
+    "passed": 221,
+    "warnings": 1,
+    "scope": "test_phase5b.py/test_local_chat.py/test_prediction_api.py, synthetic fixtures only"
+  },
+  "predictions_called": false,
+  "models_fitted": 0,
+  "locked_test_opened": false,
+  "next_live_request_requires_new_owner_authorization": true
+}

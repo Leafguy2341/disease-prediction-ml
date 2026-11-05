@@ -1,0 +1,90 @@
+{
+  "provider": {
+    "provider": "gemini",
+    "model": "gemini-3.8-flash",
+    "api_key_env": "GEMINI_API_KEY",
+    "live_enabled": false,
+    "timeout_seconds": 20,
+    "max_retries": 1,
+    "retry_base_seconds": 0.25,
+    "max_output_tokens": 8192,
+    "schema_mode": "schema"
+  },
+  "conversation": {
+    "max_input_chars": 4000,
+    "max_history_chars": 16000,
+    "max_user_turns": 24,
+    "max_clarification_turns": 2,
+    "session_ttl_seconds": 900,
+    "max_sessions": 128,
+    "min_present_features": 2,
+    "urgent_message": "Bạn mô tả dấu hiệu có thể cần hỗ trợ y tế khẩn cấp. Hãy liên hệ dịch vụ cấp cứu hoặc cơ sở y tế tại nơi bạn đang ở; đừng chờ cuộc trò chuyện này. Nguyên mẫu này không đánh giá được mức độ an toàn của bạn.",
+    "policy_review_status": "provisional_pending_human_review"
+  },
+  "offline": {
+    "ask_when_present_at_most": 2,
+    "question_priority": [
+      "fever",
+      "cough",
+      "headache",
+      "nausea"
+    ],
+    "fallback_to_display_catalog": true,
+    "debug_logging": false,
+    "health_keywords": [
+      "bệnh",
+      "triệu chứng",
+      "đau",
+      "khối u",
+      "sưng",
+      "ngứa",
+      "khám",
+      "bác sĩ",
+      "thuốc",
+      "ung thư",
+      "mang thai",
+      "có bầu",
+      "ho",
+      "sốt",
+      "buồn nôn",
+      "khó nói chuyện",
+      "khối bất thường",
+      "cảm thấy khó",
+      "đau nhưng không biết"
+    ],
+    "health_body_terms": [
+      "ngực",
+      "vú",
+      "bụng",
+      "cổ họng",
+      "đầu gối",
+      "bàn tay",
+      "bàn chân",
+      "phổi",
+      "thận",
+      "âm đạo",
+      "âm hộ",
+      "dương vật",
+      "tinh hoàn",
+      "bìu"
+    ],
+    "health_question_patterns": [
+      "bị gì",
+      "bệnh gì",
+      "có sao không",
+      "có nguy hiểm không",
+      "có bầu không"
+    ],
+    "dialogue_version": 2,
+    "batch_size": 3,
+    "max_question_batches": 4,
+    "max_total_questions": 12,
+    "min_answered_questions": 3,
+    "min_present_for_result": 3,
+    "max_question_rounds": 2
+  },
+  "presentation": {
+    "SCORE_DECIMALS": 4,
+    "ALLOW_DRAFT_TRANSLATIONS": true
+  }
+}

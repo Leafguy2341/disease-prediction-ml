@@ -1,0 +1,27 @@
+{
+  "phase": 3,
+  "seed": 42,
+  "selection_metric": "macro_f1",
+  "zero_division": 0,
+  "run_tag": "baseline-v1",
+  "expected_phase2": {
+    "records": 187434,
+    "classes": 587,
+    "features": 375,
+    "sha256": "afde00ce35bf4fd31c9c76edcc3c8b64104e53fb81dd98d4a56d7b3a884b16b3"
+  },
+  "resources": {
+    "max_workers": 2,
+    "blas_threads": 1,
+    "working_memory_mb": 128,
+    "prediction_batch_size": 64,
+    "min_available_ram_gb": 2.0
+  },
+  "models": {
+    "logistic_regression": {"solver": "saga", "C": 1.0, "max_iter": 200, "tol": 0.001},
+    "random_forest": {"n_estimators": 100, "max_depth": 24, "max_leaf_nodes": 512, "min_samples_leaf": 2, "max_features": "sqrt"},
+    "linear_svc": {"C": 1.0, "dual": "auto", "max_iter": 3000, "tol": 0.001},
+    "knn": {"n_neighbors": 5, "weights": "distance", "algorithm": "brute", "metric": "manhattan"},
+    "bernoulli_nb": {"alpha": 1.0, "binarize": null}
+  }
+}

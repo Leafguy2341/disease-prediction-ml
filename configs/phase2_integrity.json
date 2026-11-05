@@ -1,0 +1,50 @@
+{
+  "version": 1,
+  "approved_manifest_sha256": [
+    "ca20a551b1bf773c3dac59af40a56efa6552919e84136d44dd7117c39d038e02",
+    "50308d250d874b1b653a71c31f38dece0ec9fbb4dbc9d94f68bc1461e80b8fe9"
+  ],
+  "processed": {
+    "classes": 587,
+    "features": 375,
+    "fingerprint_encoding": "SHA256(UTF8(json.dumps({features,target,classes}, ensure_ascii=False, sort_keys=True, indent=2, allow_nan=False) + LF) + packed X bits big-endian row-major + label IDs uint32 little-endian row-major)",
+    "records": 187434,
+    "schema_sha256": "441709695f8b878e65d848309361838fa0367b6c031ed665a1472a9aee43b734",
+    "sha256": "afde00ce35bf4fd31c9c76edcc3c8b64104e53fb81dd98d4a56d7b3a884b16b3"
+  },
+  "files": {
+    "artifacts/metadata/phase2/feature_schema.json": {
+      "bytes": 19501,
+      "sha256": "dd07a3c73dd41558daa9c08e816e0a93d9efc4155f98b7e2b73325bffe31c5c0"
+    },
+    "artifacts/metadata/phase2/label_mapping.json": {
+      "bytes": 48977,
+      "sha256": "d2ef711e5e04062e8b5b949ce434b1383e1ca2fef6eb31a0865acb2f470ab5b5"
+    },
+    "artifacts/metadata/phase2/preprocessing_policy.json": {
+      "bytes": 1741,
+      "sha256": "ae4694b6a4fa7f32c6bee937b125d78f4053394933f90fe631b6a7475d2e5909"
+    },
+    "artifacts/metadata/phase2/split_assignments.csv.gz": {
+      "bytes": 1415738,
+      "sha256": "e2428a610019ddf62236e4a82bd39ae7dabd9b89a048bf63dd807fd8d9a42c51"
+    },
+    "artifacts/metadata/phase2/split_metadata.json": {
+      "bytes": 164744,
+      "sha256": "254aa34dd635f08d7037bd75d0e43148efe01bdfa13a9b6de20195b7dabf58c7"
+    },
+    "data/processed/test.csv.gz": {
+      "bytes": 292558,
+      "sha256": "d71a040a6ead853931cfc75452e456906e5277a3081dc97e8af5688ed4268dd0"
+    },
+    "data/processed/train.csv.gz": {
+      "bytes": 1262444,
+      "sha256": "3dfd77eb71ad3a2917a3a390917953f437ae6afb5220ac9feb28fec132e11e12"
+    },
+    "data/processed/validation.csv.gz": {
+      "bytes": 292793,
+      "sha256": "a203b9c0f1f124fa25d4cae6f5299d986bba23859ceca80660bc8bcb843570f2"
+    }
+  },
+  "approval_basis": "Locked local Phase 2 plus independently verified read-only Colab manifest/artifact audit. Only generation environment and preprocessing source provenance differ; data, schema, labels, policy and splits are identical."
+}

@@ -1,0 +1,18 @@
+﻿kind,alias_or_group,features,handling,scope
+FOLDED_ALIAS_COLLISION,cac bieu hien bat thuong o mat,symptoms of eye; symptoms of the face,"Ưu tiên exact có dấu; khi nhiều candidate phải hỏi rõ, không fuzzy-map.",proposed_only
+FOLDED_ALIAS_COLLISION,co bi dau,muscle pain; neck pain,"Ưu tiên exact có dấu; khi nhiều candidate phải hỏi rõ, không fuzzy-map.",proposed_only
+FOLDED_ALIAS_COLLISION,cung hoac cang o co,muscle stiffness or tightness; neck stiffness or tightness,"Ưu tiên exact có dấu; khi nhiều candidate phải hỏi rõ, không fuzzy-map.",proposed_only
+FOLDED_ALIAS_COLLISION,dau co,muscle pain; neck pain,"Ưu tiên exact có dấu; khi nhiều candidate phải hỏi rõ, không fuzzy-map.",proposed_only
+FOLDED_ALIAS_COLLISION,dau mat,facial pain; pain in eye,"Ưu tiên exact có dấu; khi nhiều candidate phải hỏi rõ, không fuzzy-map.",proposed_only
+FOLDED_ALIAS_COLLISION,nhuc co,muscle pain; neck pain,"Ưu tiên exact có dấu; khi nhiều candidate phải hỏi rõ, không fuzzy-map.",proposed_only
+FOLDED_ALIAS_COLLISION,sung co,muscle swelling; neck swelling,"Ưu tiên exact có dấu; khi nhiều candidate phải hỏi rõ, không fuzzy-map.",proposed_only
+FOLDED_ALIAS_COLLISION,sung hong,hip swelling; throat swelling,"Ưu tiên exact có dấu; khi nhiều candidate phải hỏi rõ, không fuzzy-map.",proposed_only
+SEMANTIC_OVERLAP_RISK,frequent urination / polyuria,frequent urination; polyuria,"Không gộp; hỏi mô tả cụ thể. Nhãn trùng nghĩa cần publisher giải thích, không tự tạo khác biệt.",semantic_review_not_runtime_collision
+SEMANTIC_OVERLAP_RISK,gum pain / pain in gums,gum pain; pain in gums,"Không gộp; hỏi mô tả cụ thể. Nhãn trùng nghĩa cần publisher giải thích, không tự tạo khác biệt.",semantic_review_not_runtime_collision
+SEMANTIC_OVERLAP_RISK,abdominal distention / stomach bloating / swollen abdomen,abdominal distention; stomach bloating; swollen abdomen,"Không gộp; hỏi mô tả cụ thể. Nhãn trùng nghĩa cần publisher giải thích, không tự tạo khác biệt.",semantic_review_not_runtime_collision
+SEMANTIC_OVERLAP_RISK,difficulty breathing / shortness of breath,difficulty breathing; shortness of breath,"Không gộp; hỏi mô tả cụ thể. Nhãn trùng nghĩa cần publisher giải thích, không tự tạo khác biệt.",semantic_review_not_runtime_collision
+SEMANTIC_OVERLAP_RISK,difficulty speaking / slurring words / stuttering or stammering,difficulty speaking; slurring words; stuttering or stammering,"Không gộp; hỏi mô tả cụ thể. Nhãn trùng nghĩa cần publisher giải thích, không tự tạo khác biệt.",semantic_review_not_runtime_collision
+SEMANTIC_OVERLAP_RISK,burning chest pain / heartburn,burning chest pain; heartburn,"Không gộp; hỏi mô tả cụ thể. Nhãn trùng nghĩa cần publisher giải thích, không tự tạo khác biệt.",semantic_review_not_runtime_collision
+SEMANTIC_OVERLAP_RISK,loss of sensation / paresthesia,loss of sensation; paresthesia,"Không gộp; hỏi mô tả cụ thể. Nhãn trùng nghĩa cần publisher giải thích, không tự tạo khác biệt.",semantic_review_not_runtime_collision
+SEMANTIC_OVERLAP_RISK,coryza / nasal congestion / sinus congestion,coryza; nasal congestion; sinus congestion,"Không gộp; hỏi mô tả cụ thể. Nhãn trùng nghĩa cần publisher giải thích, không tự tạo khác biệt.",semantic_review_not_runtime_collision
+SEMANTIC_OVERLAP_RISK,cross-eyed / eye deviation,cross-eyed; eye deviation,"Không gộp; hỏi mô tả cụ thể. Nhãn trùng nghĩa cần publisher giải thích, không tự tạo khác biệt.",semantic_review_not_runtime_collision

@@ -1,0 +1,11 @@
+{
+  "before_sha256": "cbf18f2b2accc56af7770e47f162a63b1d7358b7ddafaf43a1cd551650ca6188",
+  "after_sha256": "f59a2d72b84c0051b4e7d972d4a23289611d76b04b80789018c499975bc9e948",
+  "changed_cells": [
+    8
+  ],
+  "outputs_and_counts_unchanged": true,
+  "enabled": false,
+  "owner_authorization_empty": true,
+  "notebook_executed": false
+}

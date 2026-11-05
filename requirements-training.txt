@@ -1,0 +1,10 @@
+# Colab: keep compatible preinstalled packages. Install explicitly only if needed:
+# %pip install -r /path/to/source/requirements-training.txt
+numpy>=2.0,<3
+pandas>=2.2,<3
+scipy>=1.13,<2
+scikit-learn>=1.5,<2
+matplotlib>=3.9,<4
+joblib>=1.4,<2
+psutil>=5.9,<8
+threadpoolctl>=3,<4

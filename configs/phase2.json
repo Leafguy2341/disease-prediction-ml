@@ -1,0 +1,37 @@
+{
+  "policy_version": 1,
+  "status": "approved",
+  "target": "diseases",
+  "expected_raw_symptom_features": 377,
+  "drop_features": ["regurgitation", "regurgitation.1"],
+  "drop_reason": "Distinct meanings cannot be reliably mapped from user-described symptoms; exclusion approved for the final ML and future inference schema.",
+  "binary_interpretation": {
+    "1": "recorded as present",
+    "0": "not recorded as present; does not establish clinical absence",
+    "status": "provisional; publisher documentation is incomplete"
+  },
+  "deduplication": "remaining symptom vector AND disease label; keep first in raw source order",
+  "conflicting_labels": "preserve all distinct labels; never majority-relabel",
+  "minimum_unique_vectors_per_class": 10,
+  "group_definition": "complete remaining symptom vector, excluding disease label and row metadata",
+  "split_method": "seeded_group_quota_coverage_repair_v1",
+  "seed": 42,
+  "split_ratios": [0.7, 0.15, 0.15],
+  "constant_features": {
+    "transformer": "VarianceThreshold(0)",
+    "fit_stage": "training phase, inside model pipelines, on training data only",
+    "fit_in_phase2": false
+  },
+  "operation_order": [
+    "validate raw data and schema",
+    "remove approved ambiguous features",
+    "exact deduplication on remaining features and label",
+    "recalculate independent vectors per disease",
+    "apply minimum unique-vector eligibility",
+    "generate remaining-vector group identifiers",
+    "group-aware split with seed 42",
+    "validate constraints and deterministic reproduction",
+    "persist split data and reusable artifacts"
+  ],
+  "test_usage": "locked after Phase 2; final evaluation only, never feature or hyperparameter selection"
+}

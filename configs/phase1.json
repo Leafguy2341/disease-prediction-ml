@@ -1,0 +1,10 @@
+{
+  "dataset_candidates": ["data/raw/Disease and symptoms dataset.csv", "../Disease and symptoms dataset.csv"],
+  "target": "diseases",
+  "seed": 42,
+  "near_constant_threshold": 0.99,
+  "correlation_threshold": 0.8,
+  "rare_class_threshold": 5,
+  "top_n": 20,
+  "source_metadata": "configs/dataset_source.json"
+}

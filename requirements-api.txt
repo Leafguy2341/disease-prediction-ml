@@ -1,0 +1,14 @@
+# Explicit install into an existing Python 3.13.18 interpreter; no automatic installer.
+# ML versions match the approved checkpoint identity. No Gemini SDK.
+numpy==2.1.3
+pandas==2.2.3
+scipy==1.16.3
+scikit-learn==1.6.1
+joblib==1.6.0
+psutil>=5.9,<8
+threadpoolctl>=3,<4
+fastapi==0.139.0
+pydantic==2.12.5
+uvicorn==0.49.0
+httpx==0.28.1
+jsonschema>=4.23,<5

@@ -1,0 +1,1043 @@
+........................................................................ [  2%]
+........................................................................ [  4%]
+........................................................................ [  6%]
+........................................................................ [  8%]
+........................................................................ [ 10%]
+........................................................................ [ 12%]
+........................................................................ [ 14%]
+........................................................................ [ 16%]
+........................................................................ [ 18%]
+........................................................................ [ 20%]
+........................................................................ [ 22%]
+........................................................................ [ 24%]
+........................................................................ [ 26%]
+........................................................................ [ 29%]
+........................................................................ [ 31%]
+........................................................................ [ 33%]
+........................................................................ [ 35%]
+........................................................................ [ 37%]
+........................................................................ [ 39%]
+........................................................................ [ 41%]
+........................................................................ [ 43%]
+........................................................................ [ 45%]
+ssF.........................................s.......................FFFF [ 47%]
+FFFFFFFFF........................................................... [ 49%]
+.....sFFF..............F.F.............................................. [ 51%]
+........................................................................ [ 53%]
+........................................................................ [ 55%]
+........................................................................ [ 57%]
+........................................................................ [ 60%]
+.....................................EEEEEEEEEEEEE....................F. [ 62%]
+...............F........................................................ [ 64%]
+........................................................................ [ 66%]
+..................................................s..................... [ 68%]
+........................................................................ [ 70%]
+........................................................................ [ 72%]
+........................................................................ [ 74%]
+........................................................................ [ 76%]
+........................................................................ [ 78%]
+........................................................................ [ 80%]
+........................................................................ [ 82%]
+........................................................................ [ 84%]
+........................................................................ [ 86%]
+........................................................................ [ 89%]
+........................................................................ [ 91%]
+........................................................................ [ 93%]
+........................................................................ [ 95%]
+........................................................................ [ 97%]
+........................................................................ [ 99%]
+....................                                                     [100%]
+=================================== ERRORS ====================================
+_ ERROR at setup of test_old_phase1_source_zip_is_rejected_before_extraction __
+
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x000002403D8B7A10>
+
+    @pytest.fixture
+    def templates(monkeypatch):
+        root = Path(__file__).resolve().parents[1]
+        monkeypatch.syspath_prepend(str(root / "scripts"))
+>       from build_preprocessing_notebook import inspection_cells, PHASE2_REQUIRED_FILES
+
+tests\test_phase2_notebook.py:17: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+scripts\build_preprocessing_notebook.py:2: in <module>
+    from build_notebooks import BOOTSTRAP, code, md, write_notebook
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    """Create teaching notebooks. Refuse to overwrite existing notebooks unless explicit."""
+    from pathlib import Path
+    import argparse
+    import inspect
+    import json
+    import sys
+    import textwrap
+>   import nbformat as nbf
+E   ModuleNotFoundError: No module named 'nbformat'
+
+scripts\build_notebooks.py:8: ModuleNotFoundError
+_ ERROR at setup of test_old_checked_out_source_has_actionable_message_without_importing_src _
+
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x000002403D954BD0>
+
+    @pytest.fixture
+    def templates(monkeypatch):
+        root = Path(__file__).resolve().parents[1]
+        monkeypatch.syspath_prepend(str(root / "scripts"))
+>       from build_preprocessing_notebook import inspection_cells, PHASE2_REQUIRED_FILES
+
+tests\test_phase2_notebook.py:17: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+scripts\build_preprocessing_notebook.py:2: in <module>
+    from build_notebooks import BOOTSTRAP, code, md, write_notebook
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    """Create teaching notebooks. Refuse to overwrite existing notebooks unless explicit."""
+    from pathlib import Path
+    import argparse
+    import inspect
+    import json
+    import sys
+    import textwrap
+>   import nbformat as nbf
+E   ModuleNotFoundError: No module named 'nbformat'
+
+scripts\build_notebooks.py:8: ModuleNotFoundError
+_ ERROR at setup of test_phase2_zip_bootstraps_in_content_without_src_and_preserves_old_checkout _
+
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x000002403E481A50>
+
+    @pytest.fixture
+    def templates(monkeypatch):
+        root = Path(__file__).resolve().parents[1]
+        monkeypatch.syspath_prepend(str(root / "scripts"))
+>       from build_preprocessing_notebook import inspection_cells, PHASE2_REQUIRED_FILES
+
+tests\test_phase2_notebook.py:17: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+scripts\build_preprocessing_notebook.py:2: in <module>
+    from build_notebooks import BOOTSTRAP, code, md, write_notebook
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    """Create teaching notebooks. Refuse to overwrite existing notebooks unless explicit."""
+    from pathlib import Path
+    import argparse
+    import inspect
+    import json
+    import sys
+    import textwrap
+>   import nbformat as nbf
+E   ModuleNotFoundError: No module named 'nbformat'
+
+scripts\build_notebooks.py:8: ModuleNotFoundError
+___ ERROR at setup of test_visible_main_workflow_precedes_optional_history ____
+
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x000002403D7A5310>
+
+    @pytest.fixture
+    def templates(monkeypatch):
+        root = Path(__file__).resolve().parents[1]
+        monkeypatch.syspath_prepend(str(root / "scripts"))
+>       from build_preprocessing_notebook import inspection_cells, PHASE2_REQUIRED_FILES
+
+tests\test_phase2_notebook.py:17: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+scripts\build_preprocessing_notebook.py:2: in <module>
+    from build_notebooks import BOOTSTRAP, code, md, write_notebook
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    """Create teaching notebooks. Refuse to overwrite existing notebooks unless explicit."""
+    from pathlib import Path
+    import argparse
+    import inspect
+    import json
+    import sys
+    import textwrap
+>   import nbformat as nbf
+E   ModuleNotFoundError: No module named 'nbformat'
+
+scripts\build_notebooks.py:8: ModuleNotFoundError
+_ ERROR at setup of test_history_defaults_to_disabled_and_main_outputs_remain_visible _
+
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x0000024077615410>
+
+    @pytest.fixture
+    def templates(monkeypatch):
+        root = Path(__file__).resolve().parents[1]
+        monkeypatch.syspath_prepend(str(root / "scripts"))
+>       from build_preprocessing_notebook import inspection_cells, PHASE2_REQUIRED_FILES
+
+tests\test_phase2_notebook.py:17: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+scripts\build_preprocessing_notebook.py:2: in <module>
+    from build_notebooks import BOOTSTRAP, code, md, write_notebook
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    """Create teaching notebooks. Refuse to overwrite existing notebooks unless explicit."""
+    from pathlib import Path
+    import argparse
+    import inspect
+    import json
+    import sys
+    import textwrap
+>   import nbformat as nbf
+E   ModuleNotFoundError: No module named 'nbformat'
+
+scripts\build_notebooks.py:8: ModuleNotFoundError
+_ ERROR at setup of test_threshold_cell_displays_tables_and_figure_without_report_png[False-False] _
+
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x000002403E459410>
+
+    @pytest.fixture
+    def templates(monkeypatch):
+        root = Path(__file__).resolve().parents[1]
+        monkeypatch.syspath_prepend(str(root / "scripts"))
+>       from build_preprocessing_notebook import inspection_cells, PHASE2_REQUIRED_FILES
+
+tests\test_phase2_notebook.py:17: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+scripts\build_preprocessing_notebook.py:2: in <module>
+    from build_notebooks import BOOTSTRAP, code, md, write_notebook
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    """Create teaching notebooks. Refuse to overwrite existing notebooks unless explicit."""
+    from pathlib import Path
+    import argparse
+    import inspect
+    import json
+    import sys
+    import textwrap
+>   import nbformat as nbf
+E   ModuleNotFoundError: No module named 'nbformat'
+
+scripts\build_notebooks.py:8: ModuleNotFoundError
+_ ERROR at setup of test_threshold_cell_displays_tables_and_figure_without_report_png[False-True] _
+
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x000002407760CC50>
+
+    @pytest.fixture
+    def templates(monkeypatch):
+        root = Path(__file__).resolve().parents[1]
+        monkeypatch.syspath_prepend(str(root / "scripts"))
+>       from build_preprocessing_notebook import inspection_cells, PHASE2_REQUIRED_FILES
+
+tests\test_phase2_notebook.py:17: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+scripts\build_preprocessing_notebook.py:2: in <module>
+    from build_notebooks import BOOTSTRAP, code, md, write_notebook
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    """Create teaching notebooks. Refuse to overwrite existing notebooks unless explicit."""
+    from pathlib import Path
+    import argparse
+    import inspect
+    import json
+    import sys
+    import textwrap
+>   import nbformat as nbf
+E   ModuleNotFoundError: No module named 'nbformat'
+
+scripts\build_notebooks.py:8: ModuleNotFoundError
+_ ERROR at setup of test_threshold_cell_displays_tables_and_figure_without_report_png[True-False] _
+
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x000002403D55C050>
+
+    @pytest.fixture
+    def templates(monkeypatch):
+        root = Path(__file__).resolve().parents[1]
+        monkeypatch.syspath_prepend(str(root / "scripts"))
+>       from build_preprocessing_notebook import inspection_cells, PHASE2_REQUIRED_FILES
+
+tests\test_phase2_notebook.py:17: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+scripts\build_preprocessing_notebook.py:2: in <module>
+    from build_notebooks import BOOTSTRAP, code, md, write_notebook
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    """Create teaching notebooks. Refuse to overwrite existing notebooks unless explicit."""
+    from pathlib import Path
+    import argparse
+    import inspect
+    import json
+    import sys
+    import textwrap
+>   import nbformat as nbf
+E   ModuleNotFoundError: No module named 'nbformat'
+
+scripts\build_notebooks.py:8: ModuleNotFoundError
+_ ERROR at setup of test_threshold_cell_displays_tables_and_figure_without_report_png[True-True] _
+
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x000002403E66B890>
+
+    @pytest.fixture
+    def templates(monkeypatch):
+        root = Path(__file__).resolve().parents[1]
+        monkeypatch.syspath_prepend(str(root / "scripts"))
+>       from build_preprocessing_notebook import inspection_cells, PHASE2_REQUIRED_FILES
+
+tests\test_phase2_notebook.py:17: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+scripts\build_preprocessing_notebook.py:2: in <module>
+    from build_notebooks import BOOTSTRAP, code, md, write_notebook
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    """Create teaching notebooks. Refuse to overwrite existing notebooks unless explicit."""
+    from pathlib import Path
+    import argparse
+    import inspect
+    import json
+    import sys
+    import textwrap
+>   import nbformat as nbf
+E   ModuleNotFoundError: No module named 'nbformat'
+
+scripts\build_notebooks.py:8: ModuleNotFoundError
+_____ ERROR at setup of test_missing_locked_manifest_stops_before_export ______
+
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x000002403E464850>
+
+    @pytest.fixture
+    def templates(monkeypatch):
+        root = Path(__file__).resolve().parents[1]
+        monkeypatch.syspath_prepend(str(root / "scripts"))
+>       from build_preprocessing_notebook import inspection_cells, PHASE2_REQUIRED_FILES
+
+tests\test_phase2_notebook.py:17: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+scripts\build_preprocessing_notebook.py:2: in <module>
+    from build_notebooks import BOOTSTRAP, code, md, write_notebook
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    """Create teaching notebooks. Refuse to overwrite existing notebooks unless explicit."""
+    from pathlib import Path
+    import argparse
+    import inspect
+    import json
+    import sys
+    import textwrap
+>   import nbformat as nbf
+E   ModuleNotFoundError: No module named 'nbformat'
+
+scripts\build_notebooks.py:8: ModuleNotFoundError
+_ ERROR at setup of test_drive_is_mounted_before_reading_source_zip_on_drive[False] _
+
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x0000024039956C10>
+
+    @pytest.fixture
+    def templates(monkeypatch):
+        root = Path(__file__).resolve().parents[1]
+        monkeypatch.syspath_prepend(str(root / "scripts"))
+>       from build_preprocessing_notebook import inspection_cells, PHASE2_REQUIRED_FILES
+
+tests\test_phase2_notebook.py:17: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+scripts\build_preprocessing_notebook.py:2: in <module>
+    from build_notebooks import BOOTSTRAP, code, md, write_notebook
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    """Create teaching notebooks. Refuse to overwrite existing notebooks unless explicit."""
+    from pathlib import Path
+    import argparse
+    import inspect
+    import json
+    import sys
+    import textwrap
+>   import nbformat as nbf
+E   ModuleNotFoundError: No module named 'nbformat'
+
+scripts\build_notebooks.py:8: ModuleNotFoundError
+_ ERROR at setup of test_drive_is_mounted_before_reading_source_zip_on_drive[True] _
+
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x000002403EE7BF50>
+
+    @pytest.fixture
+    def templates(monkeypatch):
+        root = Path(__file__).resolve().parents[1]
+        monkeypatch.syspath_prepend(str(root / "scripts"))
+>       from build_preprocessing_notebook import inspection_cells, PHASE2_REQUIRED_FILES
+
+tests\test_phase2_notebook.py:17: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+scripts\build_preprocessing_notebook.py:2: in <module>
+    from build_notebooks import BOOTSTRAP, code, md, write_notebook
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    """Create teaching notebooks. Refuse to overwrite existing notebooks unless explicit."""
+    from pathlib import Path
+    import argparse
+    import inspect
+    import json
+    import sys
+    import textwrap
+>   import nbformat as nbf
+E   ModuleNotFoundError: No module named 'nbformat'
+
+scripts\build_notebooks.py:8: ModuleNotFoundError
+__ ERROR at setup of test_current_bundle_contains_phase2_and_strips_outputs ___
+
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x000002403AC90990>
+
+    @pytest.fixture
+    def templates(monkeypatch):
+        root = Path(__file__).resolve().parents[1]
+        monkeypatch.syspath_prepend(str(root / "scripts"))
+>       from build_preprocessing_notebook import inspection_cells, PHASE2_REQUIRED_FILES
+
+tests\test_phase2_notebook.py:17: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+scripts\build_preprocessing_notebook.py:2: in <module>
+    from build_notebooks import BOOTSTRAP, code, md, write_notebook
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    """Create teaching notebooks. Refuse to overwrite existing notebooks unless explicit."""
+    from pathlib import Path
+    import argparse
+    import inspect
+    import json
+    import sys
+    import textwrap
+>   import nbformat as nbf
+E   ModuleNotFoundError: No module named 'nbformat'
+
+scripts\build_notebooks.py:8: ModuleNotFoundError
+================================== FAILURES ===================================
+__ test_allowlist_has_no_original_artifacts_and_has_all_runtime_dependencies __
+
+    def test_allowlist_has_no_original_artifacts_and_has_all_runtime_dependencies():
+        files = API["code_files"](ROOT)
+        assert "notebooks/03_model_training.ipynb" in files
+        assert "scripts/audit_final_ml_gaps.py" in files
+        assert "app/frontend/.gitkeep" in files and "app/backend/.gitkeep" in files
+        assert "configs/phase5b.json" in files
+        assert not any(n.startswith(("artifacts/models/", "dist/", ".venv/", ".venv-web/")) for n in files)
+        assert "artifacts/metadata/runtime_compatibility/lr-31318-synthetic-reference.json" in files
+        assert "configs/runtime.local.example.json" in files
+        assert all(n.endswith(".json") for n in files if n.startswith("artifacts/"))
+        assert all(n.endswith(".md") for n in files if n.startswith("reports/"))
+        assert not any(n.endswith((".csv", ".gz", ".joblib", ".pyc", ".env")) for n in files)
+        payloads, publication = API["runtime_api"](ROOT)["make_publication"](ROOT)
+>       assert len(payloads) == 45
+E       assert 47 == 45
+E        +  where 47 = len({'src/__init__.py': b'"""Educational disease-prediction project; Phase 1 contains descriptive analysis only."""\n', 's...lse None,\r\n            \'translation_stats\': translation_stats,\r\n        }, separators=(\',\', \':\')))\r\n', ...})
+
+tests\test_distribution.py:42: AssertionError
+_____________ test_protocol_evidence_and_notebook_gate_are_frozen _____________
+
+    def test_protocol_evidence_and_notebook_gate_are_frozen():
+        frozen = final.protocol()
+        assert frozen["test"]["records"] == 28066
+        assert frozen["test"]["classes"] == 587 and frozen["test"]["features"] == 375
+        assert frozen["checkpoints"]["lr_tuned_c2"]["identity"]["config"]["models"]["logistic_regression"]["C"] == 2
+        assert final.digest(frozen) == "049ee0aa3c2907985c3d3a03ed222b1d6e1efb5921bbbc2d04ec0dea9baa8947"
+        for relative, expected in frozen["evidence_sha256"].items():
+            assert final.sha256_file(PROJECT / relative) == expected
+        nb = json.loads((PROJECT / "notebooks/06_final_model_evaluation.ipynb").read_text(encoding="utf-8"))
+        sources = "\n".join("".join(c.get("source", [])) for c in nb["cells"] if c["cell_type"] == "code")
+>       assert "RUN_FINAL_LOCKED_TEST = False" in sources and 'OWNER_AUTHORIZATION = ""' in sources
+E       assert ('RUN_FINAL_LOCKED_TEST = False' in 'import json, platform, runpy\\nfrom pathlib import Path\\n\\n# Ch\u1ec9 s\u1eeda hai gi\xe1 tr\u1ecb n\xe0y; digest l\u1ea5y t\u1eeb Windows stage/publ...st.read_bytes()).hexdigest()\\n\\nprint("\u0110\xe3 l\u01b0u:", dst)\\nprint("SHA-256:", hashlib.sha256(dst.read_bytes()).hexdigest())')
+
+tests\test_final_evaluation.py:285: AssertionError
+_ test_whole_preparation_notebook_is_independent_and_never_opens_test[colab_smoke_test.ipynb] _
+
+synthetic = namespace(paths=namespace(storage_root=WindowsPath('C:/Users/User/AppData/Local/Temp/pytest-of-User/pytest-184/test_wh...'seed': 42, 'splits': [{'classes': 587, 'dedup_records': 5, 'groups': 4, 'split': 'test'}]}}, data=None, identity=None)
+tmp_path = WindowsPath('C:/Users/User/AppData/Local/Temp/pytest-of-User/pytest-184/test_whole_preparation_noteboo0')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x000002403AAD3D50>
+name = 'colab_smoke_test.ipynb'
+
+    @pytest.mark.parametrize("name", ["colab_smoke_test.ipynb", "06_final_model_evaluation.ipynb"])
+    def test_whole_preparation_notebook_is_independent_and_never_opens_test(synthetic, tmp_path, monkeypatch, name):
+>       scope = _run_preparation_notebook(name, synthetic, tmp_path, monkeypatch)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_final_evaluation.py:411: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_final_evaluation.py:401: in _run_preparation_notebook
+    exec(compile(source, f"{name}:cell{i+1}", "exec"), scope)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+>   ???
+E   ModuleNotFoundError: No module named 'google.colab'
+
+colab_smoke_test.ipynb:cell4:1: ModuleNotFoundError
+_ test_whole_preparation_notebook_is_independent_and_never_opens_test[06_final_model_evaluation.ipynb] _
+
+synthetic = namespace(paths=namespace(storage_root=WindowsPath('C:/Users/User/AppData/Local/Temp/pytest-of-User/pytest-184/test_wh...'seed': 42, 'splits': [{'classes': 587, 'dedup_records': 5, 'groups': 4, 'split': 'test'}]}}, data=None, identity=None)
+tmp_path = WindowsPath('C:/Users/User/AppData/Local/Temp/pytest-of-User/pytest-184/test_whole_preparation_noteboo1')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x000002403C1BDA90>
+name = '06_final_model_evaluation.ipynb'
+
+    @pytest.mark.parametrize("name", ["colab_smoke_test.ipynb", "06_final_model_evaluation.ipynb"])
+    def test_whole_preparation_notebook_is_independent_and_never_opens_test(synthetic, tmp_path, monkeypatch, name):
+>       scope = _run_preparation_notebook(name, synthetic, tmp_path, monkeypatch)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_final_evaluation.py:411: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_final_evaluation.py:401: in _run_preparation_notebook
+    exec(compile(source, f"{name}:cell{i+1}", "exec"), scope)
+06_final_model_evaluation.ipynb:cell9:10: in <module>
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+args = (namespace(paths=namespace(storage_root=WindowsPath('C:/Users/User/AppData/Local/Temp/pytest-of-User/pytest-184/test_w...eed': 42, 'splits': [{'classes': 587, 'dedup_records': 5, 'groups': 4, 'split': 'test'}]}}, data=None, identity=None),)
+kwargs = {'enabled': True, 'owner_authorization': 'AUTHORIZE ONE-TIME LOCKED TEST final-locked-test-v1 049ee0aa3c2907985c3d3a03...ers\\User\\AppData\\Local\\Temp\\pytest-of-User\\pytest-184\\test_whole_preparation_noteboo1\\synthetic-storage', ...}}
+
+    def forbidden(*args, **kwargs):
+        forbidden_calls.append("evaluation/training/prediction")
+>       raise AssertionError("Preparation must not evaluate/train/predict")
+E       AssertionError: Preparation must not evaluate/train/predict
+
+tests\test_final_evaluation.py:332: AssertionError
+---------------------------- Captured stdout call -----------------------------
+Frozen protocol: final-locked-test-v1 | SHA-256: 80e0926c022e9903f599f91ca314243faf899cd955bc27c4f4a6a25051e83637\n               candidate\n0            lr_baseline\n1            lr_tuned_c2\n2  hard_tuned_lr_svc_knn\n    checkpoint  ...                                        environment\n0    knn_tuned  ...  {'joblib': '1.5.3', 'numpy': '2.3.5', 'python'...\n1  lr_baseline  ...  {'joblib': '1.5.3', 'numpy': '2.3.5', 'python'...\n2  lr_tuned_c2  ...  {'joblib': '1.5.3', 'numpy': '2.3.5', 'python'...\n3    svc_tuned  ...  {'joblib': '1.5.3', 'numpy': '2.3.5', 'python'...\n\n[4 rows x 4 columns]\nCurrent environment: {'python': '3.11.9', 'sklearn': '1.8.0', 'numpy': '2.3.5', 'scipy': '1.17.1', 'joblib': '1.5.3'}\nFrozen voting members: ['logistic_regression', 'linear_svc', 'knn'] | tie priority: ['logistic_regression', 'linear_svc', 'knn', 'bernoulli_nb', 'random_forest']\n\u0110ang ki\u1ec3m checksum source/metadata/checkpoint; kh\xf4ng deserialize ho\u1eb7c m\u1edf test...\n    checkpoint  ... features\n0    knn_tuned  ...      375\n1  lr_baseline  ...      375\n2  lr_tuned_c2  ...      375\n3    svc_tuned  ...      375\n\n[4 rows x 5 columns]\n   bytes  ...                                             sha256\n0   2616  ...  4aff90243339d4a721f1deb7ef762c360d04e4eaf19f08...\n\n[1 rows x 7 columns]\nPreflight: PASS | execution: NOT STARTED\nTest payload opened: False | guards: {'model_or_feature_fit_attempts': 0, 'test_payload_access': 0, 'protected_write_attempts': 0}\n<IPython.core.display.Markdown object>\nAUTHORIZE ONE-TIME LOCKED TEST final-locked-test-v1 80e0926c022e9903f599f91ca314243faf899cd955bc27c4f4a6a25051e83637
+_ test_notebook_prerequisite_failures_report_first_blocker_without_stale_session[mount-Drive mount-colab_smoke_test.ipynb] _
+
+synthetic = namespace(paths=namespace(storage_root=WindowsPath('C:/Users/User/AppData/Local/Temp/pytest-of-User/pytest-184/test_no...'seed': 42, 'splits': [{'classes': 587, 'dedup_records': 5, 'groups': 4, 'split': 'test'}]}}, data=None, identity=None)
+tmp_path = WindowsPath('C:/Users/User/AppData/Local/Temp/pytest-of-User/pytest-184/test_notebook_prerequisite_fai0')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x000002403B2C34D0>
+name = 'colab_smoke_test.ipynb', fault = 'mount', stage = 'Drive mount'
+
+    @pytest.mark.parametrize("name", ["colab_smoke_test.ipynb", "06_final_model_evaluation.ipynb"])
+    @pytest.mark.parametrize("fault,stage", [("mount", "Drive mount"), ("source", "Published source"),
+                                           ("digest", "Source release / bootstrap")])
+    def test_notebook_prerequisite_failures_report_first_blocker_without_stale_session(
+            synthetic, tmp_path, monkeypatch, name, fault, stage):
+>       scope = _run_preparation_notebook(name, synthetic, tmp_path, monkeypatch, fault=fault)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_final_evaluation.py:430: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_final_evaluation.py:401: in _run_preparation_notebook
+    exec(compile(source, f"{name}:cell{i+1}", "exec"), scope)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+>   ???
+E   ModuleNotFoundError: No module named 'google.colab'
+
+colab_smoke_test.ipynb:cell4:1: ModuleNotFoundError
+---------------------------- Captured stdout call -----------------------------
+BLOCKER [Drive mount]: FileNotFoundError: Drive ch\u01b0a mount. Ch\u1ea1y Colab: Mount Google Drive to Server... v\xe0 cell x\xe1c th\u1ef1c do extension t\u1ea1o, r\u1ed3i ch\u1ea1y l\u1ea1i setup.
+_ test_notebook_prerequisite_failures_report_first_blocker_without_stale_session[mount-Drive mount-06_final_model_evaluation.ipynb] _
+
+synthetic = namespace(paths=namespace(storage_root=WindowsPath('C:/Users/User/AppData/Local/Temp/pytest-of-User/pytest-184/test_no...'seed': 42, 'splits': [{'classes': 587, 'dedup_records': 5, 'groups': 4, 'split': 'test'}]}}, data=None, identity=None)
+tmp_path = WindowsPath('C:/Users/User/AppData/Local/Temp/pytest-of-User/pytest-184/test_notebook_prerequisite_fai1')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x000002403AB7BE10>
+name = '06_final_model_evaluation.ipynb', fault = 'mount', stage = 'Drive mount'
+
+    @pytest.mark.parametrize("name", ["colab_smoke_test.ipynb", "06_final_model_evaluation.ipynb"])
+    @pytest.mark.parametrize("fault,stage", [("mount", "Drive mount"), ("source", "Published source"),
+                                           ("digest", "Source release / bootstrap")])
+    def test_notebook_prerequisite_failures_report_first_blocker_without_stale_session(
+            synthetic, tmp_path, monkeypatch, name, fault, stage):
+>       scope = _run_preparation_notebook(name, synthetic, tmp_path, monkeypatch, fault=fault)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_final_evaluation.py:430: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_final_evaluation.py:401: in _run_preparation_notebook
+    exec(compile(source, f"{name}:cell{i+1}", "exec"), scope)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+>   ???
+E   RuntimeError: BLOCKED: preflight ch\u01b0a PASS. Kh\xf4ng \u0111\u01b0\u1ee3c d\xf9ng gate \u0111\u1ec3 b\u1ecf qua blocker.
+
+06_final_model_evaluation.ipynb:cell9:8: RuntimeError
+---------------------------- Captured stdout call -----------------------------
+BLOCKER [Drive mount]: FileNotFoundError: Drive ch\u01b0a mount. Ch\u1ea1y Colab: Mount Google Drive to Server... v\xe0 cell x\xe1c th\u1ef1c do extension t\u1ea1o, r\u1ed3i ch\u1ea1y l\u1ea1i setup.\n<IPython.core.display.Markdown object>\nAUTHORIZE ONE-TIME LOCKED TEST final-locked-test-v1 80e0926c022e9903f599f91ca314243faf899cd955bc27c4f4a6a25051e83637
+_ test_notebook_prerequisite_failures_report_first_blocker_without_stale_session[source-Published source-colab_smoke_test.ipynb] _
+
+synthetic = namespace(paths=namespace(storage_root=WindowsPath('C:/Users/User/AppData/Local/Temp/pytest-of-User/pytest-184/test_no...'seed': 42, 'splits': [{'classes': 587, 'dedup_records': 5, 'groups': 4, 'split': 'test'}]}}, data=None, identity=None)
+tmp_path = WindowsPath('C:/Users/User/AppData/Local/Temp/pytest-of-User/pytest-184/test_notebook_prerequisite_fai2')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x000002403C47BE10>
+name = 'colab_smoke_test.ipynb', fault = 'source', stage = 'Published source'
+
+    @pytest.mark.parametrize("name", ["colab_smoke_test.ipynb", "06_final_model_evaluation.ipynb"])
+    @pytest.mark.parametrize("fault,stage", [("mount", "Drive mount"), ("source", "Published source"),
+                                           ("digest", "Source release / bootstrap")])
+    def test_notebook_prerequisite_failures_report_first_blocker_without_stale_session(
+            synthetic, tmp_path, monkeypatch, name, fault, stage):
+>       scope = _run_preparation_notebook(name, synthetic, tmp_path, monkeypatch, fault=fault)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_final_evaluation.py:430: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_final_evaluation.py:401: in _run_preparation_notebook
+    exec(compile(source, f"{name}:cell{i+1}", "exec"), scope)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+>   ???
+E   ModuleNotFoundError: No module named 'google.colab'
+
+colab_smoke_test.ipynb:cell4:1: ModuleNotFoundError
+---------------------------- Captured stdout call -----------------------------
+BLOCKER [Published source]: FileNotFoundError: Drive \u0111\xe3 mount nh\u01b0ng thi\u1ebfu C:\\Users\\User\\AppData\\Local\\Temp\\pytest-of-User\\pytest-184\\test_notebook_prerequisite_fai2\\synthetic-storage\\src\\data\\colab_runtime.py. Ki\u1ec3m t\xe0i kho\u1ea3n/root v\xe0 publish to\xe0n payload theo HANDOVER_GUIDE; notebook kh\xf4ng t\u1ef1 publish.
+_ test_notebook_prerequisite_failures_report_first_blocker_without_stale_session[source-Published source-06_final_model_evaluation.ipynb] _
+
+synthetic = namespace(paths=namespace(storage_root=WindowsPath('C:/Users/User/AppData/Local/Temp/pytest-of-User/pytest-184/test_no...'seed': 42, 'splits': [{'classes': 587, 'dedup_records': 5, 'groups': 4, 'split': 'test'}]}}, data=None, identity=None)
+tmp_path = WindowsPath('C:/Users/User/AppData/Local/Temp/pytest-of-User/pytest-184/test_notebook_prerequisite_fai3')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x000002403C3A7210>
+name = '06_final_model_evaluation.ipynb', fault = 'source'
+stage = 'Published source'
+
+    @pytest.mark.parametrize("name", ["colab_smoke_test.ipynb", "06_final_model_evaluation.ipynb"])
+    @pytest.mark.parametrize("fault,stage", [("mount", "Drive mount"), ("source", "Published source"),
+                                           ("digest", "Source release / bootstrap")])
+    def test_notebook_prerequisite_failures_report_first_blocker_without_stale_session(
+            synthetic, tmp_path, monkeypatch, name, fault, stage):
+>       scope = _run_preparation_notebook(name, synthetic, tmp_path, monkeypatch, fault=fault)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_final_evaluation.py:430: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_final_evaluation.py:401: in _run_preparation_notebook
+    exec(compile(source, f"{name}:cell{i+1}", "exec"), scope)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+>   ???
+E   RuntimeError: BLOCKED: preflight ch\u01b0a PASS. Kh\xf4ng \u0111\u01b0\u1ee3c d\xf9ng gate \u0111\u1ec3 b\u1ecf qua blocker.
+
+06_final_model_evaluation.ipynb:cell9:8: RuntimeError
+---------------------------- Captured stdout call -----------------------------
+BLOCKER [Published source]: FileNotFoundError: Drive \u0111\xe3 mount nh\u01b0ng thi\u1ebfu C:\\Users\\User\\AppData\\Local\\Temp\\pytest-of-User\\pytest-184\\test_notebook_prerequisite_fai3\\synthetic-storage\\src\\data\\colab_runtime.py. Ki\u1ec3m t\xe0i kho\u1ea3n/root v\xe0 publish to\xe0n payload theo HANDOVER_GUIDE; notebook kh\xf4ng t\u1ef1 publish.\n<IPython.core.display.Markdown object>\nAUTHORIZE ONE-TIME LOCKED TEST final-locked-test-v1 80e0926c022e9903f599f91ca314243faf899cd955bc27c4f4a6a25051e83637
+_ test_notebook_prerequisite_failures_report_first_blocker_without_stale_session[digest-Source release / bootstrap-colab_smoke_test.ipynb] _
+
+synthetic = namespace(paths=namespace(storage_root=WindowsPath('C:/Users/User/AppData/Local/Temp/pytest-of-User/pytest-184/test_no...'seed': 42, 'splits': [{'classes': 587, 'dedup_records': 5, 'groups': 4, 'split': 'test'}]}}, data=None, identity=None)
+tmp_path = WindowsPath('C:/Users/User/AppData/Local/Temp/pytest-of-User/pytest-184/test_notebook_prerequisite_fai4')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x000002403A9D3750>
+name = 'colab_smoke_test.ipynb', fault = 'digest'
+stage = 'Source release / bootstrap'
+
+    @pytest.mark.parametrize("name", ["colab_smoke_test.ipynb", "06_final_model_evaluation.ipynb"])
+    @pytest.mark.parametrize("fault,stage", [("mount", "Drive mount"), ("source", "Published source"),
+                                           ("digest", "Source release / bootstrap")])
+    def test_notebook_prerequisite_failures_report_first_blocker_without_stale_session(
+            synthetic, tmp_path, monkeypatch, name, fault, stage):
+>       scope = _run_preparation_notebook(name, synthetic, tmp_path, monkeypatch, fault=fault)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_final_evaluation.py:430: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_final_evaluation.py:401: in _run_preparation_notebook
+    exec(compile(source, f"{name}:cell{i+1}", "exec"), scope)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+>   ???
+E   ModuleNotFoundError: No module named 'google.colab'
+
+colab_smoke_test.ipynb:cell4:1: ModuleNotFoundError
+---------------------------- Captured stdout call -----------------------------
+BLOCKER [Source release / bootstrap]: ValueError: Paste the 64-character RUNTIME_PAYLOAD_SHA256 printed by local Publish
+_ test_notebook_prerequisite_failures_report_first_blocker_without_stale_session[digest-Source release / bootstrap-06_final_model_evaluation.ipynb] _
+
+synthetic = namespace(paths=namespace(storage_root=WindowsPath('C:/Users/User/AppData/Local/Temp/pytest-of-User/pytest-184/test_no...'seed': 42, 'splits': [{'classes': 587, 'dedup_records': 5, 'groups': 4, 'split': 'test'}]}}, data=None, identity=None)
+tmp_path = WindowsPath('C:/Users/User/AppData/Local/Temp/pytest-of-User/pytest-184/test_notebook_prerequisite_fai5')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x000002403AAD3850>
+name = '06_final_model_evaluation.ipynb', fault = 'digest'
+stage = 'Source release / bootstrap'
+
+    @pytest.mark.parametrize("name", ["colab_smoke_test.ipynb", "06_final_model_evaluation.ipynb"])
+    @pytest.mark.parametrize("fault,stage", [("mount", "Drive mount"), ("source", "Published source"),
+                                           ("digest", "Source release / bootstrap")])
+    def test_notebook_prerequisite_failures_report_first_blocker_without_stale_session(
+            synthetic, tmp_path, monkeypatch, name, fault, stage):
+>       scope = _run_preparation_notebook(name, synthetic, tmp_path, monkeypatch, fault=fault)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_final_evaluation.py:430: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_final_evaluation.py:401: in _run_preparation_notebook
+    exec(compile(source, f"{name}:cell{i+1}", "exec"), scope)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+>   ???
+E   RuntimeError: BLOCKED: preflight ch\u01b0a PASS. Kh\xf4ng \u0111\u01b0\u1ee3c d\xf9ng gate \u0111\u1ec3 b\u1ecf qua blocker.
+
+06_final_model_evaluation.ipynb:cell9:8: RuntimeError
+---------------------------- Captured stdout call -----------------------------
+BLOCKER [Source release / bootstrap]: ValueError: Paste the 64-character RUNTIME_PAYLOAD_SHA256 printed by local Publish
+<IPython.core.display.Markdown object>
+AUTHORIZE ONE-TIME LOCKED TEST final-locked-test-v1 cf35a671c71532c2dabb9e53446976782c9f960af02004c8f5979c88ebf7409d
+_ test_notebook06_reports_checkpoint_or_environment_blocker_without_evaluating[checkpoint--missing-fixture/] _
+
+synthetic = namespace(paths=namespace(storage_root=WindowsPath('C:/Users/User/AppData/Local/Temp/pytest-of-User/pytest-184/test_no...'seed': 42, 'splits': [{'classes': 587, 'dedup_records': 5, 'groups': 4, 'split': 'test'}]}}, data=None, identity=None)
+tmp_path = WindowsPath('C:/Users/User/AppData/Local/Temp/pytest-of-User/pytest-184/test_notebook06_reports_checkp0')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x000002403D553CD0>
+fault = 'checkpoint', message = '-missing-fixture/'
+
+    @pytest.mark.parametrize("fault,message", [("checkpoint", "-missing-fixture/"), ("environment", "environment differs")])
+    def test_notebook06_reports_checkpoint_or_environment_blocker_without_evaluating(
+            synthetic, tmp_path, monkeypatch, fault, message):
+>       scope = _run_preparation_notebook("06_final_model_evaluation.ipynb", synthetic, tmp_path, monkeypatch, fault=fault)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_final_evaluation.py:440: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_final_evaluation.py:401: in _run_preparation_notebook
+    exec(compile(source, f"{name}:cell{i+1}", "exec"), scope)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+>   ???
+E   RuntimeError: BLOCKED: preflight ch\u01b0a PASS. Kh\xf4ng \u0111\u01b0\u1ee3c d\xf9ng gate \u0111\u1ec3 b\u1ecf qua blocker.
+
+06_final_model_evaluation.ipynb:cell9:8: RuntimeError
+---------------------------- Captured stdout call -----------------------------
+Frozen protocol: final-locked-test-v1 | SHA-256: b10a70daddf4319a7180ab6ea6afe0e8ec29b2b982af125dc229f6280433936c\n               candidate\n0            lr_baseline\n1            lr_tuned_c2\n2  hard_tuned_lr_svc_knn\n    checkpoint  ...                                        environment\n0    knn_tuned  ...  {'joblib': '1.5.3', 'numpy': '2.3.5', 'python'...\n1  lr_baseline  ...  {'joblib': '1.5.3', 'numpy': '2.3.5', 'python'...\n2  lr_tuned_c2  ...  {'joblib': '1.5.3', 'numpy': '2.3.5', 'python'...\n3    svc_tuned  ...  {'joblib': '1.5.3', 'numpy': '2.3.5', 'python'...\n\n[4 rows x 4 columns]\nCurrent environment: {'python': '3.11.9', 'sklearn': '1.8.0', 'numpy': '2.3.5', 'scipy': '1.17.1', 'joblib': '1.5.3'}\nFrozen voting members: ['logistic_regression', 'linear_svc', 'knn'] | tie priority: ['logistic_regression', 'linear_svc', 'knn', 'bernoulli_nb', 'random_forest']\n\u0110ang ki\u1ec3m checksum source/metadata/checkpoint; kh\xf4ng deserialize ho\u1eb7c m\u1edf test...\n<IPython.core.display.Markdown object>\nAUTHORIZE ONE-TIME LOCKED TEST final-locked-test-v1 b10a70daddf4319a7180ab6ea6afe0e8ec29b2b982af125dc229f6280433936c
+_ test_notebook06_reports_checkpoint_or_environment_blocker_without_evaluating[environment-environment differs] _
+
+synthetic = namespace(paths=namespace(storage_root=WindowsPath('C:/Users/User/AppData/Local/Temp/pytest-of-User/pytest-184/test_no...'seed': 42, 'splits': [{'classes': 587, 'dedup_records': 5, 'groups': 4, 'split': 'test'}]}}, data=None, identity=None)
+tmp_path = WindowsPath('C:/Users/User/AppData/Local/Temp/pytest-of-User/pytest-184/test_notebook06_reports_checkp1')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x000002403B22D950>
+fault = 'environment', message = 'environment differs'
+
+    @pytest.mark.parametrize("fault,message", [("checkpoint", "-missing-fixture/"), ("environment", "environment differs")])
+    def test_notebook06_reports_checkpoint_or_environment_blocker_without_evaluating(
+            synthetic, tmp_path, monkeypatch, fault, message):
+>       scope = _run_preparation_notebook("06_final_model_evaluation.ipynb", synthetic, tmp_path, monkeypatch, fault=fault)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_final_evaluation.py:440: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_final_evaluation.py:401: in _run_preparation_notebook
+    exec(compile(source, f"{name}:cell{i+1}", "exec"), scope)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+>   ???
+E   RuntimeError: BLOCKED: preflight ch\u01b0a PASS. Kh\xf4ng \u0111\u01b0\u1ee3c d\xf9ng gate \u0111\u1ec3 b\u1ecf qua blocker.
+
+06_final_model_evaluation.ipynb:cell9:8: RuntimeError
+---------------------------- Captured stdout call -----------------------------
+Frozen protocol: final-locked-test-v1 | SHA-256: cf35a671c71532c2dabb9e53446976782c9f960af02004c8f5979c88ebf7409d\n               candidate\n0            lr_baseline\n1            lr_tuned_c2\n2  hard_tuned_lr_svc_knn\n    checkpoint  ...                                        environment\n0    knn_tuned  ...  {'joblib': '1.5.3', 'numpy': '2.3.5', 'python'...\n1  lr_baseline  ...  {'joblib': '1.5.3', 'numpy': '2.3.5', 'python'...\n2  lr_tuned_c2  ...  {'joblib': '1.5.3', 'numpy': '2.3.5', 'python'...\n3    svc_tuned  ...  {'joblib': '1.5.3', 'numpy': '2.3.5', 'python'...\n\n[4 rows x 4 columns]\nCurrent environment: {'python': 'INCOMPATIBLE FIXTURE'}\nFrozen voting members: ['logistic_regression', 'linear_svc', 'knn'] | tie priority: ['logistic_regression', 'linear_svc', 'knn', 'bernoulli_nb', 'random_forest']\n\u0110ang ki\u1ec3m checksum source/metadata/checkpoint; kh\xf4ng deserialize ho\u1eb7c m\u1edf test...\n<IPython.core.display.Markdown object>\nAUTHORIZE ONE-TIME LOCKED TEST final-locked-test-v1 cf35a671c71532c2dabb9e53446976782c9f960af02004c8f5979c88ebf7409d
+______ test_notebook06_replays_completed_fixture_without_reopening_test _______
+
+synthetic = namespace(paths=namespace(storage_root=WindowsPath('C:/Users/User/AppData/Local/Temp/pytest-of-User/pytest-184/test_no...'seed': 42, 'splits': [{'classes': 587, 'dedup_records': 5, 'groups': 4, 'split': 'test'}]}}, data=None, identity=None)
+tmp_path = WindowsPath('C:/Users/User/AppData/Local/Temp/pytest-of-User/pytest-184/test_notebook06_replays_comple0')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x000002403AAA9550>
+
+    def test_notebook06_replays_completed_fixture_without_reopening_test(synthetic, tmp_path, monkeypatch):
+        # Create a completed TOY evaluation with FakePipeline before the replay sentinel.
+        # No actual dataset/checkpoint is used, trained or serialized by this fixture.
+        result = final.evaluate(synthetic, enabled=True, owner_authorization=final.authorization_text(),
+                                prepared=final.preflight(synthetic))
+        monkeypatch.setattr(final, "show_result", lambda r: final.read_completed(Path(r["folder"])))
+>       scope = _run_preparation_notebook("06_final_model_evaluation.ipynb", synthetic, tmp_path, monkeypatch)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_final_evaluation.py:451: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_final_evaluation.py:401: in _run_preparation_notebook
+    exec(compile(source, f"{name}:cell{i+1}", "exec"), scope)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+>   ???
+E   RuntimeError: BLOCKED: preflight ch\u01b0a PASS. Kh\xf4ng \u0111\u01b0\u1ee3c d\xf9ng gate \u0111\u1ec3 b\u1ecf qua blocker.
+
+06_final_model_evaluation.ipynb:cell9:8: RuntimeError
+---------------------------- Captured stdout call -----------------------------
+Predict fitted checkpoint: lr_baseline\n  Test: 5/5\nPredict fitted checkpoint: lr_tuned_c2\n  Test: 5/5\nPredict fitted checkpoint: svc_tuned\n  Test: 5/5\nPredict fitted checkpoint: knn_tuned\n  Test: 5/5\nCOMPLETED final evaluation: C:\\Users\\User\\AppData\\Local\\Temp\\pytest-of-User\\pytest-184\\test_notebook06_replays_comple0\\synthetic-storage\\artifacts\\metadata\\final_evaluation\\cf35a671c71532c2\nFrozen protocol: final-locked-test-v1 | SHA-256: cf35a671c71532c2dabb9e53446976782c9f960af02004c8f5979c88ebf7409d\n               candidate\n0            lr_baseline\n1            lr_tuned_c2\n2  hard_tuned_lr_svc_knn\n    checkpoint  ...                                        environment\n0    knn_tuned  ...  {'joblib': '1.5.3', 'numpy': '2.3.5', 'python'...\n1  lr_baseline  ...  {'joblib': '1.5.3', 'numpy': '2.3.5', 'python'...\n2  lr_tuned_c2  ...  {'joblib': '1.5.3', 'numpy': '2.3.5', 'python'...\n3    svc_tuned  ...  {'joblib': '1.5.3', 'numpy': '2.3.5', 'python'...\n\n[4 rows x 4 columns]\nCurrent environment: {'python': '3.11.9', 'sklearn': '1.8.0', 'numpy': '2.3.5', 'scipy': '1.17.1', 'joblib': '1.5.3'}\nFrozen voting members: ['logistic_regression', 'linear_svc', 'knn'] | tie priority: ['logistic_regression', 'linear_svc', 'knn', 'bernoulli_nb', 'random_forest']\n\u0110ang ki\u1ec3m checksum source/metadata/checkpoint; kh\xf4ng deserialize ho\u1eb7c m\u1edf test...\n    checkpoint  ... features\n0    knn_tuned  ...      375\n1  lr_baseline  ...      375\n2  lr_tuned_c2  ...      375\n3    svc_tuned  ...      375\n\n[4 rows x 5 columns]\n   bytes  ...                                             sha256\n0   2616  ...  579ab29d9a2d3565257944348dfe96064616f8da5dcf1f...\n\n[1 rows x 7 columns]\nPreflight: PASS | execution: COMPLETED; DO NOT RERUN\nTest payload opened: False | guards: {'model_or_feature_fit_attempts': 0, 'test_payload_access': 0, 'protected_write_attempts': 0}\n<IPython.core.display.Markdown object>\nAUTHORIZE ONE-TIME LOCKED TEST final-locked-test-v1 cf35a671c71532c2dabb9e53446976782c9f960af02004c8f5979c88ebf7409d
+__________ test_closeout_notebook_blocks_even_if_user_reenables_gate __________
+
+    def test_closeout_notebook_blocks_even_if_user_reenables_gate():
+        nb = json.loads((PROJECT / "notebooks/06_final_model_evaluation.ipynb").read_text(encoding="utf-8"))
+>       gate = next("".join(c["source"]) for c in nb["cells"] if c["cell_type"] == "code"
+                    and "RUN_FINAL_LOCKED_TEST = False" in "".join(c["source"]))
+E       StopIteration
+
+tests\test_final_evaluation.py:460: StopIteration
+_____________ test_prepare_has_one_folder_and_no_data_or_receipts _____________
+
+editing_project = WindowsPath('C:/Users/User/AppData/Local/Temp/pytest-of-User/pytest-184/test_prepare_has_one_folder_an0/editing workspace')
+
+    def test_prepare_has_one_folder_and_no_data_or_receipts(editing_project):
+        root = editing_project
+        assert not (root / "data").exists()  # Source sync does not need locked data locally.
+        result = prepare(root)
+>       assert result.returncode == 0, result.stderr
+E       AssertionError: D:\Program Files (x86)\Python\Python311\python.exe: can't open file 'C:\\Users\\User\\AppData\\Local\\Temp\\pytest-of-User\\pytest-184\\test_prepare_has_one_folder_an0\\editing workspace\\scripts\\package_handover.py': [Errno 2] No such file or directory
+E         Source operation failed (exit 2). Nothing in data/models was synchronized.
+E         At C:\Users\User\AppData\Local\Temp\pytest-of-User\pytest-184\test_prepare_has_one_folder_an0\editing 
+E         workspace\scripts\prepare_colab_source.ps1:22 char:28
+E         + ... DE -ne 0) { throw "Source operation failed (exit $LASTEXITCODE). Noth ...
+E         +                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+E             + CategoryInfo          : OperationStopped: (Source operatio...s synchronized.:String) [], RuntimeException
+E             + FullyQualifiedErrorId : Source operation failed (exit 2). Nothing in data/models was synchronized.
+E          
+E         
+E       assert 1 == 0
+E        +  where 1 = CompletedProcess(args=['powershell', '-NoProfile', '-ExecutionPolicy', 'Bypass', '-File', 'C:\\Users\\User\\AppData\\L...eption\n    + FullyQualifiedErrorId : Source operation failed (exit 2). Nothing in data/models was synchronized.\n \n').returncode
+
+tests\test_manifest_deployment.py:38: AssertionError
+_____ test_refresh_preserves_historical_packages_and_detects_stale_source _____
+
+editing_project = WindowsPath('C:/Users/User/AppData/Local/Temp/pytest-of-User/pytest-184/test_refresh_preserves_histori0/editing workspace')
+
+    def test_refresh_preserves_historical_packages_and_detects_stale_source(editing_project):
+        root = editing_project
+>       assert prepare(root).returncode == 0
+E       AssertionError: assert 1 == 0
+E        +  where 1 = CompletedProcess(args=['powershell', '-NoProfile', '-ExecutionPolicy', 'Bypass', '-File', 'C:\\Users\\User\\AppData\\L...eption\n    + FullyQualifiedErrorId : Source operation failed (exit 2). Nothing in data/models was synchronized.\n \n').returncode
+E        +    where CompletedProcess(args=['powershell', '-NoProfile', '-ExecutionPolicy', 'Bypass', '-File', 'C:\\Users\\User\\AppData\\L...eption\n    + FullyQualifiedErrorId : Source operation failed (exit 2). Nothing in data/models was synchronized.\n \n') = prepare(WindowsPath('C:/Users/User/AppData/Local/Temp/pytest-of-User/pytest-184/test_refresh_preserves_histori0/editing workspace'))
+
+tests\test_manifest_deployment.py:54: AssertionError
+______________ test_refresh_preserves_unrelated_files_in_staging ______________
+
+editing_project = WindowsPath('C:/Users/User/AppData/Local/Temp/pytest-of-User/pytest-184/test_refresh_preserves_unrelat0/editing workspace')
+
+    def test_refresh_preserves_unrelated_files_in_staging(editing_project):
+        root = editing_project
+>       assert prepare(root).returncode == 0
+E       AssertionError: assert 1 == 0
+E        +  where 1 = CompletedProcess(args=['powershell', '-NoProfile', '-ExecutionPolicy', 'Bypass', '-File', 'C:\\Users\\User\\AppData\\L...eption\n    + FullyQualifiedErrorId : Source operation failed (exit 2). Nothing in data/models was synchronized.\n \n').returncode
+E        +    where CompletedProcess(args=['powershell', '-NoProfile', '-ExecutionPolicy', 'Bypass', '-File', 'C:\\Users\\User\\AppData\\L...eption\n    + FullyQualifiedErrorId : Source operation failed (exit 2). Nothing in data/models was synchronized.\n \n') = prepare(WindowsPath('C:/Users/User/AppData/Local/Temp/pytest-of-User/pytest-184/test_refresh_preserves_unrelat0/editing workspace'))
+
+tests\test_manifest_deployment.py:71: AssertionError
+_________ test_embedded_bootstrap_works_before_src_import_is_possible _________
+
+runtime = (WindowsPath('C:/Users/User/AppData/Local/Temp/pytest-of-User/pytest-184/test_embedded_bootstrap_works_0/content'), {'...mp/pytest-of-User/pytest-184/test_embedded_bootstrap_works_0/content/drive/MyDrive/ML_Projects/disease-prediction-ml'))
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x000002403E721390>
+
+    def test_embedded_bootstrap_works_before_src_import_is_possible(runtime, monkeypatch):
+        content, _, _ = runtime
+        repo = Path(__file__).resolve().parents[1]
+        monkeypatch.syspath_prepend(str(repo / "scripts"))
+>       from build_notebooks import BOOTSTRAP
+
+D:\Program Files (x86)\DULIEUCODE\ML\disease-prediction-ml\tests\test_notebook_bootstrap.py:182: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    """Create teaching notebooks. Refuse to overwrite existing notebooks unless explicit."""
+    from pathlib import Path
+    import argparse
+    import inspect
+    import json
+    import sys
+    import textwrap
+>   import nbformat as nbf
+E   ModuleNotFoundError: No module named 'nbformat'
+
+D:\Program Files (x86)\DULIEUCODE\ML\disease-prediction-ml\scripts\build_notebooks.py:8: ModuleNotFoundError
+_____________ test_updater_preserves_user_mount_and_path_settings _____________
+
+runtime = (WindowsPath('C:/Users/User/AppData/Local/Temp/pytest-of-User/pytest-184/test_updater_preserves_user_mo0/content'), {'...mp/pytest-of-User/pytest-184/test_updater_preserves_user_mo0/content/drive/MyDrive/ML_Projects/disease-prediction-ml'))
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x000002403DA0DC10>
+
+    def test_updater_preserves_user_mount_and_path_settings(runtime, monkeypatch):
+        repo = Path(__file__).resolve().parents[1]
+        monkeypatch.syspath_prepend(str(repo / "scripts"))
+        from update_notebook_setup import preserve_settings
+>       from build_notebooks import BOOTSTRAP
+
+D:\Program Files (x86)\DULIEUCODE\ML\disease-prediction-ml\tests\test_notebook_bootstrap.py:208: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    """Create teaching notebooks. Refuse to overwrite existing notebooks unless explicit."""
+    from pathlib import Path
+    import argparse
+    import inspect
+    import json
+    import sys
+    import textwrap
+>   import nbformat as nbf
+E   ModuleNotFoundError: No module named 'nbformat'
+
+D:\Program Files (x86)\DULIEUCODE\ML\disease-prediction-ml\scripts\build_notebooks.py:8: ModuleNotFoundError
+_ test_each_pipeline_fits_variance_on_train_only_and_predicts[random_forest] __
+
+name = 'random_forest'
+
+    @pytest.mark.parametrize("name", MODEL_NAMES)
+    def test_each_pipeline_fits_variance_on_train_only_and_predicts(name):
+        config = read_training_config(ROOT)
+        config["models"]["random_forest"].update(n_estimators=3, max_leaf_nodes=8)
+        rng = np.random.default_rng(42)
+        x = pd.DataFrame(rng.integers(0, 2, size=(45, 7)), columns=[f"s{i}" for i in range(7)])
+        x["only_validation_varies"] = 0
+        val = x.iloc[:9].copy()
+        val["only_validation_varies"] = 1
+>       pipeline = build_pipeline(name, config).fit(x, np.tile([0, 1, 2], 15))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_phase3_training.py:144: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+..\..\..\Python\Python311\Lib\site-packages\sklearn\base.py:1336: in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\Python\Python311\Lib\site-packages\sklearn\pipeline.py:621: in fit
+    self._final_estimator.fit(Xt, y, **last_step_params["fit"])
+..\..\..\Python\Python311\Lib\site-packages\sklearn\base.py:1336: in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\Python\Python311\Lib\site-packages\sklearn\ensemble\_forest.py:486: in fit
+    trees = Parallel(
+..\..\..\Python\Python311\Lib\site-packages\sklearn\utils\parallel.py:91: in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\Python\Python311\Lib\site-packages\joblib\parallel.py:2070: in __call__
+    next(output)
+..\..\..\Python\Python311\Lib\site-packages\joblib\parallel.py:1675: in _get_outputs
+    self._start(iterator, pre_dispatch)
+..\..\..\Python\Python311\Lib\site-packages\joblib\parallel.py:1658: in _start
+    if self.dispatch_one_batch(iterator):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\Python\Python311\Lib\site-packages\joblib\parallel.py:1540: in dispatch_one_batch
+    self._dispatch(tasks)
+..\..\..\Python\Python311\Lib\site-packages\joblib\parallel.py:1437: in _dispatch
+    job = self._backend.submit(batch, callback=batch_tracker)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\Python\Python311\Lib\site-packages\joblib\_parallel_backends.py:339: in submit
+    return self._get_pool().apply_async(
+           ^^^^^^^^^^^^^^^^
+..\..\..\Python\Python311\Lib\site-packages\joblib\_parallel_backends.py:507: in _get_pool
+    self._pool = ThreadPool(self._n_jobs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\Python\Python311\Lib\multiprocessing\pool.py:930: in __init__
+    Pool.__init__(self, processes, initializer, initargs)
+..\..\..\Python\Python311\Lib\multiprocessing\pool.py:196: in __init__
+    self._change_notifier = self._ctx.SimpleQueue()
+                            ^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\Python\Python311\Lib\multiprocessing\context.py:113: in SimpleQueue
+    return SimpleQueue(ctx=self.get_context())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\Python\Python311\Lib\multiprocessing\queues.py:340: in __init__
+    self._reader, self._writer = connection.Pipe(duplex=False)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+duplex = False
+
+    def Pipe(duplex=True):
+        '''
+        Returns pair of connection objects at either end of a pipe
+        '''
+        address = arbitrary_address('AF_PIPE')
+        if duplex:
+            openmode = _winapi.PIPE_ACCESS_DUPLEX
+            access = _winapi.GENERIC_READ | _winapi.GENERIC_WRITE
+            obsize, ibsize = BUFSIZE, BUFSIZE
+        else:
+            openmode = _winapi.PIPE_ACCESS_INBOUND
+            access = _winapi.GENERIC_WRITE
+            obsize, ibsize = 0, BUFSIZE
+    
+        h1 = _winapi.CreateNamedPipe(
+            address, openmode | _winapi.FILE_FLAG_OVERLAPPED |
+            _winapi.FILE_FLAG_FIRST_PIPE_INSTANCE,
+            _winapi.PIPE_TYPE_MESSAGE | _winapi.PIPE_READMODE_MESSAGE |
+            _winapi.PIPE_WAIT,
+            1, obsize, ibsize, _winapi.NMPWAIT_WAIT_FOREVER,
+            # default security descriptor: the handle cannot be inherited
+            _winapi.NULL
+            )
+>       h2 = _winapi.CreateFile(
+            address, access, 0, _winapi.NULL, _winapi.OPEN_EXISTING,
+            _winapi.FILE_FLAG_OVERLAPPED, _winapi.NULL
+            )
+E       PermissionError: [WinError 5] Access is denied
+
+..\..\..\Python\Python311\Lib\multiprocessing\connection.py:575: PermissionError
+___________ test_compact_notebook_interface_runs_complete_workflow ____________
+
+store = (OutputPaths(root=WindowsPath('C:/Users/User/AppData/Local/Temp/pytest-of-User/pytest-184/test_compact_notebook_interf...sease-prediction-ml'), run_id=None), {'phase': 3, 'seed': 42, 'selection_metric': 'macro_f1', 'zero_division': 0, ...})
+tmp_path = WindowsPath('C:/Users/User/AppData/Local/Temp/pytest-of-User/pytest-184/test_compact_notebook_interfac0')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x000002403E4C2590>
+
+    def test_compact_notebook_interface_runs_complete_workflow(store, tmp_path, monkeypatch):
+        import src
+        from src.models import notebook as ui
+        output, config = store
+        point = tmp_path / "drive"
+        _prepare_project_folder(output.root, point, config, tmp_path / "content")
+        paths = colab_project_paths(output.root, drive_mount=point)
+        monkeypatch.setattr(src, "__file__", str(output.root / "src/__init__.py"))
+        monkeypatch.setattr(runtime, "detect_capabilities", lambda: SimpleNamespace(colab_runtime_detected=True))
+        monkeypatch.setattr(runtime.platform, "system", lambda: "Linux")
+        shown = []
+        monkeypatch.setattr(ui, "display", shown.append)
+        before = {relative: sha256_file(output.root / relative) for relative in TRAINING_FILES}
+        environment, inputs = colab_preflight(paths, config)
+        manifest_path = output.root / "artifacts/metadata/phase2/dataset_manifest.json"
+        manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+        (paths.project_root / "configs/phase2_integrity.json").write_text(json.dumps({
+            "version": 1, "approved_manifest_sha256": [sha256_file(manifest_path)],
+            "processed": manifest["processed"], "files": manifest["files"]}), encoding="utf-8")
+        shared = SimpleNamespace(paths=paths, environment=environment, inputs=inputs, source_fingerprint="synthetic", stages={"A": "PASS", "B": "PASS"})
+        session = ui.ColabTraining.open(shared)
+        with pytest.raises(RuntimeError, match="load_data"):
+            session.train()
+        # Execute the actual data, common pipeline, five model and results notebook cells.
+        notebook = json.loads((ROOT / "notebooks/03_model_training.ipynb").read_text(encoding="utf-8"))
+        cells = ["".join(c["source"]) for c in notebook["cells"] if c["cell_type"] == "code"]
+        import IPython.display
+        monkeypatch.setattr(IPython.display, "display", shown.append)
+        namespace = {"session": session}
+        for source in cells[2:]:
+>           exec(compile(source, "actual-visible-model-cell", "exec"), namespace)
+
+tests\test_phase3_training.py:376: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+actual-visible-model-cell:2: in <module>
+    ???
+src\models\tuning.py:285: in run_tuning
+    baseline.verify()  # Existing verified baseline loader; no baseline fit.
+    ^^^^^^^^^^^^^^^^^
+src\models\ensemble.py:232: in verify
+    require(len(self.y) == 28120 and len(self.features) == 375 and len(self.classes) == 587, "Sai k\xedch th\u01b0\u1edbc Phase 2 \u0111\xe3 duy\u1ec7t.")
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+condition = False, message = 'Sai k\xedch th\u01b0\u1edbc Phase 2 \u0111\xe3 duy\u1ec7t.'
+
+    def require(condition, message):
+        if not condition:
+>           raise IntegrityError(message)
+E           src.models.ensemble.IntegrityError: Sai k\xedch th\u01b0\u1edbc Phase 2 \u0111\xe3 duy\u1ec7t.
+
+src\models\ensemble.py:122: IntegrityError
+---------------------------- Captured stdout call -----------------------------
+Stage C PASS | manifest=1aba29b3d6a7645711dfc41817e2701067619a0ca73b1299b226b5cd0e22a6af | 7 train/validation/metadata checksums OK\nSource workspace: C:\\Users\\User\\AppData\\Local\\Temp\\pytest-of-User\\pytest-184\\test_compact_notebook_interfac0\\drive\\MyDrive\\ML_Projects\\disease-prediction-ml\nSource fingerprint: synthetic\nD\u1eef li\u1ec7u / \u0111\u1ea7u ra Drive: C:\\Users\\User\\AppData\\Local\\Temp\\pytest-of-User\\pytest-184\\test_compact_notebook_interfac0\\drive\\MyDrive\\ML_Projects\\disease-prediction-ml\nChecksum input h\u1ee3p l\u1ec7; ch\u1ec9 \u0111\u1ecdc train/validation, kh\xf4ng m\u1edf CSV test.\n\u0110ang \u0111\u1ecdc train/validation v\xe0 ki\u1ec3m tra schema/group...\nFingerprint processed: df810b736501956c5dbf2b06514cfcdd594ad1e0ccb501924e33160998e564a2\nVarianceThreshold ch\u1ec9 fit khi train; cache \u1edf \u1ed5 t\u1ea1m: C:\\Users\\User\\AppData\\Local\\Temp\\pytest-of-User\\pytest-184\\test_compact_notebook_interfac0\\content\\cache\\phase3\\1aba29b3d6a76457\nExperiment: baseline-v1-07adb36c65a9fb9d\nSTART logistic_regression: fit 84 d\xf2ng train; RAM kh\u1ea3 d\u1ee5ng 14.18 GiB\nFITTED logistic_regression: 0.015s | features 7 \u2192 6 | \u0111\xe3 l\u01b0u Drive checkpoint\n  WARNING ConvergenceWarning: The max_iter was reached which means the coef_ did not converge\n  Validation: \u0111\xe3 d\u1ef1 \u0111o\xe1n 8/18 d\xf2ng\n  Validation: \u0111\xe3 d\u1ef1 \u0111o\xe1n 18/18 d\xf2ng\nFINISHED logistic_regression: predict 0.002s | validation macro F1=0.23280\nSTART random_forest: fit 84 d\xf2ng train; RAM kh\u1ea3 d\u1ee5ng 14.18 GiB\nFITTED random_forest: 0.015s | features 7 \u2192 6 | \u0111\xe3 l\u01b0u Drive checkpoint\n  Validation: \u0111\xe3 d\u1ef1 \u0111o\xe1n 8/18 d\xf2ng\n  Validation: \u0111\xe3 d\u1ef1 \u0111o\xe1n 18/18 d\xf2ng\nFINISHED random_forest: predict 0.003s | validation macro F1=0.33333\nSTART linear_svc: fit 84 d\xf2ng train; RAM kh\u1ea3 d\u1ee5ng 14.19 GiB\nFITTED linear_svc: 0.015s | features 7 \u2192 6 | \u0111\xe3 l\u01b0u Drive checkpoint\n  Validation: \u0111\xe3 d\u1ef1 \u0111o\xe1n 8/18 d\xf2ng\n  Validation: \u0111\xe3 d\u1ef1 \u0111o\xe1n 18/18 d\xf2ng\nFINISHED linear_svc: predict 0.003s | validation macro F1=0.29630\nSTART knn: fit 84 d\xf2ng train; RAM kh\u1ea3 d\u1ee5ng 14.19 GiB\nFITTED knn: 0.014s | features 7 \u2192 6 | \u0111\xe3 l\u01b0u Drive checkpoint\n  Validation: \u0111\xe3 d\u1ef1 \u0111o\xe1n 8/18 d\xf2ng\n  Validation: \u0111\xe3 d\u1ef1 \u0111o\xe1n 18/18 d\xf2ng\nFINISHED knn: predict 0.003s | validation macro F1=0.16667\nSTART bernoulli_nb: fit 84 d\xf2ng train; RAM kh\u1ea3 d\u1ee5ng 14.19 GiB\nFITTED bernoulli_nb: 0.015s | features 7 \u2192 6 | \u0111\xe3 l\u01b0u Drive checkpoint\n  Validation: \u0111\xe3 d\u1ef1 \u0111o\xe1n 8/18 d\xf2ng\n  Validation: \u0111\xe3 d\u1ef1 \u0111o\xe1n 18/18 d\xf2ng\nFINISHED bernoulli_nb: predict 0.003s | validation macro F1=0.16667\nvalidation_performance \u2192 C:\\Users\\User\\AppData\\Local\\Temp\\pytest-of-User\\pytest-184\\test_compact_notebook_interfac0\\drive\\MyDrive\\ML_Projects\\disease-prediction-ml\\reports\\figures\\phase3_baseline-v1-07adb36c65a9fb9d_validation_performance.png\nfit_prediction_time \u2192 C:\\Users\\User\\AppData\\Local\\Temp\\pytest-of-User\\pytest-184\\test_compact_notebook_interfac0\\drive\\MyDrive\\ML_Projects\\disease-prediction-ml\\reports\\figures\\phase3_baseline-v1-07adb36c65a9fb9d_fit_prediction_time.png\ndifficult_classes \u2192 C:\\Users\\User\\AppData\\Local\\Temp\\pytest-of-User\\pytest-184\\test_compact_notebook_interfac0\\drive\\MyDrive\\ML_Projects\\disease-prediction-ml\\reports\\figures\\phase3_baseline-v1-07adb36c65a9fb9d_difficult_classes.png\nComparison CSV: C:\\Users\\User\\AppData\\Local\\Temp\\pytest-of-User\\pytest-184\\test_compact_notebook_interfac0\\drive\\MyDrive\\ML_Projects\\disease-prediction-ml\\reports\\tables\\phase3_baseline-v1-07adb36c65a9fb9d_validation_comparison.csv\nRun metadata: C:\\Users\\User\\AppData\\Local\\Temp\\pytest-of-User\\pytest-184\\test_compact_notebook_interfac0\\drive\\MyDrive\\ML_Projects\\disease-prediction-ml\\artifacts\\metadata\\phase3\\baseline-v1-07adb36c65a9fb9d\\run_summary.json\nPhase 4 ready: True\nD\u1eebng sau Phase 3. Ch\u01b0a m\u1edf/evaluate test ho\u1eb7c train ensemble.
+============================== warnings summary ===============================
+..\..\..\Python\Python311\Lib\site-packages\fastapi\testclient.py:1
+  D:\Program Files (x86)\Python\Python311\Lib\site-packages\fastapi\testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+    from starlette.testclient import TestClient as TestClient  # noqa
+
+tests/test_phase3_training.py::test_each_pipeline_fits_variance_on_train_only_and_predicts[knn]
+  D:\Program Files (x86)\Python\Python311\Lib\site-packages\joblib\externals\loky\backend\context.py:131: UserWarning: Could not find the number of physical cores for the following reason:
+  [WinError 2] The system cannot find the file specified
+  Returning the number of logical cores instead. You can silence this warning by setting LOKY_MAX_CPU_COUNT to the number of cores you want to use.
+    warnings.warn(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ===========================
+FAILED tests/test_distribution.py::test_allowlist_has_no_original_artifacts_and_has_all_runtime_dependencies
+FAILED tests/test_final_evaluation.py::test_protocol_evidence_and_notebook_gate_are_frozen
+FAILED tests/test_final_evaluation.py::test_whole_preparation_notebook_is_independent_and_never_opens_test[colab_smoke_test.ipynb]
+FAILED tests/test_final_evaluation.py::test_whole_preparation_notebook_is_independent_and_never_opens_test[06_final_model_evaluation.ipynb]
+FAILED tests/test_final_evaluation.py::test_notebook_prerequisite_failures_report_first_blocker_without_stale_session[mount-Drive mount-colab_smoke_test.ipynb]
+FAILED tests/test_final_evaluation.py::test_notebook_prerequisite_failures_report_first_blocker_without_stale_session[mount-Drive mount-06_final_model_evaluation.ipynb]
+FAILED tests/test_final_evaluation.py::test_notebook_prerequisite_failures_report_first_blocker_without_stale_session[source-Published source-colab_smoke_test.ipynb]
+FAILED tests/test_final_evaluation.py::test_notebook_prerequisite_failures_report_first_blocker_without_stale_session[source-Published source-06_final_model_evaluation.ipynb]
+FAILED tests/test_final_evaluation.py::test_notebook_prerequisite_failures_report_first_blocker_without_stale_session[digest-Source release / bootstrap-colab_smoke_test.ipynb]
+FAILED tests/test_final_evaluation.py::test_notebook_prerequisite_failures_report_first_blocker_without_stale_session[digest-Source release / bootstrap-06_final_model_evaluation.ipynb]
+FAILED tests/test_final_evaluation.py::test_notebook06_reports_checkpoint_or_environment_blocker_without_evaluating[checkpoint--missing-fixture/]
+FAILED tests/test_final_evaluation.py::test_notebook06_reports_checkpoint_or_environment_blocker_without_evaluating[environment-environment differs]
+FAILED tests/test_final_evaluation.py::test_notebook06_replays_completed_fixture_without_reopening_test
+FAILED tests/test_final_evaluation.py::test_closeout_notebook_blocks_even_if_user_reenables_gate
+FAILED tests/test_manifest_deployment.py::test_prepare_has_one_folder_and_no_data_or_receipts
+FAILED tests/test_manifest_deployment.py::test_refresh_preserves_historical_packages_and_detects_stale_source
+FAILED tests/test_manifest_deployment.py::test_refresh_preserves_unrelated_files_in_staging
+FAILED tests/test_notebook_bootstrap.py::test_embedded_bootstrap_works_before_src_import_is_possible
+FAILED tests/test_notebook_bootstrap.py::test_updater_preserves_user_mount_and_path_settings
+FAILED tests/test_phase3_training.py::test_each_pipeline_fits_variance_on_train_only_and_predicts[random_forest]
+FAILED tests/test_phase3_training.py::test_compact_notebook_interface_runs_complete_workflow
+ERROR tests/test_phase2_notebook.py::test_old_phase1_source_zip_is_rejected_before_extraction
+ERROR tests/test_phase2_notebook.py::test_old_checked_out_source_has_actionable_message_without_importing_src
+ERROR tests/test_phase2_notebook.py::test_phase2_zip_bootstraps_in_content_without_src_and_preserves_old_checkout
+ERROR tests/test_phase2_notebook.py::test_visible_main_workflow_precedes_optional_history
+ERROR tests/test_phase2_notebook.py::test_history_defaults_to_disabled_and_main_outputs_remain_visible
+ERROR tests/test_phase2_notebook.py::test_threshold_cell_displays_tables_and_figure_without_report_png[False-False]
+ERROR tests/test_phase2_notebook.py::test_threshold_cell_displays_tables_and_figure_without_report_png[False-True]
+ERROR tests/test_phase2_notebook.py::test_threshold_cell_displays_tables_and_figure_without_report_png[True-False]
+ERROR tests/test_phase2_notebook.py::test_threshold_cell_displays_tables_and_figure_without_report_png[True-True]
+ERROR tests/test_phase2_notebook.py::test_missing_locked_manifest_stops_before_export
+ERROR tests/test_phase2_notebook.py::test_drive_is_mounted_before_reading_source_zip_on_drive[False]
+ERROR tests/test_phase2_notebook.py::test_drive_is_mounted_before_reading_source_zip_on_drive[True]
+ERROR tests/test_phase2_notebook.py::test_current_bundle_contains_phase2_and_strips_outputs
+21 failed, 3433 passed, 5 skipped, 2 warnings, 13 errors, 4 subtests passed in 144.71s (0:02:24)
+

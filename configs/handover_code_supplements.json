@@ -1,0 +1,95 @@
+{
+  "version": 1,
+  "purpose": "Approved small synthetic fixtures and historical evidence required by shipped tests; no datasets or model weights",
+  "approved_inventory_sha256": "b500d305e0d7c9645ca118254d83ada559e7eccf04d9201dcc562e38eaa541fb",
+  "files": {
+    "data/evaluation/vietnamese_symptom_activation_cases.jsonl": {
+      "bytes": 290321,
+      "sha256": "5042ad0229154633809e9e5a6052838572a2aad50383a4d52b711ef27088b0df"
+    },
+    "data/evaluation/vietnamese_symptom_semantic_cases.jsonl": {
+      "bytes": 22210,
+      "sha256": "c03ef754357d9c715b6155766ef8e35b81540ba5c94599febf9cd45e320ac07f"
+    },
+    "reports/release_final_gate/candidate_contexts.json": {
+      "bytes": 512429,
+      "sha256": "7363082b44db9836a107a221edad742919da7e5899cb59985093771f3104c965"
+    },
+    "reports/release_final_gate/extraction.tests.txt": {
+      "bytes": 6728,
+      "sha256": "71d0f847d73bbe0adf6def4a9121f1d32e2cab54053a76387233e43309f1f19a"
+    },
+    "reports/release_final_gate/notebook06_gate_freeze.json": {
+      "bytes": 346,
+      "sha256": "4116ab871657c5e3c59b8948970df7b7ad660c15796030d4ab8e4ccf69a8f09f"
+    },
+    "reports/release_final_gate/notebook_closeout_followup.tests.txt": {
+      "bytes": 4108,
+      "sha256": "1acba94854bd8f67084f524da94e7f452e435386ab8e929f63c350b19b0ce321"
+    },
+    "reports/release_final_gate/real_runtime_smoke.json": {
+      "bytes": 6920,
+      "sha256": "ed5d5fb88d2f1cb792ad2351deb934eadc94d1970f626902e5b14d16389acb3f"
+    },
+    "reports/release_final_gate/regression_triage.csv": {
+      "bytes": 27377,
+      "sha256": "dc064ecf76f37874eaedeca00043aa80f1ae5a2737b5803f75cad85776753f7e"
+    },
+    "reports/release_final_gate/regression_triage.json": {
+      "bytes": 45053,
+      "sha256": "c463d03385c29520b3eec31d601cb528c942af1ad424f5e7a75ab8f878db8477"
+    },
+    "reports/release_final_gate/release.tests.txt": {
+      "bytes": 202,
+      "sha256": "1e37051a979edd41f47fda8afeada09200b31dbb445812f4ea4e0f754a7d8b5c"
+    },
+    "reports/terminology/activation-20261104/baseline.tests.txt": {
+      "bytes": 74624,
+      "sha256": "5e4460a2af0c6463090e96ac71b1476497b06f6c52431101a164b849cd57504b"
+    },
+    "reports/terminology/activation-20261104/batch-1.before.json": {
+      "bytes": 392345,
+      "sha256": "036d756fb202612122a31e8a041e60e98a33cc632a7caa41df25ccfe2689d527"
+    },
+    "reports/terminology/activation-20261104/batch-1.manifest.json": {
+      "bytes": 1309,
+      "sha256": "982065eda9f017b72938b60f57edbc17ed5d6ec1a9e4753c0a64455c3e4b5635"
+    },
+    "reports/terminology/activation-20261104/batch-1.tests.txt": {
+      "bytes": 75141,
+      "sha256": "636cd7364a8f3f0e3ca2204c669b900db63d8554db6c170dd7f828d6f1fd5471"
+    },
+    "reports/terminology/activation-20261104/context_validation.json": {
+      "bytes": 454087,
+      "sha256": "ef1771fbcf0d2ccc595574b1e7216f543b1479b09628956885e50a4e85bbf088"
+    },
+    "reports/terminology/activation-20261104/manifest.json": {
+      "bytes": 19113,
+      "sha256": "7995d2e241d96d9d0cc93fd3cfa8679a133ca6b2f28c4e24492d4e2d697346fc"
+    },
+    "reports/terminology/activation-20261104/synonyms.before.json": {
+      "bytes": 392345,
+      "sha256": "036d756fb202612122a31e8a041e60e98a33cc632a7caa41df25ccfe2689d527"
+    },
+    "reports/terminology/symptom_activation_decisions.csv": {
+      "bytes": 86103,
+      "sha256": "2909bd6e639736cb0c7a3b33505009a891a23e727f2722c6a55910d2d0f08c90"
+    },
+    "reports/terminology/symptom_activation_validation.json": {
+      "bytes": 603400,
+      "sha256": "aee45c47958b326b1550ec784731d4c325cf2e3c257be999d53d7c4392c7c13d"
+    },
+    "reports/terminology/symptom_dictionary_changes.csv": {
+      "bytes": 155795,
+      "sha256": "98004eed3dbc9d33120a19ed103071343b078df7a42e037973248e1b41fb8f95"
+    },
+    "reports/terminology/symptom_dictionary_collisions.csv": {
+      "bytes": 3781,
+      "sha256": "13a2f03e61f3b7c3fa4db0ec236fa95f40b9b4d049fd949d56aeb5072d915747"
+    },
+    "reports/terminology/symptom_dictionary_review.csv": {
+      "bytes": 211958,
+      "sha256": "40aa98c794817ad7b2eaa56e39060fecd96d5231928e3737da0f9628a65b63dc"
+    }
+  }
+}

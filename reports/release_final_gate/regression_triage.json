@@ -1,0 +1,757 @@
+{
+  "log_sha256": {
+    "batch-1.tests.txt": "636cd7364a8f3f0e3ca2204c669b900db63d8554db6c170dd7f828d6f1fd5471",
+    "baseline.tests.txt": "5e4460a2af0c6463090e96ac71b1476497b06f6c52431101a164b849cd57504b"
+  },
+  "normalization": "Only pytest run directory numbers and Python object memory addresses; compare exception lines + source frames separately from full context.",
+  "tests": [
+    {
+      "test_id": "tests/test_distribution.py::test_allowlist_has_no_original_artifacts_and_has_all_runtime_dependencies",
+      "scope": "Source publication inventory",
+      "exception": "E       assert 47 == 45",
+      "traceback_frames": "tests\\test_distribution.py:42: AssertionError",
+      "reproduced_after_rollback": true,
+      "normalized_exception_and_frames_equivalent": true,
+      "full_trace_context_equivalent": true,
+      "before_log_lines": [
+        403,
+        423
+      ],
+      "after_log_lines": [
+        403,
+        423
+      ],
+      "normalized_before_trace_sha256": "580028d4da312c1256d011d4f5f90bd1bac3aa1c3728efff330208dc05d428cf",
+      "normalized_after_trace_sha256": "580028d4da312c1256d011d4f5f90bd1bac3aa1c3728efff330208dc05d428cf",
+      "root_cause": "Test assert payload count45, make_publication thực47; các assertion allowlist/security trước đó đã đi qua. Số47 cần đối chiếu inventory theo nội dung.",
+      "website_impact": "Không nằm trong đường chạy website offline/predict hiện hành.",
+      "classification": "OPTIONAL"
+    },
+    {
+      "test_id": "tests/test_final_evaluation.py::test_protocol_evidence_and_notebook_gate_are_frozen",
+      "scope": "Notebook06 execution authorization",
+      "exception": "E       assert ('RUN_FINAL_LOCKED_TEST = False' in 'import json, platform, runpy\\\\nfrom pathlib import Path\\\\n\\\\n# Ch\\u1ec9 s\\u1eeda hai gi\\xe1 tr\\u1ecb n\\xe0y; digest l\\u1ea5y t\\u1eeb Windows stage/publ...st.read_bytes()).hexdigest()\\\\n\\\\nprint(\"\\u0110\\xe3 l\\u01b0u:\", dst)\\\\nprint(\"SHA-256:\", hashlib.sha256(dst.read_bytes()).hexdigest())')",
+      "traceback_frames": "tests\\test_final_evaluation.py:285: AssertionError",
+      "reproduced_after_rollback": true,
+      "normalized_exception_and_frames_equivalent": true,
+      "full_trace_context_equivalent": true,
+      "before_log_lines": [
+        423,
+        439
+      ],
+      "after_log_lines": [
+        423,
+        439
+      ],
+      "normalized_before_trace_sha256": "0e6e3fe2ad09cc424660dbac9ec3dcb6e640854ac0495de50afc541fc8864548",
+      "normalized_after_trace_sha256": "0e6e3fe2ad09cc424660dbac9ec3dcb6e640854ac0495de50afc541fc8864548",
+      "root_cause": "Notebook06 lưu RUN_FINAL_LOCKED_TEST=True và authorization text. Đây là unsafe release default thật; gate đã được đặt False và authorization rỗng, giữ output.",
+      "website_impact": "Không ảnh hưởng API nhưng chặn phát hành notebook an toàn. Đã sửa mặc định source, cần kiểm receipt.",
+      "classification": "BLOCKER"
+    },
+    {
+      "test_id": "tests/test_final_evaluation.py::test_whole_preparation_notebook_is_independent_and_never_opens_test[colab_smoke_test.ipynb]",
+      "scope": "Colab smoke notebook fixture",
+      "exception": "E   ModuleNotFoundError: No module named 'google.colab'",
+      "traceback_frames": "tests\\test_final_evaluation.py:411:  | tests\\test_final_evaluation.py:401: in _run_preparation_notebook",
+      "reproduced_after_rollback": true,
+      "normalized_exception_and_frames_equivalent": true,
+      "full_trace_context_equivalent": true,
+      "before_log_lines": [
+        439,
+        461
+      ],
+      "after_log_lines": [
+        439,
+        461
+      ],
+      "normalized_before_trace_sha256": "fa4f910b2ebc00cdeff66dde295dc4e02590e95e5a2cc3559f0634bed88be00c",
+      "normalized_after_trace_sha256": "fa4f910b2ebc00cdeff66dde295dc4e02590e95e5a2cc3559f0634bed88be00c",
+      "root_cause": "Notebook smoke có cell import google.colab; harness Windows không mock module này/không giới hạn setup cells. ImportError trước điều kiện giả lập.",
+      "website_impact": "Không nằm trong đường chạy website offline/predict hiện hành.",
+      "classification": "ENVIRONMENT"
+    },
+    {
+      "test_id": "tests/test_final_evaluation.py::test_whole_preparation_notebook_is_independent_and_never_opens_test[06_final_model_evaluation.ipynb]",
+      "scope": "Notebook06 preparation / evaluation gate",
+      "exception": "E       AssertionError: Preparation must not evaluate/train/predict",
+      "traceback_frames": "tests\\test_final_evaluation.py:411:  | tests\\test_final_evaluation.py:401: in _run_preparation_notebook | tests\\test_final_evaluation.py:332: AssertionError",
+      "reproduced_after_rollback": true,
+      "normalized_exception_and_frames_equivalent": true,
+      "full_trace_context_equivalent": true,
+      "before_log_lines": [
+        461,
+        492
+      ],
+      "after_log_lines": [
+        461,
+        492
+      ],
+      "normalized_before_trace_sha256": "dcb7ee33b6eb0353651c180c2a043f5db5b0802a11b0439932388eaf8830e574",
+      "normalized_after_trace_sha256": "dcb7ee33b6eb0353651c180c2a043f5db5b0802a11b0439932388eaf8830e574",
+      "root_cause": "Harness chạy cell đánh giá vì gate trong source=True; stub evaluate cố ý ném AssertionError trước mọi payload. Unsafe default đã sửa, không thay assertion.",
+      "website_impact": "Chặn phát hành notebook trước safe-default fix; không chứng minh test thật đã bị mở trong regression.",
+      "classification": "BLOCKER"
+    },
+    {
+      "test_id": "tests/test_final_evaluation.py::test_notebook_prerequisite_failures_report_first_blocker_without_stale_session[mount-Drive mount-colab_smoke_test.ipynb]",
+      "scope": "Colab smoke notebook fixture",
+      "exception": "E   ModuleNotFoundError: No module named 'google.colab'",
+      "traceback_frames": "tests\\test_final_evaluation.py:430:  | tests\\test_final_evaluation.py:401: in _run_preparation_notebook",
+      "reproduced_after_rollback": true,
+      "normalized_exception_and_frames_equivalent": true,
+      "full_trace_context_equivalent": true,
+      "before_log_lines": [
+        492,
+        519
+      ],
+      "after_log_lines": [
+        492,
+        519
+      ],
+      "normalized_before_trace_sha256": "e8d4ac1a29d71e6667961a8cfeef6b9348fa6ae97bd24b628787ba88af2a4e6f",
+      "normalized_after_trace_sha256": "e8d4ac1a29d71e6667961a8cfeef6b9348fa6ae97bd24b628787ba88af2a4e6f",
+      "root_cause": "Notebook smoke có cell import google.colab; harness Windows không mock module này/không giới hạn setup cells. ImportError trước điều kiện giả lập.",
+      "website_impact": "Không nằm trong đường chạy website offline/predict hiện hành.",
+      "classification": "ENVIRONMENT"
+    },
+    {
+      "test_id": "tests/test_final_evaluation.py::test_notebook_prerequisite_failures_report_first_blocker_without_stale_session[mount-Drive mount-06_final_model_evaluation.ipynb]",
+      "scope": "Notebook06 synthetic prerequisite/closeout harness",
+      "exception": "E   RuntimeError: BLOCKED: preflight ch\\u01b0a PASS. Kh\\xf4ng \\u0111\\u01b0\\u1ee3c d\\xf9ng gate \\u0111\\u1ec3 b\\u1ecf qua blocker.",
+      "traceback_frames": "tests\\test_final_evaluation.py:430:  | tests\\test_final_evaluation.py:401: in _run_preparation_notebook",
+      "reproduced_after_rollback": true,
+      "normalized_exception_and_frames_equivalent": true,
+      "full_trace_context_equivalent": true,
+      "before_log_lines": [
+        519,
+        546
+      ],
+      "after_log_lines": [
+        519,
+        546
+      ],
+      "normalized_before_trace_sha256": "0f1a99ec4785405dd094ea71cbdf219ab536d8edf906982c20570657e4cd63a1",
+      "normalized_after_trace_sha256": "0f1a99ec4785405dd094ea71cbdf219ab536d8edf906982c20570657e4cd63a1",
+      "root_cause": "Source raise RuntimeError khi PREFLIGHT_OK=False; harness execute toàn notebook không bắt fail-closed exception. Không đạt stage mà assertion cuối mong đợi.",
+      "website_impact": "Không nằm trong đường chạy website offline/predict hiện hành.",
+      "classification": "OPTIONAL"
+    },
+    {
+      "test_id": "tests/test_final_evaluation.py::test_notebook_prerequisite_failures_report_first_blocker_without_stale_session[source-Published source-colab_smoke_test.ipynb]",
+      "scope": "Colab smoke notebook fixture",
+      "exception": "E   ModuleNotFoundError: No module named 'google.colab'",
+      "traceback_frames": "tests\\test_final_evaluation.py:430:  | tests\\test_final_evaluation.py:401: in _run_preparation_notebook",
+      "reproduced_after_rollback": true,
+      "normalized_exception_and_frames_equivalent": true,
+      "full_trace_context_equivalent": true,
+      "before_log_lines": [
+        546,
+        573
+      ],
+      "after_log_lines": [
+        546,
+        573
+      ],
+      "normalized_before_trace_sha256": "e8d4ac1a29d71e6667961a8cfeef6b9348fa6ae97bd24b628787ba88af2a4e6f",
+      "normalized_after_trace_sha256": "e8d4ac1a29d71e6667961a8cfeef6b9348fa6ae97bd24b628787ba88af2a4e6f",
+      "root_cause": "Notebook smoke có cell import google.colab; harness Windows không mock module này/không giới hạn setup cells. ImportError trước điều kiện giả lập.",
+      "website_impact": "Không nằm trong đường chạy website offline/predict hiện hành.",
+      "classification": "ENVIRONMENT"
+    },
+    {
+      "test_id": "tests/test_final_evaluation.py::test_notebook_prerequisite_failures_report_first_blocker_without_stale_session[source-Published source-06_final_model_evaluation.ipynb]",
+      "scope": "Notebook06 synthetic prerequisite/closeout harness",
+      "exception": "E   RuntimeError: BLOCKED: preflight ch\\u01b0a PASS. Kh\\xf4ng \\u0111\\u01b0\\u1ee3c d\\xf9ng gate \\u0111\\u1ec3 b\\u1ecf qua blocker.",
+      "traceback_frames": "tests\\test_final_evaluation.py:430:  | tests\\test_final_evaluation.py:401: in _run_preparation_notebook",
+      "reproduced_after_rollback": true,
+      "normalized_exception_and_frames_equivalent": true,
+      "full_trace_context_equivalent": true,
+      "before_log_lines": [
+        573,
+        601
+      ],
+      "after_log_lines": [
+        573,
+        601
+      ],
+      "normalized_before_trace_sha256": "0f1a99ec4785405dd094ea71cbdf219ab536d8edf906982c20570657e4cd63a1",
+      "normalized_after_trace_sha256": "0f1a99ec4785405dd094ea71cbdf219ab536d8edf906982c20570657e4cd63a1",
+      "root_cause": "Source raise RuntimeError khi PREFLIGHT_OK=False; harness execute toàn notebook không bắt fail-closed exception. Không đạt stage mà assertion cuối mong đợi.",
+      "website_impact": "Không nằm trong đường chạy website offline/predict hiện hành.",
+      "classification": "OPTIONAL"
+    },
+    {
+      "test_id": "tests/test_final_evaluation.py::test_notebook_prerequisite_failures_report_first_blocker_without_stale_session[digest-Source release / bootstrap-colab_smoke_test.ipynb]",
+      "scope": "Colab smoke notebook fixture",
+      "exception": "E   ModuleNotFoundError: No module named 'google.colab'",
+      "traceback_frames": "tests\\test_final_evaluation.py:430:  | tests\\test_final_evaluation.py:401: in _run_preparation_notebook",
+      "reproduced_after_rollback": true,
+      "normalized_exception_and_frames_equivalent": true,
+      "full_trace_context_equivalent": true,
+      "before_log_lines": [
+        601,
+        629
+      ],
+      "after_log_lines": [
+        601,
+        629
+      ],
+      "normalized_before_trace_sha256": "e8d4ac1a29d71e6667961a8cfeef6b9348fa6ae97bd24b628787ba88af2a4e6f",
+      "normalized_after_trace_sha256": "e8d4ac1a29d71e6667961a8cfeef6b9348fa6ae97bd24b628787ba88af2a4e6f",
+      "root_cause": "Notebook smoke có cell import google.colab; harness Windows không mock module này/không giới hạn setup cells. ImportError trước điều kiện giả lập.",
+      "website_impact": "Không nằm trong đường chạy website offline/predict hiện hành.",
+      "classification": "ENVIRONMENT"
+    },
+    {
+      "test_id": "tests/test_final_evaluation.py::test_notebook_prerequisite_failures_report_first_blocker_without_stale_session[digest-Source release / bootstrap-06_final_model_evaluation.ipynb]",
+      "scope": "Notebook06 synthetic prerequisite/closeout harness",
+      "exception": "E   RuntimeError: BLOCKED: preflight ch\\u01b0a PASS. Kh\\xf4ng \\u0111\\u01b0\\u1ee3c d\\xf9ng gate \\u0111\\u1ec3 b\\u1ecf qua blocker.",
+      "traceback_frames": "tests\\test_final_evaluation.py:430:  | tests\\test_final_evaluation.py:401: in _run_preparation_notebook",
+      "reproduced_after_rollback": true,
+      "normalized_exception_and_frames_equivalent": true,
+      "full_trace_context_equivalent": true,
+      "before_log_lines": [
+        629,
+        659
+      ],
+      "after_log_lines": [
+        629,
+        659
+      ],
+      "normalized_before_trace_sha256": "0f1a99ec4785405dd094ea71cbdf219ab536d8edf906982c20570657e4cd63a1",
+      "normalized_after_trace_sha256": "0f1a99ec4785405dd094ea71cbdf219ab536d8edf906982c20570657e4cd63a1",
+      "root_cause": "Source raise RuntimeError khi PREFLIGHT_OK=False; harness execute toàn notebook không bắt fail-closed exception. Không đạt stage mà assertion cuối mong đợi.",
+      "website_impact": "Không nằm trong đường chạy website offline/predict hiện hành.",
+      "classification": "OPTIONAL"
+    },
+    {
+      "test_id": "tests/test_final_evaluation.py::test_notebook06_reports_checkpoint_or_environment_blocker_without_evaluating[checkpoint--missing-fixture/]",
+      "scope": "Notebook06 synthetic prerequisite/closeout harness",
+      "exception": "E   RuntimeError: BLOCKED: preflight ch\\u01b0a PASS. Kh\\xf4ng \\u0111\\u01b0\\u1ee3c d\\xf9ng gate \\u0111\\u1ec3 b\\u1ecf qua blocker.",
+      "traceback_frames": "tests\\test_final_evaluation.py:440:  | tests\\test_final_evaluation.py:401: in _run_preparation_notebook",
+      "reproduced_after_rollback": true,
+      "normalized_exception_and_frames_equivalent": true,
+      "full_trace_context_equivalent": true,
+      "before_log_lines": [
+        659,
+        684
+      ],
+      "after_log_lines": [
+        659,
+        684
+      ],
+      "normalized_before_trace_sha256": "e7bbd637321d21dfabf8cc9d15f20b3c36e340fca5e1dd4de59d29d87317f726",
+      "normalized_after_trace_sha256": "e7bbd637321d21dfabf8cc9d15f20b3c36e340fca5e1dd4de59d29d87317f726",
+      "root_cause": "Source raise RuntimeError khi PREFLIGHT_OK=False; harness execute toàn notebook không bắt fail-closed exception. Không đạt stage mà assertion cuối mong đợi.",
+      "website_impact": "Không nằm trong đường chạy website offline/predict hiện hành.",
+      "classification": "OPTIONAL"
+    },
+    {
+      "test_id": "tests/test_final_evaluation.py::test_notebook06_reports_checkpoint_or_environment_blocker_without_evaluating[environment-environment differs]",
+      "scope": "Notebook06 synthetic prerequisite/closeout harness",
+      "exception": "E   RuntimeError: BLOCKED: preflight ch\\u01b0a PASS. Kh\\xf4ng \\u0111\\u01b0\\u1ee3c d\\xf9ng gate \\u0111\\u1ec3 b\\u1ecf qua blocker.",
+      "traceback_frames": "tests\\test_final_evaluation.py:440:  | tests\\test_final_evaluation.py:401: in _run_preparation_notebook",
+      "reproduced_after_rollback": true,
+      "normalized_exception_and_frames_equivalent": true,
+      "full_trace_context_equivalent": true,
+      "before_log_lines": [
+        684,
+        709
+      ],
+      "after_log_lines": [
+        684,
+        709
+      ],
+      "normalized_before_trace_sha256": "e7bbd637321d21dfabf8cc9d15f20b3c36e340fca5e1dd4de59d29d87317f726",
+      "normalized_after_trace_sha256": "e7bbd637321d21dfabf8cc9d15f20b3c36e340fca5e1dd4de59d29d87317f726",
+      "root_cause": "Source raise RuntimeError khi PREFLIGHT_OK=False; harness execute toàn notebook không bắt fail-closed exception. Không đạt stage mà assertion cuối mong đợi.",
+      "website_impact": "Không nằm trong đường chạy website offline/predict hiện hành.",
+      "classification": "OPTIONAL"
+    },
+    {
+      "test_id": "tests/test_final_evaluation.py::test_notebook06_replays_completed_fixture_without_reopening_test",
+      "scope": "Notebook06 synthetic prerequisite/closeout harness",
+      "exception": "E   RuntimeError: BLOCKED: preflight ch\\u01b0a PASS. Kh\\xf4ng \\u0111\\u01b0\\u1ee3c d\\xf9ng gate \\u0111\\u1ec3 b\\u1ecf qua blocker.",
+      "traceback_frames": "tests\\test_final_evaluation.py:451:  | tests\\test_final_evaluation.py:401: in _run_preparation_notebook",
+      "reproduced_after_rollback": true,
+      "normalized_exception_and_frames_equivalent": true,
+      "full_trace_context_equivalent": true,
+      "before_log_lines": [
+        709,
+        736
+      ],
+      "after_log_lines": [
+        709,
+        736
+      ],
+      "normalized_before_trace_sha256": "73b06d2a4e7f476ae7802ff712bd57c70ce9c999f760e143cfb95a73c73cc5dc",
+      "normalized_after_trace_sha256": "73b06d2a4e7f476ae7802ff712bd57c70ce9c999f760e143cfb95a73c73cc5dc",
+      "root_cause": "Source raise RuntimeError khi PREFLIGHT_OK=False; harness execute toàn notebook không bắt fail-closed exception. Không đạt stage mà assertion cuối mong đợi.",
+      "website_impact": "Không nằm trong đường chạy website offline/predict hiện hành.",
+      "classification": "OPTIONAL"
+    },
+    {
+      "test_id": "tests/test_final_evaluation.py::test_closeout_notebook_blocks_even_if_user_reenables_gate",
+      "scope": "Notebook06 closeout guard",
+      "exception": "E       StopIteration",
+      "traceback_frames": "tests\\test_final_evaluation.py:460: StopIteration",
+      "reproduced_after_rollback": true,
+      "normalized_exception_and_frames_equivalent": true,
+      "full_trace_context_equivalent": true,
+      "before_log_lines": [
+        736,
+        745
+      ],
+      "after_log_lines": [
+        736,
+        745
+      ],
+      "normalized_before_trace_sha256": "af137ab4c645cd775139941e8703134c6bb49461c1edc38433c6927ae980c804",
+      "normalized_after_trace_sha256": "af137ab4c645cd775139941e8703134c6bb49461c1edc38433c6927ae980c804",
+      "root_cause": "Test tìm cell có RuntimeError+read_completed nhưng không còn cell dạng đó; StopIteration. Source chưa thể hiện closeout-only guard mà test yêu cầu.",
+      "website_impact": "Không ảnh hưởng local web; bảo vệ RunAll notebook06 chưa được xác minh đầy đủ. Không chạy notebook để chứng minh.",
+      "classification": "BLOCKER"
+    },
+    {
+      "test_id": "tests/test_manifest_deployment.py::test_prepare_has_one_folder_and_no_data_or_receipts",
+      "scope": "Source staging PowerShell fixture",
+      "exception": "E       AssertionError: D:\\Program Files (x86)\\Python\\Python311\\python.exe: can't open file 'C:\\\\Users\\\\User\\\\AppData\\\\Local\\\\Temp\\\\pytest-of-User\\\\pytest-185\\\\test_prepare_has_one_folder_an0\\\\editing workspace\\\\scripts\\\\package_handover.py': [Errno 2] No such file or directory | E             + CategoryInfo          : OperationStopped: (Source operatio...s synchronized.:String) [], RuntimeException | E             + FullyQualifiedErrorId : Source operation failed (exit 2). Nothing in data/models was synchronized. | E       assert 1 == 0 | E        +  where 1 = CompletedProcess(args=['powershell', '-NoProfile', '-ExecutionPolicy', 'Bypass', '-File', 'C:\\\\Users\\\\User\\\\AppData\\\\L...eption\\n    + FullyQualifiedErrorId : Source operation failed (exit 2). Nothing in data/models was synchronized.\\n \\n').returncode",
+      "traceback_frames": "tests\\test_manifest_deployment.py:38: AssertionError",
+      "reproduced_after_rollback": true,
+      "normalized_exception_and_frames_equivalent": true,
+      "full_trace_context_equivalent": true,
+      "before_log_lines": [
+        745,
+        768
+      ],
+      "after_log_lines": [
+        745,
+        768
+      ],
+      "normalized_before_trace_sha256": "f5fe0d164e387b203588ea2181edc86a690e5dceaee57c29def09ff5cee59480",
+      "normalized_after_trace_sha256": "f5fe0d164e387b203588ea2181edc86a690e5dceaee57c29def09ff5cee59480",
+      "root_cause": "editing_project chỉ copy prepare_colab_source.ps1, không copy package_handover.py mà helper hiện gọi; subprocess exit2 (file not found).",
+      "website_impact": "Không nằm trong đường chạy website offline/predict hiện hành.",
+      "classification": "OPTIONAL"
+    },
+    {
+      "test_id": "tests/test_manifest_deployment.py::test_refresh_preserves_historical_packages_and_detects_stale_source",
+      "scope": "Source staging PowerShell fixture",
+      "exception": "E       AssertionError: assert 1 == 0 | E        +  where 1 = CompletedProcess(args=['powershell', '-NoProfile', '-ExecutionPolicy', 'Bypass', '-File', 'C:\\\\Users\\\\User\\\\AppData\\\\L...eption\\n    + FullyQualifiedErrorId : Source operation failed (exit 2). Nothing in data/models was synchronized.\\n \\n').returncode | E        +    where CompletedProcess(args=['powershell', '-NoProfile', '-ExecutionPolicy', 'Bypass', '-File', 'C:\\\\Users\\\\User\\\\AppData\\\\L...eption\\n    + FullyQualifiedErrorId : Source operation failed (exit 2). Nothing in data/models was synchronized.\\n \\n') = prepare(WindowsPath('C:/Users/User/AppData/Local/Temp/pytest-of-User/pytest-185/test_refresh_preserves_histori0/editing workspace'))",
+      "traceback_frames": "tests\\test_manifest_deployment.py:54: AssertionError",
+      "reproduced_after_rollback": true,
+      "normalized_exception_and_frames_equivalent": true,
+      "full_trace_context_equivalent": true,
+      "before_log_lines": [
+        768,
+        780
+      ],
+      "after_log_lines": [
+        768,
+        780
+      ],
+      "normalized_before_trace_sha256": "03fce7be5672ac44ef29983e18c4fb9226a6ddc2b0b37e0e2ac755a5be691003",
+      "normalized_after_trace_sha256": "03fce7be5672ac44ef29983e18c4fb9226a6ddc2b0b37e0e2ac755a5be691003",
+      "root_cause": "editing_project chỉ copy prepare_colab_source.ps1, không copy package_handover.py mà helper hiện gọi; subprocess exit2 (file not found).",
+      "website_impact": "Không nằm trong đường chạy website offline/predict hiện hành.",
+      "classification": "OPTIONAL"
+    },
+    {
+      "test_id": "tests/test_manifest_deployment.py::test_refresh_preserves_unrelated_files_in_staging",
+      "scope": "Source staging PowerShell fixture",
+      "exception": "E       AssertionError: assert 1 == 0 | E        +  where 1 = CompletedProcess(args=['powershell', '-NoProfile', '-ExecutionPolicy', 'Bypass', '-File', 'C:\\\\Users\\\\User\\\\AppData\\\\L...eption\\n    + FullyQualifiedErrorId : Source operation failed (exit 2). Nothing in data/models was synchronized.\\n \\n').returncode | E        +    where CompletedProcess(args=['powershell', '-NoProfile', '-ExecutionPolicy', 'Bypass', '-File', 'C:\\\\Users\\\\User\\\\AppData\\\\L...eption\\n    + FullyQualifiedErrorId : Source operation failed (exit 2). Nothing in data/models was synchronized.\\n \\n') = prepare(WindowsPath('C:/Users/User/AppData/Local/Temp/pytest-of-User/pytest-185/test_refresh_preserves_unrelat0/editing workspace'))",
+      "traceback_frames": "tests\\test_manifest_deployment.py:71: AssertionError",
+      "reproduced_after_rollback": true,
+      "normalized_exception_and_frames_equivalent": true,
+      "full_trace_context_equivalent": true,
+      "before_log_lines": [
+        780,
+        792
+      ],
+      "after_log_lines": [
+        780,
+        792
+      ],
+      "normalized_before_trace_sha256": "39ea0561e3e45ff56119f8b2c7b582aa2e38897cfc05b4530755c49c80ecaff9",
+      "normalized_after_trace_sha256": "39ea0561e3e45ff56119f8b2c7b582aa2e38897cfc05b4530755c49c80ecaff9",
+      "root_cause": "editing_project chỉ copy prepare_colab_source.ps1, không copy package_handover.py mà helper hiện gọi; subprocess exit2 (file not found).",
+      "website_impact": "Không nằm trong đường chạy website offline/predict hiện hành.",
+      "classification": "OPTIONAL"
+    },
+    {
+      "test_id": "tests/test_notebook_bootstrap.py::test_embedded_bootstrap_works_before_src_import_is_possible",
+      "scope": "Notebook generator / fixtures",
+      "exception": "E   ModuleNotFoundError: No module named 'nbformat'",
+      "traceback_frames": "",
+      "reproduced_after_rollback": true,
+      "normalized_exception_and_frames_equivalent": true,
+      "full_trace_context_equivalent": true,
+      "before_log_lines": [
+        792,
+        817
+      ],
+      "after_log_lines": [
+        792,
+        817
+      ],
+      "normalized_before_trace_sha256": "0b865f682e0fe82d6a44abc7ea7c29ea791a2a32358ad9dd69cf31bfe478cef6",
+      "normalized_after_trace_sha256": "0b865f682e0fe82d6a44abc7ea7c29ea791a2a32358ad9dd69cf31bfe478cef6",
+      "root_cause": "Import scripts/build_notebooks.py:8 thiếu nbformat trong interpreter test Python3.11; setup lỗi trước assertion.",
+      "website_impact": "Không nằm trong đường chạy website offline/predict hiện hành.",
+      "classification": "ENVIRONMENT"
+    },
+    {
+      "test_id": "tests/test_notebook_bootstrap.py::test_updater_preserves_user_mount_and_path_settings",
+      "scope": "Notebook generator / fixtures",
+      "exception": "E   ModuleNotFoundError: No module named 'nbformat'",
+      "traceback_frames": "",
+      "reproduced_after_rollback": true,
+      "normalized_exception_and_frames_equivalent": true,
+      "full_trace_context_equivalent": true,
+      "before_log_lines": [
+        817,
+        842
+      ],
+      "after_log_lines": [
+        817,
+        842
+      ],
+      "normalized_before_trace_sha256": "0b865f682e0fe82d6a44abc7ea7c29ea791a2a32358ad9dd69cf31bfe478cef6",
+      "normalized_after_trace_sha256": "0b865f682e0fe82d6a44abc7ea7c29ea791a2a32358ad9dd69cf31bfe478cef6",
+      "root_cause": "Import scripts/build_notebooks.py:8 thiếu nbformat trong interpreter test Python3.11; setup lỗi trước assertion.",
+      "website_impact": "Không nằm trong đường chạy website offline/predict hiện hành.",
+      "classification": "ENVIRONMENT"
+    },
+    {
+      "test_id": "tests/test_phase3_training.py::test_each_pipeline_fits_variance_on_train_only_and_predicts[random_forest]",
+      "scope": "Training RandomForest synthetic fixture",
+      "exception": "E       PermissionError: [WinError 5] Access is denied",
+      "traceback_frames": "tests\\test_phase3_training.py:144: ",
+      "reproduced_after_rollback": true,
+      "normalized_exception_and_frames_equivalent": true,
+      "full_trace_context_equivalent": true,
+      "before_log_lines": [
+        842,
+        936
+      ],
+      "after_log_lines": [
+        842,
+        936
+      ],
+      "normalized_before_trace_sha256": "5862749cefa42c674c35e33ddf44350fec985083e13b6507cc811b2aea2c368a",
+      "normalized_after_trace_sha256": "5862749cefa42c674c35e33ddf44350fec985083e13b6507cc811b2aea2c368a",
+      "root_cause": "joblib/multiprocessing dùng Windows named pipe; _winapi.CreateFile phát sinh PermissionError WinError5. Không phải load LR đã fit.",
+      "website_impact": "Không nằm trong đường chạy website offline/predict hiện hành.",
+      "classification": "ENVIRONMENT"
+    },
+    {
+      "test_id": "tests/test_phase3_training.py::test_compact_notebook_interface_runs_complete_workflow",
+      "scope": "Notebook03 historical baseline teaching fixture",
+      "exception": "E           src.models.ensemble.IntegrityError: Sai k\\xedch th\\u01b0\\u1edbc Phase 2 \\u0111\\xe3 duy\\u1ec7t.",
+      "traceback_frames": "tests\\test_phase3_training.py:376:  | src\\models\\tuning.py:285: in run_tuning | src\\models\\ensemble.py:232: in verify | src\\models\\ensemble.py:122: IntegrityError",
+      "reproduced_after_rollback": true,
+      "normalized_exception_and_frames_equivalent": true,
+      "full_trace_context_equivalent": true,
+      "before_log_lines": [
+        936,
+        995
+      ],
+      "after_log_lines": [
+        936,
+        995
+      ],
+      "normalized_before_trace_sha256": "4736ac3303f7cd175fe83f973b0cbeade6fd3be6a094ec3ab572174366207d7a",
+      "normalized_after_trace_sha256": "4736ac3303f7cd175fe83f973b0cbeade6fd3be6a094ec3ab572174366207d7a",
+      "root_cause": "Test exec mọi code cell sau setup; notebook chủ ý bật tuning, synthetic7features/ít lớp bị baseline.verify() chặn trước tuning. Không fit tuning hoặc đọc test thật.",
+      "website_impact": "Không nằm trong đường chạy website offline/predict hiện hành.",
+      "classification": "OPTIONAL"
+    },
+    {
+      "test_id": "tests/test_phase2_notebook.py::test_old_phase1_source_zip_is_rejected_before_extraction",
+      "scope": "Notebook generator / fixtures",
+      "exception": "E   ModuleNotFoundError: No module named 'nbformat'",
+      "traceback_frames": "tests\\test_phase2_notebook.py:17:  | scripts\\build_preprocessing_notebook.py:2: in <module> | scripts\\build_notebooks.py:8: ModuleNotFoundError",
+      "reproduced_after_rollback": true,
+      "normalized_exception_and_frames_equivalent": true,
+      "full_trace_context_equivalent": true,
+      "before_log_lines": [
+        51,
+        78
+      ],
+      "after_log_lines": [
+        51,
+        78
+      ],
+      "normalized_before_trace_sha256": "b00fde28006a30844835a4f898803bb2d27f3ee54e482fc1619b38d08605245e",
+      "normalized_after_trace_sha256": "b00fde28006a30844835a4f898803bb2d27f3ee54e482fc1619b38d08605245e",
+      "root_cause": "Import scripts/build_notebooks.py:8 thiếu nbformat trong interpreter test Python3.11; setup lỗi trước assertion.",
+      "website_impact": "Không nằm trong đường chạy website offline/predict hiện hành.",
+      "classification": "ENVIRONMENT"
+    },
+    {
+      "test_id": "tests/test_phase2_notebook.py::test_old_checked_out_source_has_actionable_message_without_importing_src",
+      "scope": "Notebook generator / fixtures",
+      "exception": "E   ModuleNotFoundError: No module named 'nbformat'",
+      "traceback_frames": "tests\\test_phase2_notebook.py:17:  | scripts\\build_preprocessing_notebook.py:2: in <module> | scripts\\build_notebooks.py:8: ModuleNotFoundError",
+      "reproduced_after_rollback": true,
+      "normalized_exception_and_frames_equivalent": true,
+      "full_trace_context_equivalent": true,
+      "before_log_lines": [
+        78,
+        105
+      ],
+      "after_log_lines": [
+        78,
+        105
+      ],
+      "normalized_before_trace_sha256": "b00fde28006a30844835a4f898803bb2d27f3ee54e482fc1619b38d08605245e",
+      "normalized_after_trace_sha256": "b00fde28006a30844835a4f898803bb2d27f3ee54e482fc1619b38d08605245e",
+      "root_cause": "Import scripts/build_notebooks.py:8 thiếu nbformat trong interpreter test Python3.11; setup lỗi trước assertion.",
+      "website_impact": "Không nằm trong đường chạy website offline/predict hiện hành.",
+      "classification": "ENVIRONMENT"
+    },
+    {
+      "test_id": "tests/test_phase2_notebook.py::test_phase2_zip_bootstraps_in_content_without_src_and_preserves_old_checkout",
+      "scope": "Notebook generator / fixtures",
+      "exception": "E   ModuleNotFoundError: No module named 'nbformat'",
+      "traceback_frames": "tests\\test_phase2_notebook.py:17:  | scripts\\build_preprocessing_notebook.py:2: in <module> | scripts\\build_notebooks.py:8: ModuleNotFoundError",
+      "reproduced_after_rollback": true,
+      "normalized_exception_and_frames_equivalent": true,
+      "full_trace_context_equivalent": true,
+      "before_log_lines": [
+        105,
+        132
+      ],
+      "after_log_lines": [
+        105,
+        132
+      ],
+      "normalized_before_trace_sha256": "b00fde28006a30844835a4f898803bb2d27f3ee54e482fc1619b38d08605245e",
+      "normalized_after_trace_sha256": "b00fde28006a30844835a4f898803bb2d27f3ee54e482fc1619b38d08605245e",
+      "root_cause": "Import scripts/build_notebooks.py:8 thiếu nbformat trong interpreter test Python3.11; setup lỗi trước assertion.",
+      "website_impact": "Không nằm trong đường chạy website offline/predict hiện hành.",
+      "classification": "ENVIRONMENT"
+    },
+    {
+      "test_id": "tests/test_phase2_notebook.py::test_visible_main_workflow_precedes_optional_history",
+      "scope": "Notebook generator / fixtures",
+      "exception": "E   ModuleNotFoundError: No module named 'nbformat'",
+      "traceback_frames": "tests\\test_phase2_notebook.py:17:  | scripts\\build_preprocessing_notebook.py:2: in <module> | scripts\\build_notebooks.py:8: ModuleNotFoundError",
+      "reproduced_after_rollback": true,
+      "normalized_exception_and_frames_equivalent": true,
+      "full_trace_context_equivalent": true,
+      "before_log_lines": [
+        132,
+        159
+      ],
+      "after_log_lines": [
+        132,
+        159
+      ],
+      "normalized_before_trace_sha256": "b00fde28006a30844835a4f898803bb2d27f3ee54e482fc1619b38d08605245e",
+      "normalized_after_trace_sha256": "b00fde28006a30844835a4f898803bb2d27f3ee54e482fc1619b38d08605245e",
+      "root_cause": "Import scripts/build_notebooks.py:8 thiếu nbformat trong interpreter test Python3.11; setup lỗi trước assertion.",
+      "website_impact": "Không nằm trong đường chạy website offline/predict hiện hành.",
+      "classification": "ENVIRONMENT"
+    },
+    {
+      "test_id": "tests/test_phase2_notebook.py::test_history_defaults_to_disabled_and_main_outputs_remain_visible",
+      "scope": "Notebook generator / fixtures",
+      "exception": "E   ModuleNotFoundError: No module named 'nbformat'",
+      "traceback_frames": "tests\\test_phase2_notebook.py:17:  | scripts\\build_preprocessing_notebook.py:2: in <module> | scripts\\build_notebooks.py:8: ModuleNotFoundError",
+      "reproduced_after_rollback": true,
+      "normalized_exception_and_frames_equivalent": true,
+      "full_trace_context_equivalent": true,
+      "before_log_lines": [
+        159,
+        186
+      ],
+      "after_log_lines": [
+        159,
+        186
+      ],
+      "normalized_before_trace_sha256": "b00fde28006a30844835a4f898803bb2d27f3ee54e482fc1619b38d08605245e",
+      "normalized_after_trace_sha256": "b00fde28006a30844835a4f898803bb2d27f3ee54e482fc1619b38d08605245e",
+      "root_cause": "Import scripts/build_notebooks.py:8 thiếu nbformat trong interpreter test Python3.11; setup lỗi trước assertion.",
+      "website_impact": "Không nằm trong đường chạy website offline/predict hiện hành.",
+      "classification": "ENVIRONMENT"
+    },
+    {
+      "test_id": "tests/test_phase2_notebook.py::test_threshold_cell_displays_tables_and_figure_without_report_png[False-False]",
+      "scope": "Notebook generator / fixtures",
+      "exception": "E   ModuleNotFoundError: No module named 'nbformat'",
+      "traceback_frames": "tests\\test_phase2_notebook.py:17:  | scripts\\build_preprocessing_notebook.py:2: in <module> | scripts\\build_notebooks.py:8: ModuleNotFoundError",
+      "reproduced_after_rollback": true,
+      "normalized_exception_and_frames_equivalent": true,
+      "full_trace_context_equivalent": true,
+      "before_log_lines": [
+        186,
+        213
+      ],
+      "after_log_lines": [
+        186,
+        213
+      ],
+      "normalized_before_trace_sha256": "b00fde28006a30844835a4f898803bb2d27f3ee54e482fc1619b38d08605245e",
+      "normalized_after_trace_sha256": "b00fde28006a30844835a4f898803bb2d27f3ee54e482fc1619b38d08605245e",
+      "root_cause": "Import scripts/build_notebooks.py:8 thiếu nbformat trong interpreter test Python3.11; setup lỗi trước assertion.",
+      "website_impact": "Không nằm trong đường chạy website offline/predict hiện hành.",
+      "classification": "ENVIRONMENT"
+    },
+    {
+      "test_id": "tests/test_phase2_notebook.py::test_threshold_cell_displays_tables_and_figure_without_report_png[False-True]",
+      "scope": "Notebook generator / fixtures",
+      "exception": "E   ModuleNotFoundError: No module named 'nbformat'",
+      "traceback_frames": "tests\\test_phase2_notebook.py:17:  | scripts\\build_preprocessing_notebook.py:2: in <module> | scripts\\build_notebooks.py:8: ModuleNotFoundError",
+      "reproduced_after_rollback": true,
+      "normalized_exception_and_frames_equivalent": true,
+      "full_trace_context_equivalent": true,
+      "before_log_lines": [
+        213,
+        240
+      ],
+      "after_log_lines": [
+        213,
+        240
+      ],
+      "normalized_before_trace_sha256": "b00fde28006a30844835a4f898803bb2d27f3ee54e482fc1619b38d08605245e",
+      "normalized_after_trace_sha256": "b00fde28006a30844835a4f898803bb2d27f3ee54e482fc1619b38d08605245e",
+      "root_cause": "Import scripts/build_notebooks.py:8 thiếu nbformat trong interpreter test Python3.11; setup lỗi trước assertion.",
+      "website_impact": "Không nằm trong đường chạy website offline/predict hiện hành.",
+      "classification": "ENVIRONMENT"
+    },
+    {
+      "test_id": "tests/test_phase2_notebook.py::test_threshold_cell_displays_tables_and_figure_without_report_png[True-False]",
+      "scope": "Notebook generator / fixtures",
+      "exception": "E   ModuleNotFoundError: No module named 'nbformat'",
+      "traceback_frames": "tests\\test_phase2_notebook.py:17:  | scripts\\build_preprocessing_notebook.py:2: in <module> | scripts\\build_notebooks.py:8: ModuleNotFoundError",
+      "reproduced_after_rollback": true,
+      "normalized_exception_and_frames_equivalent": true,
+      "full_trace_context_equivalent": true,
+      "before_log_lines": [
+        240,
+        267
+      ],
+      "after_log_lines": [
+        240,
+        267
+      ],
+      "normalized_before_trace_sha256": "b00fde28006a30844835a4f898803bb2d27f3ee54e482fc1619b38d08605245e",
+      "normalized_after_trace_sha256": "b00fde28006a30844835a4f898803bb2d27f3ee54e482fc1619b38d08605245e",
+      "root_cause": "Import scripts/build_notebooks.py:8 thiếu nbformat trong interpreter test Python3.11; setup lỗi trước assertion.",
+      "website_impact": "Không nằm trong đường chạy website offline/predict hiện hành.",
+      "classification": "ENVIRONMENT"
+    },
+    {
+      "test_id": "tests/test_phase2_notebook.py::test_threshold_cell_displays_tables_and_figure_without_report_png[True-True]",
+      "scope": "Notebook generator / fixtures",
+      "exception": "E   ModuleNotFoundError: No module named 'nbformat'",
+      "traceback_frames": "tests\\test_phase2_notebook.py:17:  | scripts\\build_preprocessing_notebook.py:2: in <module> | scripts\\build_notebooks.py:8: ModuleNotFoundError",
+      "reproduced_after_rollback": true,
+      "normalized_exception_and_frames_equivalent": true,
+      "full_trace_context_equivalent": true,
+      "before_log_lines": [
+        267,
+        294
+      ],
+      "after_log_lines": [
+        267,
+        294
+      ],
+      "normalized_before_trace_sha256": "b00fde28006a30844835a4f898803bb2d27f3ee54e482fc1619b38d08605245e",
+      "normalized_after_trace_sha256": "b00fde28006a30844835a4f898803bb2d27f3ee54e482fc1619b38d08605245e",
+      "root_cause": "Import scripts/build_notebooks.py:8 thiếu nbformat trong interpreter test Python3.11; setup lỗi trước assertion.",
+      "website_impact": "Không nằm trong đường chạy website offline/predict hiện hành.",
+      "classification": "ENVIRONMENT"
+    },
+    {
+      "test_id": "tests/test_phase2_notebook.py::test_missing_locked_manifest_stops_before_export",
+      "scope": "Notebook generator / fixtures",
+      "exception": "E   ModuleNotFoundError: No module named 'nbformat'",
+      "traceback_frames": "tests\\test_phase2_notebook.py:17:  | scripts\\build_preprocessing_notebook.py:2: in <module> | scripts\\build_notebooks.py:8: ModuleNotFoundError",
+      "reproduced_after_rollback": true,
+      "normalized_exception_and_frames_equivalent": true,
+      "full_trace_context_equivalent": true,
+      "before_log_lines": [
+        294,
+        321
+      ],
+      "after_log_lines": [
+        294,
+        321
+      ],
+      "normalized_before_trace_sha256": "b00fde28006a30844835a4f898803bb2d27f3ee54e482fc1619b38d08605245e",
+      "normalized_after_trace_sha256": "b00fde28006a30844835a4f898803bb2d27f3ee54e482fc1619b38d08605245e",
+      "root_cause": "Import scripts/build_notebooks.py:8 thiếu nbformat trong interpreter test Python3.11; setup lỗi trước assertion.",
+      "website_impact": "Không nằm trong đường chạy website offline/predict hiện hành.",
+      "classification": "ENVIRONMENT"
+    },
+    {
+      "test_id": "tests/test_phase2_notebook.py::test_drive_is_mounted_before_reading_source_zip_on_drive[False]",
+      "scope": "Notebook generator / fixtures",
+      "exception": "E   ModuleNotFoundError: No module named 'nbformat'",
+      "traceback_frames": "tests\\test_phase2_notebook.py:17:  | scripts\\build_preprocessing_notebook.py:2: in <module> | scripts\\build_notebooks.py:8: ModuleNotFoundError",
+      "reproduced_after_rollback": true,
+      "normalized_exception_and_frames_equivalent": true,
+      "full_trace_context_equivalent": true,
+      "before_log_lines": [
+        321,
+        348
+      ],
+      "after_log_lines": [
+        321,
+        348
+      ],
+      "normalized_before_trace_sha256": "b00fde28006a30844835a4f898803bb2d27f3ee54e482fc1619b38d08605245e",
+      "normalized_after_trace_sha256": "b00fde28006a30844835a4f898803bb2d27f3ee54e482fc1619b38d08605245e",
+      "root_cause": "Import scripts/build_notebooks.py:8 thiếu nbformat trong interpreter test Python3.11; setup lỗi trước assertion.",
+      "website_impact": "Không nằm trong đường chạy website offline/predict hiện hành.",
+      "classification": "ENVIRONMENT"
+    },
+    {
+      "test_id": "tests/test_phase2_notebook.py::test_drive_is_mounted_before_reading_source_zip_on_drive[True]",
+      "scope": "Notebook generator / fixtures",
+      "exception": "E   ModuleNotFoundError: No module named 'nbformat'",
+      "traceback_frames": "tests\\test_phase2_notebook.py:17:  | scripts\\build_preprocessing_notebook.py:2: in <module> | scripts\\build_notebooks.py:8: ModuleNotFoundError",
+      "reproduced_after_rollback": true,
+      "normalized_exception_and_frames_equivalent": true,
+      "full_trace_context_equivalent": true,
+      "before_log_lines": [
+        348,
+        375
+      ],
+      "after_log_lines": [
+        348,
+        375
+      ],
+      "normalized_before_trace_sha256": "b00fde28006a30844835a4f898803bb2d27f3ee54e482fc1619b38d08605245e",
+      "normalized_after_trace_sha256": "b00fde28006a30844835a4f898803bb2d27f3ee54e482fc1619b38d08605245e",
+      "root_cause": "Import scripts/build_notebooks.py:8 thiếu nbformat trong interpreter test Python3.11; setup lỗi trước assertion.",
+      "website_impact": "Không nằm trong đường chạy website offline/predict hiện hành.",
+      "classification": "ENVIRONMENT"
+    },
+    {
+      "test_id": "tests/test_phase2_notebook.py::test_current_bundle_contains_phase2_and_strips_outputs",
+      "scope": "Notebook generator / fixtures",
+      "exception": "E   ModuleNotFoundError: No module named 'nbformat'",
+      "traceback_frames": "tests\\test_phase2_notebook.py:17:  | scripts\\build_preprocessing_notebook.py:2: in <module> | scripts\\build_notebooks.py:8: ModuleNotFoundError",
+      "reproduced_after_rollback": true,
+      "normalized_exception_and_frames_equivalent": true,
+      "full_trace_context_equivalent": true,
+      "before_log_lines": [
+        375,
+        403
+      ],
+      "after_log_lines": [
+        375,
+        403
+      ],
+      "normalized_before_trace_sha256": "b00fde28006a30844835a4f898803bb2d27f3ee54e482fc1619b38d08605245e",
+      "normalized_after_trace_sha256": "b00fde28006a30844835a4f898803bb2d27f3ee54e482fc1619b38d08605245e",
+      "root_cause": "Import scripts/build_notebooks.py:8 thiếu nbformat trong interpreter test Python3.11; setup lỗi trước assertion.",
+      "website_impact": "Không nằm trong đường chạy website offline/predict hiện hành.",
+      "classification": "ENVIRONMENT"
+    }
+  ]
+}

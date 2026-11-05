@@ -1,0 +1,67 @@
+{
+  "date": "2026-10-30",
+  "status": "BLOCKED ON LIVE PROVIDER; NO SUCCESSFUL EXTRACTION YET",
+  "model": "gemini-3.8-flash",
+  "endpoint_unchanged": true,
+  "generation_request_attempts_total": 6,
+  "automatic_live_retries": 0,
+  "attempts_after_original_budget": [
+    {
+      "number": 4,
+      "owner_authorization": "owner approved one additional diagnostic",
+      "wire": "minimum_projection",
+      "timeout_seconds": 60,
+      "outcome": "timeout",
+      "latency_ms": 60197.294000012334,
+      "tls_completed_ms": 186.96079996880144,
+      "body_bytes": 19988,
+      "body_sent_ms": 187.08479998167604,
+      "provider_http_status": null
+    },
+    {
+      "number": 5,
+      "owner_authorization": "owner started localhost8000 and confirmed one synthetic chat POST",
+      "wire": "catalog_codes_v1",
+      "timeout_seconds": 20,
+      "backend_http_status": 503,
+      "outcome": "timeout",
+      "elapsed_seconds": 20.226489899971057,
+      "predictions_present": false
+    },
+    {
+      "number": 6,
+      "owner_authorization": "owner ran one-request code-schema diagnostic after conditional explicit request",
+      "wire": "catalog_codes_v1",
+      "timeout_seconds": 60,
+      "provider_http_status": 503,
+      "outcome": "provider unavailable/high demand",
+      "latency_ms": 1364.0805999748409,
+      "tls_completed_ms": 115.1578999706544,
+      "body_bytes": 19247,
+      "body_sent_ms": 115.29899999732152,
+      "redacted_provider_message": "gemini-3.8-flash is currently experiencing high demand, spikes in demand are usually temporary. Please try again later."
+    }
+  ],
+  "schema_mitigation": {
+    "feature_encoding": "catalog_codes_v1",
+    "wire_enum_count": 375,
+    "canonical_feature_count": 375,
+    "all_features_preserved_in_dictionary": true,
+    "canonical_names_restored_before_validator": true,
+    "unknown_code_fails_closed": true,
+    "offset_bounds_restored_and_enforced": true,
+    "canonical_schema_file_modified": false,
+    "live_schema_acceptance": "NOT VERIFIED; provider503 does not prove old400 resolved"
+  },
+  "observed_latest_failure": "provider503 explicit high demand; different from earlier serving-schema400",
+  "offline_tests": {
+    "passed": 225,
+    "warnings": 1,
+    "scope": "test_phase5b.py, test_local_chat.py, test_prediction_api.py; mocks only"
+  },
+  "model_predictions_from_live_case": false,
+  "models_fitted": 0,
+  "locked_test_payload_opened": false,
+  "actual_usage_and_cost": "unknown; do not treat local budget units as tokens or bill",
+  "next_step": "Wait for provider availability, then separately authorize a bounded live check; do not change model/endpoint, weaken validator or claim PASS."
+}

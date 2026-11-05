@@ -1,0 +1,4119 @@
+{
+  "abdominal aortic aneurysm": {
+    "display_vi": "Phình động mạch chủ bụng",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "abdominal hernia": {
+    "display_vi": "Thoát vị thành bụng",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "abscess of nose": {
+    "display_vi": "Áp xe mũi",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "abscess of the pharynx": {
+    "display_vi": "Áp xe hầu họng",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "acariasis": {
+    "display_vi": "Bệnh do ve, mạt ký sinh",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "achalasia": {
+    "display_vi": "Co thắt tâm vị",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "acne": {
+    "display_vi": "Mụn trứng cá",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "actinic keratosis": {
+    "display_vi": "Dày sừng do ánh nắng",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "acute bronchiolitis": {
+    "display_vi": "Viêm tiểu phế quản cấp",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "acute bronchitis": {
+    "display_vi": "Viêm phế quản cấp",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "acute bronchospasm": {
+    "display_vi": "Co thắt phế quản cấp",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "acute glaucoma": {
+    "display_vi": "Glôcôm cấp",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "acute kidney injury": {
+    "display_vi": "Tổn thương thận cấp",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "acute otitis media": {
+    "display_vi": "Viêm tai giữa cấp",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "acute pancreatitis": {
+    "display_vi": "Viêm tụy cấp",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "acute respiratory distress syndrome (ards)": {
+    "display_vi": "Hội chứng suy hô hấp cấp tiến triển (ARDS)",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "acute sinusitis": {
+    "display_vi": "Viêm xoang cấp",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "acute stress reaction": {
+    "display_vi": "Phản ứng stress cấp",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "adhesive capsulitis of the shoulder": {
+    "display_vi": "Viêm dính bao khớp vai",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "adjustment reaction": {
+    "display_vi": "Phản ứng thích ứng",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "alcohol abuse": {
+    "display_vi": "Lạm dụng rượu",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "alcohol intoxication": {
+    "display_vi": "Ngộ độc rượu",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "alcohol withdrawal": {
+    "display_vi": "Hội chứng cai rượu",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "alcoholic liver disease": {
+    "display_vi": "Bệnh gan do rượu",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "allergy": {
+    "display_vi": "Dị ứng",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "allergy to animals": {
+    "display_vi": "Dị ứng với động vật",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "alopecia": {
+    "display_vi": "Rụng tóc",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "alzheimer disease": {
+    "display_vi": "Bệnh Alzheimer",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "amblyopia": {
+    "display_vi": "Nhược thị",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "amyotrophic lateral sclerosis (als)": {
+    "display_vi": "Xơ cứng teo cơ một bên (ALS)",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "anal fissure": {
+    "display_vi": "Nứt hậu môn",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "anemia": {
+    "display_vi": "Thiếu máu",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "anemia due to chronic kidney disease": {
+    "display_vi": "Thiếu máu do bệnh thận mạn",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "angina": {
+    "display_vi": "Đau thắt ngực",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "ankylosing spondylitis": {
+    "display_vi": "Viêm cột sống dính khớp",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "anxiety": {
+    "display_vi": "Lo âu",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "aortic valve disease": {
+    "display_vi": "Bệnh van động mạch chủ",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "aphthous ulcer": {
+    "display_vi": "Loét áp tơ",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "aplastic anemia": {
+    "display_vi": "Thiếu máu bất sản",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "appendicitis": {
+    "display_vi": "Viêm ruột thừa",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "arrhythmia": {
+    "display_vi": "Rối loạn nhịp tim",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "arthritis of the hip": {
+    "display_vi": "Viêm khớp háng",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "ascending cholangitis": {
+    "display_vi": "Viêm đường mật ngược dòng",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "asperger syndrome": {
+    "display_vi": "Hội chứng Asperger",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "asthma": {
+    "display_vi": "Hen phế quản",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "astigmatism": {
+    "display_vi": "Loạn thị",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "atelectasis": {
+    "display_vi": "Xẹp phổi",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "athlete's foot": {
+    "display_vi": "Nấm bàn chân",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "atonic bladder": {
+    "display_vi": "Bàng quang mất trương lực",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "atrial fibrillation": {
+    "display_vi": "Rung nhĩ",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "atrial flutter": {
+    "display_vi": "Cuồng nhĩ",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "atrophic skin condition": {
+    "display_vi": "Tình trạng teo da",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "atrophic vaginitis": {
+    "display_vi": "Viêm âm đạo teo",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "atrophy of the corpus cavernosum": {
+    "display_vi": "Teo thể hang",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "attention deficit hyperactivity disorder (adhd)": {
+    "display_vi": "Rối loạn tăng động giảm chú ý (ADHD)",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "autism": {
+    "display_vi": "Tự kỷ",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "autonomic nervous system disorder": {
+    "display_vi": "Rối loạn hệ thần kinh tự chủ",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "balanitis": {
+    "display_vi": "Viêm quy đầu",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "bell palsy": {
+    "display_vi": "Liệt Bell",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "benign kidney cyst": {
+    "display_vi": "Nang thận lành tính",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "benign paroxysmal positional vertical (bppv)": {
+    "display_vi": "benign paroxysmal positional vertical (bppv)",
+    "needs_review": true,
+    "translation_note": "Nhãn gốc ghi vertical thay vì thuật ngữ vertigo thường gặp trong BPPV; chưa tự sửa hoặc dịch.",
+    "terminology_status": "AMBIGUOUS",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "benign prostatic hyperplasia (bph)": {
+    "display_vi": "Tăng sản lành tính tuyến tiền liệt (BPH)",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "benign vaginal discharge (leukorrhea)": {
+    "display_vi": "Khí hư lành tính",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "bipolar disorder": {
+    "display_vi": "Rối loạn lưỡng cực",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "bladder cancer": {
+    "display_vi": "Ung thư bàng quang",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "bladder disorder": {
+    "display_vi": "Rối loạn bàng quang",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "bladder obstruction": {
+    "display_vi": "Tắc nghẽn bàng quang",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "blepharitis": {
+    "display_vi": "Viêm bờ mi",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "bone cancer": {
+    "display_vi": "Ung thư xương",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "bone disorder": {
+    "display_vi": "Rối loạn xương",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "bone spur of the calcaneous": {
+    "display_vi": "Gai xương gót",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "brachial neuritis": {
+    "display_vi": "Viêm dây thần kinh cánh tay",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "brain cancer": {
+    "display_vi": "Ung thư não",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "breast infection (mastitis)": {
+    "display_vi": "Nhiễm trùng vú (viêm tuyến vú)",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "broken tooth": {
+    "display_vi": "Gãy răng",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "bunion": {
+    "display_vi": "Biến dạng vẹo ngón chân cái",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "burn": {
+    "display_vi": "Bỏng",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "bursitis": {
+    "display_vi": "Viêm túi thanh dịch",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "callus": {
+    "display_vi": "Chai da",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "carbon monoxide poisoning": {
+    "display_vi": "Ngộ độc khí carbon monoxide (CO)",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "cardiac arrest": {
+    "display_vi": "Ngừng tim",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "cardiomyopathy": {
+    "display_vi": "Bệnh cơ tim",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "carpal tunnel syndrome": {
+    "display_vi": "Hội chứng ống cổ tay",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "cataract": {
+    "display_vi": "Đục thủy tinh thể",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "celiac disease": {
+    "display_vi": "Bệnh Celiac",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "cellulitis or abscess of mouth": {
+    "display_vi": "Viêm mô tế bào hoặc áp xe vùng miệng",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "central retinal artery or vein occlusion": {
+    "display_vi": "Tắc động mạch hoặc tĩnh mạch trung tâm võng mạc",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "cerebral edema": {
+    "display_vi": "Phù não",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "cerebral palsy": {
+    "display_vi": "Bại não",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "cervical cancer": {
+    "display_vi": "Ung thư cổ tử cung",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "cervicitis": {
+    "display_vi": "Viêm cổ tử cung",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "chalazion": {
+    "display_vi": "Chắp mắt",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "chickenpox": {
+    "display_vi": "Thủy đậu",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "chlamydia": {
+    "display_vi": "Nhiễm Chlamydia",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "cholecystitis": {
+    "display_vi": "Viêm túi mật",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "choledocholithiasis": {
+    "display_vi": "Sỏi ống mật chủ",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "chondromalacia of the patella": {
+    "display_vi": "Nhuyễn sụn bánh chè",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "chorioretinitis": {
+    "display_vi": "Viêm hắc võng mạc",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "chronic back pain": {
+    "display_vi": "Đau lưng mạn tính",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "chronic constipation": {
+    "display_vi": "Táo bón mạn tính",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "chronic glaucoma": {
+    "display_vi": "Glôcôm mạn tính",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "chronic knee pain": {
+    "display_vi": "Đau gối mạn tính",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "chronic obstructive pulmonary disease (copd)": {
+    "display_vi": "Bệnh phổi tắc nghẽn mạn tính (COPD)",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "chronic otitis media": {
+    "display_vi": "Viêm tai giữa mạn tính",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "chronic pain disorder": {
+    "display_vi": "Rối loạn đau mạn tính",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "chronic pancreatitis": {
+    "display_vi": "Viêm tụy mạn tính",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "chronic rheumatic fever": {
+    "display_vi": "chronic rheumatic fever",
+    "needs_review": true,
+    "translation_note": "Nhãn chronic rheumatic fever chưa rõ cách dùng thuật ngữ; giữ nguyên để tránh đồng nhất với một bệnh tim cụ thể.",
+    "terminology_status": "AMBIGUOUS",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "chronic sinusitis": {
+    "display_vi": "Viêm xoang mạn tính",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "cirrhosis": {
+    "display_vi": "Xơ gan",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "coagulation (bleeding) disorder": {
+    "display_vi": "Rối loạn đông máu hoặc chảy máu",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "cold sore": {
+    "display_vi": "Mụn rộp môi",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "colonic polyp": {
+    "display_vi": "Polyp đại tràng",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "colorectal cancer": {
+    "display_vi": "Ung thư đại trực tràng",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "common cold": {
+    "display_vi": "Cảm lạnh thông thường",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "complex regional pain syndrome": {
+    "display_vi": "Hội chứng đau vùng phức hợp",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "concussion": {
+    "display_vi": "Chấn động não",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "conduct disorder": {
+    "display_vi": "Rối loạn hành vi",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "conductive hearing loss": {
+    "display_vi": "Giảm thính lực dẫn truyền",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "congenital heart defect": {
+    "display_vi": "Dị tật tim bẩm sinh",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "conjunctivitis": {
+    "display_vi": "Viêm kết mạc",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "conjunctivitis due to allergy": {
+    "display_vi": "Viêm kết mạc do dị ứng",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "conjunctivitis due to bacteria": {
+    "display_vi": "Viêm kết mạc do vi khuẩn",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "conjunctivitis due to virus": {
+    "display_vi": "Viêm kết mạc do virus",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "contact dermatitis": {
+    "display_vi": "Viêm da tiếp xúc",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "cornea infection": {
+    "display_vi": "Nhiễm trùng giác mạc",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "corneal abrasion": {
+    "display_vi": "Trầy xước giác mạc",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "corneal disorder": {
+    "display_vi": "Rối loạn giác mạc",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "coronary atherosclerosis": {
+    "display_vi": "Xơ vữa động mạch vành",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "cranial nerve palsy": {
+    "display_vi": "Liệt dây thần kinh sọ",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "crohn disease": {
+    "display_vi": "Bệnh Crohn",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "croup": {
+    "display_vi": "Viêm thanh khí phế quản (croup)",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "crushing injury": {
+    "display_vi": "Chấn thương do đè ép",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "cysticercosis": {
+    "display_vi": "Bệnh ấu trùng sán lợn",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "cystitis": {
+    "display_vi": "Viêm bàng quang",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "de quervain disease": {
+    "display_vi": "Bệnh De Quervain",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "deep vein thrombosis (dvt)": {
+    "display_vi": "Huyết khối tĩnh mạch sâu (DVT)",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "degenerative disc disease": {
+    "display_vi": "Thoái hóa đĩa đệm",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "delirium": {
+    "display_vi": "Sảng",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "dementia": {
+    "display_vi": "Sa sút trí tuệ",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "dental caries": {
+    "display_vi": "Sâu răng",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "depression": {
+    "display_vi": "Trầm cảm",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "dermatitis due to sun exposure": {
+    "display_vi": "Viêm da do tiếp xúc ánh nắng",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "developmental disability": {
+    "display_vi": "Khuyết tật phát triển",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "deviated nasal septum": {
+    "display_vi": "Lệch vách ngăn mũi",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "diabetic ketoacidosis": {
+    "display_vi": "Nhiễm toan ceton do đái tháo đường",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "diabetic peripheral neuropathy": {
+    "display_vi": "Bệnh thần kinh ngoại biên do đái tháo đường",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "diabetic retinopathy": {
+    "display_vi": "Bệnh võng mạc do đái tháo đường",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "diaper rash": {
+    "display_vi": "Hăm tã",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "dislocation of the elbow": {
+    "display_vi": "Trật khớp khuỷu tay",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "dislocation of the finger": {
+    "display_vi": "Trật khớp ngón tay",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "dislocation of the shoulder": {
+    "display_vi": "Trật khớp vai",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "dislocation of the vertebra": {
+    "display_vi": "Trật đốt sống",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "dislocation of the wrist": {
+    "display_vi": "Trật khớp cổ tay",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "dissociative disorder": {
+    "display_vi": "Rối loạn phân ly",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "diverticulitis": {
+    "display_vi": "Viêm túi thừa",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "diverticulosis": {
+    "display_vi": "Bệnh túi thừa",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "down syndrome": {
+    "display_vi": "Hội chứng Down",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "drug abuse": {
+    "display_vi": "Lạm dụng chất gây nghiện",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "drug abuse (barbiturates)": {
+    "display_vi": "Lạm dụng barbiturat",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "drug abuse (cocaine)": {
+    "display_vi": "Lạm dụng cocaine",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "drug abuse (methamphetamine)": {
+    "display_vi": "Lạm dụng methamphetamine",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "drug abuse (opioids)": {
+    "display_vi": "Lạm dụng opioid",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "drug poisoning due to medication": {
+    "display_vi": "Ngộ độc do thuốc điều trị",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "drug reaction": {
+    "display_vi": "Phản ứng do thuốc",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "drug withdrawal": {
+    "display_vi": "Hội chứng cai thuốc hoặc chất",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "dry eye of unknown cause": {
+    "display_vi": "Khô mắt không rõ nguyên nhân",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "dyshidrosis": {
+    "display_vi": "Chàm tổ đỉa",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "dysthymic disorder": {
+    "display_vi": "Rối loạn khí sắc trầm kéo dài",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "ear drum damage": {
+    "display_vi": "Tổn thương màng nhĩ",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "ear wax impaction": {
+    "display_vi": "Nút ráy tai",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "eating disorder": {
+    "display_vi": "Rối loạn ăn uống",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "ectopic pregnancy": {
+    "display_vi": "Thai ngoài tử cung",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "ectropion": {
+    "display_vi": "Lật mi ra ngoài",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "eczema": {
+    "display_vi": "Chàm",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "encephalitis": {
+    "display_vi": "Viêm não",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "endocarditis": {
+    "display_vi": "Viêm nội tâm mạc",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "endometrial cancer": {
+    "display_vi": "Ung thư nội mạc tử cung",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "endometrial hyperplasia": {
+    "display_vi": "Tăng sản nội mạc tử cung",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "endometriosis": {
+    "display_vi": "Lạc nội mạc tử cung",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "endophthalmitis": {
+    "display_vi": "Viêm nội nhãn",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "envenomation from spider or animal bite": {
+    "display_vi": "Nhiễm độc do nhện hoặc động vật cắn",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "epididymitis": {
+    "display_vi": "Viêm mào tinh hoàn",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "epilepsy": {
+    "display_vi": "Động kinh",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "erectile dysfunction": {
+    "display_vi": "Rối loạn cương dương",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "erythema multiforme": {
+    "display_vi": "Hồng ban đa dạng",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "esophageal cancer": {
+    "display_vi": "Ung thư thực quản",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "esophagitis": {
+    "display_vi": "Viêm thực quản",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "essential tremor": {
+    "display_vi": "Run vô căn",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "eustachian tube dysfunction (ear disorder)": {
+    "display_vi": "Rối loạn chức năng vòi nhĩ",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "extrapyramidal effect of drugs": {
+    "display_vi": "Tác dụng ngoại tháp do thuốc",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "eye alignment disorder": {
+    "display_vi": "Rối loạn phối hợp trục mắt",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "female genitalia infection": {
+    "display_vi": "Nhiễm trùng cơ quan sinh dục nữ",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "female infertility of unknown cause": {
+    "display_vi": "Vô sinh nữ không rõ nguyên nhân",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "fibroadenoma": {
+    "display_vi": "U xơ tuyến",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "fibromyalgia": {
+    "display_vi": "Đau cơ xơ hóa",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "flat feet": {
+    "display_vi": "Bàn chân bẹt",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "floaters": {
+    "display_vi": "Hiện tượng ruồi bay trước mắt",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "flu": {
+    "display_vi": "Cúm",
+    "needs_review": false,
+    "terminology_status": "REVIEWED",
+    "reference_sources": [
+      "https://111.wales.nhs.uk/pdfs/Meningitis%20poster%20Languages/vietnamese1.pdf"
+    ],
+    "review_scope": "Đối chiếu thuật ngữ với tài liệu tiếng Việt NHS; không xác thực mô hình hay chẩn đoán."
+  },
+  "fluid overload": {
+    "display_vi": "Quá tải dịch",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "folate deficiency": {
+    "display_vi": "Thiếu folat",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "food allergy": {
+    "display_vi": "Dị ứng thực phẩm",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "foreign body in the ear": {
+    "display_vi": "Dị vật trong tai",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "foreign body in the eye": {
+    "display_vi": "Dị vật trong mắt",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "foreign body in the gastrointestinal tract": {
+    "display_vi": "Dị vật trong đường tiêu hóa",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "foreign body in the throat": {
+    "display_vi": "Dị vật trong họng",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "fracture of the ankle": {
+    "display_vi": "Gãy xương vùng cổ chân",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "fracture of the arm": {
+    "display_vi": "Gãy xương cánh tay",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "fracture of the facial bones": {
+    "display_vi": "Gãy xương mặt",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "fracture of the foot": {
+    "display_vi": "Gãy xương bàn chân",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "fracture of the hand": {
+    "display_vi": "Gãy xương bàn tay",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "fracture of the jaw": {
+    "display_vi": "Gãy xương hàm",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "fracture of the leg": {
+    "display_vi": "Gãy xương chân",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "fracture of the neck": {
+    "display_vi": "Gãy xương vùng cổ",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "fracture of the patella": {
+    "display_vi": "Gãy xương bánh chè",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "fracture of the pelvis": {
+    "display_vi": "Gãy xương chậu",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "fracture of the rib": {
+    "display_vi": "Gãy xương sườn",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "fracture of the shoulder": {
+    "display_vi": "Gãy xương vùng vai",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "fracture of the skull": {
+    "display_vi": "Gãy xương sọ",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "fracture of the vertebra": {
+    "display_vi": "Gãy đốt sống",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "fungal infection of the hair": {
+    "display_vi": "Nhiễm nấm ở tóc",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "fungal infection of the skin": {
+    "display_vi": "Nhiễm nấm da",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "gallstone": {
+    "display_vi": "Sỏi mật",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "ganglion cyst": {
+    "display_vi": "Nang hoạt dịch",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "gastritis": {
+    "display_vi": "Viêm dạ dày",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "gastroduodenal ulcer": {
+    "display_vi": "Loét dạ dày tá tràng",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "gastroesophageal reflux disease (gerd)": {
+    "display_vi": "Bệnh trào ngược dạ dày thực quản (GERD)",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "gastrointestinal hemorrhage": {
+    "display_vi": "Xuất huyết tiêu hóa",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "gastroparesis": {
+    "display_vi": "Liệt dạ dày",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "genital herpes": {
+    "display_vi": "Herpes sinh dục",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "gestational diabetes": {
+    "display_vi": "Đái tháo đường thai kỳ",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "glaucoma": {
+    "display_vi": "Glôcôm",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "goiter": {
+    "display_vi": "Bướu giáp",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "gonorrhea": {
+    "display_vi": "Bệnh lậu",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "gout": {
+    "display_vi": "Bệnh gút",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "graves disease": {
+    "display_vi": "Bệnh Graves (Basedow)",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "guillain barre syndrome": {
+    "display_vi": "Hội chứng Guillain–Barré",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "gum disease": {
+    "display_vi": "Bệnh nướu răng",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "gynecomastia": {
+    "display_vi": "Nữ hóa tuyến vú ở nam",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "head and neck cancer": {
+    "display_vi": "Ung thư đầu và cổ",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "head injury": {
+    "display_vi": "Chấn thương đầu",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "headache after lumbar puncture": {
+    "display_vi": "Đau đầu sau chọc dò thắt lưng",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "heart attack": {
+    "display_vi": "Nhồi máu cơ tim",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "heart block": {
+    "display_vi": "Block tim",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "heart failure": {
+    "display_vi": "Suy tim",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "heat exhaustion": {
+    "display_vi": "Kiệt sức do nóng",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "hemangioma": {
+    "display_vi": "U máu",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "hematoma": {
+    "display_vi": "Tụ máu",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "hemiplegia": {
+    "display_vi": "Liệt nửa người",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "hemorrhoids": {
+    "display_vi": "Trĩ",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "hepatic encephalopathy": {
+    "display_vi": "Bệnh não gan",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "hepatitis due to a toxin": {
+    "display_vi": "Viêm gan do độc chất",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "herniated disk": {
+    "display_vi": "Thoát vị đĩa đệm",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "herpangina": {
+    "display_vi": "Viêm họng mụn nước (herpangina)",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "hiatal hernia": {
+    "display_vi": "Thoát vị khe hoành",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "hidradenitis suppurativa": {
+    "display_vi": "Viêm tuyến mồ hôi mủ",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "hormone disorder": {
+    "display_vi": "Rối loạn nội tiết tố",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "hydatidiform mole": {
+    "display_vi": "Thai trứng",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "hydrocele of the testicle": {
+    "display_vi": "Tràn dịch màng tinh hoàn",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "hydrocephalus": {
+    "display_vi": "Não úng thủy",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "hydronephrosis": {
+    "display_vi": "Thận ứ nước",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "hyperemesis gravidarum": {
+    "display_vi": "Nôn nghén nặng",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "hyperhidrosis": {
+    "display_vi": "Tăng tiết mồ hôi",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "hyperkalemia": {
+    "display_vi": "Tăng kali máu",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "hypernatremia": {
+    "display_vi": "Tăng natri máu",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "hyperopia": {
+    "display_vi": "Viễn thị",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "hypertension of pregnancy": {
+    "display_vi": "Tăng huyết áp thai kỳ",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "hypertensive heart disease": {
+    "display_vi": "Bệnh tim do tăng huyết áp",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "hypocalcemia": {
+    "display_vi": "Hạ calci máu",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "hypoglycemia": {
+    "display_vi": "Hạ đường huyết",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "hypokalemia": {
+    "display_vi": "Hạ kali máu",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "hyponatremia": {
+    "display_vi": "Hạ natri máu",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "hypothyroidism": {
+    "display_vi": "Suy giáp",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "hypovolemia": {
+    "display_vi": "Giảm thể tích tuần hoàn",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "idiopathic absence of menstruation": {
+    "display_vi": "Vô kinh vô căn",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "idiopathic excessive menstruation": {
+    "display_vi": "Cường kinh vô căn",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "idiopathic infrequent menstruation": {
+    "display_vi": "Kinh thưa vô căn",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "idiopathic irregular menstrual cycle": {
+    "display_vi": "Chu kỳ kinh không đều vô căn",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "idiopathic nonmenstrual bleeding": {
+    "display_vi": "Chảy máu ngoài kỳ kinh vô căn",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "idiopathic painful menstruation": {
+    "display_vi": "Đau bụng kinh vô căn",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "ileus": {
+    "display_vi": "Liệt ruột",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "impetigo": {
+    "display_vi": "Chốc lở",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "impulse control disorder": {
+    "display_vi": "Rối loạn kiểm soát xung động",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "indigestion": {
+    "display_vi": "Khó tiêu",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "induced abortion": {
+    "display_vi": "Chấm dứt thai kỳ có chủ đích",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "infectious gastroenteritis": {
+    "display_vi": "Viêm dạ dày ruột do nhiễm trùng",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "ingrown toe nail": {
+    "display_vi": "Móng chân mọc quặp",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "inguinal hernia": {
+    "display_vi": "Thoát vị bẹn",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "injury of the ankle": {
+    "display_vi": "Chấn thương cổ chân",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "injury to internal organ": {
+    "display_vi": "Chấn thương cơ quan nội tạng",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "injury to the abdomen": {
+    "display_vi": "Chấn thương bụng",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "injury to the arm": {
+    "display_vi": "Chấn thương cánh tay",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "injury to the face": {
+    "display_vi": "Chấn thương mặt",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "injury to the hand": {
+    "display_vi": "Chấn thương bàn tay",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "injury to the knee": {
+    "display_vi": "Chấn thương đầu gối",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "injury to the leg": {
+    "display_vi": "Chấn thương chân",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "injury to the shoulder": {
+    "display_vi": "Chấn thương vai",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "injury to the trunk": {
+    "display_vi": "Chấn thương thân mình",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "insect bite": {
+    "display_vi": "Côn trùng đốt",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "interstitial lung disease": {
+    "display_vi": "Bệnh phổi kẽ",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "intertrigo (skin condition)": {
+    "display_vi": "Viêm da kẽ",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "intestinal cancer": {
+    "display_vi": "Ung thư ruột",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "intestinal disease": {
+    "display_vi": "Bệnh đường ruột",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "intestinal malabsorption": {
+    "display_vi": "Kém hấp thu ở ruột",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "intestinal obstruction": {
+    "display_vi": "Tắc ruột",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "intracerebral hemorrhage": {
+    "display_vi": "Xuất huyết trong nhu mô não",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "intracranial hemorrhage": {
+    "display_vi": "Xuất huyết nội sọ",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "iridocyclitis": {
+    "display_vi": "Viêm mống mắt thể mi",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "iron deficiency anemia": {
+    "display_vi": "Thiếu máu do thiếu sắt",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "irritable bowel syndrome": {
+    "display_vi": "Hội chứng ruột kích thích",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "ischemia of the bowel": {
+    "display_vi": "Thiếu máu cục bộ ruột",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "ischemic heart disease": {
+    "display_vi": "Bệnh tim thiếu máu cục bộ",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "itching of unknown cause": {
+    "display_vi": "Ngứa không rõ nguyên nhân",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "jaw disorder": {
+    "display_vi": "Rối loạn vùng hàm",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "joint effusion": {
+    "display_vi": "Tràn dịch khớp",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "juvenile rheumatoid arthritis": {
+    "display_vi": "Viêm khớp dạng thấp thiếu niên",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "kidney cancer": {
+    "display_vi": "Ung thư thận",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "kidney failure": {
+    "display_vi": "Suy thận",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "kidney stone": {
+    "display_vi": "Sỏi thận",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "knee ligament or meniscus tear": {
+    "display_vi": "Rách dây chằng hoặc sụn chêm đầu gối",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "labyrinthitis": {
+    "display_vi": "Viêm mê nhĩ",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "lactose intolerance": {
+    "display_vi": "Không dung nạp lactose",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "laryngitis": {
+    "display_vi": "Viêm thanh quản",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "lateral epicondylitis (tennis elbow)": {
+    "display_vi": "Viêm lồi cầu ngoài khuỷu tay",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "lewy body dementia": {
+    "display_vi": "Sa sút trí tuệ thể Lewy",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "lice": {
+    "display_vi": "Nhiễm chấy, rận",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "lichen simplex": {
+    "display_vi": "Lichen đơn dạng",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "lipoma": {
+    "display_vi": "U mỡ",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "liver cancer": {
+    "display_vi": "Ung thư gan",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "liver disease": {
+    "display_vi": "Bệnh gan",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "lumbago": {
+    "display_vi": "Đau thắt lưng",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "lung cancer": {
+    "display_vi": "Ung thư phổi",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "lyme disease": {
+    "display_vi": "Bệnh Lyme",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "lymphadenitis": {
+    "display_vi": "Viêm hạch bạch huyết",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "lymphedema": {
+    "display_vi": "Phù bạch huyết",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "lymphoma": {
+    "display_vi": "U lympho",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "macular degeneration": {
+    "display_vi": "Thoái hóa điểm vàng",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "male genitalia infection": {
+    "display_vi": "Nhiễm trùng cơ quan sinh dục nam",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "malignant hypertension": {
+    "display_vi": "Tăng huyết áp ác tính",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "marijuana abuse": {
+    "display_vi": "Lạm dụng cần sa",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "mastoiditis": {
+    "display_vi": "Viêm xương chũm",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "melanoma": {
+    "display_vi": "U hắc tố ác tính",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "meniere disease": {
+    "display_vi": "Bệnh Ménière",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "meningitis": {
+    "display_vi": "Viêm màng não",
+    "needs_review": false,
+    "terminology_status": "REVIEWED",
+    "reference_sources": [
+      "https://111.wales.nhs.uk/pdfs/Meningitis%20poster%20Languages/vietnamese1.pdf"
+    ],
+    "review_scope": "Đối chiếu thuật ngữ với tài liệu tiếng Việt NHS; không xác thực mô hình hay chẩn đoán."
+  },
+  "menopause": {
+    "display_vi": "Mãn kinh",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "metastatic cancer": {
+    "display_vi": "Ung thư di căn",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "migraine": {
+    "display_vi": "Đau nửa đầu (migraine)",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "missed abortion": {
+    "display_vi": "Sẩy thai lưu",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "mitral valve disease": {
+    "display_vi": "Bệnh van hai lá",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "mittelschmerz": {
+    "display_vi": "Đau giữa chu kỳ kinh (mittelschmerz)",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "molluscum contagiosum": {
+    "display_vi": "U mềm lây",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "mononeuritis": {
+    "display_vi": "Viêm đơn dây thần kinh",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "mononucleosis": {
+    "display_vi": "Bệnh tăng bạch cầu đơn nhân nhiễm trùng",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "mucositis": {
+    "display_vi": "Viêm niêm mạc",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "multiple myeloma": {
+    "display_vi": "Đa u tủy xương",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "multiple sclerosis": {
+    "display_vi": "Đa xơ cứng",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "muscle spasm": {
+    "display_vi": "Co thắt cơ",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "muscular dystrophy": {
+    "display_vi": "Loạn dưỡng cơ",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "myasthenia gravis": {
+    "display_vi": "Bệnh nhược cơ",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "myopia": {
+    "display_vi": "Cận thị",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "myositis": {
+    "display_vi": "Viêm cơ",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "narcolepsy": {
+    "display_vi": "Chứng ngủ rũ",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "nasal polyp": {
+    "display_vi": "Polyp mũi",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "neonatal jaundice": {
+    "display_vi": "Vàng da sơ sinh",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "nerve impingement near the shoulder": {
+    "display_vi": "Chèn ép dây thần kinh gần vai",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "neuralgia": {
+    "display_vi": "Đau dây thần kinh",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "neuropathy due to drugs": {
+    "display_vi": "Bệnh thần kinh do thuốc",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "neurosis": {
+    "display_vi": "Rối loạn tâm căn (neurosis)",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "nonalcoholic liver disease (nash)": {
+    "display_vi": "nonalcoholic liver disease (nash)",
+    "needs_review": true,
+    "translation_note": "Tên bệnh gan không do rượu và chữ viết tắt NASH có mức độ đặc hiệu khác nhau; chưa diễn giải thêm.",
+    "terminology_status": "AMBIGUOUS",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "noninfectious gastroenteritis": {
+    "display_vi": "Viêm dạ dày ruột không do nhiễm trùng",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "nose disorder": {
+    "display_vi": "Rối loạn vùng mũi",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "obsessive compulsive disorder (ocd)": {
+    "display_vi": "Rối loạn ám ảnh cưỡng chế (OCD)",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "obstructive sleep apnea (osa)": {
+    "display_vi": "Ngưng thở tắc nghẽn khi ngủ (OSA)",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "onychomycosis": {
+    "display_vi": "Nấm móng",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "open wound of the ear": {
+    "display_vi": "Vết thương hở ở tai",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "open wound of the eye": {
+    "display_vi": "Vết thương hở ở mắt",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "open wound of the foot": {
+    "display_vi": "Vết thương hở ở bàn chân",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "open wound of the lip": {
+    "display_vi": "Vết thương hở ở môi",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "open wound of the mouth": {
+    "display_vi": "Vết thương hở ở miệng",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "open wound of the neck": {
+    "display_vi": "Vết thương hở ở cổ",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "oppositional disorder": {
+    "display_vi": "Rối loạn chống đối",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "oral mucosal lesion": {
+    "display_vi": "Tổn thương niêm mạc miệng",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "oral thrush (yeast infection)": {
+    "display_vi": "Tưa miệng do nấm",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "orbital cellulitis": {
+    "display_vi": "Viêm mô tế bào hốc mắt",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "orthostatic hypotension": {
+    "display_vi": "Hạ huyết áp tư thế",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "osteoarthritis": {
+    "display_vi": "Thoái hóa khớp",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "osteochondroma": {
+    "display_vi": "U xương sụn",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "osteochondrosis": {
+    "display_vi": "Bệnh xương sụn (osteochondrosis)",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "osteomyelitis": {
+    "display_vi": "Viêm xương tủy",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "osteoporosis": {
+    "display_vi": "Loãng xương",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "otitis externa (swimmer's ear)": {
+    "display_vi": "Viêm tai ngoài",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "otitis media": {
+    "display_vi": "Viêm tai giữa",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "ovarian cyst": {
+    "display_vi": "Nang buồng trứng",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "ovarian torsion": {
+    "display_vi": "Xoắn buồng trứng",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "overflow incontinence": {
+    "display_vi": "Tiểu không tự chủ do tràn đầy",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "pain after an operation": {
+    "display_vi": "Đau sau phẫu thuật",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "pain disorder affecting the neck": {
+    "display_vi": "Rối loạn đau vùng cổ",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "pancreatic cancer": {
+    "display_vi": "Ung thư tụy",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "panic attack": {
+    "display_vi": "Cơn hoảng sợ",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "panic disorder": {
+    "display_vi": "Rối loạn hoảng sợ",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "parasitic disease": {
+    "display_vi": "Bệnh ký sinh trùng",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "parkinson disease": {
+    "display_vi": "Bệnh Parkinson",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "paronychia": {
+    "display_vi": "Viêm quanh móng",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "paroxysmal supraventricular tachycardia": {
+    "display_vi": "Nhịp nhanh trên thất kịch phát",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "paroxysmal ventricular tachycardia": {
+    "display_vi": "Nhịp nhanh thất kịch phát",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "pelvic inflammatory disease": {
+    "display_vi": "Viêm vùng chậu",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "pelvic organ prolapse": {
+    "display_vi": "Sa các cơ quan vùng chậu",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "pericarditis": {
+    "display_vi": "Viêm màng ngoài tim",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "peripheral arterial disease": {
+    "display_vi": "Bệnh động mạch ngoại biên",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "peripheral arterial embolism": {
+    "display_vi": "Tắc mạch động mạch ngoại biên",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "peripheral nerve disorder": {
+    "display_vi": "Rối loạn thần kinh ngoại biên",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "perirectal infection": {
+    "display_vi": "Nhiễm trùng quanh trực tràng",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "peritonitis": {
+    "display_vi": "Viêm phúc mạc",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "peritonsillar abscess": {
+    "display_vi": "Áp xe quanh amidan",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "persistent vomiting of unknown cause": {
+    "display_vi": "Nôn dai dẳng không rõ nguyên nhân",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "personality disorder": {
+    "display_vi": "Rối loạn nhân cách",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "peyronie disease": {
+    "display_vi": "Bệnh Peyronie",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "pharyngitis": {
+    "display_vi": "Viêm họng",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "phimosis": {
+    "display_vi": "Hẹp bao quy đầu",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "pilonidal cyst": {
+    "display_vi": "Nang lông vùng cùng cụt",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "pinworm infection": {
+    "display_vi": "Nhiễm giun kim",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "pituitary adenoma": {
+    "display_vi": "U tuyến yên",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "pituitary disorder": {
+    "display_vi": "Rối loạn tuyến yên",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "pityriasis rosea": {
+    "display_vi": "Vảy phấn hồng",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "plantar fasciitis": {
+    "display_vi": "Viêm cân gan chân",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "pleural effusion": {
+    "display_vi": "Tràn dịch màng phổi",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "pneumonia": {
+    "display_vi": "Viêm phổi",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "pneumothorax": {
+    "display_vi": "Tràn khí màng phổi",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "poisoning due to analgesics": {
+    "display_vi": "Ngộ độc thuốc giảm đau",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "poisoning due to anticonvulsants": {
+    "display_vi": "Ngộ độc thuốc chống co giật",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "poisoning due to antimicrobial drugs": {
+    "display_vi": "Ngộ độc thuốc kháng vi sinh vật",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "poisoning due to gas": {
+    "display_vi": "Ngộ độc khí",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "poisoning due to sedatives": {
+    "display_vi": "Ngộ độc thuốc an thần",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "polycystic kidney disease": {
+    "display_vi": "Bệnh thận đa nang",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "polycystic ovarian syndrome (pcos)": {
+    "display_vi": "Hội chứng buồng trứng đa nang (PCOS)",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "polycythemia vera": {
+    "display_vi": "Đa hồng cầu nguyên phát",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "polymyalgia rheumatica": {
+    "display_vi": "Đau đa cơ do thấp",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "post-traumatic stress disorder (ptsd)": {
+    "display_vi": "Rối loạn stress sau sang chấn (PTSD)",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "postoperative infection": {
+    "display_vi": "Nhiễm trùng sau phẫu thuật",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "postpartum depression": {
+    "display_vi": "Trầm cảm sau sinh",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "preeclampsia": {
+    "display_vi": "Tiền sản giật",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "pregnancy": {
+    "display_vi": "Mang thai",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "premature atrial contractions (pacs)": {
+    "display_vi": "Ngoại tâm thu nhĩ",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "premature ovarian failure": {
+    "display_vi": "Suy buồng trứng sớm",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "premature ventricular contractions (pvcs)": {
+    "display_vi": "Ngoại tâm thu thất",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "premenstrual tension syndrome": {
+    "display_vi": "Hội chứng căng thẳng tiền kinh nguyệt",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "presbyacusis": {
+    "display_vi": "Giảm thính lực do tuổi tác",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "presbyopia": {
+    "display_vi": "Lão thị",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "primary immunodeficiency": {
+    "display_vi": "Suy giảm miễn dịch nguyên phát",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "primary insomnia": {
+    "display_vi": "Mất ngủ nguyên phát",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "primary kidney disease": {
+    "display_vi": "Bệnh thận nguyên phát",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "problem during pregnancy": {
+    "display_vi": "Vấn đề trong thai kỳ",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "prostate cancer": {
+    "display_vi": "Ung thư tuyến tiền liệt",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "prostatitis": {
+    "display_vi": "Viêm tuyến tiền liệt",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "protein deficiency": {
+    "display_vi": "Thiếu protein",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "pseudotumor cerebri": {
+    "display_vi": "Hội chứng giả u não",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "psoriasis": {
+    "display_vi": "Vảy nến",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "psychosexual disorder": {
+    "display_vi": "Rối loạn tâm lý tình dục",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "psychotic disorder": {
+    "display_vi": "Rối loạn loạn thần",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "pterygium": {
+    "display_vi": "Mộng thịt ở mắt",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "pulmonary congestion": {
+    "display_vi": "Sung huyết phổi",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "pulmonary embolism": {
+    "display_vi": "Thuyên tắc phổi",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "pulmonary eosinophilia": {
+    "display_vi": "Tăng bạch cầu ái toan ở phổi",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "pulmonary fibrosis": {
+    "display_vi": "Xơ phổi",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "pulmonary hypertension": {
+    "display_vi": "Tăng áp động mạch phổi",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "pyelonephritis": {
+    "display_vi": "Viêm thận bể thận",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "pyogenic skin infection": {
+    "display_vi": "Nhiễm trùng da sinh mủ",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "rectal disorder": {
+    "display_vi": "Rối loạn trực tràng",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "restless leg syndrome": {
+    "display_vi": "Hội chứng chân không yên",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "retinal detachment": {
+    "display_vi": "Bong võng mạc",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "retinopathy due to high blood pressure": {
+    "display_vi": "Bệnh võng mạc do tăng huyết áp",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "rhabdomyolysis": {
+    "display_vi": "Tiêu cơ vân",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "rheumatoid arthritis": {
+    "display_vi": "Viêm khớp dạng thấp",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "rosacea": {
+    "display_vi": "Trứng cá đỏ",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "rotator cuff injury": {
+    "display_vi": "Chấn thương chóp xoay vai",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "salivary gland disorder": {
+    "display_vi": "Rối loạn tuyến nước bọt",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "sarcoidosis": {
+    "display_vi": "Bệnh sarcoidosis",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "scabies": {
+    "display_vi": "Ghẻ",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "scar": {
+    "display_vi": "Sẹo",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "scarlet fever": {
+    "display_vi": "Tinh hồng nhiệt",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "schizophrenia": {
+    "display_vi": "Tâm thần phân liệt",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "sciatica": {
+    "display_vi": "Đau thần kinh tọa",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "scleritis": {
+    "display_vi": "Viêm củng mạc",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "scleroderma": {
+    "display_vi": "Xơ cứng bì",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "scoliosis": {
+    "display_vi": "Vẹo cột sống",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "seasonal allergies (hay fever)": {
+    "display_vi": "Dị ứng theo mùa",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "sebaceous cyst": {
+    "display_vi": "Nang bã nhờn",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "seborrheic dermatitis": {
+    "display_vi": "Viêm da tiết bã",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "seborrheic keratosis": {
+    "display_vi": "Dày sừng tiết bã",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "sensorineural hearing loss": {
+    "display_vi": "Giảm thính lực thần kinh giác quan",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "sepsis": {
+    "display_vi": "Nhiễm trùng huyết",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "septic arthritis": {
+    "display_vi": "Viêm khớp nhiễm khuẩn",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "shingles (herpes zoster)": {
+    "display_vi": "Bệnh zona",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "sialoadenitis": {
+    "display_vi": "Viêm tuyến nước bọt",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "sick sinus syndrome": {
+    "display_vi": "Hội chứng suy nút xoang",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "sickle cell anemia": {
+    "display_vi": "Thiếu máu hồng cầu hình liềm",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "sickle cell crisis": {
+    "display_vi": "Cơn bệnh hồng cầu hình liềm",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "sinus bradycardia": {
+    "display_vi": "Nhịp chậm xoang",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "sjogren syndrome": {
+    "display_vi": "Hội chứng Sjögren",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "skin cancer": {
+    "display_vi": "Ung thư da",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "skin disorder": {
+    "display_vi": "Rối loạn da",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "skin pigmentation disorder": {
+    "display_vi": "Rối loạn sắc tố da",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "skin polyp": {
+    "display_vi": "Polyp da",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "smoking or tobacco addiction": {
+    "display_vi": "Hút thuốc hoặc nghiện thuốc lá",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "social phobia": {
+    "display_vi": "Ám ảnh sợ xã hội",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "soft tissue sarcoma": {
+    "display_vi": "Sarcoma mô mềm",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "somatization disorder": {
+    "display_vi": "Rối loạn cơ thể hóa",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "spermatocele": {
+    "display_vi": "Nang chứa tinh trùng",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "spina bifida": {
+    "display_vi": "Tật nứt đốt sống",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "spinal stenosis": {
+    "display_vi": "Hẹp ống sống",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "spondylitis": {
+    "display_vi": "Viêm cột sống",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "spondylolisthesis": {
+    "display_vi": "Trượt đốt sống",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "spondylosis": {
+    "display_vi": "Thoái hóa cột sống",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "spontaneous abortion": {
+    "display_vi": "Sẩy thai tự nhiên",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "sprain or strain": {
+    "display_vi": "Bong gân hoặc căng giãn cơ",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "stenosis of the tear duct": {
+    "display_vi": "Hẹp lệ đạo",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "stomach cancer": {
+    "display_vi": "Ung thư dạ dày",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "strep throat": {
+    "display_vi": "Viêm họng do liên cầu",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "stress incontinence": {
+    "display_vi": "Tiểu không tự chủ khi gắng sức",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "stricture of the esophagus": {
+    "display_vi": "Hẹp thực quản",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "stroke": {
+    "display_vi": "Đột quỵ",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "stye": {
+    "display_vi": "Lẹo mắt",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "subacute thyroiditis": {
+    "display_vi": "Viêm tuyến giáp bán cấp",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "subarachnoid hemorrhage": {
+    "display_vi": "Xuất huyết dưới nhện",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "subconjunctival hemorrhage": {
+    "display_vi": "Xuất huyết dưới kết mạc",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "subdural hemorrhage": {
+    "display_vi": "Xuất huyết dưới màng cứng",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "substance-related mental disorder": {
+    "display_vi": "Rối loạn tâm thần liên quan chất",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "systemic lupus erythematosis (sle)": {
+    "display_vi": "Lupus ban đỏ hệ thống (SLE)",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "teething syndrome": {
+    "display_vi": "Hội chứng mọc răng",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "temporary or benign blood in urine": {
+    "display_vi": "Tiểu máu tạm thời hoặc lành tính",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "temporomandibular joint disorder": {
+    "display_vi": "Rối loạn khớp thái dương hàm",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "tendinitis": {
+    "display_vi": "Viêm gân",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "tension headache": {
+    "display_vi": "Đau đầu do căng thẳng",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "testicular disorder": {
+    "display_vi": "Rối loạn tinh hoàn",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "testicular torsion": {
+    "display_vi": "Xoắn tinh hoàn",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "thoracic aortic aneurysm": {
+    "display_vi": "Phình động mạch chủ ngực",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "thoracic outlet syndrome": {
+    "display_vi": "Hội chứng lối thoát ngực",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "threatened pregnancy": {
+    "display_vi": "threatened pregnancy",
+    "needs_review": true,
+    "translation_note": "Nhãn threatened pregnancy chưa nêu biến chứng cụ thể; không tự đổi thành dọa sẩy thai.",
+    "terminology_status": "AMBIGUOUS",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "thrombocytopenia": {
+    "display_vi": "Giảm tiểu cầu",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "thrombophlebitis": {
+    "display_vi": "Viêm tĩnh mạch huyết khối",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "thyroid nodule": {
+    "display_vi": "Nhân tuyến giáp",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "tic (movement) disorder": {
+    "display_vi": "Rối loạn tic vận động",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "tietze syndrome": {
+    "display_vi": "Hội chứng Tietze",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "tinnitus of unknown cause": {
+    "display_vi": "Ù tai không rõ nguyên nhân",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "tonsillar hypertrophy": {
+    "display_vi": "Phì đại amidan",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "tonsillitis": {
+    "display_vi": "Viêm amidan",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "tooth abscess": {
+    "display_vi": "Áp xe răng",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "tooth disorder": {
+    "display_vi": "Rối loạn răng",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "torticollis": {
+    "display_vi": "Vẹo cổ",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "tourette syndrome": {
+    "display_vi": "Hội chứng Tourette",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "toxic multinodular goiter": {
+    "display_vi": "Bướu giáp đa nhân độc",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "tracheitis": {
+    "display_vi": "Viêm khí quản",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "transient ischemic attack": {
+    "display_vi": "Cơn thiếu máu não thoáng qua",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "trichiasis": {
+    "display_vi": "Lông quặm",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "trichomonas infection": {
+    "display_vi": "Nhiễm Trichomonas",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "trigeminal neuralgia": {
+    "display_vi": "Đau dây thần kinh sinh ba",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "trigger finger (finger disorder)": {
+    "display_vi": "Ngón tay lò xo",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "tuberculosis": {
+    "display_vi": "Bệnh lao",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "ulcerative colitis": {
+    "display_vi": "Viêm loét đại tràng",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "urethral disorder": {
+    "display_vi": "Rối loạn niệu đạo",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "urethral stricture": {
+    "display_vi": "Hẹp niệu đạo",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "urethral valves": {
+    "display_vi": "Van niệu đạo",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "urethritis": {
+    "display_vi": "Viêm niệu đạo",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "urge incontinence": {
+    "display_vi": "Tiểu không tự chủ do mót tiểu",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "urinary tract infection": {
+    "display_vi": "Nhiễm trùng đường tiết niệu",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "urinary tract obstruction": {
+    "display_vi": "Tắc nghẽn đường tiết niệu",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "uterine atony": {
+    "display_vi": "Đờ tử cung",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "uterine fibroids": {
+    "display_vi": "U xơ tử cung",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "vaginal cyst": {
+    "display_vi": "Nang âm đạo",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "vaginal yeast infection": {
+    "display_vi": "Nhiễm nấm âm đạo",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "vaginismus": {
+    "display_vi": "Co thắt âm đạo",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "vaginitis": {
+    "display_vi": "Viêm âm đạo",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "varicocele of the testicles": {
+    "display_vi": "Giãn tĩnh mạch thừng tinh",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "varicose veins": {
+    "display_vi": "Giãn tĩnh mạch",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "vasculitis": {
+    "display_vi": "Viêm mạch máu",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "venous insufficiency": {
+    "display_vi": "Suy tĩnh mạch",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "viral exanthem": {
+    "display_vi": "Phát ban do virus",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "viral hepatitis": {
+    "display_vi": "Viêm gan do virus",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "viral warts": {
+    "display_vi": "Mụn cóc do virus",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "vitamin b12 deficiency": {
+    "display_vi": "Thiếu vitamin B12",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "vitreous degeneration": {
+    "display_vi": "Thoái hóa dịch kính",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "vitreous hemorrhage": {
+    "display_vi": "Xuất huyết dịch kính",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "vocal cord polyp": {
+    "display_vi": "Polyp dây thanh âm",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "vulvar disorder": {
+    "display_vi": "Rối loạn âm hộ",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "vulvodynia": {
+    "display_vi": "Đau âm hộ",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "white blood cell disease": {
+    "display_vi": "Bệnh về bạch cầu",
+    "needs_review": false,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "whooping cough": {
+    "display_vi": "Ho gà",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  },
+  "yeast infection": {
+    "display_vi": "Nhiễm nấm men",
+    "needs_review": true,
+    "terminology_status": "DRAFT",
+    "reference_sources": [],
+    "review_scope": "Bản dịch tham khảo; phê duyệt hiển thị của chủ đồ án không phải thẩm định y khoa."
+  }
+}

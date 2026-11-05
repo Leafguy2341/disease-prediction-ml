@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "purpose": "production_guard_remains_closed_pending_independent_reference",
+  "health_http": 503,
+  "health_error": "environment_mismatch",
+  "predict_http": 503,
+  "deserializer_calls": 0,
+  "guards": {
+    "model_or_feature_fit_attempts": 0,
+    "test_payload_access": 0,
+    "protected_write_attempts": 0
+  },
+  "models_fitted": 0,
+  "gemini_calls": 0
+}

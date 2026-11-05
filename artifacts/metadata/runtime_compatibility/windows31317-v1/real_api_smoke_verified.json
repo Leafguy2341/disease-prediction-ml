@@ -1,0 +1,97 @@
+{
+  "stage": "real_checkpoint",
+  "status": "PASS",
+  "health": {
+    "status": "ok",
+    "checkpoint_status": "REAL CHECKPOINT VERIFIED",
+    "model_id": "lr_tuned_c2",
+    "tuning_experiment_id": "tuning-v1-9c4dd013abbba14a",
+    "selected_checkpoint_id": "tuned-v1-b8a5602679b3dc5c",
+    "checkpoint_sha256": "4cac3bfd78dfe2849a855130d264c7bebc14d6e8d8e305b15015141663300ac6",
+    "schema_sha256": "441709695f8b878e65d848309361838fa0367b6c031ed665a1472a9aee43b734",
+    "features": 375,
+    "classes": 587,
+    "chat": {
+      "model": "gemini-3.8-flash",
+      "live_enabled": false,
+      "key_configured": false,
+      "requests_used": 0,
+      "request_limit": 20,
+      "output_token_limit_per_request": 2048,
+      "token_budget": 100000,
+      "budget_units_used": 0,
+      "usage": {
+        "kind": "unknown",
+        "requests": 0,
+        "complete": false,
+        "total_input_tokens": null,
+        "total_output_tokens": null,
+        "total_thought_tokens": null,
+        "total_tokens": null,
+        "reported_cost": null
+      }
+    }
+  },
+  "synthetic_input_without_ground_truth": true,
+  "prediction": {
+    "model_id": "lr_tuned_c2",
+    "tuning_experiment_id": "tuning-v1-9c4dd013abbba14a",
+    "selected_checkpoint_id": "tuned-v1-b8a5602679b3dc5c",
+    "checkpoint_sha256": "4cac3bfd78dfe2849a855130d264c7bebc14d6e8d8e305b15015141663300ac6",
+    "schema_sha256": "441709695f8b878e65d848309361838fa0367b6c031ed665a1472a9aee43b734",
+    "features": 375,
+    "classes": 587,
+    "input_present_count": 2,
+    "score_label": "Điểm mô hình (%)",
+    "calibrated": false,
+    "note": "Điểm mô hình chưa calibration; không phải xác suất mắc bệnh hoặc chẩn đoán.",
+    "top3": [
+      {
+        "rank": 1,
+        "class_id": 380,
+        "label": "oral mucosal lesion",
+        "score_percent": 5.12045687095984
+      },
+      {
+        "rank": 2,
+        "class_id": 122,
+        "label": "conjunctivitis due to virus",
+        "score_percent": 3.83870108406369
+      },
+      {
+        "rank": 3,
+        "class_id": 527,
+        "label": "teething syndrome",
+        "score_percent": 3.5800069472765097
+      }
+    ]
+  },
+  "test_payload_opened": false,
+  "models_fitted": 0,
+  "runtime_versions": {
+    "python": "3.13.17",
+    "sklearn": "1.6.1",
+    "numpy": "2.1.3",
+    "scipy": "1.16.3",
+    "joblib": "1.6.0"
+  },
+  "guards": {
+    "model_or_feature_fit_attempts": 0,
+    "test_payload_access": 0,
+    "protected_write_attempts": 0
+  },
+  "health_http": 200,
+  "predict_http": 200,
+  "gemini_calls": 0,
+  "actual_artifacts_opened": [
+    "artifacts/metadata/phase2/dataset_manifest.json",
+    "artifacts/metadata/phase2/feature_schema.json",
+    "artifacts/metadata/phase2/label_mapping.json",
+    "artifacts/metadata/runtime_compatibility/lr-31318-synthetic-reference.json",
+    "artifacts/metadata/tuning/tuning-v1-9c4dd013abbba14a/manifest.json",
+    "artifacts/models/tuning/tuning-v1-9c4dd013abbba14a/logistic_regression/fit.json",
+    "artifacts/models/tuning/tuning-v1-9c4dd013abbba14a/logistic_regression/metadata.json",
+    "artifacts/models/tuning/tuning-v1-9c4dd013abbba14a/logistic_regression/pipeline.joblib"
+  ],
+  "top3_matches_original_reference": true
+}

@@ -1,0 +1,97 @@
+{
+  "approval_policy": "Production runtime stays unapproved until independent comparison PASS; never relax tolerance after observing results.",
+  "boundary_cases_are_api_inputs": false,
+  "candidate_os": "Windows",
+  "candidate_versions": {
+    "joblib": "1.6.0",
+    "numpy": "2.1.3",
+    "python": "3.13.17",
+    "scipy": "1.16.3",
+    "sklearn": "1.6.1"
+  },
+  "cases": [
+    {
+      "id": "zero_boundary",
+      "present": []
+    },
+    {
+      "id": "cough_only",
+      "present": [
+        "cough"
+      ]
+    },
+    {
+      "id": "fever_only",
+      "present": [
+        "fever"
+      ]
+    },
+    {
+      "id": "cough_fever",
+      "present": [
+        "cough",
+        "fever"
+      ]
+    },
+    {
+      "id": "gastro",
+      "present": [
+        "nausea",
+        "vomiting"
+      ]
+    },
+    {
+      "id": "headache_fatigue",
+      "present": [
+        "headache",
+        "fatigue"
+      ]
+    },
+    {
+      "id": "respiratory",
+      "present": [
+        "cough",
+        "fever",
+        "shortness of breath"
+      ]
+    },
+    {
+      "id": "all_one_boundary",
+      "present": "ALL"
+    }
+  ],
+  "checkpoint_sha256": "4cac3bfd78dfe2849a855130d264c7bebc14d6e8d8e305b15015141663300ac6",
+  "class_count": 587,
+  "feature_count": 375,
+  "id": "lr-windows31317-synthetic-v1",
+  "inference_threads": 1,
+  "mapping_file_sha256": "d2ef711e5e04062e8b5b949ce434b1383e1ca2fef6eb31a0865acb2f470ab5b5",
+  "original_os": "Linux",
+  "original_versions": {
+    "joblib": "1.6.0",
+    "numpy": "2.1.3",
+    "python": "3.13.18",
+    "scipy": "1.16.3",
+    "sklearn": "1.6.1"
+  },
+  "phase2_manifest_sha256": "50308d250d874b1b653a71c31f38dece0ec9fbb4dbc9d94f68bc1461e80b8fe9",
+  "probability_atol": 1e-12,
+  "probability_rtol": 1e-10,
+  "reference_source": "new synthetic inference on original approved Colab runtime; no dataset or saved split predictions",
+  "require_equal_predict_labels": true,
+  "require_equal_stable_top3_ids": true,
+  "schema_file_sha256": "dd07a3c73dd41558daa9c08e816e0a93d9efc4155f98b7e2b73325bffe31c5c0",
+  "selected_identity": "tuned-v1-b8a5602679b3dc5c",
+  "source_sha256": {
+    "src/data/audit.py": "41ff075c529ecf7200caf3717b660f655bc344e558d52d1448045aa2dd91672f",
+    "src/data/loader.py": "37397527ec5b5d48e233776fa5ef040a4bc476e23a45dd26d81ed5144c5ab17b",
+    "src/data/paths.py": "89ab450a76fffe92bb30fd6aa11b69567d69293916da2fda78123a8f29249eeb",
+    "src/data/preprocessing.py": "648c43f722a1c30e49e7f3279431c8136bbc5396f42ec9b51212679663fb845d",
+    "src/models/runtime.py": "ae3f4258bfd1029ed13aa1021e3905fee8cfdd53b5651a18f770e74e766ca500",
+    "src/models/training.py": "d48022c38d06712e028387e99a1563da8782af408749f436da54d17c825dc652",
+    "src/models/tuned_ensemble.py": "a507f8cb9065009585b79a4f1275ca2c6d7c3ecf2690367d7a366f99c1ffcf3b",
+    "src/models/tuning.py": "00a07b2d5a2e1754b3c63d32342cf54a8c781ee1df1af5c029c9e7289bc59f02"
+  },
+  "tie_policy": "stable Phase 2 class order",
+  "tuning_experiment": "tuning-v1-9c4dd013abbba14a"
+}

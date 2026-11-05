@@ -1,0 +1,10 @@
+[project]
+name = "disease-prediction-ml"
+version = "0.1.0"
+description = "Disease dataset audit, locked preprocessing and Colab-first training pipelines"
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+
