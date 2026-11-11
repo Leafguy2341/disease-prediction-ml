@@ -32,7 +32,9 @@ def test_chromium_chat_clarification_negation_urgent_reset_and_safe_render(deplo
     project = Path(__file__).resolve().parents[1]
     provider = OfflineExtractor(service.catalog,project/'configs/synonyms.json')
     runtime = ChatRuntime(service, provider, offline_policy=OfflinePolicy.from_file(project/'configs/phase5b.json'))
-    app = create_app(service_loader=lambda: service, chat_factory=lambda _: runtime)
+    from test_three_model_web import extras
+    # Separate real dialogue stores for all synthetic model services.
+    app = create_app(service_loader=lambda: service, optional_loader=extras)
     listener = socket.socket()
     listener.bind(("127.0.0.1", 0))
     port = listener.getsockname()[1]
@@ -112,7 +114,7 @@ def test_chromium_chat_clarification_negation_urgent_reset_and_safe_render(deplo
                 evaluate("Array.from(document.querySelectorAll('.dialogue-actions button')).find(e=>!e.disabled && e.textContent==='Xem kết quả tham khảo hiện tại').click();true")
                 evaluate("(async()=>{await uiWait(()=>document.querySelectorAll('.message.assistant').length===3 && !document.querySelector('#send').disabled);return true})()")
                 assert evaluate("document.querySelectorAll('.result-row').length") == 3
-                assert 'Điểm tự tin dự đoán' in evaluate("document.querySelector('.result-title').textContent")
+                assert 'Điểm mô hình (%)' in evaluate("document.querySelector('.result-title').textContent")
                 assert 'chưa xác minh' in evaluate("document.querySelector('.evaluation-reference').textContent")
                 evaluate("document.querySelector('#new-chat').click();true")
                 evaluate("(async()=>{await uiWait(()=>document.querySelectorAll('.message.assistant').length===1 && !document.querySelector('#send').disabled);return true})()")
@@ -126,6 +128,23 @@ def test_chromium_chat_clarification_negation_urgent_reset_and_safe_render(deplo
                 evaluate("document.querySelector('#settings-dialog').close();true")
                 evaluate("(async()=>{await uiWait(()=>document.querySelector('#api-key').value==='');return true})()")
                 assert evaluate("localStorage.length===0 && sessionStorage.length===0")
+                assert len(deployment[2].calls)==2
+                assert evaluate("document.querySelectorAll('#model-select option').length")==3
+                evaluate("document.querySelector('#model-select').value='lr_baseline';document.querySelector('#model-select').dispatchEvent(new Event('change'));true")
+                evaluate("(async()=>{await uiWait(()=>document.querySelectorAll('.message.assistant').length===1 && !document.querySelector('#send').disabled);return true})()")
+                send('Tôi ho.',2)
+                evaluate("Array.from(document.querySelectorAll('.dialogue-actions button')).find(e=>!e.disabled && e.textContent==='Xem kết quả tham khảo hiện tại').click();true")
+                evaluate("(async()=>{await uiWait(()=>document.querySelectorAll('.message.assistant').length===3 && !document.querySelector('#send').disabled);return true})()")
+                assert 'lr_baseline' in evaluate("document.querySelector('.result-title').textContent")
+                assert evaluate("document.querySelectorAll('.score').length")==3
+                evaluate("document.querySelector('#model-select').value='hard_tuned_lr_svc_knn';document.querySelector('#model-select').dispatchEvent(new Event('change'));true")
+                evaluate("(async()=>{await uiWait(()=>document.querySelectorAll('.message.assistant').length===1 && !document.querySelector('#send').disabled);return true})()")
+                send('Tôi ho.',2)
+                evaluate("Array.from(document.querySelectorAll('.dialogue-actions button')).find(e=>!e.disabled && e.textContent==='Xem kết quả tham khảo hiện tại').click();true")
+                evaluate("(async()=>{await uiWait(()=>document.querySelectorAll('.message.assistant').length===3 && !document.querySelector('#send').disabled);return true})()")
+                assert evaluate("document.querySelectorAll('.hard-vote .member-vote').length")==3
+                assert evaluate("document.querySelectorAll('.score').length")==0
+                assert 'HARD VOTING' in evaluate("document.querySelector('.result-title').textContent")
                 evaluate("document.querySelector('#mode-select').value='llm';document.querySelector('#mode-select').dispatchEvent(new Event('change'));true")
                 assert evaluate("document.querySelector('#send').disabled")
                 screenshot = cdp("Page.captureScreenshot", {"format": "png"})["data"]
@@ -134,7 +153,7 @@ def test_chromium_chat_clarification_negation_urgent_reset_and_safe_render(deplo
                 assert evaluate("document.documentElement.scrollWidth <= window.innerWidth")
                 (tmp_path / "local-chat-mobile.png").write_bytes(base64.b64decode(cdp("Page.captureScreenshot", {"format": "png"})["data"]))
                 print("CHROMIUM MOCK UI PASS; screenshots:", str(tmp_path))
-            assert len(deployment[2].calls) == 2
+            assert len(deployment[2].calls) == 3
         finally:
             if proc is not None and proc.poll() is None:
                 proc.terminate()

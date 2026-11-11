@@ -34,3 +34,57 @@ drive-source/
 *.pickle
 artifacts/metadata/phase3/
 
+# PC -> GitHub -> laptop: datasets/weights remain in the external data release.
+*.zip
+*.npz
+*.npy
+*.onnx
+*.pt
+*.pth
+*.safetensors
+*.h5
+.env.*
+!.env.example
+*.log
+*.tmp
+*.bak
+*.xml
+.mypy_cache/
+.ruff_cache/
+node_modules/
+
+# Keep only explicitly reviewed, small source-side identity/evidence metadata.
+/artifacts/**
+!/artifacts/metadata/
+!/artifacts/metadata/phase2/
+!/artifacts/metadata/phase2/feature_schema.json
+!/artifacts/metadata/phase2/label_mapping.json
+!/artifacts/metadata/phase3_audit/
+!/artifacts/metadata/phase3_audit/**
+!/artifacts/metadata/phase4_audit/
+!/artifacts/metadata/phase4_audit/**
+!/artifacts/metadata/post_tuning_audit/
+!/artifacts/metadata/post_tuning_audit/**
+!/artifacts/metadata/model_analysis/
+!/artifacts/metadata/model_analysis/**
+!/artifacts/metadata/final_ml_gaps/
+!/artifacts/metadata/final_ml_gaps/**
+!/artifacts/metadata/final_evaluation_audit/
+!/artifacts/metadata/final_evaluation_audit/**
+!/artifacts/metadata/structured_inference/
+!/artifacts/metadata/structured_inference/**
+!/artifacts/metadata/runtime_compatibility/
+!/artifacts/metadata/runtime_compatibility/**
+!/artifacts/metadata/gemini_debug/
+!/artifacts/metadata/gemini_debug/**
+
+# Large derived row-level tables and development snapshots aren't Git fixtures.
+/reports/tables/
+/reports/figures/
+/reports/academic_review_20261111/snapshots/
+/reports/academic_review_20261111/presentation_repair/
+/reports/academic_review_20261111/initial_source_sha256.json
+/reports/academic_review_20261111/snapshot_manifest.json
+/reports/academic_review_20261111/cleanup_candidates.json
+configs/runtime.local.json
+

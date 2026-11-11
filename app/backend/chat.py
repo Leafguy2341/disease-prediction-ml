@@ -223,18 +223,25 @@ class ChatRuntime:
             try:
                 prediction = self.engine.forward_ready(result.session_id, result.turn_id, self.service)
                 self.engine.store.get(result.session_id)  # Fail closed if inference outlives the session.
-                response["predictions"] = PredictResponse.model_validate(self.presenter.render(prediction)).model_dump()
-                response['state_summary']['top3_display'] = response['predictions']['presentation']['top3']
+                from .models import render_prediction, HARD_ID
+                response["predictions"] = render_prediction(prediction, self.presenter)
+                hard = prediction.get('model_id') == HARD_ID
+                response['state_summary']['top3_display'] = response['predictions']['presentation'].get('top3', [])
                 response.update(status="prediction_ready", reason="validated_features_lr_tuned",
                                 message="Dưới đây là 3 gợi ý từ mô hình dựa trên triệu chứng đã ghi nhận. Điểm tự tin dự đoán là score chưa calibration, không phải xác suất mắc bệnh hay độ tin cậy chẩn đoán. Đây là gợi ý từ mô hình học máy trên dữ liệu nghiên cứu, không thay thế chẩn đoán của bác sĩ.")
                 response['message'] = offline_confirmation() + response['message']
+                if hard:
+                    response['message'] = offline_confirmation() + 'Kết quả hard voting từ ba model đã chọn. Phiếu bầu không phải xác suất mắc bệnh; không có Top3 probability. Không thay thế chẩn đoán của bác sĩ.'
+                    response['reason'] = 'validated_features_hard_vote'
+                elif prediction.get('model_id') == 'lr_baseline':
+                    response['reason'] = 'validated_features_lr_baseline'
                 if result.reason.startswith('offline_limited_'):
                     response['reason'] = result.reason
                     response['message'] = 'Thông tin còn hạn chế; đã hết câu hỏi phù hợp hoặc ngân sách hỏi. ' + response['message']
                 if result.reason=='offline_requested_preview':
                     response['reason']=result.reason
                     response['message']='Kết quả tham khảo với thông tin còn hạn chế. '+response['message']
-                if callable(getattr(self.engine, 'log_debug', None)):
+                if not hard and callable(getattr(self.engine, 'log_debug', None)):
                     entries = response['predictions']['presentation']['top3']
                     self.engine.log_debug(result, scores=[item['score_percent'] for item in response['predictions']['top3']],
                         translation_stats={s: sum(e['translation_status'] == s for e in entries) for s in ('missing','needs_review','draft')})

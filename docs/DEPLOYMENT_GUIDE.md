@@ -521,3 +521,40 @@ Dừng server cũ bằng Ctrl+C rồi chạy lại lệnh Uvicorn ở mục3a đ
 ### Triệu chứng kèm từ mô tả và câu hỏi dự đoán
 
 Bản sửa 2026-11-02 nhận đúng “tôi bị buồn nôn, ho và sốt nặng”: nausea/cough/fever đều present, không coi riêng “nặng” là symptom chưa hỗ trợ. Câu “tôi bị sốt và ho thì bị bệnh gì?” giữ hai feature và ASK theo budget, không trả unsupported_health do đuôi hỏi. Từ mô tả chỉ bỏ khỏi residual khi nằm ngay sau mention đã validate; không đổi schema/model, không phải đánh giá mức độ nặng nhẹ. Dấu hiệu urgent vẫn được kiểm trên toàn văn bản gốc trước đó; khối u/ung thư/mang thai/unknown symptoms vẫn không bị bỏ qua. Restart server local để nạp sửa đổi, không cần training/notebook, API ngoài hoặc cập nhật dataset.
+
+
+<a id="academic-review--2026-11-11-python-entrypoint"></a>
+<a id="three-model-website"></a>
+## Website ba model — 2026-11-11
+
+Hướng dẫn khởi động duy nhất nằm ở [README](../README.md#chạy-website-trên-windows): đặt storage root thực trong cùng terminal rồi chạy `python run_api.py` bằng `.venv-web` CPython3.13.17. Thư mục dữ liệu hiện tại là sibling `disease-prediction-ml-data`. Không tạo lại environment đang dùng, không đổi Python toàn cục và không cần Jupyter. `run_api.py` giữ localhost/1worker/no reload; dùng `--port 8001` nếu8000 đang được dùng.
+
+| ID | Windows3.13.17 hiện tại | Output contract |
+|---|---|---|
+| `lr_tuned_c2` | ENABLED nếu đủ artifact; default không đổi | `top3`, nhãn/score thật từ predict_proba |
+| `lr_baseline` | BLOCKED: runtime chưa có independent synthetic reference | Cùng LR Top3 khi qualify |
+| `hard_tuned_lr_svc_knn` | BLOCKED: SVC/KNN thiếu independent reference | `result_kind=hard_vote_result`, nhãn và member votes; không Top3 |
+
+`GET /api/v1/models` luôn liệt kê đủ ba IDs cùng `available`, reason, result_kind, artifact identities. Chỉ model available được chọn trên UI. `POST /api/v1/predict` nhận `model_id` tùy chọn; bỏ trường này giữ LR tuned cũ. Không fallback khi một model lỗi. `POST /api/v1/chat` nhận cùngID; reply phân biệt `requested_model_id` và `processed_model_id` (null khi chưa inference). Gửi session của model khác mà không reset trả409; reset loại context cũ và tạo phiên riêng. Mỗi model dùng dialogue store độc lập, vẫn chung extractor/validator/DecisionPolicy; không thay135aliases.
+
+LR hiển thị “Điểm mô hình (%)”,4chữ số thập phân; raw scores giữ nguyên, không chuẩn hóa riêng Top3. Hard vote dùng engine `src.models.ensemble.hard_vote` đã khóa, uniform votes và ưu tiênLR→SVC→KNN khi ba nhãn khác nhau. UI chỉ nhãn thắng, phiếu và từng member; không hiển thị vote share như probability. Hai kiểu response tách bằng schema; hợp đồng LR cũ được giữ.
+
+Qualification cô lập thực tế:4checkpoint hashes, identity/source pins, schema375, fitted318 và mapping587 PASS; synthetic8vectors và hardvote chạy thành công trên Windows. Tuy nhiên chỉ LR tuned có original Colab reference đã pinSHA để so toàn bộ8×587probabilities/exactlabels/Top3. Load thành công một pickle không đủ mở rộng allowlist: baseline/SVC/KNN vẫn BLOCKED trong production. Không bỏ guard hoặc tự thay model. Cần tạo reference độc lập trong môi trường gốc3.13.18 với cùng8vectors và cùng hashes, rồi đối chiếu tolerance rtol1e-10/atol1e-12 trước khi duyệt runtime thêm.
+
+Lỗi `storage_not_configured` từ `/health`503 là thiếu biến môi trường trong serverprocess; dừng đúng server, đặt env rồi khởi động lại cùng terminal. Environment mismatch, missing artifact hoặc checksum mismatch phải dừng, không fallback. `/health` báo default model, registry báo trạng thái từng ứng viên. Offline không gọi LLM.
+
+Kiểm thử vòng này:380targeted regressionPASS; actualChromium fixture UI1PASS ngoài sandbox (sandbox ban đầu chặn IPC); real LR tuned HTTP200 và clean extracted-data/current-source-overlay smokePASS. Không gọi hai comparator là real websitePASS khi chúng đang disabled. Không fullsuite claim, không clinical validation. Lệnh tái kiểm cơ chế:
+
+```powershell
+& 'D:\Program Files (x86)\Python\Python311\python.exe' -B -m pytest tests/test_three_model_web.py tests/test_prediction_api.py -q -p no:cacheprovider
+& '.\.venv-web\Scripts\python.exe' -B -m scripts.qualify_web_models --storage-root '..\disease-prediction-ml-data' --output 'D:\new-output\windows-probe.json'
+```
+
+Lệnh thứ nhất dùng test interpreter hiện có, không phải môi trường loadcheckpoint; trên máy khác dùng testenv phù hợp. Đường output probe phải chưa tồn tại và nằm ngoài data. Probe không duyệt production tự động. Không gửi API key, không dùng locked test để kiểm web.
+
+
+## Clean Git checkout — 2026-11-11
+
+Clone source không có dataset/weights. Hai file schema/mapping nhỏ trong `artifacts/metadata/phase2` là fixture/identity đã khóa để unit tests hoạt động; không fallback model từ đó. Dùng [data identity manifest](../configs/external_data_release.json) và quy trình [handover Git](HANDOVER_GUIDE.md#git-migration-pc--github--laptop--2026-11-11). Sau setup Windows3.13.17/pinned requirements-api và external data, chạy `python run_api.py` bằng đúng .venv-web. `/health` và structured predict/chat kiểm synthetic, không đọc lockedCSV. Tham số DISEASE_API_STORAGE_ROOT cần cùng terminal khởi động server.
+
+Developer tests dùng test interpreter phù hợp với requirements-dev; không cài pytest/notebook tooling vào production chỉ để chạy test. Không bật DISEASE_RUN_DATA_REGRESSION hoặc Run All notebooks khi đồng bộ máy. Publisher source hiện có vẫn có thể tạo lại `dist`; Git không ship generateddist. HaiZIP05 giữ nguyên và không được tự coi chứa commitGit mới.

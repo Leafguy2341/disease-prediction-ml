@@ -1,0 +1,9 @@
+# Preserve frozen source, metadata, fixture and notebook bytes across Windows/Linux.
+# core.autocrlf must not rewrite files protected by SHA-256 provenance.
+* -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+*.png binary
+*.ico binary
+# These two checksum-pinned historical fixture logs contain captured whitespace.
+# Preserve their bytes; lint application/source files normally.
+reports/terminology/activation-20261104/baseline.tests.txt whitespace=-blank-at-eol,-blank-at-eof,-space-before-tab,cr-at-eol
+reports/terminology/activation-20261104/batch-1.tests.txt whitespace=-blank-at-eol,-blank-at-eof,-space-before-tab,cr-at-eol

@@ -157,7 +157,10 @@ def test_http_registry_modes_reset_and_score_contract(deployment):
     with TestClient(create_app(service_loader=lambda:service)) as client:
         models=client.get('/api/v1/models').json()
         assert models['default_model_id']=='lr_tuned_c2'
-        assert len(models['models'])==1 and models['models'][0]['available']
+        # The owner expanded the registry; this fixture supplies only the tuned service.
+        from app.backend.models import MODEL_NAMES
+        assert {m['model_id'] for m in models['models']} == set(MODEL_NAMES)
+        assert [m['model_id'] for m in models['models'] if m['available']] == ['lr_tuned_c2']
         assert client.post('/api/v1/chat',json={'message':'Tôi ho.','model_id':'knn'}).status_code==422
         assert client.post('/api/v1/chat',json={'message':'Tôi ho.','mode':'llm'}).status_code==409
         first=client.post('/api/v1/chat',json={'message':'Tôi bị ngứa âm đạo.','mode':'offline'}).json()

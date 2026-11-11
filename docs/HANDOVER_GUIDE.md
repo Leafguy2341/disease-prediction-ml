@@ -301,3 +301,40 @@ Code handover tiếp theo cần configs/disease_names_vi.json và src/agent/pres
 ### Dictionary Việt tham khảo cho phạm vi môn học
 
 Bản source hiện hành bật ALLOW_DRAFT_TRANSLATIONS=true theo quyết định của phụ trách đồ án: 583 tên Việt/4 nhãn gốc chưa đủ rõ, không yêu cầu duyệt từng bản dịch để chạy demo. 580 mục vẫn needs_review=true và được hiển thị có cảnh báo, không gắn nhãn chuyên gia đã duyệt. Ba tên meningitis/white blood cell disease/flu đã được chấp thuận hiển thị trước đó cũng không phải xác thực y khoa. Xem mục cuối DEPLOYMENT_GUIDE về restart/refresh và cách tắt draft mode. Model artifacts, data ZIP, class IDs/label mapping587 và raw scores không đổi.
+
+
+## Cleanup và website ba model — 2026-11-11
+
+Đã thực hiện cleanup trong code root, không thay Drive/data:61file cache `.pytest_cache`/`__pycache__`,1.784.992bytes. Trước xóa đã kiểm manifest ownership, snapshot byte/SHA, rồi xóa từng path được kiểm; không recursive-delete theo wildcard. Backup ngoài project tại sibling `maintenance-20261111-three-model/source-before/` và `removed-cache/`; receipts `before.json`, `cleanup-before-delete.json`, `cleanup.json` ghi exactpaths/size/SHA. Rollback: copy đúng file tương đối từ backup, kiểmSHA trước; không chép đè source mới nếu chưa so sánh.
+
+README được gom thành một luồng startup; không còn ba đoạn env khác nhau hoặc đoạn mất dấu. Chuyển mô tả metrics sang ML_EXPERIMENTS, runtime contract sang DEPLOYMENT_GUIDE, giữ redirect/anchors tại MODEL_SELECTION_RATIONALE. Archive, source pins, manifests, scientific evidence, notebooks/outputs, environment và dist vẫn được giữ vì có consumer hoặc lịch sử. Không xóa duplicate chỉ dựa vào SHA khi chưa chứng minh không dùng.
+
+Website có registry3IDs theo frozen candidates; trạng thái và [hợp đồng](DEPLOYMENT_GUIDE.md#three-model-website) là nguồn hiện hành. LR tunedC2 default ENABLED, hai comparator Windows vẫn BLOCKED vì thiếu independent references. Code tích hợp thật cho baseline/engine hardvote nhưng không bypassqualification để bật option. Original allowlist LR tuned không đổi.
+
+HaiZIPngày05 không bị ghi đè. Kiểm thư mục sạch đã dùng ZIPcũ + overlay source hiện tại có inventory: đó là test runtime, không chứng nhận một ZIPrelease mới. DataZIP được giải nén như bytes; không parse lockedCSV. Original source/data bị chặn trong subprocess, chỉ reuse dependency environment. Default realLR200, fit/LLM/outbound/original-access/test-access đều0.
+
+Trước release mới: freeze source/config hashes sau khi qualification có quyết định, rà required presentation evidence paths và cập nhật release inventory theo source mới. Code/data allowlists gốc và22supplement pins được giữ, không ép generator dựa trên freeze05 nhận source mới. Artifacts mới của academic review/maintenance chưa mặc nhiên nằm trong ZIP cũ. Cần duyệt rõ evidence nào chuyển vào data/report release; không ship cache, backup, .venv hoặc secrets. Không có ZIP mới trong vòng này.
+
+
+## Git migration PC → GitHub → laptop — 2026-11-11
+
+Không git init folder PC gốc. Clone remote hiện có vào sibling `disease-prediction-ml-git-sync`, giữ ancestor `e94987b…`, tạo branch `sync/pc-latest`. Source PC là ưu tiên cho nội dung đã kiểm; file chỉ có trên remote được giữ nếu chưa chứng minh obsolete. `handover_code_inventory.json` ở remote là inventory release lịch sử, không dùng làm hash manifest cho HEAD mới. Không force push, không tự merge vào main.
+
+Git giữ Python/app/notebooks/tests/docs/config công khai, fixtures chatbot, schema/mapping tối thiểu và compact audit evidence đã duyệt. Schema/mapping hai bản byte-identical trong code là read-only fixtures cho Catalog/tests, không phải dataset sao chép. API vẫn kiểm metadata/checkpoint từ external storage. `.gitignore` chặn raw/processed, weights, .venv, secrets, staging/ZIP/cache và lớn row-level reports; kiểm cả tracked files cũ trước commit.
+
+PC cleanup đã archive295file/240.553.200bytes ngoài repo tại sibling `git-migration-20261111/archived-from-pc/`. Chỉ bỏ các checkpoint/data trùng byte và generateddist đã chứng minh tái tạo; giữ54code-only evidence, metadata còn consumer và lockedCSVlocal ignored. Không mở payload test để băm/copy; không đổi canonical external data. Inventory/backup/checksum/consumer decisions ở `git-migration-20261111/`; rollback copy đúng relativepaths sau khi so file hiện tại, không ghi đè thay đổi mới.
+
+Data release metadata: [external_data_release.json](../configs/external_data_release.json). `project-data.zip` local SHA3e30e25b… VERIFIED theo identity gói đã nghiệm thu; cloud download/access NOT VERIFIED. Owner cấp gói qua Drive riêng, không commit gói lên Git. Trên laptop kiểm:
+
+```powershell
+$Expected = (Get-Content '.\configs\external_data_release.json' -Raw | ConvertFrom-Json).package_sha256
+$Actual = (Get-FileHash -LiteralPath '..\project-data.zip' -Algorithm SHA256).Hash.ToLowerInvariant()
+if ($Actual -ne $Expected) { throw 'Data ZIP checksum mismatch: stop, do not mix releases.' }
+```
+
+Giải nén gói thành sibling `disease-prediction-ml-data`, không lồng thêm một root. Đặt `DISEASE_API_STORAGE_ROOT` cho API; nếu chạy CLI phân tích có chủ đích, đặt thêm `DISEASE_STORAGE_ROOT` tới cùng root thay vì tái tạo bản data trong source. Không chạy các test opt-in đọc nguyên dataset/final split trong nhiệm vụ đồng bộ. Source commitSHA và package/checkpoint hashes được bind trong external `github-sync-receipt.json` sau commit/push; cấu hình committed không chứa self-referential commit hash.
+
+Sau khi owner merge main: laptop sạch chạy `git fetch origin`, `git switch main`, `git pull --ff-only origin main`. Nếu upstream hoặc local commits diverge thì dừng xử lý branch riêng; không reset --hard/clean -fdx. PC tiếp tục làm ở checkout-git-sync để GitHub trở thành source Git chung. `.venv-web` và data được setup riêng ở từng máy. Tham khảo [README workflow](../README.md#pc--github--laptop).
+
+
+Git byte integrity: .gitattributes disables automatic text conversion so frozen SHA values survive Windows/Linux clones. Do not run blanket line-ending conversion or git add --renormalize over protected artifacts. Two historical pinned fixture logs retain original whitespace. The eight missing local report assets were restored from exact members of the verified data package without overwriting any existing data; seven immutable-log link exceptions remain documented in docs/README. This does not claim Drive cloud download access was tested.
