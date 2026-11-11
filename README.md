@@ -86,3 +86,20 @@ git pull --ff-only origin main
 Nếu cần review trước merge: `git fetch origin`, rồi tạo checkout branch `git switch --track origin/sync/pc-latest` nếu branch local này chưa tồn tại. Không tự merge. Trên cả hai máy: pull trước khi làm, dùng branch riêng, test → commit → push; review/merge trên GitHub. Giữ tác giả Git của chính bạn, không chia sẻ token hoặc .venv.
 
 Máy mới: `git clone https://github.com/Leafguy2341/disease-prediction-ml.git`, nhận `project-data.zip` và quyền Drive từ owner, kiểm SHA trong [external_data_release.json](configs/external_data_release.json), giải nén thành sibling `disease-prediction-ml-data`, sau đó làm theo phần chạy website ở trên. File ZIP/data/checkpoint không nằm trong GitHub. Đường tải Drive cụ thể chưa được xác minh trong vòng này; không có link giả hoặc token trong repo.
+
+
+### Byte check sau khi pull tren Windows
+
+Existing laptop checkouts can keep CRLF in unchanged files even after pulling .gitattributes. After a clean fast-forward, run this read-only standard-library check (any Python3.11+ is sufficient; it does not load models):
+
+```powershell
+python -B -m scripts.verify_checkout_bytes
+```
+
+If every reported difference is EOL_ONLY and there are no local/staged content edits, repair to the exact reviewed HEAD bytes with a new external backup directory:
+
+```powershell
+python -B -m scripts.verify_checkout_bytes --repair-eol --backup-root ..\git-eol-backup-20261111
+```
+
+The backup path must not already exist. CONTENT_CHANGE or missing files require manual review; the tool refuses them and never uses reset/clean/renormalize. Alternatively clone to a new sibling folder and keep the old laptop repository intact. This step protects source/fixture/notebook checksums without changing scientific outputs.

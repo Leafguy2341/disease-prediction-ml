@@ -338,3 +338,6 @@ Sau khi owner merge main: laptop sạch chạy `git fetch origin`, `git switch m
 
 
 Git byte integrity: .gitattributes disables automatic text conversion so frozen SHA values survive Windows/Linux clones. Do not run blanket line-ending conversion or git add --renormalize over protected artifacts. Two historical pinned fixture logs retain original whitespace. The eight missing local report assets were restored from exact members of the verified data package without overwriting any existing data; seven immutable-log link exceptions remain documented in docs/README. This does not claim Drive cloud download access was tested.
+
+
+Existing-laptop checkout caveat: a real simulation of the old main with core.autocrlf=true followed by fast-forward preserved CRLF in an unchanged training.py, although Git status was clean. Therefore the README post-pull byte check is required on old Windows checkouts. verify_checkout_bytes is read-only by default; opt-in repair accepts only line-ending-equivalent tracked text, requires external byte backup and rejects real edits. It restores exact HEAD bytes, not new checksums. No reset/clean or history changes. A fresh clone also passed exact-byte verification.
