@@ -3,7 +3,7 @@ import hashlib,json
 from copy import deepcopy
 import numpy as np
 import pytest
-from scripts.qualify_web_models import compare_baseline
+from scripts.qualify_web_models import compare_baseline,BASELINE_CASES
 from src.agent.extraction import Catalog
 from src.models.final_evaluation import protocol
 from pathlib import Path
@@ -15,7 +15,7 @@ def packets(tmp_path):
     p=dict(protocol_id='lr-baseline-windows31317-v1',kind='original_colab_reference',
         schema_sha256=catalog.schema_id,checkpoint_sha256=cp['files']['pipeline.joblib']['sha256'],identity=cp['identity'],
         feature_count=375,retained_features=318,class_count=587,features=list(catalog.features),classes=list(catalog.classes),
-        cases=[],input_sha256='SYNTHETIC_FIXTURE',probability_rtol=1e-10,probability_atol=1e-12,
+        cases=json.loads(json.dumps(BASELINE_CASES)),input_sha256=hashlib.sha256(np.asarray([[int(p=='ALL' or f in p) for f in catalog.features] for _,p in BASELINE_CASES],dtype='uint8').tobytes()).hexdigest(),probability_rtol=1e-10,probability_atol=1e-12,
         versions=cp['identity']['versions'],platform_system='Linux',predict_labels=[0]*8,top3_class_ids=[[0,1,2]]*8,
         predict_proba=np.full((8,587),1/587).tolist(),guards={},models_fitted=0,locked_test_opened=False)
     w=deepcopy(p);w.update(kind='windows_candidate_probe',platform_system='Windows',versions={**p['versions'],'python':'3.13.17'})

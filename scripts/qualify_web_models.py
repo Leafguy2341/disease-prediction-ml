@@ -12,6 +12,10 @@ import platform
 import time
 import warnings
 
+BASELINE_CASES=[('zero_boundary',[]),('cough_only',['cough']),('fever_only',['fever']),
+    ('cough_fever',['cough','fever']),('gastro',['nausea','vomiting']),
+    ('headache_fatigue',['headache','fatigue']),('respiratory',['cough','fever','shortness of breath']),('all_one_boundary','ALL')]
+
 
 def run(root, output):
     import numpy as np
@@ -132,9 +136,7 @@ def baseline_probe(root, output, *, original_reference=False):
     else:
         expected['python']='3.13.17'
         if current!=expected or platform.system()!='Windows':raise ValueError('Windows candidate requires pinned 3.13.17/ML versions')
-    cases=[('zero_boundary',[]),('cough_only',['cough']),('fever_only',['fever']),
-           ('cough_fever',['cough','fever']),('gastro',['nausea','vomiting']),
-           ('headache_fatigue',['headache','fatigue']),('respiratory',['cough','fever','shortness of breath']),('all_one_boundary','ALL')]
+    cases=BASELINE_CASES
     with phase4_guard(root) as guard,threadpool_limits(limits=1):
         _file(root,'artifacts/metadata/phase2/dataset_manifest.json',{'sha256':frozen['phase2_manifest_sha256']})
         for name,value in identity['source_sha256'].items():_file(PROJECT_ROOT,name,{'sha256':value})
@@ -188,6 +190,9 @@ def compare_baseline(reference, candidate, expected_reference_sha256):
     if (ref['schema_sha256']!=frozen['processed']['schema_sha256'] or ref['feature_count']!=375 or
         ref['retained_features']!=318 or ref['class_count']!=587 or ref['features']!=list(catalog.features) or ref['classes']!=list(catalog.classes)):
         raise ValueError('Frozen catalog mismatch')
+    matrix=np.asarray([[int(p=='ALL' or f in p) for f in catalog.features] for _,p in BASELINE_CASES],dtype='uint8')
+    if ref['cases']!=json.loads(json.dumps(BASELINE_CASES)) or ref['input_sha256']!=hashlib.sha256(matrix.tobytes()).hexdigest():
+        raise ValueError('Frozen synthetic inputs mismatch')
     if ref['kind']!='original_colab_reference' or ref['versions']!=cp['identity']['versions'] or ref['platform_system']!='Linux':raise ValueError('Invalid original reference environment')
     if win['kind']!='windows_candidate_probe' or win['versions']!={**ref['versions'],'python':'3.13.17'} or win['platform_system']!='Windows':raise ValueError('Invalid candidate environment')
     a=np.asarray(ref['predict_proba']);b=np.asarray(win['predict_proba'])
