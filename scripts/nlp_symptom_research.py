@@ -55,6 +55,7 @@ def rule_extract(text, root=ROOT, instance=None):
                     assert turns[s['turn_id']][s['start']:s['end']] == s['text']
         assert result.predictions is None
         return dict(states=dict(states), evidence=evidence, status=result.status, reason=result.reason,
+            schema_sha256=e.catalog.schema_id,subject_id=sidecar.get('subject_id','self'),
             confirmation_required=result.status == 'clarification_required',
             latency_ms=(perf_counter()-start)*1000)
     finally:
@@ -333,6 +334,7 @@ def benchmark(root=ROOT, matcher=None):
                     # Hybrid preserves explicit rule states; semantic alone abstains.
                     proposals=[p for p in proposals if not any(v['feature'] in base['states'] for v in p['candidates'])] if name=='hybrid' else proposals
                     candidate_rows.append(dict(id=c['id'],states=base['states'] if name=='hybrid' else {},
+                        evidence=base['evidence'] if name=='hybrid' else {},schema_sha256=e.catalog.schema_id,subject_id='self',
                         suggestions=proposals,confirmation_required=bool(proposals),latency_ms=(perf_counter()-start)*1000+(base['latency_ms'] if name=='hybrid' else 0)))
                 methods[name]=dict(status='RUN_CONFIRMATION_ONLY',metrics=metrics(cases,candidate_rows),rows=candidate_rows,
                     candidate_metrics=candidate_metrics(cases,candidate_rows),
@@ -342,6 +344,81 @@ def benchmark(root=ROOT, matcher=None):
         threshold_selection='NONE; candidate-only semantic mode, no test optimization',
         split_policy='86 historical fixtures development only; new reserved synthetic cases excluded from alias/context qualification',
         results=all_results,models_fitted=0,disease_predictions_called=False,locked_test_opened=False,network_calls=0)
+
+
+def comparison_rows(result,root=ROOT):
+    """Join all cases, never choose examples to calculate overall metrics.
+
+    This is a presentation sidecar, not a new production extractor contract.
+    Canonical states/evidence are kept separate from unconfirmed suggestions.
+    """
+    rows=[];catalog=Catalog.load(root)
+    for split,cases in load_cases(root).items():
+        methods=result['results'][split]
+        index={method:{r['id']:r for r in value.get('rows',[])} for method,value in methods.items()}
+        for case in cases:
+            row=dict(split=split,id=case['id'],kind=case['kind'],text=case['text'],
+                expected_states=case.get('expected_states'),fully_annotated=case.get('expected_states') is not None,
+                forbidden_features=case.get('forbidden_features',[]),methods={})
+            for method in ('rule_based','semantic','hybrid'):
+                prediction=index.get(method,{}).get(case['id'])
+                if prediction is None:
+                    row['methods'][method]=dict(status='NOT RUN');continue
+                states=prediction['states']
+                if not set(states)<=set(catalog.features) or not set(states.values())<={'present','denied','uncertain'}:
+                    raise ValueError('Invalid canonical states in comparison')
+                row['methods'][method]=dict(status=methods[method]['status'],states=states,
+                    evidence=prediction.get('evidence',{}),candidates=prediction.get('suggestions',[]),
+                    confirmation_required=prediction['confirmation_required'],
+                    present_features=[f for f in catalog.features if states.get(f)=='present'],
+                    schema_sha256=prediction.get('schema_sha256',catalog.schema_id),subject_id=prediction.get('subject_id','self'),
+                    exact_match=states==case['expected_states'] if case.get('expected_states') is not None else None,
+                    reason=prediction.get('reason','candidate_confirmation_required' if prediction.get('suggestions') else 'no_context_valid_candidate'),
+                    latency_ms=prediction['latency_ms'])
+            rows.append(row)
+    return rows
+
+
+def selected_example_ids(root=ROOT):
+    """Fixed first-per-context illustration, independent of method success/failure."""
+    selected=[]
+    categories={'development':('affirmed','denied','uncertain','unaccented','misspelling','folded_collision','mixed_known_with_unknown_or_ambiguous'),
+        'reserved_synthetic_evaluation':('other_subject','fiction','hypothetical','mixed_assertion','ambiguous')}
+    for split,cases in load_cases(root).items():
+        for kind in categories[split]:
+            match=next((c for c in cases if c['kind']==kind),None)
+            if match:selected.append(match['id'])
+    return selected
+
+
+def persist_report(report,drive_project):
+    """Copy one complete synthetic NLP run to mounted persistent storage, never overwrite."""
+    report=Path(report).resolve();drive_project=Path(drive_project).resolve()
+    if not report.is_dir() or not report.name.startswith('nlp_research_') or not drive_project.is_dir():
+        raise ValueError('Existing run folder and mounted project folder are required')
+    manifest=json.loads((report/'run_figures.json').read_text(encoding='utf-8'))
+    if not manifest.get('complete'):raise ValueError('Report is incomplete')
+    if sha(report/'benchmark.json')!=manifest['benchmark_sha256'] or sha(report/'case_comparison.json')!=manifest['comparison_sha256']:
+        raise ValueError('Report evidence checksum mismatch')
+    for name,expected in manifest['figures'].items():
+        if not (report/name).resolve().is_relative_to(report) or sha(report/name)!=expected:raise ValueError('Figure checksum mismatch')
+    files={p.relative_to(report).as_posix():p for p in report.rglob('*') if p.is_file()}
+    if any(p.is_symlink() or not p.resolve().is_relative_to(report) or p.suffix not in {'.json','.csv','.png'} for p in files.values()):
+        raise ValueError('Unexpected report payload')
+    destination=drive_project/'reports'/report.name
+    if destination==report:return dict(status='ALREADY_PERSISTENT',path=str(destination))
+    hashes={n:sha(p) for n,p in files.items()}
+    if destination.exists():
+        existing={p.relative_to(destination).as_posix():p for p in destination.rglob('*') if p.is_file()}
+        if set(existing)!=set(hashes) or any(sha(existing[n])!=h for n,h in hashes.items()):
+            raise FileExistsError('Persistent report differs; no overwrite')
+        return dict(status='ALREADY_CHECKSUM_VERIFIED',path=str(destination),files=len(files))
+    destination.parent.mkdir(parents=True,exist_ok=True)
+    with tempfile.TemporaryDirectory(prefix='.nlp-report-',dir=destination.parent) as tmp:
+        stage=Path(tmp)/'report';shutil.copytree(report,stage)
+        if any(sha(stage/n)!=h for n,h in hashes.items()):raise ValueError('Persistent copy verification failed')
+        stage.rename(destination)
+    return dict(status='COPIED_CHECKSUM_VERIFIED',path=str(destination),files=len(files))
 
 
 def run(output,root=ROOT,embedding_snapshot=None,*,auto_embedding=False):
@@ -367,6 +444,9 @@ def run(output,root=ROOT,embedding_snapshot=None,*,auto_embedding=False):
     output.mkdir(parents=True)
     for name,data in [('coverage_inventory.json',packet),('benchmark.json',result)]:
         (output/name).write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+    comparisons=dict(examples=selected_example_ids(root),rows=comparison_rows(result,root),
+        note='All cases retained. Selected IDs are illustration only, never an overall metric subset.')
+    (output/'case_comparison.json').write_text(json.dumps(comparisons,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     with (output/'canonical_375.csv').open('w',encoding='utf-8',newline='') as f:
         writer=csv.DictWriter(f,fieldnames=list(packet['features'][0]));writer.writeheader()
         writer.writerows({k:json.dumps(v,ensure_ascii=False) if isinstance(v,(list,dict)) else v for k,v in row.items()} for row in packet['features'])
