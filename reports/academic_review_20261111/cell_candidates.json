@@ -1,0 +1,144 @@
+[
+  {
+    "notebook": "notebooks/03_model_training.ipynb",
+    "cell_id": "4074c7be",
+    "original_index": 17,
+    "classification": "REMOVE_CANDIDATE",
+    "reason": "Historical diagnostic/audit supplement; not required for main presentation. May carry provenance/output.",
+    "defines": [
+      "audit_file"
+    ],
+    "downstream": [],
+    "outputs": 1,
+    "risk": "Loss of execution evidence or variables; approval required. Preserved unchanged.",
+    "action": "KEEP_PENDING_OWNER_REVIEW"
+  },
+  {
+    "notebook": "notebooks/03_model_training.ipynb",
+    "cell_id": "e4a62082",
+    "original_index": 18,
+    "classification": "MOVE_CANDIDATE",
+    "reason": "Historical diagnostic/audit supplement; not required for main presentation. May carry provenance/output.",
+    "defines": [
+      "api",
+      "audit_result"
+    ],
+    "downstream": [
+      19
+    ],
+    "outputs": 1,
+    "risk": "Loss of execution evidence or variables; approval required. Preserved unchanged.",
+    "action": "KEEP_PENDING_OWNER_REVIEW"
+  },
+  {
+    "notebook": "notebooks/03_model_training.ipynb",
+    "cell_id": "56d34ea5",
+    "original_index": 19,
+    "classification": "MOVE_CANDIDATE",
+    "reason": "Historical diagnostic/audit supplement; not required for main presentation. May carry provenance/output.",
+    "defines": [
+      "_",
+      "a",
+      "candidates",
+      "diversity",
+      "em",
+      "expected",
+      "f1",
+      "groups",
+      "guard",
+      "k",
+      "last",
+      "lr",
+      "manifest",
+      "manifest_path",
+      "meta",
+      "models",
+      "name",
+      "p",
+      "per_class",
+      "predictions",
+      "r",
+      "reports",
+      "result",
+      "root",
+      "scores",
+      "supplement",
+      "support",
+      "t",
+      "transitions",
+      "trials",
+      "v",
+      "w",
+      "y",
+      "z"
+    ],
+    "downstream": [],
+    "outputs": 1,
+    "risk": "Loss of execution evidence or variables; approval required. Preserved unchanged.",
+    "action": "KEEP_PENDING_OWNER_REVIEW"
+  },
+  {
+    "notebook": "notebooks/03_model_training.ipynb",
+    "cell_id": "ecc98ea8",
+    "original_index": 20,
+    "classification": "MOVE_CANDIDATE",
+    "reason": "Historical diagnostic/audit supplement; not required for main presentation. May carry provenance/output.",
+    "defines": [
+      "gap_api",
+      "gaps",
+      "read_api"
+    ],
+    "downstream": [],
+    "outputs": 1,
+    "risk": "Loss of execution evidence or variables; approval required. Preserved unchanged.",
+    "action": "KEEP_PENDING_OWNER_REVIEW"
+  },
+  {
+    "notebook": "notebooks/06_final_model_evaluation.ipynb",
+    "cell_id": "78f9ec2c",
+    "original_index": 15,
+    "classification": "REMOVE_CANDIDATE",
+    "reason": "Historical diagnostic/audit supplement; not required for main presentation. May carry provenance/output.",
+    "defines": [],
+    "downstream": [],
+    "outputs": 1,
+    "risk": "Loss of execution evidence or variables; approval required. Preserved unchanged.",
+    "action": "KEEP_PENDING_OWNER_REVIEW"
+  },
+  {
+    "notebook": "notebooks/06_final_model_evaluation.ipynb",
+    "cell_id": "ad81d8cb",
+    "original_index": 16,
+    "classification": "REMOVE_CANDIDATE",
+    "reason": "Historical diagnostic/audit supplement; not required for main presentation. May carry provenance/output.",
+    "defines": [],
+    "downstream": [],
+    "outputs": 1,
+    "risk": "Loss of execution evidence or variables; approval required. Preserved unchanged.",
+    "action": "KEEP_PENDING_OWNER_REVIEW"
+  },
+  {
+    "notebook": "notebooks/colab_smoke_test.ipynb",
+    "cell_id": "180c43c5",
+    "original_index": 3,
+    "classification": "MOVE_CANDIDATE",
+    "reason": "Historical diagnostic/audit supplement; not required for main presentation. May carry provenance/output.",
+    "defines": [],
+    "downstream": [],
+    "outputs": 1,
+    "risk": "Loss of execution evidence or variables; approval required. Preserved unchanged.",
+    "action": "KEEP_PENDING_OWNER_REVIEW"
+  },
+  {
+    "notebook": "notebooks/colab_smoke_test.ipynb",
+    "cell_id": "03e54737",
+    "original_index": 10,
+    "classification": "MOVE_CANDIDATE",
+    "reason": "Historical diagnostic/audit supplement; not required for main presentation. May carry provenance/output.",
+    "defines": [],
+    "downstream": [],
+    "outputs": 1,
+    "risk": "Loss of execution evidence or variables; approval required. Preserved unchanged.",
+    "action": "KEEP_PENDING_OWNER_REVIEW"
+  }
+]

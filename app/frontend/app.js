@@ -86,6 +86,20 @@
   }
 
   function renderPrediction(bubble, prediction) {
+    if (prediction.result_kind === 'hard_vote_result') {
+      const vote=prediction.hard_vote_result;
+      if(!vote || !Array.isArray(vote.members) || vote.members.length!==3 || !Number.isInteger(vote.votes) || vote.votes<1 || vote.votes>3) return;
+      const box=document.createElement('section');box.className='result-box hard-vote';
+      const title=document.createElement('div');title.className='result-title';
+      title.textContent='HARD VOTING · '+prediction.model_id;box.append(title);
+      const winner=document.createElement('div');winner.className='result-label';
+      winner.textContent=prediction.presentation?.display_label || vote.label;box.append(winner);
+      const summary=document.createElement('p');summary.textContent=`${vote.votes}/3 phiếu cho nhãn được chọn`+(vote.tie?' · phá hòa theo ưu tiên LR → SVC → KNN':'');box.append(summary);
+      for(const member of vote.members){const line=document.createElement('p');line.className='member-vote';line.textContent=`${member.model}: ${member.label}`;box.append(line);}
+      const note=document.createElement('p');note.className='result-note';note.textContent=prediction.note;box.append(note);
+      bubble.append(box);return;
+    }
+    if (!Array.isArray(prediction.top3)) return;
     if (!prediction.top3.every(item => typeof item.score_percent === 'number' && Number.isFinite(item.score_percent)
       && item.score_percent >= 0 && item.score_percent <= 100)) {
       bubble.append(document.createTextNode('Điểm tự tin dự đoán không hợp lệ; chưa hiển thị kết quả.'));
@@ -98,7 +112,7 @@
     box.className = "result-box";
     const title = document.createElement("div");
     title.className = "result-title";
-    title.textContent = 'TOP 3 · '+(prediction.presentation?.confidence_label || 'Điểm tự tin dự đoán (%)');
+    title.textContent = 'TOP 3 · Điểm mô hình (%) · '+prediction.model_id;
     const evaluation=prediction.presentation?.model_evaluation;
     const benchmark=document.createElement('span');benchmark.className='evaluation-reference';
     const verified=evaluation?.model_id===prediction.model_id && evaluation?.checkpoint_sha256===prediction.checkpoint_sha256
@@ -140,9 +154,20 @@
       readiness.className = ready ? "readiness ready" : "readiness blocked";
       readiness.textContent = mode.value==='llm' ? 'Online UI chưa hỗ trợ kết nối · LIVE NOT VERIFIED. Chọn Offline để trò chuyện.' : ready && body.chat.mode === "offline" ? body.chat.message : ready ? "Provider được cấu hình trên server; LIVE NOT VERIFIED trong phiên này." : response.ok ? "Chức năng hiểu ngôn ngữ chưa sẵn sàng. Hiện chưa thể tạo gợi ý." : "Mô hình chưa sẵn sàng trên máy chủ. Hiện chưa thể tạo gợi ý.";
       const registry=await (await fetch('/api/v1/models',{cache:'no-store'})).json();
+      const selected=model.value;
+      if(Array.isArray(registry.models)){
+        model.replaceChildren();
+        for(const item of registry.models){
+          const option=document.createElement('option');option.value=item.model_id;
+          option.textContent=item.display_name+(item.available?'':' — BLOCKED: '+(item.reason?.code || 'not_verified'));
+          option.disabled=!item.available;model.append(option);
+        }
+        model.value=selected;
+      }
       const entry=registry.models?.find(e=>e.model_id===model.value);
-      model.disabled=!entry?.available;
-      document.querySelector('#model-help').textContent=entry?.available ? 'Checkpoint và runtime PASS. Các model khác chưa đủ điều kiện phục vụ web.' : 'Checkpoint chưa sẵn sàng. Không có model thay thế ngầm.';
+      model.disabled=!registry.models?.some(e=>e.available);
+      document.querySelector('#model-help').textContent=entry?.available ? `Đang chọn: ${entry.display_name}. Đổi model sẽ bắt đầu phiên mới.` : 'Model được chọn chưa sẵn sàng: '+(entry?.reason?.message || 'chưa xác minh')+' Không có model thay thế ngầm.';
+      send.disabled=!entry?.available || mode.value!=='offline';
     } catch (_) {
       readiness.className = "readiness blocked";
       readiness.textContent = "Chưa kết nối được máy chủ. Hãy kiểm tra ứng dụng localhost.";
@@ -152,6 +177,7 @@
   async function requestChat(message, reset = false, batchId = null, action='message') {
     if(mode.value!=='offline') return;
     const current = ++sequence;
+    const requestedModel=model.value;
     const previousSessionId = sessionId;
     if (pending) pending.abort();
     pending = new AbortController();
@@ -161,7 +187,7 @@
     if(!reset) document.querySelectorAll('.result-box').forEach(e=>{e.classList.add('historical-result');e.setAttribute('aria-label','Kết quả của lượt trước');});
     try {
       const response = await fetch("/api/v1/chat", {method: "POST", headers: {"Content-Type": "application/json"},
-        body: JSON.stringify({message, session_id: previousSessionId, reset, mode:'offline', model_id:model.value, batch_id:batchId,action}), signal: pending.signal});
+        body: JSON.stringify({message, session_id: previousSessionId, reset, mode:'offline', model_id:requestedModel, batch_id:batchId,action}), signal: pending.signal});
       const body = await response.json();
       if (current !== sequence) return;
       if (body.error) {
@@ -172,7 +198,10 @@
       const bubble = append("assistant", body.pending_questions ? body.message.split('\n')[0] : body.message, body.status);
       renderQuestions(bubble,body.pending_questions);
       dialogue.textContent=body.dialogue ? `${body.dialogue.present_count} có · ${body.dialogue.denied_count} không · ${body.dialogue.uncertain_count} chưa rõ · ${body.dialogue.answered_questions}/${body.dialogue.asked_questions} câu · vòng ${body.dialogue.question_round}` : body.status==='new_session' ? 'Cuộc trò chuyện mới' : 'Đã cập nhật';
-      if (body.status === "prediction_ready" && body.predictions) renderPrediction(bubble, body.predictions);
+      if (body.status === "prediction_ready" && body.predictions) {
+        if(body.predictions.model_id!==requestedModel){bubble.append(document.createTextNode('Model phản hồi không khớp model đã chọn; không hiển thị kết quả.'));return;}
+        renderPrediction(bubble, body.predictions);
+      }
       renderActions(bubble,body.available_actions);
       if (body.reason === "invalid_session") sessionId = null;
     } catch (error) {
@@ -199,7 +228,10 @@
     checkHealth();
     if(mode.value==='offline') requestChat('',true);
   });
-  model.addEventListener('change',()=>requestChat('',true));
+  model.addEventListener('change',()=>{
+    document.querySelector('#model-help').textContent='Đang chọn: '+model.selectedOptions[0].textContent+'. Đang tạo phiên mới.';
+    requestChat('',true);
+  });
   const settings=document.querySelector('#settings-dialog');
   document.querySelector('#settings-open').addEventListener('click',()=>settings.showModal());
   settings.addEventListener('close',()=>{document.querySelector('#api-key').value='';});

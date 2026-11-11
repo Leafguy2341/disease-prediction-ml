@@ -124,3 +124,10 @@ configs/phase5b.json.presentation.SCORE_DECIMALS=4. score_percent sẵn ở than
 ### Bản dịch tham khảo được phép hiển thị (2026-11-02)
 
 Chính sách hiện hành của đồ án mở presentation.ALLOW_DRAFT_TRANSLATIONS=true theo lựa chọn rõ ràng của phụ trách dự án. Không thay needs_review=true thành false cho toàn bộ danh mục: 580 bản nháp hiển thị với status=draft/cảnh báo chưa được chuyên gia rà soát; 3 tên đã được chấp thuận hiển thị vẫn không là bằng chứng review y khoa. Tổng 583/587 có tên Việt, 4 nhãn mơ hồ giữ gốc với note. Presenter mặc định strict khi được khởi tạo không opt-in; tắt config khôi phục fallback canonical cho draft. UI chỉ mở rộng display status draft, không thay vector/model/numeric scores hoặc quality gate. Quy tắc chỉ dùng reviewed ở giai đoạn trước là lịch sử, không còn là cấu hình display hiện hành.
+
+
+## Model selection runtime — 2026-11-11
+
+`app/backend/models.py` khai báo ba ứng viên frozen, load từng candidate qua checksum/source/env guard của loader hiện có. Default vẫn LR tunedC2; startup không fallback. API registry tách available/reason của từng model; chỉ comparator được qualify mới phục vụ. Trên Windows3.13.17 hiện chỉ LR tuned được enable. Hard voting reuse fitted LR/SVC/KNN và engine đã pin, không estimator training mới.
+
+`/predict` thêm model_id tùy chọn; LR giữ Top3contract, hard trả hard_vote_result riêng. `/chat` dùng cùng offline extractor/qualitygate nhưng dialogue store riêng cho từng model, chặn session chéo409 và reset context khi đổi model. Backend trả model thực xử lý; UI chặn response không khớp lựa chọn. Hard không có Top3 probability. Notebook source/outputs,375feature/318retained/587labels/135active không đổi.

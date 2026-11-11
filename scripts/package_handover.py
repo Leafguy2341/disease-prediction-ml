@@ -24,10 +24,12 @@ DATA_REQUIREMENTS_SHA256 = "66a2c43728b44aef7f59917079fdcdd9a5297d8f2b43b4ae21a6
 CODE_SUPPLEMENTS_SHA256 = "0c0bf4e6d7255ffab55cfabf5e9c33fa48f950ef25d1a7b5ee6d3315d11e2a0b"
 PUBLIC_CONFIGS = ("runtime.json", "phase1.json", "phase2.json", "phase3.json", "phase5b.json", "synonyms.json", "disease_names_vi.json",
                   "dataset_source.json", "phase2_integrity.json", "handover_data_requirements.json",
-                  "runtime.local.example.json", "runtime.colab.example.json", "handover_code_supplements.json")
-ROOT_FILES = ("README.md", ".gitignore", "pyproject.toml", "setup.ps1", "requirements.txt",
+                  "runtime.local.example.json", "runtime.colab.example.json", "handover_code_supplements.json", "external_data_release.json")
+ROOT_FILES = ("README.md", "run_api.py", ".gitignore", ".gitattributes", "pyproject.toml", "setup.ps1", "requirements.txt",
               "requirements-dev.txt", "requirements-notebooks.txt", "requirements-training.txt", "requirements-api.txt")
 SOURCE_EXCEPTIONS = ("data/raw/README.md", "data/evaluation/vietnamese_symptom_cases.jsonl")
+SOURCE_IDENTITY_FIXTURES = ("artifacts/metadata/phase2/feature_schema.json",
+                            "artifacts/metadata/phase2/label_mapping.json")
 # Small read-only provenance, also usable as a supplemental evidence root on Colab.
 # Scientific datasets/checkpoints and complete result bundles still belong to data ZIP.
 CODE_EVIDENCE = ("phase3_audit", "phase4_audit", "post_tuning_audit", "model_analysis",
@@ -130,7 +132,8 @@ def code_supplements(root):
 def code_files(root):
     root = no_links(root)
     supplements = code_supplements(root)
-    names = set(ROOT_FILES) | {"configs/" + n for n in PUBLIC_CONFIGS} | set(SOURCE_EXCEPTIONS) | set(supplements)
+    names = (set(ROOT_FILES) | {"configs/" + n for n in PUBLIC_CONFIGS} | set(SOURCE_EXCEPTIONS)
+             | set(SOURCE_IDENTITY_FIXTURES) | set(supplements))
     for folder in CODE_EVIDENCE:
         for p in (root / "artifacts/metadata" / folder).rglob("*.json"):
             if not any(x in BLOCKED_PARTS for x in p.relative_to(root).parts):

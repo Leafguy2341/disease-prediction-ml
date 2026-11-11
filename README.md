@@ -1,61 +1,105 @@
 # Disease Prediction ML — Lắng nghe
 
-Nguyên mẫu nghiên cứu offline: lời kể tiếng Việt → rule-based extraction/dialogue → Python validator/quality gate → LR tuned C=2 → Top 3 và template tiếng Việt. Dữ liệu synthetic; không phải công cụ chẩn đoán đã xác thực lâm sàng. LLM là lựa chọn riêng, không cần API key cho bản demo offline.
+Đồ án nghiên cứu: lời kể tiếng Việt → bộ trích xuất offline → validator/quality gate → checkpoint ML đã fit → phản hồi tiếng Việt. Dữ liệu có tính tổng hợp; gợi ý không phải chẩn đoán lâm sàng.
 
-## Bộ bàn giao hai ZIP
+## Chạy website trên Windows
 
-Giải nén cả hai gói vào cùng một thư mục cha: `project-code.zip` tạo `disease-prediction-ml/`; `project-data.zip` tạo `disease-prediction-ml-data/`. Không copy `.venv`, không trộn source cũ từ Drive vào code mới. Dữ liệu/checkpoint nằm ở folder data riêng; relative paths bên trong không đổi. Inventory SHA từng file nằm trong mỗi ZIP; SHA ZIP, CRC và kết quả clean-runtime kiểm theo receipt bên ngoài gói, không theo các release lịch sử trong `dist/`.
+Code và dữ liệu ở hai thư mục cạnh nhau:
 
-Từ folder code, trên Windows CPython3.13.17/AMD64 đã kiểm đúng phiên bản:
+```text
+ML/
+├── disease-prediction-ml/       # mở trong VS Code
+└── disease-prediction-ml-data/  # dataset, checkpoint và manifests
+```
+
+Cần **CPython 3.13.17/AMD64**, scikit-learn1.6.1, NumPy2.1.3, SciPy1.16.3, joblib1.6.0. Không dùng Python3.11/sklearn1.8 để load model. Trên máy mới, chỉ khi chưa có môi trường:
 
 ```powershell
 py -3.13 --version
 py -3.13 -m venv .venv-web
 & '.\.venv-web\Scripts\python.exe' -m pip install -r requirements-api.txt
-$env:DISEASE_API_STORAGE_ROOT = (Resolve-Path -LiteralPath '..\disease-prediction-ml-data').Path
-$env:DISEASE_CHAT_MODE = 'offline'
-& '.\.venv-web\Scripts\python.exe' -B -m scripts.smoke_local_mvp --ml
-& '.\.venv-web\Scripts\python.exe' -B -m uvicorn app.backend.main:app --host 127.0.0.1 --port 8000 --workers 1
 ```
 
-Chỉ tạo môi trường nếu chưa có; không dùng Python3.11/sklearn1.8 để load checkpoint. Mở http://127.0.0.1:8000. [Hướng dẫn bàn giao](docs/HANDOVER_GUIDE.md) giải thích source/data, tests và notebook06 chỉ đọc completed evidence. Bản offline giữ135/375feature active; không chạy notebook training hoặc final evaluation để mở web.
+Tại thư mục code, trong **cùng terminal**:
 
-## Trạng thái hiện hành
+```powershell
+$env:DISEASE_API_STORAGE_ROOT = (Resolve-Path -LiteralPath '..\disease-prediction-ml-data').Path
+$env:DISEASE_CHAT_MODE = 'offline'
+& '.\.venv-web\Scripts\python.exe' -B run_api.py
+```
 
-- **LR tuned C=2 đã được duyệt trước final test**. Test Macro F1: LR baseline0.7958306745796887, LR tuned0.808163486172862, hard tuned0.8059813671672197; không chọn lại model từ test. Hard tuned vẫn best observed validation Macro F1.
-- **REAL CHECKPOINT / Prediction API Windows PASS** cho CPython3.13.17/AMD64 và exact dependency/checkpoint identity. Schema375/mapping587; Top3 scores thật, chưa calibration, không normalize lại.
-- **Gemini live NOT VERIFIED**: từng HTTP400 serving-schema complexity, HTTP503 high demand và timeout. Wire schema giữ đủ375; chưa có live extraction thành công. Web/mock PASS không là end-to-end live PASS.
-- Các release117files trong `dist` và receipts20261030 là lịch sử. Bộ bàn giao hiện hành dùng hai ZIP ở thư mục cha và receipt final sau kiểm cả code/data đã giải nén. Cloud/Colab thật không được coi là đã nghiệm thu chỉ từ kiểm local; [packing trên Colab](docs/HANDOVER_GUIDE.md#7-tạo-lại-code-zip-và-đóng-data-zip-trên-colab) là quy trình riêng khi cần phục hồi Drive. Không cleanup.
+Mở http://127.0.0.1:8000/; OpenAPI tại http://127.0.0.1:8000/docs. Không cần Jupyter hoặc API key. Nếu8000 đã được dùng, dừng đúng server cũ bằng Ctrl+C hoặc thêm `--port 8001`. Nếu đổi environment, phải khởi động lại server. `/health`503 với `storage_not_configured` nghĩa là biến storage chưa được đặt trong process server; không phải bằng chứng checkpoint hỏng.
 
-## Đọc tài liệu
+## Ba lựa chọn mô hình
 
-Bắt đầu từ [docs/README.md](docs/README.md), có inventory/mapping archive và phạm vi kiểm chứng.
+| ID trong API | Vai trò | Windows3.13.17 hiện tại | Kết quả |
+|---|---|---|---|
+| `lr_tuned_c2` | Default đã duyệt trước final test | ENABLED khi artifact/env PASS | Top3 predict_proba thật |
+| `lr_baseline` | Đối chứng Phase3 gốc | BLOCKED: thiếu reference Windows độc lập | Top3 khi được qualify |
+| `hard_tuned_lr_svc_knn` | Best observed validation Macro F1 | BLOCKED: thiếu reference độc lập cho SVC/KNN | Nhãn và phiếu bầu, không Top3 probability |
+
+Selector lấy trạng thái thực từ `/api/v1/models`. Chỉ model đủ điều kiện mới chọn được; không fallback khi lỗi. Đổi model tạo phiên mới. LR hiển thị **Điểm mô hình (%)**,4chữ số thập phân, không chuẩn hóa lại ba score. Scores chưa calibration, không phải Accuracy hoặc xác suất mắc bệnh. Hard vote không biểu diễn phiếu như xác suất.
+
+Endpoints: `GET /health`, `GET /api/v1/models`, `POST /api/v1/predict`, `POST /api/v1/chat`. Bỏ `model_id` giữ hành vi cũ là LR tuned. Ví dụ input có cấu trúc:
+
+```json
+{"model_id":"lr_tuned_c2","present_features":["cough","fever"]}
+```
+
+## Tài liệu và thực nghiệm
 
 | Tài liệu | Nội dung |
 |---|---|
-| [SYSTEM_ARCHITECTURE](docs/SYSTEM_ARCHITECTURE.md) | Thành phần, luồng và hợp đồng dữ liệu |
-| [ML_EXPERIMENTS](docs/ML_EXPERIMENTS.md) | Audit/EDA, split, baseline/tuned/ensemble, bootstrap, benchmark, final test |
-| [DEVELOPMENT_LOG](docs/DEVELOPMENT_LOG.md) | 11 giai đoạn kỹ thuật, kết quả/hạn chế/bằng chứng |
-| [DEPLOYMENT_GUIDE](docs/DEPLOYMENT_GUIDE.md) | Windows/pins/7artifacts, FastAPI/web/Gemini, Colab và troubleshooting |
-| [HANDOVER_GUIDE](docs/HANDOVER_GUIDE.md) | Hai ZIP, source publish, notebook safety và nghiệm thu |
-| [Phase5 specification](docs/phase5_llm_integration_design.md) | Contract v2, evidence/context, provisional gate, evaluation/telemetry |
+| [Chỉ mục](docs/README.md) | Thứ tự đọc, archive và provenance |
+| [Kiến trúc](docs/SYSTEM_ARCHITECTURE.md) | Source, data, runtime, hợp đồng chatbot |
+| [ML experiments](docs/ML_EXPERIMENTS.md) | Bốn thí nghiệm, metrics, bootstrap và quyết định chọn model |
+| [Deployment](docs/DEPLOYMENT_GUIDE.md) | Môi trường, artifact identities, API và troubleshooting |
+| [Handover](docs/HANDOVER_GUIDE.md) | HaiZIP, integrity, notebook safety và rollback |
+| [Development log](docs/DEVELOPMENT_LOG.md) | Bằng chứng, các thay đổi và giới hạn |
+| [NLP contract](docs/phase5_llm_integration_design.md) | Evidence/context/quality gate và LLM tùy chọn |
 
-## Mở web local
+Notebook03 chứa baseline+tuning;04 chứa ensemble baseline/tuned;05 kiểm structured inference;06 chỉ đọc completed final evaluation. **Không Run All để mở web hoặc xem kết quả.** Switch tuning03 vẫn True do owner chạy trước đây;04False;06False/authorizationrỗng. Code, outputs, execution counts và scientific evidence được bảo toàn.
 
-Từ project root đã có `.venv-web`3.13.17 và đủ7artifacts đúng checksum, xem [prerequisites](docs/DEPLOYMENT_GUIDE.md). Không dùng đường dẫn python.exe placeholder hoặc Python3.11 để deserialize checkpoint.
+Giữ375feature/318retained/587labels và135active aliases. LR tunedC2 được chọn trước final test; hard tuned giữ best observed validation Macro F1. Final test đã hoàn tất, không dùng để tối ưu lại. Metrics đầy đủ nằm trong tài liệu ML, không sao chép bảng kết quả vào README.
+
+## Bàn giao và kiểm thử
+
+HaiZIP đã giao ngày05 được giữ nguyên; chúng chưa chứa source cập nhật ngày11. Không trộn source cũ từ Drive vào local. Thay đổi source/config cần release inventory mới trước khi đóng gói; không tự rebuild ZIP lịch sử.
+
+Offline tests dùng synthetic fixtures, tách khỏi qualification checkpoint thật. Không cần chạy training notebook. Xem lệnh và kết quả tại deployment guide. LLM live vẫn NOT VERIFIED; không gọi provider trong demo offline.
+
+
+## PC → GitHub → laptop
+
+Repository chung: https://github.com/Leafguy2341/disease-prediction-ml, default branch `main`. Source PC mới được đưa lên branch review `sync/pc-latest`; **chưa tự merge vào main**. Xem branch đó để review, chỉ pull main sau khi owner đã merge.
+
+PC hiện có checkout Git riêng tại sibling `disease-prediction-ml-git-sync`. Mở folder này trong VS Code để tiếp tục commit/pull/push. Folder PC cũ chưa git init và vẫn giữ một số evidence/local files bị ignore; sửa tiếp ở đó sẽ không tự lên GitHub.
+
+Laptop đã có repository: kiểm `git status --short`, `git branch --show-current`, `git log --oneline '@{u}..HEAD'` trước khi pull. Nếu có thay đổi local hoặc commit chưa push, backup/commit chúng vào branch riêng trước; không reset/clean cưỡng bức. Sau owner merge và laptop đang sạch:
 
 ```powershell
-$ApiPython = (Resolve-Path -LiteralPath '.\.venv-web\Scripts\python.exe').Path
-$env:DISEASE_API_STORAGE_ROOT = (Get-Location).Path
-& $ApiPython -B -m uvicorn app.backend.main:app --host 127.0.0.1 --port 8000 --workers 1
+git fetch origin
+git switch main
+git pull --ff-only origin main
 ```
 
-Mở http://127.0.0.1:8000/; `/health`, `/docs`, `/openapi.json`; structured predict ở `/api/v1/predict`, chat ở `/api/v1/chat`. Startup không gọi Gemini. Key/live opt-in phải ở cùng terminal khi chủ động kiểm live; [hướng dẫn](docs/DEPLOYMENT_GUIDE.md#4-gemini-và-chẩn-đoán-live). Không suy UI configured là provider sẵn sàng.
+Nếu cần review trước merge: `git fetch origin`, rồi tạo checkout branch `git switch --track origin/sync/pc-latest` nếu branch local này chưa tồn tại. Không tự merge. Trên cả hai máy: pull trước khi làm, dùng branch riêng, test → commit → push; review/merge trên GitHub. Giữ tác giả Git của chính bạn, không chia sẻ token hoặc .venv.
 
-## Notebooks và bảo toàn thực nghiệm
+Máy mới: `git clone https://github.com/Leafguy2341/disease-prediction-ml.git`, nhận `project-data.zip` và quyền Drive từ owner, kiểm SHA trong [external_data_release.json](configs/external_data_release.json), giải nén thành sibling `disease-prediction-ml-data`, sau đó làm theo phần chạy website ở trên. File ZIP/data/checkpoint không nằm trong GitHub. Đường tải Drive cụ thể chưa được xác minh trong vòng này; không có link giả hoặc token trong repo.
 
-Notebook00/01 audit/EDA,02 preprocessing,03 baseline+tuning,04ensemble,05structured inference,06final evaluation và colab_smoke_test. Dùng shared [Colab workflow](docs/DEPLOYMENT_GUIDE.md#colab-runtime), không upload .py riêng.
 
-**Không Run All03/04/05/06 chỉ để setup**. Switch03/04 True có chủ đích. Working copy06 hiện gateTrue/authorization của execution cũ; final evaluation đã đóng hồ sơ, chỉ đọc read_completed, không mở lại test/xóa marker. Nhiệm vụ docs không thay notebook/output. [Điểm dừng cụ thể](docs/HANDOVER_GUIDE.md#notebook-safety).
+### Byte check sau khi pull tren Windows
 
-Raw CSV, Phase2/schema/mapping, source pins, checkpoints, manifests, saved predictions/reports/evidence được giữ nguyên. Báo cáo gốc: [audit](reports/dataset_audit.md), [EDA](reports/eda_summary.md), [Phase2](reports/preprocessing_decision_review.md), [Phase3](reports/phase3_post_training_audit.md), [final closeout](reports/final_model_evaluation_closeout.md). Các trạng thái cũ trong report không thay thế trạng thái hiện hành tại chỉ mục docs.
+Existing laptop checkouts can keep CRLF in unchanged files even after pulling .gitattributes. After a clean fast-forward, run this read-only standard-library check (any Python3.11+ is sufficient; it does not load models):
+
+```powershell
+python -B -m scripts.verify_checkout_bytes
+```
+
+If every reported difference is EOL_ONLY and there are no local/staged content edits, repair to the exact reviewed HEAD bytes with a new external backup directory:
+
+```powershell
+python -B -m scripts.verify_checkout_bytes --repair-eol --backup-root ..\git-eol-backup-20261111
+```
+
+The backup path must not already exist. CONTENT_CHANGE or missing files require manual review; the tool refuses them and never uses reset/clean/renormalize. Alternatively clone to a new sibling folder and keep the old laptop repository intact. This step protects source/fixture/notebook checksums without changing scientific outputs.

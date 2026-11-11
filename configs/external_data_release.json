@@ -1,0 +1,73 @@
+{
+  "version": 1,
+  "layout": "code-and-external-data-v1",
+  "package_name": "project-data.zip",
+  "package_sha256": "3e30e25b0822b8bdf4aa4cca446e66ae89bfd092e5f4ba437ab402f697181424",
+  "package_bytes": 49882226,
+  "local_package_verification": "SHA256 PASS; archive identity matches previously verified handover",
+  "drive_download_access": "NOT VERIFIED in this task; obtain package/access from project owner",
+  "extraction_sibling": "disease-prediction-ml-data",
+  "features": 375,
+  "retained_features": 318,
+  "classes": 587,
+  "approved_default": "lr_tuned_c2",
+  "tuning_experiment": "tuning-v1-9c4dd013abbba14a",
+  "ensemble_run": "tuned-ensemble-20261029T041701354242Z-6c84dbfe",
+  "phase2_manifest_sha256": "50308d250d874b1b653a71c31f38dece0ec9fbb4dbc9d94f68bc1461e80b8fe9",
+  "schema_sha256": "441709695f8b878e65d848309361838fa0367b6c031ed665a1472a9aee43b734",
+  "feature_schema_file_sha256": "dd07a3c73dd41558daa9c08e816e0a93d9efc4155f98b7e2b73325bffe31c5c0",
+  "label_mapping_file_sha256": "d2ef711e5e04062e8b5b949ce434b1383e1ca2fef6eb31a0865acb2f470ab5b5",
+  "checkpoints": {
+    "knn_tuned": {
+      "folder": "artifacts/models/tuning/tuning-v1-9c4dd013abbba14a/knn",
+      "pipeline_sha256": "1d84f44c5d3eec025d7f9fc574fb80eba58b0e38fbb6927ed7090ebe9446b976",
+      "identity": "tuned-v1-b8a5602679b3dc5c",
+      "trained_versions": {
+        "joblib": "1.6.0",
+        "numpy": "2.1.3",
+        "python": "3.13.18",
+        "scipy": "1.16.3",
+        "sklearn": "1.6.1"
+      }
+    },
+    "lr_baseline": {
+      "folder": "artifacts/models/phase3/baseline-v1-f8a5bfdb7b4c12cd/logistic_regression",
+      "pipeline_sha256": "54f124240fd2bb8fb61c39594a55663e1b67f5f5b67595faeaa350504d0376da",
+      "identity": "baseline-v1-f8a5bfdb7b4c12cd",
+      "trained_versions": {
+        "joblib": "1.6.0",
+        "numpy": "2.1.3",
+        "python": "3.13.18",
+        "scipy": "1.16.3",
+        "sklearn": "1.6.1"
+      }
+    },
+    "lr_tuned_c2": {
+      "folder": "artifacts/models/tuning/tuning-v1-9c4dd013abbba14a/logistic_regression",
+      "pipeline_sha256": "4cac3bfd78dfe2849a855130d264c7bebc14d6e8d8e305b15015141663300ac6",
+      "identity": "tuned-v1-b8a5602679b3dc5c",
+      "trained_versions": {
+        "joblib": "1.6.0",
+        "numpy": "2.1.3",
+        "python": "3.13.18",
+        "scipy": "1.16.3",
+        "sklearn": "1.6.1"
+      }
+    },
+    "svc_tuned": {
+      "folder": "artifacts/models/tuning/tuning-v1-9c4dd013abbba14a/linear_svc",
+      "pipeline_sha256": "1ac35a1e68225142c6ff60332d8fcf973a57cc0f84c18be320f396830c32fe89",
+      "identity": "tuned-v1-b8a5602679b3dc5c",
+      "trained_versions": {
+        "joblib": "1.6.0",
+        "numpy": "2.1.3",
+        "python": "3.13.18",
+        "scipy": "1.16.3",
+        "sklearn": "1.6.1"
+      }
+    }
+  },
+  "source_commit_binding": "The pushed commit SHA is recorded in the external github-sync-receipt.json; git rev-parse HEAD identifies each checkout. No circular self-hash in this committed file.",
+  "original_remote_base": "e94987ba1bde574fea4c8837c200887b5a7b3ea9",
+  "repository": "https://github.com/Leafguy2341/disease-prediction-ml"
+}

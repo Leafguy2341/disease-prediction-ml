@@ -1,6 +1,6 @@
-"""Approved fitted LR adapter using the existing catalog and checkpoint loader.
+"""Frozen fitted-checkpoint adapter using the existing catalog and loader.
 
-Only deployment metadata and one checkpoint are needed. No raw/processed CSV,
+Only metadata and the explicitly selected checkpoint are needed. No raw/processed CSV,
 saved test predictions or other estimator weights are opened by this adapter.
 """
 from __future__ import annotations
@@ -89,25 +89,28 @@ def _file(root, relative, expected=None):
 
 
 class LRPredictionService:
-    """One in-memory fitted model. Also matches Phase 5B's PredictionService port."""
+    """One fitted LR (or internal hard-vote member), guarded by checkpoint identity."""
 
-    def __init__(self, model, catalog, checkpoint, tuning_experiment):
+    def __init__(self, model, catalog, checkpoint, tuning_experiment, model_id=MODEL_ID):
         self._model, self.catalog = model, catalog
         self._checkpoint, self._tuning_experiment = checkpoint, tuning_experiment
+        self.model_id = model_id
         self._lock = RLock()
         self.verification = "NOT VERIFIED"
 
     @classmethod
-    def load(cls, storage_root, *, project_root=PROJECT_ROOT):
+    def load(cls, storage_root, *, project_root=PROJECT_ROOT, model_id=MODEL_ID):
         root = Path(storage_root).expanduser()
         _check(root.is_absolute() and root.is_dir(), "storage_root_invalid",
                "DISEASE_API_STORAGE_ROOT phải là thư mục tuyệt đối có artifact đã được duyệt.")
         root, source = root.resolve(), Path(project_root).resolve()
         frozen = protocol()
-        cp, ti = frozen["checkpoints"][MODEL_ID], frozen["tuning"]
+        _check(model_id in frozen['checkpoints'], 'unknown_model', 'Model không thuộc frozen checkpoint registry.')
+        cp, ti = frozen["checkpoints"][model_id], frozen["tuning"]
         identity = cp["identity"]
-        _check(identity["config"]["models"]["logistic_regression"]["C"] == 2,
-               "checkpoint_identity_mismatch", "Ứng dụng chỉ nhận approved LR tuned C=2.")
+        if model_id in {'lr_tuned_c2','lr_baseline'}:
+            _check(identity["config"]["models"]["logistic_regression"]["C"] == (1 if model_id == 'lr_baseline' else 2),
+                   "checkpoint_identity_mismatch", "C khác LR checkpoint đã khóa.")
         # Pins were frozen BEFORE test; no model choice or requirements come from test scores.
         for relative, expected in identity["source_sha256"].items():
             _file(source, relative, {"sha256": expected})
@@ -131,12 +134,16 @@ class LRPredictionService:
         _check(catalog.schema_id == phase["processed"]["schema_sha256"] and
                len(catalog.features) == 375 and len(catalog.classes) == 587,
                "catalog_mismatch", "Schema375/class order587 không hợp lệ.")
-        manifest = _read(_file(root, f"artifacts/metadata/tuning/{ti['experiment_id']}/manifest.json",
+        if model_id == 'lr_baseline':
+            # All baseline deployment entries are frozen individually before final test.
+            manifest = {'files': {cp['folder']+'/'+name: value for name,value in cp['files'].items()}}
+        else:
+            manifest = _read(_file(root, f"artifacts/metadata/tuning/{ti['experiment_id']}/manifest.json",
                                {"sha256": ti["manifest_sha256"]}))
-        _check(manifest["status"] == "completed" and manifest["experiment_id"] == ti["experiment_id"]
+            _check(manifest["status"] == "completed" and manifest["experiment_id"] == ti["experiment_id"]
                and manifest["identity"] == identity, "checkpoint_identity_mismatch",
                "Tuning manifest khác experiment/selected identity đã duyệt.")
-        # Verify ONLY the approved LR deployment subset, not all five tuned models.
+        # Verify only the selected deployment subset, not all five tuned models.
         for name in ("pipeline.joblib", "fit.json", "metadata.json"):
             relative = cp["folder"] + "/" + name
             _check(relative in manifest["files"], "checkpoint_manifest_incomplete", f"Manifest thiếu {relative}.")
@@ -149,7 +156,7 @@ class LRPredictionService:
         pred_entry = manifest["files"].get(cp["folder"] + "/validation_predictions.npz", {})
         _check(fit["status"] == "fitted" and meta["status"] == "completed" and
                fit["identity"] == meta["identity"] == identity and
-               fit["model"] == meta["model"] == "logistic_regression" and
+               fit["model"] == meta["model"] == cp['model'] and
                fit["n_input_features"] == 375 and
                fit["pipeline_sha256"] == meta["pipeline_sha256"] == cp["files"]["pipeline.joblib"]["sha256"] and
                meta["fit_metadata_sha256"] == sha256_file(folder / "fit.json") and
@@ -157,7 +164,7 @@ class LRPredictionService:
                "checkpoint_metadata_mismatch", "Fitted/completed metadata LR không nhất quán.")
         # Existing loader checks fit metadata, file hash, fitted pipeline and variance support.
         model = load_fitted_checkpoint(folder, identity, trusted=True)
-        expected = build_pipeline("logistic_regression", identity["config"])
+        expected = build_pipeline(cp['model'], identity["config"])
         _check(model.feature_names_in_.tolist() == list(catalog.features) and
                np.issubdtype(np.asarray(model.classes_).dtype, np.integer) and
                np.array_equal(model.classes_, np.arange(587)) and
@@ -166,18 +173,21 @@ class LRPredictionService:
                    for (_, a), (_, b) in zip(model.steps, expected.steps)),
                "fitted_pipeline_mismatch", "Fitted schema/classes/VarianceThreshold/to_csr/LR config không khớp.")
         estimator = model.named_steps["estimator"]
-        check_is_fitted(estimator, attributes=["coef_", "intercept_", "classes_", "n_features_in_"])
-        _check(estimator.coef_.shape == (587, fit["n_retained_features"]) and
+        check_is_fitted(estimator)
+        _check(fit['n_retained_features'] == 318 and estimator.n_features_in_ == 318,
+               'fitted_pipeline_mismatch', 'Fitted estimator phải giữ đúng 318 feature.')
+        if cp['model'] in {'logistic_regression','linear_svc'}:
+            _check(estimator.coef_.shape == (587, fit["n_retained_features"]) and
                estimator.intercept_.shape == (587,) and
                estimator.n_features_in_ == fit["n_retained_features"] and
                np.isfinite(estimator.coef_).all() and np.isfinite(estimator.intercept_).all(),
                "fitted_pipeline_mismatch", "Fitted LR coefficients không khớp metadata.")
-        service = cls(model, catalog, cp, ti["experiment_id"])
+        service = cls(model, catalog, cp, None if model_id == 'lr_baseline' else ti["experiment_id"], model_id)
         service.verification = "REAL CHECKPOINT VERIFIED"
         return service
 
     def identity(self):
-        return {"model_id": MODEL_ID, "tuning_experiment_id": self._tuning_experiment,
+        return {"model_id": self.model_id, "tuning_experiment_id": self._tuning_experiment,
                 "selected_checkpoint_id": self._checkpoint["identity"]["experiment_id"],
                 "checkpoint_sha256": self._checkpoint["files"]["pipeline.joblib"]["sha256"],
                 "schema_sha256": self.catalog.schema_id, "features": 375, "classes": 587}

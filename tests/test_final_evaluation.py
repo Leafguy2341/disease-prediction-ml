@@ -311,7 +311,23 @@ def _run_preparation_notebook(name, session, tmp_path, monkeypatch, *, fault=Non
     import io
     import platform
     import runpy
+    import sys
+    from types import ModuleType
     from src.models.notebook import ColabTraining
+
+    # The historical notebook includes an explicit drive.mount cell. Mock that
+    # boundary as well as bootstrap: offline tests must never mount real Drive.
+    mount_calls = []
+    def fixture_mount(location):
+        assert location == '/content/drive'
+        mount_calls.append(location)
+    colab = ModuleType('google.colab')
+    colab.drive = SimpleNamespace(mount=fixture_mount)
+    if 'google' not in sys.modules:
+        google = ModuleType('google')
+        google.__path__ = []
+        monkeypatch.setitem(sys.modules, 'google', google)
+    monkeypatch.setitem(sys.modules, 'google.colab', colab)
 
     content = tmp_path / "synthetic-content"
     mount = content / "drive/MyDrive"
@@ -405,6 +421,7 @@ def _run_preparation_notebook(name, session, tmp_path, monkeypatch, *, fault=Non
              for p in root.rglob("*") if p.name != "test.csv.gz" and p.is_file()}
     assert after == before, "Notebook preparation must leave synthetic storage unchanged"
     assert not forbidden_calls and not test_accesses
+    assert mount_calls == (['/content/drive'] if name == 'colab_smoke_test.ipynb' else [])
     return scope
 
 

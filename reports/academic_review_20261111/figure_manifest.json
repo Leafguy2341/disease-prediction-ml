@@ -1,0 +1,130 @@
+{
+  "split": "validation",
+  "rows": 28120,
+  "classes": 587,
+  "zero_division": 0,
+  "sources": {
+    "artifacts/metadata/phase3_audit/colab_evidence.json": {
+      "sha256": "41a4ad3b0c3b8c783382b807688fd0958b00666b6e46bb84c3d3fe1e8c16fb48",
+      "bytes": 29626,
+      "root": "code"
+    },
+    "artifacts/metadata/phase4_audit/colab_validation_evidence.json": {
+      "sha256": "42cf30dc39547656c572cf5ca4bb6a0eae3a6d31f0a923e6518e8618e835dd44",
+      "bytes": 23171,
+      "root": "code"
+    },
+    "artifacts/metadata/structured_inference/colab_evidence.json": {
+      "sha256": "5dacef332521d797a74c00441bb00161ff21502078ebb12426c7dd4c4be5fd01",
+      "bytes": 26833,
+      "root": "code"
+    },
+    "artifacts/metadata/post_tuning_audit/colab_evidence.json": {
+      "sha256": "70849a69a0d2cd571e2d93a938b98a9167b9d46ceb0db9d6cb1859f6a2e415e8",
+      "bytes": 64212,
+      "root": "code"
+    },
+    "artifacts/metadata/model_analysis/colab_supplement.json": {
+      "sha256": "4ccfa85ac4639778ffae6d11a435fb78af825bb4e1c294792356bec7236b4d28",
+      "bytes": 53841,
+      "root": "code"
+    },
+    "artifacts/metadata/final_ml_gaps/colab_evidence.json": {
+      "sha256": "7c2ed8e6705347a850bb90e88cdea54067d0d12ec5553588ce03fbd0a99725ac",
+      "bytes": 36429,
+      "root": "code"
+    },
+    "artifacts/metadata/runs/phase4-20261028T091711786379Z-c1c66643/phase4_manifest.json": {
+      "sha256": "d9d45b1972bb3f880f11db12a74b5258c1cc0e350075012e30dc9b42e5867281",
+      "bytes": 51270,
+      "root": "data"
+    },
+    "artifacts/metadata/tuning/tuning-v1-9c4dd013abbba14a/manifest.json": {
+      "sha256": "4a10ddd5deba5fff7927f84ea334196a3f6d127b9777ced2b127f5b5e9389355",
+      "bytes": 15510,
+      "root": "data"
+    },
+    "artifacts/metadata/runs/tuned-ensemble-20261029T041701354242Z-6c84dbfe/tuned_ensemble_manifest.json": {
+      "sha256": "858893c442f1966eb8c7508a74cf6318b820004278342a1b958942151c049060",
+      "bytes": 51036,
+      "root": "data"
+    },
+    "reports/tables/phase3_baseline-v1-f8a5bfdb7b4c12cd_validation_comparison.csv": {
+      "sha256": "958ee981e032493db4662234dadbef922c483513fc120722c0abdcb8d9023836",
+      "bytes": 1027,
+      "root": "data",
+      "verification": "every metric checked against pinned Phase3 evidence"
+    },
+    "reports/runs/phase4-20261028T091711786379Z-c1c66643/tables/validation_comparison.csv": {
+      "sha256": "d445e2de7eee763bb803ea4af07e7344914eb92d42a49fe85787dfe04b7999cc",
+      "bytes": 1331,
+      "root": "data"
+    },
+    "reports/tuning/tuning-v1-9c4dd013abbba14a/baseline_vs_tuned.csv": {
+      "sha256": "fb07b629081a986b72ba8194c4a4b2b1b18684b4ffb65013d170d74ed1c10a83",
+      "bytes": 650,
+      "root": "data"
+    },
+    "reports/runs/tuned-ensemble-20261029T041701354242Z-6c84dbfe/tables/tuned_validation_comparison.csv": {
+      "sha256": "05ca4702984e13af09aaacb4c1cca132c98b663ba2da101063ba042672447dda",
+      "bytes": 2368,
+      "root": "data"
+    },
+    "reports/figures/phase3_baseline-v1-f8a5bfdb7b4c12cd_validation_performance.png": {
+      "sha256": "3da470385cd193011b35ea798e345a2f8878571621917e7f2e08b4ba11d6af7f",
+      "bytes": 56405,
+      "root": "data",
+      "verification": "current-byte inventory; figure provenance in Phase3 packet; table values independently matched"
+    },
+    "reports/figures/phase3_baseline-v1-f8a5bfdb7b4c12cd_fit_prediction_time.png": {
+      "sha256": "d91b433f9cdef95c3cafe509679c84f2c644e601a12904d9ba6a039529aaabe1",
+      "bytes": 47115,
+      "root": "data",
+      "verification": "current-byte inventory; figure provenance in Phase3 packet; table values independently matched"
+    },
+    "reports/figures/phase3_baseline-v1-f8a5bfdb7b4c12cd_difficult_classes.png": {
+      "sha256": "cb3dae9980a71aa7f6d911b775d56469c12d41fdec5eead3db01b706320dd50c",
+      "bytes": 85798,
+      "root": "data",
+      "verification": "current-byte inventory; figure provenance in Phase3 packet; table values independently matched"
+    },
+    "reports/runs/phase4-20261028T091711786379Z-c1c66643/figures/macro_f1_comparison.png": {
+      "sha256": "31fdcc6e74af89fee9d3a5f067539f036f679c501ccd4b307427ebe52911f962",
+      "bytes": 62839,
+      "root": "data"
+    },
+    "reports/runs/phase4-20261028T091711786379Z-c1c66643/figures/error_diversity.png": {
+      "sha256": "4c4b82c7738c8cf6db2845b722cf0d562beba19d12e2a3c837bcf4609fb9e5e8",
+      "bytes": 119643,
+      "root": "data"
+    },
+    "reports/tuning/tuning-v1-9c4dd013abbba14a/baseline_vs_tuned.png": {
+      "sha256": "03b15a3b7d6935620cec8a7b4577529dba0abc8afb2d26267d4ec29fb300a56c",
+      "bytes": 47823,
+      "root": "data"
+    }
+  },
+  "reused_figures": [
+    "reports/figures/phase3_baseline-v1-f8a5bfdb7b4c12cd_validation_performance.png",
+    "reports/figures/phase3_baseline-v1-f8a5bfdb7b4c12cd_fit_prediction_time.png",
+    "reports/figures/phase3_baseline-v1-f8a5bfdb7b4c12cd_difficult_classes.png",
+    "reports/runs/phase4-20261028T091711786379Z-c1c66643/figures/macro_f1_comparison.png",
+    "reports/runs/phase4-20261028T091711786379Z-c1c66643/figures/error_diversity.png",
+    "reports/tuning/tuning-v1-9c4dd013abbba14a/baseline_vs_tuned.png"
+  ],
+  "new_figures": {
+    "experiment4_tuned_ensembles.png": {
+      "sha256": "7b77fb377c9b96be6bdec9ee33fc233cad37ecf221623e680d5225e78a167461",
+      "bytes": 108374
+    },
+    "overall_validation_selection.png": {
+      "sha256": "4acf36316e351a1f6f4cb765776205eaf999025a891ebfbb65f0f19b87e10186",
+      "bytes": 100039
+    }
+  },
+  "all_five_tuning_macro_f1_improved": true,
+  "inference_calls": 0,
+  "fit_calls": 0,
+  "test_payload_opened": false,
+  "limitation": "Saved metric/report verification only; no re-execution of notebooks or model evaluation."
+}

@@ -46,3 +46,8 @@ Bản chi tiết trước hợp nhất: [MODEL_SELECTION_RATIONALE.md](archive/m
 <a id="identity-test-và-scoring-trước-khi-truy-cập-payload"></a>
 <a id="phân-tích-mô-tả-đã-định-trước"></a>
 <a id="gate-publication-và-giới-hạn"></a>
+
+
+## Quyết định ứng dụng hiện hành — 2026-11-11
+
+Các bảng khoa học, bốn thí nghiệm và giải thích lựa chọn được gom tại [ML_EXPERIMENTS](ML_EXPERIMENTS.md). LR tunedC2 vẫn là default đã duyệt trước final test; hard tunedLR+SVC+KNN vẫn best observed validation Macro F1. Website có ba registry IDs nhưng chỉ bật model đủ điều kiện runtime. Không dùng test để chọn lại model. Xem [hợp đồng triển khai](DEPLOYMENT_GUIDE.md#three-model-website) cho trạng thái qualification; không lặp lại bảng metrics ở trang redirect này.
