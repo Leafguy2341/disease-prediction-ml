@@ -2,7 +2,7 @@
 
 Uses the actual production conversation/extraction/validator for rule baseline.
 Semantic suggestions require confirmation: they cannot become clinical facts.
-No network or model download; optional embeddings come from a pinned local snapshot.
+Benchmark runs offline; explicit preparation can download pinned public embedding files.
 """
 from collections import Counter, defaultdict
 from copy import deepcopy
@@ -13,6 +13,9 @@ from pathlib import Path
 import re
 import statistics
 import tempfile
+import shutil
+import platform
+import importlib.metadata
 from time import perf_counter
 
 from src.agent.extraction import (Catalog, Turn, ExtractionValidator, ExtractionError,
@@ -250,6 +253,40 @@ def verify_embedding_snapshot(folder):
     return manifest
 
 
+def prepare_embedding(root=ROOT, *, fetch=None):
+    """Download public embedding files at a fixed revision into artifacts/embeddings.
+
+    No credentials or user messages, no model code execution, no classifier writes.
+    Existing snapshots must verify; partial downloads never become ready snapshots.
+    """
+    folder=Path(root)/'artifacts/embeddings/multilingual-minilm-l12-v2'/MODEL_REVISION
+    if folder.exists():
+        verify_embedding_snapshot(folder)
+        return folder
+    if fetch is None:
+        from huggingface_hub import hf_hub_download
+        fetch=hf_hub_download
+    files=('config.json','config_sentence_transformers.json','modules.json',
+           'sentence_bert_config.json','sentencepiece.bpe.model','special_tokens_map.json',
+           'tokenizer.json','tokenizer_config.json','unigram.json','1_Pooling/config.json',
+           'model.safetensors')
+    folder.parent.mkdir(parents=True,exist_ok=True)
+    with tempfile.TemporaryDirectory(prefix='.embedding-download-',dir=folder.parent) as tmp:
+        stage=Path(tmp)/'snapshot';stage.mkdir()
+        hashes={}
+        for name in files:
+            downloaded=Path(fetch(repo_id=MODEL_ID,filename=name,revision=MODEL_REVISION))
+            target=stage/name;target.parent.mkdir(parents=True,exist_ok=True)
+            shutil.copyfile(downloaded,target)
+            hashes[name]=sha(target)
+        manifest=dict(model_id=MODEL_ID,revision=MODEL_REVISION,files=hashes,
+            source=MODEL_SOURCE,license='Apache-2.0',provenance='Public publisher files requested at immutable revision; local SHA256 inventory')
+        (stage/'research_snapshot.json').write_text(json.dumps(manifest,indent=2)+'\n',encoding='utf-8')
+        verify_embedding_snapshot(stage)
+        stage.rename(folder)  # Same-volume, no incomplete folder exposed as ready.
+    return folder
+
+
 def load_semantic(folder,records):
     if not folder:return None,dict(status='NOT RUN',reason='No pinned local embedding snapshot configured',model_id=MODEL_ID,revision=MODEL_REVISION)
     manifest=verify_embedding_snapshot(folder)
@@ -259,6 +296,25 @@ def load_semantic(folder,records):
     model=SentenceTransformer(str(Path(folder).resolve()),local_files_only=True,trust_remote_code=False,device='cpu')
     matcher=SemanticCandidates(records,lambda texts:model.encode(texts,show_progress_bar=False,convert_to_numpy=True))
     return matcher,dict(status='LOADED',model_id=MODEL_ID,revision=MODEL_REVISION,snapshot_manifest=manifest,load_and_catalog_ms=(perf_counter()-start)*1000)
+
+
+def candidate_metrics(cases,rows):
+    """Evaluate retrieval separately from confirmed extraction; no guessed threshold."""
+    hit1=hit3=gold_count=proposed_count=0
+    for case,row in zip(cases,rows):
+        if case.get('expected_states') is None:continue
+        gold=set(case['expected_states'].items());gold_count+=len(gold)
+        at1=set();at3=set()
+        for suggestion in row.get('suggestions',[]):
+            candidates=suggestion['candidates'];state=suggestion['state']
+            at1.update((c['feature'],state) for c in candidates[:1])
+            at3.update((c['feature'],state) for c in candidates[:3])
+        hit1+=len(gold&at1);hit3+=len(gold&at3);proposed_count+=len(at3)
+    return dict(gold_feature_state_pairs=gold_count,top3_proposed_pairs=proposed_count,
+        recall_at_1=hit1/gold_count if gold_count else None,
+        recall_at_3=hit3/gold_count if gold_count else None,
+        precision_at_3=hit3/proposed_count if proposed_count else 0.,
+        definition='Unique canonical feature + assertion pairs in clause candidates on fully annotated cases; not confirmed symptoms')
 
 
 def benchmark(root=ROOT, matcher=None):
@@ -279,6 +335,7 @@ def benchmark(root=ROOT, matcher=None):
                     candidate_rows.append(dict(id=c['id'],states=base['states'] if name=='hybrid' else {},
                         suggestions=proposals,confirmation_required=bool(proposals),latency_ms=(perf_counter()-start)*1000+(base['latency_ms'] if name=='hybrid' else 0)))
                 methods[name]=dict(status='RUN_CONFIRMATION_ONLY',metrics=metrics(cases,candidate_rows),rows=candidate_rows,
+                    candidate_metrics=candidate_metrics(cases,candidate_rows),
                     note='Candidate retrieval only; no automatic threshold, no simulated user confirmation, no semantic production activation')
         all_results[split]=methods
     return dict(protocol='vietnamese-nlp-research-v1',synthetic=True,human_review='pending_human_review',
@@ -287,12 +344,26 @@ def benchmark(root=ROOT, matcher=None):
         results=all_results,models_fitted=0,disease_predictions_called=False,locked_test_opened=False,network_calls=0)
 
 
-def run(output,root=ROOT,embedding_snapshot=None):
+def run(output,root=ROOT,embedding_snapshot=None,*,auto_embedding=False):
     output=Path(output)
     if output.exists():raise FileExistsError('Use a new research output folder; never overwrite evidence')
+    if auto_embedding:
+        import importlib.util
+        if importlib.util.find_spec('sentence_transformers') is None:
+            raise RuntimeError('Install requirements-nlp-research.txt in the notebook research interpreter')
+        embedding_snapshot=prepare_embedding(root)
     packet=inventory(root);matcher,semantic=load_semantic(embedding_snapshot,packet['features'])
+    if (auto_embedding or embedding_snapshot) and matcher is None:
+        raise RuntimeError('Embedding was requested but could not load: '+semantic.get('reason','unknown'))
     result=benchmark(root,matcher);result['semantic_environment']=semantic
-    result['inputs_sha256']={n:sha(Path(root)/n) for n in ('configs/synonyms.json','configs/phase5b.json','artifacts/metadata/phase2/feature_schema.json','artifacts/metadata/phase2/label_mapping.json','data/evaluation/vietnamese_symptom_semantic_cases.jsonl','data/evaluation/vietnamese_nlp_reserved_v1.jsonl','scripts/nlp_symptom_research.py')}
+    result['preparation']=dict(public_embedding_download_allowed=auto_embedding,
+        network_scope='network_calls=0 refers to benchmark; setup may download pinned public embedding files',
+        llm_generation_calls=0)
+    result['environment']=dict(python=platform.python_version(),platform=platform.system(),packages={})
+    for package in ('sentence-transformers','transformers','huggingface-hub','torch','numpy','scikit-learn'):
+        try:result['environment']['packages'][package]=importlib.metadata.version(package)
+        except importlib.metadata.PackageNotFoundError:pass
+    result['inputs_sha256']={n:sha(Path(root)/n) for n in ('configs/synonyms.json','configs/phase5b.json','configs/nlp_research.json','requirements-nlp-research.txt','artifacts/metadata/phase2/feature_schema.json','artifacts/metadata/phase2/label_mapping.json','data/evaluation/vietnamese_symptom_semantic_cases.jsonl','data/evaluation/vietnamese_nlp_reserved_v1.jsonl','scripts/nlp_symptom_research.py')}
     output.mkdir(parents=True)
     for name,data in [('coverage_inventory.json',packet),('benchmark.json',result)]:
         (output/name).write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
@@ -307,5 +378,8 @@ if __name__=='__main__':
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--output',type=Path,required=True)
     parser.add_argument('--embedding-snapshot',type=Path)
-    args=parser.parse_args();packet,result=run(args.output,embedding_snapshot=args.embedding_snapshot)
+    parser.add_argument('--auto-embedding',action='store_true')
+    args=parser.parse_args();packet,result=run(args.output,embedding_snapshot=args.embedding_snapshot,auto_embedding=args.auto_embedding)
+    from scripts.plot_nlp_research import render_run
+    render_run(args.output)
     print(json.dumps(dict(coverage=packet['summary'],rule_based={k:v['rule_based']['metrics'] for k,v in result['results'].items()},semantic=result['semantic_environment']),ensure_ascii=False,indent=2))

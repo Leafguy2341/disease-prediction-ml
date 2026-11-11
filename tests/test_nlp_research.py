@@ -110,7 +110,7 @@ def test_notebook07_valid_json_and_safe_gates():
     assert nb['nbformat']==4
     assert len({c['id'] for c in nb['cells']})==len(nb['cells'])
     code='\n'.join(''.join(c['source']) for c in nb['cells'] if c['cell_type']=='code')
-    assert 'RUN_RESEARCH = False' in code and 'RUN_SEMANTIC = False' in code
+    assert 'RUN_RESEARCH = True' in code and 'RUN_SEMANTIC = True' in code
     assert '.fit(' not in code and 'trust_remote_code=True' not in code
     for c in nb['cells']:
         if c['cell_type']=='code':compile(''.join(c['source']),'notebook07','exec')

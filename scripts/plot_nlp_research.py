@@ -45,6 +45,44 @@ def render(folder):
     return manifest
 
 
+def render_run(folder):
+    """Figures use only benchmark.json from THIS run; no historical snapshot reuse."""
+    import matplotlib
+    matplotlib.use('Agg')
+    import matplotlib.pyplot as plt
+    folder=Path(folder);data=json.loads((folder/'benchmark.json').read_text(encoding='utf-8'))
+    figures=[]
+    for split,methods in data['results'].items():
+        available={k:v for k,v in methods.items() if 'metrics' in v}
+        names=list(available);x=list(range(len(names)))
+        fig,ax=plt.subplots(figsize=(9,4))
+        for i,(key,label) in enumerate([('precision','Precision'),('recall','Recall'),('micro_f1','Micro F1')]):
+            bars=ax.bar([j+(i-1)*.24 for j in x],[v['metrics'][key] for v in available.values()],width=.24,label=label)
+            ax.bar_label(bars,fmt='%.3f',fontsize=8)
+        ax.set_xticks(x,names);ax.set_ylim(0,1.15);ax.legend(loc='lower left');ax.set_ylabel('Feature-state metric')
+        ax.set_title(split+' — confirmed extraction states')
+        fig.text(.02,.01,'Synthetic evaluation. Semantic candidates are not confirmed states; see retrieval chart.',fontsize=8)
+        fig.tight_layout(rect=(0,.06,1,1));name=split+'_extraction.png';fig.savefig(folder/name,dpi=140);plt.close(fig);figures.append(name)
+        candidates={k:v['candidate_metrics'] for k,v in available.items() if 'candidate_metrics' in v}
+        if candidates:
+            fig,ax=plt.subplots(figsize=(8,4));names=list(candidates);x=list(range(len(names)))
+            for i,(key,label) in enumerate([('recall_at_1','Recall@1'),('recall_at_3','Recall@3'),('precision_at_3','Precision@3')]):
+                bars=ax.bar([j+(i-1)*.24 for j in x],[v[key] or 0 for v in candidates.values()],width=.24,label=label);ax.bar_label(bars,fmt='%.3f',fontsize=8)
+            ax.set_xticks(x,names);ax.set_ylim(0,1.15);ax.legend(loc='lower left');ax.set_ylabel('Retrieval metric')
+            ax.set_title(split+' — unconfirmed feature-state candidates')
+            fig.text(.02,.01,'Measured top-K retrieval; cosine similarity is not a medical probability.',fontsize=8)
+            fig.tight_layout(rect=(0,.06,1,1));name=split+'_retrieval.png';fig.savefig(folder/name,dpi=140);plt.close(fig);figures.append(name)
+        fig,axes=plt.subplots(1,2,figsize=(10,4))
+        for ax,key,title in zip(axes,('latency_p50_ms','latency_p95_ms'),('p50 latency','p95 latency')):
+            bars=ax.bar(list(available),[v['metrics'][key] for v in available.values()]);ax.bar_label(bars,fmt='%.2f');ax.set_ylim(bottom=0);ax.set_title(title);ax.set_ylabel('ms / utterance')
+        fig.suptitle(split+' — one measured local pass');fig.tight_layout();name=split+'_latency.png';fig.savefig(folder/name,dpi=140);plt.close(fig);figures.append(name)
+    manifest=dict(source='benchmark.json in the same run folder',
+        benchmark_sha256=hashlib.sha256((folder/'benchmark.json').read_bytes()).hexdigest(),
+        figures={n:hashlib.sha256((folder/n).read_bytes()).hexdigest() for n in figures})
+    (folder/'run_figures.json').write_text(json.dumps(manifest,indent=2)+'\n',encoding='utf-8')
+    return manifest
+
+
 if __name__=='__main__':
     from scripts.nlp_symptom_research import ROOT
     print(json.dumps(render(ROOT/'reports/nlp_research_v1'),indent=2))

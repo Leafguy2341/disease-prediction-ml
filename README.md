@@ -123,7 +123,7 @@ Ví dụ input ML: `{"model_id":"lr_tuned_c2","present_features":["cough","fever
 - 03: baseline + tuning; 04: baseline/tuned ensemble — bốn thí nghiệm disease classification.
 - 05: structured inference của năm baseline; không phải loader API LR tuned.
 - 06: completed final-evaluation viewer chỉ đọc, gate False/authorization rỗng; không mở lại test.
-- 07: Rule-based/Semantic/Hybrid symptom extraction — nghiên cứu NLP riêng. Viewer có snapshot dữ liệu/hình kèm SHA, chạy được trên Colab không cần Drive/source local. Chạy nghiên cứu mới cần source đầy đủ; mặc định hai gate False. Có baseline synthetic đã đo, Semantic/Hybrid **NOT RUN**, chưa kết luận cải thiện.
+- 07: Rule-based/Semantic/Hybrid symptom extraction. Mặc định hai switch True; setup tự lấy source/thư viện NLP trong Colab, tải embedding public đúng revision vào artifacts/embeddings và chạy benchmark. Bảng/hình đọc kết quả chính run vừa xong; không cần upload file hay nhập đường dẫn. Lần đầu cần Internet. Không train disease classifier.
 - `colab_smoke_test`: shared bootstrap/import/session/integrity; không train.
 
 Notebook 03 còn tuning gate True do execution có chủ đích; không thực thi chỉ để xem bảng. Source Windows không tự có trên Colab: làm bước publish payload nhỏ, mount và setup theo [handover guide](docs/HANDOVER_GUIDE.md).

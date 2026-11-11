@@ -91,4 +91,5 @@ configs/runtime.local.json
 # Local unified storage: full experiment reports are data-release assets, not source.
 /reports/tuning/
 /reports/phase3_baseline-*.md
+/reports/nlp_research_20*/
 
