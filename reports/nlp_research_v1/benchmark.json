@@ -1,0 +1,2273 @@
+{
+  "protocol": "vietnamese-nlp-research-v1",
+  "synthetic": true,
+  "human_review": "pending_human_review",
+  "threshold_selection": "NONE; candidate-only semantic mode, no test optimization",
+  "split_policy": "86 historical fixtures development only; new reserved synthetic cases excluded from alias/context qualification",
+  "results": {
+    "development": {
+      "rule_based": {
+        "status": "RUN",
+        "metrics": {
+          "cases": 86,
+          "fully_annotated_cases": 63,
+          "partial_label_cases": 23,
+          "tp": 65,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "micro_f1": 1.0,
+          "macro_f1_observed_feature_state_pairs": 1.0,
+          "macro_denominator": 36,
+          "macro_definition": "union of gold/predicted (feature, assertion) pairs on fully annotated cases; zero_division=0, not disease labels",
+          "exact_set_match": 1.0,
+          "exact_denominator": 63,
+          "false_positive_contexts": {},
+          "forbidden_feature_violations": 0,
+          "mapped_features": 12,
+          "canonical_feature_denominator": 375,
+          "confirmation_rate": 0.7906976744186046,
+          "confirmation_definition": "clarification_required or semantic suggestion awaiting user confirmation; not successful user resolution",
+          "latency_p50_ms": 2.946249966043979,
+          "latency_p95_ms": 3.7839000578969717,
+          "case_support_by_context": {
+            "affirmed": 12,
+            "denied": 12,
+            "uncertain": 12,
+            "unaccented": 11,
+            "unicode_nfd": 12,
+            "contrast": 4,
+            "misspelling": 5,
+            "folded_collision": 2,
+            "ambiguous_or_unactivated": 13,
+            "mixed_known_with_unknown_or_ambiguous": 3
+          },
+          "context_error_breakdown": {
+            "negation_errors": 0,
+            "other_subject_errors": 0,
+            "hypothetical_fiction_errors": 0
+          }
+        },
+        "rows": [
+          {
+            "id": "semantic-001",
+            "states": {
+              "nausea": "present"
+            },
+            "evidence": {
+              "nausea": [
+                {
+                  "turn_id": "u1",
+                  "start": 7,
+                  "end": 15,
+                  "text": "buồn nôn"
+                }
+              ]
+            },
+            "status": "clarification_required",
+            "reason": "offline_batch_questions",
+            "confirmation_required": true,
+            "latency_ms": 4.054400022141635
+          },
+          {
+            "id": "semantic-002",
+            "states": {
+              "nausea": "denied"
+            },
+            "evidence": {
+              "nausea": [
+                {
+                  "turn_id": "u1",
+                  "start": 10,
+                  "end": 18,
+                  "text": "buồn nôn"
+                }
+              ]
+            },
+            "status": "clarification_required",
+            "reason": "offline_batch_questions",
+            "confirmation_required": true,
+            "latency_ms": 3.8481999654322863
+          },
+          {
+            "id": "semantic-003",
+            "states": {
+              "nausea": "uncertain"
+            },
+            "evidence": {
+              "nausea": [
+                {
+                  "turn_id": "u1",
+                  "start": 17,
+                  "end": 25,
+                  "text": "buồn nôn"
+                }
+              ]
+            },
+            "status": "clarification_required",
+            "reason": "offline_resolve_uncertain",
+            "confirmation_required": true,
+            "latency_ms": 0.9024000028148293
+          },
+          {
+            "id": "semantic-004",
+            "states": {
+              "nausea": "present"
+            },
+            "evidence": {
+              "nausea": [
+                {
+                  "turn_id": "u1",
+                  "start": 7,
+                  "end": 15,
+                  "text": "buon non"
+                }
+              ]
+            },
+            "status": "clarification_required",
+            "reason": "offline_batch_questions",
+            "confirmation_required": true,
+            "latency_ms": 3.4185999538749456
+          },
+          {
+            "id": "semantic-005",
+            "states": {
+              "nausea": "present"
+            },
+            "evidence": {
+              "nausea": [
+                {
+                  "turn_id": "u1",
+                  "start": 9,
+                  "end": 20,
+                  "text": "buồn nôn"
+                }
+              ]
+            },
+            "status": "clarification_required",
+            "reason": "offline_batch_questions",
+            "confirmation_required": true,
+            "latency_ms": 3.400399931706488
+          },
+          {
+            "id": "semantic-006",
+            "states": {
+              "vomiting": "present"
+            },
+            "evidence": {
+              "vomiting": [
+                {
+                  "turn_id": "u1",
+                  "start": 7,
+                  "end": 10,
+                  "text": "nôn"
+                }
+              ]
+            },
+            "status": "clarification_required",
+            "reason": "offline_batch_questions",
+            "confirmation_required": true,
+            "latency_ms": 3.055199980735779
+          },
+          {
+            "id": "semantic-007",
+            "states": {
+              "vomiting": "denied"
+            },
+            "evidence": {
+              "vomiting": [
+                {
+                  "turn_id": "u1",
+                  "start": 10,
+                  "end": 13,
+                  "text": "nôn"
+                }
+              ]
+            },
+            "status": "clarification_required",
+            "reason": "offline_batch_questions",
+            "confirmation_required": true,
+            "latency_ms": 2.9944999841973186
+          },
+          {
+            "id": "semantic-008",
+            "states": {
+              "vomiting": "uncertain"
+            },
+            "evidence": {
+              "vomiting": [
+                {
+                  "turn_id": "u1",
+                  "start": 17,
+                  "end": 20,
+                  "text": "nôn"
+                }
+              ]
+            },
+            "status": "clarification_required",
+            "reason": "offline_resolve_uncertain",
+            "confirmation_required": true,
+            "latency_ms": 0.7513000164180994
+          },
+          {
+            "id": "semantic-009",
+            "states": {
+              "vomiting": "present"
+            },
+            "evidence": {
+              "vomiting": [
+                {
+                  "turn_id": "u1",
+                  "start": 7,
+                  "end": 10,
+                  "text": "non"
+                }
+              ]
+            },
+            "status": "clarification_required",
+            "reason": "offline_batch_questions",
+            "confirmation_required": true,
+            "latency_ms": 3.1645999988541007
+          },
+          {
+            "id": "semantic-010",
+            "states": {
+              "vomiting": "present"
+            },
+            "evidence": {
+              "vomiting": [
+                {
+                  "turn_id": "u1",
+                  "start": 9,
+                  "end": 13,
+                  "text": "nôn"
+                }
+              ]
+            },
+            "status": "clarification_required",
+            "reason": "offline_batch_questions",
+            "confirmation_required": true,
+            "latency_ms": 3.140400047414005
+          },
+          {
+            "id": "semantic-011",
+            "states": {
+              "pain in eye": "present"
+            },
+            "evidence": {
+              "pain in eye": [
+                {
+                  "turn_id": "u1",
+                  "start": 7,
+                  "end": 14,
+                  "text": "đau mắt"
+                }
+              ]
+            },
+            "status": "clarification_required",
+            "reason": "offline_batch_questions",
+            "confirmation_required": true,
+            "latency_ms": 3.197800018824637
+          },
+          {
+            "id": "semantic-012",
+            "states": {
+              "pain in eye": "denied"
+            },
+            "evidence": {
+              "pain in eye": [
+                {
+                  "turn_id": "u1",
+                  "start": 10,
+                  "end": 17,
+                  "text": "đau mắt"
+                }
+              ]
+            },
+            "status": "clarification_required",
+            "reason": "offline_batch_questions",
+            "confirmation_required": true,
+            "latency_ms": 3.113300073891878
+          },
+          {
+            "id": "semantic-013",
+            "states": {
+              "pain in eye": "uncertain"
+            },
+            "evidence": {
+              "pain in eye": [
+                {
+                  "turn_id": "u1",
+                  "start": 17,
+                  "end": 24,
+                  "text": "đau mắt"
+                }
+              ]
+            },
+            "status": "clarification_required",
+            "reason": "offline_resolve_uncertain",
+            "confirmation_required": true,
+            "latency_ms": 0.8010000456124544
+          },
+          {
+            "id": "semantic-014",
+            "states": {},
+            "evidence": {},
+            "status": "clarification_required",
+            "reason": "offline_alias_collision",
+            "confirmation_required": true,
+            "latency_ms": 0.5409000441431999
+          },
+          {
+            "id": "semantic-015",
+            "states": {
+              "pain in eye": "present"
+            },
+            "evidence": {
+              "pain in eye": [
+                {
+                  "turn_id": "u1",
+                  "start": 9,
+                  "end": 18,
+                  "text": "đau mắt"
+                }
+              ]
+            },
+            "status": "clarification_required",
+            "reason": "offline_batch_questions",
+            "confirmation_required": true,
+            "latency_ms": 4.051099997013807
+          },
+          {
+            "id": "semantic-016",
+            "states": {
+              "itchiness of eye": "present"
+            },
+            "evidence": {
+              "itchiness of eye": [
+                {
+                  "turn_id": "u1",
+                  "start": 7,
+                  "end": 15,
+                  "text": "ngứa mắt"
+                }
+              ]
+            },
+            "status": "clarification_required",
+            "reason": "offline_batch_questions",
+            "confirmation_required": true,
+            "latency_ms": 3.4963999642059207
+          },
+          {
+            "id": "semantic-017",
+            "states": {
+              "itchiness of eye": "denied"
+            },
+            "evidence": {
+              "itchiness of eye": [
+                {
+                  "turn_id": "u1",
+                  "start": 10,
+                  "end": 18,
+                  "text": "ngứa mắt"
+                }
+              ]
+            },
+            "status": "clarification_required",
+            "reason": "offline_batch_questions",
+            "confirmation_required": true,
+            "latency_ms": 3.7469000089913607
+          },
+          {
+            "id": "semantic-018",
+            "states": {
+              "itchiness of eye": "uncertain"
+            },
+            "evidence": {
+              "itchiness of eye": [
+                {
+                  "turn_id": "u1",
+                  "start": 17,
+                  "end": 25,
+                  "text": "ngứa mắt"
+                }
+              ]
+            },
+            "status": "clarification_required",
+            "reason": "offline_resolve_uncertain",
+            "confirmation_required": true,
+            "latency_ms": 0.7834000280126929
+          },
+          {
+            "id": "semantic-019",
+            "states": {
+              "itchiness of eye": "present"
+            },
+            "evidence": {
+              "itchiness of eye": [
+                {
+                  "turn_id": "u1",
+                  "start": 7,
+                  "end": 15,
+                  "text": "ngua mat"
+                }
+              ]
+            },
+            "status": "clarification_required",
+            "reason": "offline_batch_questions",
+            "confirmation_required": true,
+            "latency_ms": 21.597599959932268
+          },
+          {
+            "id": "semantic-020",
+            "states": {
+              "itchiness of eye": "present"
+            },
+            "evidence": {
+              "itchiness of eye": [
+                {
+                  "turn_id": "u1",
+                  "start": 9,
+                  "end": 21,
+                  "text": "ngứa mắt"
+                }
+              ]
+            },
+            "status": "clarification_required",
+            "reason": "offline_batch_questions",
+            "confirmation_required": true,
+            "latency_ms": 3.7839000578969717
+          },
+          {
+            "id": "semantic-021",
+            "states": {
+              "neck pain": "present"
+            },
+            "evidence": {
+              "neck pain": [
+                {
+                  "turn_id": "u1",
+                  "start": 7,
+                  "end": 13,
+                  "text": "đau cổ"
+                }
+              ]
+            },
+            "status": "clarification_required",
+            "reason": "offline_batch_questions",
+            "confirmation_required": true,
+            "latency_ms": 3.245500032790005
+          },
+          {
+            "id": "semantic-022",
+            "states": {
+              "neck pain": "denied"
+            },
+            "evidence": {
+              "neck pain": [
+                {
+                  "turn_id": "u1",
+                  "start": 10,
+                  "end": 16,
+                  "text": "đau cổ"
+                }
+              ]
+            },
+            "status": "clarification_required",
+            "reason": "offline_batch_questions",
+            "confirmation_required": true,
+            "latency_ms": 3.2132999040186405
+          },
+          {
+            "id": "semantic-023",
+            "states": {
+              "neck pain": "uncertain"
+            },
+            "evidence": {
+              "neck pain": [
+                {
+                  "turn_id": "u1",
+                  "start": 17,
+                  "end": 23,
+                  "text": "đau cổ"
+                }
+              ]
+            },
+            "status": "clarification_required",
+            "reason": "offline_resolve_uncertain",
+            "confirmation_required": true,
+            "latency_ms": 0.7736999541521072
+          },
+          {
+            "id": "semantic-024",
+            "states": {},
+            "evidence": {},
+            "status": "clarification_required",
+            "reason": "offline_alias_collision",
+            "confirmation_required": true,
+            "latency_ms": 0.534699996933341
+          },
+          {
+            "id": "semantic-025",
+            "states": {
+              "neck pain": "present"
+            },
+            "evidence": {
+              "neck pain": [
+                {
+                  "turn_id": "u1",
+                  "start": 9,
+                  "end": 17,
+                  "text": "đau cổ"
+                }
+              ]
+            },
+            "status": "clarification_required",
+            "reason": "offline_batch_questions",
+            "confirmation_required": true,
+            "latency_ms": 3.0201999470591545
+          },
+          {
+            "id": "semantic-026",
+            "states": {
+              "muscle pain": "present"
+            },
+            "evidence": {
+              "muscle pain": [
+                {
+                  "turn_id": "u1",
+                  "start": 7,
+                  "end": 13,
+                  "text": "đau cơ"
+                }
+              ]
+            },
+            "status": "clarification_required",
+            "reason": "offline_batch_questions",
+            "confirmation_required": true,
+            "latency_ms": 2.9423999367281795
+          },
+          {
+            "id": "semantic-027",
+            "states": {
+              "muscle pain": "denied"
+            },
+            "evidence": {
+              "muscle pain": [
+                {
+                  "turn_id": "u1",
+                  "start": 10,
+                  "end": 16,
+                  "text": "đau cơ"
+                }
+              ]
+            },
+            "status": "clarification_required",
+            "reason": "offline_batch_questions",
+            "confirmation_required": true,
+            "latency_ms": 2.9402999207377434
+          },
+          {
+            "id": "semantic-028",
+            "states": {
+              "muscle pain": "uncertain"
+            },
+            "evidence": {
+              "muscle pain": [
+                {
+                  "turn_id": "u1",
+                  "start": 17,
+                  "end": 23,
+                  "text": "đau cơ"
+                }
+              ]
+            },
+            "status": "clarification_required",
+            "reason": "offline_resolve_uncertain",
+            "confirmation_required": true,
+            "latency_ms": 0.9229999268427491
+          },
+          {
+            "id": "semantic-030",
+            "states": {
+              "muscle pain": "present"
+            },
+            "evidence": {
+              "muscle pain": [
+                {
+                  "turn_id": "u1",
+                  "start": 9,
+                  "end": 16,
+                  "text": "đau cơ"
+                }
+              ]
+            },
+            "status": "clarification_required",
+            "reason": "offline_batch_questions",
+            "confirmation_required": true,
+            "latency_ms": 3.3656000159680843
+          },
+          {
+            "id": "semantic-031",
+            "states": {
+              "cough": "present"
+            },
+            "evidence": {
+              "cough": [
+                {
+                  "turn_id": "u1",
+                  "start": 7,
+                  "end": 9,
+                  "text": "ho"
+                }
+              ]
+            },
+            "status": "clarification_required",
+            "reason": "offline_batch_questions",
+            "confirmation_required": true,
+            "latency_ms": 3.411700017750263
+          },
+          {
+            "id": "semantic-032",
+            "states": {
+              "cough": "denied"
+            },
+            "evidence": {
+              "cough": [
+                {
+                  "turn_id": "u1",
+                  "start": 10,
+                  "end": 12,
+                  "text": "ho"
+                }
+              ]
+            },
+            "status": "clarification_required",
+            "reason": "offline_batch_questions",
+            "confirmation_required": true,
+            "latency_ms": 3.3542000455781817
+          },
+          {
+            "id": "semantic-033",
+            "states": {
+              "cough": "uncertain"
+            },
+            "evidence": {
+              "cough": [
+                {
+                  "turn_id": "u1",
+                  "start": 17,
+                  "end": 19,
+                  "text": "ho"
+                }
+              ]
+            },
+            "status": "clarification_required",
+            "reason": "offline_resolve_uncertain",
+            "confirmation_required": true,
+            "latency_ms": 0.7298000855371356
+          },
+          {
+            "id": "semantic-034",
+            "states": {
+              "cough": "present"
+            },
+            "evidence": {
+              "cough": [
+                {
+                  "turn_id": "u1",
+                  "start": 7,
+                  "end": 9,
+                  "text": "ho"
+                }
+              ]
+            },
+            "status": "clarification_required",
+            "reason": "offline_batch_questions",
+            "confirmation_required": true,
+            "latency_ms": 2.9969000024721026
+          },
+          {
+            "id": "semantic-035",
+            "states": {
+              "cough": "present"
+            },
+            "evidence": {
+              "cough": [
+                {
+                  "turn_id": "u1",
+                  "start": 9,
+                  "end": 11,
+                  "text": "ho"
+                }
+              ]
+            },
+            "status": "clarification_required",
+            "reason": "offline_batch_questions",
+            "confirmation_required": true,
+            "latency_ms": 3.2919999212026596
+          },
+          {
+            "id": "semantic-036",
+            "states": {
+              "fever": "present"
+            },
+            "evidence": {
+              "fever": [
+                {
+                  "turn_id": "u1",
+                  "start": 7,
+                  "end": 10,
+                  "text": "sốt"
+                }
+              ]
+            },
+            "status": "clarification_required",
+            "reason": "offline_batch_questions",
+            "confirmation_required": true,
+            "latency_ms": 3.091300022788346
+          },
+          {
+            "id": "semantic-037",
+            "states": {
+              "fever": "denied"
+            },
+            "evidence": {
+              "fever": [
+                {
+                  "turn_id": "u1",
+                  "start": 10,
+                  "end": 13,
+                  "text": "sốt"
+                }
+              ]
+            },
+            "status": "clarification_required",
+            "reason": "offline_batch_questions",
+            "confirmation_required": true,
+            "latency_ms": 3.0068999622017145
+          },
+          {
+            "id": "semantic-038",
+            "states": {
+              "fever": "uncertain"
+            },
+            "evidence": {
+              "fever": [
+                {
+                  "turn_id": "u1",
+                  "start": 17,
+                  "end": 20,
+                  "text": "sốt"
+                }
+              ]
+            },
+            "status": "clarification_required",
+            "reason": "offline_resolve_uncertain",
+            "confirmation_required": true,
+            "latency_ms": 0.7483999943360686
+          },
+          {
+            "id": "semantic-039",
+            "states": {
+              "fever": "present"
+            },
+            "evidence": {
+              "fever": [
+                {
+                  "turn_id": "u1",
+                  "start": 7,
+                  "end": 10,
+                  "text": "sot"
+                }
+              ]
+            },
+            "status": "clarification_required",
+            "reason": "offline_batch_questions",
+            "confirmation_required": true,
+            "latency_ms": 2.951200003735721
+          },
+          {
+            "id": "semantic-040",
+            "states": {
+              "fever": "present"
+            },
+            "evidence": {
+              "fever": [
+                {
+                  "turn_id": "u1",
+                  "start": 9,
+                  "end": 14,
+                  "text": "sốt"
+                }
+              ]
+            },
+            "status": "clarification_required",
+            "reason": "offline_batch_questions",
+            "confirmation_required": true,
+            "latency_ms": 3.1258000526577234
+          },
+          {
+            "id": "semantic-041",
+            "states": {
+              "headache": "present"
+            },
+            "evidence": {
+              "headache": [
+                {
+                  "turn_id": "u1",
+                  "start": 7,
+                  "end": 14,
+                  "text": "đau đầu"
+                }
+              ]
+            },
+            "status": "clarification_required",
+            "reason": "offline_batch_questions",
+            "confirmation_required": true,
+            "latency_ms": 3.1479999888688326
+          },
+          {
+            "id": "semantic-042",
+            "states": {
+              "headache": "denied"
+            },
+            "evidence": {
+              "headache": [
+                {
+                  "turn_id": "u1",
+                  "start": 10,
+                  "end": 17,
+                  "text": "đau đầu"
+                }
+              ]
+            },
+            "status": "clarification_required",
+            "reason": "offline_batch_questions",
+            "confirmation_required": true,
+            "latency_ms": 3.0045999446883798
+          },
+          {
+            "id": "semantic-043",
+            "states": {
+              "headache": "uncertain"
+            },
+            "evidence": {
+              "headache": [
+                {
+                  "turn_id": "u1",
+                  "start": 17,
+                  "end": 24,
+                  "text": "đau đầu"
+                }
+              ]
+            },
+            "status": "clarification_required",
+            "reason": "offline_resolve_uncertain",
+            "confirmation_required": true,
+            "latency_ms": 0.7107999408617616
+          },
+          {
+            "id": "semantic-044",
+            "states": {
+              "headache": "present"
+            },
+            "evidence": {
+              "headache": [
+                {
+                  "turn_id": "u1",
+                  "start": 7,
+                  "end": 14,
+                  "text": "dau dau"
+                }
+              ]
+            },
+            "status": "clarification_required",
+            "reason": "offline_batch_questions",
+            "confirmation_required": true,
+            "latency_ms": 2.6326000224798918
+          },
+          {
+            "id": "semantic-045",
+            "states": {
+              "headache": "present"
+            },
+            "evidence": {
+              "headache": [
+                {
+                  "turn_id": "u1",
+                  "start": 9,
+                  "end": 18,
+                  "text": "đau đầu"
+                }
+              ]
+            },
+            "status": "clarification_required",
+            "reason": "offline_batch_questions",
+            "confirmation_required": true,
+            "latency_ms": 2.9473999748006463
+          },
+          {
+            "id": "semantic-046",
+            "states": {
+              "vaginal itching": "present"
+            },
+            "evidence": {
+              "vaginal itching": [
+                {
+                  "turn_id": "u1",
+                  "start": 7,
+                  "end": 18,
+                  "text": "ngứa âm đạo"
+                }
+              ]
+            },
+            "status": "clarification_required",
+            "reason": "offline_batch_questions",
+            "confirmation_required": true,
+            "latency_ms": 3.205499961040914
+          },
+          {
+            "id": "semantic-047",
+            "states": {
+              "vaginal itching": "denied"
+            },
+            "evidence": {
+              "vaginal itching": [
+                {
+                  "turn_id": "u1",
+                  "start": 10,
+                  "end": 21,
+                  "text": "ngứa âm đạo"
+                }
+              ]
+            },
+            "status": "clarification_required",
+            "reason": "offline_batch_questions",
+            "confirmation_required": true,
+            "latency_ms": 3.3617999870330095
+          },
+          {
+            "id": "semantic-048",
+            "states": {
+              "vaginal itching": "uncertain"
+            },
+            "evidence": {
+              "vaginal itching": [
+                {
+                  "turn_id": "u1",
+                  "start": 17,
+                  "end": 28,
+                  "text": "ngứa âm đạo"
+                }
+              ]
+            },
+            "status": "clarification_required",
+            "reason": "offline_resolve_uncertain",
+            "confirmation_required": true,
+            "latency_ms": 0.7665000157430768
+          },
+          {
+            "id": "semantic-049",
+            "states": {
+              "vaginal itching": "present"
+            },
+            "evidence": {
+              "vaginal itching": [
+                {
+                  "turn_id": "u1",
+                  "start": 7,
+                  "end": 18,
+                  "text": "ngua am dao"
+                }
+              ]
+            },
+            "status": "clarification_required",
+            "reason": "offline_batch_questions",
+            "confirmation_required": true,
+            "latency_ms": 3.048699931241572
+          },
+          {
+            "id": "semantic-050",
+            "states": {
+              "vaginal itching": "present"
+            },
+            "evidence": {
+              "vaginal itching": [
+                {
+                  "turn_id": "u1",
+                  "start": 9,
+                  "end": 24,
+                  "text": "ngứa âm đạo"
+                }
+              ]
+            },
+            "status": "clarification_required",
+            "reason": "offline_batch_questions",
+            "confirmation_required": true,
+            "latency_ms": 3.7573999725282192
+          },
+          {
+            "id": "semantic-051",
+            "states": {
+              "painful urination": "present"
+            },
+            "evidence": {
+              "painful urination": [
+                {
+                  "turn_id": "u1",
+                  "start": 7,
+                  "end": 22,
+                  "text": "đau khi đi tiểu"
+                }
+              ]
+            },
+            "status": "clarification_required",
+            "reason": "offline_batch_questions",
+            "confirmation_required": true,
+            "latency_ms": 2.9450999572873116
+          },
+          {
+            "id": "semantic-052",
+            "states": {
+              "painful urination": "denied"
+            },
+            "evidence": {
+              "painful urination": [
+                {
+                  "turn_id": "u1",
+                  "start": 10,
+                  "end": 25,
+                  "text": "đau khi đi tiểu"
+                }
+              ]
+            },
+            "status": "clarification_required",
+            "reason": "offline_batch_questions",
+            "confirmation_required": true,
+            "latency_ms": 3.1441000755876303
+          },
+          {
+            "id": "semantic-053",
+            "states": {
+              "painful urination": "uncertain"
+            },
+            "evidence": {
+              "painful urination": [
+                {
+                  "turn_id": "u1",
+                  "start": 17,
+                  "end": 32,
+                  "text": "đau khi đi tiểu"
+                }
+              ]
+            },
+            "status": "clarification_required",
+            "reason": "offline_resolve_uncertain",
+            "confirmation_required": true,
+            "latency_ms": 0.8557999972254038
+          },
+          {
+            "id": "semantic-054",
+            "states": {
+              "painful urination": "present"
+            },
+            "evidence": {
+              "painful urination": [
+                {
+                  "turn_id": "u1",
+                  "start": 7,
+                  "end": 22,
+                  "text": "dau khi di tieu"
+                }
+              ]
+            },
+            "status": "clarification_required",
+            "reason": "offline_batch_questions",
+            "confirmation_required": true,
+            "latency_ms": 3.4299000399187207
+          },
+          {
+            "id": "semantic-055",
+            "states": {
+              "painful urination": "present"
+            },
+            "evidence": {
+              "painful urination": [
+                {
+                  "turn_id": "u1",
+                  "start": 9,
+                  "end": 26,
+                  "text": "đau khi đi tiểu"
+                }
+              ]
+            },
+            "status": "clarification_required",
+            "reason": "offline_batch_questions",
+            "confirmation_required": true,
+            "latency_ms": 3.460800042375922
+          },
+          {
+            "id": "semantic-056",
+            "states": {
+              "frequent urination": "present"
+            },
+            "evidence": {
+              "frequent urination": [
+                {
+                  "turn_id": "u1",
+                  "start": 7,
+                  "end": 27,
+                  "text": "đi tiểu thường xuyên"
+                }
+              ]
+            },
+            "status": "clarification_required",
+            "reason": "offline_batch_questions",
+            "confirmation_required": true,
+            "latency_ms": 3.1087000388652086
+          },
+          {
+            "id": "semantic-057",
+            "states": {
+              "frequent urination": "denied"
+            },
+            "evidence": {
+              "frequent urination": [
+                {
+                  "turn_id": "u1",
+                  "start": 10,
+                  "end": 30,
+                  "text": "đi tiểu thường xuyên"
+                }
+              ]
+            },
+            "status": "clarification_required",
+            "reason": "offline_batch_questions",
+            "confirmation_required": true,
+            "latency_ms": 2.7926999609917402
+          },
+          {
+            "id": "semantic-058",
+            "states": {
+              "frequent urination": "uncertain"
+            },
+            "evidence": {
+              "frequent urination": [
+                {
+                  "turn_id": "u1",
+                  "start": 17,
+                  "end": 37,
+                  "text": "đi tiểu thường xuyên"
+                }
+              ]
+            },
+            "status": "clarification_required",
+            "reason": "offline_resolve_uncertain",
+            "confirmation_required": true,
+            "latency_ms": 0.7954000029712915
+          },
+          {
+            "id": "semantic-059",
+            "states": {
+              "frequent urination": "present"
+            },
+            "evidence": {
+              "frequent urination": [
+                {
+                  "turn_id": "u1",
+                  "start": 7,
+                  "end": 27,
+                  "text": "di tieu thuong xuyen"
+                }
+              ]
+            },
+            "status": "clarification_required",
+            "reason": "offline_batch_questions",
+            "confirmation_required": true,
+            "latency_ms": 3.4202999668195844
+          },
+          {
+            "id": "semantic-060",
+            "states": {
+              "frequent urination": "present"
+            },
+            "evidence": {
+              "frequent urination": [
+                {
+                  "turn_id": "u1",
+                  "start": 9,
+                  "end": 35,
+                  "text": "đi tiểu thường xuyên"
+                }
+              ]
+            },
+            "status": "clarification_required",
+            "reason": "offline_batch_questions",
+            "confirmation_required": true,
+            "latency_ms": 3.561499994248152
+          },
+          {
+            "id": "semantic-061",
+            "states": {
+              "nausea": "present",
+              "vomiting": "denied"
+            },
+            "evidence": {
+              "nausea": [
+                {
+                  "turn_id": "u1",
+                  "start": 4,
+                  "end": 12,
+                  "text": "buồn nôn"
+                }
+              ],
+              "vomiting": [
+                {
+                  "turn_id": "u1",
+                  "start": 25,
+                  "end": 28,
+                  "text": "nôn"
+                }
+              ]
+            },
+            "status": "clarification_required",
+            "reason": "offline_batch_questions",
+            "confirmation_required": true,
+            "latency_ms": 3.347499994561076
+          },
+          {
+            "id": "semantic-062",
+            "states": {
+              "itchiness of eye": "present",
+              "pain in eye": "denied"
+            },
+            "evidence": {
+              "itchiness of eye": [
+                {
+                  "turn_id": "u1",
+                  "start": 4,
+                  "end": 12,
+                  "text": "ngứa mắt"
+                }
+              ],
+              "pain in eye": [
+                {
+                  "turn_id": "u1",
+                  "start": 25,
+                  "end": 32,
+                  "text": "đau mắt"
+                }
+              ]
+            },
+            "status": "clarification_required",
+            "reason": "offline_batch_questions",
+            "confirmation_required": true,
+            "latency_ms": 3.482599975541234
+          },
+          {
+            "id": "semantic-063",
+            "states": {
+              "neck pain": "present",
+              "muscle pain": "denied"
+            },
+            "evidence": {
+              "neck pain": [
+                {
+                  "turn_id": "u1",
+                  "start": 4,
+                  "end": 10,
+                  "text": "đau cổ"
+                }
+              ],
+              "muscle pain": [
+                {
+                  "turn_id": "u1",
+                  "start": 23,
+                  "end": 29,
+                  "text": "đau cơ"
+                }
+              ]
+            },
+            "status": "clarification_required",
+            "reason": "offline_batch_questions",
+            "confirmation_required": true,
+            "latency_ms": 3.2165999291464686
+          },
+          {
+            "id": "semantic-064",
+            "states": {
+              "nausea": "uncertain",
+              "vomiting": "uncertain"
+            },
+            "evidence": {
+              "nausea": [
+                {
+                  "turn_id": "u1",
+                  "start": 14,
+                  "end": 22,
+                  "text": "buồn nôn"
+                }
+              ],
+              "vomiting": [
+                {
+                  "turn_id": "u1",
+                  "start": 26,
+                  "end": 29,
+                  "text": "nôn"
+                }
+              ]
+            },
+            "status": "clarification_required",
+            "reason": "offline_resolve_uncertain",
+            "confirmation_required": true,
+            "latency_ms": 0.7601999677717686
+          },
+          {
+            "id": "semantic-065",
+            "states": {},
+            "evidence": {},
+            "status": "out_of_scope",
+            "reason": "classified_out_of_scope",
+            "confirmation_required": false,
+            "latency_ms": 0.21680002100765705
+          },
+          {
+            "id": "semantic-066",
+            "states": {},
+            "evidence": {},
+            "status": "unsupported_health",
+            "reason": "offline_unsupported_health",
+            "confirmation_required": false,
+            "latency_ms": 0.5677000153809786
+          },
+          {
+            "id": "semantic-067",
+            "states": {},
+            "evidence": {},
+            "status": "unsupported_health",
+            "reason": "offline_unsupported_health",
+            "confirmation_required": false,
+            "latency_ms": 0.6004000315442681
+          },
+          {
+            "id": "semantic-068",
+            "states": {},
+            "evidence": {},
+            "status": "clarification_required",
+            "reason": "unmapped",
+            "confirmation_required": true,
+            "latency_ms": 0.5364000098779798
+          },
+          {
+            "id": "semantic-069",
+            "states": {},
+            "evidence": {},
+            "status": "out_of_scope",
+            "reason": "classified_out_of_scope",
+            "confirmation_required": false,
+            "latency_ms": 0.2120001008734107
+          },
+          {
+            "id": "semantic-070",
+            "states": {},
+            "evidence": {},
+            "status": "clarification_required",
+            "reason": "offline_alias_collision",
+            "confirmation_required": true,
+            "latency_ms": 0.5720000481233001
+          },
+          {
+            "id": "semantic-071",
+            "states": {},
+            "evidence": {},
+            "status": "clarification_required",
+            "reason": "offline_alias_collision",
+            "confirmation_required": true,
+            "latency_ms": 0.6418999982997775
+          },
+          {
+            "id": "semantic-074",
+            "states": {},
+            "evidence": {},
+            "status": "out_of_scope",
+            "reason": "classified_out_of_scope",
+            "confirmation_required": false,
+            "latency_ms": 0.2490000333636999
+          },
+          {
+            "id": "semantic-075",
+            "states": {},
+            "evidence": {},
+            "status": "unsupported_health",
+            "reason": "offline_unsupported_health",
+            "confirmation_required": false,
+            "latency_ms": 0.8317000465467572
+          },
+          {
+            "id": "semantic-076",
+            "states": {},
+            "evidence": {},
+            "status": "out_of_scope",
+            "reason": "classified_out_of_scope",
+            "confirmation_required": false,
+            "latency_ms": 0.20589993800967932
+          },
+          {
+            "id": "semantic-077",
+            "states": {},
+            "evidence": {},
+            "status": "out_of_scope",
+            "reason": "classified_out_of_scope",
+            "confirmation_required": false,
+            "latency_ms": 0.18450000789016485
+          },
+          {
+            "id": "semantic-078",
+            "states": {},
+            "evidence": {},
+            "status": "out_of_scope",
+            "reason": "classified_out_of_scope",
+            "confirmation_required": false,
+            "latency_ms": 0.18049997743219137
+          },
+          {
+            "id": "semantic-079",
+            "states": {},
+            "evidence": {},
+            "status": "unsupported_health",
+            "reason": "offline_unsupported_health",
+            "confirmation_required": false,
+            "latency_ms": 0.21829991601407528
+          },
+          {
+            "id": "semantic-080",
+            "states": {},
+            "evidence": {},
+            "status": "unsupported_health",
+            "reason": "offline_unsupported_health",
+            "confirmation_required": false,
+            "latency_ms": 0.6369000766426325
+          },
+          {
+            "id": "semantic-081",
+            "states": {},
+            "evidence": {},
+            "status": "unsupported_health",
+            "reason": "offline_unsupported_health",
+            "confirmation_required": false,
+            "latency_ms": 0.14320004265755415
+          },
+          {
+            "id": "semantic-082",
+            "states": {},
+            "evidence": {},
+            "status": "unsupported_health",
+            "reason": "offline_unsupported_health",
+            "confirmation_required": false,
+            "latency_ms": 0.17900008242577314
+          },
+          {
+            "id": "semantic-083",
+            "states": {},
+            "evidence": {},
+            "status": "clarification_required",
+            "reason": "unmapped",
+            "confirmation_required": true,
+            "latency_ms": 0.6174999289214611
+          },
+          {
+            "id": "semantic-084",
+            "states": {},
+            "evidence": {},
+            "status": "unsupported_health",
+            "reason": "offline_unsupported_health",
+            "confirmation_required": false,
+            "latency_ms": 0.5582999438047409
+          },
+          {
+            "id": "semantic-085",
+            "states": {},
+            "evidence": {},
+            "status": "out_of_scope",
+            "reason": "classified_out_of_scope",
+            "confirmation_required": false,
+            "latency_ms": 0.1767999492585659
+          },
+          {
+            "id": "semantic-086",
+            "states": {},
+            "evidence": {},
+            "status": "out_of_scope",
+            "reason": "classified_out_of_scope",
+            "confirmation_required": false,
+            "latency_ms": 0.16240007244050503
+          },
+          {
+            "id": "semantic-087",
+            "states": {
+              "cough": "present",
+              "fever": "present",
+              "headache": "present"
+            },
+            "evidence": {
+              "cough": [
+                {
+                  "turn_id": "u1",
+                  "start": 4,
+                  "end": 6,
+                  "text": "ho"
+                }
+              ],
+              "fever": [
+                {
+                  "turn_id": "u1",
+                  "start": 8,
+                  "end": 11,
+                  "text": "sốt"
+                }
+              ],
+              "headache": [
+                {
+                  "turn_id": "u1",
+                  "start": 13,
+                  "end": 20,
+                  "text": "đau đầu"
+                }
+              ]
+            },
+            "status": "unsupported_health",
+            "reason": "offline_unsupported_health",
+            "confirmation_required": false,
+            "latency_ms": 0.9696000488474965
+          },
+          {
+            "id": "semantic-088",
+            "states": {
+              "cough": "present",
+              "fever": "present",
+              "headache": "present"
+            },
+            "evidence": {
+              "cough": [
+                {
+                  "turn_id": "u1",
+                  "start": 4,
+                  "end": 6,
+                  "text": "ho"
+                }
+              ],
+              "fever": [
+                {
+                  "turn_id": "u1",
+                  "start": 8,
+                  "end": 11,
+                  "text": "sốt"
+                }
+              ],
+              "headache": [
+                {
+                  "turn_id": "u1",
+                  "start": 13,
+                  "end": 20,
+                  "text": "đau đầu"
+                }
+              ]
+            },
+            "status": "unsupported_health",
+            "reason": "offline_unsupported_health",
+            "confirmation_required": false,
+            "latency_ms": 1.0013000573962927
+          },
+          {
+            "id": "semantic-089",
+            "states": {
+              "cough": "present",
+              "fever": "present",
+              "headache": "present"
+            },
+            "evidence": {
+              "cough": [
+                {
+                  "turn_id": "u1",
+                  "start": 4,
+                  "end": 6,
+                  "text": "ho"
+                }
+              ],
+              "fever": [
+                {
+                  "turn_id": "u1",
+                  "start": 8,
+                  "end": 11,
+                  "text": "sốt"
+                }
+              ],
+              "headache": [
+                {
+                  "turn_id": "u1",
+                  "start": 13,
+                  "end": 20,
+                  "text": "đau đầu"
+                }
+              ]
+            },
+            "status": "clarification_required",
+            "reason": "offline_alias_collision",
+            "confirmation_required": true,
+            "latency_ms": 0.8465999271720648
+          }
+        ]
+      },
+      "semantic": {
+        "status": "NOT RUN",
+        "reason": "No verified local embedding model loaded"
+      },
+      "hybrid": {
+        "status": "NOT RUN",
+        "reason": "No verified local embedding model loaded"
+      }
+    },
+    "reserved_synthetic_evaluation": {
+      "rule_based": {
+        "status": "RUN",
+        "metrics": {
+          "cases": 32,
+          "fully_annotated_cases": 32,
+          "partial_label_cases": 0,
+          "tp": 22,
+          "fp": 2,
+          "fn": 0,
+          "precision": 0.9166666666666666,
+          "recall": 1.0,
+          "micro_f1": 0.9565217391304348,
+          "macro_f1_observed_feature_state_pairs": 0.9740740740740742,
+          "macro_denominator": 12,
+          "macro_definition": "union of gold/predicted (feature, assertion) pairs on fully annotated cases; zero_division=0, not disease labels",
+          "exact_set_match": 0.9375,
+          "exact_denominator": 32,
+          "false_positive_contexts": {
+            "fiction": 2
+          },
+          "forbidden_feature_violations": 0,
+          "mapped_features": 6,
+          "canonical_feature_denominator": 375,
+          "confirmation_rate": 0.28125,
+          "confirmation_definition": "clarification_required or semantic suggestion awaiting user confirmation; not successful user resolution",
+          "latency_p50_ms": 0.6788999889977276,
+          "latency_p95_ms": 3.941599978134036,
+          "case_support_by_context": {
+            "present": 5,
+            "negation": 4,
+            "uncertainty": 3,
+            "other_subject": 3,
+            "fiction": 2,
+            "hypothetical": 2,
+            "quoted": 1,
+            "knowledge": 2,
+            "unaccented": 1,
+            "unaccented_negation": 1,
+            "typo": 1,
+            "boundary": 1,
+            "ambiguous": 1,
+            "outside_scope": 1,
+            "mixed_assertion": 3,
+            "near_features": 1
+          },
+          "context_error_breakdown": {
+            "negation_errors": 0,
+            "other_subject_errors": 0,
+            "hypothetical_fiction_errors": 2
+          }
+        },
+        "rows": [
+          {
+            "id": "nlp-reserved-001",
+            "states": {
+              "nausea": "present"
+            },
+            "evidence": {
+              "nausea": [
+                {
+                  "turn_id": "u1",
+                  "start": 18,
+                  "end": 26,
+                  "text": "buồn nôn"
+                }
+              ]
+            },
+            "status": "unsupported_health",
+            "reason": "offline_unsupported_health",
+            "confirmation_required": false,
+            "latency_ms": 0.7179999956861138
+          },
+          {
+            "id": "nlp-reserved-002",
+            "states": {
+              "cough": "present"
+            },
+            "evidence": {
+              "cough": [
+                {
+                  "turn_id": "u1",
+                  "start": 12,
+                  "end": 14,
+                  "text": "ho"
+                }
+              ]
+            },
+            "status": "unsupported_health",
+            "reason": "offline_unsupported_health",
+            "confirmation_required": false,
+            "latency_ms": 0.6370999617502093
+          },
+          {
+            "id": "nlp-reserved-003",
+            "states": {
+              "fever": "present"
+            },
+            "evidence": {
+              "fever": [
+                {
+                  "turn_id": "u1",
+                  "start": 13,
+                  "end": 16,
+                  "text": "sốt"
+                }
+              ]
+            },
+            "status": "unsupported_health",
+            "reason": "offline_unsupported_health",
+            "confirmation_required": false,
+            "latency_ms": 0.6223999662324786
+          },
+          {
+            "id": "nlp-reserved-004",
+            "states": {
+              "headache": "present"
+            },
+            "evidence": {
+              "headache": [
+                {
+                  "turn_id": "u1",
+                  "start": 7,
+                  "end": 14,
+                  "text": "đau đầu"
+                }
+              ]
+            },
+            "status": "clarification_required",
+            "reason": "offline_batch_questions",
+            "confirmation_required": true,
+            "latency_ms": 3.3345998963341117
+          },
+          {
+            "id": "nlp-reserved-005",
+            "states": {
+              "nausea": "denied"
+            },
+            "evidence": {
+              "nausea": [
+                {
+                  "turn_id": "u1",
+                  "start": 21,
+                  "end": 29,
+                  "text": "buồn nôn"
+                }
+              ]
+            },
+            "status": "clarification_required",
+            "reason": "offline_batch_questions",
+            "confirmation_required": true,
+            "latency_ms": 3.339999937452376
+          },
+          {
+            "id": "nlp-reserved-006",
+            "states": {
+              "cough": "denied"
+            },
+            "evidence": {
+              "cough": [
+                {
+                  "turn_id": "u1",
+                  "start": 18,
+                  "end": 20,
+                  "text": "ho"
+                }
+              ]
+            },
+            "status": "unsupported_health",
+            "reason": "offline_unsupported_health",
+            "confirmation_required": false,
+            "latency_ms": 0.7372000254690647
+          },
+          {
+            "id": "nlp-reserved-007",
+            "states": {
+              "fever": "denied"
+            },
+            "evidence": {
+              "fever": [
+                {
+                  "turn_id": "u1",
+                  "start": 18,
+                  "end": 21,
+                  "text": "sốt"
+                }
+              ]
+            },
+            "status": "clarification_required",
+            "reason": "offline_batch_questions",
+            "confirmation_required": true,
+            "latency_ms": 3.190500079654157
+          },
+          {
+            "id": "nlp-reserved-008",
+            "states": {
+              "nausea": "uncertain"
+            },
+            "evidence": {
+              "nausea": [
+                {
+                  "turn_id": "u1",
+                  "start": 24,
+                  "end": 32,
+                  "text": "buồn nôn"
+                }
+              ]
+            },
+            "status": "clarification_required",
+            "reason": "offline_resolve_uncertain",
+            "confirmation_required": true,
+            "latency_ms": 0.785800046287477
+          },
+          {
+            "id": "nlp-reserved-009",
+            "states": {
+              "cough": "uncertain"
+            },
+            "evidence": {
+              "cough": [
+                {
+                  "turn_id": "u1",
+                  "start": 15,
+                  "end": 17,
+                  "text": "ho"
+                }
+              ]
+            },
+            "status": "unsupported_health",
+            "reason": "offline_unsupported_health",
+            "confirmation_required": false,
+            "latency_ms": 0.7796999998390675
+          },
+          {
+            "id": "nlp-reserved-010",
+            "states": {
+              "fever": "uncertain"
+            },
+            "evidence": {
+              "fever": [
+                {
+                  "turn_id": "u1",
+                  "start": 21,
+                  "end": 24,
+                  "text": "sốt"
+                }
+              ]
+            },
+            "status": "clarification_required",
+            "reason": "offline_resolve_uncertain",
+            "confirmation_required": true,
+            "latency_ms": 0.6606000242754817
+          },
+          {
+            "id": "nlp-reserved-011",
+            "states": {},
+            "evidence": {},
+            "status": "unsupported_health",
+            "reason": "offline_unsupported_health",
+            "confirmation_required": false,
+            "latency_ms": 0.14370004646480083
+          },
+          {
+            "id": "nlp-reserved-012",
+            "states": {},
+            "evidence": {},
+            "status": "unsupported_health",
+            "reason": "offline_unsupported_health",
+            "confirmation_required": false,
+            "latency_ms": 0.12370001059025526
+          },
+          {
+            "id": "nlp-reserved-013",
+            "states": {},
+            "evidence": {},
+            "status": "unsupported_health",
+            "reason": "offline_unsupported_health",
+            "confirmation_required": false,
+            "latency_ms": 0.14030002057552338
+          },
+          {
+            "id": "nlp-reserved-014",
+            "states": {
+              "nausea": "present"
+            },
+            "evidence": {
+              "nausea": [
+                {
+                  "turn_id": "u1",
+                  "start": 34,
+                  "end": 42,
+                  "text": "buồn nôn"
+                }
+              ]
+            },
+            "status": "unsupported_health",
+            "reason": "offline_unsupported_health",
+            "confirmation_required": false,
+            "latency_ms": 0.861200038343668
+          },
+          {
+            "id": "nlp-reserved-015",
+            "states": {
+              "cough": "present"
+            },
+            "evidence": {
+              "cough": [
+                {
+                  "turn_id": "u1",
+                  "start": 28,
+                  "end": 30,
+                  "text": "ho"
+                }
+              ]
+            },
+            "status": "unsupported_health",
+            "reason": "offline_unsupported_health",
+            "confirmation_required": false,
+            "latency_ms": 0.8016000501811504
+          },
+          {
+            "id": "nlp-reserved-016",
+            "states": {},
+            "evidence": {},
+            "status": "unsupported_health",
+            "reason": "offline_unsupported_health",
+            "confirmation_required": false,
+            "latency_ms": 0.255199964158237
+          },
+          {
+            "id": "nlp-reserved-017",
+            "states": {},
+            "evidence": {},
+            "status": "unsupported_health",
+            "reason": "offline_unsupported_health",
+            "confirmation_required": false,
+            "latency_ms": 0.14699995517730713
+          },
+          {
+            "id": "nlp-reserved-018",
+            "states": {},
+            "evidence": {},
+            "status": "unsupported_health",
+            "reason": "offline_unsupported_health",
+            "confirmation_required": false,
+            "latency_ms": 0.2079999540001154
+          },
+          {
+            "id": "nlp-reserved-019",
+            "states": {},
+            "evidence": {},
+            "status": "unsupported_health",
+            "reason": "offline_unsupported_health",
+            "confirmation_required": false,
+            "latency_ms": 0.20570005290210247
+          },
+          {
+            "id": "nlp-reserved-020",
+            "states": {},
+            "evidence": {},
+            "status": "unsupported_health",
+            "reason": "offline_unsupported_health",
+            "confirmation_required": false,
+            "latency_ms": 0.3264000406488776
+          },
+          {
+            "id": "nlp-reserved-021",
+            "states": {
+              "nausea": "present"
+            },
+            "evidence": {
+              "nausea": [
+                {
+                  "turn_id": "u1",
+                  "start": 15,
+                  "end": 23,
+                  "text": "buon non"
+                }
+              ]
+            },
+            "status": "unsupported_health",
+            "reason": "offline_unsupported_health",
+            "confirmation_required": false,
+            "latency_ms": 0.7921999786049128
+          },
+          {
+            "id": "nlp-reserved-022",
+            "states": {
+              "cough": "denied"
+            },
+            "evidence": {
+              "cough": [
+                {
+                  "turn_id": "u1",
+                  "start": 19,
+                  "end": 21,
+                  "text": "ho"
+                }
+              ]
+            },
+            "status": "unsupported_health",
+            "reason": "offline_unsupported_health",
+            "confirmation_required": false,
+            "latency_ms": 0.6351999472826719
+          },
+          {
+            "id": "nlp-reserved-023",
+            "states": {},
+            "evidence": {},
+            "status": "out_of_scope",
+            "reason": "classified_out_of_scope",
+            "confirmation_required": false,
+            "latency_ms": 0.2378999488428235
+          },
+          {
+            "id": "nlp-reserved-024",
+            "states": {},
+            "evidence": {},
+            "status": "unsupported_health",
+            "reason": "offline_unsupported_health",
+            "confirmation_required": false,
+            "latency_ms": 0.6971999537199736
+          },
+          {
+            "id": "nlp-reserved-025",
+            "states": {},
+            "evidence": {},
+            "status": "abstained",
+            "reason": "invalid_extraction",
+            "confirmation_required": false,
+            "latency_ms": 0.5769999697804451
+          },
+          {
+            "id": "nlp-reserved-026",
+            "states": {},
+            "evidence": {},
+            "status": "out_of_scope",
+            "reason": "classified_out_of_scope",
+            "confirmation_required": false,
+            "latency_ms": 0.2391999587416649
+          },
+          {
+            "id": "nlp-reserved-027",
+            "states": {
+              "nausea": "present",
+              "cough": "denied"
+            },
+            "evidence": {
+              "nausea": [
+                {
+                  "turn_id": "u1",
+                  "start": 9,
+                  "end": 17,
+                  "text": "buồn nôn"
+                }
+              ],
+              "cough": [
+                {
+                  "turn_id": "u1",
+                  "start": 30,
+                  "end": 32,
+                  "text": "ho"
+                }
+              ]
+            },
+            "status": "clarification_required",
+            "reason": "offline_batch_questions",
+            "confirmation_required": true,
+            "latency_ms": 4.168799961917102
+          },
+          {
+            "id": "nlp-reserved-028",
+            "states": {
+              "cough": "present",
+              "fever": "uncertain"
+            },
+            "evidence": {
+              "cough": [
+                {
+                  "turn_id": "u1",
+                  "start": 4,
+                  "end": 6,
+                  "text": "ho"
+                }
+              ],
+              "fever": [
+                {
+                  "turn_id": "u1",
+                  "start": 27,
+                  "end": 30,
+                  "text": "sốt"
+                }
+              ]
+            },
+            "status": "clarification_required",
+            "reason": "offline_resolve_uncertain",
+            "confirmation_required": true,
+            "latency_ms": 0.8964999578893185
+          },
+          {
+            "id": "nlp-reserved-029",
+            "states": {
+              "headache": "present",
+              "nausea": "denied"
+            },
+            "evidence": {
+              "headache": [
+                {
+                  "turn_id": "u1",
+                  "start": 13,
+                  "end": 20,
+                  "text": "đau đầu"
+                }
+              ],
+              "nausea": [
+                {
+                  "turn_id": "u1",
+                  "start": 33,
+                  "end": 41,
+                  "text": "buồn nôn"
+                }
+              ]
+            },
+            "status": "clarification_required",
+            "reason": "offline_batch_questions",
+            "confirmation_required": true,
+            "latency_ms": 3.941599978134036
+          },
+          {
+            "id": "nlp-reserved-030",
+            "states": {
+              "vaginal itching": "present"
+            },
+            "evidence": {
+              "vaginal itching": [
+                {
+                  "turn_id": "u1",
+                  "start": 7,
+                  "end": 18,
+                  "text": "ngứa âm đạo"
+                }
+              ]
+            },
+            "status": "unsupported_health",
+            "reason": "offline_unsupported_health",
+            "confirmation_required": false,
+            "latency_ms": 0.9885999606922269
+          },
+          {
+            "id": "nlp-reserved-031",
+            "states": {
+              "vomiting": "denied"
+            },
+            "evidence": {
+              "vomiting": [
+                {
+                  "turn_id": "u1",
+                  "start": 13,
+                  "end": 16,
+                  "text": "nôn"
+                }
+              ]
+            },
+            "status": "clarification_required",
+            "reason": "unmapped",
+            "confirmation_required": true,
+            "latency_ms": 0.6527999648824334
+          },
+          {
+            "id": "nlp-reserved-032",
+            "states": {
+              "nausea": "present",
+              "vomiting": "denied"
+            },
+            "evidence": {
+              "nausea": [
+                {
+                  "turn_id": "u1",
+                  "start": 4,
+                  "end": 12,
+                  "text": "buồn nôn"
+                }
+              ],
+              "vomiting": [
+                {
+                  "turn_id": "u1",
+                  "start": 25,
+                  "end": 28,
+                  "text": "nôn"
+                }
+              ]
+            },
+            "status": "unsupported_health",
+            "reason": "offline_unsupported_health",
+            "confirmation_required": false,
+            "latency_ms": 0.8038999512791634
+          }
+        ]
+      },
+      "semantic": {
+        "status": "NOT RUN",
+        "reason": "No verified local embedding model loaded"
+      },
+      "hybrid": {
+        "status": "NOT RUN",
+        "reason": "No verified local embedding model loaded"
+      }
+    }
+  },
+  "models_fitted": 0,
+  "disease_predictions_called": false,
+  "locked_test_opened": false,
+  "network_calls": 0,
+  "semantic_environment": {
+    "status": "NOT RUN",
+    "reason": "No pinned local embedding snapshot configured",
+    "model_id": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+    "revision": "e8f8c211226b894fcb81acc59f3b34ba3efd5f42"
+  },
+  "inputs_sha256": {
+    "configs/synonyms.json": "036d756fb202612122a31e8a041e60e98a33cc632a7caa41df25ccfe2689d527",
+    "configs/phase5b.json": "17795e382e8530530e7bded60103594301ac2d28a0e2f3320d8bb7975474ff22",
+    "artifacts/metadata/phase2/feature_schema.json": "dd07a3c73dd41558daa9c08e816e0a93d9efc4155f98b7e2b73325bffe31c5c0",
+    "artifacts/metadata/phase2/label_mapping.json": "d2ef711e5e04062e8b5b949ce434b1383e1ca2fef6eb31a0865acb2f470ab5b5",
+    "data/evaluation/vietnamese_symptom_semantic_cases.jsonl": "c03ef754357d9c715b6155766ef8e35b81540ba5c94599febf9cd45e320ac07f",
+    "data/evaluation/vietnamese_nlp_reserved_v1.jsonl": "5cd8bd52e02a506eeb21a3d54ec27b363485ae1d8e42c814d90a61c9e187f824",
+    "scripts/nlp_symptom_research.py": "40a5556d8400dfcdf9d7a74630617ffa7ee081beb983bfb1c040d1deb1edde5b"
+  },
+  "baseline_source_sha256": {
+    "src/agent/extraction.py": "6a792836961eace444af5ad1fb88782a4558ce69e8ed3615f4e475cf929bef56",
+    "src/agent/offline.py": "a7fb8a43b764aa2e76db86523d8639f8524ee86681c55091e250902a6b5fb823",
+    "src/agent/conversation.py": "57f8cb7f912403d47b0e4acfdf587c883c7be53b5cae347e68f5ffdd15e138c5"
+  },
+  "evaluation_status": "Initial rule baseline before fictional-subject guard repair; reserved set now observed, do not reuse to select aliases/thresholds or claim unbiased post-fix improvement",
+  "environment": {
+    "python": "3.11.9",
+    "platform": "Windows",
+    "machine": "AMD64",
+    "timing_scope": "One local pass, no disease model load, no warm-up or concurrency guarantee"
+  },
+  "post_fix_policy": "Do not rerun reserved v1 to claim independent improvement; guard regression is separate development evidence"
+}

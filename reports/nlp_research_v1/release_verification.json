@@ -1,0 +1,57 @@
+{
+  "status": "PASS",
+  "changed_existing": [
+    "README.md",
+    "docs/DEPLOYMENT_GUIDE.md",
+    "docs/DEVELOPMENT_LOG.md",
+    "docs/HANDOVER_GUIDE.md",
+    "notebooks/README.md",
+    "src/agent/extraction.py"
+  ],
+  "unchanged_notebook_sha256": {
+    "notebooks/00_dataset_audit.ipynb": "ef0e7a31748a61b76e1b0b133ccb2533ebc390f0d9612d78094d01f3a0379653",
+    "notebooks/01_eda.ipynb": "a27996a34224068495829a92b5bca8a690055251eabc4f81043ac168dc578a43",
+    "notebooks/02_preprocessing.ipynb": "82163fb54dc080870380461a152c606c439e144e3524fa7bd294f2182dc79b8b",
+    "notebooks/03_model_training.ipynb": "cd2197ed933ccc3f8f8459dd8bd7514659e88b46d066caf4118b9895933e5e26",
+    "notebooks/04_ensemble.ipynb": "80ab505329dc8793f9f9762d9e771e0632001972972231a52d627af5b189c90a",
+    "notebooks/05_structured_inference_check.ipynb": "e9f6558941f7aaa71bfd63ab9aa0b3d57e843e4e145ebf3c57c38743053f5d03",
+    "notebooks/06_final_model_evaluation.ipynb": "abc54871d3ea4b7cda04d468b611afa18c03d2de8d032b0b4b1a43f25d853676",
+    "notebooks/colab_smoke_test.ipynb": "e6849328981bffd250394db6a10f3f71bea63876a2e57aa4fabb58fe3bef1cb9"
+  },
+  "old_notebooks_preserved": true,
+  "checkpoints_and_source_pins": "Existing ML source/config tracked bytes unchanged; actual external checkpoint HTTP smoke PASS",
+  "local_links_checked": 112,
+  "historical_link_exceptions": [],
+  "notebook07": {
+    "json": "PASS",
+    "cell_compilation": "PASS",
+    "library_nbformat_validation": "NOT VERIFIED: not installed; not installed into production",
+    "executed": false
+  },
+  "coverage_before": 375,
+  "coverage_after": 375,
+  "production_before": 135,
+  "production_after": 135,
+  "synonyms_sha256": "036d756fb202612122a31e8a041e60e98a33cc632a7caa41df25ccfe2689d527",
+  "scientific_ml_results_unchanged": true,
+  "tests": {
+    "targeted": 508,
+    "historical_qualification_passed": 2379,
+    "historical_source_pin_failures": 2,
+    "full_suite": false,
+    "final_focused_nlp_tests_passed": 25
+  },
+  "live_llm_calls": 0,
+  "locked_test_opened": false,
+  "activation_decision": "Keep 135 active: pending contexts/semantic review and historical provenance gates unresolved",
+  "source_pin_failures": [
+    {
+      "test": "test_controlled_activation.py::test_exact_authorized_delta_and_source_pins",
+      "reason": "Current extraction.py source differs after confirmed fictional-subject guard fix; historical20261104 checksum unchanged"
+    },
+    {
+      "test": "test_symptom_activation_review.py::test_all_375_decisions_and_forecast",
+      "reason": "Same extraction.py source SHA differs from historical review packet identity"
+    }
+  ]
+}

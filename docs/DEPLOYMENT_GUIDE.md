@@ -527,7 +527,7 @@ Bản sửa 2026-11-02 nhận đúng “tôi bị buồn nôn, ho và sốt nặ
 <a id="three-model-website"></a>
 ## Website ba model — 2026-11-11
 
-Hướng dẫn khởi động duy nhất nằm ở [README](../README.md#chạy-website-trên-windows): đặt storage root thực trong cùng terminal rồi chạy `python run_api.py` bằng `.venv-web` CPython3.13.17. Thư mục dữ liệu hiện tại là sibling `disease-prediction-ml-data`. Không tạo lại environment đang dùng, không đổi Python toàn cục và không cần Jupyter. `run_api.py` giữ localhost/1worker/no reload; dùng `--port 8001` nếu8000 đang được dùng.
+Hướng dẫn khởi động duy nhất nằm ở [README](../README.md#7-cài-đặt-và-chạy-thử): đặt storage root thực trong cùng terminal rồi chạy `python run_api.py` bằng `.venv-web` CPython3.13.17. Thư mục dữ liệu hiện tại là sibling `disease-prediction-ml-data`. Không tạo lại environment đang dùng, không đổi Python toàn cục và không cần Jupyter. `run_api.py` giữ localhost/1worker/no reload; dùng `--port 8001` nếu8000 đang được dùng.
 
 | ID | Windows3.13.17 hiện tại | Output contract |
 |---|---|---|

@@ -334,10 +334,63 @@ if ($Actual -ne $Expected) { throw 'Data ZIP checksum mismatch: stop, do not mix
 
 Giải nén gói thành sibling `disease-prediction-ml-data`, không lồng thêm một root. Đặt `DISEASE_API_STORAGE_ROOT` cho API; nếu chạy CLI phân tích có chủ đích, đặt thêm `DISEASE_STORAGE_ROOT` tới cùng root thay vì tái tạo bản data trong source. Không chạy các test opt-in đọc nguyên dataset/final split trong nhiệm vụ đồng bộ. Source commitSHA và package/checkpoint hashes được bind trong external `github-sync-receipt.json` sau commit/push; cấu hình committed không chứa self-referential commit hash.
 
-Sau khi owner merge main: laptop sạch chạy `git fetch origin`, `git switch main`, `git pull --ff-only origin main`. Nếu upstream hoặc local commits diverge thì dừng xử lý branch riêng; không reset --hard/clean -fdx. PC tiếp tục làm ở checkout-git-sync để GitHub trở thành source Git chung. `.venv-web` và data được setup riêng ở từng máy. Tham khảo [README workflow](../README.md#pc--github--laptop).
+Sau khi owner merge main: laptop sạch chạy `git fetch origin`, `git switch main`, `git pull --ff-only origin main`. Nếu upstream hoặc local commits diverge thì dừng xử lý branch riêng; không reset --hard/clean -fdx. PC tiếp tục làm ở checkout-git-sync để GitHub trở thành source Git chung. `.venv-web` và data được setup riêng ở từng máy. Tham khảo [README workflow](#lich-su-readme-migration).
 
 
 Git byte integrity: .gitattributes disables automatic text conversion so frozen SHA values survive Windows/Linux clones. Do not run blanket line-ending conversion or git add --renormalize over protected artifacts. Two historical pinned fixture logs retain original whitespace. The eight missing local report assets were restored from exact members of the verified data package without overwriting any existing data; seven immutable-log link exceptions remain documented in docs/README. This does not claim Drive cloud download access was tested.
 
 
 Existing-laptop checkout caveat: a real simulation of the old main with core.autocrlf=true followed by fast-forward preserved CRLF in an unchanged training.py, although Git status was clean. Therefore the README post-pull byte check is required on old Windows checkouts. verify_checkout_bytes is read-only by default; opt-in repair accepts only line-ending-equivalent tracked text, requires external byte backup and rejects real edits. It restores exact HEAD bytes, not new checksums. No reset/clean or history changes. A fresh clone also passed exact-byte verification.
+
+
+<a id="lich-su-readme-migration"></a>
+## Lịch sử README migration — chuyển khỏi trang nhập môn ngày 2026-11-11
+
+Nguồn nguyên nội dung: README commit `8961842d814826da3508a84e05dc779ee1e0009c`; chỉ chỉnh đường dẫn tương đối của link cấu hình theo vị trí tài liệu mới. Phần dưới là **snapshot lịch sử**, không phải trạng thái main hiện hành: PR #1 đã merge thành `a16fbd5`, README notebook đã lên main tại `8961842`. Branch nghiên cứu NLP mới không tự merge main. Backup cũ vẫn ở ngoài repo, không phát hành như dataset.
+
+<details><summary>Nhật ký bàn giao/Git/EOL từng đặt trong README</summary>
+
+## Bàn giao và kiểm thử
+
+HaiZIP đã giao ngày05 được giữ nguyên; chúng chưa chứa source cập nhật ngày11. Không trộn source cũ từ Drive vào local. Thay đổi source/config cần release inventory mới trước khi đóng gói; không tự rebuild ZIP lịch sử.
+
+Offline tests dùng synthetic fixtures, tách khỏi qualification checkpoint thật. Không cần chạy training notebook. Xem lệnh và kết quả tại deployment guide. LLM live vẫn NOT VERIFIED; không gọi provider trong demo offline.
+
+
+## PC → GitHub → laptop
+
+Repository chung: https://github.com/Leafguy2341/disease-prediction-ml, default branch `main`. Source PC mới được đưa lên branch review `sync/pc-latest`; **chưa tự merge vào main**. Xem branch đó để review, chỉ pull main sau khi owner đã merge.
+
+PC hiện có checkout Git riêng tại sibling `disease-prediction-ml-git-sync`. Mở folder này trong VS Code để tiếp tục commit/pull/push. Folder PC cũ chưa git init và vẫn giữ một số evidence/local files bị ignore; sửa tiếp ở đó sẽ không tự lên GitHub.
+
+Laptop đã có repository: kiểm `git status --short`, `git branch --show-current`, `git log --oneline '@{u}..HEAD'` trước khi pull. Nếu có thay đổi local hoặc commit chưa push, backup/commit chúng vào branch riêng trước; không reset/clean cưỡng bức. Sau owner merge và laptop đang sạch:
+
+```powershell
+git fetch origin
+git switch main
+git pull --ff-only origin main
+```
+
+Nếu cần review trước merge: `git fetch origin`, rồi tạo checkout branch `git switch --track origin/sync/pc-latest` nếu branch local này chưa tồn tại. Không tự merge. Trên cả hai máy: pull trước khi làm, dùng branch riêng, test → commit → push; review/merge trên GitHub. Giữ tác giả Git của chính bạn, không chia sẻ token hoặc .venv.
+
+Máy mới: `git clone https://github.com/Leafguy2341/disease-prediction-ml.git`, nhận `project-data.zip` và quyền Drive từ owner, kiểm SHA trong [external_data_release.json](../configs/external_data_release.json), giải nén thành sibling `disease-prediction-ml-data`, sau đó làm theo phần chạy website ở trên. File ZIP/data/checkpoint không nằm trong GitHub. Đường tải Drive cụ thể chưa được xác minh trong vòng này; không có link giả hoặc token trong repo.
+
+
+### Byte check sau khi pull tren Windows
+
+Existing laptop checkouts can keep CRLF in unchanged files even after pulling .gitattributes. After a clean fast-forward, run this read-only standard-library check (any Python3.11+ is sufficient; it does not load models):
+
+```powershell
+python -B -m scripts.verify_checkout_bytes
+```
+
+If every reported difference is EOL_ONLY and there are no local/staged content edits, repair to the exact reviewed HEAD bytes with a new external backup directory:
+
+```powershell
+python -B -m scripts.verify_checkout_bytes --repair-eol --backup-root ..\git-eol-backup-20261111
+```
+
+The backup path must not already exist. CONTENT_CHANGE or missing files require manual review; the tool refuses them and never uses reset/clean/renormalize. Alternatively clone to a new sibling folder and keep the old laptop repository intact. This step protects source/fixture/notebook checksums without changing scientific outputs.
+
+
+</details>
