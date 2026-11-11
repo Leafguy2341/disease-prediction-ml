@@ -1,8 +1,25 @@
 # Chạy ứng dụng local và notebooks Colab
 
+## Layout local hiện hành — 2026-11-11
+
+Owner đã yêu cầu gộp storage vào project. Cây đang dùng là `disease-prediction-ml-git-sync/{app,src,configs,notebooks,scripts,tests,docs,data,artifacts,reports}`. Không lồng wrapper `disease-prediction-ml-data` vào project. API `run_api.py` mặc định storage = directory chứa launcher; nếu đã đặt DISEASE_API_STORAGE_ROOT, giá trị explicit vẫn thắng. Đặt lại biến tới root hiện tại trước khi restart nếu terminal giữ đường dẫn cũ:
+
+```powershell
+$env:DISEASE_API_STORAGE_ROOT = (Get-Location).Path
+$env:DISEASE_STORAGE_ROOT = (Get-Location).Path
+$env:DISEASE_CHAT_MODE = 'offline'
+```
+
+Giữ đúng interpreter Windows3.13.17/dependencies đã qualify; không dùng Python3.11 để bỏ qua model guard. Dataset/weights/full reports nằm local nhưng vẫn Git-ignore. Source/config cũ trong data release không được gộp đè lên source Git. Các mô tả hai-root/ZIP ở bên dưới là lịch sử phát hành, không là default local hiện hành; SHA của release cũ không thay đổi. Colab vẫn dùng canonical Drive và shared bootstrap cũ, không truy cập ổ Windows trực tiếp.
+
+Notebook07 viewer tự chứa saved tables/375 descriptions và4PNG đã pin checksum: chạy setup/viewer trên Colab không cần mount, ROOT hoặc upload script. RUN_RESEARCH/RUN_SEMANTIC mặc định False; khi bật research mới phải có source/dependencies và snapshot embedding phù hợp. Snapshot chỉ là saved evidence, không phải benchmark mới/semantic PASS. Notebook06 và output lịch sử không được chạy lại trong bước này.
+
+Migration local:145 file được chuyển cùng volume,4 file cùng đường dẫn trùng byte giữ bản project. Các file non-test kiểm SHA trước/sau; locked test chỉ rename và kiểm inode/size/mtime, không mở payload. Không xóa folder legacy/source/config cũ hoặc archives. Biên nhận và snapshot notebook trước sửa được giữ ngoài repository trong thư mục maintenance. Runtime không tự fallback về folder legacy khi thiếu artifact.
+
+
 ## Layout bản bàn giao hai ZIP — 2026-11-05
 
-Local code: `disease-prediction-ml/`; persistent data/model: sibling `disease-prediction-ml-data/`. Từ code root đặt `$env:DISEASE_API_STORAGE_ROOT = (Resolve-Path -LiteralPath '..\disease-prediction-ml-data').Path` và `$env:DISEASE_CHAT_MODE='offline'`, rồi chạy smoke/Uvicorn bằng CPython3.13.17 và dependencies đã pin bên dưới. Không cần API key; không đổi loader, checkpoint hoặc scientific identity. `.venv` không nằm trong ZIP, phải cài requirements trên máy nhận. `runtime.local.example.json` cũng dùng sibling này; canonical Drive không đổi.
+Local code: `disease-prediction-ml/`; persistent data/model: sibling `disease-prediction-ml-data/`. Từ code root đặt `$env:DISEASE_API_STORAGE_ROOT = (Get-Location).Path` và `$env:DISEASE_CHAT_MODE='offline'`, rồi chạy smoke/Uvicorn bằng CPython3.13.17 và dependencies đã pin bên dưới. Không cần API key; không đổi loader, checkpoint hoặc scientific identity. `.venv` không nằm trong ZIP, phải cài requirements trên máy nhận. `runtime.local.example.json` cũng dùng sibling này; canonical Drive không đổi.
 
 Inventory bên trong hai ZIP kiểm exact members/hash/bytes; release receipt bên ngoài ghi CRC và clean-extraction HTTP smoke. Quy trình kiểm sạch phải chặn đọc source/data gốc, chỉ cho dùng installed dependency environment; không được nhận PASS nhờ artifact còn nằm trong repo tác giả. Không dùng các hướng dẫn root `.`/mirror Windows cũ bên dưới cho layout hai folder mới nếu chưa chủ động bố trí artifact tương ứng.
 
@@ -527,7 +544,7 @@ Bản sửa 2026-11-02 nhận đúng “tôi bị buồn nôn, ho và sốt nặ
 <a id="three-model-website"></a>
 ## Website ba model — 2026-11-11
 
-Hướng dẫn khởi động duy nhất nằm ở [README](../README.md#chạy-website-trên-windows): đặt storage root thực trong cùng terminal rồi chạy `python run_api.py` bằng `.venv-web` CPython3.13.17. Thư mục dữ liệu hiện tại là sibling `disease-prediction-ml-data`. Không tạo lại environment đang dùng, không đổi Python toàn cục và không cần Jupyter. `run_api.py` giữ localhost/1worker/no reload; dùng `--port 8001` nếu8000 đang được dùng.
+Hướng dẫn khởi động duy nhất nằm ở [README](../README.md#7-cài-đặt-và-chạy-thử): đặt storage root thực trong cùng terminal rồi chạy `python run_api.py` bằng `.venv-web` CPython3.13.17. Thư mục dữ liệu hiện tại là sibling `disease-prediction-ml-data`. Không tạo lại environment đang dùng, không đổi Python toàn cục và không cần Jupyter. `run_api.py` giữ localhost/1worker/no reload; dùng `--port 8001` nếu8000 đang được dùng.
 
 | ID | Windows3.13.17 hiện tại | Output contract |
 |---|---|---|
@@ -547,7 +564,7 @@ Kiểm thử vòng này:380targeted regressionPASS; actualChromium fixture UI1PA
 
 ```powershell
 & 'D:\Program Files (x86)\Python\Python311\python.exe' -B -m pytest tests/test_three_model_web.py tests/test_prediction_api.py -q -p no:cacheprovider
-& '.\.venv-web\Scripts\python.exe' -B -m scripts.qualify_web_models --storage-root '..\disease-prediction-ml-data' --output 'D:\new-output\windows-probe.json'
+& '.\.venv-web\Scripts\python.exe' -B -m scripts.qualify_web_models --storage-root . --output 'D:\new-output\windows-probe.json'
 ```
 
 Lệnh thứ nhất dùng test interpreter hiện có, không phải môi trường loadcheckpoint; trên máy khác dùng testenv phù hợp. Đường output probe phải chưa tồn tại và nằm ngoài data. Probe không duyệt production tự động. Không gửi API key, không dùng locked test để kiểm web.

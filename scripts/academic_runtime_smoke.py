@@ -22,7 +22,7 @@ def main():
     from app.backend.prediction import LRPredictionService, _runtime_compatible
     from src.models.final_evaluation import protocol, versions
     from src.data.loader import sha256_file
-    data = Path(os.environ.get('DISEASE_API_STORAGE_ROOT', ROOT.parent / 'disease-prediction-ml-data')).resolve()
+    data = Path(os.environ.get('DISEASE_API_STORAGE_ROOT') or ROOT).resolve()
     counters = dict(outbound_network=0, llm=0)
     holder = {}
     real_connect = socket.socket.connect

@@ -30,7 +30,7 @@ Raw `Disease and symptoms dataset.csv`: 246.945 dòng, 377 triệu chứng, 773 
 
 
 
-Group-disjoint theo symptom vector, gần 70/15/15, seed42; overlap vector/group=0, duplicate vector+label=0. [Phase2 report](../reports/preprocessing_decision_review.md) và [metadata](../../disease-prediction-ml-data/artifacts/metadata/phase2) là nguồn chi tiết. Validation/test có 33/41 lớp chỉ một vector; không coi presence đủ lớp là metric ổn định.
+Group-disjoint theo symptom vector, gần 70/15/15, seed42; overlap vector/group=0, duplicate vector+label=0. [Phase2 report](../reports/preprocessing_decision_review.md) và [metadata](../artifacts/metadata/phase2) là nguồn chi tiết. Validation/test có 33/41 lớp chỉ một vector; không coi presence đủ lớp là metric ổn định.
 
 
 
@@ -132,7 +132,7 @@ Tuned hard LR+SVC+KNN đạt0.7965170720239344, cao hơn LR tuned0.7931543818638
 
 
 
-[Hình paired errors/support hiện có](../../disease-prediction-ml-data/reports/figures/model_selection_tuned_error_analysis.png), [phân tích đầy đủ và bảng gốc](archive/ml/MODEL_SELECTION_RATIONALE.md#phân-tích-học-thuật-và-lựa-chọn-hiện-tại), [Phase4 report](archive/ml/phase4_ensemble.md) bảo toàn các bảng/hình đã có. Không tạo hình thực nghiệm mới. Soft saved labels/metrics đã kiểm; probability memmap tạm không persist nên không tái kiểm independent mean từ aggregate.
+[Hình paired errors/support hiện có](../reports/figures/model_selection_tuned_error_analysis.png), [phân tích đầy đủ và bảng gốc](archive/ml/MODEL_SELECTION_RATIONALE.md#phân-tích-học-thuật-và-lựa-chọn-hiện-tại), [Phase4 report](archive/ml/phase4_ensemble.md) bảo toàn các bảng/hình đã có. Không tạo hình thực nghiệm mới. Soft saved labels/metrics đã kiểm; probability memmap tạm không persist nên không tái kiểm independent mean từ aggregate.
 
 
 
@@ -260,7 +260,7 @@ Bằng chứng ML Colab là packets đã kiểm checksum do kernel có quyền D
 
 
 
-![Baseline: Accuracy, Macro F1, Weighted F1](<../../disease-prediction-ml-data/reports/figures/phase3_baseline-v1-f8a5bfdb7b4c12cd_validation_performance.png>)
+![Baseline: Accuracy, Macro F1, Weighted F1](<../reports/figures/phase3_baseline-v1-f8a5bfdb7b4c12cd_validation_performance.png>)
 
 
 
@@ -298,7 +298,7 @@ Giả thuyết: kết hợp sai số có thể tăng Macro F1; không mặc đ�
 
 
 
-![Baseline ensemble](<../../disease-prediction-ml-data/reports/runs/phase4-20261028T091711786379Z-c1c66643/figures/macro_f1_comparison.png>)
+![Baseline ensemble](<../reports/runs/phase4-20261028T091711786379Z-c1c66643/figures/macro_f1_comparison.png>)
 
 
 
@@ -334,7 +334,7 @@ Train-only StratifiedGroupKFold3, shuffle/seed42; 15 candidates × 3 folds. Scor
 
 
 
-![Macro F1 trước/sau tuning](<../../disease-prediction-ml-data/reports/tuning/tuning-v1-9c4dd013abbba14a/baseline_vs_tuned.png>)
+![Macro F1 trước/sau tuning](<../reports/tuning/tuning-v1-9c4dd013abbba14a/baseline_vs_tuned.png>)
 
 
 

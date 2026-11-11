@@ -15,6 +15,7 @@ Thư mục này lưu các bước khảo sát dữ liệu, bốn thí nghiệm M
 | [04_ensemble.ipynb](04_ensemble.ipynb) | **Thí nghiệm 2:** baseline ensemble; **Thí nghiệm 4:** tuned ensemble | Checkpoint/predictions baseline và tuned, validation, ensemble policy/manifests | Có bảng so sánh, phân tích lỗi và phần tổng hợp đã lưu. Dùng model đã fit; không chọn tổ hợp bằng final test. |
 | [05_structured_inference_check.ipynb](05_structured_inference_check.ipynb) | Structured inference của **năm baseline Phase 3**, cầu nối kỹ thuật tới ứng dụng | Checkpoint baseline, schema/mapping, ca validation chọn có chủ đích và vector giả lập | Có outputs và evidence inference đã xác minh: input 1 × 375, Top 1/Top 3 khi hỗ trợ, độ nhạy và timing. Ví dụ không phải metric tổng thể; ca giả lập không có ground truth. |
 | [06_final_model_evaluation.ipynb](06_final_model_evaluation.ipynb) | Viewer closeout của final evaluation đã hoàn tất; **không lựa chọn lại model** | Frozen protocol, checkpoint identities và completed evidence bundle | Có kết quả ba ứng viên đã lưu: LR baseline, LR tuned C=2, Hard tuned LR+SVC+KNN. Luồng hiện tại kiểm checksum rồi dùng `read_completed(completed_folder)`; không chạy lại evaluation. |
+| [07_vietnamese_symptom_extraction.ipynb](07_vietnamese_symptom_extraction.ipynb) | Nghiên cứu NLP riêng: Rule-based so với Semantic/Hybrid candidates; không phải thí nghiệm disease classification thứ năm | Catalog Việt 375 feature, 86 development fixtures và 32 reserved synthetic cases; embedding snapshot tùy chọn | Chạy tự động source → dependencies → embedding → extraction → metrics/figures; kết quả mới tách khỏi snapshot lịch sử. Semantic candidates có bảng retrieval riêng; không tự bật lên website. |
 | [colab_smoke_test.ipynb](colab_smoke_test.ipynb) | Kiểm môi trường, shared bootstrap, imports, scripts và session/integrity độc lập | Source payload đã publish, Drive đã mount, train/validation/metadata Phase 2 | Có outputs kiểm tra lịch sử; PASS phải xét từng bước trong kernel đang dùng. Không load checkpoint, fit, gọi LLM hoặc mở CSV test; không thay thế kiểm chứng runtime mới. |
 
 ## Bốn thí nghiệm và quyết định mô hình
@@ -29,12 +30,15 @@ Notebook 05 kiểm năm baseline, không phải năm tuned và không phải API
 
 Thứ tự nghiên cứu: **00 → 01 → 02 → 03 → 04 → 05 → 06**. Khi chỉ kiểm setup Colab, mở `colab_smoke_test.ipynb` độc lập; không chạy training trước để lấy biến `session`.
 
+Đọc 07 sau khi hiểu extraction contract. Chọn Colab kernel rồi chạy các cell theo thứ tự; notebook tự lấy source GitHub nếu chưa có, cài requirements-nlp-research.txt trong runtime Colab và chuẩn bị embedding public đúng revision/checksum. Kết quả/biểu đồ được ghi vào reports/nlp_research_<timestamp>/ và hiển thị từ cùng run. Không cần mount Drive hay upload từng module. Python local dùng môi trường NLP riêng có requirements tương ứng; không cài vào API LR. Đặt RUN_RESEARCH=False nếu chỉ xem snapshot lịch sử. Reserved NLP v1 đã được quan sát, nên rerun không phải đánh giá độc lập mới.
+
 | Notebook / gate | Giá trị hiện có trong source | Ý nghĩa và điểm dừng |
 |---|---|---|
 | 02: `RUN_HISTORICAL_INSPECTION` | `False` | Phụ lục lịch sử tắt; không bật để tái tạo Phase 2 khi đọc kết quả. |
 | 03: `RUN_HYPERPARAMETER_TUNING` | `True` | Owner đã bật có chủ đích, được bảo toàn. Không chạy cell tuning để xem bảng. Gate tuning False cũng không ngăn baseline fit khi thiếu checkpoint. |
 | 04: `RUN_TUNED_ENSEMBLE` | `False` | Không bật chỉ để xem outputs. Các cell ensemble có thể tạo prediction validation và run artifacts nếu thực thi. |
 | 06: `RUN_FINAL_LOCKED_TEST` / `OWNER_AUTHORIZATION` | `False` / chuỗi rỗng | Viewer từ chối gate True; chỉ đọc completed results. Không cấp authorization, xóa execution marker hoặc gọi lại evaluation. |
+| 07: `RUN_RESEARCH` / `RUN_SEMANTIC` | `True` / `True` | Chạy extraction NLP; Colab tự chuẩn bị source/dependencies và embedding public đúng revision. Bảng/hình đọc run vừa hoàn tất. Không fit disease classifier. |
 
 Notebook 05 có thể gọi inference/benchmark khi chạy, dù không fit; không cần chạy lại để trình bày. Notebook 06 chỉ hiển thị completed bundle đúng checksum sau setup/preflight hợp lệ; thiếu hoặc partial thì dừng, không tự resume hay dựng kết quả thay thế. Một số Markdown/output và tài liệu cũ mô tả trạng thái lịch sử; bảng gate trên đối chiếu **source hiện tại**, không thay đổi outputs đó.
 
@@ -58,4 +62,4 @@ Không sửa code cell đã chạy rồi giữ output cũ, xóa outputs/executio
 - [Hướng dẫn bàn giao](../docs/HANDOVER_GUIDE.md): source, Drive, notebook safety và đồng bộ.
 - [Nhật ký kỹ thuật](../docs/DEVELOPMENT_LOG.md): tiến trình và giới hạn kiểm chứng.
 
-Chỉ mục đối chiếu với 8 notebook trong repository ngày 2026-11-11. Đợt sửa README này không thực thi notebook hoặc thay scientific results.
+Chỉ mục đối chiếu với 9 notebook trong repository ngày 2026-11-11. Notebook 00–06 và smoke test giữ nguyên byte; 07 mới có gates tắt và không thay scientific results của disease classification.

@@ -1,0 +1,58 @@
+[
+  {
+    "alias": "sung hong",
+    "features": [
+      "hip swelling",
+      "throat swelling"
+    ]
+  },
+  {
+    "alias": "dau mat",
+    "features": [
+      "facial pain",
+      "pain in eye"
+    ]
+  },
+  {
+    "alias": "cac bieu hien bat thuong o mat",
+    "features": [
+      "symptoms of eye",
+      "symptoms of the face"
+    ]
+  },
+  {
+    "alias": "dau co",
+    "features": [
+      "muscle pain",
+      "neck pain"
+    ]
+  },
+  {
+    "alias": "nhuc co",
+    "features": [
+      "muscle pain",
+      "neck pain"
+    ]
+  },
+  {
+    "alias": "co bi dau",
+    "features": [
+      "muscle pain",
+      "neck pain"
+    ]
+  },
+  {
+    "alias": "sung co",
+    "features": [
+      "muscle swelling",
+      "neck swelling"
+    ]
+  },
+  {
+    "alias": "cung hoac cang o co",
+    "features": [
+      "muscle stiffness or tightness",
+      "neck stiffness or tightness"
+    ]
+  }
+]

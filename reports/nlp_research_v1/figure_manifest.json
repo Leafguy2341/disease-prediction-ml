@@ -1,0 +1,13 @@
+{
+  "source": "Measured synthetic NLP mechanics only; no semantic/hybrid result chart",
+  "files": {
+    "benchmark.json": "51c4dc5ba98902f1b008f4654f6f866b9fc9d298a5d8f524ed294661108f293d",
+    "coverage_inventory.json": "6f77155d8651512fd97211f5a65abec8e4a4d1c4461ec787cbd3f24600a08c5b",
+    "context_after_fix.json": "95a157d6f3da6c18358851d450406187f194045a3df20095256d60df3e575c2c",
+    "canonical_375.csv": "a0e443863927449e1d7afdf8007c560152d65b0979b957eb254af961039739b0",
+    "rule_metrics.png": "0db89dda2905438593e2c28325aac94f21d888d7e2aeead04860b1affdb99cee",
+    "context_errors.png": "76f80396e0fa1656e15ba1730dcfe70d4d8fde255d3b8bf6913ae59948ad36a9",
+    "activation_coverage.png": "86b8f5e261eb1bb7f8cdf415723d84c73473eb4539563d1314a72a879b3e1dfd",
+    "rule_latency.png": "856b3030fb3f1817e24b92db5e81aa0486afd4368945cc97b3031c844cfb7d3c"
+  }
+}

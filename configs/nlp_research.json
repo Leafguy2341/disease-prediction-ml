@@ -1,0 +1,18 @@
+{
+  "protocol": "vietnamese-nlp-research-v1",
+  "created": "2026-11-11",
+  "production_activation": false,
+  "catalog_features": 375,
+  "production_features_before": 135,
+  "development": "data/evaluation/vietnamese_symptom_semantic_cases.jsonl",
+  "reserved": "data/evaluation/vietnamese_nlp_reserved_v1.jsonl",
+  "reserved_rows": 32,
+  "reserved_sha256": "5cd8bd52e02a506eeb21a3d54ec27b363485ae1d8e42c814d90a61c9e187f824",
+  "split_unit": "whole independently written utterance; exact normalized text must not cross splits",
+  "split_limitations": "Small synthetic reserved set, same authors and symptom concepts as development; pending human review, not independent clinical or paraphrase-family generalization",
+  "activation_probe": "proposed aliases in per-feature temporary dictionaries; development templates only, never edits production",
+  "semantic_policy": "local-only pinned embedding; top3 candidates per clause, confirmation required, no automatic similarity threshold",
+  "tuning_policy": "no threshold selected; future auto-selection requires new preregistration and development-only selection before opening a fresh NLP evaluation set",
+  "disease_test_access": false,
+  "live_api_calls": false
+}

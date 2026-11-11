@@ -151,6 +151,11 @@ def evidence_context(turn: Turn, span: dict, intended_subject: str, state: str |
     boundary = re.search(r"[.!?;\n]", turn.text[end:])
     sentence_end = end + boundary.end() if boundary else len(turn.text)
     sentence = _unicode.normalize('NFC', turn.text[sentence_start:sentence_end])
+    # Fictional characters have no patient subject binding. Scope this rejection
+    # to the evidence sentence so a later real symptom report remains usable.
+    if re.search(r"\b(?:nhân vật|nhan vat)\b.{0,60}\b(?:truyện|truyen|phim|kịch bản|kich ban)\b|"
+                 r"\b(?:trong truyện|trong truyen|trong phim)\b", sentence, re.I):
+        raise ExtractionError("fictional_subject_evidence")
     patient_assertion = bool(PATIENT_ASSERTION.search(sentence))
     if NONPATIENT.search(context):
         raise ExtractionError("hypothetical_or_general_evidence")
