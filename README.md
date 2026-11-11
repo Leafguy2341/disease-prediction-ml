@@ -75,7 +75,7 @@ Repository chung: https://github.com/Leafguy2341/disease-prediction-ml, default 
 
 PC hiện có checkout Git riêng tại sibling `disease-prediction-ml-git-sync`. Mở folder này trong VS Code để tiếp tục commit/pull/push. Folder PC cũ chưa git init và vẫn giữ một số evidence/local files bị ignore; sửa tiếp ở đó sẽ không tự lên GitHub.
 
-Laptop đã có repository: kiểm `git status --short`, `git branch --show-current`, `git log --oneline @{u}..HEAD` trước khi pull. Nếu có thay đổi local hoặc commit chưa push, backup/commit chúng vào branch riêng trước; không reset/clean cưỡng bức. Sau owner merge và laptop đang sạch:
+Laptop đã có repository: kiểm `git status --short`, `git branch --show-current`, `git log --oneline '@{u}..HEAD'` trước khi pull. Nếu có thay đổi local hoặc commit chưa push, backup/commit chúng vào branch riêng trước; không reset/clean cưỡng bức. Sau owner merge và laptop đang sạch:
 
 ```powershell
 git fetch origin

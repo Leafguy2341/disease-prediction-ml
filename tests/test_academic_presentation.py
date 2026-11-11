@@ -18,3 +18,15 @@ def test_historical_supplement_identity_is_unchanged():
     from scripts.package_handover import code_supplements
     policy = json.loads((ROOT/'configs/handover_code_supplements.json').read_bytes())
     assert code_supplements(ROOT) == policy['files']
+
+
+def test_academic_data_locator_uses_external_sibling(monkeypatch):
+    from scripts.academic_review import storage_root
+    monkeypatch.delenv('DISEASE_API_STORAGE_ROOT',raising=False)
+    assert storage_root() == (ROOT.parent/'disease-prediction-ml-data').resolve()
+
+
+def test_academic_data_locator_accepts_configured_external_root(monkeypatch,tmp_path):
+    from scripts.academic_review import storage_root
+    monkeypatch.setenv('DISEASE_API_STORAGE_ROOT',str(tmp_path))
+    assert storage_root() == tmp_path.resolve()

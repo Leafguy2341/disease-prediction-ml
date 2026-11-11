@@ -6,10 +6,15 @@ import argparse
 import ast
 import hashlib
 import json
+import os
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 AUDIT = ROOT / 'reports/academic_review_20261111'
+
+
+def storage_root():
+    return Path(os.environ.get('DISEASE_API_STORAGE_ROOT', ROOT.parent / 'disease-prediction-ml-data')).expanduser().resolve()
 
 
 def sha(raw):
@@ -105,7 +110,7 @@ def verify():
 
 def presentation():
     from scripts.presentation_figures import prepare
-    data = ROOT.parent / 'disease-prediction-ml(data)'
+    data = storage_root()
     tables, _, _ = prepare(data)
 
     def table(rows, key='model'):
