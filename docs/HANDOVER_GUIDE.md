@@ -1,5 +1,22 @@
 # Hướng dẫn bàn giao dự án
 
+## Layout local hiện hành — 2026-11-11
+
+Owner đã yêu cầu gộp storage vào project. Cây đang dùng là `disease-prediction-ml-git-sync/{app,src,configs,notebooks,scripts,tests,docs,data,artifacts,reports}`. Không lồng wrapper `disease-prediction-ml-data` vào project. API `run_api.py` mặc định storage = directory chứa launcher; nếu đã đặt DISEASE_API_STORAGE_ROOT, giá trị explicit vẫn thắng. Đặt lại biến tới root hiện tại trước khi restart nếu terminal giữ đường dẫn cũ:
+
+```powershell
+$env:DISEASE_API_STORAGE_ROOT = (Get-Location).Path
+$env:DISEASE_STORAGE_ROOT = (Get-Location).Path
+$env:DISEASE_CHAT_MODE = 'offline'
+```
+
+Giữ đúng interpreter Windows3.13.17/dependencies đã qualify; không dùng Python3.11 để bỏ qua model guard. Dataset/weights/full reports nằm local nhưng vẫn Git-ignore. Source/config cũ trong data release không được gộp đè lên source Git. Các mô tả hai-root/ZIP ở bên dưới là lịch sử phát hành, không là default local hiện hành; SHA của release cũ không thay đổi. Colab vẫn dùng canonical Drive và shared bootstrap cũ, không truy cập ổ Windows trực tiếp.
+
+Notebook07 viewer tự chứa saved tables/375 descriptions và4PNG đã pin checksum: chạy setup/viewer trên Colab không cần mount, ROOT hoặc upload script. RUN_RESEARCH/RUN_SEMANTIC mặc định False; khi bật research mới phải có source/dependencies và snapshot embedding phù hợp. Snapshot chỉ là saved evidence, không phải benchmark mới/semantic PASS. Notebook06 và output lịch sử không được chạy lại trong bước này.
+
+Migration local:145 file được chuyển cùng volume,4 file cùng đường dẫn trùng byte giữ bản project. Các file non-test kiểm SHA trước/sau; locked test chỉ rename và kiểm inode/size/mtime, không mở payload. Không xóa folder legacy/source/config cũ hoặc archives. Biên nhận và snapshot notebook trước sửa được giữ ngoài repository trong thư mục maintenance. Runtime không tự fallback về folder legacy khi thiếu artifact.
+
+
 ## Bàn giao cuối — hai nguồn và hai root ZIP, 2026-11-05
 
 Code lấy từ Windows source hiện hành đã freeze; scientific data/model lấy từ bản tải Drive độc lập. Không đổi tên hoặc xóa hai nguồn gốc. Tên folder `(data)` chỉ là vị trí download của máy xây gói, không phải tên trong ZIP. Sau giải nén cùng thư mục cha:
@@ -19,7 +36,7 @@ Từ folder code, dùng CPython3.13.17/AMD64 và requirements-api.txt với exac
 ```powershell
 py -3.13 -m venv .venv-web
 & '.\.venv-web\Scripts\python.exe' -m pip install -r requirements-api.txt
-$env:DISEASE_API_STORAGE_ROOT = (Resolve-Path -LiteralPath '..\disease-prediction-ml-data').Path
+$env:DISEASE_API_STORAGE_ROOT = (Get-Location).Path
 $env:DISEASE_CHAT_MODE = 'offline'
 & '.\.venv-web\Scripts\python.exe' -B -m scripts.smoke_local_mvp --ml
 & '.\.venv-web\Scripts\python.exe' -B -m uvicorn app.backend.main:app --host 127.0.0.1 --port 8000 --workers 1

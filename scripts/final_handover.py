@@ -1,4 +1,4 @@
-"""Two-root handover audit/build. Reuse package_handover; never modify ML runtime.
+"""Handover audit/build with unified or explicit split roots; reuse package_handover.
 
 Run audit, stage, build, verify, publish in order with an external --work folder.
 The clean-smoke mode is run FROM EXTRACTED CODE in a fresh Python process.
@@ -32,9 +32,9 @@ def write(path,value):
 
 def roots(args):
     code=pack.no_links(args.code_root or ROOT)
-    data=pack.no_links(args.data_root or code.parent/'disease-prediction-ml-data')
+    data=pack.no_links(args.data_root or code)
     work=pack.no_links(args.work)
-    assert code.is_dir() and data.is_dir() and code!=data, 'Both independent source roots must exist'
+    assert code.is_dir() and data.is_dir(), 'Source/data root must exist (unified root or explicit separate roots)'
     assert not work.is_relative_to(code) and not work.is_relative_to(data), 'Staging must be external'
     return code,data,work
 

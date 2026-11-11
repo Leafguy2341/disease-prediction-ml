@@ -14,7 +14,7 @@ AUDIT = ROOT / 'reports/academic_review_20261111'
 
 
 def storage_root():
-    return Path(os.environ.get('DISEASE_API_STORAGE_ROOT', ROOT.parent / 'disease-prediction-ml-data')).expanduser().resolve()
+    return Path(os.environ.get('DISEASE_API_STORAGE_ROOT') or ROOT).expanduser().resolve()
 
 
 def sha(raw):

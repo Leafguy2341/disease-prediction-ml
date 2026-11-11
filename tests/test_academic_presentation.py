@@ -20,10 +20,10 @@ def test_historical_supplement_identity_is_unchanged():
     assert code_supplements(ROOT) == policy['files']
 
 
-def test_academic_data_locator_uses_external_sibling(monkeypatch):
+def test_academic_data_locator_uses_unified_project(monkeypatch):
     from scripts.academic_review import storage_root
     monkeypatch.delenv('DISEASE_API_STORAGE_ROOT',raising=False)
-    assert storage_root() == (ROOT.parent/'disease-prediction-ml-data').resolve()
+    assert storage_root() == ROOT.resolve()
 
 
 def test_academic_data_locator_accepts_configured_external_root(monkeypatch,tmp_path):

@@ -71,7 +71,7 @@ reports/          # Evidence/bảng/hình nghiên cứu nhỏ được quản l�
 docs/             # Kiến trúc, thực nghiệm, triển khai và bàn giao
 ```
 
-Datasets, fitted weights và full reports được phân phối riêng; Git chỉ giữ source và evidence/fixtures cần thiết, không chứa model weights.
+Local hiện dùng một cây project thống nhất: `data/`, `artifacts/`, `reports/` nằm cạnh source. Git chỉ giữ source và evidence/fixtures cần thiết; raw/processed datasets, fitted weights và full reports vẫn bị ignore và được phân phối riêng.
 
 ## 7. Cài đặt và chạy thử
 
@@ -80,12 +80,15 @@ git clone https://github.com/Leafguy2341/disease-prediction-ml.git
 cd disease-prediction-ml
 ```
 
-Nhận gói data/checkpoint đúng release và quyền truy cập từ owner; kiểm SHA theo [external_data_release.json](configs/external_data_release.json), giải nén thành sibling `disease-prediction-ml-data`. Không có link Drive riêng tư hoặc credentials trong repository.
+Nhận gói data/checkpoint đúng release từ owner và kiểm SHA theo [external_data_release.json](configs/external_data_release.json). Gói lịch sử có layout riêng: giải nén tạm rồi gộp **chỉ nội dung `data/`, `artifacts/`, `reports/`** vào project, đúng đường dẫn và checksum; không ghi đè source/config bằng bản cũ trong gói data. Không tạo `data/data` hoặc `artifacts/artifacts`. Local PC đã hoàn tất gộp; clone Git mới vẫn phải nhận artifacts riêng. Không có link Drive riêng tư hoặc credentials trong repository.
 
 ```text
-ML/
-├── disease-prediction-ml/       # source clone
-└── disease-prediction-ml-data/  # artifacts/, data/, reports/ đúng layout release
+disease-prediction-ml/
+├── app/, src/, configs/, notebooks/, scripts/, tests/, docs/
+├── data/        # raw/, processed/, evaluation/
+├── artifacts/   # models/, metadata/
+├── reports/
+└── run_api.py
 ```
 
 Để load checkpoint trên Windows cần **CPython 3.13.17/AMD64** đã được qualify, scikit-learn 1.6.1, NumPy 2.1.3, SciPy 1.16.3, joblib 1.6.0. Kiểm đúng interpreter trước khi tạo môi trường; không dùng Python 3.11/sklearn 1.8 để bỏ qua production guard.
@@ -95,13 +98,13 @@ py -3.13 --version
 # Chỉ tiếp tục khi đúng 3.13.17; tạo môi trường nếu chưa có.
 py -3.13 -m venv .venv-web
 & '.\.venv-web\Scripts\python.exe' -m pip install -r requirements-api.txt
-$env:DISEASE_API_STORAGE_ROOT = (Resolve-Path -LiteralPath '..\disease-prediction-ml-data').Path
+$env:DISEASE_API_STORAGE_ROOT = (Get-Location).Path
 $env:DISEASE_CHAT_MODE = 'offline'
 & '.\.venv-web\Scripts\python.exe' -B -m scripts.smoke_local_mvp --ml
 & '.\.venv-web\Scripts\python.exe' -B run_api.py
 ```
 
-Mở **http://127.0.0.1:8000/**; OpenAPI: **http://127.0.0.1:8000/docs**. Nếu cổng đang dùng, dừng đúng server cũ bằng Ctrl+C hoặc thêm `--port 8001`. Nếu thiếu data root, không tạo thư mục rỗng thay checkpoint: kiểm lại vị trí giải nén và environment trong đúng terminal.
+`run_api.py` mặc định dùng thư mục chứa chính nó làm storage root; environment override được giữ nguyên nếu đã đặt. Nếu terminal còn trỏ tới data root cũ, đặt lại như lệnh trên rồi restart server. Chạy Uvicorn trực tiếp vẫn cần environment root rõ ràng. Mở **http://127.0.0.1:8000/**; OpenAPI: **http://127.0.0.1:8000/docs**. Nếu cổng đang dùng, dừng đúng server cũ bằng Ctrl+C hoặc thêm `--port 8001`. Nếu thiếu data root, không tạo thư mục rỗng thay checkpoint: kiểm lại vị trí giải nén và environment trong đúng terminal.
 
 | Endpoint | Chức năng |
 |---|---|
@@ -120,7 +123,7 @@ Ví dụ input ML: `{"model_id":"lr_tuned_c2","present_features":["cough","fever
 - 03: baseline + tuning; 04: baseline/tuned ensemble — bốn thí nghiệm disease classification.
 - 05: structured inference của năm baseline; không phải loader API LR tuned.
 - 06: completed final-evaluation viewer chỉ đọc, gate False/authorization rỗng; không mở lại test.
-- 07: Rule-based/Semantic/Hybrid symptom extraction — nghiên cứu NLP riêng. Có baseline synthetic đã đo, Semantic/Hybrid **NOT RUN**, chưa kết luận cải thiện.
+- 07: Rule-based/Semantic/Hybrid symptom extraction — nghiên cứu NLP riêng. Viewer có snapshot dữ liệu/hình kèm SHA, chạy được trên Colab không cần Drive/source local. Chạy nghiên cứu mới cần source đầy đủ; mặc định hai gate False. Có baseline synthetic đã đo, Semantic/Hybrid **NOT RUN**, chưa kết luận cải thiện.
 - `colab_smoke_test`: shared bootstrap/import/session/integrity; không train.
 
 Notebook 03 còn tuning gate True do execution có chủ đích; không thực thi chỉ để xem bảng. Source Windows không tự có trên Colab: làm bước publish payload nhỏ, mount và setup theo [handover guide](docs/HANDOVER_GUIDE.md).

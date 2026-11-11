@@ -30,7 +30,7 @@ Notebook 05 kiểm năm baseline, không phải năm tuned và không phải API
 
 Thứ tự nghiên cứu: **00 → 01 → 02 → 03 → 04 → 05 → 06**. Khi chỉ kiểm setup Colab, mở `colab_smoke_test.ipynb` độc lập; không chạy training trước để lấy biến `session`.
 
-Đọc 07 sau khi hiểu extraction contract: đây là nhánh nghiên cứu NLP, không dùng kết quả để thay disease classifier. Các code cell mới chưa thực thi trong notebook; số đo thật nằm trong `reports/nlp_research_v1/benchmark.json`, được viewer đọc khi cần. Reserved NLP v1 đã được quan sát để phát hiện lỗi hư cấu; không gọi rerun sau sửa là đánh giá độc lập hoặc threshold tuning. Notebook này ưu tiên interpreter research local, không cài thêm embedding dependencies vào môi trường API.
+Đọc 07 sau khi hiểu extraction contract: đây là nhánh nghiên cứu NLP, không dùng kết quả để thay disease classifier. Viewer nhúng snapshot số đo thật, đủ 375 feature records và bốn ảnh kèm SHA; chạy được trên Colab không có project/Drive, không tạo kết quả mới. Snapshot lấy từ `reports/nlp_research_v1/`; detailed qualification vẫn ở repository. Reserved NLP v1 đã được quan sát để phát hiện lỗi hư cấu; không gọi rerun sau sửa là đánh giá độc lập hoặc threshold tuning. Chạy nghiên cứu mới cần source/dependencies research riêng; không cài embedding dependencies vào môi trường API. Ngoại lệ viewer 07 không cần các bước publish/mount bên dưới.
 
 | Notebook / gate | Giá trị hiện có trong source | Ý nghĩa và điểm dừng |
 |---|---|---|
