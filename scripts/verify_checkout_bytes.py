@@ -77,6 +77,11 @@ def main():
         if subprocess.run(['git','diff','--quiet'],cwd=root).returncode or subprocess.run(['git','diff','--cached','--quiet'],cwd=root).returncode:
             raise ValueError('Git has local/staged changes: stop, preserve them first')
         rows=repair(root,blobs,args.backup_root)
+        # Refresh inherited index conversion flags only for byte-verified repairs.
+        # Every resulting staged blob must still equal HEAD.
+        if rows:
+            subprocess.run(['git','add','--',*[r['path'] for r in rows]],cwd=root,check=True)
+            subprocess.run(['git','diff','--cached','--quiet'],cwd=root,check=True)
         print(json.dumps(dict(status='PASS',repaired_files=len(rows),backup=str(args.backup_root.resolve()))))
     else:
         print(json.dumps(dict(status='PASS' if not rows else 'REVIEW',files=len(blobs),differences=rows),indent=2))
