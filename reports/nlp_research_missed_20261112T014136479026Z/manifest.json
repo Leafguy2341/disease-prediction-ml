@@ -1,0 +1,8 @@
+{
+  "complete": true,
+  "protocol": "rule-missed-recovery-v1",
+  "files": {
+    "missed_analysis.json": "4055f904c7f6d0ea812bdd14dba98ec64761fbe664d56d7ce645cc849436acfc",
+    "missed_recovery.png": "5dba3f53140fb88dc167146b11e39734e59034b08e99b7ca9c9d0e49217237e2"
+  }
+}

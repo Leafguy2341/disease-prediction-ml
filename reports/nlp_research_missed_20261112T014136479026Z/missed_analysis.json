@@ -1,0 +1,3915 @@
+{
+  "protocol": "rule-missed-recovery-v1",
+  "rows": [
+    {
+      "id": "missed-v1-001",
+      "group": "known_alias",
+      "text": "Tôi bị ho.",
+      "expected_states": {
+        "cough": "present"
+      },
+      "gold_spans": [
+        {
+          "feature": "cough",
+          "start": 7,
+          "end": 9,
+          "text": "ho"
+        }
+      ],
+      "synthetic": true,
+      "review_status": "pending_human_review",
+      "ambiguity": false,
+      "annotation_note": "Authored canonical interpretation; breathing paraphrase has overlap with difficulty breathing. No clinical validation.",
+      "provenance": "Project-authored synthetic diagnostic, groups frozen before embedding inference; no patient data",
+      "used_for_alias_development": false,
+      "used_for_threshold_selection": false,
+      "missed_present": [],
+      "methods": {
+        "rule_based": {
+          "states": {
+            "cough": "present"
+          },
+          "suggestions": [],
+          "embedding_calls": 0,
+          "embedding_ms": 0.0,
+          "latency_ms": 5.370899918489158,
+          "oracle_states": {
+            "cough": "present"
+          }
+        },
+        "semantic": {
+          "states": {},
+          "suggestions": [
+            {
+              "evidence": {
+                "turn_id": "u1",
+                "start": 0,
+                "end": 9,
+                "text": "Tôi bị ho"
+              },
+              "query": "Tôi bị ho",
+              "state": "present",
+              "candidates": [
+                {
+                  "feature": "nausea",
+                  "cosine_similarity": 0.37613252652833395
+                },
+                {
+                  "feature": "vomiting",
+                  "cosine_similarity": 0.36753660688401923
+                },
+                {
+                  "feature": "feeling hot and cold",
+                  "cosine_similarity": 0.3099272035215992
+                }
+              ],
+              "requires_confirmation": true
+            }
+          ],
+          "embedding_calls": 1,
+          "embedding_ms": 9.838199941441417,
+          "latency_ms": 10.401699924841523,
+          "oracle_states": {}
+        },
+        "hybrid": {
+          "states": {
+            "cough": "present"
+          },
+          "suggestions": [],
+          "embedding_calls": 0,
+          "embedding_ms": 0.0,
+          "latency_ms": 5.415299907326698,
+          "oracle_states": {
+            "cough": "present"
+          }
+        }
+      }
+    },
+    {
+      "id": "missed-v1-002",
+      "group": "known_alias",
+      "text": "Tôi bị sốt.",
+      "expected_states": {
+        "fever": "present"
+      },
+      "gold_spans": [
+        {
+          "feature": "fever",
+          "start": 7,
+          "end": 10,
+          "text": "sốt"
+        }
+      ],
+      "synthetic": true,
+      "review_status": "pending_human_review",
+      "ambiguity": false,
+      "annotation_note": "Authored canonical interpretation; breathing paraphrase has overlap with difficulty breathing. No clinical validation.",
+      "provenance": "Project-authored synthetic diagnostic, groups frozen before embedding inference; no patient data",
+      "used_for_alias_development": false,
+      "used_for_threshold_selection": false,
+      "missed_present": [],
+      "methods": {
+        "rule_based": {
+          "states": {
+            "fever": "present"
+          },
+          "suggestions": [],
+          "embedding_calls": 0,
+          "embedding_ms": 0.0,
+          "latency_ms": 2.9972000047564507,
+          "oracle_states": {
+            "fever": "present"
+          }
+        },
+        "semantic": {
+          "states": {},
+          "suggestions": [
+            {
+              "evidence": {
+                "turn_id": "u1",
+                "start": 0,
+                "end": 10,
+                "text": "Tôi bị sốt"
+              },
+              "query": "Tôi bị sốt",
+              "state": "present",
+              "candidates": [
+                {
+                  "feature": "fever",
+                  "cosine_similarity": 0.44201260142790466
+                },
+                {
+                  "feature": "flu-like syndrome",
+                  "cosine_similarity": 0.38423531772163605
+                },
+                {
+                  "feature": "fluid retention",
+                  "cosine_similarity": 0.33724195592164097
+                }
+              ],
+              "requires_confirmation": true
+            }
+          ],
+          "embedding_calls": 1,
+          "embedding_ms": 10.670899995602667,
+          "latency_ms": 10.984899941831827,
+          "oracle_states": {
+            "fever": "present"
+          }
+        },
+        "hybrid": {
+          "states": {
+            "fever": "present"
+          },
+          "suggestions": [],
+          "embedding_calls": 0,
+          "embedding_ms": 0.0,
+          "latency_ms": 3.03719996009022,
+          "oracle_states": {
+            "fever": "present"
+          }
+        }
+      }
+    },
+    {
+      "id": "missed-v1-003",
+      "group": "known_alias",
+      "text": "Tôi bị buồn nôn.",
+      "expected_states": {
+        "nausea": "present"
+      },
+      "gold_spans": [
+        {
+          "feature": "nausea",
+          "start": 7,
+          "end": 15,
+          "text": "buồn nôn"
+        }
+      ],
+      "synthetic": true,
+      "review_status": "pending_human_review",
+      "ambiguity": false,
+      "annotation_note": "Authored canonical interpretation; breathing paraphrase has overlap with difficulty breathing. No clinical validation.",
+      "provenance": "Project-authored synthetic diagnostic, groups frozen before embedding inference; no patient data",
+      "used_for_alias_development": false,
+      "used_for_threshold_selection": false,
+      "missed_present": [],
+      "methods": {
+        "rule_based": {
+          "states": {
+            "nausea": "present"
+          },
+          "suggestions": [],
+          "embedding_calls": 0,
+          "embedding_ms": 0.0,
+          "latency_ms": 3.0402999836951494,
+          "oracle_states": {
+            "nausea": "present"
+          }
+        },
+        "semantic": {
+          "states": {},
+          "suggestions": [
+            {
+              "evidence": {
+                "turn_id": "u1",
+                "start": 0,
+                "end": 15,
+                "text": "Tôi bị buồn nôn"
+              },
+              "query": "Tôi bị buồn nôn",
+              "state": "present",
+              "candidates": [
+                {
+                  "feature": "vomiting",
+                  "cosine_similarity": 0.45021211807059813
+                },
+                {
+                  "feature": "nausea",
+                  "cosine_similarity": 0.4410285685902894
+                },
+                {
+                  "feature": "excessive appetite",
+                  "cosine_similarity": 0.2779114853213025
+                }
+              ],
+              "requires_confirmation": true
+            }
+          ],
+          "embedding_calls": 1,
+          "embedding_ms": 10.927700088359416,
+          "latency_ms": 11.24519994482398,
+          "oracle_states": {
+            "nausea": "present"
+          }
+        },
+        "hybrid": {
+          "states": {
+            "nausea": "present"
+          },
+          "suggestions": [],
+          "embedding_calls": 0,
+          "embedding_ms": 0.0,
+          "latency_ms": 3.0789999291300774,
+          "oracle_states": {
+            "nausea": "present"
+          }
+        }
+      }
+    },
+    {
+      "id": "missed-v1-004",
+      "group": "known_alias",
+      "text": "Tôi bị đau đầu.",
+      "expected_states": {
+        "headache": "present"
+      },
+      "gold_spans": [
+        {
+          "feature": "headache",
+          "start": 7,
+          "end": 14,
+          "text": "đau đầu"
+        }
+      ],
+      "synthetic": true,
+      "review_status": "pending_human_review",
+      "ambiguity": false,
+      "annotation_note": "Authored canonical interpretation; breathing paraphrase has overlap with difficulty breathing. No clinical validation.",
+      "provenance": "Project-authored synthetic diagnostic, groups frozen before embedding inference; no patient data",
+      "used_for_alias_development": false,
+      "used_for_threshold_selection": false,
+      "missed_present": [],
+      "methods": {
+        "rule_based": {
+          "states": {
+            "headache": "present"
+          },
+          "suggestions": [],
+          "embedding_calls": 0,
+          "embedding_ms": 0.0,
+          "latency_ms": 3.107300028204918,
+          "oracle_states": {
+            "headache": "present"
+          }
+        },
+        "semantic": {
+          "states": {},
+          "suggestions": [
+            {
+              "evidence": {
+                "turn_id": "u1",
+                "start": 0,
+                "end": 14,
+                "text": "Tôi bị đau đầu"
+              },
+              "query": "Tôi bị đau đầu",
+              "state": "present",
+              "candidates": [
+                {
+                  "feature": "headache",
+                  "cosine_similarity": 0.47707276120354414
+                },
+                {
+                  "feature": "ear pain",
+                  "cosine_similarity": 0.40125236864518443
+                },
+                {
+                  "feature": "neck pain",
+                  "cosine_similarity": 0.3693986712482221
+                }
+              ],
+              "requires_confirmation": true
+            }
+          ],
+          "embedding_calls": 1,
+          "embedding_ms": 6.231200066395104,
+          "latency_ms": 6.48469990119338,
+          "oracle_states": {
+            "headache": "present"
+          }
+        },
+        "hybrid": {
+          "states": {
+            "headache": "present"
+          },
+          "suggestions": [],
+          "embedding_calls": 0,
+          "embedding_ms": 0.0,
+          "latency_ms": 3.133399994112551,
+          "oracle_states": {
+            "headache": "present"
+          }
+        }
+      }
+    },
+    {
+      "id": "missed-v1-005",
+      "group": "known_alias",
+      "text": "Tôi bị ho và tôi bị sốt.",
+      "expected_states": {
+        "cough": "present",
+        "fever": "present"
+      },
+      "gold_spans": [
+        {
+          "feature": "cough",
+          "start": 7,
+          "end": 9,
+          "text": "ho"
+        },
+        {
+          "feature": "fever",
+          "start": 20,
+          "end": 23,
+          "text": "sốt"
+        }
+      ],
+      "synthetic": true,
+      "review_status": "pending_human_review",
+      "ambiguity": false,
+      "annotation_note": "Authored canonical interpretation; breathing paraphrase has overlap with difficulty breathing. No clinical validation.",
+      "provenance": "Project-authored synthetic diagnostic, groups frozen before embedding inference; no patient data",
+      "used_for_alias_development": false,
+      "used_for_threshold_selection": false,
+      "missed_present": [],
+      "methods": {
+        "rule_based": {
+          "states": {
+            "cough": "present",
+            "fever": "present"
+          },
+          "suggestions": [],
+          "embedding_calls": 0,
+          "embedding_ms": 0.0,
+          "latency_ms": 4.12930001039058,
+          "oracle_states": {
+            "cough": "present",
+            "fever": "present"
+          }
+        },
+        "semantic": {
+          "states": {},
+          "suggestions": [
+            {
+              "evidence": {
+                "turn_id": "u1",
+                "start": 0,
+                "end": 10,
+                "text": "Tôi bị ho "
+              },
+              "query": "Tôi bị ho",
+              "state": "present",
+              "candidates": [
+                {
+                  "feature": "nausea",
+                  "cosine_similarity": 0.37613252652833395
+                },
+                {
+                  "feature": "vomiting",
+                  "cosine_similarity": 0.36753660688401923
+                },
+                {
+                  "feature": "feeling hot and cold",
+                  "cosine_similarity": 0.3099272035215992
+                }
+              ],
+              "requires_confirmation": true
+            },
+            {
+              "evidence": {
+                "turn_id": "u1",
+                "start": 12,
+                "end": 23,
+                "text": " tôi bị sốt"
+              },
+              "query": "tôi bị sốt",
+              "state": "present",
+              "candidates": [
+                {
+                  "feature": "fever",
+                  "cosine_similarity": 0.4423591028196677
+                },
+                {
+                  "feature": "flu-like syndrome",
+                  "cosine_similarity": 0.389204135258195
+                },
+                {
+                  "feature": "fluid retention",
+                  "cosine_similarity": 0.3393813267879601
+                }
+              ],
+              "requires_confirmation": true
+            }
+          ],
+          "embedding_calls": 2,
+          "embedding_ms": 19.96139995753765,
+          "latency_ms": 20.64640005119145,
+          "oracle_states": {
+            "fever": "present"
+          }
+        },
+        "hybrid": {
+          "states": {
+            "cough": "present",
+            "fever": "present"
+          },
+          "suggestions": [],
+          "embedding_calls": 0,
+          "embedding_ms": 0.0,
+          "latency_ms": 4.172899993136525,
+          "oracle_states": {
+            "cough": "present",
+            "fever": "present"
+          }
+        }
+      }
+    },
+    {
+      "id": "missed-v1-006",
+      "group": "known_alias",
+      "text": "Tôi bị buồn nôn và tôi bị đau đầu.",
+      "expected_states": {
+        "nausea": "present",
+        "headache": "present"
+      },
+      "gold_spans": [
+        {
+          "feature": "nausea",
+          "start": 7,
+          "end": 15,
+          "text": "buồn nôn"
+        },
+        {
+          "feature": "headache",
+          "start": 26,
+          "end": 33,
+          "text": "đau đầu"
+        }
+      ],
+      "synthetic": true,
+      "review_status": "pending_human_review",
+      "ambiguity": false,
+      "annotation_note": "Authored canonical interpretation; breathing paraphrase has overlap with difficulty breathing. No clinical validation.",
+      "provenance": "Project-authored synthetic diagnostic, groups frozen before embedding inference; no patient data",
+      "used_for_alias_development": false,
+      "used_for_threshold_selection": false,
+      "missed_present": [],
+      "methods": {
+        "rule_based": {
+          "states": {
+            "nausea": "present",
+            "headache": "present"
+          },
+          "suggestions": [],
+          "embedding_calls": 0,
+          "embedding_ms": 0.0,
+          "latency_ms": 3.8178000831976533,
+          "oracle_states": {
+            "nausea": "present",
+            "headache": "present"
+          }
+        },
+        "semantic": {
+          "states": {},
+          "suggestions": [
+            {
+              "evidence": {
+                "turn_id": "u1",
+                "start": 0,
+                "end": 16,
+                "text": "Tôi bị buồn nôn "
+              },
+              "query": "Tôi bị buồn nôn",
+              "state": "present",
+              "candidates": [
+                {
+                  "feature": "vomiting",
+                  "cosine_similarity": 0.45021211807059813
+                },
+                {
+                  "feature": "nausea",
+                  "cosine_similarity": 0.4410285685902894
+                },
+                {
+                  "feature": "excessive appetite",
+                  "cosine_similarity": 0.2779114853213025
+                }
+              ],
+              "requires_confirmation": true
+            },
+            {
+              "evidence": {
+                "turn_id": "u1",
+                "start": 18,
+                "end": 33,
+                "text": " tôi bị đau đầu"
+              },
+              "query": "tôi bị đau đầu",
+              "state": "present",
+              "candidates": [
+                {
+                  "feature": "headache",
+                  "cosine_similarity": 0.4795334149075091
+                },
+                {
+                  "feature": "ear pain",
+                  "cosine_similarity": 0.40466210577625406
+                },
+                {
+                  "feature": "neck pain",
+                  "cosine_similarity": 0.3722541137281749
+                }
+              ],
+              "requires_confirmation": true
+            }
+          ],
+          "embedding_calls": 2,
+          "embedding_ms": 17.36869988963008,
+          "latency_ms": 18.02519999910146,
+          "oracle_states": {
+            "nausea": "present",
+            "headache": "present"
+          }
+        },
+        "hybrid": {
+          "states": {
+            "nausea": "present",
+            "headache": "present"
+          },
+          "suggestions": [],
+          "embedding_calls": 0,
+          "embedding_ms": 0.0,
+          "latency_ms": 3.854400012642145,
+          "oracle_states": {
+            "nausea": "present",
+            "headache": "present"
+          }
+        }
+      }
+    },
+    {
+      "id": "missed-v1-007",
+      "group": "novel_expression",
+      "text": "Tôi cứ có cảm giác sắp ói ra.",
+      "expected_states": {
+        "nausea": "present"
+      },
+      "gold_spans": [
+        {
+          "feature": "nausea",
+          "start": 7,
+          "end": 28,
+          "text": "có cảm giác sắp ói ra"
+        }
+      ],
+      "synthetic": true,
+      "review_status": "pending_human_review",
+      "ambiguity": false,
+      "annotation_note": "Authored canonical interpretation; breathing paraphrase has overlap with difficulty breathing. No clinical validation.",
+      "provenance": "Project-authored synthetic diagnostic, groups frozen before embedding inference; no patient data",
+      "used_for_alias_development": false,
+      "used_for_threshold_selection": false,
+      "missed_present": [
+        [
+          "nausea",
+          "present"
+        ]
+      ],
+      "methods": {
+        "rule_based": {
+          "states": {
+            "vomiting": "present"
+          },
+          "suggestions": [],
+          "embedding_calls": 0,
+          "embedding_ms": 0.0,
+          "latency_ms": 1.4680000022053719,
+          "oracle_states": {
+            "vomiting": "present"
+          }
+        },
+        "semantic": {
+          "states": {},
+          "suggestions": [
+            {
+              "evidence": {
+                "turn_id": "u1",
+                "start": 0,
+                "end": 28,
+                "text": "Tôi cứ có cảm giác sắp ói ra"
+              },
+              "query": "Tôi cứ có cảm giác sắp ói ra",
+              "state": "present",
+              "candidates": [
+                {
+                  "feature": "pelvic pressure",
+                  "cosine_similarity": 0.3830271697770555
+                },
+                {
+                  "feature": "feeling hot and cold",
+                  "cosine_similarity": 0.38110260942348495
+                },
+                {
+                  "feature": "throat feels tight",
+                  "cosine_similarity": 0.3612133537101104
+                }
+              ],
+              "requires_confirmation": true
+            }
+          ],
+          "embedding_calls": 1,
+          "embedding_ms": 9.775599930435419,
+          "latency_ms": 10.13710000552237,
+          "oracle_states": {}
+        },
+        "hybrid": {
+          "states": {
+            "vomiting": "present"
+          },
+          "suggestions": [
+            {
+              "evidence": {
+                "turn_id": "u1",
+                "start": 0,
+                "end": 28,
+                "text": "Tôi cứ có cảm giác sắp ói ra"
+              },
+              "query": "Tôi cứ có cảm giác sắp    ra",
+              "state": "present",
+              "candidates": [
+                {
+                  "feature": "feeling hot and cold",
+                  "cosine_similarity": 0.3012939033820382
+                },
+                {
+                  "feature": "pelvic pressure",
+                  "cosine_similarity": 0.24104310858466255
+                },
+                {
+                  "feature": "throat feels tight",
+                  "cosine_similarity": 0.23846780777348972
+                }
+              ],
+              "requires_confirmation": true
+            }
+          ],
+          "embedding_calls": 1,
+          "embedding_ms": 8.403099956922233,
+          "latency_ms": 10.236300062388182,
+          "oracle_states": {
+            "vomiting": "present"
+          }
+        }
+      }
+    },
+    {
+      "id": "missed-v1-008",
+      "group": "novel_expression",
+      "text": "Tôi thấy căn phòng như đang quay vòng quanh mình.",
+      "expected_states": {
+        "dizziness": "present"
+      },
+      "gold_spans": [
+        {
+          "feature": "dizziness",
+          "start": 9,
+          "end": 48,
+          "text": "căn phòng như đang quay vòng quanh mình"
+        }
+      ],
+      "synthetic": true,
+      "review_status": "pending_human_review",
+      "ambiguity": false,
+      "annotation_note": "Authored canonical interpretation; breathing paraphrase has overlap with difficulty breathing. No clinical validation.",
+      "provenance": "Project-authored synthetic diagnostic, groups frozen before embedding inference; no patient data",
+      "used_for_alias_development": false,
+      "used_for_threshold_selection": false,
+      "missed_present": [
+        [
+          "dizziness",
+          "present"
+        ]
+      ],
+      "methods": {
+        "rule_based": {
+          "states": {},
+          "suggestions": [],
+          "embedding_calls": 0,
+          "embedding_ms": 0.0,
+          "latency_ms": 0.5176999839022756,
+          "oracle_states": {}
+        },
+        "semantic": {
+          "states": {},
+          "suggestions": [
+            {
+              "evidence": {
+                "turn_id": "u1",
+                "start": 0,
+                "end": 48,
+                "text": "Tôi thấy căn phòng như đang quay vòng quanh mình"
+              },
+              "query": "Tôi thấy căn phòng như đang quay vòng quanh mình",
+              "state": "present",
+              "candidates": [
+                {
+                  "feature": "feet turned in",
+                  "cosine_similarity": 0.27687541716021036
+                },
+                {
+                  "feature": "pelvic pressure",
+                  "cosine_similarity": 0.2228553590360995
+                },
+                {
+                  "feature": "spots or clouds in vision",
+                  "cosine_similarity": 0.20658169351938283
+                }
+              ],
+              "requires_confirmation": true
+            }
+          ],
+          "embedding_calls": 1,
+          "embedding_ms": 9.34879994019866,
+          "latency_ms": 9.70890000462532,
+          "oracle_states": {}
+        },
+        "hybrid": {
+          "states": {},
+          "suggestions": [
+            {
+              "evidence": {
+                "turn_id": "u1",
+                "start": 0,
+                "end": 48,
+                "text": "Tôi thấy căn phòng như đang quay vòng quanh mình"
+              },
+              "query": "Tôi thấy căn phòng như đang quay vòng quanh mình",
+              "state": "present",
+              "candidates": [
+                {
+                  "feature": "feet turned in",
+                  "cosine_similarity": 0.27687541716021036
+                },
+                {
+                  "feature": "pelvic pressure",
+                  "cosine_similarity": 0.2228553590360995
+                },
+                {
+                  "feature": "spots or clouds in vision",
+                  "cosine_similarity": 0.20658169351938283
+                }
+              ],
+              "requires_confirmation": true
+            }
+          ],
+          "embedding_calls": 1,
+          "embedding_ms": 8.764500031247735,
+          "latency_ms": 9.683400043286383,
+          "oracle_states": {}
+        }
+      }
+    },
+    {
+      "id": "missed-v1-009",
+      "group": "novel_expression",
+      "text": "Tôi rã rời hết sức dù chỉ làm việc nhẹ.",
+      "expected_states": {
+        "fatigue": "present"
+      },
+      "gold_spans": [
+        {
+          "feature": "fatigue",
+          "start": 4,
+          "end": 18,
+          "text": "rã rời hết sức"
+        }
+      ],
+      "synthetic": true,
+      "review_status": "pending_human_review",
+      "ambiguity": false,
+      "annotation_note": "Authored canonical interpretation; breathing paraphrase has overlap with difficulty breathing. No clinical validation.",
+      "provenance": "Project-authored synthetic diagnostic, groups frozen before embedding inference; no patient data",
+      "used_for_alias_development": false,
+      "used_for_threshold_selection": false,
+      "missed_present": [
+        [
+          "fatigue",
+          "present"
+        ]
+      ],
+      "methods": {
+        "rule_based": {
+          "states": {},
+          "suggestions": [],
+          "embedding_calls": 0,
+          "embedding_ms": 0.0,
+          "latency_ms": 0.4681999562308192,
+          "oracle_states": {}
+        },
+        "semantic": {
+          "states": {},
+          "suggestions": [
+            {
+              "evidence": {
+                "turn_id": "u1",
+                "start": 0,
+                "end": 38,
+                "text": "Tôi rã rời hết sức dù chỉ làm việc nhẹ"
+              },
+              "query": "Tôi rã rời hết sức dù chỉ làm việc nhẹ",
+              "state": "denied",
+              "candidates": [
+                {
+                  "feature": "fatigue",
+                  "cosine_similarity": 0.27330288750742027
+                },
+                {
+                  "feature": "premenstrual tension or irritability",
+                  "cosine_similarity": 0.20837724744606834
+                },
+                {
+                  "feature": "problems with orgasm",
+                  "cosine_similarity": 0.20798149878656136
+                }
+              ],
+              "requires_confirmation": true
+            }
+          ],
+          "embedding_calls": 1,
+          "embedding_ms": 8.563799900002778,
+          "latency_ms": 8.894299971871078,
+          "oracle_states": {}
+        },
+        "hybrid": {
+          "states": {},
+          "suggestions": [
+            {
+              "evidence": {
+                "turn_id": "u1",
+                "start": 0,
+                "end": 38,
+                "text": "Tôi rã rời hết sức dù chỉ làm việc nhẹ"
+              },
+              "query": "Tôi rã rời hết sức dù chỉ làm việc nhẹ",
+              "state": "denied",
+              "candidates": [
+                {
+                  "feature": "fatigue",
+                  "cosine_similarity": 0.27330288750742027
+                },
+                {
+                  "feature": "premenstrual tension or irritability",
+                  "cosine_similarity": 0.20837724744606834
+                },
+                {
+                  "feature": "problems with orgasm",
+                  "cosine_similarity": 0.20798149878656136
+                }
+              ],
+              "requires_confirmation": true
+            }
+          ],
+          "embedding_calls": 1,
+          "embedding_ms": 9.429499972611666,
+          "latency_ms": 10.301699978299439,
+          "oracle_states": {}
+        }
+      }
+    },
+    {
+      "id": "missed-v1-010",
+      "group": "novel_expression",
+      "text": "Tôi cứ muốn uống nước mãi vì cảm giác khát.",
+      "expected_states": {
+        "thirst": "present"
+      },
+      "gold_spans": [
+        {
+          "feature": "thirst",
+          "start": 7,
+          "end": 42,
+          "text": "muốn uống nước mãi vì cảm giác khát"
+        }
+      ],
+      "synthetic": true,
+      "review_status": "pending_human_review",
+      "ambiguity": false,
+      "annotation_note": "Authored canonical interpretation; breathing paraphrase has overlap with difficulty breathing. No clinical validation.",
+      "provenance": "Project-authored synthetic diagnostic, groups frozen before embedding inference; no patient data",
+      "used_for_alias_development": false,
+      "used_for_threshold_selection": false,
+      "missed_present": [
+        [
+          "thirst",
+          "present"
+        ]
+      ],
+      "methods": {
+        "rule_based": {
+          "states": {},
+          "suggestions": [],
+          "embedding_calls": 0,
+          "embedding_ms": 0.0,
+          "latency_ms": 0.5147999618202448,
+          "oracle_states": {}
+        },
+        "semantic": {
+          "states": {},
+          "suggestions": [
+            {
+              "evidence": {
+                "turn_id": "u1",
+                "start": 0,
+                "end": 42,
+                "text": "Tôi cứ muốn uống nước mãi vì cảm giác khát"
+              },
+              "query": "Tôi cứ muốn uống nước mãi vì cảm giác khát",
+              "state": "present",
+              "candidates": [
+                {
+                  "feature": "thirst",
+                  "cosine_similarity": 0.4686242315467603
+                },
+                {
+                  "feature": "frequent urination",
+                  "cosine_similarity": 0.2625183664742284
+                },
+                {
+                  "feature": "polyuria",
+                  "cosine_similarity": 0.23461030643888306
+                }
+              ],
+              "requires_confirmation": true
+            }
+          ],
+          "embedding_calls": 1,
+          "embedding_ms": 10.315199964679778,
+          "latency_ms": 10.6542999856174,
+          "oracle_states": {
+            "thirst": "present"
+          }
+        },
+        "hybrid": {
+          "states": {},
+          "suggestions": [
+            {
+              "evidence": {
+                "turn_id": "u1",
+                "start": 0,
+                "end": 42,
+                "text": "Tôi cứ muốn uống nước mãi vì cảm giác khát"
+              },
+              "query": "Tôi cứ muốn uống nước mãi vì cảm giác khát",
+              "state": "present",
+              "candidates": [
+                {
+                  "feature": "thirst",
+                  "cosine_similarity": 0.4686242315467603
+                },
+                {
+                  "feature": "frequent urination",
+                  "cosine_similarity": 0.2625183664742284
+                },
+                {
+                  "feature": "polyuria",
+                  "cosine_similarity": 0.23461030643888306
+                }
+              ],
+              "requires_confirmation": true
+            }
+          ],
+          "embedding_calls": 1,
+          "embedding_ms": 9.156099986284971,
+          "latency_ms": 10.05409995559603,
+          "oracle_states": {
+            "thirst": "present"
+          }
+        }
+      }
+    },
+    {
+      "id": "missed-v1-011",
+      "group": "novel_expression",
+      "text": "Tôi cảm thấy đầu như bị ai siết chặt gây đau.",
+      "expected_states": {
+        "headache": "present"
+      },
+      "gold_spans": [
+        {
+          "feature": "headache",
+          "start": 13,
+          "end": 44,
+          "text": "đầu như bị ai siết chặt gây đau"
+        }
+      ],
+      "synthetic": true,
+      "review_status": "pending_human_review",
+      "ambiguity": false,
+      "annotation_note": "Authored canonical interpretation; breathing paraphrase has overlap with difficulty breathing. No clinical validation.",
+      "provenance": "Project-authored synthetic diagnostic, groups frozen before embedding inference; no patient data",
+      "used_for_alias_development": false,
+      "used_for_threshold_selection": false,
+      "missed_present": [
+        [
+          "headache",
+          "present"
+        ]
+      ],
+      "methods": {
+        "rule_based": {
+          "states": {},
+          "suggestions": [],
+          "embedding_calls": 0,
+          "embedding_ms": 0.0,
+          "latency_ms": 1.0392999975010753,
+          "oracle_states": {}
+        },
+        "semantic": {
+          "states": {},
+          "suggestions": [
+            {
+              "evidence": {
+                "turn_id": "u1",
+                "start": 0,
+                "end": 44,
+                "text": "Tôi cảm thấy đầu như bị ai siết chặt gây đau"
+              },
+              "query": "Tôi cảm thấy đầu như bị ai siết chặt gây đau",
+              "state": "present",
+              "candidates": [
+                {
+                  "feature": "painful menstruation",
+                  "cosine_similarity": 0.4885710860579091
+                },
+                {
+                  "feature": "pain or soreness of breast",
+                  "cosine_similarity": 0.4876009506043684
+                },
+                {
+                  "feature": "groin pain",
+                  "cosine_similarity": 0.4804958274815905
+                }
+              ],
+              "requires_confirmation": true
+            }
+          ],
+          "embedding_calls": 1,
+          "embedding_ms": 7.7620999654755,
+          "latency_ms": 8.107800036668777,
+          "oracle_states": {}
+        },
+        "hybrid": {
+          "states": {},
+          "suggestions": [
+            {
+              "evidence": {
+                "turn_id": "u1",
+                "start": 0,
+                "end": 44,
+                "text": "Tôi cảm thấy đầu như bị ai siết chặt gây đau"
+              },
+              "query": "Tôi cảm thấy đầu như bị ai siết chặt gây đau",
+              "state": "present",
+              "candidates": [
+                {
+                  "feature": "painful menstruation",
+                  "cosine_similarity": 0.4885710860579091
+                },
+                {
+                  "feature": "pain or soreness of breast",
+                  "cosine_similarity": 0.4876009506043684
+                },
+                {
+                  "feature": "groin pain",
+                  "cosine_similarity": 0.4804958274815905
+                }
+              ],
+              "requires_confirmation": true
+            }
+          ],
+          "embedding_calls": 1,
+          "embedding_ms": 11.179900029674172,
+          "latency_ms": 12.576600071042776,
+          "oracle_states": {}
+        }
+      }
+    },
+    {
+      "id": "missed-v1-012",
+      "group": "novel_expression",
+      "text": "Tôi thấy dạ dày cứ muốn đẩy thức ăn lên nhưng chưa ói.",
+      "expected_states": {
+        "nausea": "present",
+        "vomiting": "denied"
+      },
+      "gold_spans": [
+        {
+          "feature": "nausea",
+          "start": 9,
+          "end": 53,
+          "text": "dạ dày cứ muốn đẩy thức ăn lên nhưng chưa ói"
+        },
+        {
+          "feature": "vomiting",
+          "start": 46,
+          "end": 53,
+          "text": "chưa ói"
+        }
+      ],
+      "synthetic": true,
+      "review_status": "pending_human_review",
+      "ambiguity": false,
+      "annotation_note": "Authored canonical interpretation; breathing paraphrase has overlap with difficulty breathing. No clinical validation. Annotation correction before final report: explicit denial of vomiting included; earlier diagnostic rows retained in prior report.",
+      "provenance": "Project-authored synthetic diagnostic, groups frozen before embedding inference; no patient data",
+      "used_for_alias_development": false,
+      "used_for_threshold_selection": false,
+      "missed_present": [
+        [
+          "nausea",
+          "present"
+        ]
+      ],
+      "methods": {
+        "rule_based": {
+          "states": {
+            "vomiting": "denied"
+          },
+          "suggestions": [],
+          "embedding_calls": 0,
+          "embedding_ms": 0.0,
+          "latency_ms": 1.2713000178337097,
+          "oracle_states": {
+            "vomiting": "denied"
+          }
+        },
+        "semantic": {
+          "states": {},
+          "suggestions": [
+            {
+              "evidence": {
+                "turn_id": "u1",
+                "start": 0,
+                "end": 40,
+                "text": "Tôi thấy dạ dày cứ muốn đẩy thức ăn lên "
+              },
+              "query": "Tôi thấy dạ dày cứ muốn đẩy thức ăn lên",
+              "state": "present",
+              "candidates": [
+                {
+                  "feature": "abdominal distention",
+                  "cosine_similarity": 0.4330524567777777
+                },
+                {
+                  "feature": "excessive appetite",
+                  "cosine_similarity": 0.414529841544457
+                },
+                {
+                  "feature": "swollen abdomen",
+                  "cosine_similarity": 0.3638784806912806
+                }
+              ],
+              "requires_confirmation": true
+            },
+            {
+              "evidence": {
+                "turn_id": "u1",
+                "start": 45,
+                "end": 53,
+                "text": " chưa ói"
+              },
+              "query": "chưa ói",
+              "state": "denied",
+              "candidates": [
+                {
+                  "feature": "slurring words",
+                  "cosine_similarity": 0.3500846568518925
+                },
+                {
+                  "feature": "infertility",
+                  "cosine_similarity": 0.3155703032118501
+                },
+                {
+                  "feature": "unpredictable menstruation",
+                  "cosine_similarity": 0.31283849426567
+                }
+              ],
+              "requires_confirmation": true
+            }
+          ],
+          "embedding_calls": 2,
+          "embedding_ms": 16.11400011461228,
+          "latency_ms": 16.75670000258833,
+          "oracle_states": {}
+        },
+        "hybrid": {
+          "states": {
+            "vomiting": "denied"
+          },
+          "suggestions": [
+            {
+              "evidence": {
+                "turn_id": "u1",
+                "start": 0,
+                "end": 40,
+                "text": "Tôi thấy dạ dày cứ muốn đẩy thức ăn lên "
+              },
+              "query": "Tôi thấy dạ dày cứ muốn đẩy thức ăn lên",
+              "state": "present",
+              "candidates": [
+                {
+                  "feature": "abdominal distention",
+                  "cosine_similarity": 0.4330524567777777
+                },
+                {
+                  "feature": "excessive appetite",
+                  "cosine_similarity": 0.414529841544457
+                },
+                {
+                  "feature": "swollen abdomen",
+                  "cosine_similarity": 0.3638784806912806
+                }
+              ],
+              "requires_confirmation": true
+            },
+            {
+              "evidence": {
+                "turn_id": "u1",
+                "start": 45,
+                "end": 53,
+                "text": " chưa ói"
+              },
+              "query": "chưa",
+              "state": "denied",
+              "candidates": [
+                {
+                  "feature": "throat feels tight",
+                  "cosine_similarity": 0.3323747456514554
+                },
+                {
+                  "feature": "pelvic pressure",
+                  "cosine_similarity": 0.3018759787318268
+                },
+                {
+                  "feature": "swollen or red tonsils",
+                  "cosine_similarity": 0.2849219614049154
+                }
+              ],
+              "requires_confirmation": true
+            }
+          ],
+          "embedding_calls": 2,
+          "embedding_ms": 17.756000044755638,
+          "latency_ms": 19.65479995124042,
+          "oracle_states": {
+            "vomiting": "denied"
+          }
+        }
+      }
+    },
+    {
+      "id": "missed-v1-013",
+      "group": "multiple_symptoms",
+      "text": "Tôi bị sốt, với lại mỗi lần vận động cứ thấy không lấy đủ hơi.",
+      "expected_states": {
+        "fever": "present",
+        "shortness of breath": "present"
+      },
+      "gold_spans": [
+        {
+          "feature": "fever",
+          "start": 7,
+          "end": 10,
+          "text": "sốt"
+        },
+        {
+          "feature": "shortness of breath",
+          "start": 45,
+          "end": 61,
+          "text": "không lấy đủ hơi"
+        }
+      ],
+      "synthetic": true,
+      "review_status": "pending_human_review",
+      "ambiguity": false,
+      "annotation_note": "Authored canonical interpretation; breathing paraphrase has overlap with difficulty breathing. No clinical validation.",
+      "provenance": "Project-authored synthetic diagnostic, groups frozen before embedding inference; no patient data",
+      "used_for_alias_development": false,
+      "used_for_threshold_selection": false,
+      "missed_present": [
+        [
+          "shortness of breath",
+          "present"
+        ]
+      ],
+      "methods": {
+        "rule_based": {
+          "states": {
+            "fever": "present"
+          },
+          "suggestions": [],
+          "embedding_calls": 0,
+          "embedding_ms": 0.0,
+          "latency_ms": 0.9195999009534717,
+          "oracle_states": {
+            "fever": "present"
+          }
+        },
+        "semantic": {
+          "states": {},
+          "suggestions": [
+            {
+              "evidence": {
+                "turn_id": "u1",
+                "start": 0,
+                "end": 10,
+                "text": "Tôi bị sốt"
+              },
+              "query": "Tôi bị sốt",
+              "state": "present",
+              "candidates": [
+                {
+                  "feature": "fever",
+                  "cosine_similarity": 0.44201260142790466
+                },
+                {
+                  "feature": "flu-like syndrome",
+                  "cosine_similarity": 0.38423531772163605
+                },
+                {
+                  "feature": "fluid retention",
+                  "cosine_similarity": 0.33724195592164097
+                }
+              ],
+              "requires_confirmation": true
+            },
+            {
+              "evidence": {
+                "turn_id": "u1",
+                "start": 19,
+                "end": 61,
+                "text": " mỗi lần vận động cứ thấy không lấy đủ hơi"
+              },
+              "query": "mỗi lần vận động cứ thấy không lấy đủ hơi",
+              "state": "denied",
+              "candidates": [
+                {
+                  "feature": "foot or toe weakness",
+                  "cosine_similarity": 0.49118658727846565
+                },
+                {
+                  "feature": "abnormal involuntary movements",
+                  "cosine_similarity": 0.48408458498916535
+                },
+                {
+                  "feature": "problems with movement",
+                  "cosine_similarity": 0.46576021976557413
+                }
+              ],
+              "requires_confirmation": true
+            }
+          ],
+          "embedding_calls": 2,
+          "embedding_ms": 20.187299931421876,
+          "latency_ms": 20.894099958240986,
+          "oracle_states": {
+            "fever": "present"
+          }
+        },
+        "hybrid": {
+          "states": {
+            "fever": "present"
+          },
+          "suggestions": [
+            {
+              "evidence": {
+                "turn_id": "u1",
+                "start": 19,
+                "end": 61,
+                "text": " mỗi lần vận động cứ thấy không lấy đủ hơi"
+              },
+              "query": "mỗi lần vận động cứ thấy không lấy đủ hơi",
+              "state": "denied",
+              "candidates": [
+                {
+                  "feature": "foot or toe weakness",
+                  "cosine_similarity": 0.49118658727846565
+                },
+                {
+                  "feature": "abnormal involuntary movements",
+                  "cosine_similarity": 0.48408458498916535
+                },
+                {
+                  "feature": "problems with movement",
+                  "cosine_similarity": 0.46576021976557413
+                }
+              ],
+              "requires_confirmation": true
+            }
+          ],
+          "embedding_calls": 1,
+          "embedding_ms": 8.781099924817681,
+          "latency_ms": 10.089699877426028,
+          "oracle_states": {
+            "fever": "present"
+          }
+        }
+      }
+    },
+    {
+      "id": "missed-v1-014",
+      "group": "multiple_symptoms",
+      "text": "Tôi bị ho và tôi cứ có cảm giác sắp ói ra.",
+      "expected_states": {
+        "cough": "present",
+        "nausea": "present"
+      },
+      "gold_spans": [
+        {
+          "feature": "cough",
+          "start": 7,
+          "end": 9,
+          "text": "ho"
+        },
+        {
+          "feature": "nausea",
+          "start": 20,
+          "end": 41,
+          "text": "có cảm giác sắp ói ra"
+        }
+      ],
+      "synthetic": true,
+      "review_status": "pending_human_review",
+      "ambiguity": false,
+      "annotation_note": "Authored canonical interpretation; breathing paraphrase has overlap with difficulty breathing. No clinical validation.",
+      "provenance": "Project-authored synthetic diagnostic, groups frozen before embedding inference; no patient data",
+      "used_for_alias_development": false,
+      "used_for_threshold_selection": false,
+      "missed_present": [
+        [
+          "nausea",
+          "present"
+        ]
+      ],
+      "methods": {
+        "rule_based": {
+          "states": {
+            "cough": "present",
+            "vomiting": "present"
+          },
+          "suggestions": [],
+          "embedding_calls": 0,
+          "embedding_ms": 0.0,
+          "latency_ms": 1.1129999766126275,
+          "oracle_states": {
+            "cough": "present",
+            "vomiting": "present"
+          }
+        },
+        "semantic": {
+          "states": {},
+          "suggestions": [
+            {
+              "evidence": {
+                "turn_id": "u1",
+                "start": 0,
+                "end": 10,
+                "text": "Tôi bị ho "
+              },
+              "query": "Tôi bị ho",
+              "state": "present",
+              "candidates": [
+                {
+                  "feature": "nausea",
+                  "cosine_similarity": 0.37613252652833395
+                },
+                {
+                  "feature": "vomiting",
+                  "cosine_similarity": 0.36753660688401923
+                },
+                {
+                  "feature": "feeling hot and cold",
+                  "cosine_similarity": 0.3099272035215992
+                }
+              ],
+              "requires_confirmation": true
+            },
+            {
+              "evidence": {
+                "turn_id": "u1",
+                "start": 12,
+                "end": 41,
+                "text": " tôi cứ có cảm giác sắp ói ra"
+              },
+              "query": "tôi cứ có cảm giác sắp ói ra",
+              "state": "present",
+              "candidates": [
+                {
+                  "feature": "feeling hot and cold",
+                  "cosine_similarity": 0.3858237757025128
+                },
+                {
+                  "feature": "pelvic pressure",
+                  "cosine_similarity": 0.3841439871260591
+                },
+                {
+                  "feature": "throat feels tight",
+                  "cosine_similarity": 0.3636356106516925
+                }
+              ],
+              "requires_confirmation": true
+            }
+          ],
+          "embedding_calls": 2,
+          "embedding_ms": 17.58530002553016,
+          "latency_ms": 18.161099986173213,
+          "oracle_states": {
+            "nausea": "present"
+          }
+        },
+        "hybrid": {
+          "states": {
+            "cough": "present",
+            "vomiting": "present"
+          },
+          "suggestions": [
+            {
+              "evidence": {
+                "turn_id": "u1",
+                "start": 12,
+                "end": 41,
+                "text": " tôi cứ có cảm giác sắp ói ra"
+              },
+              "query": "tôi cứ có cảm giác sắp    ra",
+              "state": "present",
+              "candidates": [
+                {
+                  "feature": "feeling hot and cold",
+                  "cosine_similarity": 0.30481702383920395
+                },
+                {
+                  "feature": "pelvic pressure",
+                  "cosine_similarity": 0.24269247191657795
+                },
+                {
+                  "feature": "throat feels tight",
+                  "cosine_similarity": 0.24263849984448993
+                }
+              ],
+              "requires_confirmation": true
+            }
+          ],
+          "embedding_calls": 1,
+          "embedding_ms": 9.630099986679852,
+          "latency_ms": 11.096899979747832,
+          "oracle_states": {
+            "cough": "present",
+            "vomiting": "present"
+          }
+        }
+      }
+    },
+    {
+      "id": "missed-v1-015",
+      "group": "multiple_symptoms",
+      "text": "Tôi bị sốt, tôi rã rời hết sức dù chỉ làm việc nhẹ.",
+      "expected_states": {
+        "fever": "present",
+        "fatigue": "present"
+      },
+      "gold_spans": [
+        {
+          "feature": "fever",
+          "start": 7,
+          "end": 10,
+          "text": "sốt"
+        },
+        {
+          "feature": "fatigue",
+          "start": 16,
+          "end": 30,
+          "text": "rã rời hết sức"
+        }
+      ],
+      "synthetic": true,
+      "review_status": "pending_human_review",
+      "ambiguity": false,
+      "annotation_note": "Authored canonical interpretation; breathing paraphrase has overlap with difficulty breathing. No clinical validation.",
+      "provenance": "Project-authored synthetic diagnostic, groups frozen before embedding inference; no patient data",
+      "used_for_alias_development": false,
+      "used_for_threshold_selection": false,
+      "missed_present": [
+        [
+          "fatigue",
+          "present"
+        ]
+      ],
+      "methods": {
+        "rule_based": {
+          "states": {
+            "fever": "present"
+          },
+          "suggestions": [],
+          "embedding_calls": 0,
+          "embedding_ms": 0.0,
+          "latency_ms": 0.9936999995261431,
+          "oracle_states": {
+            "fever": "present"
+          }
+        },
+        "semantic": {
+          "states": {},
+          "suggestions": [
+            {
+              "evidence": {
+                "turn_id": "u1",
+                "start": 0,
+                "end": 10,
+                "text": "Tôi bị sốt"
+              },
+              "query": "Tôi bị sốt",
+              "state": "present",
+              "candidates": [
+                {
+                  "feature": "fever",
+                  "cosine_similarity": 0.44201260142790466
+                },
+                {
+                  "feature": "flu-like syndrome",
+                  "cosine_similarity": 0.38423531772163605
+                },
+                {
+                  "feature": "fluid retention",
+                  "cosine_similarity": 0.33724195592164097
+                }
+              ],
+              "requires_confirmation": true
+            },
+            {
+              "evidence": {
+                "turn_id": "u1",
+                "start": 11,
+                "end": 50,
+                "text": " tôi rã rời hết sức dù chỉ làm việc nhẹ"
+              },
+              "query": "tôi rã rời hết sức dù chỉ làm việc nhẹ",
+              "state": "denied",
+              "candidates": [
+                {
+                  "feature": "fatigue",
+                  "cosine_similarity": 0.2765590820109736
+                },
+                {
+                  "feature": "premenstrual tension or irritability",
+                  "cosine_similarity": 0.2129008460130037
+                },
+                {
+                  "feature": "problems with orgasm",
+                  "cosine_similarity": 0.20076010089242188
+                }
+              ],
+              "requires_confirmation": true
+            }
+          ],
+          "embedding_calls": 2,
+          "embedding_ms": 16.98649988975376,
+          "latency_ms": 17.663200036622584,
+          "oracle_states": {
+            "fever": "present"
+          }
+        },
+        "hybrid": {
+          "states": {
+            "fever": "present"
+          },
+          "suggestions": [
+            {
+              "evidence": {
+                "turn_id": "u1",
+                "start": 11,
+                "end": 50,
+                "text": " tôi rã rời hết sức dù chỉ làm việc nhẹ"
+              },
+              "query": "tôi rã rời hết sức dù chỉ làm việc nhẹ",
+              "state": "denied",
+              "candidates": [
+                {
+                  "feature": "fatigue",
+                  "cosine_similarity": 0.2765590820109736
+                },
+                {
+                  "feature": "premenstrual tension or irritability",
+                  "cosine_similarity": 0.2129008460130037
+                },
+                {
+                  "feature": "problems with orgasm",
+                  "cosine_similarity": 0.20076010089242188
+                }
+              ],
+              "requires_confirmation": true
+            }
+          ],
+          "embedding_calls": 1,
+          "embedding_ms": 10.230499901808798,
+          "latency_ms": 11.63970003835857,
+          "oracle_states": {
+            "fever": "present"
+          }
+        }
+      }
+    },
+    {
+      "id": "missed-v1-016",
+      "group": "multiple_symptoms",
+      "text": "Tôi bị buồn nôn và tôi thấy căn phòng như đang quay vòng quanh mình.",
+      "expected_states": {
+        "nausea": "present",
+        "dizziness": "present"
+      },
+      "gold_spans": [
+        {
+          "feature": "nausea",
+          "start": 7,
+          "end": 15,
+          "text": "buồn nôn"
+        },
+        {
+          "feature": "dizziness",
+          "start": 28,
+          "end": 67,
+          "text": "căn phòng như đang quay vòng quanh mình"
+        }
+      ],
+      "synthetic": true,
+      "review_status": "pending_human_review",
+      "ambiguity": false,
+      "annotation_note": "Authored canonical interpretation; breathing paraphrase has overlap with difficulty breathing. No clinical validation.",
+      "provenance": "Project-authored synthetic diagnostic, groups frozen before embedding inference; no patient data",
+      "used_for_alias_development": false,
+      "used_for_threshold_selection": false,
+      "missed_present": [
+        [
+          "dizziness",
+          "present"
+        ]
+      ],
+      "methods": {
+        "rule_based": {
+          "states": {
+            "nausea": "present"
+          },
+          "suggestions": [],
+          "embedding_calls": 0,
+          "embedding_ms": 0.0,
+          "latency_ms": 0.9740999666973948,
+          "oracle_states": {
+            "nausea": "present"
+          }
+        },
+        "semantic": {
+          "states": {},
+          "suggestions": [
+            {
+              "evidence": {
+                "turn_id": "u1",
+                "start": 0,
+                "end": 16,
+                "text": "Tôi bị buồn nôn "
+              },
+              "query": "Tôi bị buồn nôn",
+              "state": "present",
+              "candidates": [
+                {
+                  "feature": "vomiting",
+                  "cosine_similarity": 0.45021211807059813
+                },
+                {
+                  "feature": "nausea",
+                  "cosine_similarity": 0.4410285685902894
+                },
+                {
+                  "feature": "excessive appetite",
+                  "cosine_similarity": 0.2779114853213025
+                }
+              ],
+              "requires_confirmation": true
+            },
+            {
+              "evidence": {
+                "turn_id": "u1",
+                "start": 18,
+                "end": 67,
+                "text": " tôi thấy căn phòng như đang quay vòng quanh mình"
+              },
+              "query": "tôi thấy căn phòng như đang quay vòng quanh mình",
+              "state": "present",
+              "candidates": [
+                {
+                  "feature": "feet turned in",
+                  "cosine_similarity": 0.2763314303484963
+                },
+                {
+                  "feature": "pelvic pressure",
+                  "cosine_similarity": 0.22243210059080548
+                },
+                {
+                  "feature": "spots or clouds in vision",
+                  "cosine_similarity": 0.20735053191072433
+                }
+              ],
+              "requires_confirmation": true
+            }
+          ],
+          "embedding_calls": 2,
+          "embedding_ms": 17.160199931822717,
+          "latency_ms": 17.81160000246018,
+          "oracle_states": {
+            "nausea": "present"
+          }
+        },
+        "hybrid": {
+          "states": {
+            "nausea": "present"
+          },
+          "suggestions": [
+            {
+              "evidence": {
+                "turn_id": "u1",
+                "start": 18,
+                "end": 67,
+                "text": " tôi thấy căn phòng như đang quay vòng quanh mình"
+              },
+              "query": "tôi thấy căn phòng như đang quay vòng quanh mình",
+              "state": "present",
+              "candidates": [
+                {
+                  "feature": "feet turned in",
+                  "cosine_similarity": 0.2763314303484963
+                },
+                {
+                  "feature": "pelvic pressure",
+                  "cosine_similarity": 0.22243210059080548
+                },
+                {
+                  "feature": "spots or clouds in vision",
+                  "cosine_similarity": 0.20735053191072433
+                }
+              ],
+              "requires_confirmation": true
+            }
+          ],
+          "embedding_calls": 1,
+          "embedding_ms": 8.817699970677495,
+          "latency_ms": 10.17699996009469,
+          "oracle_states": {
+            "nausea": "present"
+          }
+        }
+      }
+    },
+    {
+      "id": "missed-v1-017",
+      "group": "multiple_symptoms",
+      "text": "Tôi bị ho, tôi bị sốt, tôi thấy đầu như bị ai siết chặt gây đau.",
+      "expected_states": {
+        "cough": "present",
+        "fever": "present",
+        "headache": "present"
+      },
+      "gold_spans": [
+        {
+          "feature": "cough",
+          "start": 7,
+          "end": 9,
+          "text": "ho"
+        },
+        {
+          "feature": "fever",
+          "start": 18,
+          "end": 21,
+          "text": "sốt"
+        },
+        {
+          "feature": "headache",
+          "start": 32,
+          "end": 63,
+          "text": "đầu như bị ai siết chặt gây đau"
+        }
+      ],
+      "synthetic": true,
+      "review_status": "pending_human_review",
+      "ambiguity": false,
+      "annotation_note": "Authored canonical interpretation; breathing paraphrase has overlap with difficulty breathing. No clinical validation.",
+      "provenance": "Project-authored synthetic diagnostic, groups frozen before embedding inference; no patient data",
+      "used_for_alias_development": false,
+      "used_for_threshold_selection": false,
+      "missed_present": [
+        [
+          "headache",
+          "present"
+        ]
+      ],
+      "methods": {
+        "rule_based": {
+          "states": {
+            "cough": "present",
+            "fever": "present"
+          },
+          "suggestions": [],
+          "embedding_calls": 0,
+          "embedding_ms": 0.0,
+          "latency_ms": 1.4319999609142542,
+          "oracle_states": {
+            "cough": "present",
+            "fever": "present"
+          }
+        },
+        "semantic": {
+          "states": {},
+          "suggestions": [
+            {
+              "evidence": {
+                "turn_id": "u1",
+                "start": 0,
+                "end": 9,
+                "text": "Tôi bị ho"
+              },
+              "query": "Tôi bị ho",
+              "state": "present",
+              "candidates": [
+                {
+                  "feature": "nausea",
+                  "cosine_similarity": 0.37613252652833395
+                },
+                {
+                  "feature": "vomiting",
+                  "cosine_similarity": 0.36753660688401923
+                },
+                {
+                  "feature": "feeling hot and cold",
+                  "cosine_similarity": 0.3099272035215992
+                }
+              ],
+              "requires_confirmation": true
+            },
+            {
+              "evidence": {
+                "turn_id": "u1",
+                "start": 10,
+                "end": 21,
+                "text": " tôi bị sốt"
+              },
+              "query": "tôi bị sốt",
+              "state": "present",
+              "candidates": [
+                {
+                  "feature": "fever",
+                  "cosine_similarity": 0.4423591028196677
+                },
+                {
+                  "feature": "flu-like syndrome",
+                  "cosine_similarity": 0.389204135258195
+                },
+                {
+                  "feature": "fluid retention",
+                  "cosine_similarity": 0.3393813267879601
+                }
+              ],
+              "requires_confirmation": true
+            },
+            {
+              "evidence": {
+                "turn_id": "u1",
+                "start": 22,
+                "end": 63,
+                "text": " tôi thấy đầu như bị ai siết chặt gây đau"
+              },
+              "query": "tôi thấy đầu như bị ai siết chặt gây đau",
+              "state": "present",
+              "candidates": [
+                {
+                  "feature": "facial pain",
+                  "cosine_similarity": 0.4636822164992146
+                },
+                {
+                  "feature": "lower body pain",
+                  "cosine_similarity": 0.4539384445922024
+                },
+                {
+                  "feature": "groin pain",
+                  "cosine_similarity": 0.4489512772258625
+                }
+              ],
+              "requires_confirmation": true
+            }
+          ],
+          "embedding_calls": 3,
+          "embedding_ms": 23.516999906860292,
+          "latency_ms": 24.506499990820885,
+          "oracle_states": {
+            "fever": "present"
+          }
+        },
+        "hybrid": {
+          "states": {
+            "cough": "present",
+            "fever": "present"
+          },
+          "suggestions": [
+            {
+              "evidence": {
+                "turn_id": "u1",
+                "start": 22,
+                "end": 63,
+                "text": " tôi thấy đầu như bị ai siết chặt gây đau"
+              },
+              "query": "tôi thấy đầu như bị ai siết chặt gây đau",
+              "state": "present",
+              "candidates": [
+                {
+                  "feature": "facial pain",
+                  "cosine_similarity": 0.4636822164992146
+                },
+                {
+                  "feature": "lower body pain",
+                  "cosine_similarity": 0.4539384445922024
+                },
+                {
+                  "feature": "groin pain",
+                  "cosine_similarity": 0.4489512772258625
+                }
+              ],
+              "requires_confirmation": true
+            }
+          ],
+          "embedding_calls": 1,
+          "embedding_ms": 9.815099998377264,
+          "latency_ms": 11.69129996560514,
+          "oracle_states": {
+            "cough": "present",
+            "fever": "present"
+          }
+        }
+      }
+    },
+    {
+      "id": "missed-v1-018",
+      "group": "multiple_symptoms",
+      "text": "Tôi bị đau đầu nhưng tôi cũng rã rời hết sức dù chỉ làm việc nhẹ.",
+      "expected_states": {
+        "headache": "present",
+        "fatigue": "present"
+      },
+      "gold_spans": [
+        {
+          "feature": "headache",
+          "start": 7,
+          "end": 14,
+          "text": "đau đầu"
+        },
+        {
+          "feature": "fatigue",
+          "start": 30,
+          "end": 44,
+          "text": "rã rời hết sức"
+        }
+      ],
+      "synthetic": true,
+      "review_status": "pending_human_review",
+      "ambiguity": false,
+      "annotation_note": "Authored canonical interpretation; breathing paraphrase has overlap with difficulty breathing. No clinical validation.",
+      "provenance": "Project-authored synthetic diagnostic, groups frozen before embedding inference; no patient data",
+      "used_for_alias_development": false,
+      "used_for_threshold_selection": false,
+      "missed_present": [
+        [
+          "fatigue",
+          "present"
+        ]
+      ],
+      "methods": {
+        "rule_based": {
+          "states": {
+            "headache": "present"
+          },
+          "suggestions": [],
+          "embedding_calls": 0,
+          "embedding_ms": 0.0,
+          "latency_ms": 1.077100052498281,
+          "oracle_states": {
+            "headache": "present"
+          }
+        },
+        "semantic": {
+          "states": {},
+          "suggestions": [
+            {
+              "evidence": {
+                "turn_id": "u1",
+                "start": 0,
+                "end": 15,
+                "text": "Tôi bị đau đầu "
+              },
+              "query": "Tôi bị đau đầu",
+              "state": "present",
+              "candidates": [
+                {
+                  "feature": "headache",
+                  "cosine_similarity": 0.47707276120354414
+                },
+                {
+                  "feature": "ear pain",
+                  "cosine_similarity": 0.40125236864518443
+                },
+                {
+                  "feature": "neck pain",
+                  "cosine_similarity": 0.3693986712482221
+                }
+              ],
+              "requires_confirmation": true
+            },
+            {
+              "evidence": {
+                "turn_id": "u1",
+                "start": 20,
+                "end": 64,
+                "text": " tôi cũng rã rời hết sức dù chỉ làm việc nhẹ"
+              },
+              "query": "tôi cũng rã rời hết sức dù chỉ làm việc nhẹ",
+              "state": "denied",
+              "candidates": [
+                {
+                  "feature": "fatigue",
+                  "cosine_similarity": 0.2787084065726157
+                },
+                {
+                  "feature": "premenstrual tension or irritability",
+                  "cosine_similarity": 0.21846405749786707
+                },
+                {
+                  "feature": "problems with orgasm",
+                  "cosine_similarity": 0.20177390498584682
+                }
+              ],
+              "requires_confirmation": true
+            }
+          ],
+          "embedding_calls": 2,
+          "embedding_ms": 17.73779990617186,
+          "latency_ms": 18.40599998831749,
+          "oracle_states": {
+            "headache": "present"
+          }
+        },
+        "hybrid": {
+          "states": {
+            "headache": "present"
+          },
+          "suggestions": [
+            {
+              "evidence": {
+                "turn_id": "u1",
+                "start": 20,
+                "end": 64,
+                "text": " tôi cũng rã rời hết sức dù chỉ làm việc nhẹ"
+              },
+              "query": "tôi cũng rã rời hết sức dù chỉ làm việc nhẹ",
+              "state": "denied",
+              "candidates": [
+                {
+                  "feature": "fatigue",
+                  "cosine_similarity": 0.2787084065726157
+                },
+                {
+                  "feature": "premenstrual tension or irritability",
+                  "cosine_similarity": 0.21846405749786707
+                },
+                {
+                  "feature": "problems with orgasm",
+                  "cosine_similarity": 0.20177390498584682
+                }
+              ],
+              "requires_confirmation": true
+            }
+          ],
+          "embedding_calls": 1,
+          "embedding_ms": 9.833700023591518,
+          "latency_ms": 11.302000028081238,
+          "oracle_states": {
+            "headache": "present"
+          }
+        }
+      }
+    },
+    {
+      "id": "missed-v1-019",
+      "group": "negation_subject",
+      "text": "Tôi không bị ho.",
+      "expected_states": {
+        "cough": "denied"
+      },
+      "gold_spans": [
+        {
+          "feature": "cough",
+          "start": 13,
+          "end": 15,
+          "text": "ho"
+        }
+      ],
+      "synthetic": true,
+      "review_status": "pending_human_review",
+      "ambiguity": false,
+      "annotation_note": "Authored canonical interpretation; breathing paraphrase has overlap with difficulty breathing. No clinical validation.",
+      "provenance": "Project-authored synthetic diagnostic, groups frozen before embedding inference; no patient data",
+      "used_for_alias_development": false,
+      "used_for_threshold_selection": false,
+      "missed_present": [],
+      "methods": {
+        "rule_based": {
+          "states": {
+            "cough": "denied"
+          },
+          "suggestions": [],
+          "embedding_calls": 0,
+          "embedding_ms": 0.0,
+          "latency_ms": 3.3933999948203564,
+          "oracle_states": {
+            "cough": "denied"
+          }
+        },
+        "semantic": {
+          "states": {},
+          "suggestions": [
+            {
+              "evidence": {
+                "turn_id": "u1",
+                "start": 0,
+                "end": 15,
+                "text": "Tôi không bị ho"
+              },
+              "query": "Tôi không bị ho",
+              "state": "denied",
+              "candidates": [
+                {
+                  "feature": "vomiting",
+                  "cosine_similarity": 0.26174072461589915
+                },
+                {
+                  "feature": "neck weakness",
+                  "cosine_similarity": 0.2524817577413697
+                },
+                {
+                  "feature": "apnea",
+                  "cosine_similarity": 0.24709493394253174
+                }
+              ],
+              "requires_confirmation": true
+            }
+          ],
+          "embedding_calls": 1,
+          "embedding_ms": 8.678499958477914,
+          "latency_ms": 8.97140009328723,
+          "oracle_states": {}
+        },
+        "hybrid": {
+          "states": {
+            "cough": "denied"
+          },
+          "suggestions": [
+            {
+              "evidence": {
+                "turn_id": "u1",
+                "start": 0,
+                "end": 15,
+                "text": "Tôi không bị ho"
+              },
+              "query": "Tôi không bị",
+              "state": "denied",
+              "candidates": [
+                {
+                  "feature": "unpredictable menstruation",
+                  "cosine_similarity": 0.28313074211494665
+                },
+                {
+                  "feature": "neck weakness",
+                  "cosine_similarity": 0.2596604122054525
+                },
+                {
+                  "feature": "weakness",
+                  "cosine_similarity": 0.2577585309862861
+                }
+              ],
+              "requires_confirmation": true
+            }
+          ],
+          "embedding_calls": 1,
+          "embedding_ms": 6.549699930474162,
+          "latency_ms": 10.326300049200654,
+          "oracle_states": {
+            "cough": "denied"
+          }
+        }
+      }
+    },
+    {
+      "id": "missed-v1-020",
+      "group": "negation_subject",
+      "text": "Tôi chưa chắc bị buồn nôn.",
+      "expected_states": {
+        "nausea": "uncertain"
+      },
+      "gold_spans": [
+        {
+          "feature": "nausea",
+          "start": 17,
+          "end": 25,
+          "text": "buồn nôn"
+        }
+      ],
+      "synthetic": true,
+      "review_status": "pending_human_review",
+      "ambiguity": false,
+      "annotation_note": "Authored canonical interpretation; breathing paraphrase has overlap with difficulty breathing. No clinical validation.",
+      "provenance": "Project-authored synthetic diagnostic, groups frozen before embedding inference; no patient data",
+      "used_for_alias_development": false,
+      "used_for_threshold_selection": false,
+      "missed_present": [],
+      "methods": {
+        "rule_based": {
+          "states": {
+            "nausea": "uncertain"
+          },
+          "suggestions": [],
+          "embedding_calls": 0,
+          "embedding_ms": 0.0,
+          "latency_ms": 1.2003000592812896,
+          "oracle_states": {
+            "nausea": "uncertain"
+          }
+        },
+        "semantic": {
+          "states": {},
+          "suggestions": [
+            {
+              "evidence": {
+                "turn_id": "u1",
+                "start": 0,
+                "end": 25,
+                "text": "Tôi chưa chắc bị buồn nôn"
+              },
+              "query": "Tôi chưa chắc bị buồn nôn",
+              "state": "uncertain",
+              "candidates": [
+                {
+                  "feature": "vomiting",
+                  "cosine_similarity": 0.4586810464946534
+                },
+                {
+                  "feature": "nausea",
+                  "cosine_similarity": 0.4355928111073694
+                },
+                {
+                  "feature": "burning abdominal pain",
+                  "cosine_similarity": 0.3396894408730917
+                }
+              ],
+              "requires_confirmation": true
+            }
+          ],
+          "embedding_calls": 1,
+          "embedding_ms": 11.618899996392429,
+          "latency_ms": 11.961500043980777,
+          "oracle_states": {
+            "nausea": "uncertain"
+          }
+        },
+        "hybrid": {
+          "states": {
+            "nausea": "uncertain"
+          },
+          "suggestions": [
+            {
+              "evidence": {
+                "turn_id": "u1",
+                "start": 0,
+                "end": 25,
+                "text": "Tôi chưa chắc bị buồn nôn"
+              },
+              "query": "Tôi chưa chắc bị",
+              "state": "uncertain",
+              "candidates": [
+                {
+                  "feature": "lump in throat",
+                  "cosine_similarity": 0.3263027101288831
+                },
+                {
+                  "feature": "restlessness",
+                  "cosine_similarity": 0.31798040816086987
+                },
+                {
+                  "feature": "skin on head or neck looks infected",
+                  "cosine_similarity": 0.3131530143708672
+                }
+              ],
+              "requires_confirmation": true
+            }
+          ],
+          "embedding_calls": 1,
+          "embedding_ms": 9.352900087833405,
+          "latency_ms": 10.902100009843707,
+          "oracle_states": {
+            "nausea": "uncertain"
+          }
+        }
+      }
+    },
+    {
+      "id": "missed-v1-021",
+      "group": "negation_subject",
+      "text": "Mẹ tôi cứ có cảm giác sắp ói ra.",
+      "expected_states": {},
+      "gold_spans": [],
+      "synthetic": true,
+      "review_status": "pending_human_review",
+      "ambiguity": false,
+      "annotation_note": "Authored canonical interpretation; breathing paraphrase has overlap with difficulty breathing. No clinical validation.",
+      "provenance": "Project-authored synthetic diagnostic, groups frozen before embedding inference; no patient data",
+      "used_for_alias_development": false,
+      "used_for_threshold_selection": false,
+      "missed_present": [],
+      "methods": {
+        "rule_based": {
+          "states": {},
+          "suggestions": [],
+          "embedding_calls": 0,
+          "embedding_ms": 0.0,
+          "latency_ms": 0.5396000342443585,
+          "oracle_states": {}
+        },
+        "semantic": {
+          "states": {},
+          "suggestions": [],
+          "embedding_calls": 0,
+          "embedding_ms": 0.0,
+          "latency_ms": 0.04329998046159744,
+          "oracle_states": {}
+        },
+        "hybrid": {
+          "states": {},
+          "suggestions": [],
+          "embedding_calls": 0,
+          "embedding_ms": 0.0,
+          "latency_ms": 0.570200034417212,
+          "oracle_states": {}
+        }
+      }
+    },
+    {
+      "id": "missed-v1-022",
+      "group": "negation_subject",
+      "text": "Nhân vật trong truyện rã rời hết sức.",
+      "expected_states": {},
+      "gold_spans": [],
+      "synthetic": true,
+      "review_status": "pending_human_review",
+      "ambiguity": false,
+      "annotation_note": "Authored canonical interpretation; breathing paraphrase has overlap with difficulty breathing. No clinical validation.",
+      "provenance": "Project-authored synthetic diagnostic, groups frozen before embedding inference; no patient data",
+      "used_for_alias_development": false,
+      "used_for_threshold_selection": false,
+      "missed_present": [],
+      "methods": {
+        "rule_based": {
+          "states": {},
+          "suggestions": [],
+          "embedding_calls": 0,
+          "embedding_ms": 0.0,
+          "latency_ms": 0.46330003533512354,
+          "oracle_states": {}
+        },
+        "semantic": {
+          "states": {},
+          "suggestions": [],
+          "embedding_calls": 0,
+          "embedding_ms": 0.0,
+          "latency_ms": 0.04120008088648319,
+          "oracle_states": {}
+        },
+        "hybrid": {
+          "states": {},
+          "suggestions": [],
+          "embedding_calls": 0,
+          "embedding_ms": 0.0,
+          "latency_ms": 0.4934000317007303,
+          "oracle_states": {}
+        }
+      }
+    },
+    {
+      "id": "missed-v1-023",
+      "group": "negation_subject",
+      "text": "Giả sử tôi có cảm giác sắp ói ra thì sao?",
+      "expected_states": {},
+      "gold_spans": [],
+      "synthetic": true,
+      "review_status": "pending_human_review",
+      "ambiguity": false,
+      "annotation_note": "Authored canonical interpretation; breathing paraphrase has overlap with difficulty breathing. No clinical validation.",
+      "provenance": "Project-authored synthetic diagnostic, groups frozen before embedding inference; no patient data",
+      "used_for_alias_development": false,
+      "used_for_threshold_selection": false,
+      "missed_present": [],
+      "methods": {
+        "rule_based": {
+          "states": {},
+          "suggestions": [],
+          "embedding_calls": 0,
+          "embedding_ms": 0.0,
+          "latency_ms": 0.242499983869493,
+          "oracle_states": {}
+        },
+        "semantic": {
+          "states": {},
+          "suggestions": [],
+          "embedding_calls": 0,
+          "embedding_ms": 0.0,
+          "latency_ms": 0.04339998122304678,
+          "oracle_states": {}
+        },
+        "hybrid": {
+          "states": {},
+          "suggestions": [],
+          "embedding_calls": 0,
+          "embedding_ms": 0.0,
+          "latency_ms": 0.2796000335365534,
+          "oracle_states": {}
+        }
+      }
+    },
+    {
+      "id": "missed-v1-024",
+      "group": "negation_subject",
+      "text": "Tôi đọc câu \"không lấy đủ hơi\" trong sách.",
+      "expected_states": {},
+      "gold_spans": [],
+      "synthetic": true,
+      "review_status": "pending_human_review",
+      "ambiguity": false,
+      "annotation_note": "Authored canonical interpretation; breathing paraphrase has overlap with difficulty breathing. No clinical validation.",
+      "provenance": "Project-authored synthetic diagnostic, groups frozen before embedding inference; no patient data",
+      "used_for_alias_development": false,
+      "used_for_threshold_selection": false,
+      "missed_present": [],
+      "methods": {
+        "rule_based": {
+          "states": {},
+          "suggestions": [],
+          "embedding_calls": 0,
+          "embedding_ms": 0.0,
+          "latency_ms": 0.17110002227127552,
+          "oracle_states": {}
+        },
+        "semantic": {
+          "states": {},
+          "suggestions": [],
+          "embedding_calls": 0,
+          "embedding_ms": 0.0,
+          "latency_ms": 0.06870005745440722,
+          "oracle_states": {}
+        },
+        "hybrid": {
+          "states": {},
+          "suggestions": [],
+          "embedding_calls": 0,
+          "embedding_ms": 0.0,
+          "latency_ms": 0.23040012456476688,
+          "oracle_states": {}
+        }
+      }
+    },
+    {
+      "id": "missed-v1-025",
+      "group": "ambiguous",
+      "text": "Tôi thấy người không ổn.",
+      "expected_states": {},
+      "gold_spans": [],
+      "synthetic": true,
+      "review_status": "pending_human_review",
+      "ambiguity": true,
+      "annotation_note": "Authored canonical interpretation; breathing paraphrase has overlap with difficulty breathing. No clinical validation.",
+      "provenance": "Project-authored synthetic diagnostic, groups frozen before embedding inference; no patient data",
+      "used_for_alias_development": false,
+      "used_for_threshold_selection": false,
+      "missed_present": [],
+      "methods": {
+        "rule_based": {
+          "states": {},
+          "suggestions": [],
+          "embedding_calls": 0,
+          "embedding_ms": 0.0,
+          "latency_ms": 0.25779998395591974,
+          "oracle_states": {}
+        },
+        "semantic": {
+          "states": {},
+          "suggestions": [
+            {
+              "evidence": {
+                "turn_id": "u1",
+                "start": 0,
+                "end": 23,
+                "text": "Tôi thấy người không ổn"
+              },
+              "query": "Tôi thấy người không ổn",
+              "state": "denied",
+              "candidates": [
+                {
+                  "feature": "excessive anger",
+                  "cosine_similarity": 0.3538628623908623
+                },
+                {
+                  "feature": "pain during intercourse",
+                  "cosine_similarity": 0.3031997268115094
+                },
+                {
+                  "feature": "foreign body sensation in eye",
+                  "cosine_similarity": 0.30286227689271983
+                }
+              ],
+              "requires_confirmation": true
+            }
+          ],
+          "embedding_calls": 1,
+          "embedding_ms": 8.358399965800345,
+          "latency_ms": 8.866299991495907,
+          "oracle_states": {}
+        },
+        "hybrid": {
+          "states": {},
+          "suggestions": [
+            {
+              "evidence": {
+                "turn_id": "u1",
+                "start": 0,
+                "end": 23,
+                "text": "Tôi thấy người không ổn"
+              },
+              "query": "Tôi thấy người không ổn",
+              "state": "denied",
+              "candidates": [
+                {
+                  "feature": "excessive anger",
+                  "cosine_similarity": 0.3538628623908623
+                },
+                {
+                  "feature": "pain during intercourse",
+                  "cosine_similarity": 0.3031997268115094
+                },
+                {
+                  "feature": "foreign body sensation in eye",
+                  "cosine_similarity": 0.30286227689271983
+                }
+              ],
+              "requires_confirmation": true
+            }
+          ],
+          "embedding_calls": 1,
+          "embedding_ms": 11.112299980595708,
+          "latency_ms": 11.765699950046837,
+          "oracle_states": {}
+        }
+      }
+    },
+    {
+      "id": "missed-v1-026",
+      "group": "ambiguous",
+      "text": "Tôi có cảm giác lạ trong người.",
+      "expected_states": {},
+      "gold_spans": [],
+      "synthetic": true,
+      "review_status": "pending_human_review",
+      "ambiguity": true,
+      "annotation_note": "Authored canonical interpretation; breathing paraphrase has overlap with difficulty breathing. No clinical validation.",
+      "provenance": "Project-authored synthetic diagnostic, groups frozen before embedding inference; no patient data",
+      "used_for_alias_development": false,
+      "used_for_threshold_selection": false,
+      "missed_present": [],
+      "methods": {
+        "rule_based": {
+          "states": {},
+          "suggestions": [],
+          "embedding_calls": 0,
+          "embedding_ms": 0.0,
+          "latency_ms": 0.41800003964453936,
+          "oracle_states": {}
+        },
+        "semantic": {
+          "states": {},
+          "suggestions": [
+            {
+              "evidence": {
+                "turn_id": "u1",
+                "start": 0,
+                "end": 30,
+                "text": "Tôi có cảm giác lạ trong người"
+              },
+              "query": "Tôi có cảm giác lạ trong người",
+              "state": "present",
+              "candidates": [
+                {
+                  "feature": "foreign body sensation in eye",
+                  "cosine_similarity": 0.47398738956118724
+                },
+                {
+                  "feature": "throat feels tight",
+                  "cosine_similarity": 0.4137164386912541
+                },
+                {
+                  "feature": "pelvic pressure",
+                  "cosine_similarity": 0.41160872307788154
+                }
+              ],
+              "requires_confirmation": true
+            }
+          ],
+          "embedding_calls": 1,
+          "embedding_ms": 9.525800007395446,
+          "latency_ms": 9.866300038993359,
+          "oracle_states": {}
+        },
+        "hybrid": {
+          "states": {},
+          "suggestions": [
+            {
+              "evidence": {
+                "turn_id": "u1",
+                "start": 0,
+                "end": 30,
+                "text": "Tôi có cảm giác lạ trong người"
+              },
+              "query": "Tôi có cảm giác lạ trong người",
+              "state": "present",
+              "candidates": [
+                {
+                  "feature": "foreign body sensation in eye",
+                  "cosine_similarity": 0.47398738956118724
+                },
+                {
+                  "feature": "throat feels tight",
+                  "cosine_similarity": 0.4137164386912541
+                },
+                {
+                  "feature": "pelvic pressure",
+                  "cosine_similarity": 0.41160872307788154
+                }
+              ],
+              "requires_confirmation": true
+            }
+          ],
+          "embedding_calls": 1,
+          "embedding_ms": 7.929099956527352,
+          "latency_ms": 8.721800055354834,
+          "oracle_states": {}
+        }
+      }
+    },
+    {
+      "id": "missed-v1-027",
+      "group": "ambiguous",
+      "text": "Tôi bị đau nhưng không biết ở đâu.",
+      "expected_states": {},
+      "gold_spans": [],
+      "synthetic": true,
+      "review_status": "pending_human_review",
+      "ambiguity": true,
+      "annotation_note": "Authored canonical interpretation; breathing paraphrase has overlap with difficulty breathing. No clinical validation.",
+      "provenance": "Project-authored synthetic diagnostic, groups frozen before embedding inference; no patient data",
+      "used_for_alias_development": false,
+      "used_for_threshold_selection": false,
+      "missed_present": [],
+      "methods": {
+        "rule_based": {
+          "states": {},
+          "suggestions": [],
+          "embedding_calls": 0,
+          "embedding_ms": 0.0,
+          "latency_ms": 0.6629000417888165,
+          "oracle_states": {}
+        },
+        "semantic": {
+          "states": {},
+          "suggestions": [
+            {
+              "evidence": {
+                "turn_id": "u1",
+                "start": 0,
+                "end": 11,
+                "text": "Tôi bị đau "
+              },
+              "query": "Tôi bị đau",
+              "state": "present",
+              "candidates": [
+                {
+                  "feature": "pain or soreness of breast",
+                  "cosine_similarity": 0.5767744167457538
+                },
+                {
+                  "feature": "painful menstruation",
+                  "cosine_similarity": 0.5732473345621785
+                },
+                {
+                  "feature": "groin pain",
+                  "cosine_similarity": 0.5606914883650957
+                }
+              ],
+              "requires_confirmation": true
+            },
+            {
+              "evidence": {
+                "turn_id": "u1",
+                "start": 16,
+                "end": 33,
+                "text": " không biết ở đâu"
+              },
+              "query": "không biết ở đâu",
+              "state": "denied",
+              "candidates": [
+                {
+                  "feature": "restlessness",
+                  "cosine_similarity": 0.2981385338618743
+                },
+                {
+                  "feature": "low back swelling",
+                  "cosine_similarity": 0.2806208161566829
+                },
+                {
+                  "feature": "slurring words",
+                  "cosine_similarity": 0.2747562531746006
+                }
+              ],
+              "requires_confirmation": true
+            }
+          ],
+          "embedding_calls": 2,
+          "embedding_ms": 16.49599988013506,
+          "latency_ms": 17.07219996023923,
+          "oracle_states": {}
+        },
+        "hybrid": {
+          "states": {},
+          "suggestions": [
+            {
+              "evidence": {
+                "turn_id": "u1",
+                "start": 0,
+                "end": 11,
+                "text": "Tôi bị đau "
+              },
+              "query": "Tôi bị đau",
+              "state": "present",
+              "candidates": [
+                {
+                  "feature": "pain or soreness of breast",
+                  "cosine_similarity": 0.5767744167457538
+                },
+                {
+                  "feature": "painful menstruation",
+                  "cosine_similarity": 0.5732473345621785
+                },
+                {
+                  "feature": "groin pain",
+                  "cosine_similarity": 0.5606914883650957
+                }
+              ],
+              "requires_confirmation": true
+            },
+            {
+              "evidence": {
+                "turn_id": "u1",
+                "start": 16,
+                "end": 33,
+                "text": " không biết ở đâu"
+              },
+              "query": "không biết ở đâu",
+              "state": "denied",
+              "candidates": [
+                {
+                  "feature": "restlessness",
+                  "cosine_similarity": 0.2981385338618743
+                },
+                {
+                  "feature": "low back swelling",
+                  "cosine_similarity": 0.2806208161566829
+                },
+                {
+                  "feature": "slurring words",
+                  "cosine_similarity": 0.2747562531746006
+                }
+              ],
+              "requires_confirmation": true
+            }
+          ],
+          "embedding_calls": 2,
+          "embedding_ms": 16.588900005444884,
+          "latency_ms": 17.93940004426986,
+          "oracle_states": {}
+        }
+      }
+    },
+    {
+      "id": "missed-v1-028",
+      "group": "ambiguous",
+      "text": "Tôi thấy khó chịu mà chưa mô tả được.",
+      "expected_states": {},
+      "gold_spans": [],
+      "synthetic": true,
+      "review_status": "pending_human_review",
+      "ambiguity": true,
+      "annotation_note": "Authored canonical interpretation; breathing paraphrase has overlap with difficulty breathing. No clinical validation.",
+      "provenance": "Project-authored synthetic diagnostic, groups frozen before embedding inference; no patient data",
+      "used_for_alias_development": false,
+      "used_for_threshold_selection": false,
+      "missed_present": [],
+      "methods": {
+        "rule_based": {
+          "states": {},
+          "suggestions": [],
+          "embedding_calls": 0,
+          "embedding_ms": 0.0,
+          "latency_ms": 0.46389992348849773,
+          "oracle_states": {}
+        },
+        "semantic": {
+          "states": {},
+          "suggestions": [
+            {
+              "evidence": {
+                "turn_id": "u1",
+                "start": 0,
+                "end": 36,
+                "text": "Tôi thấy khó chịu mà chưa mô tả được"
+              },
+              "query": "Tôi thấy khó chịu mà chưa mô tả được",
+              "state": "denied",
+              "candidates": [
+                {
+                  "feature": "excessive anger",
+                  "cosine_similarity": 0.47508906392601047
+                },
+                {
+                  "feature": "pelvic pressure",
+                  "cosine_similarity": 0.46048022189754945
+                },
+                {
+                  "feature": "throat feels tight",
+                  "cosine_similarity": 0.4373507582826216
+                }
+              ],
+              "requires_confirmation": true
+            }
+          ],
+          "embedding_calls": 1,
+          "embedding_ms": 9.146200027316809,
+          "latency_ms": 9.468400035984814,
+          "oracle_states": {}
+        },
+        "hybrid": {
+          "states": {},
+          "suggestions": [
+            {
+              "evidence": {
+                "turn_id": "u1",
+                "start": 0,
+                "end": 36,
+                "text": "Tôi thấy khó chịu mà chưa mô tả được"
+              },
+              "query": "Tôi thấy khó chịu mà chưa mô tả được",
+              "state": "denied",
+              "candidates": [
+                {
+                  "feature": "excessive anger",
+                  "cosine_similarity": 0.47508906392601047
+                },
+                {
+                  "feature": "pelvic pressure",
+                  "cosine_similarity": 0.46048022189754945
+                },
+                {
+                  "feature": "throat feels tight",
+                  "cosine_similarity": 0.4373507582826216
+                }
+              ],
+              "requires_confirmation": true
+            }
+          ],
+          "embedding_calls": 1,
+          "embedding_ms": 8.138700039125979,
+          "latency_ms": 8.991299895569682,
+          "oracle_states": {}
+        }
+      }
+    },
+    {
+      "id": "missed-v1-029",
+      "group": "ambiguous",
+      "text": "Tôi bị đau cổ, chưa rõ đau cơ hay đau vùng cổ.",
+      "expected_states": {},
+      "gold_spans": [],
+      "synthetic": true,
+      "review_status": "pending_human_review",
+      "ambiguity": true,
+      "annotation_note": "Authored canonical interpretation; breathing paraphrase has overlap with difficulty breathing. No clinical validation.",
+      "provenance": "Project-authored synthetic diagnostic, groups frozen before embedding inference; no patient data",
+      "used_for_alias_development": false,
+      "used_for_threshold_selection": false,
+      "missed_present": [],
+      "methods": {
+        "rule_based": {
+          "states": {},
+          "suggestions": [],
+          "embedding_calls": 0,
+          "embedding_ms": 0.0,
+          "latency_ms": 0.9502999018877745,
+          "oracle_states": {}
+        },
+        "semantic": {
+          "states": {},
+          "suggestions": [
+            {
+              "evidence": {
+                "turn_id": "u1",
+                "start": 0,
+                "end": 13,
+                "text": "Tôi bị đau cổ"
+              },
+              "query": "Tôi bị đau cổ",
+              "state": "present",
+              "candidates": [
+                {
+                  "feature": "neck pain",
+                  "cosine_similarity": 0.5396414542793102
+                },
+                {
+                  "feature": "ear pain",
+                  "cosine_similarity": 0.4845685196575865
+                },
+                {
+                  "feature": "back pain",
+                  "cosine_similarity": 0.4714115512507378
+                }
+              ],
+              "requires_confirmation": true
+            },
+            {
+              "evidence": {
+                "turn_id": "u1",
+                "start": 14,
+                "end": 45,
+                "text": " chưa rõ đau cơ hay đau vùng cổ"
+              },
+              "query": "chưa rõ đau cơ hay đau vùng cổ",
+              "state": "uncertain",
+              "candidates": [
+                {
+                  "feature": "neck pain",
+                  "cosine_similarity": 0.6692102277855843
+                },
+                {
+                  "feature": "low back weakness",
+                  "cosine_similarity": 0.6609939465674871
+                },
+                {
+                  "feature": "back weakness",
+                  "cosine_similarity": 0.6533447144555347
+                }
+              ],
+              "requires_confirmation": true
+            }
+          ],
+          "embedding_calls": 2,
+          "embedding_ms": 20.154800033196807,
+          "latency_ms": 20.836499985307455,
+          "oracle_states": {}
+        },
+        "hybrid": {
+          "states": {},
+          "suggestions": [
+            {
+              "evidence": {
+                "turn_id": "u1",
+                "start": 0,
+                "end": 13,
+                "text": "Tôi bị đau cổ"
+              },
+              "query": "Tôi bị đau cổ",
+              "state": "present",
+              "candidates": [
+                {
+                  "feature": "neck pain",
+                  "cosine_similarity": 0.5396414542793102
+                },
+                {
+                  "feature": "ear pain",
+                  "cosine_similarity": 0.4845685196575865
+                },
+                {
+                  "feature": "back pain",
+                  "cosine_similarity": 0.4714115512507378
+                }
+              ],
+              "requires_confirmation": true
+            },
+            {
+              "evidence": {
+                "turn_id": "u1",
+                "start": 14,
+                "end": 45,
+                "text": " chưa rõ đau cơ hay đau vùng cổ"
+              },
+              "query": "chưa rõ đau cơ hay đau vùng cổ",
+              "state": "uncertain",
+              "candidates": [
+                {
+                  "feature": "neck pain",
+                  "cosine_similarity": 0.6692102277855843
+                },
+                {
+                  "feature": "low back weakness",
+                  "cosine_similarity": 0.6609939465674871
+                },
+                {
+                  "feature": "back weakness",
+                  "cosine_similarity": 0.6533447144555347
+                }
+              ],
+              "requires_confirmation": true
+            }
+          ],
+          "embedding_calls": 2,
+          "embedding_ms": 18.14509998075664,
+          "latency_ms": 19.800999900326133,
+          "oracle_states": {}
+        }
+      }
+    },
+    {
+      "id": "missed-v1-030",
+      "group": "ambiguous",
+      "text": "Tôi cảm thấy khác thường.",
+      "expected_states": {},
+      "gold_spans": [],
+      "synthetic": true,
+      "review_status": "pending_human_review",
+      "ambiguity": true,
+      "annotation_note": "Authored canonical interpretation; breathing paraphrase has overlap with difficulty breathing. No clinical validation.",
+      "provenance": "Project-authored synthetic diagnostic, groups frozen before embedding inference; no patient data",
+      "used_for_alias_development": false,
+      "used_for_threshold_selection": false,
+      "missed_present": [],
+      "methods": {
+        "rule_based": {
+          "states": {},
+          "suggestions": [],
+          "embedding_calls": 0,
+          "embedding_ms": 0.0,
+          "latency_ms": 0.4520999500527978,
+          "oracle_states": {}
+        },
+        "semantic": {
+          "states": {},
+          "suggestions": [
+            {
+              "evidence": {
+                "turn_id": "u1",
+                "start": 0,
+                "end": 24,
+                "text": "Tôi cảm thấy khác thường"
+              },
+              "query": "Tôi cảm thấy khác thường",
+              "state": "present",
+              "candidates": [
+                {
+                  "feature": "foreign body sensation in eye",
+                  "cosine_similarity": 0.4752052231139281
+                },
+                {
+                  "feature": "pelvic pressure",
+                  "cosine_similarity": 0.45379298938083223
+                },
+                {
+                  "feature": "feeling hot and cold",
+                  "cosine_similarity": 0.4425076331564712
+                }
+              ],
+              "requires_confirmation": true
+            }
+          ],
+          "embedding_calls": 1,
+          "embedding_ms": 10.34909998998046,
+          "latency_ms": 10.66909998189658,
+          "oracle_states": {}
+        },
+        "hybrid": {
+          "states": {},
+          "suggestions": [
+            {
+              "evidence": {
+                "turn_id": "u1",
+                "start": 0,
+                "end": 24,
+                "text": "Tôi cảm thấy khác thường"
+              },
+              "query": "Tôi cảm thấy khác thường",
+              "state": "present",
+              "candidates": [
+                {
+                  "feature": "foreign body sensation in eye",
+                  "cosine_similarity": 0.4752052231139281
+                },
+                {
+                  "feature": "pelvic pressure",
+                  "cosine_similarity": 0.45379298938083223
+                },
+                {
+                  "feature": "feeling hot and cold",
+                  "cosine_similarity": 0.4425076331564712
+                }
+              ],
+              "requires_confirmation": true
+            }
+          ],
+          "embedding_calls": 1,
+          "embedding_ms": 8.515900000929832,
+          "latency_ms": 9.30749997496605,
+          "oracle_states": {}
+        }
+      }
+    }
+  ],
+  "summary": [
+    {
+      "group": "all",
+      "method": "rule_based",
+      "cases": 30,
+      "rule_missed_present_pairs": 12,
+      "missed_hits_at_1": 0,
+      "missed_hits_at_3": 0,
+      "missed_recall_at_1": 0.0,
+      "missed_recall_at_3": 0.0,
+      "feature_only_missed_recall_at_3": 0.0,
+      "candidate_present_pairs": 0,
+      "candidate_false_present_pairs": 0,
+      "candidate_false_discovery_fraction": null,
+      "protected_cases": 6,
+      "protected_candidate_exposure_rate": 0.0,
+      "protected_committed_false_positive_rate": 0.0,
+      "committed_precision": 0.9,
+      "committed_true_pairs": 18,
+      "committed_false_pairs": 2,
+      "rule_states_lost": 0,
+      "ambiguous_candidate_questions": 0,
+      "ambiguous_automatic_assignment_cases": 0,
+      "oracle_precision": 0.9,
+      "oracle_recall": 0.6,
+      "real_user_post_confirmation_precision": null,
+      "embedding_calls": 0,
+      "utterances_requiring_embedding": 0,
+      "candidate_list_questions": 0,
+      "questions_per_utterance": 0.0,
+      "latency_p50_ms": 0.983899983111769,
+      "latency_p95_ms": 3.989125043153762
+    },
+    {
+      "group": "all",
+      "method": "semantic",
+      "cases": 30,
+      "rule_missed_present_pairs": 12,
+      "missed_hits_at_1": 2,
+      "missed_hits_at_3": 2,
+      "missed_recall_at_1": 0.16666666666666666,
+      "missed_recall_at_3": 0.16666666666666666,
+      "feature_only_missed_recall_at_3": 0.4166666666666667,
+      "candidate_present_pairs": 68,
+      "candidate_false_present_pairs": 55,
+      "candidate_false_discovery_fraction": 0.8088235294117647,
+      "protected_cases": 6,
+      "protected_candidate_exposure_rate": 0.0,
+      "protected_committed_false_positive_rate": 0.0,
+      "committed_precision": null,
+      "committed_true_pairs": 0,
+      "committed_false_pairs": 0,
+      "rule_states_lost": 20,
+      "ambiguous_candidate_questions": 8,
+      "ambiguous_automatic_assignment_cases": 0,
+      "oracle_precision": 1.0,
+      "oracle_recall": 0.4666666666666667,
+      "real_user_post_confirmation_precision": null,
+      "embedding_calls": 38,
+      "utterances_requiring_embedding": 26,
+      "candidate_list_questions": 38,
+      "questions_per_utterance": 1.2666666666666666,
+      "latency_p50_ms": 10.66169998375699,
+      "latency_p95_ms": 20.868179970420897
+    },
+    {
+      "group": "all",
+      "method": "hybrid",
+      "cases": 30,
+      "rule_missed_present_pairs": 12,
+      "missed_hits_at_1": 1,
+      "missed_hits_at_3": 1,
+      "missed_recall_at_1": 0.08333333333333333,
+      "missed_recall_at_3": 0.08333333333333333,
+      "feature_only_missed_recall_at_3": 0.3333333333333333,
+      "candidate_present_pairs": 24,
+      "candidate_false_present_pairs": 23,
+      "candidate_false_discovery_fraction": 0.9583333333333334,
+      "protected_cases": 6,
+      "protected_candidate_exposure_rate": 0.0,
+      "protected_committed_false_positive_rate": 0.0,
+      "committed_precision": 0.9,
+      "committed_true_pairs": 18,
+      "committed_false_pairs": 2,
+      "rule_states_lost": 0,
+      "ambiguous_candidate_questions": 8,
+      "ambiguous_automatic_assignment_cases": 0,
+      "oracle_precision": 0.9047619047619048,
+      "oracle_recall": 0.6333333333333333,
+      "real_user_post_confirmation_precision": null,
+      "embedding_calls": 23,
+      "utterances_requiring_embedding": 20,
+      "candidate_list_questions": 23,
+      "questions_per_utterance": 0.7666666666666667,
+      "latency_p50_ms": 10.071899916511029,
+      "latency_p95_ms": 18.882869993103665
+    },
+    {
+      "group": "known_alias",
+      "method": "rule_based",
+      "cases": 6,
+      "rule_missed_present_pairs": 0,
+      "missed_hits_at_1": 0,
+      "missed_hits_at_3": 0,
+      "missed_recall_at_1": null,
+      "missed_recall_at_3": null,
+      "feature_only_missed_recall_at_3": null,
+      "candidate_present_pairs": 0,
+      "candidate_false_present_pairs": 0,
+      "candidate_false_discovery_fraction": null,
+      "protected_cases": 0,
+      "protected_candidate_exposure_rate": null,
+      "protected_committed_false_positive_rate": null,
+      "committed_precision": 1.0,
+      "committed_true_pairs": 8,
+      "committed_false_pairs": 0,
+      "rule_states_lost": 0,
+      "ambiguous_candidate_questions": 0,
+      "ambiguous_automatic_assignment_cases": 0,
+      "oracle_precision": 1.0,
+      "oracle_recall": 1.0,
+      "real_user_post_confirmation_precision": null,
+      "embedding_calls": 0,
+      "utterances_requiring_embedding": 0,
+      "candidate_list_questions": 0,
+      "questions_per_utterance": 0.0,
+      "latency_p50_ms": 3.4625500557012856,
+      "latency_p95_ms": 5.0604999414645135
+    },
+    {
+      "group": "known_alias",
+      "method": "semantic",
+      "cases": 6,
+      "rule_missed_present_pairs": 0,
+      "missed_hits_at_1": 0,
+      "missed_hits_at_3": 0,
+      "missed_recall_at_1": null,
+      "missed_recall_at_3": null,
+      "feature_only_missed_recall_at_3": null,
+      "candidate_present_pairs": 24,
+      "candidate_false_present_pairs": 18,
+      "candidate_false_discovery_fraction": 0.75,
+      "protected_cases": 0,
+      "protected_candidate_exposure_rate": null,
+      "protected_committed_false_positive_rate": null,
+      "committed_precision": null,
+      "committed_true_pairs": 0,
+      "committed_false_pairs": 0,
+      "rule_states_lost": 8,
+      "ambiguous_candidate_questions": 0,
+      "ambiguous_automatic_assignment_cases": 0,
+      "oracle_precision": 1.0,
+      "oracle_recall": 0.75,
+      "real_user_post_confirmation_precision": null,
+      "embedding_calls": 8,
+      "utterances_requiring_embedding": 6,
+      "candidate_list_questions": 8,
+      "questions_per_utterance": 1.3333333333333333,
+      "latency_p50_ms": 11.115049943327904,
+      "latency_p95_ms": 19.991100038168952
+    },
+    {
+      "group": "known_alias",
+      "method": "hybrid",
+      "cases": 6,
+      "rule_missed_present_pairs": 0,
+      "missed_hits_at_1": 0,
+      "missed_hits_at_3": 0,
+      "missed_recall_at_1": null,
+      "missed_recall_at_3": null,
+      "feature_only_missed_recall_at_3": null,
+      "candidate_present_pairs": 0,
+      "candidate_false_present_pairs": 0,
+      "candidate_false_discovery_fraction": null,
+      "protected_cases": 0,
+      "protected_candidate_exposure_rate": null,
+      "protected_committed_false_positive_rate": null,
+      "committed_precision": 1.0,
+      "committed_true_pairs": 8,
+      "committed_false_pairs": 0,
+      "rule_states_lost": 0,
+      "ambiguous_candidate_questions": 0,
+      "ambiguous_automatic_assignment_cases": 0,
+      "oracle_precision": 1.0,
+      "oracle_recall": 1.0,
+      "real_user_post_confirmation_precision": null,
+      "embedding_calls": 0,
+      "utterances_requiring_embedding": 0,
+      "candidate_list_questions": 0,
+      "questions_per_utterance": 0.0,
+      "latency_p50_ms": 3.493900003377348,
+      "latency_p95_ms": 5.104699928779155
+    },
+    {
+      "group": "novel_expression",
+      "method": "rule_based",
+      "cases": 6,
+      "rule_missed_present_pairs": 6,
+      "missed_hits_at_1": 0,
+      "missed_hits_at_3": 0,
+      "missed_recall_at_1": 0.0,
+      "missed_recall_at_3": 0.0,
+      "feature_only_missed_recall_at_3": 0.0,
+      "candidate_present_pairs": 0,
+      "candidate_false_present_pairs": 0,
+      "candidate_false_discovery_fraction": null,
+      "protected_cases": 0,
+      "protected_candidate_exposure_rate": null,
+      "protected_committed_false_positive_rate": null,
+      "committed_precision": 0.5,
+      "committed_true_pairs": 1,
+      "committed_false_pairs": 1,
+      "rule_states_lost": 0,
+      "ambiguous_candidate_questions": 0,
+      "ambiguous_automatic_assignment_cases": 0,
+      "oracle_precision": 0.5,
+      "oracle_recall": 0.14285714285714285,
+      "real_user_post_confirmation_precision": null,
+      "embedding_calls": 0,
+      "utterances_requiring_embedding": 0,
+      "candidate_list_questions": 0,
+      "questions_per_utterance": 0.0,
+      "latency_p50_ms": 0.7784999907016754,
+      "latency_p95_ms": 1.4188250061124563
+    },
+    {
+      "group": "novel_expression",
+      "method": "semantic",
+      "cases": 6,
+      "rule_missed_present_pairs": 6,
+      "missed_hits_at_1": 1,
+      "missed_hits_at_3": 1,
+      "missed_recall_at_1": 0.16666666666666666,
+      "missed_recall_at_3": 0.16666666666666666,
+      "feature_only_missed_recall_at_3": 0.3333333333333333,
+      "candidate_present_pairs": 15,
+      "candidate_false_present_pairs": 14,
+      "candidate_false_discovery_fraction": 0.9333333333333333,
+      "protected_cases": 0,
+      "protected_candidate_exposure_rate": null,
+      "protected_committed_false_positive_rate": null,
+      "committed_precision": null,
+      "committed_true_pairs": 0,
+      "committed_false_pairs": 0,
+      "rule_states_lost": 2,
+      "ambiguous_candidate_questions": 0,
+      "ambiguous_automatic_assignment_cases": 0,
+      "oracle_precision": 1.0,
+      "oracle_recall": 0.14285714285714285,
+      "real_user_post_confirmation_precision": null,
+      "embedding_calls": 7,
+      "utterances_requiring_embedding": 6,
+      "candidate_list_questions": 7,
+      "questions_per_utterance": 1.1666666666666667,
+      "latency_p50_ms": 9.923000005073845,
+      "latency_p95_ms": 15.231099998345599
+    },
+    {
+      "group": "novel_expression",
+      "method": "hybrid",
+      "cases": 6,
+      "rule_missed_present_pairs": 6,
+      "missed_hits_at_1": 1,
+      "missed_hits_at_3": 1,
+      "missed_recall_at_1": 0.16666666666666666,
+      "missed_recall_at_3": 0.16666666666666666,
+      "feature_only_missed_recall_at_3": 0.3333333333333333,
+      "candidate_present_pairs": 15,
+      "candidate_false_present_pairs": 14,
+      "candidate_false_discovery_fraction": 0.9333333333333333,
+      "protected_cases": 0,
+      "protected_candidate_exposure_rate": null,
+      "protected_committed_false_positive_rate": null,
+      "committed_precision": 0.5,
+      "committed_true_pairs": 1,
+      "committed_false_pairs": 1,
+      "rule_states_lost": 0,
+      "ambiguous_candidate_questions": 0,
+      "ambiguous_automatic_assignment_cases": 0,
+      "oracle_precision": 0.6666666666666666,
+      "oracle_recall": 0.2857142857142857,
+      "real_user_post_confirmation_precision": null,
+      "embedding_calls": 7,
+      "utterances_requiring_embedding": 6,
+      "candidate_list_questions": 7,
+      "questions_per_utterance": 1.1666666666666667,
+      "latency_p50_ms": 10.26900002034381,
+      "latency_p95_ms": 17.88524998119101
+    },
+    {
+      "group": "multiple_symptoms",
+      "method": "rule_based",
+      "cases": 6,
+      "rule_missed_present_pairs": 6,
+      "missed_hits_at_1": 0,
+      "missed_hits_at_3": 0,
+      "missed_recall_at_1": 0.0,
+      "missed_recall_at_3": 0.0,
+      "feature_only_missed_recall_at_3": 0.0,
+      "candidate_present_pairs": 0,
+      "candidate_false_present_pairs": 0,
+      "candidate_false_discovery_fraction": null,
+      "protected_cases": 0,
+      "protected_candidate_exposure_rate": null,
+      "protected_committed_false_positive_rate": null,
+      "committed_precision": 0.875,
+      "committed_true_pairs": 7,
+      "committed_false_pairs": 1,
+      "rule_states_lost": 0,
+      "ambiguous_candidate_questions": 0,
+      "ambiguous_automatic_assignment_cases": 0,
+      "oracle_precision": 0.875,
+      "oracle_recall": 0.5384615384615384,
+      "real_user_post_confirmation_precision": null,
+      "embedding_calls": 0,
+      "utterances_requiring_embedding": 0,
+      "candidate_list_questions": 0,
+      "questions_per_utterance": 0.0,
+      "latency_p50_ms": 1.035400026012212,
+      "latency_p95_ms": 1.3522499648388475
+    },
+    {
+      "group": "multiple_symptoms",
+      "method": "semantic",
+      "cases": 6,
+      "rule_missed_present_pairs": 6,
+      "missed_hits_at_1": 1,
+      "missed_hits_at_3": 1,
+      "missed_recall_at_1": 0.16666666666666666,
+      "missed_recall_at_3": 0.16666666666666666,
+      "feature_only_missed_recall_at_3": 0.5,
+      "candidate_present_pairs": 29,
+      "candidate_false_present_pairs": 23,
+      "candidate_false_discovery_fraction": 0.7931034482758621,
+      "protected_cases": 0,
+      "protected_candidate_exposure_rate": null,
+      "protected_committed_false_positive_rate": null,
+      "committed_precision": null,
+      "committed_true_pairs": 0,
+      "committed_false_pairs": 0,
+      "rule_states_lost": 8,
+      "ambiguous_candidate_questions": 0,
+      "ambiguous_automatic_assignment_cases": 0,
+      "oracle_precision": 1.0,
+      "oracle_recall": 0.46153846153846156,
+      "real_user_post_confirmation_precision": null,
+      "embedding_calls": 13,
+      "utterances_requiring_embedding": 6,
+      "candidate_list_questions": 13,
+      "questions_per_utterance": 2.1666666666666665,
+      "latency_p50_ms": 18.28354998724535,
+      "latency_p95_ms": 23.60339998267591
+    },
+    {
+      "group": "multiple_symptoms",
+      "method": "hybrid",
+      "cases": 6,
+      "rule_missed_present_pairs": 6,
+      "missed_hits_at_1": 0,
+      "missed_hits_at_3": 0,
+      "missed_recall_at_1": 0.0,
+      "missed_recall_at_3": 0.0,
+      "feature_only_missed_recall_at_3": 0.3333333333333333,
+      "candidate_present_pairs": 9,
+      "candidate_false_present_pairs": 9,
+      "candidate_false_discovery_fraction": 1.0,
+      "protected_cases": 0,
+      "protected_candidate_exposure_rate": null,
+      "protected_committed_false_positive_rate": null,
+      "committed_precision": 0.875,
+      "committed_true_pairs": 7,
+      "committed_false_pairs": 1,
+      "rule_states_lost": 0,
+      "ambiguous_candidate_questions": 0,
+      "ambiguous_automatic_assignment_cases": 0,
+      "oracle_precision": 0.875,
+      "oracle_recall": 0.5384615384615384,
+      "real_user_post_confirmation_precision": null,
+      "embedding_calls": 6,
+      "utterances_requiring_embedding": 6,
+      "candidate_list_questions": 6,
+      "questions_per_utterance": 1.0,
+      "latency_p50_ms": 11.199450003914535,
+      "latency_p95_ms": 11.678399983793497
+    },
+    {
+      "group": "negation_subject",
+      "method": "rule_based",
+      "cases": 6,
+      "rule_missed_present_pairs": 0,
+      "missed_hits_at_1": 0,
+      "missed_hits_at_3": 0,
+      "missed_recall_at_1": null,
+      "missed_recall_at_3": null,
+      "feature_only_missed_recall_at_3": null,
+      "candidate_present_pairs": 0,
+      "candidate_false_present_pairs": 0,
+      "candidate_false_discovery_fraction": null,
+      "protected_cases": 6,
+      "protected_candidate_exposure_rate": 0.0,
+      "protected_committed_false_positive_rate": 0.0,
+      "committed_precision": 1.0,
+      "committed_true_pairs": 2,
+      "committed_false_pairs": 0,
+      "rule_states_lost": 0,
+      "ambiguous_candidate_questions": 0,
+      "ambiguous_automatic_assignment_cases": 0,
+      "oracle_precision": 1.0,
+      "oracle_recall": 1.0,
+      "real_user_post_confirmation_precision": null,
+      "embedding_calls": 0,
+      "utterances_requiring_embedding": 0,
+      "candidate_list_questions": 0,
+      "questions_per_utterance": 0.0,
+      "latency_p50_ms": 0.501450034789741,
+      "latency_p95_ms": 2.8451250109355897
+    },
+    {
+      "group": "negation_subject",
+      "method": "semantic",
+      "cases": 6,
+      "rule_missed_present_pairs": 0,
+      "missed_hits_at_1": 0,
+      "missed_hits_at_3": 0,
+      "missed_recall_at_1": null,
+      "missed_recall_at_3": null,
+      "feature_only_missed_recall_at_3": null,
+      "candidate_present_pairs": 0,
+      "candidate_false_present_pairs": 0,
+      "candidate_false_discovery_fraction": null,
+      "protected_cases": 6,
+      "protected_candidate_exposure_rate": 0.0,
+      "protected_committed_false_positive_rate": 0.0,
+      "committed_precision": null,
+      "committed_true_pairs": 0,
+      "committed_false_pairs": 0,
+      "rule_states_lost": 2,
+      "ambiguous_candidate_questions": 0,
+      "ambiguous_automatic_assignment_cases": 0,
+      "oracle_precision": 1.0,
+      "oracle_recall": 0.5,
+      "real_user_post_confirmation_precision": null,
+      "embedding_calls": 2,
+      "utterances_requiring_embedding": 2,
+      "candidate_list_questions": 2,
+      "questions_per_utterance": 0.3333333333333333,
+      "latency_p50_ms": 0.056050019338727,
+      "latency_p95_ms": 11.21397505630739
+    },
+    {
+      "group": "negation_subject",
+      "method": "hybrid",
+      "cases": 6,
+      "rule_missed_present_pairs": 0,
+      "missed_hits_at_1": 0,
+      "missed_hits_at_3": 0,
+      "missed_recall_at_1": null,
+      "missed_recall_at_3": null,
+      "feature_only_missed_recall_at_3": null,
+      "candidate_present_pairs": 0,
+      "candidate_false_present_pairs": 0,
+      "candidate_false_discovery_fraction": null,
+      "protected_cases": 6,
+      "protected_candidate_exposure_rate": 0.0,
+      "protected_committed_false_positive_rate": 0.0,
+      "committed_precision": 1.0,
+      "committed_true_pairs": 2,
+      "committed_false_pairs": 0,
+      "rule_states_lost": 0,
+      "ambiguous_candidate_questions": 0,
+      "ambiguous_automatic_assignment_cases": 0,
+      "oracle_precision": 1.0,
+      "oracle_recall": 1.0,
+      "real_user_post_confirmation_precision": null,
+      "embedding_calls": 2,
+      "utterances_requiring_embedding": 2,
+      "candidate_list_questions": 2,
+      "questions_per_utterance": 0.3333333333333333,
+      "latency_p50_ms": 0.5318000330589712,
+      "latency_p95_ms": 10.758150019682944
+    },
+    {
+      "group": "ambiguous",
+      "method": "rule_based",
+      "cases": 6,
+      "rule_missed_present_pairs": 0,
+      "missed_hits_at_1": 0,
+      "missed_hits_at_3": 0,
+      "missed_recall_at_1": null,
+      "missed_recall_at_3": null,
+      "feature_only_missed_recall_at_3": null,
+      "candidate_present_pairs": 0,
+      "candidate_false_present_pairs": 0,
+      "candidate_false_discovery_fraction": null,
+      "protected_cases": 0,
+      "protected_candidate_exposure_rate": null,
+      "protected_committed_false_positive_rate": null,
+      "committed_precision": null,
+      "committed_true_pairs": 0,
+      "committed_false_pairs": 0,
+      "rule_states_lost": 0,
+      "ambiguous_candidate_questions": 0,
+      "ambiguous_automatic_assignment_cases": 0,
+      "oracle_precision": null,
+      "oracle_recall": null,
+      "real_user_post_confirmation_precision": null,
+      "embedding_calls": 0,
+      "utterances_requiring_embedding": 0,
+      "candidate_list_questions": 0,
+      "questions_per_utterance": 0.0,
+      "latency_p50_ms": 0.45799993677064776,
+      "latency_p95_ms": 0.878449936863035
+    },
+    {
+      "group": "ambiguous",
+      "method": "semantic",
+      "cases": 6,
+      "rule_missed_present_pairs": 0,
+      "missed_hits_at_1": 0,
+      "missed_hits_at_3": 0,
+      "missed_recall_at_1": null,
+      "missed_recall_at_3": null,
+      "feature_only_missed_recall_at_3": null,
+      "candidate_present_pairs": 0,
+      "candidate_false_present_pairs": 0,
+      "candidate_false_discovery_fraction": null,
+      "protected_cases": 0,
+      "protected_candidate_exposure_rate": null,
+      "protected_committed_false_positive_rate": null,
+      "committed_precision": null,
+      "committed_true_pairs": 0,
+      "committed_false_pairs": 0,
+      "rule_states_lost": 0,
+      "ambiguous_candidate_questions": 8,
+      "ambiguous_automatic_assignment_cases": 0,
+      "oracle_precision": null,
+      "oracle_recall": null,
+      "real_user_post_confirmation_precision": null,
+      "embedding_calls": 8,
+      "utterances_requiring_embedding": 6,
+      "candidate_list_questions": 8,
+      "questions_per_utterance": 1.3333333333333333,
+      "latency_p50_ms": 10.267700010444969,
+      "latency_p95_ms": 19.8954249790404
+    },
+    {
+      "group": "ambiguous",
+      "method": "hybrid",
+      "cases": 6,
+      "rule_missed_present_pairs": 0,
+      "missed_hits_at_1": 0,
+      "missed_hits_at_3": 0,
+      "missed_recall_at_1": null,
+      "missed_recall_at_3": null,
+      "feature_only_missed_recall_at_3": null,
+      "candidate_present_pairs": 0,
+      "candidate_false_present_pairs": 0,
+      "candidate_false_discovery_fraction": null,
+      "protected_cases": 0,
+      "protected_candidate_exposure_rate": null,
+      "protected_committed_false_positive_rate": null,
+      "committed_precision": null,
+      "committed_true_pairs": 0,
+      "committed_false_pairs": 0,
+      "rule_states_lost": 0,
+      "ambiguous_candidate_questions": 8,
+      "ambiguous_automatic_assignment_cases": 0,
+      "oracle_precision": null,
+      "oracle_recall": null,
+      "real_user_post_confirmation_precision": null,
+      "embedding_calls": 8,
+      "utterances_requiring_embedding": 6,
+      "candidate_list_questions": 8,
+      "questions_per_utterance": 1.3333333333333333,
+      "latency_p50_ms": 10.536599962506443,
+      "latency_p95_ms": 19.335599936312065
+    }
+  ],
+  "confirmation": "Actual states unchanged; oracle_states use perfect gold answers: upper bound only, no real user confirmation",
+  "question_unit": "One candidate-list question per unresolved segment; not number of conversation turns or measured user answers",
+  "latency_scope": "Warm-up separate; one sequential local pass, no SLA; excludes model load and catalog encoding",
+  "limitations": "Small authored diagnostic challenge, not independent clinical validation. Groups fixed before inference; rule misses measured, not selected after scores.",
+  "models_fitted": 0,
+  "disease_predictions_called": false,
+  "locked_test_opened": false,
+  "llm_api_calls": 0,
+  "semantic_environment": {
+    "status": "LOADED",
+    "model_id": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+    "revision": "e8f8c211226b894fcb81acc59f3b34ba3efd5f42",
+    "snapshot_manifest": {
+      "model_id": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+      "revision": "e8f8c211226b894fcb81acc59f3b34ba3efd5f42",
+      "files": {
+        "config.json": "6300193cb75e01cf80c96decef7187dfb33094d97cc1490b7ead6ff134476e4e",
+        "config_sentence_transformers.json": "b8c64b5cece00d8424b4896ea75b512b6008576088497609dfeb6bd63e6d36b8",
+        "modules.json": "8f4b264b80206c830bebbdcae377e137925650a433b689343a63bdc9b3145460",
+        "sentence_bert_config.json": "70f4448f31320443fe3557cacea5abf2dcc4915dda8c80646bec9f3bb0aa5a1f",
+        "sentencepiece.bpe.model": "cfc8146abe2a0488e9e2a0c56de7952f7c11ab059eca145a0a727afce0db2865",
+        "special_tokens_map.json": "378eb3bf733eb16e65792d7e3fda5b8a4631387ca04d2015199c4d4f22ae554d",
+        "tokenizer.json": "2c3387be76557bd40970cec13153b3bbf80407865484b209e655e5e4729076b8",
+        "tokenizer_config.json": "5036ea374ffedd706e3bef33e2e0d6953cb868ef8a490e76e32ba0faa37a6b9b",
+        "unigram.json": "71b44701d7efd054205115acfa6ef126c5d2f84bd3affe0c59e48163674d19a6",
+        "1_Pooling/config.json": "4be450dde3b0273bb9787637cfbd28fe04a7ba6ab9d36ac48e92b11e350ffc23",
+        "model.safetensors": "eaa086f0ffee582aeb45b36e34cdd1fe2d6de2bef61f8a559a1bbc9bd955917b"
+      },
+      "source": "https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+      "license": "Apache-2.0",
+      "provenance": "Public publisher files requested at immutable revision; local SHA256 inventory"
+    },
+    "load_and_catalog_ms": 2713.8792999321595
+  },
+  "model_load_and_catalog_ms": 9316.315799951553,
+  "warmup_ms": 11.735499952919781,
+  "model_id": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+  "revision": "e8f8c211226b894fcb81acc59f3b34ba3efd5f42",
+  "inputs_sha256": {
+    "data/evaluation/vietnamese_nlp_missed_v1.jsonl": "3e2a2144499d4e30a54596eeccf87c056b9f6c0499a2d886a873dbdd24e38ef2",
+    "configs/synonyms.json": "036d756fb202612122a31e8a041e60e98a33cc632a7caa41df25ccfe2689d527",
+    "configs/phase5b.json": "17795e382e8530530e7bded60103594301ac2d28a0e2f3320d8bb7975474ff22",
+    "scripts/nlp_missed_symptom_analysis.py": "89c7ade8a904521ea22627643db0545ad5e66a7443f448db8e7b42a96bb6d067",
+    "scripts/nlp_symptom_research.py": "ddd507342fc77b343da96f0324a153e9c16c058e09097789a2c29505b9dcdee1",
+    "src/agent/extraction.py": "faaf4598e9a51e4c8f1ddbda8c57c8b4b97e4ab06f3a950d34e689f13c49d402",
+    "src/agent/offline.py": "a7fb8a43b764aa2e76db86523d8639f8524ee86681c55091e250902a6b5fb823",
+    "reports/nlp_research_v1/coverage_inventory.json": "6f77155d8651512fd97211f5a65abec8e4a4d1c4461ec787cbd3f24600a08c5b"
+  }
+}
