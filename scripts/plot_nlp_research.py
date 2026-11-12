@@ -52,6 +52,17 @@ def render_run(folder):
     import matplotlib.pyplot as plt
     folder=Path(folder);data=json.loads((folder/'benchmark.json').read_text(encoding='utf-8'))
     figures=[]
+    fig,ax=plt.subplots(figsize=(12,4));ax.set_xlim(0,10);ax.set_ylim(0,3);ax.axis('off')
+    pipelines=[('Rule-based',('Exact aliases','Context validator','Validated states')),
+               ('Semantic',('Clause embeddings','Top-K + context','Candidates; confirm')),
+               ('Hybrid',('Validated rules','Retrieve residuals','States + candidates'))]
+    for y,(label,steps) in zip((2.5,1.5,.5),pipelines):
+        ax.text(.1,y,label,ha='left',va='center',weight='bold')
+        for x,step in zip((3,5.9,8.8),steps):
+            ax.text(x,y,step,ha='center',va='center',bbox=dict(boxstyle='round,pad=.5',fc='#e9f2f1',ec='#43817b'))
+        for x in (4.1,7):ax.annotate('',xy=(x+.7,y),xytext=(x,y),arrowprops=dict(arrowstyle='->'))
+    ax.set_title('Method overview — conceptual flow, not measured performance')
+    fig.tight_layout();name='methods_overview.png';fig.savefig(folder/name,dpi=140);plt.close(fig);figures.append(name)
     for split,methods in data['results'].items():
         available={k:v for k,v in methods.items() if 'metrics' in v}
         names=list(available);x=list(range(len(names)))
@@ -76,9 +87,18 @@ def render_run(folder):
         for ax,key,title in zip(axes,('latency_p50_ms','latency_p95_ms'),('p50 latency','p95 latency')):
             bars=ax.bar(list(available),[v['metrics'][key] for v in available.values()]);ax.bar_label(bars,fmt='%.2f');ax.set_ylim(bottom=0);ax.set_title(title);ax.set_ylabel('ms / utterance')
         fig.suptitle(split+' — one measured local pass');fig.tight_layout();name=split+'_latency.png';fig.savefig(folder/name,dpi=140);plt.close(fig);figures.append(name)
+        fig,axes=plt.subplots(1,2,figsize=(11,4))
+        names=list(available);x=list(range(len(names)))
+        for ax,key,title in zip(axes,('mapped_features','confirmation_rate'),('Mapped canonical features / 375','Clarification or confirmation rate')):
+            values=[v['metrics'].get(key,0) for v in available.values()]
+            bars=ax.bar(names,values);ax.bar_label(bars,fmt='%.2f');ax.set_ylim(0,375 if key=='mapped_features' else 1.15);ax.set_title(title)
+        fig.suptitle(split+' — coverage and dialogue needs');fig.tight_layout();name=split+'_coverage_confirmation.png';fig.savefig(folder/name,dpi=140);plt.close(fig);figures.append(name)
     manifest=dict(source='benchmark.json in the same run folder',
         benchmark_sha256=hashlib.sha256((folder/'benchmark.json').read_bytes()).hexdigest(),
         figures={n:hashlib.sha256((folder/n).read_bytes()).hexdigest() for n in figures})
+    comparison=folder/'case_comparison.json'
+    manifest['comparison_sha256']=hashlib.sha256(comparison.read_bytes()).hexdigest() if comparison.is_file() else None
+    manifest['complete']=comparison.is_file()
     (folder/'run_figures.json').write_text(json.dumps(manifest,indent=2)+'\n',encoding='utf-8')
     return manifest
 
