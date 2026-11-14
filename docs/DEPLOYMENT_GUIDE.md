@@ -107,7 +107,7 @@ $env:DISEASE_CHAT_MODE = 'offline'
 
 Giữ terminal chạy; mở http://127.0.0.1:8000, Ctrl+F5 và bắt đầu hội thoại mới. Lệnh dùng môi trường Windows3.13.17 đã duyệt cùng 7 artifact tại project root; nếu artifact ở root khác, đặt DISEASE_API_STORAGE_ROOT tới root đó. Không dùng Python3.11 để load checkpoint và không nới guard khi health503. Nếu cổng8000 đang được dùng, dừng đúng server cũ hoặc chọn cổng khác và mở đúng URL.
 
-Web mới có combobox chỉ LR tuned C=2; các ứng viên khác chưa được duyệt deployment/runtime Windows. Registry `/api/v1/models` phản ánh loader thực, không coi chỉ tồn tại file checkpoint là deployable. Sidebar cho chọn Offline hoặc xem trước Online; ở Online nút gửi bị khóa và báo LIVE NOT VERIFIED. Cài đặt provider có password input, nhưng không gửi/lưu/test key; khi đóng sẽ xóa ô. Không nhập key thật ở phiên bản này. Không có tự động chuyển provider, kết nối hoặc gửi tin nhắn online. Server legacy được cấu hình LLM riêng không chấp nhận request UI offline.
+Web có combobox LR tuned C=2 (mặc định) và LR baseline C=1 khi đủ artifacts trong Windows runtime đã duyệt; Hard tuned còn bị khóa. Registry `/api/v1/models` phản ánh loader thực, không coi chỉ tồn tại file checkpoint là deployable. Sidebar cho chọn Offline hoặc xem trước Online; ở Online nút gửi bị khóa và báo LIVE NOT VERIFIED. Cài đặt provider có password input, nhưng không gửi/lưu/test key; khi đóng sẽ xóa ô. Không nhập key thật ở phiên bản này. Không có tự động chuyển provider, kết nối hoặc gửi tin nhắn online. Server legacy được cấu hình LLM riêng không chấp nhận request UI offline.
 
 Batch hỏi mặc định3: chọn Có/Không/Không rõ, mặc định Chưa trả lời. Có thể gửi từng phần và tiếp tục nhóm cũ; không trả lời không đồng nghĩa phủ định. Có thể gõ bổ sung triệu chứng. Câu trả lời theo số qua API cần batch_id trong pending_questions; không sử dụng ID của batch/phiên trước. Dấu hiệu urgent được kiểm trước parser. Sau khi có kết quả, thêm/sửa thông tin sẽ vô hiệu vector cũ và đánh dấu card cũ là lịch sử; đây vẫn chỉ là nghiên cứu.
 
@@ -549,14 +549,22 @@ Hướng dẫn khởi động duy nhất nằm ở [README](../README.md#7-cài-
 | ID | Windows3.13.17 hiện tại | Output contract |
 |---|---|---|
 | `lr_tuned_c2` | ENABLED nếu đủ artifact; default không đổi | `top3`, nhãn/score thật từ predict_proba |
-| `lr_baseline` | BLOCKED: runtime chưa có independent synthetic reference | Cùng LR Top3 khi qualify |
+| `lr_baseline` | ENABLED nếu đủ artifact; Windows3.13.17/AMD64 đã đối chiếu reference độc lập | Top3 từ baseline C=1 predict_proba; điểm không chuẩn hóa lại |
 | `hard_tuned_lr_svc_knn` | BLOCKED: SVC/KNN thiếu independent reference | `result_kind=hard_vote_result`, nhãn và member votes; không Top3 |
 
 `GET /api/v1/models` luôn liệt kê đủ ba IDs cùng `available`, reason, result_kind, artifact identities. Chỉ model available được chọn trên UI. `POST /api/v1/predict` nhận `model_id` tùy chọn; bỏ trường này giữ LR tuned cũ. Không fallback khi một model lỗi. `POST /api/v1/chat` nhận cùngID; reply phân biệt `requested_model_id` và `processed_model_id` (null khi chưa inference). Gửi session của model khác mà không reset trả409; reset loại context cũ và tạo phiên riêng. Mỗi model dùng dialogue store độc lập, vẫn chung extractor/validator/DecisionPolicy; không thay135aliases.
 
 LR hiển thị “Điểm mô hình (%)”,4chữ số thập phân; raw scores giữ nguyên, không chuẩn hóa riêng Top3. Hard vote dùng engine `src.models.ensemble.hard_vote` đã khóa, uniform votes và ưu tiênLR→SVC→KNN khi ba nhãn khác nhau. UI chỉ nhãn thắng, phiếu và từng member; không hiển thị vote share như probability. Hai kiểu response tách bằng schema; hợp đồng LR cũ được giữ.
 
-Qualification cô lập thực tế:4checkpoint hashes, identity/source pins, schema375, fitted318 và mapping587 PASS; synthetic8vectors và hardvote chạy thành công trên Windows. Tuy nhiên chỉ LR tuned có original Colab reference đã pinSHA để so toàn bộ8×587probabilities/exactlabels/Top3. Load thành công một pickle không đủ mở rộng allowlist: baseline/SVC/KNN vẫn BLOCKED trong production. Không bỏ guard hoặc tự thay model. Cần tạo reference độc lập trong môi trường gốc3.13.18 với cùng8vectors và cùng hashes, rồi đối chiếu tolerance rtol1e-10/atol1e-12 trước khi duyệt runtime thêm.
+Qualification ban đầu (lịch sử):4checkpoint hashes, identity/source pins, schema375, fitted318 và mapping587 PASS; synthetic8vectors và hardvote chạy thành công trên Windows. Khi đó chỉ LR tuned có original Colab reference đã pinSHA nên baseline/SVC/KNN vẫn BLOCKED. Load thành công một pickle không đủ mở rộng allowlist. Trạng thái baseline hiện đã được cập nhật theo qualification độc lập bên dưới; SVC/KNN và Hard tuned tiếp tục bị khóa.
+
+### LR baseline đã mở trên Windows — qualification độc lập
+
+Reference baseline từ Colab Python3.13.18/exact ML pins đã được owner xác nhận SHA256 `447c7c23882d9c617c7f9d0d791526b7222e973ebab9bdcdcc1083722f0728ce`. Đối chiếu mới bằng Windows CPython3.13.17/AMD64: đủ4696 probabilities khớp rtol1e-10/atol1e-12, max absolute difference `3.469446951953614e-18`, exact labels/Top3 PASS. Candidate SHA256 `2d4e308c4e008106b4baf29c8f4186018e7ce644269546be53d9329d90278fa2`.
+
+Allowlist chỉ thêm baseline identity `baseline-v1-f8a5bfdb7b4c12cd`, checkpoint `54f124240fd2bb8fb61c39594a55663e1b67f5f5b67595faeaa350504d0376da`; không đổi trained versions, source/schema pins, checkpoint hoặc default LR tuned C2. Real localhost HTTP health/models/predict/chat/preview PASS bằng checkpoint thật và input synthetic; Hard tuned vẫn503. Không train, mở test hay gọi LLM. 121 targeted tests PASS, không phải full-suite.
+
+Bằng chứng nằm trong `artifacts/metadata/runtime_compatibility/lr-baseline-v1/`: original-reference.json, windows-candidate.json, reference-comparison.json, real-http-smoke.json và deployment-runtime-approval.json. Dừng đúng server cũ bằng Ctrl+C, chạy lại `.venv-web\Scripts\python.exe -B run_api.py` trong code root, refresh trang và chọn **LR baseline C=1**. `GET /api/v1/models` phải báo `available=true` cho baseline; đổi model khi đang chat cần reset phiên theo contract hiện có. Không cần notebook để chạy web sau qualification.
 
 Lỗi `storage_not_configured` từ `/health`503 là thiếu biến môi trường trong serverprocess; dừng đúng server, đặt env rồi khởi động lại cùng terminal. Environment mismatch, missing artifact hoặc checksum mismatch phải dừng, không fallback. `/health` báo default model, registry báo trạng thái từng ứng viên. Offline không gọi LLM.
 

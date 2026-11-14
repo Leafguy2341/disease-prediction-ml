@@ -1,0 +1,100 @@
+{
+  "status": "PASS",
+  "protocol_id": "lr-baseline-windows31317-v1",
+  "approved_date": "2026-11-14",
+  "owner_authorization": "Owner supplied original reference checksum and authorized scoped LR baseline Windows unlock after verification.",
+  "approved_runtime": {
+    "system": "Windows",
+    "machine": "AMD64",
+    "implementation": "CPython",
+    "versions": {
+      "python": "3.13.17",
+      "sklearn": "1.6.1",
+      "numpy": "2.1.3",
+      "scipy": "1.16.3",
+      "joblib": "1.6.0"
+    },
+    "trained_versions": {
+      "python": "3.13.18",
+      "sklearn": "1.6.1",
+      "numpy": "2.1.3",
+      "scipy": "1.16.3",
+      "joblib": "1.6.0"
+    },
+    "selected_identity": "baseline-v1-f8a5bfdb7b4c12cd",
+    "checkpoint_sha256": "54f124240fd2bb8fb61c39594a55663e1b67f5f5b67595faeaa350504d0376da"
+  },
+  "actual_versions": {
+    "python": "3.13.17",
+    "sklearn": "1.6.1",
+    "numpy": "2.1.3",
+    "scipy": "1.16.3",
+    "joblib": "1.6.0"
+  },
+  "platform": {
+    "system": "Windows",
+    "machine": "AMD64",
+    "implementation": "CPython"
+  },
+  "comparison": {
+    "status": "PASS",
+    "model_id": "lr_baseline",
+    "reference_sha256": "447c7c23882d9c617c7f9d0d791526b7222e973ebab9bdcdcc1083722f0728ce",
+    "candidate_sha256": "2d4e308c4e008106b4baf29c8f4186018e7ce644269546be53d9329d90278fa2",
+    "max_abs_difference": 3.469446951953614e-18,
+    "probabilities_checked": 4696,
+    "exact_labels": true,
+    "exact_top3": true,
+    "production_allowlist_changed": false,
+    "protocol_id": "lr-baseline-windows31317-v1",
+    "owner_reference_sha256": "447c7c23882d9c617c7f9d0d791526b7222e973ebab9bdcdcc1083722f0728ce",
+    "checkpoint_sha256": "54f124240fd2bb8fb61c39594a55663e1b67f5f5b67595faeaa350504d0376da"
+  },
+  "actual_http_smoke": "real-http-smoke.json",
+  "api_source_sha256": "d5d7734bf371c334ecedd2060882c97ea543a50b1773f07aeb5657361cc47e97",
+  "evidence_sha256": {
+    "original-reference.json": "447c7c23882d9c617c7f9d0d791526b7222e973ebab9bdcdcc1083722f0728ce",
+    "windows-candidate.json": "2d4e308c4e008106b4baf29c8f4186018e7ce644269546be53d9329d90278fa2",
+    "reference-comparison.json": "5b7f9e664178c20d7d23bb2069495af6f2030dc47bcf6afec462347653d797d8",
+    "real-http-smoke.json": "4be1e7750e8f7f572eab67cabce8e3d4f61e02544b35d72daf1aef929fd11672"
+  },
+  "protected_sha256": {
+    "artifacts/metadata/phase2/dataset_manifest.json": "50308d250d874b1b653a71c31f38dece0ec9fbb4dbc9d94f68bc1461e80b8fe9",
+    "artifacts/metadata/phase2/feature_schema.json": "dd07a3c73dd41558daa9c08e816e0a93d9efc4155f98b7e2b73325bffe31c5c0",
+    "artifacts/metadata/phase2/label_mapping.json": "d2ef711e5e04062e8b5b949ce434b1383e1ca2fef6eb31a0865acb2f470ab5b5",
+    "artifacts/models/phase3/baseline-v1-f8a5bfdb7b4c12cd/logistic_regression/fit.json": "37168ee6148681bd4454fae02895ad62426c3682f2b2b0a5fdc05bfc5e167d92",
+    "artifacts/models/phase3/baseline-v1-f8a5bfdb7b4c12cd/logistic_regression/metadata.json": "a647476b871a3f15e3251d3162541c53b269bed54aabd6e5192ad746dd8ad764",
+    "artifacts/models/phase3/baseline-v1-f8a5bfdb7b4c12cd/logistic_regression/pipeline.joblib": "54f124240fd2bb8fb61c39594a55663e1b67f5f5b67595faeaa350504d0376da",
+    "artifacts/models/tuning/tuning-v1-9c4dd013abbba14a/logistic_regression/fit.json": "ca36c032a47d0bd9243cb473db4a6f6bc55d3aa8f50f079ca44ce6674eedda5d",
+    "artifacts/models/tuning/tuning-v1-9c4dd013abbba14a/logistic_regression/metadata.json": "6dc6c397c4493bc598ae1dba3d4ea6453248500b18f2afc041d52dac9f26f1dd",
+    "artifacts/models/tuning/tuning-v1-9c4dd013abbba14a/logistic_regression/pipeline.joblib": "4cac3bfd78dfe2849a855130d264c7bebc14d6e8d8e305b15015141663300ac6",
+    "configs/synonyms.json": "036d756fb202612122a31e8a041e60e98a33cc632a7caa41df25ccfe2689d527",
+    "notebooks\\00_dataset_audit.ipynb": "ef0e7a31748a61b76e1b0b133ccb2533ebc390f0d9612d78094d01f3a0379653",
+    "notebooks\\01_eda.ipynb": "a27996a34224068495829a92b5bca8a690055251eabc4f81043ac168dc578a43",
+    "notebooks\\02_preprocessing.ipynb": "82163fb54dc080870380461a152c606c439e144e3524fa7bd294f2182dc79b8b",
+    "notebooks\\03_model_training.ipynb": "cd2197ed933ccc3f8f8459dd8bd7514659e88b46d066caf4118b9895933e5e26",
+    "notebooks\\04_ensemble.ipynb": "80ab505329dc8793f9f9762d9e771e0632001972972231a52d627af5b189c90a",
+    "notebooks\\05_structured_inference_check.ipynb": "e9f6558941f7aaa71bfd63ab9aa0b3d57e843e4e145ebf3c57c38743053f5d03",
+    "notebooks\\06_final_model_evaluation.ipynb": "3667ca211af381049dc0825c1e699486ffc09f145a29e12c2d274ca6f2f303c4",
+    "notebooks\\07_vietnamese_symptom_extraction.ipynb": "def8e471a6f686f056af940a31a4170b397f4edb30652170d0820bfe84409096",
+    "notebooks\\Temp.ipynb": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "notebooks\\colab_smoke_test.ipynb": "bbd211813101eb6fea9d8abb982258cc4da528ee4af58ff841e24be035873b7f",
+    "src/data/audit.py": "41ff075c529ecf7200caf3717b660f655bc344e558d52d1448045aa2dd91672f",
+    "src/data/loader.py": "37397527ec5b5d48e233776fa5ef040a4bc476e23a45dd26d81ed5144c5ab17b",
+    "src/data/paths.py": "89ab450a76fffe92bb30fd6aa11b69567d69293916da2fda78123a8f29249eeb",
+    "src/data/preprocessing.py": "648c43f722a1c30e49e7f3279431c8136bbc5396f42ec9b51212679663fb845d",
+    "src/models/runtime.py": "ae3f4258bfd1029ed13aa1021e3905fee8cfdd53b5651a18f770e74e766ca500",
+    "src/models/training.py": "d48022c38d06712e028387e99a1563da8782af408749f436da54d17c825dc652"
+  },
+  "protected_files_unchanged": true,
+  "default_model_id": "lr_tuned_c2",
+  "hard_tuned_approved": false,
+  "targeted_regression_tests": {
+    "passed": 121,
+    "warnings": 1,
+    "full_suite_run": false
+  },
+  "models_fitted": 0,
+  "locked_test_payload_opened": false,
+  "llm_api_calls": 0
+}

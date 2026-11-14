@@ -41,7 +41,18 @@ APPROVED_DEPLOYMENT_RUNTIMES = ({
                          "scipy": "1.16.3", "joblib": "1.6.0"},
     "selected_identity": "tuned-v1-b8a5602679b3dc5c",
     "checkpoint_sha256": "4cac3bfd78dfe2849a855130d264c7bebc14d6e8d8e305b15015141663300ac6",
-},)
+}, {
+    # lr-baseline-windows31317-v1: independent Colab reference supplied by owner,
+    # SHA256 447c7c23882d9c617c7f9d0d791526b7222e973ebab9bdcdcc1083722f0728ce.
+    # 4696 probabilities within rtol=1e-10/atol=1e-12; exact labels and Top3.
+    "system": "Windows", "machine": "AMD64", "implementation": "CPython",
+    "versions": {"python": "3.13.17", "sklearn": "1.6.1", "numpy": "2.1.3",
+                 "scipy": "1.16.3", "joblib": "1.6.0"},
+    "trained_versions": {"python": "3.13.18", "sklearn": "1.6.1", "numpy": "2.1.3",
+                         "scipy": "1.16.3", "joblib": "1.6.0"},
+    "selected_identity": "baseline-v1-f8a5bfdb7b4c12cd",
+    "checkpoint_sha256": "54f124240fd2bb8fb61c39594a55663e1b67f5f5b67595faeaa350504d0376da",
+})
 
 
 def _runtime_compatible(checkpoint, current):
