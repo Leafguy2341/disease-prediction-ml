@@ -1,0 +1,183 @@
+{
+  "status": "PASS",
+  "kind": "actual_localhost_http_real_checkpoints",
+  "runtime": {
+    "python": "3.13.17"
+  },
+  "health_http": 200,
+  "registry_http": 200,
+  "baseline_predict_http": 200,
+  "baseline_chat_http": 200,
+  "baseline_preview_http": 200,
+  "hard_tuned_http": 503,
+  "default_model_id": "lr_tuned_c2",
+  "baseline_checkpoint_sha256": "54f124240fd2bb8fb61c39594a55663e1b67f5f5b67595faeaa350504d0376da",
+  "reference_sha256": "447c7c23882d9c617c7f9d0d791526b7222e973ebab9bdcdcc1083722f0728ce",
+  "top3_matches_reference": true,
+  "raw_scores_not_renormalized": true,
+  "prediction": {
+    "model_id": "lr_baseline",
+    "tuning_experiment_id": null,
+    "selected_checkpoint_id": "baseline-v1-f8a5bfdb7b4c12cd",
+    "checkpoint_sha256": "54f124240fd2bb8fb61c39594a55663e1b67f5f5b67595faeaa350504d0376da",
+    "schema_sha256": "441709695f8b878e65d848309361838fa0367b6c031ed665a1472a9aee43b734",
+    "features": 375,
+    "classes": 587,
+    "input_present_count": 2,
+    "score_label": "Điểm mô hình (%)",
+    "calibrated": false,
+    "note": "Điểm mô hình chưa calibration; không phải xác suất mắc bệnh hoặc chẩn đoán.",
+    "top3": [
+      {
+        "rank": 1,
+        "class_id": 380,
+        "label": "oral mucosal lesion",
+        "score_percent": 4.636421644474426
+      },
+      {
+        "rank": 2,
+        "class_id": 122,
+        "label": "conjunctivitis due to virus",
+        "score_percent": 3.711517514928649
+      },
+      {
+        "rank": 3,
+        "class_id": 527,
+        "label": "teething syndrome",
+        "score_percent": 3.30802874367983
+      }
+    ],
+    "presentation": {
+      "SCORE_DECIMALS": 4,
+      "top3": [
+        {
+          "class_id": 380,
+          "canonical_label": "oral mucosal lesion",
+          "display_label": "Tổn thương niêm mạc miệng",
+          "translation_status": "draft",
+          "score_text": "4.6364%"
+        },
+        {
+          "class_id": 122,
+          "canonical_label": "conjunctivitis due to virus",
+          "display_label": "Viêm kết mạc do virus",
+          "translation_status": "draft",
+          "score_text": "3.7115%"
+        },
+        {
+          "class_id": 527,
+          "canonical_label": "teething syndrome",
+          "display_label": "Hội chứng mọc răng",
+          "translation_status": "draft",
+          "score_text": "3.3080%"
+        }
+      ],
+      "warnings": [
+        "Tên tiếng Việt là bản dịch tham khảo cho đồ án, chưa được chuyên gia y tế rà soát. Nhãn gốc được giữ trong metadata."
+      ],
+      "confidence_label": "Điểm tự tin dự đoán (%)",
+      "confidence_note": "Điểm tự tin là score từ model chưa calibration, không phải xác suất mắc bệnh hoặc độ tin cậy chẩn đoán.",
+      "model_evaluation": null
+    }
+  },
+  "model_registry": {
+    "default_model_id": "lr_tuned_c2",
+    "models": [
+      {
+        "model_id": "lr_tuned_c2",
+        "display_name": "LR tuned C=2 — Mặc định",
+        "available": true,
+        "runtime_compatibility": "PASS",
+        "result_kind": "probability_scores",
+        "checkpoint_sha256": "4cac3bfd78dfe2849a855130d264c7bebc14d6e8d8e305b15015141663300ac6",
+        "artifact_path": "artifacts/models/tuning/tuning-v1-9c4dd013abbba14a/logistic_regression",
+        "checkpoint_identity": "tuned-v1-b8a5602679b3dc5c",
+        "ensemble_run_id": null,
+        "member_checkpoints": null,
+        "trained_versions": {
+          "joblib": "1.6.0",
+          "numpy": "2.1.3",
+          "python": "3.13.18",
+          "scipy": "1.16.3",
+          "sklearn": "1.6.1"
+        },
+        "schema_sha256": "441709695f8b878e65d848309361838fa0367b6c031ed665a1472a9aee43b734",
+        "features": 375,
+        "classes": 587,
+        "reason": null,
+        "ensemble_manifest_sha256": null,
+        "deployment_approval": "approved_before_final_test",
+        "label_mapping_sha256": "d2ef711e5e04062e8b5b949ce434b1383e1ca2fef6eb31a0865acb2f470ab5b5"
+      },
+      {
+        "model_id": "lr_baseline",
+        "display_name": "LR baseline C=1",
+        "available": true,
+        "runtime_compatibility": "PASS",
+        "result_kind": "probability_scores",
+        "checkpoint_sha256": "54f124240fd2bb8fb61c39594a55663e1b67f5f5b67595faeaa350504d0376da",
+        "artifact_path": "artifacts/models/phase3/baseline-v1-f8a5bfdb7b4c12cd/logistic_regression",
+        "checkpoint_identity": "baseline-v1-f8a5bfdb7b4c12cd",
+        "ensemble_run_id": null,
+        "member_checkpoints": null,
+        "trained_versions": {
+          "joblib": "1.6.0",
+          "numpy": "2.1.3",
+          "python": "3.13.18",
+          "scipy": "1.16.3",
+          "sklearn": "1.6.1"
+        },
+        "schema_sha256": "441709695f8b878e65d848309361838fa0367b6c031ed665a1472a9aee43b734",
+        "features": 375,
+        "classes": 587,
+        "reason": null,
+        "ensemble_manifest_sha256": null,
+        "deployment_approval": "owner_requested_research_comparator",
+        "label_mapping_sha256": "d2ef711e5e04062e8b5b949ce434b1383e1ca2fef6eb31a0865acb2f470ab5b5"
+      },
+      {
+        "model_id": "hard_tuned_lr_svc_knn",
+        "display_name": "Hard tuned LR + SVC + KNN",
+        "available": false,
+        "runtime_compatibility": "NOT VERIFIED",
+        "result_kind": "hard_vote_result",
+        "checkpoint_sha256": null,
+        "artifact_path": "artifacts/metadata/runs/tuned-ensemble-20261029T041701354242Z-6c84dbfe/tuned_ensemble_manifest.json",
+        "checkpoint_identity": "tuned-v1-b8a5602679b3dc5c",
+        "ensemble_run_id": "tuned-ensemble-20261029T041701354242Z-6c84dbfe",
+        "member_checkpoints": {
+          "logistic_regression": "4cac3bfd78dfe2849a855130d264c7bebc14d6e8d8e305b15015141663300ac6",
+          "linear_svc": "1ac35a1e68225142c6ff60332d8fcf973a57cc0f84c18be320f396830c32fe89",
+          "knn": "1d84f44c5d3eec025d7f9fc574fb80eba58b0e38fbb6927ed7090ebe9446b976"
+        },
+        "trained_versions": {
+          "joblib": "1.6.0",
+          "numpy": "2.1.3",
+          "python": "3.13.18",
+          "scipy": "1.16.3",
+          "sklearn": "1.6.1"
+        },
+        "schema_sha256": "441709695f8b878e65d848309361838fa0367b6c031ed665a1472a9aee43b734",
+        "features": 375,
+        "classes": 587,
+        "reason": {
+          "code": "environment_mismatch",
+          "message": "Checkpoint cần {'joblib': '1.6.0', 'numpy': '2.1.3', 'python': '3.13.18', 'scipy': '1.16.3', 'sklearn': '1.6.1'} hoặc deployment runtime đã được duyệt riêng; môi trường hiện tại {'python': '3.13.17', 'sklearn': '1.6.1', 'numpy': '2.1.3', 'scipy': '1.16.3', 'joblib': '1.6.0'}."
+        },
+        "ensemble_manifest_sha256": "858893c442f1966eb8c7508a74cf6318b820004278342a1b958942151c049060",
+        "deployment_approval": "owner_requested_research_comparator",
+        "label_mapping_sha256": "d2ef711e5e04062e8b5b949ce434b1383e1ca2fef6eb31a0865acb2f470ab5b5"
+      }
+    ],
+    "online_settings_supported": false
+  },
+  "models_fitted": 0,
+  "locked_test_opened": false,
+  "llm_api_calls": 0,
+  "guards": {
+    "model_or_feature_fit_attempts": 0,
+    "test_payload_access": 0,
+    "protected_write_attempts": 0
+  },
+  "guard_file": "http-guards-1794664450919153300.json"
+}

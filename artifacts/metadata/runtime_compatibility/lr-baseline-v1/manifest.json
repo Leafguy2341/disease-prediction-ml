@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "protocol_id": "lr-baseline-windows31317-v1",
+  "files": {
+    "deployment-runtime-approval.json": {
+      "sha256": "f3edfa1bd943384f9bf010a12d1287f98fa0a0e6799ef9b7876a7b738c112849",
+      "bytes": 5814
+    },
+    "http-guards-1794664450919153300.json": {
+      "sha256": "48d0b73ac6d8c7084468b53d9ebf31590c0a039979cc8d70b07f0d863db93807",
+      "bytes": 105
+    },
+    "http-guards.json": {
+      "sha256": "48d0b73ac6d8c7084468b53d9ebf31590c0a039979cc8d70b07f0d863db93807",
+      "bytes": 105
+    },
+    "original-reference.json": {
+      "sha256": "447c7c23882d9c617c7f9d0d791526b7222e973ebab9bdcdcc1083722f0728ce",
+      "bytes": 126715
+    },
+    "real-http-smoke.json": {
+      "sha256": "4be1e7750e8f7f572eab67cabce8e3d4f61e02544b35d72daf1aef929fd11672",
+      "bytes": 7478
+    },
+    "reference-comparison.json": {
+      "sha256": "5b7f9e664178c20d7d23bb2069495af6f2030dc47bcf6afec462347653d797d8",
+      "bytes": 634
+    },
+    "windows-candidate.json": {
+      "sha256": "2d4e308c4e008106b4baf29c8f4186018e7ce644269546be53d9329d90278fa2",
+      "bytes": 126716
+    }
+  },
+  "notes": {
+    "http-guards.json": "Guards only from initial harness attempt; not a completed HTTP smoke. Use real-http-smoke.json for final PASS."
+  }
+}

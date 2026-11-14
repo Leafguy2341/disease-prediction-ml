@@ -25,8 +25,9 @@ from src.models.training import json_bytes
 PROJECT = Path(__file__).resolve().parents[1]
 
 
-def test_qualified_windows_runtime_and_original_runtime(monkeypatch):
-    checkpoint = service_module.protocol()["checkpoints"]["lr_tuned_c2"]
+@pytest.mark.parametrize('model_id', ['lr_tuned_c2', 'lr_baseline'])
+def test_qualified_windows_runtime_and_original_runtime(monkeypatch, model_id):
+    checkpoint = service_module.protocol()["checkpoints"][model_id]
     original = deepcopy(checkpoint["identity"]["versions"])
     candidate = {**original, "python": "3.13.17"}
     monkeypatch.setattr(service_module.platform, "system", lambda: "Windows")
@@ -44,8 +45,9 @@ def test_qualified_windows_runtime_and_original_runtime(monkeypatch):
     "python", "sklearn", "numpy", "scipy", "joblib", "extra_version", "system",
     "machine", "implementation", "checkpoint_hash", "selected_identity", "trained_identity",
 ])
-def test_runtime_exception_is_scoped_to_qualified_identity(monkeypatch, fault):
-    checkpoint = service_module.protocol()["checkpoints"]["lr_tuned_c2"]
+@pytest.mark.parametrize('model_id', ['lr_tuned_c2', 'lr_baseline'])
+def test_runtime_exception_is_scoped_to_qualified_identity(monkeypatch, fault, model_id):
+    checkpoint = service_module.protocol()["checkpoints"][model_id]
     candidate = {**checkpoint["identity"]["versions"], "python": "3.13.17"}
     monkeypatch.setattr(service_module.platform, "system", lambda: "Windows")
     monkeypatch.setattr(service_module.platform, "machine", lambda: "AMD64")

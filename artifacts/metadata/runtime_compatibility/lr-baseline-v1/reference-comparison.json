@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "model_id": "lr_baseline",
+  "reference_sha256": "447c7c23882d9c617c7f9d0d791526b7222e973ebab9bdcdcc1083722f0728ce",
+  "candidate_sha256": "2d4e308c4e008106b4baf29c8f4186018e7ce644269546be53d9329d90278fa2",
+  "max_abs_difference": 3.469446951953614e-18,
+  "probabilities_checked": 4696,
+  "exact_labels": true,
+  "exact_top3": true,
+  "production_allowlist_changed": false,
+  "protocol_id": "lr-baseline-windows31317-v1",
+  "owner_reference_sha256": "447c7c23882d9c617c7f9d0d791526b7222e973ebab9bdcdcc1083722f0728ce",
+  "checkpoint_sha256": "54f124240fd2bb8fb61c39594a55663e1b67f5f5b67595faeaa350504d0376da"
+}

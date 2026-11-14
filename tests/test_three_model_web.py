@@ -87,4 +87,4 @@ def test_windows_guard_still_blocks_other_frozen_weights(monkeypatch):
     monkeypatch.setattr(module.platform,'python_implementation',lambda:'CPython')
     candidate={**p['checkpoints']['lr_tuned_c2']['identity']['versions'],'python':'3.13.17'}
     for key,cp in p['checkpoints'].items():
-        assert _runtime_compatible(cp,candidate)==(key=='lr_tuned_c2')
+        assert _runtime_compatible(cp,candidate)==(key in {'lr_tuned_c2', 'lr_baseline'})
