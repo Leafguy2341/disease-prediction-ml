@@ -53,7 +53,7 @@ Owner chọn **LR tuned C=2 trước final test** vì có Top 3 từ `predict_pr
 
 Điểm hiển thị là **điểm mô hình chưa calibration**, không phải xác suất mắc bệnh hay Accuracy của riêng một câu. Accuracy toàn tập test, khi hiển thị, là metric đánh giá riêng. Catalog có tên/mô tả cho 375 feature; **135/375 feature có alias Việt active**, phần còn lại giữ review/draft, không ép khớp để tăng coverage.
 
-Trên Windows CPython 3.13.17/AMD64 với đúng dependency pins, LR tuned và LR baseline đã runtime-qualified; LR tuned vẫn là mặc định. Có thể chọn LR baseline làm đối chứng sau khi restart server và có đủ artifacts. Hard tuned tiếp tục bị khóa vì chưa hoàn tất qualification các member. Xem trạng thái thực tại `GET /api/v1/models`.
+Trên Windows CPython 3.13.17/AMD64 với đúng dependency pins, LR tuned, LR baseline và Hard tuned LR+SVC+KNN đã runtime-qualified khi đủ artifacts; LR tuned vẫn là mặc định. Hai LR trả Top3 từ predict_proba; Hard tuned trả nhãn thắng, phiếu và từng thành viên, không có probability Top3. Restart server sau cập nhật source và bắt đầu phiên mới khi đổi model. Xem trạng thái thực tại `GET /api/v1/models`.
 
 ## 6. Công nghệ sử dụng
 

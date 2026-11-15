@@ -52,6 +52,26 @@ APPROVED_DEPLOYMENT_RUNTIMES = ({
                          "scipy": "1.16.3", "joblib": "1.6.0"},
     "selected_identity": "baseline-v1-f8a5bfdb7b4c12cd",
     "checkpoint_sha256": "54f124240fd2bb8fb61c39594a55663e1b67f5f5b67595faeaa350504d0376da",
+}, {
+    # hard-tuned-windows31317-synthetic-v1: owner-confirmed original Colab reference
+    # cf131278daa0f1729644b64130446155c35799ece67cc2570640849cb0bd3b9c.
+    # Exact member labels/voting (5 ties); SVC decision scores within frozen tolerance.
+    "system": "Windows", "machine": "AMD64", "implementation": "CPython",
+    "versions": {"python": "3.13.17", "sklearn": "1.6.1", "numpy": "2.1.3",
+                 "scipy": "1.16.3", "joblib": "1.6.0"},
+    "trained_versions": {"python": "3.13.18", "sklearn": "1.6.1", "numpy": "2.1.3",
+                         "scipy": "1.16.3", "joblib": "1.6.0"},
+    "selected_identity": "tuned-v1-b8a5602679b3dc5c",
+    "checkpoint_sha256": "1ac35a1e68225142c6ff60332d8fcf973a57cc0f84c18be320f396830c32fe89",
+}, {
+    # Same independent hard-tuned qualification; KNN probabilities and Top3 match.
+    "system": "Windows", "machine": "AMD64", "implementation": "CPython",
+    "versions": {"python": "3.13.17", "sklearn": "1.6.1", "numpy": "2.1.3",
+                 "scipy": "1.16.3", "joblib": "1.6.0"},
+    "trained_versions": {"python": "3.13.18", "sklearn": "1.6.1", "numpy": "2.1.3",
+                         "scipy": "1.16.3", "joblib": "1.6.0"},
+    "selected_identity": "tuned-v1-b8a5602679b3dc5c",
+    "checkpoint_sha256": "1d84f44c5d3eec025d7f9fc574fb80eba58b0e38fbb6927ed7090ebe9446b976",
 })
 
 

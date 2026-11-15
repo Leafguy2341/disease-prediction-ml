@@ -1,0 +1,42 @@
+{
+  "status": "PASS",
+  "protocol_id": "hard-tuned-windows31317-synthetic-v1",
+  "reference_sha256": "cf131278daa0f1729644b64130446155c35799ece67cc2570640849cb0bd3b9c",
+  "candidate_sha256": "8153ced87cf421796f68c48dcd80b97f9a9360b044774e095f9d17eae245a609",
+  "members": {
+    "logistic_regression": {
+      "numeric_field": "predict_proba",
+      "values_checked": 4696,
+      "max_abs_difference": 2.168404344971009e-19,
+      "exact_labels": true,
+      "exact_top3": true
+    },
+    "linear_svc": {
+      "numeric_field": "decision_scores",
+      "values_checked": 4696,
+      "max_abs_difference": 0.0,
+      "exact_labels": true,
+      "exact_top3": false
+    },
+    "knn": {
+      "numeric_field": "predict_proba",
+      "values_checked": 4696,
+      "max_abs_difference": 0.0,
+      "exact_labels": true,
+      "exact_top3": true
+    }
+  },
+  "hard_vote_labels": [
+    83,
+    173,
+    73,
+    380,
+    553,
+    354,
+    489,
+    61
+  ],
+  "tie_rows": 5,
+  "exact_voting": true,
+  "production_allowlist_changed": false
+}

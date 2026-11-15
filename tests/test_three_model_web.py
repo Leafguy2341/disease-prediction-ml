@@ -78,7 +78,7 @@ def test_hard_vote_chat_does_not_claim_top3_or_probabilities(deployment):
         assert result['state_summary']['top3_display']==[]
 
 
-def test_windows_guard_still_blocks_other_frozen_weights(monkeypatch):
+def test_windows_guard_qualifies_checked_weights_but_rejects_other_hashes(monkeypatch):
     from app.backend.prediction import _runtime_compatible
     import app.backend.prediction as module
     p=protocol()
@@ -87,4 +87,7 @@ def test_windows_guard_still_blocks_other_frozen_weights(monkeypatch):
     monkeypatch.setattr(module.platform,'python_implementation',lambda:'CPython')
     candidate={**p['checkpoints']['lr_tuned_c2']['identity']['versions'],'python':'3.13.17'}
     for key,cp in p['checkpoints'].items():
-        assert _runtime_compatible(cp,candidate)==(key in {'lr_tuned_c2', 'lr_baseline'})
+        assert _runtime_compatible(cp,candidate)
+        unchecked=deepcopy(cp)
+        unchecked['files']['pipeline.joblib']['sha256']='0'*64
+        assert not _runtime_compatible(unchecked,candidate)

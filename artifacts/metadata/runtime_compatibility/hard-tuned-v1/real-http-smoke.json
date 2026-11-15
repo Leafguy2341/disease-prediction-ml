@@ -1,0 +1,315 @@
+{
+  "status": "PASS",
+  "kind": "actual_localhost_http_real_checkpoints",
+  "health_http": 200,
+  "models_http": 200,
+  "default_model_id": "lr_tuned_c2",
+  "all_three_candidates_available": true,
+  "structured_cases": [
+    {
+      "case": "zero_boundary",
+      "http_status": 422
+    },
+    {
+      "case": "cough_only",
+      "http_status": 200,
+      "result": {
+        "class_id": 173,
+        "label": "eczema",
+        "votes": 2,
+        "total_members": 3,
+        "tie": false,
+        "members": [
+          {
+            "model": "logistic_regression",
+            "class_id": 173,
+            "label": "eczema"
+          },
+          {
+            "model": "linear_svc",
+            "class_id": 173,
+            "label": "eczema"
+          },
+          {
+            "model": "knn",
+            "class_id": 527,
+            "label": "teething syndrome"
+          }
+        ]
+      }
+    },
+    {
+      "case": "fever_only",
+      "http_status": 200,
+      "result": {
+        "class_id": 73,
+        "label": "breast infection (mastitis)",
+        "votes": 1,
+        "total_members": 3,
+        "tie": true,
+        "members": [
+          {
+            "model": "logistic_regression",
+            "class_id": 73,
+            "label": "breast infection (mastitis)"
+          },
+          {
+            "model": "linear_svc",
+            "class_id": 236,
+            "label": "gum disease"
+          },
+          {
+            "model": "knn",
+            "class_id": 44,
+            "label": "asthma"
+          }
+        ]
+      }
+    },
+    {
+      "case": "cough_fever",
+      "http_status": 200,
+      "result": {
+        "class_id": 380,
+        "label": "oral mucosal lesion",
+        "votes": 1,
+        "total_members": 3,
+        "tie": true,
+        "members": [
+          {
+            "model": "logistic_regression",
+            "class_id": 380,
+            "label": "oral mucosal lesion"
+          },
+          {
+            "model": "linear_svc",
+            "class_id": 122,
+            "label": "conjunctivitis due to virus"
+          },
+          {
+            "model": "knn",
+            "class_id": 2,
+            "label": "abscess of nose"
+          }
+        ]
+      }
+    },
+    {
+      "case": "gastro",
+      "http_status": 200,
+      "result": {
+        "class_id": 553,
+        "label": "trichomonas infection",
+        "votes": 1,
+        "total_members": 3,
+        "tie": true,
+        "members": [
+          {
+            "model": "logistic_regression",
+            "class_id": 553,
+            "label": "trichomonas infection"
+          },
+          {
+            "model": "linear_svc",
+            "class_id": 563,
+            "label": "urinary tract infection"
+          },
+          {
+            "model": "knn",
+            "class_id": 240,
+            "label": "headache after lumbar puncture"
+          }
+        ]
+      }
+    },
+    {
+      "case": "headache_fatigue",
+      "http_status": 200,
+      "result": {
+        "class_id": 354,
+        "label": "multiple sclerosis",
+        "votes": 3,
+        "total_members": 3,
+        "tie": false,
+        "members": [
+          {
+            "model": "logistic_regression",
+            "class_id": 354,
+            "label": "multiple sclerosis"
+          },
+          {
+            "model": "linear_svc",
+            "class_id": 354,
+            "label": "multiple sclerosis"
+          },
+          {
+            "model": "knn",
+            "class_id": 354,
+            "label": "multiple sclerosis"
+          }
+        ]
+      }
+    },
+    {
+      "case": "respiratory",
+      "http_status": 200,
+      "result": {
+        "class_id": 489,
+        "label": "sepsis",
+        "votes": 2,
+        "total_members": 3,
+        "tie": false,
+        "members": [
+          {
+            "model": "logistic_regression",
+            "class_id": 489,
+            "label": "sepsis"
+          },
+          {
+            "model": "linear_svc",
+            "class_id": 489,
+            "label": "sepsis"
+          },
+          {
+            "model": "knn",
+            "class_id": 8,
+            "label": "acute bronchiolitis"
+          }
+        ]
+      }
+    },
+    {
+      "case": "all_one_boundary",
+      "http_status": 200,
+      "result": {
+        "class_id": 61,
+        "label": "benign prostatic hyperplasia (bph)",
+        "votes": 1,
+        "total_members": 3,
+        "tie": true,
+        "members": [
+          {
+            "model": "logistic_regression",
+            "class_id": 61,
+            "label": "benign prostatic hyperplasia (bph)"
+          },
+          {
+            "model": "linear_svc",
+            "class_id": 255,
+            "label": "hormone disorder"
+          },
+          {
+            "model": "knn",
+            "class_id": 14,
+            "label": "acute pancreatitis"
+          }
+        ]
+      }
+    }
+  ],
+  "hard_chat_http": 200,
+  "hard_preview_http": 200,
+  "model_switch_without_reset_http": 409,
+  "lr_tuned_http": 200,
+  "lr_baseline_http": 200,
+  "website_http": 200,
+  "no_probability_top3_for_hard_vote": true,
+  "synthetic_reference_sha256": "cf131278daa0f1729644b64130446155c35799ece67cc2570640849cb0bd3b9c",
+  "model_registry": {
+    "default_model_id": "lr_tuned_c2",
+    "models": [
+      {
+        "model_id": "lr_tuned_c2",
+        "display_name": "LR tuned C=2 — Mặc định",
+        "available": true,
+        "runtime_compatibility": "PASS",
+        "result_kind": "probability_scores",
+        "checkpoint_sha256": "4cac3bfd78dfe2849a855130d264c7bebc14d6e8d8e305b15015141663300ac6",
+        "artifact_path": "artifacts/models/tuning/tuning-v1-9c4dd013abbba14a/logistic_regression",
+        "checkpoint_identity": "tuned-v1-b8a5602679b3dc5c",
+        "ensemble_run_id": null,
+        "member_checkpoints": null,
+        "trained_versions": {
+          "joblib": "1.6.0",
+          "numpy": "2.1.3",
+          "python": "3.13.18",
+          "scipy": "1.16.3",
+          "sklearn": "1.6.1"
+        },
+        "schema_sha256": "441709695f8b878e65d848309361838fa0367b6c031ed665a1472a9aee43b734",
+        "features": 375,
+        "classes": 587,
+        "reason": null,
+        "ensemble_manifest_sha256": null,
+        "deployment_approval": "approved_before_final_test",
+        "label_mapping_sha256": "d2ef711e5e04062e8b5b949ce434b1383e1ca2fef6eb31a0865acb2f470ab5b5"
+      },
+      {
+        "model_id": "lr_baseline",
+        "display_name": "LR baseline C=1",
+        "available": true,
+        "runtime_compatibility": "PASS",
+        "result_kind": "probability_scores",
+        "checkpoint_sha256": "54f124240fd2bb8fb61c39594a55663e1b67f5f5b67595faeaa350504d0376da",
+        "artifact_path": "artifacts/models/phase3/baseline-v1-f8a5bfdb7b4c12cd/logistic_regression",
+        "checkpoint_identity": "baseline-v1-f8a5bfdb7b4c12cd",
+        "ensemble_run_id": null,
+        "member_checkpoints": null,
+        "trained_versions": {
+          "joblib": "1.6.0",
+          "numpy": "2.1.3",
+          "python": "3.13.18",
+          "scipy": "1.16.3",
+          "sklearn": "1.6.1"
+        },
+        "schema_sha256": "441709695f8b878e65d848309361838fa0367b6c031ed665a1472a9aee43b734",
+        "features": 375,
+        "classes": 587,
+        "reason": null,
+        "ensemble_manifest_sha256": null,
+        "deployment_approval": "owner_requested_research_comparator",
+        "label_mapping_sha256": "d2ef711e5e04062e8b5b949ce434b1383e1ca2fef6eb31a0865acb2f470ab5b5"
+      },
+      {
+        "model_id": "hard_tuned_lr_svc_knn",
+        "display_name": "Hard tuned LR + SVC + KNN",
+        "available": true,
+        "runtime_compatibility": "PASS",
+        "result_kind": "hard_vote_result",
+        "checkpoint_sha256": null,
+        "artifact_path": "artifacts/metadata/runs/tuned-ensemble-20261029T041701354242Z-6c84dbfe/tuned_ensemble_manifest.json",
+        "checkpoint_identity": "tuned-v1-b8a5602679b3dc5c",
+        "ensemble_run_id": "tuned-ensemble-20261029T041701354242Z-6c84dbfe",
+        "member_checkpoints": {
+          "logistic_regression": "4cac3bfd78dfe2849a855130d264c7bebc14d6e8d8e305b15015141663300ac6",
+          "linear_svc": "1ac35a1e68225142c6ff60332d8fcf973a57cc0f84c18be320f396830c32fe89",
+          "knn": "1d84f44c5d3eec025d7f9fc574fb80eba58b0e38fbb6927ed7090ebe9446b976"
+        },
+        "trained_versions": {
+          "joblib": "1.6.0",
+          "numpy": "2.1.3",
+          "python": "3.13.18",
+          "scipy": "1.16.3",
+          "sklearn": "1.6.1"
+        },
+        "schema_sha256": "441709695f8b878e65d848309361838fa0367b6c031ed665a1472a9aee43b734",
+        "features": 375,
+        "classes": 587,
+        "reason": null,
+        "ensemble_manifest_sha256": "858893c442f1966eb8c7508a74cf6318b820004278342a1b958942151c049060",
+        "deployment_approval": "owner_requested_research_comparator",
+        "label_mapping_sha256": "d2ef711e5e04062e8b5b949ce434b1383e1ca2fef6eb31a0865acb2f470ab5b5"
+      }
+    ],
+    "online_settings_supported": false
+  },
+  "models_fitted": 0,
+  "locked_test_opened": false,
+  "llm_api_calls": 0,
+  "guards": {
+    "model_or_feature_fit_attempts": 0,
+    "test_payload_access": 0,
+    "protected_write_attempts": 0
+  },
+  "guard_file": "http-guards-1794722213142727500.json"
+}
