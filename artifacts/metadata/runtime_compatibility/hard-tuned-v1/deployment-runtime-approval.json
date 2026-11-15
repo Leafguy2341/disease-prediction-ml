@@ -1,0 +1,224 @@
+{
+  "status": "PASS",
+  "protocol_id": "hard-tuned-windows31317-synthetic-v1",
+  "approved_date": "2026-11-15",
+  "owner_authorization": "Owner requested Hard tuned web unlock and supplied the independent original Colab synthetic reference and SHA256.",
+  "runtime_allowlist": [
+    {
+      "system": "Windows",
+      "machine": "AMD64",
+      "implementation": "CPython",
+      "versions": {
+        "python": "3.13.17",
+        "sklearn": "1.6.1",
+        "numpy": "2.1.3",
+        "scipy": "1.16.3",
+        "joblib": "1.6.0"
+      },
+      "trained_versions": {
+        "python": "3.13.18",
+        "sklearn": "1.6.1",
+        "numpy": "2.1.3",
+        "scipy": "1.16.3",
+        "joblib": "1.6.0"
+      },
+      "selected_identity": "tuned-v1-b8a5602679b3dc5c",
+      "checkpoint_sha256": "4cac3bfd78dfe2849a855130d264c7bebc14d6e8d8e305b15015141663300ac6"
+    },
+    {
+      "system": "Windows",
+      "machine": "AMD64",
+      "implementation": "CPython",
+      "versions": {
+        "python": "3.13.17",
+        "sklearn": "1.6.1",
+        "numpy": "2.1.3",
+        "scipy": "1.16.3",
+        "joblib": "1.6.0"
+      },
+      "trained_versions": {
+        "python": "3.13.18",
+        "sklearn": "1.6.1",
+        "numpy": "2.1.3",
+        "scipy": "1.16.3",
+        "joblib": "1.6.0"
+      },
+      "selected_identity": "baseline-v1-f8a5bfdb7b4c12cd",
+      "checkpoint_sha256": "54f124240fd2bb8fb61c39594a55663e1b67f5f5b67595faeaa350504d0376da"
+    },
+    {
+      "system": "Windows",
+      "machine": "AMD64",
+      "implementation": "CPython",
+      "versions": {
+        "python": "3.13.17",
+        "sklearn": "1.6.1",
+        "numpy": "2.1.3",
+        "scipy": "1.16.3",
+        "joblib": "1.6.0"
+      },
+      "trained_versions": {
+        "python": "3.13.18",
+        "sklearn": "1.6.1",
+        "numpy": "2.1.3",
+        "scipy": "1.16.3",
+        "joblib": "1.6.0"
+      },
+      "selected_identity": "tuned-v1-b8a5602679b3dc5c",
+      "checkpoint_sha256": "1ac35a1e68225142c6ff60332d8fcf973a57cc0f84c18be320f396830c32fe89"
+    },
+    {
+      "system": "Windows",
+      "machine": "AMD64",
+      "implementation": "CPython",
+      "versions": {
+        "python": "3.13.17",
+        "sklearn": "1.6.1",
+        "numpy": "2.1.3",
+        "scipy": "1.16.3",
+        "joblib": "1.6.0"
+      },
+      "trained_versions": {
+        "python": "3.13.18",
+        "sklearn": "1.6.1",
+        "numpy": "2.1.3",
+        "scipy": "1.16.3",
+        "joblib": "1.6.0"
+      },
+      "selected_identity": "tuned-v1-b8a5602679b3dc5c",
+      "checkpoint_sha256": "1d84f44c5d3eec025d7f9fc574fb80eba58b0e38fbb6927ed7090ebe9446b976"
+    }
+  ],
+  "actual_versions": {
+    "python": "3.13.17",
+    "sklearn": "1.6.1",
+    "numpy": "2.1.3",
+    "scipy": "1.16.3",
+    "joblib": "1.6.0"
+  },
+  "platform": {
+    "system": "Windows",
+    "machine": "AMD64",
+    "implementation": "CPython"
+  },
+  "reference_sha256": "cf131278daa0f1729644b64130446155c35799ece67cc2570640849cb0bd3b9c",
+  "candidate_sha256": "8153ced87cf421796f68c48dcd80b97f9a9360b044774e095f9d17eae245a609",
+  "comparison": {
+    "status": "PASS",
+    "protocol_id": "hard-tuned-windows31317-synthetic-v1",
+    "reference_sha256": "cf131278daa0f1729644b64130446155c35799ece67cc2570640849cb0bd3b9c",
+    "candidate_sha256": "8153ced87cf421796f68c48dcd80b97f9a9360b044774e095f9d17eae245a609",
+    "members": {
+      "logistic_regression": {
+        "numeric_field": "predict_proba",
+        "values_checked": 4696,
+        "max_abs_difference": 2.168404344971009e-19,
+        "exact_labels": true,
+        "exact_top3": true
+      },
+      "linear_svc": {
+        "numeric_field": "decision_scores",
+        "values_checked": 4696,
+        "max_abs_difference": 0.0,
+        "exact_labels": true,
+        "exact_top3": false
+      },
+      "knn": {
+        "numeric_field": "predict_proba",
+        "values_checked": 4696,
+        "max_abs_difference": 0.0,
+        "exact_labels": true,
+        "exact_top3": true
+      }
+    },
+    "hard_vote_labels": [
+      83,
+      173,
+      73,
+      380,
+      553,
+      354,
+      489,
+      61
+    ],
+    "tie_rows": 5,
+    "exact_voting": true,
+    "production_allowlist_changed": false
+  },
+  "ensemble": {
+    "engine_source_sha256": "ee3121f04b187845fbff937add77a527d2761df14e035e94f48100b1d647443c",
+    "key": "hard_lr_svc_knn",
+    "manifest_sha256": "858893c442f1966eb8c7508a74cf6318b820004278342a1b958942151c049060",
+    "members": [
+      "logistic_regression",
+      "linear_svc",
+      "knn"
+    ],
+    "priority": [
+      "logistic_regression",
+      "linear_svc",
+      "knn",
+      "bernoulli_nb",
+      "random_forest"
+    ],
+    "run_id": "tuned-ensemble-20261029T041701354242Z-6c84dbfe"
+  },
+  "default_model_id": "lr_tuned_c2",
+  "all_three_candidates_available": true,
+  "targeted_tests": {
+    "passed": 164,
+    "warnings": 1,
+    "full_suite_run": false
+  },
+  "source_sha256": {
+    "app/backend/prediction.py": "b470ef9f3c09252334951def1b8c07299e967ad080ffc2622918b22f5948c69d",
+    "app/backend/models.py": "6a33732700e18cc7e5b7ffc2147b7de63e49497bb12b7d6e86f56eea4909e58f",
+    "scripts/qualify_web_models.py": "e5b6be94f077a5edb7b7a5682ea1fba60ffd52334788e82cdd531dab0f833778"
+  },
+  "protected_sha256": {
+    "artifacts/metadata/phase2/dataset_manifest.json": "50308d250d874b1b653a71c31f38dece0ec9fbb4dbc9d94f68bc1461e80b8fe9",
+    "artifacts/metadata/phase2/feature_schema.json": "dd07a3c73dd41558daa9c08e816e0a93d9efc4155f98b7e2b73325bffe31c5c0",
+    "artifacts/metadata/phase2/label_mapping.json": "d2ef711e5e04062e8b5b949ce434b1383e1ca2fef6eb31a0865acb2f470ab5b5",
+    "artifacts/models/phase3/baseline-v1-f8a5bfdb7b4c12cd/logistic_regression/fit.json": "37168ee6148681bd4454fae02895ad62426c3682f2b2b0a5fdc05bfc5e167d92",
+    "artifacts/models/phase3/baseline-v1-f8a5bfdb7b4c12cd/logistic_regression/metadata.json": "a647476b871a3f15e3251d3162541c53b269bed54aabd6e5192ad746dd8ad764",
+    "artifacts/models/phase3/baseline-v1-f8a5bfdb7b4c12cd/logistic_regression/pipeline.joblib": "54f124240fd2bb8fb61c39594a55663e1b67f5f5b67595faeaa350504d0376da",
+    "artifacts/models/tuning/tuning-v1-9c4dd013abbba14a/knn/fit.json": "5703dcb896286986947b892c124373d74a3da419df9cf500cd8479c59b7b6ec2",
+    "artifacts/models/tuning/tuning-v1-9c4dd013abbba14a/knn/metadata.json": "de9711e74b3d160d5accadff8e8cc04818afd6fb76016c7458dd9535e2cd30ef",
+    "artifacts/models/tuning/tuning-v1-9c4dd013abbba14a/knn/pipeline.joblib": "1d84f44c5d3eec025d7f9fc574fb80eba58b0e38fbb6927ed7090ebe9446b976",
+    "artifacts/models/tuning/tuning-v1-9c4dd013abbba14a/linear_svc/fit.json": "37baea4c57dc62ba951d397b2a14983df26bd20ddc4d2bebbfd0060607cf48c2",
+    "artifacts/models/tuning/tuning-v1-9c4dd013abbba14a/linear_svc/metadata.json": "6b352aa800cabf3709b01fd92726b836c88851d14f9e065394b0d06299e2bfd7",
+    "artifacts/models/tuning/tuning-v1-9c4dd013abbba14a/linear_svc/pipeline.joblib": "1ac35a1e68225142c6ff60332d8fcf973a57cc0f84c18be320f396830c32fe89",
+    "artifacts/models/tuning/tuning-v1-9c4dd013abbba14a/logistic_regression/fit.json": "ca36c032a47d0bd9243cb473db4a6f6bc55d3aa8f50f079ca44ce6674eedda5d",
+    "artifacts/models/tuning/tuning-v1-9c4dd013abbba14a/logistic_regression/metadata.json": "6dc6c397c4493bc598ae1dba3d4ea6453248500b18f2afc041d52dac9f26f1dd",
+    "artifacts/models/tuning/tuning-v1-9c4dd013abbba14a/logistic_regression/pipeline.joblib": "4cac3bfd78dfe2849a855130d264c7bebc14d6e8d8e305b15015141663300ac6",
+    "configs/synonyms.json": "036d756fb202612122a31e8a041e60e98a33cc632a7caa41df25ccfe2689d527",
+    "notebooks\\00_dataset_audit.ipynb": "ef0e7a31748a61b76e1b0b133ccb2533ebc390f0d9612d78094d01f3a0379653",
+    "notebooks\\01_eda.ipynb": "a27996a34224068495829a92b5bca8a690055251eabc4f81043ac168dc578a43",
+    "notebooks\\02_preprocessing.ipynb": "82163fb54dc080870380461a152c606c439e144e3524fa7bd294f2182dc79b8b",
+    "notebooks\\03_model_training.ipynb": "cd2197ed933ccc3f8f8459dd8bd7514659e88b46d066caf4118b9895933e5e26",
+    "notebooks\\04_ensemble.ipynb": "80ab505329dc8793f9f9762d9e771e0632001972972231a52d627af5b189c90a",
+    "notebooks\\05_structured_inference_check.ipynb": "e9f6558941f7aaa71bfd63ab9aa0b3d57e843e4e145ebf3c57c38743053f5d03",
+    "notebooks\\06_final_model_evaluation.ipynb": "3667ca211af381049dc0825c1e699486ffc09f145a29e12c2d274ca6f2f303c4",
+    "notebooks\\07_vietnamese_symptom_extraction.ipynb": "def8e471a6f686f056af940a31a4170b397f4edb30652170d0820bfe84409096",
+    "notebooks\\Temp.ipynb": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "notebooks\\colab_smoke_test.ipynb": "bbd211813101eb6fea9d8abb982258cc4da528ee4af58ff841e24be035873b7f",
+    "src/data/audit.py": "41ff075c529ecf7200caf3717b660f655bc344e558d52d1448045aa2dd91672f",
+    "src/data/loader.py": "37397527ec5b5d48e233776fa5ef040a4bc476e23a45dd26d81ed5144c5ab17b",
+    "src/data/paths.py": "89ab450a76fffe92bb30fd6aa11b69567d69293916da2fda78123a8f29249eeb",
+    "src/data/preprocessing.py": "648c43f722a1c30e49e7f3279431c8136bbc5396f42ec9b51212679663fb845d",
+    "src/models/runtime.py": "ae3f4258bfd1029ed13aa1021e3905fee8cfdd53b5651a18f770e74e766ca500",
+    "src/models/training.py": "d48022c38d06712e028387e99a1563da8782af408749f436da54d17c825dc652",
+    "src/models/tuned_ensemble.py": "a507f8cb9065009585b79a4f1275ca2c6d7c3ecf2690367d7a366f99c1ffcf3b",
+    "src/models/tuning.py": "00a07b2d5a2e1754b3c63d32342cf54a8c781ee1df1af5c029c9e7289bc59f02"
+  },
+  "protected_files_unchanged": true,
+  "evidence_sha256": {
+    "original-reference.json": "cf131278daa0f1729644b64130446155c35799ece67cc2570640849cb0bd3b9c",
+    "windows-candidate.json": "8153ced87cf421796f68c48dcd80b97f9a9360b044774e095f9d17eae245a609",
+    "reference-comparison.json": "3f721cff090c71fc364f4a7d5669871c81a58a6a185143bec0a09e37b88354b3",
+    "real-http-smoke.json": "27ce6c68a685fabba9e546e03ea1b1fb1c831f2cc12a5a4d3e3af89d3653ec36"
+  },
+  "models_fitted": 0,
+  "locked_test_opened": false,
+  "llm_api_calls": 0
+}

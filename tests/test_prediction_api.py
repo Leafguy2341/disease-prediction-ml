@@ -25,7 +25,7 @@ from src.models.training import json_bytes
 PROJECT = Path(__file__).resolve().parents[1]
 
 
-@pytest.mark.parametrize('model_id', ['lr_tuned_c2', 'lr_baseline'])
+@pytest.mark.parametrize('model_id', ['lr_tuned_c2', 'lr_baseline', 'svc_tuned', 'knn_tuned'])
 def test_qualified_windows_runtime_and_original_runtime(monkeypatch, model_id):
     checkpoint = service_module.protocol()["checkpoints"][model_id]
     original = deepcopy(checkpoint["identity"]["versions"])
@@ -45,7 +45,7 @@ def test_qualified_windows_runtime_and_original_runtime(monkeypatch, model_id):
     "python", "sklearn", "numpy", "scipy", "joblib", "extra_version", "system",
     "machine", "implementation", "checkpoint_hash", "selected_identity", "trained_identity",
 ])
-@pytest.mark.parametrize('model_id', ['lr_tuned_c2', 'lr_baseline'])
+@pytest.mark.parametrize('model_id', ['lr_tuned_c2', 'lr_baseline', 'svc_tuned', 'knn_tuned'])
 def test_runtime_exception_is_scoped_to_qualified_identity(monkeypatch, fault, model_id):
     checkpoint = service_module.protocol()["checkpoints"][model_id]
     candidate = {**checkpoint["identity"]["versions"], "python": "3.13.17"}
