@@ -1,5 +1,9 @@
 # Hướng dẫn bàn giao dự án
 
+## Dictionary release hiện hành
+
+`configs/synonyms.json` hiện có375feature active/400alias Việt theo phê duyệt owner. Bàn giao kèm [activation-20261118](../reports/terminology/activation-20261118/manifest.json) để biết checksum, bản sao nguyên byte trước/sau và coverage CSV. Khởi động lại API khi đổi dictionary; không train model, thay schema hoặc copy config lịch sử135active đè lên bản mới. Các số135active/240pending trong các đoạn bàn giao cũ là lịch sử, không phải runtime hiện hành. Alias activation không đồng nghĩa đã được chuyên gia y khoa xác nhận.
+
 ## Layout local hiện hành — 2026-11-11
 
 Owner đã yêu cầu gộp storage vào project. Cây đang dùng là `disease-prediction-ml-git-sync/{app,src,configs,notebooks,scripts,tests,docs,data,artifacts,reports}`. Không lồng wrapper `disease-prediction-ml-data` vào project. API `run_api.py` mặc định storage = directory chứa launcher; nếu đã đặt DISEASE_API_STORAGE_ROOT, giá trị explicit vẫn thắng. Đặt lại biến tới root hiện tại trước khi restart nếu terminal giữ đường dẫn cũ:

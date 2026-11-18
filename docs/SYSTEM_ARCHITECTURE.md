@@ -1,5 +1,9 @@
 # Kiến trúc hệ thống
 
+## Trạng thái từ điển hiện hành
+
+Từ điển runtime đã kích hoạt375/375canonical features,400alias Việt, theo phê duyệt của owner; không cần xác nhận từng mục trước activation. Giữ nguyên chuỗi alias và schema/model; production_activation độc lập với needs_review và clinical/source verification. Chưa có thẩm định y khoa, không khẳng định hiểu mọi câu đúng100%. Collision tiếp tục hỏi rõ, context/quality gate giữ nguyên. Xem [deployment guide](DEPLOYMENT_GUIDE.md) và [release manifest](../reports/terminology/activation-20261118/manifest.json). Các đoạn135active/240pending dưới đây ghi trạng thái lịch sử; kết quả nghiên cứu cũ không được thay hoặc coi là đánh giá cho dictionary mới.
+
 ## Hợp đồng review thuật ngữ — 2026-11-04
 
 Tách candidate metadata `proposed_display_vi`, `proposed_aliases_vi`, semantic_notes/confidence/review_status/source_status/reference_scope khỏi các trường runtime `display_vi`, `aliases_vi`, `aliases_en`, activation_status và question flags. Bộ trích xuất không đọc proposed aliases. Chỉ cập nhật metadata/bảng review, giữ nguyên signature các trường runtime:5fcbf9e743088a41d009abc3ee9fb310ab040aa9e814dce72e3dae9953f5644e. Canonical375keys/order giữ nguyên. Không có cơ chế tự chuyển READY thành active.

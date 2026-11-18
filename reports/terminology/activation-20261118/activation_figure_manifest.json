@@ -1,0 +1,15 @@
+{
+  "kind": "current_dictionary_activation_coverage",
+  "active_before": 135,
+  "active_after": 375,
+  "pending_after": 0,
+  "active_aliases_before": 160,
+  "active_aliases_after": 400,
+  "dictionary_sha256": "018fe6743355838fdf6e45ff7ae8e1f08547253b6d3fc3d1d293e8e893e09367",
+  "before_sha256": "036d756fb202612122a31e8a041e60e98a33cc632a7caa41df25ccfe2689d527",
+  "figure": "activation_coverage.png",
+  "figure_sha256": "fdaf877f063f13a380f35bb0aa9e47c292272dca0a469bb30ab3098b07499c66",
+  "historical_benchmark_figures_modified": false,
+  "models_fitted": 0,
+  "locked_test_opened": false
+}

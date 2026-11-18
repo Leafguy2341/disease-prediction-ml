@@ -45,6 +45,54 @@ def render(folder):
     return manifest
 
 
+def render_activation(folder, dictionary):
+    """Current dictionary coverage, independent of frozen NLP benchmark figures."""
+    import matplotlib
+    matplotlib.use('Agg')
+    import matplotlib.pyplot as plt
+    folder=Path(folder);dictionary=Path(dictionary)
+    manifest_path=folder/'manifest.json'
+    release=json.loads(manifest_path.read_text(encoding='utf-8'))
+    before_raw=(folder/'synonyms.before.json').read_bytes()
+    after_raw=dictionary.read_bytes()
+    if (hashlib.sha256(before_raw).hexdigest()!=release['before_sha256']
+            or hashlib.sha256(after_raw).hexdigest()!=release['current_sha256']):
+        raise ValueError('Activation dictionary/release checksum mismatch')
+    before=json.loads(before_raw);after=json.loads(after_raw)
+    if list(before)!=list(after) or len(after)!=375:
+        raise ValueError('Canonical order mismatch')
+    counts=[sum(e['activation_status']=='ACTIVE_EXISTING' for e in d.values()) for d in (before,after)]
+    aliases=[sum(len(e['aliases_vi']) for e in d.values() if e['activation_status']=='ACTIVE_EXISTING') for d in (before,after)]
+    pending=[len(after)-n for n in counts]
+    fig,ax=plt.subplots(figsize=(9,5.5))
+    labels=['Trước kích hoạt','Hiện tại']
+    ax.bar(labels,counts,color='#247d75',label='Feature active',width=.5)
+    ax.bar(labels,pending,bottom=counts,color='#d7dee2',label='Feature pending',width=.5)
+    for i,(active,wait) in enumerate(zip(counts,pending)):
+        ax.text(i,active/2,f'{active} active\n{active/375:.0%}',ha='center',va='center',color='white',weight='bold',fontsize=12)
+        if wait:ax.text(i,active+wait/2,f'{wait} pending',ha='center',va='center',color='#26343e')
+        ax.text(i,383,f'{aliases[i]} alias Việt',ha='center',fontsize=10)
+    ax.set_ylim(0,425);ax.set_yticks([0,75,150,225,300,375]);ax.set_ylabel('Số feature trong schema 375')
+    ax.set_title('Activation Coverage — từ điển hiện hành',pad=12)
+    ax.legend(loc='upper center',ncol=2,fontsize=9,frameon=False)
+    ax.spines[['top','right']].set_visible(False)
+    fig.text(.03,.05,'Nguồn: configs/synonyms.json và activation-20261118/manifest.json.',fontsize=9)
+    fig.text(.03,.015,'Coverage từ điển, không phải độ chính xác extraction hoặc thẩm định y khoa.',fontsize=9)
+    fig.tight_layout(rect=(0,.09,1,1))
+    figure=folder/'activation_coverage.png';fig.savefig(figure,dpi=150);plt.close(fig)
+    receipt=dict(kind='current_dictionary_activation_coverage',active_before=counts[0],active_after=counts[1],
+        pending_after=pending[1],active_aliases_before=aliases[0],active_aliases_after=aliases[1],
+        dictionary_sha256=release['current_sha256'],before_sha256=release['before_sha256'],
+        figure='activation_coverage.png',figure_sha256=hashlib.sha256(figure.read_bytes()).hexdigest(),
+        historical_benchmark_figures_modified=False,models_fitted=0,locked_test_opened=False)
+    receipt_path=folder/'activation_figure_manifest.json'
+    receipt_path.write_text(json.dumps(receipt,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+    for p in (figure,receipt_path):
+        release['files'][p.name]=dict(sha256=hashlib.sha256(p.read_bytes()).hexdigest(),bytes=p.stat().st_size)
+    manifest_path.write_text(json.dumps(release,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+    return receipt
+
+
 def render_run(folder):
     """Figures use only benchmark.json from THIS run; no historical snapshot reuse."""
     import matplotlib
@@ -104,5 +152,10 @@ def render_run(folder):
 
 
 if __name__=='__main__':
+    import argparse
     from scripts.nlp_symptom_research import ROOT
-    print(json.dumps(render(ROOT/'reports/nlp_research_v1'),indent=2))
+    parser=argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--activation-release',type=Path)
+    args=parser.parse_args()
+    result=render_activation(args.activation_release,ROOT/'configs/synonyms.json') if args.activation_release else render(ROOT/'reports/nlp_research_v1')
+    print(json.dumps(result,ensure_ascii=False,indent=2))

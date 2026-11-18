@@ -51,7 +51,11 @@ Owner chọn **LR tuned C=2 trước final test** vì có Top 3 từ `predict_pr
 - Top 3 thật của LR tuned, giữ nguyên thứ hạng/điểm, không chuẩn hóa ba điểm thành 100%.
 - API kiểm tra input/schema, checkpoint checksum và môi trường; thiếu artifact thì dừng, không fallback baseline.
 
-Điểm hiển thị là **điểm mô hình chưa calibration**, không phải xác suất mắc bệnh hay Accuracy của riêng một câu. Accuracy toàn tập test, khi hiển thị, là metric đánh giá riêng. Catalog có tên/mô tả cho 375 feature; **135/375 feature có alias Việt active**, phần còn lại giữ review/draft, không ép khớp để tăng coverage.
+Điểm hiển thị là **điểm mô hình chưa calibration**, không phải xác suất mắc bệnh hay Accuracy của riêng một câu. Accuracy toàn tập test, khi hiển thị, là metric đánh giá riêng. Từ điển đã kích hoạt **375/375 feature với 400 alias Việt**, theo phê duyệt của owner. Đây là coverage của từ điển, không phải độ chính xác hiểu mọi câu; thuật ngữ chưa được thẩm định y khoa. Alias nhập nhằng vẫn hỏi làm rõ, không ép khớp. [Danh sách 375 feature và trạng thái hiện hành](reports/terminology/activation-20261118/feature_coverage.csv).
+
+![Activation Coverage hiện hành: 375 feature active, 0 pending](reports/terminology/activation-20261118/activation_coverage.png)
+
+Hình coverage đọc từ dictionary release hiện hành; các hình và metrics NLP lịch sử giữ nguyên phiên bản dictionary khi thực nghiệm.
 
 Trên Windows CPython 3.13.17/AMD64 với đúng dependency pins, LR tuned, LR baseline và Hard tuned LR+SVC+KNN đã runtime-qualified khi đủ artifacts; LR tuned vẫn là mặc định. Hai LR trả Top3 từ predict_proba; Hard tuned trả nhãn thắng, phiếu và từng thành viên, không có probability Top3. Restart server sau cập nhật source và bắt đầu phiên mới khi đổi model. Xem trạng thái thực tại `GET /api/v1/models`.
 
