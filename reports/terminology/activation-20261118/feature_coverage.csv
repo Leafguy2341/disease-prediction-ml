@@ -1,0 +1,376 @@
+﻿order,canonical_feature,display_vi,aliases_vi,previous_status,current_status,newly_activated,clinical_review
+0,anxiety and nervousness,lo âu và căng thẳng,"[""lo âu và căng thẳng""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+1,depression,trầm cảm,"[""trầm cảm""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+2,shortness of breath,khó thở,"[""khó thở"", ""hụt hơi""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+3,depressive or psychotic symptoms,các biểu hiện trầm cảm hoặc loạn thần,"[""các biểu hiện trầm cảm hoặc loạn thần""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+4,sharp chest pain,đau ngực nhói,"[""đau ngực nhói""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+5,dizziness,chóng mặt,"[""chóng mặt""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+6,insomnia,mất ngủ,"[""mất ngủ""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+7,abnormal involuntary movements,cử động không tự chủ bất thường,"[""cử động không tự chủ bất thường""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+8,chest tightness,tức ngực,"[""tức ngực""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+9,palpitations,hồi hộp đánh trống ngực,"[""hồi hộp"", ""đánh trống ngực"", ""hồi hộp đánh trống ngực""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+10,irregular heartbeat,nhịp tim không đều,"[""nhịp tim không đều""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+11,breathing fast,thở nhanh,"[""thở nhanh""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+12,hoarse voice,khàn tiếng,"[""khàn tiếng""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+13,sore throat,đau họng,"[""đau họng"", ""rát họng""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+14,difficulty speaking,khó nói,"[""khó nói""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+15,cough,ho,"[""ho""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+16,nasal congestion,nghẹt mũi,"[""nghẹt mũi""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+17,throat swelling,sưng họng,"[""sưng họng""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+18,diminished hearing,giảm thính lực,"[""giảm thính lực""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+19,lump in throat,cảm giác có khối vướng trong họng,"[""cảm giác có khối vướng trong họng""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+20,throat feels tight,cảm giác thắt chặt ở họng,"[""cảm giác thắt chặt ở họng""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+21,difficulty in swallowing,khó nuốt,"[""khó nuốt""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+22,skin swelling,sưng da,"[""sưng da""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+23,retention of urine,bí tiểu,"[""bí tiểu""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+24,groin mass,khối bất thường ở bẹn,"[""khối bất thường ở bẹn""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+25,leg pain,đau ở chân,"[""đau ở chân""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+26,hip pain,đau ở hông,"[""đau ở hông""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+27,suprapubic pain,đau vùng trên xương mu,"[""đau vùng trên xương mu""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+28,blood in stool,máu trong phân,"[""máu trong phân""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+29,lack of growth,chậm tăng trưởng,"[""chậm tăng trưởng""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+30,emotional symptoms,các biểu hiện bất thường về cảm xúc,"[""các biểu hiện bất thường về cảm xúc""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+31,elbow weakness,yếu ở khuỷu tay,"[""yếu ở khuỷu tay""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+32,back weakness,yếu ở lưng,"[""yếu ở lưng""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+33,pus in sputum,mủ trong đờm,"[""mủ trong đờm""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+34,symptoms of the scrotum and testes,các biểu hiện bất thường ở bìu và tinh hoàn,"[""các biểu hiện bất thường ở bìu và tinh hoàn""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+35,swelling of scrotum,sưng bìu,"[""sưng bìu""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+36,pain in testicles,đau tinh hoàn,"[""đau tinh hoàn""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+37,flatulence,trung tiện nhiều,"[""trung tiện nhiều""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+38,pus draining from ear,chảy mủ tai,"[""chảy mủ tai""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+39,jaundice,vàng da,"[""vàng da""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+40,mass in scrotum,khối bất thường trong bìu,"[""khối bất thường trong bìu""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+41,white discharge from eye,dịch trắng từ mắt,"[""dịch trắng từ mắt""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+42,irritable infant,trẻ nhỏ quấy khóc khó dỗ,"[""trẻ nhỏ quấy khóc khó dỗ""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+43,abusing alcohol,lạm dụng rượu,"[""lạm dụng rượu""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+44,fainting,ngất,"[""ngất""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+45,hostile behavior,hành vi thù địch,"[""hành vi thù địch""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+46,drug abuse,lạm dụng chất gây nghiện,"[""lạm dụng chất gây nghiện""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+47,sharp abdominal pain,đau bụng nhói,"[""đau bụng nhói""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+48,feeling ill,cảm giác không khỏe,"[""cảm giác không khỏe""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+49,vomiting,nôn,"[""nôn"", ""ói"", ""nôn mửa""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+50,headache,đau đầu,"[""đau đầu"", ""nhức đầu"", ""nhứt đầu""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+51,nausea,buồn nôn,"[""buồn nôn"", ""buồn ói"", ""mắc ói"", ""muốn ói""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+52,diarrhea,tiêu chảy,"[""tiêu chảy"", ""đi ngoài phân lỏng""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+53,vaginal itching,ngứa âm đạo,"[""ngứa âm đạo""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+54,vaginal dryness,khô âm đạo,"[""khô âm đạo""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+55,painful urination,đau khi đi tiểu,"[""tiểu buốt"", ""đau khi đi tiểu""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+56,involuntary urination,tiểu không tự chủ,"[""tiểu không tự chủ""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+57,pain during intercourse,đau khi quan hệ tình dục,"[""đau khi quan hệ tình dục"", ""đau khi giao hợp""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+58,frequent urination,đi tiểu thường xuyên,"[""tiểu nhiều lần"", ""đi tiểu thường xuyên""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+59,lower abdominal pain,đau bụng dưới,"[""đau bụng dưới""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+60,vaginal discharge,dịch tiết âm đạo,"[""dịch tiết âm đạo"", ""khí hư""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+61,blood in urine,máu trong nước tiểu,"[""tiểu ra máu"", ""máu trong nước tiểu""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+62,hot flashes,bốc hỏa,"[""bốc hỏa""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+63,intermenstrual bleeding,ra máu giữa các kỳ kinh,"[""ra máu giữa các kỳ kinh""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+64,hand or finger pain,đau ở bàn tay hoặc ngón tay,"[""đau ở bàn tay hoặc ngón tay""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+65,wrist pain,đau cổ tay,"[""đau cổ tay""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+66,hand or finger swelling,sưng ở bàn tay hoặc ngón tay,"[""sưng ở bàn tay hoặc ngón tay""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+67,arm pain,đau cánh tay,"[""đau cánh tay""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+68,wrist swelling,sưng cổ tay,"[""sưng cổ tay""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+69,arm stiffness or tightness,cứng hoặc căng ở cánh tay,"[""cứng hoặc căng ở cánh tay""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+70,arm swelling,sưng cánh tay,"[""sưng cánh tay""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+71,hand or finger stiffness or tightness,cứng hoặc căng ở bàn tay hoặc ngón tay,"[""cứng hoặc căng ở bàn tay hoặc ngón tay""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+72,wrist stiffness or tightness,cứng hoặc căng ở cổ tay,"[""cứng hoặc căng ở cổ tay""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+73,lip swelling,sưng môi,"[""sưng môi""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+74,toothache,đau răng,"[""đau răng""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+75,abnormal appearing skin,da có biểu hiện bất thường,"[""da có biểu hiện bất thường""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+76,skin lesion,tổn thương da,"[""tổn thương da""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+77,acne or pimples,mụn trứng cá hoặc mụn nhọt,"[""mụn trứng cá hoặc mụn nhọt""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+78,dry lips,khô môi,"[""khô môi""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+79,facial pain,đau mặt,"[""đau mặt""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+80,mouth ulcer,loét miệng,"[""loét miệng""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+81,skin growth,khối tăng sinh trên da,"[""khối tăng sinh trên da""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+82,eye deviation,mắt lệch trục,"[""mắt lệch trục""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+83,diminished vision,giảm thị lực,"[""giảm thị lực""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+84,double vision,nhìn đôi,"[""nhìn đôi""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+85,cross-eyed,mắt lé,"[""mắt lé""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+86,symptoms of eye,các biểu hiện bất thường ở mắt,"[""các biểu hiện bất thường ở mắt""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+87,pain in eye,đau mắt,"[""đau mắt"", ""nhức mắt""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+88,eye moves abnormally,cử động mắt bất thường,"[""cử động mắt bất thường""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+89,abnormal movement of eyelid,cử động mí mắt bất thường,"[""cử động mí mắt bất thường""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+90,foreign body sensation in eye,cảm giác có dị vật trong mắt,"[""cảm giác có dị vật trong mắt""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+91,irregular appearing scalp,da đầu có biểu hiện bất thường,"[""da đầu có biểu hiện bất thường""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+92,swollen lymph nodes,sưng hạch,"[""sưng hạch""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+93,back pain,đau lưng,"[""đau lưng""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+94,neck pain,đau cổ,"[""đau cổ""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+95,low back pain,đau thắt lưng,"[""đau thắt lưng""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+96,pain of the anus,đau hậu môn,"[""đau hậu môn""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+97,pain during pregnancy,đau trong thai kỳ,"[""đau trong thai kỳ""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+98,pelvic pain,đau vùng chậu,"[""đau vùng chậu""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+99,impotence,rối loạn cương dương,"[""rối loạn cương dương""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+100,infant spitting up,trẻ nhỏ ọc sữa,"[""trẻ nhỏ ọc sữa""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+101,vomiting blood,nôn ra máu,"[""nôn ra máu""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+102,burning abdominal pain,đau bụng nóng rát,"[""đau bụng nóng rát""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+103,restlessness,bồn chồn không yên,"[""bồn chồn không yên""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+104,symptoms of infants,các biểu hiện bất thường ở trẻ nhỏ,"[""các biểu hiện bất thường ở trẻ nhỏ""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+105,wheezing,thở khò khè,"[""thở khò khè""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+106,peripheral edema,phù ngoại biên,"[""phù ngoại biên""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+107,neck mass,khối bất thường ở cổ,"[""khối bất thường ở cổ""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+108,ear pain,đau tai,"[""đau tai""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+109,jaw swelling,sưng hàm,"[""sưng hàm""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+110,mouth dryness,khô miệng,"[""khô miệng""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+111,neck swelling,sưng cổ,"[""sưng cổ""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+112,knee pain,đau đầu gối,"[""đau đầu gối""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+113,foot or toe pain,đau ở bàn chân hoặc ngón chân,"[""đau ở bàn chân hoặc ngón chân""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+114,bowlegged or knock-kneed,chân vòng kiềng hoặc đầu gối chụm,"[""chân vòng kiềng hoặc đầu gối chụm""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+115,ankle pain,đau mắt cá chân,"[""đau mắt cá chân""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+116,bones are painful,đau xương,"[""đau xương""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+117,knee weakness,yếu ở đầu gối,"[""yếu ở đầu gối""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+118,elbow pain,đau khuỷu tay,"[""đau khuỷu tay""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+119,knee swelling,sưng đầu gối,"[""sưng đầu gối""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+120,skin moles,nốt ruồi trên da,"[""nốt ruồi trên da""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+121,knee lump or mass,khối bất thường ở đầu gối,"[""khối bất thường ở đầu gối""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+122,weight gain,tăng cân,"[""tăng cân""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+123,problems with movement,khó khăn trong vận động,"[""khó khăn trong vận động""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+124,knee stiffness or tightness,cứng hoặc căng ở đầu gối,"[""cứng hoặc căng ở đầu gối""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+125,leg swelling,sưng chân,"[""sưng chân""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+126,foot or toe swelling,sưng ở bàn chân hoặc ngón chân,"[""sưng ở bàn chân hoặc ngón chân""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+127,heartburn,ợ nóng,"[""ợ nóng""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+128,smoking problems,vấn đề liên quan đến hút thuốc,"[""vấn đề liên quan đến hút thuốc""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+129,muscle pain,đau cơ,"[""đau cơ""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+130,infant feeding problem,trẻ nhỏ gặp vấn đề khi bú hoặc ăn,"[""trẻ nhỏ gặp vấn đề khi bú hoặc ăn""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+131,recent weight loss,sụt cân gần đây,"[""sụt cân gần đây""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+132,problems with shape or size of breast,bất thường hình dạng hoặc kích thước vú,"[""bất thường hình dạng hoặc kích thước vú""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+133,underweight,thiếu cân,"[""thiếu cân""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+134,difficulty eating,khó ăn,"[""khó ăn""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+135,scanty menstrual flow,lượng kinh ít,"[""lượng kinh ít""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+136,vaginal pain,đau âm đạo,"[""đau âm đạo""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+137,vaginal redness,đỏ âm đạo,"[""đỏ âm đạo""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+138,vulvar irritation,kích ứng âm hộ,"[""kích ứng âm hộ""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+139,weakness,yếu người,"[""yếu người""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+140,decreased heart rate,nhịp tim chậm,"[""nhịp tim chậm""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+141,increased heart rate,nhịp tim nhanh,"[""nhịp tim nhanh""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+142,bleeding or discharge from nipple,chảy máu hoặc tiết dịch núm vú,"[""chảy máu hoặc tiết dịch núm vú""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+143,ringing in ear,ù tai,"[""ù tai""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+144,plugged feeling in ear,cảm giác tai bị bít,"[""cảm giác tai bị bít""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+145,itchy ear(s),ngứa tai,"[""ngứa tai""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+146,frontal headache,đau đầu vùng trán,"[""đau đầu vùng trán""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+147,fluid in ear,dịch trong tai,"[""dịch trong tai""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+148,neck stiffness or tightness,cứng hoặc căng ở cổ,"[""cứng hoặc căng ở cổ""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+149,spots or clouds in vision,thấy đốm hoặc vùng mờ trong tầm nhìn,"[""thấy đốm hoặc vùng mờ trong tầm nhìn""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+150,eye redness,đỏ mắt,"[""đỏ mắt""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+151,lacrimation,chảy nước mắt,"[""chảy nước mắt""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+152,itchiness of eye,ngứa mắt,"[""ngứa mắt""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+153,blindness,mất khả năng nhìn,"[""mất khả năng nhìn""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+154,eye burns or stings,mắt nóng rát hoặc châm chích,"[""mắt nóng rát hoặc châm chích""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+155,itchy eyelid,ngứa mí mắt,"[""ngứa mí mắt""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+156,feeling cold,cảm thấy lạnh,"[""cảm thấy lạnh""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+157,decreased appetite,giảm cảm giác thèm ăn,"[""chán ăn"", ""giảm cảm giác thèm ăn""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+158,excessive appetite,tăng cảm giác thèm ăn,"[""tăng cảm giác thèm ăn""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+159,excessive anger,giận dữ quá mức,"[""giận dữ quá mức""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+160,loss of sensation,mất cảm giác,"[""mất cảm giác""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+161,focal weakness,yếu khu trú,"[""yếu khu trú""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+162,slurring words,nói líu hoặc không rõ tiếng,"[""nói líu hoặc không rõ tiếng""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+163,symptoms of the face,các biểu hiện bất thường ở mặt,"[""các biểu hiện bất thường ở mặt""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+164,disturbance of memory,rối loạn trí nhớ,"[""rối loạn trí nhớ""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+165,paresthesia,dị cảm,"[""dị cảm""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+166,side pain,đau vùng bên thân mình,"[""đau vùng bên thân mình""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+167,fever,sốt,"[""sốt"", ""nóng sốt"", ""sốtt""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+168,shoulder pain,đau vai,"[""đau vai""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+169,shoulder stiffness or tightness,cứng hoặc căng ở vai,"[""cứng hoặc căng ở vai""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+170,shoulder weakness,yếu ở vai,"[""yếu ở vai""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+171,arm cramps or spasms,chuột rút hoặc co thắt ở cánh tay,"[""chuột rút hoặc co thắt ở cánh tay""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+172,shoulder swelling,sưng vai,"[""sưng vai""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+173,tongue lesions,tổn thương lưỡi,"[""tổn thương lưỡi""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+174,leg cramps or spasms,chuột rút hoặc co thắt ở chân,"[""chuột rút hoặc co thắt ở chân""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+175,abnormal appearing tongue,lưỡi có biểu hiện bất thường,"[""lưỡi có biểu hiện bất thường""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+176,ache all over,đau nhức toàn thân,"[""đau nhức toàn thân""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+177,lower body pain,đau phần dưới cơ thể,"[""đau phần dưới cơ thể""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+178,problems during pregnancy,vấn đề trong thai kỳ,"[""vấn đề trong thai kỳ""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+179,spotting or bleeding during pregnancy,ra máu lấm tấm hoặc chảy máu trong thai kỳ,"[""ra máu lấm tấm hoặc chảy máu trong thai kỳ""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+180,cramps and spasms,chuột rút và co thắt,"[""chuột rút và co thắt""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+181,upper abdominal pain,đau bụng trên,"[""đau bụng trên""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+182,stomach bloating,đầy hơi bụng,"[""đầy hơi"", ""đầy hơi bụng""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+183,changes in stool appearance,thay đổi hình dạng hoặc màu sắc phân,"[""thay đổi hình dạng hoặc màu sắc phân""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+184,unusual color or odor to urine,nước tiểu có màu hoặc mùi bất thường,"[""nước tiểu có màu hoặc mùi bất thường""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+185,kidney mass,khối bất thường ở thận,"[""khối bất thường ở thận""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+186,swollen abdomen,bụng sưng to,"[""bụng sưng to""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+187,symptoms of prostate,các biểu hiện bất thường ở tuyến tiền liệt,"[""các biểu hiện bất thường ở tuyến tiền liệt""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+188,leg stiffness or tightness,cứng hoặc căng ở chân,"[""cứng hoặc căng ở chân""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+189,difficulty breathing,khó hô hấp,"[""khó hô hấp""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+190,rib pain,đau xương sườn,"[""đau xương sườn""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+191,joint pain,đau khớp,"[""đau khớp""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+192,muscle stiffness or tightness,cứng hoặc căng ở cơ,"[""cứng hoặc căng ở cơ""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+193,pallor,da xanh xao,"[""da xanh xao""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+194,hand or finger lump or mass,khối bất thường ở bàn tay hoặc ngón tay,"[""khối bất thường ở bàn tay hoặc ngón tay""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+195,chills,ớn lạnh,"[""ớn lạnh""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+196,groin pain,đau bẹn,"[""đau bẹn""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+197,fatigue,mệt mỏi,"[""mệt mỏi"", ""mệt""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+198,abdominal distention,bụng chướng căng,"[""bụng chướng căng""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+199,symptoms of the kidneys,các biểu hiện bất thường ở thận,"[""các biểu hiện bất thường ở thận""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+200,melena,đi ngoài phân đen như hắc ín,"[""đi ngoài phân đen như hắc ín""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+201,flushing,đỏ bừng da,"[""đỏ bừng da""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+202,coughing up sputum,ho có đờm,"[""ho có đờm""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+203,seizures,co giật,"[""co giật""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+204,delusions or hallucinations,hoang tưởng hoặc ảo giác,"[""hoang tưởng hoặc ảo giác""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+205,shoulder cramps or spasms,chuột rút hoặc co thắt ở vai,"[""chuột rút hoặc co thắt ở vai""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+206,joint stiffness or tightness,cứng hoặc căng ở khớp,"[""cứng hoặc căng ở khớp""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+207,pain or soreness of breast,đau hoặc nhức vú,"[""đau hoặc nhức vú""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+208,excessive urination at night,tiểu nhiều vào ban đêm,"[""tiểu nhiều vào ban đêm""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+209,bleeding from eye,chảy máu từ mắt,"[""chảy máu từ mắt""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+210,rectal bleeding,chảy máu trực tràng,"[""chảy máu trực tràng""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+211,constipation,táo bón,"[""táo bón""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+212,temper problems,khó kiểm soát tính khí,"[""khó kiểm soát tính khí""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+213,coryza,sổ mũi,"[""sổ mũi""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+214,wrist weakness,yếu ở cổ tay,"[""yếu ở cổ tay""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+215,eye strain,mỏi mắt,"[""mỏi mắt""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+216,hemoptysis,ho ra máu,"[""ho ra máu""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+217,lymphedema,phù bạch huyết,"[""phù bạch huyết""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+218,skin on leg or foot looks infected,da ở chân hoặc bàn chân có vẻ nhiễm trùng,"[""da ở chân hoặc bàn chân có vẻ nhiễm trùng""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+219,allergic reaction,phản ứng dị ứng,"[""phản ứng dị ứng""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+220,congestion in chest,cảm giác ứ đọng trong ngực,"[""cảm giác ứ đọng trong ngực""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+221,muscle swelling,sưng ở cơ,"[""sưng ở cơ""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+222,pus in urine,mủ trong nước tiểu,"[""mủ trong nước tiểu""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+223,abnormal size or shape of ear,kích thước hoặc hình dạng tai bất thường,"[""kích thước hoặc hình dạng tai bất thường""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+224,low back weakness,yếu ở thắt lưng,"[""yếu ở thắt lưng""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+225,sleepiness,buồn ngủ,"[""buồn ngủ""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+226,apnea,ngừng thở,"[""ngừng thở""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+227,abnormal breathing sounds,âm thanh hô hấp bất thường,"[""âm thanh hô hấp bất thường""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+228,excessive growth,tăng trưởng quá mức,"[""tăng trưởng quá mức""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+229,elbow cramps or spasms,chuột rút hoặc co thắt ở khuỷu tay,"[""chuột rút hoặc co thắt ở khuỷu tay""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+230,feeling hot and cold,cảm giác lúc nóng lúc lạnh,"[""cảm giác lúc nóng lúc lạnh""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+231,blood clots during menstrual periods,cục máu đông trong kỳ kinh,"[""cục máu đông trong kỳ kinh""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+232,absence of menstruation,không có kinh nguyệt,"[""không có kinh nguyệt""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+233,pulling at ears,hay kéo hoặc giật tai,"[""hay kéo hoặc giật tai""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+234,gum pain,đau nướu,"[""đau nướu""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+235,redness in ear,đỏ trong tai,"[""đỏ trong tai""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+236,fluid retention,ứ dịch trong cơ thể,"[""ứ dịch trong cơ thể""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+237,flu-like syndrome,hội chứng giống cúm,"[""hội chứng giống cúm""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+238,sinus congestion,cảm giác tắc nghẽn xoang,"[""cảm giác tắc nghẽn xoang""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+239,painful sinuses,đau vùng xoang,"[""đau vùng xoang""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+240,fears and phobias,sợ hãi và ám ảnh sợ,"[""sợ hãi và ám ảnh sợ""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+241,recent pregnancy,mới mang thai gần đây,"[""mới mang thai gần đây""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+242,uterine contractions,cơn co tử cung,"[""cơn co tử cung""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+243,burning chest pain,đau ngực kiểu nóng rát,"[""đau ngực kiểu nóng rát""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+244,back cramps or spasms,chuột rút hoặc co thắt ở lưng,"[""chuột rút hoặc co thắt ở lưng""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+245,stiffness all over,cứng khắp người,"[""cứng khắp người""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+246,"muscle cramps, contractures, or spasms",chuột rút hoặc co rút hoặc co thắt cơ,"[""chuột rút hoặc co rút hoặc co thắt cơ""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+247,low back cramps or spasms,chuột rút hoặc co thắt ở thắt lưng,"[""chuột rút hoặc co thắt ở thắt lưng""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+248,back mass or lump,khối bất thường ở lưng,"[""khối bất thường ở lưng""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+249,nosebleed,chảy máu mũi,"[""chảy máu mũi""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+250,long menstrual periods,kỳ kinh kéo dài,"[""kỳ kinh kéo dài""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+251,heavy menstrual flow,lượng kinh nhiều,"[""lượng kinh nhiều""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+252,unpredictable menstruation,kinh nguyệt không theo quy luật,"[""kinh nguyệt không theo quy luật""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+253,painful menstruation,đau khi hành kinh,"[""đau khi hành kinh""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+254,infertility,khó có con do vấn đề sinh sản,"[""khó có con do vấn đề sinh sản""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+255,frequent menstruation,kinh nguyệt xuất hiện quá thường xuyên,"[""kinh nguyệt xuất hiện quá thường xuyên""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+256,sweating,đổ mồ hôi,"[""đổ mồ hôi""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+257,mass on eyelid,khối bất thường trên mí mắt,"[""khối bất thường trên mí mắt""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+258,swollen eye,sưng mắt,"[""sưng mắt""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+259,eyelid swelling,sưng mí mắt,"[""sưng mí mắt""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+260,eyelid lesion or rash,tổn thương hoặc phát ban ở mí mắt,"[""tổn thương hoặc phát ban ở mí mắt""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+261,unwanted hair,lông mọc không mong muốn,"[""lông mọc không mong muốn""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+262,symptoms of bladder,các biểu hiện bất thường ở bàng quang,"[""các biểu hiện bất thường ở bàng quang""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+263,irregular appearing nails,móng có biểu hiện bất thường,"[""móng có biểu hiện bất thường""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+264,itching of skin,ngứa da,"[""ngứa da""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+265,hurts to breath,đau khi thở,"[""đau khi thở""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+266,nailbiting,cắn móng tay,"[""cắn móng tay""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+267,"skin dryness, peeling, scaliness, or roughness",da khô hoặc bong tróc hoặc có vảy hoặc thô ráp,"[""da khô hoặc bong tróc hoặc có vảy hoặc thô ráp""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+268,skin on arm or hand looks infected,da ở cánh tay hoặc bàn tay có vẻ nhiễm trùng,"[""da ở cánh tay hoặc bàn tay có vẻ nhiễm trùng""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+269,skin irritation,kích ứng da,"[""kích ứng da""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+270,itchy scalp,ngứa da đầu,"[""ngứa da đầu""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+271,hip swelling,sưng ở hông,"[""sưng ở hông""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+272,incontinence of stool,đại tiện không tự chủ,"[""đại tiện không tự chủ""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+273,foot or toe cramps or spasms,chuột rút hoặc co thắt ở bàn chân hoặc ngón chân,"[""chuột rút hoặc co thắt ở bàn chân hoặc ngón chân""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+274,warts,mụn cóc,"[""mụn cóc""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+275,bumps on penis,nốt hoặc cục trên dương vật,"[""nốt hoặc cục trên dương vật""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+276,too little hair,tóc hoặc lông quá ít,"[""tóc hoặc lông quá ít""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+277,foot or toe lump or mass,khối bất thường ở bàn chân hoặc ngón chân,"[""khối bất thường ở bàn chân hoặc ngón chân""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+278,skin rash,phát ban da,"[""phát ban"", ""phát ban da""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+279,mass or swelling around the anus,khối hoặc sưng quanh hậu môn,"[""khối hoặc sưng quanh hậu môn""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+280,low back swelling,sưng ở thắt lưng,"[""sưng ở thắt lưng""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+281,ankle swelling,sưng ở mắt cá chân,"[""sưng ở mắt cá chân""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+282,hip lump or mass,khối bất thường ở hông,"[""khối bất thường ở hông""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+283,drainage in throat,dịch chảy xuống họng,"[""dịch chảy xuống họng""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+284,dry or flaky scalp,da đầu khô hoặc bong vảy,"[""da đầu khô hoặc bong vảy""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+285,premenstrual tension or irritability,căng thẳng hoặc dễ cáu trước kỳ kinh,"[""căng thẳng hoặc dễ cáu trước kỳ kinh""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+286,feeling hot,cảm thấy nóng,"[""cảm thấy nóng""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+287,feet turned in,bàn chân xoay vào trong,"[""bàn chân xoay vào trong""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+288,foot or toe stiffness or tightness,cứng hoặc căng ở bàn chân hoặc ngón chân,"[""cứng hoặc căng ở bàn chân hoặc ngón chân""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+289,pelvic pressure,cảm giác đè nặng vùng chậu,"[""cảm giác đè nặng vùng chậu""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+290,elbow swelling,sưng ở khuỷu tay,"[""sưng ở khuỷu tay""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+291,elbow stiffness or tightness,cứng hoặc căng ở khuỷu tay,"[""cứng hoặc căng ở khuỷu tay""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+292,early or late onset of menopause,mãn kinh sớm hoặc muộn,"[""mãn kinh sớm hoặc muộn""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+293,mass on ear,khối bất thường trên tai,"[""khối bất thường trên tai""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+294,bleeding from ear,chảy máu tai,"[""chảy máu tai""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+295,hand or finger weakness,yếu ở bàn tay hoặc ngón tay,"[""yếu ở bàn tay hoặc ngón tay""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+296,low self-esteem,tự đánh giá thấp bản thân,"[""tự đánh giá thấp bản thân""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+297,throat irritation,kích ứng họng,"[""kích ứng họng""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+298,itching of the anus,ngứa hậu môn,"[""ngứa hậu môn""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+299,swollen or red tonsils,amidan sưng hoặc đỏ,"[""amidan sưng hoặc đỏ""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+300,irregular belly button,rốn có biểu hiện bất thường,"[""rốn có biểu hiện bất thường""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+301,swollen tongue,sưng lưỡi,"[""sưng lưỡi""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+302,lip sore,vết loét ở môi,"[""vết loét ở môi""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+303,vulvar sore,vết loét âm hộ,"[""vết loét âm hộ""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+304,hip stiffness or tightness,cứng hoặc căng ở hông,"[""cứng hoặc căng ở hông""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+305,mouth pain,đau miệng,"[""đau miệng""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+306,arm weakness,yếu ở cánh tay,"[""yếu ở cánh tay""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+307,leg lump or mass,khối bất thường ở chân,"[""khối bất thường ở chân""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+308,disturbance of smell or taste,rối loạn khứu giác hoặc vị giác,"[""rối loạn khứu giác hoặc vị giác""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+309,discharge in stools,dịch tiết trong phân,"[""dịch tiết trong phân""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+310,penis pain,đau dương vật,"[""đau dương vật""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+311,loss of sex drive,giảm ham muốn tình dục,"[""giảm ham muốn tình dục""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+312,obsessions and compulsions,ý nghĩ ám ảnh và hành vi cưỡng chế,"[""ý nghĩ ám ảnh và hành vi cưỡng chế""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+313,antisocial behavior,hành vi chống đối xã hội,"[""hành vi chống đối xã hội""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+314,neck cramps or spasms,chuột rút hoặc co thắt ở cổ,"[""chuột rút hoặc co thắt ở cổ""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+315,pupils unequal,hai đồng tử không đều,"[""hai đồng tử không đều""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+316,poor circulation,tuần hoàn máu kém,"[""tuần hoàn máu kém""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+317,thirst,khát nước,"[""khát nước""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+318,sleepwalking,mộng du,"[""mộng du""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+319,skin oiliness,da nhờn,"[""da nhờn""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+320,sneezing,hắt hơi,"[""hắt hơi""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+321,bladder mass,khối bất thường ở bàng quang,"[""khối bất thường ở bàng quang""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+322,knee cramps or spasms,chuột rút hoặc co thắt ở đầu gối,"[""chuột rút hoặc co thắt ở đầu gối""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+323,premature ejaculation,xuất tinh sớm,"[""xuất tinh sớm""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+324,leg weakness,yếu ở chân,"[""yếu ở chân""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+325,posture problems,vấn đề về tư thế,"[""vấn đề về tư thế""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+326,bleeding in mouth,chảy máu trong miệng,"[""chảy máu trong miệng""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+327,tongue bleeding,chảy máu lưỡi,"[""chảy máu lưỡi""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+328,change in skin mole size or color,nốt ruồi thay đổi kích thước hoặc màu sắc,"[""nốt ruồi thay đổi kích thước hoặc màu sắc""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+329,penis redness,đỏ dương vật,"[""đỏ dương vật""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+330,penile discharge,dịch tiết dương vật,"[""dịch tiết dương vật""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+331,shoulder lump or mass,khối bất thường ở vai,"[""khối bất thường ở vai""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+332,polyuria,tăng tổng lượng nước tiểu,"[""tăng tổng lượng nước tiểu""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+333,cloudy eye,mắt có vùng đục,"[""mắt có vùng đục""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+334,hysterical behavior,hành vi kiểu hysteria theo thuật ngữ nguồn cũ,"[""hành vi kiểu hysteria theo thuật ngữ nguồn cũ""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+335,arm lump or mass,khối bất thường ở cánh tay,"[""khối bất thường ở cánh tay""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+336,nightmares,ác mộng,"[""ác mộng""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+337,bleeding gums,chảy máu nướu,"[""chảy máu nướu""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+338,pain in gums,đau ở nướu,"[""đau ở nướu""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+339,bedwetting,đái dầm,"[""đái dầm""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+340,diaper rash,hăm tã,"[""hăm tã""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+341,lump or mass of breast,khối hoặc cục bất thường ở vú,"[""khối hoặc cục bất thường ở vú""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+342,vaginal bleeding after menopause,chảy máu âm đạo sau mãn kinh,"[""chảy máu âm đạo sau mãn kinh"", ""ra máu âm đạo sau mãn kinh""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+343,infrequent menstruation,kinh nguyệt thưa,"[""kinh nguyệt thưa""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+344,mass on vulva,khối bất thường ở âm hộ,"[""khối bất thường ở âm hộ""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+345,jaw pain,đau hàm,"[""đau hàm""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+346,itching of scrotum,ngứa bìu,"[""ngứa bìu""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+347,postpartum problems of the breast,vấn đề ở vú sau sinh,"[""vấn đề ở vú sau sinh""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+348,eyelid retracted,co rút mí mắt,"[""co rút mí mắt""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+349,hesitancy,khó khởi đầu dòng tiểu,"[""khó khởi đầu dòng tiểu""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+350,elbow lump or mass,khối bất thường ở khuỷu tay,"[""khối bất thường ở khuỷu tay""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+351,muscle weakness,yếu cơ,"[""yếu cơ""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+352,throat redness,đỏ họng,"[""đỏ họng""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+353,joint swelling,sưng khớp,"[""sưng khớp""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+354,tongue pain,đau lưỡi,"[""đau lưỡi""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+355,redness in or around nose,đỏ trong hoặc quanh mũi,"[""đỏ trong hoặc quanh mũi""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+356,wrinkles on skin,nếp nhăn trên da,"[""nếp nhăn trên da""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+357,foot or toe weakness,yếu ở bàn chân hoặc ngón chân,"[""yếu ở bàn chân hoặc ngón chân""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+358,hand or finger cramps or spasms,chuột rút hoặc co thắt ở bàn tay hoặc ngón tay,"[""chuột rút hoặc co thắt ở bàn tay hoặc ngón tay""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+359,back stiffness or tightness,cứng hoặc căng ở lưng,"[""cứng hoặc căng ở lưng""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+360,wrist lump or mass,khối bất thường ở cổ tay,"[""khối bất thường ở cổ tay""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+361,skin pain,đau da,"[""đau da""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+362,low back stiffness or tightness,cứng hoặc căng ở thắt lưng,"[""cứng hoặc căng ở thắt lưng""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+363,low urine output,lượng nước tiểu ít,"[""lượng nước tiểu ít""]",ACTIVE_EXISTING,ACTIVE_EXISTING,False,NOT_CLINICALLY_VALIDATED
+364,skin on head or neck looks infected,da ở đầu hoặc cổ có vẻ nhiễm trùng,"[""da ở đầu hoặc cổ có vẻ nhiễm trùng""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+365,stuttering or stammering,nói lắp,"[""nói lắp""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+366,problems with orgasm,khó khăn liên quan đến cực khoái,"[""khó khăn liên quan đến cực khoái""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+367,nose deformity,biến dạng mũi,"[""biến dạng mũi""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+368,lump over jaw,khối bất thường vùng hàm,"[""khối bất thường vùng hàm""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+369,sore in nose,vết loét trong mũi,"[""vết loét trong mũi""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+370,hip weakness,yếu ở hông,"[""yếu ở hông""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+371,back swelling,sưng ở lưng,"[""sưng ở lưng""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+372,ankle stiffness or tightness,cứng hoặc căng ở mắt cá chân,"[""cứng hoặc căng ở mắt cá chân""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+373,ankle weakness,yếu ở mắt cá chân,"[""yếu ở mắt cá chân""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED
+374,neck weakness,yếu ở cổ,"[""yếu ở cổ""]",PENDING_REVIEW,ACTIVE_EXISTING,True,NOT_CLINICALLY_VALIDATED

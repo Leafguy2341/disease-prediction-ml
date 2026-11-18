@@ -1,5 +1,17 @@
 # Chạy ứng dụng local và notebooks Colab
 
+## Từ điển hiện hành: 375/375 feature active
+
+Theo phê duyệt trực tiếp của owner, đã bật240feature còn pending, tổng375feature/400alias Việt. Giữ nguyên135feature active trước đó, toàn bộ chuỗi alias, tên hiển thị, question policy, parser, validator, quality gate, schema375/class587 và các checkpoint. Không thêm Semantic/Hybrid. Không yêu cầu owner duyệt từng thuật ngữ để kích hoạt; needs_review/source_status tiếp tục mô tả giới hạn ngôn ngữ/y khoa, không chặn runtime hoặc giả định expert validation.
+
+Coverage nghĩa là mỗi canonical feature có ít nhất một alias Việt trong runtime index; không phải nhận diện đúng100% lời kể. Bốn nhóm collision không dấu (dau co, dau mat, cac bieu hien bat thuong o mat, cung hoac cang o co) giữ cơ chế ưu tiên exact có dấu và hỏi làm rõ khi nhiều candidate. Không fuzzy-map hoặc gộp nausea/vomiting, pain/itching hay các nhãn gần nghĩa.
+
+Bản gốc nguyên byte, checksum, bản sau và danh sách375feature tại [activation-20261118](../reports/terminology/activation-20261118/). Config mới SHA256 `018fe6743355838fdf6e45ff7ae8e1f08547253b6d3fc3d1d293e8e893e09367`; bản trước SHA256 `036d756fb202612122a31e8a041e60e98a33cc632a7caa41df25ccfe2689d527`. Rollback bằng cách phục hồi nguyên byte `synonyms.before.json` về `configs/synonyms.json`, rồi restart server; không thay checkpoint hoặc Drive.
+
+[Activation Coverage hiện hành](../reports/terminology/activation-20261118/activation_coverage.png) và `activation_figure_manifest.json` ghi nguồn/checksum; có thể tạo lại bằng `python -B -m scripts.plot_nlp_research --activation-release reports/terminology/activation-20261118`. Không ghi đè ảnh coverage lịch sử trong nlp_research_v1 vì ảnh đó gắn với manifest/benchmark cũ. Notebook07 và README hiển thị ảnh mới riêng với output cũ.
+
+Để dùng, dừng server cũ bằng Ctrl+C rồi chạy lại lệnh run_api.py trong README, refresh trình duyệt và bắt đầu phiên mới. Không cần train hoặc chạy notebook. Các mục135active/240pending bên dưới là lịch sử trước đợt kích hoạt này. Output Notebook07 vẫn thuộc dictionary version cũ đã pinSHA; không diễn giải chúng thành đánh giá độ chính xác cho375active hiện tại và không chạy lại thí nghiệm trong đợt này. 203 targeted technical/regression tests PASS; chưa chạy full suite hoặc kiểm định y khoa.
+
 ## Layout local hiện hành — 2026-11-11
 
 Owner đã yêu cầu gộp storage vào project. Cây đang dùng là `disease-prediction-ml-git-sync/{app,src,configs,notebooks,scripts,tests,docs,data,artifacts,reports}`. Không lồng wrapper `disease-prediction-ml-data` vào project. API `run_api.py` mặc định storage = directory chứa launcher; nếu đã đặt DISEASE_API_STORAGE_ROOT, giá trị explicit vẫn thắng. Đặt lại biến tới root hiện tại trước khi restart nếu terminal giữ đường dẫn cũ:

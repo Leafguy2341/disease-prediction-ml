@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "scope": "technical index/config and offline regression, not clinical validation",
+  "targeted_tests": {
+    "passed": 203,
+    "warnings": 1,
+    "full_suite_run": false
+  },
+  "models_fitted": 0,
+  "locked_test_opened": false,
+  "llm_api_calls": 0,
+  "protected_model_schema_source_files_unchanged": 23
+}
