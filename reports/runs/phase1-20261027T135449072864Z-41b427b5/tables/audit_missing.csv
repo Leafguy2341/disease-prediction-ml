@@ -1,0 +1,379 @@
+﻿column,missing_count,missing_pct,blank_string_count,invalid_or_blank_count
+diseases,0,0.0,0,0
+anxiety and nervousness,0,0.0,0,0
+depression,0,0.0,0,0
+shortness of breath,0,0.0,0,0
+depressive or psychotic symptoms,0,0.0,0,0
+sharp chest pain,0,0.0,0,0
+dizziness,0,0.0,0,0
+insomnia,0,0.0,0,0
+abnormal involuntary movements,0,0.0,0,0
+chest tightness,0,0.0,0,0
+palpitations,0,0.0,0,0
+irregular heartbeat,0,0.0,0,0
+breathing fast,0,0.0,0,0
+hoarse voice,0,0.0,0,0
+sore throat,0,0.0,0,0
+difficulty speaking,0,0.0,0,0
+cough,0,0.0,0,0
+nasal congestion,0,0.0,0,0
+throat swelling,0,0.0,0,0
+diminished hearing,0,0.0,0,0
+lump in throat,0,0.0,0,0
+throat feels tight,0,0.0,0,0
+difficulty in swallowing,0,0.0,0,0
+skin swelling,0,0.0,0,0
+retention of urine,0,0.0,0,0
+groin mass,0,0.0,0,0
+leg pain,0,0.0,0,0
+hip pain,0,0.0,0,0
+suprapubic pain,0,0.0,0,0
+blood in stool,0,0.0,0,0
+lack of growth,0,0.0,0,0
+emotional symptoms,0,0.0,0,0
+elbow weakness,0,0.0,0,0
+back weakness,0,0.0,0,0
+pus in sputum,0,0.0,0,0
+symptoms of the scrotum and testes,0,0.0,0,0
+swelling of scrotum,0,0.0,0,0
+pain in testicles,0,0.0,0,0
+flatulence,0,0.0,0,0
+pus draining from ear,0,0.0,0,0
+jaundice,0,0.0,0,0
+mass in scrotum,0,0.0,0,0
+white discharge from eye,0,0.0,0,0
+irritable infant,0,0.0,0,0
+abusing alcohol,0,0.0,0,0
+fainting,0,0.0,0,0
+hostile behavior,0,0.0,0,0
+drug abuse,0,0.0,0,0
+sharp abdominal pain,0,0.0,0,0
+feeling ill,0,0.0,0,0
+vomiting,0,0.0,0,0
+headache,0,0.0,0,0
+nausea,0,0.0,0,0
+diarrhea,0,0.0,0,0
+vaginal itching,0,0.0,0,0
+vaginal dryness,0,0.0,0,0
+painful urination,0,0.0,0,0
+involuntary urination,0,0.0,0,0
+pain during intercourse,0,0.0,0,0
+frequent urination,0,0.0,0,0
+lower abdominal pain,0,0.0,0,0
+vaginal discharge,0,0.0,0,0
+blood in urine,0,0.0,0,0
+hot flashes,0,0.0,0,0
+intermenstrual bleeding,0,0.0,0,0
+hand or finger pain,0,0.0,0,0
+wrist pain,0,0.0,0,0
+hand or finger swelling,0,0.0,0,0
+arm pain,0,0.0,0,0
+wrist swelling,0,0.0,0,0
+arm stiffness or tightness,0,0.0,0,0
+arm swelling,0,0.0,0,0
+hand or finger stiffness or tightness,0,0.0,0,0
+wrist stiffness or tightness,0,0.0,0,0
+lip swelling,0,0.0,0,0
+toothache,0,0.0,0,0
+abnormal appearing skin,0,0.0,0,0
+skin lesion,0,0.0,0,0
+acne or pimples,0,0.0,0,0
+dry lips,0,0.0,0,0
+facial pain,0,0.0,0,0
+mouth ulcer,0,0.0,0,0
+skin growth,0,0.0,0,0
+eye deviation,0,0.0,0,0
+diminished vision,0,0.0,0,0
+double vision,0,0.0,0,0
+cross-eyed,0,0.0,0,0
+symptoms of eye,0,0.0,0,0
+pain in eye,0,0.0,0,0
+eye moves abnormally,0,0.0,0,0
+abnormal movement of eyelid,0,0.0,0,0
+foreign body sensation in eye,0,0.0,0,0
+irregular appearing scalp,0,0.0,0,0
+swollen lymph nodes,0,0.0,0,0
+back pain,0,0.0,0,0
+neck pain,0,0.0,0,0
+low back pain,0,0.0,0,0
+pain of the anus,0,0.0,0,0
+pain during pregnancy,0,0.0,0,0
+pelvic pain,0,0.0,0,0
+impotence,0,0.0,0,0
+infant spitting up,0,0.0,0,0
+vomiting blood,0,0.0,0,0
+regurgitation,0,0.0,0,0
+burning abdominal pain,0,0.0,0,0
+restlessness,0,0.0,0,0
+symptoms of infants,0,0.0,0,0
+wheezing,0,0.0,0,0
+peripheral edema,0,0.0,0,0
+neck mass,0,0.0,0,0
+ear pain,0,0.0,0,0
+jaw swelling,0,0.0,0,0
+mouth dryness,0,0.0,0,0
+neck swelling,0,0.0,0,0
+knee pain,0,0.0,0,0
+foot or toe pain,0,0.0,0,0
+bowlegged or knock-kneed,0,0.0,0,0
+ankle pain,0,0.0,0,0
+bones are painful,0,0.0,0,0
+knee weakness,0,0.0,0,0
+elbow pain,0,0.0,0,0
+knee swelling,0,0.0,0,0
+skin moles,0,0.0,0,0
+knee lump or mass,0,0.0,0,0
+weight gain,0,0.0,0,0
+problems with movement,0,0.0,0,0
+knee stiffness or tightness,0,0.0,0,0
+leg swelling,0,0.0,0,0
+foot or toe swelling,0,0.0,0,0
+heartburn,0,0.0,0,0
+smoking problems,0,0.0,0,0
+muscle pain,0,0.0,0,0
+infant feeding problem,0,0.0,0,0
+recent weight loss,0,0.0,0,0
+problems with shape or size of breast,0,0.0,0,0
+underweight,0,0.0,0,0
+difficulty eating,0,0.0,0,0
+scanty menstrual flow,0,0.0,0,0
+vaginal pain,0,0.0,0,0
+vaginal redness,0,0.0,0,0
+vulvar irritation,0,0.0,0,0
+weakness,0,0.0,0,0
+decreased heart rate,0,0.0,0,0
+increased heart rate,0,0.0,0,0
+bleeding or discharge from nipple,0,0.0,0,0
+ringing in ear,0,0.0,0,0
+plugged feeling in ear,0,0.0,0,0
+itchy ear(s),0,0.0,0,0
+frontal headache,0,0.0,0,0
+fluid in ear,0,0.0,0,0
+neck stiffness or tightness,0,0.0,0,0
+spots or clouds in vision,0,0.0,0,0
+eye redness,0,0.0,0,0
+lacrimation,0,0.0,0,0
+itchiness of eye,0,0.0,0,0
+blindness,0,0.0,0,0
+eye burns or stings,0,0.0,0,0
+itchy eyelid,0,0.0,0,0
+feeling cold,0,0.0,0,0
+decreased appetite,0,0.0,0,0
+excessive appetite,0,0.0,0,0
+excessive anger,0,0.0,0,0
+loss of sensation,0,0.0,0,0
+focal weakness,0,0.0,0,0
+slurring words,0,0.0,0,0
+symptoms of the face,0,0.0,0,0
+disturbance of memory,0,0.0,0,0
+paresthesia,0,0.0,0,0
+side pain,0,0.0,0,0
+fever,0,0.0,0,0
+shoulder pain,0,0.0,0,0
+shoulder stiffness or tightness,0,0.0,0,0
+shoulder weakness,0,0.0,0,0
+arm cramps or spasms,0,0.0,0,0
+shoulder swelling,0,0.0,0,0
+tongue lesions,0,0.0,0,0
+leg cramps or spasms,0,0.0,0,0
+abnormal appearing tongue,0,0.0,0,0
+ache all over,0,0.0,0,0
+lower body pain,0,0.0,0,0
+problems during pregnancy,0,0.0,0,0
+spotting or bleeding during pregnancy,0,0.0,0,0
+cramps and spasms,0,0.0,0,0
+upper abdominal pain,0,0.0,0,0
+stomach bloating,0,0.0,0,0
+changes in stool appearance,0,0.0,0,0
+unusual color or odor to urine,0,0.0,0,0
+kidney mass,0,0.0,0,0
+swollen abdomen,0,0.0,0,0
+symptoms of prostate,0,0.0,0,0
+leg stiffness or tightness,0,0.0,0,0
+difficulty breathing,0,0.0,0,0
+rib pain,0,0.0,0,0
+joint pain,0,0.0,0,0
+muscle stiffness or tightness,0,0.0,0,0
+pallor,0,0.0,0,0
+hand or finger lump or mass,0,0.0,0,0
+chills,0,0.0,0,0
+groin pain,0,0.0,0,0
+fatigue,0,0.0,0,0
+abdominal distention,0,0.0,0,0
+regurgitation.1,0,0.0,0,0
+symptoms of the kidneys,0,0.0,0,0
+melena,0,0.0,0,0
+flushing,0,0.0,0,0
+coughing up sputum,0,0.0,0,0
+seizures,0,0.0,0,0
+delusions or hallucinations,0,0.0,0,0
+shoulder cramps or spasms,0,0.0,0,0
+joint stiffness or tightness,0,0.0,0,0
+pain or soreness of breast,0,0.0,0,0
+excessive urination at night,0,0.0,0,0
+bleeding from eye,0,0.0,0,0
+rectal bleeding,0,0.0,0,0
+constipation,0,0.0,0,0
+temper problems,0,0.0,0,0
+coryza,0,0.0,0,0
+wrist weakness,0,0.0,0,0
+eye strain,0,0.0,0,0
+hemoptysis,0,0.0,0,0
+lymphedema,0,0.0,0,0
+skin on leg or foot looks infected,0,0.0,0,0
+allergic reaction,0,0.0,0,0
+congestion in chest,0,0.0,0,0
+muscle swelling,0,0.0,0,0
+pus in urine,0,0.0,0,0
+abnormal size or shape of ear,0,0.0,0,0
+low back weakness,0,0.0,0,0
+sleepiness,0,0.0,0,0
+apnea,0,0.0,0,0
+abnormal breathing sounds,0,0.0,0,0
+excessive growth,0,0.0,0,0
+elbow cramps or spasms,0,0.0,0,0
+feeling hot and cold,0,0.0,0,0
+blood clots during menstrual periods,0,0.0,0,0
+absence of menstruation,0,0.0,0,0
+pulling at ears,0,0.0,0,0
+gum pain,0,0.0,0,0
+redness in ear,0,0.0,0,0
+fluid retention,0,0.0,0,0
+flu-like syndrome,0,0.0,0,0
+sinus congestion,0,0.0,0,0
+painful sinuses,0,0.0,0,0
+fears and phobias,0,0.0,0,0
+recent pregnancy,0,0.0,0,0
+uterine contractions,0,0.0,0,0
+burning chest pain,0,0.0,0,0
+back cramps or spasms,0,0.0,0,0
+stiffness all over,0,0.0,0,0
+"muscle cramps, contractures, or spasms",0,0.0,0,0
+low back cramps or spasms,0,0.0,0,0
+back mass or lump,0,0.0,0,0
+nosebleed,0,0.0,0,0
+long menstrual periods,0,0.0,0,0
+heavy menstrual flow,0,0.0,0,0
+unpredictable menstruation,0,0.0,0,0
+painful menstruation,0,0.0,0,0
+infertility,0,0.0,0,0
+frequent menstruation,0,0.0,0,0
+sweating,0,0.0,0,0
+mass on eyelid,0,0.0,0,0
+swollen eye,0,0.0,0,0
+eyelid swelling,0,0.0,0,0
+eyelid lesion or rash,0,0.0,0,0
+unwanted hair,0,0.0,0,0
+symptoms of bladder,0,0.0,0,0
+irregular appearing nails,0,0.0,0,0
+itching of skin,0,0.0,0,0
+hurts to breath,0,0.0,0,0
+nailbiting,0,0.0,0,0
+"skin dryness, peeling, scaliness, or roughness",0,0.0,0,0
+skin on arm or hand looks infected,0,0.0,0,0
+skin irritation,0,0.0,0,0
+itchy scalp,0,0.0,0,0
+hip swelling,0,0.0,0,0
+incontinence of stool,0,0.0,0,0
+foot or toe cramps or spasms,0,0.0,0,0
+warts,0,0.0,0,0
+bumps on penis,0,0.0,0,0
+too little hair,0,0.0,0,0
+foot or toe lump or mass,0,0.0,0,0
+skin rash,0,0.0,0,0
+mass or swelling around the anus,0,0.0,0,0
+low back swelling,0,0.0,0,0
+ankle swelling,0,0.0,0,0
+hip lump or mass,0,0.0,0,0
+drainage in throat,0,0.0,0,0
+dry or flaky scalp,0,0.0,0,0
+premenstrual tension or irritability,0,0.0,0,0
+feeling hot,0,0.0,0,0
+feet turned in,0,0.0,0,0
+foot or toe stiffness or tightness,0,0.0,0,0
+pelvic pressure,0,0.0,0,0
+elbow swelling,0,0.0,0,0
+elbow stiffness or tightness,0,0.0,0,0
+early or late onset of menopause,0,0.0,0,0
+mass on ear,0,0.0,0,0
+bleeding from ear,0,0.0,0,0
+hand or finger weakness,0,0.0,0,0
+low self-esteem,0,0.0,0,0
+throat irritation,0,0.0,0,0
+itching of the anus,0,0.0,0,0
+swollen or red tonsils,0,0.0,0,0
+irregular belly button,0,0.0,0,0
+swollen tongue,0,0.0,0,0
+lip sore,0,0.0,0,0
+vulvar sore,0,0.0,0,0
+hip stiffness or tightness,0,0.0,0,0
+mouth pain,0,0.0,0,0
+arm weakness,0,0.0,0,0
+leg lump or mass,0,0.0,0,0
+disturbance of smell or taste,0,0.0,0,0
+discharge in stools,0,0.0,0,0
+penis pain,0,0.0,0,0
+loss of sex drive,0,0.0,0,0
+obsessions and compulsions,0,0.0,0,0
+antisocial behavior,0,0.0,0,0
+neck cramps or spasms,0,0.0,0,0
+pupils unequal,0,0.0,0,0
+poor circulation,0,0.0,0,0
+thirst,0,0.0,0,0
+sleepwalking,0,0.0,0,0
+skin oiliness,0,0.0,0,0
+sneezing,0,0.0,0,0
+bladder mass,0,0.0,0,0
+knee cramps or spasms,0,0.0,0,0
+premature ejaculation,0,0.0,0,0
+leg weakness,0,0.0,0,0
+posture problems,0,0.0,0,0
+bleeding in mouth,0,0.0,0,0
+tongue bleeding,0,0.0,0,0
+change in skin mole size or color,0,0.0,0,0
+penis redness,0,0.0,0,0
+penile discharge,0,0.0,0,0
+shoulder lump or mass,0,0.0,0,0
+polyuria,0,0.0,0,0
+cloudy eye,0,0.0,0,0
+hysterical behavior,0,0.0,0,0
+arm lump or mass,0,0.0,0,0
+nightmares,0,0.0,0,0
+bleeding gums,0,0.0,0,0
+pain in gums,0,0.0,0,0
+bedwetting,0,0.0,0,0
+diaper rash,0,0.0,0,0
+lump or mass of breast,0,0.0,0,0
+vaginal bleeding after menopause,0,0.0,0,0
+infrequent menstruation,0,0.0,0,0
+mass on vulva,0,0.0,0,0
+jaw pain,0,0.0,0,0
+itching of scrotum,0,0.0,0,0
+postpartum problems of the breast,0,0.0,0,0
+eyelid retracted,0,0.0,0,0
+hesitancy,0,0.0,0,0
+elbow lump or mass,0,0.0,0,0
+muscle weakness,0,0.0,0,0
+throat redness,0,0.0,0,0
+joint swelling,0,0.0,0,0
+tongue pain,0,0.0,0,0
+redness in or around nose,0,0.0,0,0
+wrinkles on skin,0,0.0,0,0
+foot or toe weakness,0,0.0,0,0
+hand or finger cramps or spasms,0,0.0,0,0
+back stiffness or tightness,0,0.0,0,0
+wrist lump or mass,0,0.0,0,0
+skin pain,0,0.0,0,0
+low back stiffness or tightness,0,0.0,0,0
+low urine output,0,0.0,0,0
+skin on head or neck looks infected,0,0.0,0,0
+stuttering or stammering,0,0.0,0,0
+problems with orgasm,0,0.0,0,0
+nose deformity,0,0.0,0,0
+lump over jaw,0,0.0,0,0
+sore in nose,0,0.0,0,0
+hip weakness,0,0.0,0,0
+back swelling,0,0.0,0,0
+ankle stiffness or tightness,0,0.0,0,0
+ankle weakness,0,0.0,0,0
+neck weakness,0,0.0,0,0

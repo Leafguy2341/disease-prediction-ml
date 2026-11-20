@@ -93,3 +93,34 @@ configs/runtime.local.json
 /reports/phase3_baseline-*.md
 /reports/nlp_research_20*/
 
+# Owner-approved frozen data publication. Generated caches/source environments stay out.
+!/data/raw/Disease and symptoms dataset.csv
+!/data/processed/*.csv.gz
+!/artifacts/models/
+!/artifacts/models/**
+!/artifacts/metadata/**
+!/reports/runs/
+!/reports/runs/**
+!/reports/tables/
+!/reports/tables/**
+!/reports/figures/
+!/reports/figures/**
+!/reports/tuning/
+!/reports/tuning/**
+!/reports/phase3_baseline-*.md
+!/reports/nlp_research_20261111T133402584453Z/
+!/reports/nlp_research_20261111T133402584453Z/**
+
+# No cache, credentials, archives or temporary payloads in the publication allowlist.
+/artifacts/embeddings/
+**/__pycache__/
+**/.cache/
+**/.env
+**/.env.*
+**/*.private.json
+**/*credentials*.json
+**/*.key
+**/*.tmp
+**/*.bak
+**/*.log
+

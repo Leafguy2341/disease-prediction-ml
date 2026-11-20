@@ -1,0 +1,774 @@
+﻿disease,unique_vectors,train,validation,test,eligible_candidate
+abdominal aortic aneurysm,40,23,7,10,True
+abdominal hernia,265,187,34,44,True
+abscess of nose,151,98,26,27,True
+abscess of the lung,5,3,1,1,True
+abscess of the pharynx,164,118,19,27,True
+acanthosis nigricans,9,7,1,1,True
+acariasis,10,5,2,3,True
+achalasia,25,18,1,6,True
+acne,306,214,50,42,True
+actinic keratosis,808,574,121,113,True
+acute bronchiolitis,1204,836,187,181,True
+acute bronchitis,1213,846,195,172,True
+acute bronchospasm,812,576,114,122,True
+acute fatty liver of pregnancy (aflp),2,0,0,0,False
+acute glaucoma,148,108,20,20,True
+acute kidney injury,808,564,116,128,True
+acute otitis media,537,372,90,75,True
+acute pancreatitis,1207,843,188,176,True
+acute respiratory distress syndrome (ards),300,211,45,44,True
+acute sinusitis,828,576,119,133,True
+acute stress reaction,799,567,118,114,True
+adhesive capsulitis of the shoulder,33,26,2,5,True
+adjustment reaction,311,216,47,48,True
+adrenal adenoma,8,4,3,1,True
+adrenal cancer,1,0,0,0,False
+alcohol abuse,313,216,51,46,True
+alcohol intoxication,160,101,35,24,True
+alcohol withdrawal,520,371,73,76,True
+alcoholic liver disease,99,70,14,15,True
+allergy,803,550,122,131,True
+allergy to animals,11,7,2,2,True
+alopecia,173,126,21,26,True
+alzheimer disease,172,131,21,20,True
+amblyopia,16,12,1,3,True
+amyloidosis,2,0,0,0,False
+amyotrophic lateral sclerosis (als),14,12,1,1,True
+anal fissure,141,101,22,18,True
+anal fistula,8,6,1,1,True
+anemia,157,109,23,25,True
+anemia due to chronic kidney disease,34,27,2,5,True
+anemia due to malignancy,6,4,1,1,True
+anemia of chronic disease,8,6,1,1,True
+angina,826,590,127,109,True
+ankylosing spondylitis,479,340,61,78,True
+anxiety,1198,833,182,183,True
+aortic valve disease,284,208,45,31,True
+aphakia,4,0,0,0,False
+aphthous ulcer,137,100,19,18,True
+aplastic anemia,32,26,3,3,True
+appendicitis,808,566,130,112,True
+arrhythmia,124,73,25,26,True
+arthritis of the hip,1210,846,190,174,True
+ascending cholangitis,19,12,4,3,True
+asperger syndrome,173,124,20,29,True
+aspergillosis,1,0,0,0,False
+asthma,814,570,129,115,True
+astigmatism,156,119,21,16,True
+atelectasis,34,22,9,3,True
+athlete's foot,180,130,22,28,True
+atonic bladder,21,18,1,2,True
+atrial fibrillation,68,48,12,8,True
+atrial flutter,134,89,25,20,True
+atrophic skin condition,283,193,57,33,True
+atrophic vaginitis,162,108,26,28,True
+atrophy of the corpus cavernosum,13,9,3,1,True
+attention deficit hyperactivity disorder (adhd),310,220,37,53,True
+autism,306,220,40,46,True
+autonomic nervous system disorder,19,11,4,4,True
+avascular necrosis,6,4,1,1,True
+balanitis,298,220,35,43,True
+bell palsy,534,375,85,74,True
+benign kidney cyst,90,67,11,12,True
+benign paroxysmal positional vertical (bppv),285,182,46,57,True
+benign prostatic hyperplasia (bph),1206,851,181,174,True
+benign vaginal discharge (leukorrhea),525,357,88,80,True
+bipolar disorder,537,371,93,73,True
+birth trauma,3,0,0,0,False
+bladder cancer,66,47,8,11,True
+bladder disorder,303,213,50,40,True
+bladder obstruction,155,96,31,28,True
+blepharitis,802,566,110,126,True
+blepharospasm,3,0,0,0,False
+bone cancer,22,16,5,1,True
+bone disorder,91,60,18,13,True
+bone spur of the calcaneous,13,8,3,2,True
+brachial neuritis,824,566,114,144,True
+brain cancer,140,105,18,17,True
+breast cancer,6,3,1,2,True
+breast cyst,9,6,2,1,True
+breast infection (mastitis),309,215,53,41,True
+broken tooth,80,60,11,9,True
+bunion,12,8,1,3,True
+burn,30,21,4,5,True
+bursitis,1208,832,197,179,True
+callus,322,211,59,52,True
+carbon monoxide poisoning,37,29,3,5,True
+carcinoid syndrome,1,0,0,0,False
+cardiac arrest,155,111,20,24,True
+cardiomyopathy,156,107,28,21,True
+carpal tunnel syndrome,819,579,133,107,True
+cat scratch disease,2,0,0,0,False
+cataract,484,335,83,66,True
+celiac disease,43,29,9,5,True
+cellulitis or abscess of mouth,62,48,7,7,True
+central atherosclerosis,8,6,1,1,True
+central retinal artery or vein occlusion,37,25,11,1,True
+cerebral edema,36,25,5,6,True
+cerebral palsy,47,31,7,9,True
+cervical cancer,31,22,5,4,True
+cervical disorder,9,7,1,1,True
+cervicitis,184,143,21,20,True
+chalazion,524,370,71,83,True
+chickenpox,37,28,7,2,True
+chlamydia,47,36,5,6,True
+cholecystitis,1204,837,177,190,True
+choledocholithiasis,288,194,44,50,True
+cholesteatoma,6,3,2,1,True
+chondromalacia of the patella,37,25,6,6,True
+chorioretinitis,22,20,1,1,True
+chronic back pain,805,574,111,120,True
+chronic constipation,827,567,127,133,True
+chronic glaucoma,522,376,68,78,True
+chronic inflammatory demyelinating polyneuropathy (cidp),6,3,2,1,True
+chronic kidney disease,8,5,1,2,True
+chronic knee pain,150,101,21,28,True
+chronic obstructive pulmonary disease (copd),812,565,120,127,True
+chronic otitis media,521,346,78,97,True
+chronic pain disorder,528,365,85,78,True
+chronic pancreatitis,149,103,19,27,True
+chronic rheumatic fever,77,48,12,17,True
+chronic sinusitis,507,364,67,76,True
+chronic ulcer,1,0,0,0,False
+cirrhosis,163,113,27,23,True
+coagulation (bleeding) disorder,24,13,4,7,True
+cold sore,79,54,14,11,True
+colonic polyp,168,121,28,19,True
+colorectal cancer,15,11,1,3,True
+common cold,813,575,114,124,True
+complex regional pain syndrome,1217,857,182,178,True
+concussion,1191,805,203,183,True
+conduct disorder,517,359,85,73,True
+conductive hearing loss,485,332,79,74,True
+congenital heart defect,11,7,2,2,True
+congenital malformation syndrome,6,2,2,2,True
+conjunctivitis,825,590,111,124,True
+conjunctivitis due to allergy,1215,854,152,209,True
+conjunctivitis due to bacteria,44,34,3,7,True
+conjunctivitis due to virus,521,375,85,61,True
+connective tissue disorder,2,0,0,0,False
+contact dermatitis,823,590,119,114,True
+conversion disorder,7,4,2,1,True
+cornea infection,816,565,116,135,True
+corneal abrasion,307,217,41,49,True
+corneal disorder,524,364,70,90,True
+coronary atherosclerosis,100,67,12,21,True
+cranial nerve palsy,172,123,30,19,True
+crohn disease,273,187,45,41,True
+croup,807,561,114,132,True
+crushing injury,37,26,8,3,True
+cryptococcosis,1,0,0,0,False
+cryptorchidism,3,0,0,0,False
+cushing syndrome,2,0,0,0,False
+cyst of the eyelid,7,3,1,3,True
+cystic fibrosis,8,4,3,1,True
+cysticercosis,11,7,2,2,True
+cystitis,1219,876,166,177,True
+de quervain disease,62,41,9,12,True
+decubitus ulcer,8,5,2,1,True
+deep vein thrombosis (dvt),89,66,12,11,True
+degenerative disc disease,810,551,130,129,True
+delirium,460,337,56,67,True
+dementia,175,116,36,23,True
+dengue fever,1,0,0,0,False
+dental caries,1185,814,196,175,True
+depression,830,579,120,131,True
+dermatitis due to sun exposure,293,204,42,47,True
+developmental disability,825,581,112,132,True
+deviated nasal septum,488,358,73,57,True
+diabetes,1,0,0,0,False
+diabetes insipidus,2,0,0,0,False
+diabetic ketoacidosis,526,387,71,68,True
+diabetic kidney disease,1,0,0,0,False
+diabetic peripheral neuropathy,294,197,46,51,True
+diabetic retinopathy,295,208,42,45,True
+diaper rash,809,566,123,120,True
+dislocation of the ankle,9,3,3,3,True
+dislocation of the elbow,65,40,9,16,True
+dislocation of the finger,15,9,3,3,True
+dislocation of the foot,3,0,0,0,False
+dislocation of the hip,3,0,0,0,False
+dislocation of the knee,3,0,0,0,False
+dislocation of the patella,2,0,0,0,False
+dislocation of the shoulder,38,25,8,5,True
+dislocation of the vertebra,11,9,1,1,True
+dislocation of the wrist,10,8,1,1,True
+dissociative disorder,23,17,3,3,True
+diverticulitis,1214,808,199,207,True
+diverticulosis,518,365,81,72,True
+down syndrome,39,23,7,9,True
+drug abuse,471,318,71,82,True
+drug abuse (barbiturates),33,21,5,7,True
+drug abuse (cocaine),214,138,42,34,True
+drug abuse (methamphetamine),155,108,23,24,True
+drug abuse (opioids),486,342,75,69,True
+drug poisoning due to medication,93,65,10,18,True
+drug reaction,811,587,117,107,True
+drug withdrawal,93,63,17,13,True
+dry eye of unknown cause,787,550,111,126,True
+dumping syndrome,3,0,0,0,False
+dyshidrosis,25,18,4,3,True
+dysthymic disorder,317,229,55,33,True
+ear drum damage,819,605,121,93,True
+ear wax impaction,529,356,86,87,True
+eating disorder,302,213,45,44,True
+ectopic pregnancy,177,126,21,30,True
+ectropion,13,10,1,2,True
+eczema,1207,846,174,187,True
+edward syndrome,2,0,0,0,False
+emphysema,6,2,2,2,True
+empyema,3,0,0,0,False
+encephalitis,24,14,4,6,True
+endocarditis,33,22,6,5,True
+endometrial cancer,26,20,3,3,True
+endometrial hyperplasia,15,9,3,3,True
+endometriosis,267,187,42,38,True
+endophthalmitis,37,28,5,4,True
+envenomation from spider or animal bite,302,221,38,43,True
+ependymoma,6,4,1,1,True
+epididymitis,320,217,53,50,True
+epidural hemorrhage,2,0,0,0,False
+epilepsy,56,40,5,11,True
+erectile dysfunction,478,346,70,62,True
+erythema multiforme,16,12,3,1,True
+esophageal cancer,19,13,2,4,True
+esophageal varices,1,0,0,0,False
+esophagitis,1215,841,193,181,True
+essential tremor,74,50,10,14,True
+eustachian tube dysfunction (ear disorder),810,565,123,122,True
+extrapyramidal effect of drugs,32,22,6,4,True
+eye alignment disorder,289,205,40,44,True
+factitious disorder,4,0,0,0,False
+female genitalia infection,79,59,11,9,True
+female infertility of unknown cause,15,11,1,3,True
+fetal alcohol syndrome,3,0,0,0,False
+fibroadenoma,42,26,7,9,True
+fibrocystic breast disease,7,5,1,1,True
+fibromyalgia,503,344,65,94,True
+flat feet,13,10,1,2,True
+floaters,15,11,1,3,True
+flu,521,352,80,89,True
+fluid overload,171,113,27,31,True
+folate deficiency,13,11,1,1,True
+food allergy,285,199,42,44,True
+foreign body in the ear,18,13,3,2,True
+foreign body in the eye,155,112,19,24,True
+foreign body in the gastrointestinal tract,45,35,7,3,True
+foreign body in the nose,1,0,0,0,False
+foreign body in the throat,70,49,9,12,True
+foreign body in the vagina,4,0,0,0,False
+fracture of the ankle,36,25,3,8,True
+fracture of the arm,391,272,58,61,True
+fracture of the facial bones,290,200,45,45,True
+fracture of the finger,8,5,1,2,True
+fracture of the foot,14,10,2,2,True
+fracture of the hand,98,79,6,13,True
+fracture of the jaw,33,23,5,5,True
+fracture of the leg,531,379,89,63,True
+fracture of the neck,23,17,4,2,True
+fracture of the patella,32,21,4,7,True
+fracture of the pelvis,86,58,11,17,True
+fracture of the rib,791,531,122,138,True
+fracture of the shoulder,83,61,10,12,True
+fracture of the skull,17,11,3,3,True
+fracture of the vertebra,156,109,19,28,True
+friedrich ataxia,2,0,0,0,False
+frostbite,3,0,0,0,False
+fungal infection of the hair,1212,848,197,167,True
+fungal infection of the skin,533,382,81,70,True
+g6pd enzyme deficiency,1,0,0,0,False
+galactorrhea of unknown cause,8,6,1,1,True
+gallstone,812,571,125,116,True
+ganglion cyst,530,383,73,74,True
+gas gangrene,1,0,0,0,False
+gastritis,527,367,78,82,True
+gastroduodenal ulcer,526,369,79,78,True
+gastroesophageal reflux disease (gerd),302,193,60,49,True
+gastrointestinal hemorrhage,1214,878,150,186,True
+gastroparesis,74,45,16,13,True
+genital herpes,81,60,10,11,True
+gestational diabetes,17,12,1,4,True
+glaucoma,313,223,49,41,True
+glucocorticoid deficiency,4,0,0,0,False
+goiter,19,11,7,1,True
+gonorrhea,40,28,7,5,True
+gout,1211,857,182,172,True
+granuloma inguinale,2,0,0,0,False
+graves disease,92,61,15,16,True
+guillain barre syndrome,13,8,2,3,True
+gum disease,803,545,141,117,True
+gynecomastia,65,51,10,4,True
+hammer toe,8,3,3,2,True
+hashimoto thyroiditis,1,0,0,0,False
+head and neck cancer,166,112,26,28,True
+head injury,129,82,23,24,True
+headache after lumbar puncture,77,48,16,13,True
+heart attack,810,570,126,114,True
+heart block,476,335,81,60,True
+heart contusion,2,0,0,0,False
+heart failure,813,593,93,127,True
+heat exhaustion,138,104,12,22,True
+heat stroke,1,0,0,0,False
+hemangioma,514,359,81,74,True
+hemarthrosis,6,4,1,1,True
+hematoma,15,10,2,3,True
+hemiplegia,310,220,41,49,True
+hemochromatosis,3,0,0,0,False
+hemolytic anemia,8,6,1,1,True
+hemophilia,8,5,1,2,True
+hemorrhoids,818,577,117,124,True
+hepatic encephalopathy,19,10,3,6,True
+hepatitis due to a toxin,163,130,18,15,True
+herniated disk,828,581,131,116,True
+herpangina,302,198,51,53,True
+hiatal hernia,815,564,125,126,True
+hidradenitis suppurativa,36,23,4,9,True
+high blood pressure,1,0,0,0,False
+hirschsprung disease,4,0,0,0,False
+hirsutism,7,4,2,1,True
+histoplasmosis,2,0,0,0,False
+hormone disorder,10,6,1,3,True
+hpv,3,0,0,0,False
+human immunodeficiency virus infection (hiv),1,0,0,0,False
+huntington disease,1,0,0,0,False
+hydatidiform mole,18,10,4,4,True
+hydrocele of the testicle,140,90,24,26,True
+hydrocephalus,72,58,7,7,True
+hydronephrosis,165,115,25,25,True
+hypercalcemia,6,4,1,1,True
+hypercholesterolemia,8,6,1,1,True
+hyperemesis gravidarum,815,585,127,103,True
+hypergammaglobulinemia,1,0,0,0,False
+hyperhidrosis,12,7,1,4,True
+hyperkalemia,503,346,96,61,True
+hyperlipidemia,2,0,0,0,False
+hypernatremia,18,12,3,3,True
+hyperopia,36,28,6,2,True
+hyperosmotic hyperketotic state,3,0,0,0,False
+hypertension of pregnancy,36,28,5,3,True
+hypertensive heart disease,804,574,110,120,True
+hypertrophic obstructive cardiomyopathy (hocm),4,0,0,0,False
+hypocalcemia,13,9,2,2,True
+hypoglycemia,1215,821,206,188,True
+hypokalemia,387,273,58,56,True
+hyponatremia,312,215,42,55,True
+hypothermia,6,3,2,1,True
+hypothyroidism,33,19,9,5,True
+hypovolemia,287,199,53,35,True
+idiopathic absence of menstruation,292,209,39,44,True
+idiopathic excessive menstruation,832,580,126,126,True
+idiopathic infrequent menstruation,10,8,1,1,True
+idiopathic irregular menstrual cycle,815,570,114,131,True
+idiopathic nonmenstrual bleeding,25,16,6,3,True
+idiopathic painful menstruation,805,564,107,134,True
+ileus,292,202,40,50,True
+impetigo,523,375,88,60,True
+impulse control disorder,167,122,19,26,True
+indigestion,291,209,40,42,True
+induced abortion,157,115,17,25,True
+infection of open wound,7,4,2,1,True
+infectious gastroenteritis,1212,871,163,178,True
+ingrown toe nail,469,315,86,68,True
+inguinal hernia,373,261,64,48,True
+injury of the ankle,132,105,12,15,True
+injury to internal organ,34,27,6,1,True
+injury to the abdomen,14,9,3,2,True
+injury to the arm,1209,827,178,204,True
+injury to the face,279,207,32,40,True
+injury to the finger,5,3,1,1,True
+injury to the hand,71,46,14,11,True
+injury to the hip,8,5,2,1,True
+injury to the knee,20,13,2,5,True
+injury to the leg,1206,840,175,191,True
+injury to the shoulder,317,229,48,40,True
+injury to the spinal cord,8,5,2,1,True
+injury to the trunk,803,546,119,138,True
+insect bite,516,371,71,74,True
+insulin overdose,1,0,0,0,False
+interstitial lung disease,336,238,45,53,True
+intertrigo (skin condition),42,30,7,5,True
+intestinal cancer,16,13,1,2,True
+intestinal disease,186,116,33,37,True
+intestinal malabsorption,66,48,9,9,True
+intestinal obstruction,288,214,38,36,True
+intracerebral hemorrhage,466,322,75,69,True
+intracranial abscess,3,0,0,0,False
+intracranial hemorrhage,151,97,24,30,True
+intussusception,3,0,0,0,False
+iridocyclitis,301,206,54,41,True
+iron deficiency anemia,530,366,79,85,True
+irritable bowel syndrome,323,234,46,43,True
+ischemia of the bowel,97,67,13,17,True
+ischemic heart disease,797,543,125,129,True
+itching of unknown cause,312,224,39,49,True
+jaw disorder,168,125,22,21,True
+joint effusion,292,219,36,37,True
+juvenile rheumatoid arthritis,13,9,3,1,True
+kaposi sarcoma,1,0,0,0,False
+kidney cancer,24,18,3,3,True
+kidney disease due to longstanding hypertension,7,4,2,1,True
+kidney failure,161,112,23,26,True
+kidney stone,792,547,132,113,True
+knee ligament or meniscus tear,64,45,12,7,True
+labyrinthitis,504,362,75,67,True
+lactose intolerance,41,31,6,4,True
+laryngitis,522,360,77,85,True
+lateral epicondylitis (tennis elbow),175,112,37,26,True
+leukemia,6,4,1,1,True
+lewy body dementia,23,18,2,3,True
+lice,14,9,1,4,True
+lichen planus,1,0,0,0,False
+lichen simplex,18,9,4,5,True
+lipoma,517,348,97,72,True
+liver cancer,18,11,4,3,True
+liver disease,1209,854,178,177,True
+lumbago,69,53,7,9,True
+lung cancer,47,30,9,8,True
+lung contusion,6,4,1,1,True
+lyme disease,86,62,13,11,True
+lymphadenitis,290,217,37,36,True
+lymphangitis,1,0,0,0,False
+lymphedema,315,220,42,53,True
+lymphogranuloma venereum,5,3,1,1,True
+lymphoma,41,29,6,6,True
+macular degeneration,817,590,110,117,True
+magnesium deficiency,7,5,1,1,True
+malaria,5,3,1,1,True
+male genitalia infection,40,27,8,5,True
+malignant hypertension,83,59,14,10,True
+marijuana abuse,1210,838,190,182,True
+mastectomy,4,0,0,0,False
+mastoiditis,43,31,5,7,True
+meckel diverticulum,1,0,0,0,False
+melanoma,156,107,25,24,True
+meniere disease,160,114,24,22,True
+meningioma,7,4,2,1,True
+meningitis,159,117,18,24,True
+menopause,28,16,4,8,True
+metabolic disorder,9,7,1,1,True
+metastatic cancer,19,15,2,2,True
+migraine,203,142,32,29,True
+missed abortion,260,182,33,45,True
+mitral valve disease,304,198,51,55,True
+mittelschmerz,29,19,2,8,True
+molluscum contagiosum,313,226,46,41,True
+mononeuritis,530,361,74,95,True
+mononucleosis,159,103,33,23,True
+moyamoya disease,2,0,0,0,False
+mucositis,156,106,27,23,True
+multiple myeloma,19,11,4,4,True
+multiple sclerosis,825,603,116,106,True
+mumps,8,6,1,1,True
+muscle spasm,522,366,72,84,True
+muscular dystrophy,12,6,1,5,True
+myasthenia gravis,50,35,4,11,True
+myelodysplastic syndrome,2,0,0,0,False
+myocarditis,1,0,0,0,False
+myoclonus,6,4,1,1,True
+myopia,292,209,42,41,True
+myositis,41,30,5,6,True
+narcolepsy,79,50,11,18,True
+nasal polyp,164,111,34,19,True
+necrotizing fasciitis,2,0,0,0,False
+neonatal jaundice,17,10,3,4,True
+nerve impingement near the shoulder,159,105,25,29,True
+neuralgia,529,391,67,71,True
+neurofibromatosis,9,6,1,2,True
+neuropathy due to drugs,12,7,3,2,True
+neurosis,801,590,109,102,True
+nonalcoholic liver disease (nash),18,13,1,4,True
+noninfectious gastroenteritis,1206,859,166,181,True
+normal pressure hydrocephalus,7,4,1,2,True
+nose disorder,1218,854,194,170,True
+obesity,2,0,0,0,False
+obsessive compulsive disorder (ocd),286,197,40,49,True
+obstructive sleep apnea (osa),1196,842,192,162,True
+omphalitis,1,0,0,0,False
+onychomycosis,309,222,40,47,True
+open wound due to trauma,1,0,0,0,False
+open wound from surgical incision,4,0,0,0,False
+open wound of the abdomen,2,0,0,0,False
+open wound of the arm,7,4,2,1,True
+open wound of the back,6,2,1,3,True
+open wound of the cheek,1,0,0,0,False
+open wound of the chest,1,0,0,0,False
+open wound of the ear,17,15,1,1,True
+open wound of the eye,16,13,2,1,True
+open wound of the face,1,0,0,0,False
+open wound of the finger,4,0,0,0,False
+open wound of the foot,27,16,6,5,True
+open wound of the hand,4,0,0,0,False
+open wound of the head,1,0,0,0,False
+open wound of the jaw,1,0,0,0,False
+open wound of the knee,1,0,0,0,False
+open wound of the lip,12,9,2,1,True
+open wound of the mouth,29,19,4,6,True
+open wound of the neck,15,11,1,3,True
+open wound of the nose,8,6,1,1,True
+open wound of the shoulder,2,0,0,0,False
+oppositional disorder,389,266,67,56,True
+optic neuritis,5,3,1,1,True
+oral leukoplakia,2,0,0,0,False
+oral mucosal lesion,492,340,77,75,True
+oral thrush (yeast infection),529,373,75,81,True
+orbital cellulitis,80,58,10,12,True
+orthostatic hypotension,146,103,19,24,True
+osteoarthritis,796,553,124,119,True
+osteochondroma,82,54,15,13,True
+osteochondrosis,42,32,5,5,True
+osteomyelitis,75,51,16,8,True
+osteoporosis,272,196,37,39,True
+otitis externa (swimmer's ear),808,549,118,141,True
+otitis media,807,599,98,110,True
+otosclerosis,3,0,0,0,False
+ovarian cancer,9,6,2,1,True
+ovarian cyst,293,206,46,41,True
+ovarian torsion,34,30,2,2,True
+overflow incontinence,81,60,11,10,True
+pain after an operation,806,559,121,126,True
+pain disorder affecting the neck,266,197,36,33,True
+pancreatic cancer,84,52,15,17,True
+panic attack,67,41,7,19,True
+panic disorder,810,573,108,129,True
+parasitic disease,27,21,4,2,True
+parathyroid adenoma,8,4,2,2,True
+parkinson disease,315,225,50,40,True
+paronychia,277,203,34,40,True
+paroxysmal supraventricular tachycardia,261,172,39,50,True
+paroxysmal ventricular tachycardia,517,364,80,73,True
+pelvic fistula,2,0,0,0,False
+pelvic inflammatory disease,804,584,115,105,True
+pelvic organ prolapse,291,193,51,47,True
+pemphigus,2,0,0,0,False
+pericarditis,38,25,8,5,True
+peripheral arterial disease,101,68,20,13,True
+peripheral arterial embolism,47,35,2,10,True
+peripheral nerve disorder,1215,850,190,175,True
+perirectal infection,41,32,3,6,True
+peritonitis,179,128,22,29,True
+peritonsillar abscess,85,58,14,13,True
+persistent vomiting of unknown cause,87,54,18,15,True
+personality disorder,816,577,130,109,True
+peyronie disease,12,10,1,1,True
+pharyngitis,11,6,4,1,True
+phimosis,35,24,6,5,True
+pilonidal cyst,168,123,21,24,True
+pinguecula,5,3,1,1,True
+pinworm infection,36,25,6,5,True
+pituitary adenoma,10,8,1,1,True
+pituitary disorder,10,4,3,3,True
+pityriasis rosea,41,28,7,6,True
+placenta previa,5,3,1,1,True
+placental abruption,4,0,0,0,False
+plantar fasciitis,87,60,10,17,True
+pleural effusion,480,329,74,77,True
+pneumoconiosis,6,2,2,2,True
+pneumonia,1212,839,165,208,True
+pneumothorax,155,101,20,34,True
+poisoning due to analgesics,35,24,2,9,True
+poisoning due to anticonvulsants,10,5,2,3,True
+poisoning due to antidepressants,8,6,1,1,True
+poisoning due to antihypertensives,3,0,0,0,False
+poisoning due to antimicrobial drugs,34,21,4,9,True
+poisoning due to antipsychotics,2,0,0,0,False
+poisoning due to ethylene glycol,7,5,1,1,True
+poisoning due to gas,69,46,14,9,True
+poisoning due to opioids,3,0,0,0,False
+poisoning due to sedatives,46,31,7,8,True
+polycystic kidney disease,118,84,14,20,True
+polycystic ovarian syndrome (pcos),148,107,17,24,True
+polycythemia vera,14,11,1,2,True
+polymyalgia rheumatica,47,32,9,6,True
+post-traumatic stress disorder (ptsd),492,346,74,72,True
+postoperative infection,42,28,9,5,True
+postpartum depression,306,209,54,43,True
+preeclampsia,204,142,32,30,True
+pregnancy,13,9,1,3,True
+premature atrial contractions (pacs),81,58,8,15,True
+premature ovarian failure,17,12,1,4,True
+premature rupture of amniotic membrane,2,0,0,0,False
+premature ventricular contractions (pvcs),159,111,26,22,True
+premenstrual tension syndrome,42,32,6,4,True
+presbyacusis,23,15,3,5,True
+presbyopia,70,49,9,12,True
+priapism,4,0,0,0,False
+primary immunodeficiency,13,8,3,2,True
+primary insomnia,77,51,12,14,True
+primary kidney disease,16,9,6,1,True
+primary thrombocythemia,1,0,0,0,False
+problem during pregnancy,820,567,128,125,True
+prostate cancer,104,71,16,17,True
+prostatitis,510,372,72,66,True
+protein deficiency,16,10,3,3,True
+pseudohypoparathyroidism,6,4,1,1,True
+pseudotumor cerebri,16,10,3,3,True
+psoriasis,825,582,128,115,True
+psychosexual disorder,87,64,16,7,True
+psychotic disorder,802,562,124,116,True
+pterygium,76,47,14,15,True
+pulmonary congestion,304,205,52,47,True
+pulmonary embolism,791,569,112,110,True
+pulmonary eosinophilia,84,66,10,8,True
+pulmonary fibrosis,67,48,15,4,True
+pulmonary hypertension,284,186,47,51,True
+pulmonic valve disease,1,0,0,0,False
+pyelonephritis,803,587,109,107,True
+pyloric stenosis,5,3,1,1,True
+pyogenic skin infection,834,580,125,129,True
+raynaud disease,3,0,0,0,False
+reactive arthritis,1,0,0,0,False
+rectal disorder,808,564,112,132,True
+restless leg syndrome,156,113,18,25,True
+retinal detachment,154,104,26,24,True
+retinopathy due to high blood pressure,47,36,5,6,True
+rhabdomyolysis,12,9,2,1,True
+rheumatic fever,1,0,0,0,False
+rheumatoid arthritis,518,360,81,77,True
+rocky mountain spotted fever,1,0,0,0,False
+rosacea,521,383,63,75,True
+rotator cuff injury,39,26,7,6,True
+salivary gland disorder,11,9,1,1,True
+sarcoidosis,161,118,24,19,True
+scabies,83,54,19,10,True
+scar,91,62,13,16,True
+scarlet fever,37,22,7,8,True
+schizophrenia,811,573,119,119,True
+sciatica,521,378,87,56,True
+scleritis,16,10,3,3,True
+scleroderma,170,112,28,30,True
+scoliosis,86,63,11,12,True
+scurvy,1,0,0,0,False
+seasonal allergies (hay fever),816,573,117,126,True
+sebaceous cyst,821,586,110,125,True
+seborrheic dermatitis,800,576,115,109,True
+seborrheic keratosis,782,536,129,117,True
+sensorineural hearing loss,529,371,71,87,True
+sepsis,824,592,117,115,True
+septic arthritis,21,16,3,2,True
+shingles (herpes zoster),244,174,35,35,True
+sialoadenitis,318,212,50,56,True
+sick sinus syndrome,120,82,18,20,True
+sickle cell anemia,136,92,29,15,True
+sickle cell crisis,808,575,112,121,True
+sinus bradycardia,814,587,129,98,True
+sjogren syndrome,32,24,4,4,True
+skin cancer,519,356,88,75,True
+skin disorder,520,372,77,71,True
+skin pigmentation disorder,805,556,126,123,True
+skin polyp,807,580,102,125,True
+smoking or tobacco addiction,792,556,130,106,True
+social phobia,309,216,53,40,True
+soft tissue sarcoma,89,67,11,11,True
+somatization disorder,20,15,3,2,True
+spermatocele,22,16,4,2,True
+spherocytosis,2,0,0,0,False
+spina bifida,37,23,9,5,True
+spinal stenosis,1207,841,183,183,True
+spinocerebellar ataxia,6,4,1,1,True
+spondylitis,292,201,48,43,True
+spondylolisthesis,514,352,85,77,True
+spondylosis,1216,869,177,170,True
+spontaneous abortion,1212,838,188,186,True
+sporotrichosis,1,0,0,0,False
+sprain or strain,1212,852,169,191,True
+stenosis of the tear duct,23,16,5,2,True
+stomach cancer,65,44,10,11,True
+strep throat,1210,856,180,174,True
+stress incontinence,91,71,12,8,True
+stricture of the esophagus,32,24,6,2,True
+stroke,478,337,71,70,True
+stye,832,555,141,136,True
+subacute thyroiditis,12,10,1,1,True
+subarachnoid hemorrhage,45,28,5,12,True
+subconjunctival hemorrhage,143,106,17,20,True
+subdural hemorrhage,44,25,9,10,True
+substance-related mental disorder,88,62,15,11,True
+syndrome of inappropriate secretion of adh (siadh),3,0,0,0,False
+syphilis,8,5,2,1,True
+syringomyelia,6,4,1,1,True
+systemic lupus erythematosis (sle),46,29,4,13,True
+teething syndrome,290,214,45,31,True
+temporary or benign blood in urine,803,570,123,110,True
+temporomandibular joint disorder,172,119,23,30,True
+tendinitis,533,370,84,79,True
+tension headache,158,112,28,18,True
+testicular cancer,2,0,0,0,False
+testicular disorder,17,11,5,1,True
+testicular torsion,39,28,6,5,True
+thalassemia,1,0,0,0,False
+thoracic aortic aneurysm,86,60,9,17,True
+thoracic outlet syndrome,48,36,5,7,True
+threatened pregnancy,818,559,130,129,True
+thrombocytopenia,68,46,14,8,True
+thrombophlebitis,292,189,51,52,True
+thyroid cancer,5,3,1,1,True
+thyroid disease,7,5,1,1,True
+thyroid nodule,78,57,12,9,True
+tic (movement) disorder,39,24,4,11,True
+tietze syndrome,171,111,34,26,True
+tinnitus of unknown cause,159,102,25,32,True
+tonsillar hypertrophy,171,121,26,24,True
+tonsillitis,286,196,44,46,True
+tooth abscess,529,370,71,88,True
+tooth disorder,511,350,81,80,True
+torticollis,159,110,28,21,True
+tourette syndrome,13,10,2,1,True
+toxic multinodular goiter,23,16,4,3,True
+toxoplasmosis,3,0,0,0,False
+tracheitis,70,47,8,15,True
+transient ischemic attack,525,356,91,78,True
+trichiasis,12,9,1,2,True
+trichinosis,1,0,0,0,False
+trichomonas infection,161,119,18,24,True
+tricuspid valve disease,1,0,0,0,False
+trigeminal neuralgia,78,53,14,11,True
+trigger finger (finger disorder),42,30,6,6,True
+tuberculosis,10,8,1,1,True
+tuberous sclerosis,3,0,0,0,False
+turner syndrome,1,0,0,0,False
+typhoid fever,1,0,0,0,False
+ulcerative colitis,269,185,52,32,True
+urethral disorder,151,110,22,19,True
+urethral stricture,157,103,23,31,True
+urethral valves,14,10,1,3,True
+urethritis,299,199,54,46,True
+urge incontinence,293,211,45,37,True
+urinary tract infection,815,568,125,122,True
+urinary tract obstruction,532,374,77,81,True
+uterine atony,194,134,28,32,True
+uterine cancer,2,0,0,0,False
+uterine fibroids,288,210,41,37,True
+uveitis,4,0,0,0,False
+vacterl syndrome,1,0,0,0,False
+vaginal cyst,1215,842,178,195,True
+vaginal yeast infection,494,337,72,85,True
+vaginismus,31,20,5,6,True
+vaginitis,821,553,139,129,True
+valley fever,6,4,1,1,True
+varicocele of the testicles,530,349,102,79,True
+varicose veins,101,70,18,13,True
+vasculitis,163,105,33,25,True
+venous insufficiency,168,123,18,27,True
+vertebrobasilar insufficiency,5,3,1,1,True
+vesicoureteral reflux,7,4,2,1,True
+viral exanthem,492,344,73,75,True
+viral hepatitis,20,16,1,3,True
+viral warts,289,191,47,51,True
+vitamin a deficiency,1,0,0,0,False
+vitamin b12 deficiency,24,15,7,2,True
+vitamin d deficiency,4,0,0,0,False
+vitreous degeneration,169,121,22,26,True
+vitreous hemorrhage,24,19,4,1,True
+vocal cord polyp,21,14,4,3,True
+volvulus,5,3,1,1,True
+von willebrand disease,2,0,0,0,False
+vulvar cancer,3,0,0,0,False
+vulvar disorder,44,27,8,9,True
+vulvodynia,1218,845,179,194,True
+wernicke korsakoff syndrome,3,0,0,0,False
+white blood cell disease,313,213,54,46,True
+whooping cough,13,10,1,2,True
+wilson disease,3,0,0,0,False
+yeast infection,291,202,44,45,True
+zenker diverticulum,3,0,0,0,False

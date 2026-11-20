@@ -75,16 +75,26 @@ reports/          # Evidence/bảng/hình nghiên cứu nhỏ được quản l�
 docs/             # Kiến trúc, thực nghiệm, triển khai và bàn giao
 ```
 
-Local hiện dùng một cây project thống nhất: `data/`, `artifacts/`, `reports/` nằm cạnh source. Git chỉ giữ source và evidence/fixtures cần thiết; raw/processed datasets, fitted weights và full reports vẫn bị ignore và được phân phối riêng.
+Project dùng một cây thống nhất: `data/`, `artifacts/`, `reports/` nằm cạnh source. Repository phân phối dataset/checkpoint đã khóa cùng metadata, predictions và reports. CSV raw và mười fitted pipelines dùng **Git LFS**; metadata và các file nhỏ dùng Git thường. Cache embedding công khai của Notebook07 vẫn có thể tái tạo theo revision/checksum, không đưa lên repository.
 
 ## 7. Cài đặt và chạy thử
 
 ```powershell
 git clone https://github.com/Leafguy2341/disease-prediction-ml.git
 cd disease-prediction-ml
+git lfs install --local
+git lfs pull
 ```
 
-Nhận gói data/checkpoint đúng release từ owner và kiểm SHA theo [external_data_release.json](configs/external_data_release.json). Gói lịch sử có layout riêng: giải nén tạm rồi gộp **chỉ nội dung `data/`, `artifacts/`, `reports/`** vào project, đúng đường dẫn và checksum; không ghi đè source/config bằng bản cũ trong gói data. Không tạo `data/data` hoặc `artifacts/artifacts`. Local PC đã hoàn tất gộp; clone Git mới vẫn phải nhận artifacts riêng. Không có link Drive riêng tư hoặc credentials trong repository.
+Cài Git LFS trước khi clone. Nếu đã clone source cũ, pull nhánh đã merge rồi chạy `git lfs pull`; không cần tải gói data riêng cho inventory hiện hành. Kiểm đầy đủ file và SHA trước khi chạy notebook/API:
+
+```powershell
+py -3.13 -B -m scripts.verify_repository_data --allow-locked-bytes
+```
+
+Lệnh chỉ băm byte để kiểm integrity, bao gồm file test được phân phối; không parse dataset/predictions, fit hoặc đánh giá test. [Repository data manifest](artifacts/metadata/repository_data_manifest.json) liệt kê từng file/size/SHA và kết quả đối chiếu thư mục data cũ. Download ZIP có thể chỉ chứa LFS pointers tùy thiết lập GitHub; ưu tiên clone và LFS pull. [external_data_release.json](configs/external_data_release.json) giữ identity gói ZIP lịch sử, không bị sửa thành inventory Git mới. Source/config cũ trong folder data không được copy đè lên code hiện hành.
+
+Đủ file không thay thế setup Python/dependencies/Drive. Notebook00–06 giữ các cell đã chạy với locator Colab `MyDrive/ML_Projects/disease-prediction-ml`; Drive thực tế của owner đã được quan sát ở `MyDrive/ML_Projects/disease-prediction-ml-data`. Cần setup đúng storage root/source đã publish khi chạy Colab; push GitHub không tự sửa hoặc đồng bộ Drive. Notebook07 có thể tải pinned embedding cache lần đầu. Không Run All notebook03/04/06 chỉ để mở web hoặc xem kết quả.
 
 ```text
 disease-prediction-ml/

@@ -1,0 +1,4 @@
+﻿removed_columns,unique_vectors,merged_groups,collapsed_original_vectors,conflicting_groups,new_conflicts_from_pure,expanded_label_sets,hypothetical_dedup_records
+regurgitation,169826,62,62,12662,33,62,189647
+regurgitation.1,169175,713,713,12709,107,225,189136
+regurgitation + regurgitation.1,167963,1865,1925,12813,238,464,188161

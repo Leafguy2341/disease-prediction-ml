@@ -1,0 +1,81 @@
+{
+  "bernoulli_nb": {
+    "candidate": 1,
+    "fold_scores": [
+      0.6157458248630301,
+      0.626672374174179,
+      0.6216718902779018
+    ],
+    "mean_macro_f1": 0.6213633631050369,
+    "parameters": {
+      "alpha": 0.5,
+      "binarize": null
+    },
+    "std_macro_f1": 0.004466076706651232
+  },
+  "knn": {
+    "candidate": 2,
+    "fold_scores": [
+      0.7234492854075428,
+      0.7278367891421647,
+      0.7264365870939336
+    ],
+    "mean_macro_f1": 0.7259075538812136,
+    "parameters": {
+      "algorithm": "brute",
+      "metric": "manhattan",
+      "n_neighbors": 7,
+      "weights": "distance"
+    },
+    "std_macro_f1": 0.0018298368525546465
+  },
+  "linear_svc": {
+    "candidate": 2,
+    "fold_scores": [
+      0.7909086092224241,
+      0.793682390581234,
+      0.795240293092962
+    ],
+    "mean_macro_f1": 0.7932770976322067,
+    "parameters": {
+      "C": 2.0,
+      "dual": "auto",
+      "max_iter": 3000,
+      "tol": 0.001
+    },
+    "std_macro_f1": 0.0017914738940265295
+  },
+  "logistic_regression": {
+    "candidate": 2,
+    "fold_scores": [
+      0.8001498591475469,
+      0.8014715425436845,
+      0.8000915406062556
+    ],
+    "mean_macro_f1": 0.800570980765829,
+    "parameters": {
+      "C": 2.0,
+      "max_iter": 200,
+      "solver": "saga",
+      "tol": 0.001
+    },
+    "std_macro_f1": 0.0006372382599233646
+  },
+  "random_forest": {
+    "candidate": 2,
+    "fold_scores": [
+      0.5212515192603765,
+      0.5109596238781603,
+      0.5254191962269931
+    ],
+    "mean_macro_f1": 0.5192101131218433,
+    "parameters": {
+      "max_depth": 32,
+      "max_features": "sqrt",
+      "max_leaf_nodes": 512,
+      "min_samples_leaf": 2,
+      "n_estimators": 100
+    },
+    "std_macro_f1": 0.006077022977007361
+  }
+}

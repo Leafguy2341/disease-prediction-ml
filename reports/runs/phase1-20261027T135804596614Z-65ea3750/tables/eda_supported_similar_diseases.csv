@@ -1,0 +1,101 @@
+﻿disease_a,disease_b,cosine_similarity,rows_a,patterns_a,rows_b,patterns_b
+corneal disorder,dry eye of unknown cause,0.9421168300646681,676,524,861,787
+skin disorder,skin polyp,0.93508403685418,676,520,897,807
+infectious gastroenteritis,noninfectious gastroenteritis,0.9202757963314327,1212,1212,1206,1206
+depression,post-traumatic stress disorder (ptsd),0.916816383928182,912,830,607,492
+psychotic disorder,schizophrenia,0.9159034364469727,902,802,890,811
+skin pigmentation disorder,skin polyp,0.9105815552783861,909,805,897,807
+seborrheic keratosis,skin polyp,0.9046569438022488,870,782,897,807
+seborrheic keratosis,skin pigmentation disorder,0.9043236746940798,870,782,909,805
+personality disorder,schizophrenia,0.9039589866275058,911,816,890,811
+diabetic retinopathy,dry eye of unknown cause,0.9038273872195156,456,295,861,787
+kidney stone,pyelonephritis,0.9035979575636379,904,792,903,803
+cataract,retinal detachment,0.9006619065413471,607,484,280,154
+acute glaucoma,vitreous degeneration,0.8992466867159413,210,148,341,169
+diabetic retinopathy,macular degeneration,0.8911088750657524,456,295,909,817
+gum disease,tooth disorder,0.8762534947775156,894,803,671,511
+cholecystitis,gallstone,0.8742626841760879,1204,1204,904,812
+acute bronchitis,chronic obstructive pulmonary disease (copd),0.8733001187623192,1213,1213,906,812
+acute bronchospasm,pneumonia,0.8725283285180677,906,812,1212,1212
+bladder disorder,temporary or benign blood in urine,0.8714014830433504,454,303,897,803
+corneal disorder,vitreous degeneration,0.867569836281381,676,524,341,169
+marijuana abuse,personality disorder,0.8668663384892861,1210,1210,911,816
+degenerative disc disease,spinal stenosis,0.8661168221606258,909,810,1207,1207
+degenerative disc disease,spondylosis,0.8658560419357357,909,810,1216,1216
+bipolar disorder,psychotic disorder,0.862249435104598,663,537,902,802
+cataract,macular degeneration,0.8615137346070486,607,484,909,817
+bladder disorder,cystitis,0.8610486254267953,454,303,1219,1219
+dry eye of unknown cause,vitreous degeneration,0.8580823427259382,861,787,341,169
+seborrheic keratosis,skin disorder,0.8576909681170378,870,782,676,520
+personality disorder,post-traumatic stress disorder (ptsd),0.8574674178187883,911,816,607,492
+post-traumatic stress disorder (ptsd),psychotic disorder,0.8566368339008921,607,492,902,802
+atrial fibrillation,endocarditis,0.8543044978423088,68,68,83,33
+macular degeneration,retinal detachment,0.8529425715036403,909,817,280,154
+ectropion,foreign body in the eye,0.8381119047725797,38,13,281,155
+floaters,pterygium,0.8374034431440712,24,15,215,76
+cystitis,temporary or benign blood in urine,0.8350594913108305,1219,1219,897,803
+skin cancer,skin polyp,0.8316318415913381,661,519,897,807
+spinal stenosis,spondylosis,0.8314734519850167,1207,1207,1216,1216
+hemangioma,skin cancer,0.830854262257464,676,514,661,519
+acute otitis media,otitis media,0.8279307763432576,683,537,910,807
+spontaneous abortion,vaginal cyst,0.8278955381400392,1212,1212,1215,1215
+kidney stone,urinary tract infection,0.826832912227612,904,792,910,815
+corneal abrasion,corneal disorder,0.8255664977623259,500,307,676,524
+actinic keratosis,skin disorder,0.8246775099316431,909,808,676,520
+personality disorder,psychotic disorder,0.8240474844490133,911,816,902,802
+bipolar disorder,social phobia,0.823389167918153,663,537,511,309
+degenerative disc disease,herniated disk,0.8230681723020408,909,810,908,828
+skin disorder,skin pigmentation disorder,0.8227136135475532,676,520,909,805
+dry eye of unknown cause,macular degeneration,0.821740793297192,861,787,909,817
+dental caries,tooth abscess,0.8214451833450589,1185,1185,669,529
+asthma,chronic obstructive pulmonary disease (copd),0.8213405652005145,904,814,906,812
+neuralgia,spinal stenosis,0.8197788743999026,684,529,1207,1207
+corneal abrasion,dry eye of unknown cause,0.8182301137429727,500,307,861,787
+fungal infection of the hair,fungal infection of the skin,0.8176036370730794,1212,1212,683,533
+psoriasis,skin pigmentation disorder,0.8171293543212067,912,825,909,805
+corneal abrasion,foreign body in the eye,0.8154440579446981,500,307,281,155
+sick sinus syndrome,sinus bradycardia,0.814065623552865,158,120,909,814
+fungal infection of the hair,skin disorder,0.8128223538777769,1212,1212,676,520
+marijuana abuse,post-traumatic stress disorder (ptsd),0.8125256437714871,1210,1210,607,492
+fibromyalgia,neuralgia,0.8119026674602806,656,503,684,529
+astigmatism,vitreous degeneration,0.8118552212920077,321,156,341,169
+ovarian cyst,pelvic inflammatory disease,0.8081517117152733,499,293,900,804
+scar,viral warts,0.8077460570383412,256,91,453,289
+dry eye of unknown cause,glaucoma,0.8074686370568801,861,787,498,313
+atelectasis,poisoning due to gas,0.8058175675141352,99,34,194,69
+drug abuse (opioids),post-traumatic stress disorder (ptsd),0.8011405920472615,604,486,607,492
+atrophic skin condition,viral warts,0.8005999820137009,438,283,453,289
+impulse control disorder,social phobia,0.7988719782099206,335,167,511,309
+blepharitis,cornea infection,0.7986771411919684,906,802,903,816
+athlete's foot,callus,0.7986400572815574,382,180,513,322
+chronic constipation,ischemia of the bowel,0.7978656198703508,913,827,283,97
+conjunctivitis,conjunctivitis due to virus,0.797567147368081,909,825,681,521
+gastroparesis,intestinal disease,0.7971730351601126,179,74,383,186
+neuralgia,spondylosis,0.7960716860825444,684,529,1216,1216
+intertrigo (skin condition),molluscum contagiosum,0.7958086587603789,105,42,511,313
+chronic glaucoma,foreign body in the eye,0.7955988922250903,668,522,281,155
+depression,psychotic disorder,0.7954171699245844,912,830,902,802
+hydrocele of the testicle,inguinal hernia,0.7953452421533739,227,140,402,373
+depression,personality disorder,0.7949845270919544,912,830,911,816
+cataract,diabetic retinopathy,0.7947857539321617,607,484,456,295
+chronic glaucoma,corneal disorder,0.793195968697597,668,522,676,524
+pyelonephritis,urinary tract infection,0.7920464786236417,903,803,910,815
+acne,skin pigmentation disorder,0.7914915197002292,496,306,909,805
+actinic keratosis,psoriasis,0.7913627863017593,909,808,912,825
+herniated disk,spondylosis,0.7909727135283132,908,828,1216,1216
+herniated disk,spinal stenosis,0.7901347706669838,908,828,1207,1207
+actinic keratosis,seborrheic keratosis,0.7884229099546559,909,808,870,782
+fungal infection of the hair,psoriasis,0.7876287571750759,1212,1212,912,825
+depression,drug abuse (opioids),0.7872894578740147,912,830,604,486
+corneal disorder,retinal detachment,0.7864955640817725,676,524,280,154
+acute bronchospasm,chronic obstructive pulmonary disease (copd),0.7864561062562891,906,812,906,812
+actinic keratosis,skin polyp,0.785737291847573,909,808,897,807
+acute bronchitis,asthma,0.7850278258945178,1213,1213,904,814
+acute glaucoma,corneal disorder,0.7847188163597753,210,148,676,524
+actinic keratosis,skin pigmentation disorder,0.7846753386866133,909,808,909,805
+chronic glaucoma,corneal abrasion,0.7844966081201142,668,522,500,307
+spontaneous abortion,threatened pregnancy,0.783978792578542,1212,1212,905,818
+eczema,skin pigmentation disorder,0.7834544595142278,1207,1207,909,805
+fungal infection of the hair,seborrheic keratosis,0.7830701202360529,1212,1212,870,782
+atrial fibrillation,sick sinus syndrome,0.78303214706559,68,68,158,120
+eczema,seborrheic keratosis,0.7828532391353566,1207,1207,870,782

@@ -1,0 +1,774 @@
+﻿disease,unique_patterns,total_rows,rows_in_conflicting_patterns
+abdominal aortic aneurysm,40,138,3
+abdominal hernia,265,407,18
+abscess of nose,151,290,61
+abscess of the lung,5,19,4
+abscess of the pharynx,164,341,53
+acanthosis nigricans,9,30,11
+acariasis,10,36,2
+achalasia,25,84,33
+acne,306,496,147
+actinic keratosis,808,909,237
+acute bronchiolitis,1204,1204,93
+acute bronchitis,1213,1213,264
+acute bronchospasm,812,906,293
+acute fatty liver of pregnancy (aflp),2,9,9
+acute glaucoma,148,210,158
+acute kidney injury,808,908,40
+acute otitis media,537,683,186
+acute pancreatitis,1207,1207,114
+acute respiratory distress syndrome (ards),300,451,73
+acute sinusitis,828,906,156
+acute stress reaction,799,910,79
+adhesive capsulitis of the shoulder,33,73,6
+adjustment reaction,311,503,141
+adrenal adenoma,8,35,4
+adrenal cancer,1,3,3
+alcohol abuse,313,510,67
+alcohol intoxication,160,351,27
+alcohol withdrawal,520,665,34
+alcoholic liver disease,99,246,13
+allergy,803,905,62
+allergy to animals,11,39,2
+alopecia,173,340,111
+alzheimer disease,172,336,21
+amblyopia,16,47,4
+amyloidosis,2,4,0
+amyotrophic lateral sclerosis (als),14,60,2
+anal fissure,141,226,17
+anal fistula,8,20,3
+anemia,157,331,14
+anemia due to chronic kidney disease,34,50,3
+anemia due to malignancy,6,12,1
+anemia of chronic disease,8,40,16
+angina,826,906,52
+ankylosing spondylitis,479,606,77
+anxiety,1198,1198,65
+aortic valve disease,284,451,47
+aphakia,4,9,9
+aphthous ulcer,137,244,29
+aplastic anemia,32,70,1
+appendicitis,808,903,129
+arrhythmia,124,258,78
+arthritis of the hip,1210,1210,55
+ascending cholangitis,19,72,7
+asperger syndrome,173,338,84
+aspergillosis,1,10,0
+asthma,814,904,184
+astigmatism,156,321,129
+atelectasis,34,99,34
+athlete's foot,180,382,153
+atonic bladder,21,71,15
+atrial fibrillation,68,68,39
+atrial flutter,134,240,31
+atrophic skin condition,283,438,138
+atrophic vaginitis,162,329,73
+atrophy of the corpus cavernosum,13,47,1
+attention deficit hyperactivity disorder (adhd),310,507,99
+autism,306,452,26
+autonomic nervous system disorder,19,84,11
+avascular necrosis,6,10,1
+balanitis,298,454,11
+bell palsy,534,685,36
+benign kidney cyst,90,206,27
+benign paroxysmal positional vertical (bppv),285,443,21
+benign prostatic hyperplasia (bph),1206,1206,57
+benign vaginal discharge (leukorrhea),525,682,87
+bipolar disorder,537,663,286
+birth trauma,3,11,1
+bladder cancer,66,125,8
+bladder disorder,303,454,329
+bladder obstruction,155,338,50
+blepharitis,802,906,245
+blepharospasm,3,6,1
+bone cancer,22,83,22
+bone disorder,91,255,9
+bone spur of the calcaneous,13,31,10
+brachial neuritis,824,907,89
+brain cancer,140,227,43
+breast cancer,6,6,4
+breast cyst,9,22,8
+breast infection (mastitis),309,501,5
+broken tooth,80,165,11
+bunion,12,38,2
+burn,30,57,4
+bursitis,1208,1208,31
+callus,322,513,119
+carbon monoxide poisoning,37,88,27
+carcinoid syndrome,1,2,0
+cardiac arrest,155,346,39
+cardiomyopathy,156,311,66
+carpal tunnel syndrome,819,896,51
+cat scratch disease,2,3,1
+cataract,484,607,237
+celiac disease,43,151,65
+cellulitis or abscess of mouth,62,138,1
+central atherosclerosis,8,18,5
+central retinal artery or vein occlusion,37,69,14
+cerebral edema,36,104,12
+cerebral palsy,47,139,6
+cervical cancer,31,97,4
+cervical disorder,9,43,15
+cervicitis,184,384,112
+chalazion,524,678,89
+chickenpox,37,104,14
+chlamydia,47,165,112
+cholecystitis,1204,1204,168
+choledocholithiasis,288,441,32
+cholesteatoma,6,31,4
+chondromalacia of the patella,37,53,16
+chorioretinitis,22,76,15
+chronic back pain,805,899,40
+chronic constipation,827,913,127
+chronic glaucoma,522,668,243
+chronic inflammatory demyelinating polyneuropathy (cidp),6,18,13
+chronic kidney disease,8,10,2
+chronic knee pain,150,150,34
+chronic obstructive pulmonary disease (copd),812,906,298
+chronic otitis media,521,669,75
+chronic pain disorder,528,677,91
+chronic pancreatitis,149,297,15
+chronic rheumatic fever,77,169,53
+chronic sinusitis,507,657,126
+chronic ulcer,1,1,0
+cirrhosis,163,331,12
+coagulation (bleeding) disorder,24,90,1
+cold sore,79,192,12
+colonic polyp,168,339,37
+colorectal cancer,15,15,9
+common cold,813,905,120
+complex regional pain syndrome,1217,1217,125
+concussion,1191,1191,16
+conduct disorder,517,679,64
+conductive hearing loss,485,598,54
+congenital heart defect,11,36,3
+congenital malformation syndrome,6,13,0
+conjunctivitis,825,909,82
+conjunctivitis due to allergy,1215,1215,103
+conjunctivitis due to bacteria,44,154,26
+conjunctivitis due to virus,521,681,177
+connective tissue disorder,2,3,0
+contact dermatitis,823,909,181
+conversion disorder,7,20,1
+cornea infection,816,903,173
+corneal abrasion,307,500,315
+corneal disorder,524,676,426
+coronary atherosclerosis,100,112,23
+cranial nerve palsy,172,340,16
+crohn disease,273,376,98
+croup,807,904,153
+crushing injury,37,63,8
+cryptococcosis,1,11,0
+cryptorchidism,3,5,0
+cushing syndrome,2,9,1
+cyst of the eyelid,7,18,0
+cystic fibrosis,8,15,1
+cysticercosis,11,36,4
+cystitis,1219,1219,267
+de quervain disease,62,92,19
+decubitus ulcer,8,10,1
+deep vein thrombosis (dvt),89,240,14
+degenerative disc disease,810,909,296
+delirium,460,598,61
+dementia,175,339,65
+dengue fever,1,3,0
+dental caries,1185,1185,109
+depression,830,912,293
+dermatitis due to sun exposure,293,446,96
+developmental disability,825,911,42
+deviated nasal septum,488,607,37
+diabetes,1,1,0
+diabetes insipidus,2,12,12
+diabetic ketoacidosis,526,673,47
+diabetic kidney disease,1,2,0
+diabetic peripheral neuropathy,294,452,14
+diabetic retinopathy,295,456,360
+diaper rash,809,897,22
+dislocation of the ankle,9,21,2
+dislocation of the elbow,65,84,12
+dislocation of the finger,15,18,4
+dislocation of the foot,3,19,0
+dislocation of the hip,3,6,0
+dislocation of the knee,3,3,3
+dislocation of the patella,2,3,3
+dislocation of the shoulder,38,64,11
+dislocation of the vertebra,11,38,4
+dislocation of the wrist,10,45,3
+dissociative disorder,23,91,11
+diverticulitis,1214,1214,151
+diverticulosis,518,673,126
+down syndrome,39,127,18
+drug abuse,471,603,79
+drug abuse (barbiturates),33,62,30
+drug abuse (cocaine),214,281,97
+drug abuse (methamphetamine),155,330,42
+drug abuse (opioids),486,604,170
+drug poisoning due to medication,93,208,9
+drug reaction,811,909,23
+drug withdrawal,93,255,21
+dry eye of unknown cause,787,861,433
+dumping syndrome,3,4,1
+dyshidrosis,25,83,13
+dysthymic disorder,317,499,72
+ear drum damage,819,907,77
+ear wax impaction,529,678,112
+eating disorder,302,494,14
+ectopic pregnancy,177,341,117
+ectropion,13,38,38
+eczema,1207,1207,243
+edward syndrome,2,6,1
+emphysema,6,31,7
+empyema,3,6,6
+encephalitis,24,94,23
+endocarditis,33,83,75
+endometrial cancer,26,88,12
+endometrial hyperplasia,15,49,2
+endometriosis,267,378,25
+endophthalmitis,37,61,7
+envenomation from spider or animal bite,302,455,17
+ependymoma,6,19,2
+epididymitis,320,511,12
+epidural hemorrhage,2,10,10
+epilepsy,56,75,10
+erectile dysfunction,478,606,84
+erythema multiforme,16,43,3
+esophageal cancer,19,77,10
+esophageal varices,1,3,3
+esophagitis,1215,1215,87
+essential tremor,74,195,14
+eustachian tube dysfunction (ear disorder),810,909,52
+extrapyramidal effect of drugs,32,83,5
+eye alignment disorder,289,453,11
+factitious disorder,4,13,2
+female genitalia infection,79,197,4
+female infertility of unknown cause,15,28,1
+fetal alcohol syndrome,3,7,2
+fibroadenoma,42,97,6
+fibrocystic breast disease,7,14,1
+fibromyalgia,503,656,164
+flat feet,13,33,1
+floaters,15,24,24
+flu,521,679,90
+fluid overload,171,327,60
+folate deficiency,13,44,8
+food allergy,285,454,36
+foreign body in the ear,18,25,6
+foreign body in the eye,155,281,198
+foreign body in the gastrointestinal tract,45,127,5
+foreign body in the nose,1,1,0
+foreign body in the throat,70,156,15
+foreign body in the vagina,4,21,2
+fracture of the ankle,36,36,11
+fracture of the arm,391,437,38
+fracture of the facial bones,290,449,13
+fracture of the finger,8,8,4
+fracture of the foot,14,14,3
+fracture of the hand,98,111,28
+fracture of the jaw,33,75,4
+fracture of the leg,531,678,49
+fracture of the neck,23,41,17
+fracture of the patella,32,79,7
+fracture of the pelvis,86,184,38
+fracture of the rib,791,882,34
+fracture of the shoulder,83,162,10
+fracture of the skull,17,65,10
+fracture of the vertebra,156,270,11
+friedrich ataxia,2,5,0
+frostbite,3,12,0
+fungal infection of the hair,1212,1212,286
+fungal infection of the skin,533,683,246
+g6pd enzyme deficiency,1,6,6
+galactorrhea of unknown cause,8,11,2
+gallstone,812,904,197
+ganglion cyst,530,675,10
+gas gangrene,1,1,0
+gastritis,527,679,132
+gastroduodenal ulcer,526,683,82
+gastroesophageal reflux disease (gerd),302,448,59
+gastrointestinal hemorrhage,1214,1214,89
+gastroparesis,74,179,106
+genital herpes,81,242,14
+gestational diabetes,17,26,8
+glaucoma,313,498,178
+glucocorticoid deficiency,4,17,0
+goiter,19,75,3
+gonorrhea,40,131,7
+gout,1211,1211,65
+granuloma inguinale,2,10,2
+graves disease,92,248,18
+guillain barre syndrome,13,57,1
+gum disease,803,894,155
+gynecomastia,65,83,3
+hammer toe,8,9,5
+hashimoto thyroiditis,1,2,2
+head and neck cancer,166,326,7
+head injury,129,164,11
+headache after lumbar puncture,77,169,21
+heart attack,810,907,36
+heart block,476,606,91
+heart contusion,2,11,11
+heart failure,813,903,68
+heat exhaustion,138,264,56
+heat stroke,1,1,0
+hemangioma,514,676,154
+hemarthrosis,6,9,0
+hematoma,15,60,9
+hemiplegia,310,504,42
+hemochromatosis,3,3,0
+hemolytic anemia,8,27,0
+hemophilia,8,21,3
+hemorrhoids,818,908,80
+hepatic encephalopathy,19,45,4
+hepatitis due to a toxin,163,357,10
+herniated disk,828,908,238
+herpangina,302,450,22
+hiatal hernia,815,906,60
+hidradenitis suppurativa,36,139,16
+high blood pressure,1,1,1
+hirschsprung disease,4,19,7
+hirsutism,7,31,1
+histoplasmosis,2,5,2
+hormone disorder,10,55,0
+hpv,3,13,0
+human immunodeficiency virus infection (hiv),1,2,0
+huntington disease,1,1,0
+hydatidiform mole,18,62,6
+hydrocele of the testicle,140,227,59
+hydrocephalus,72,155,49
+hydronephrosis,165,340,72
+hypercalcemia,6,10,2
+hypercholesterolemia,8,8,1
+hyperemesis gravidarum,815,912,65
+hypergammaglobulinemia,1,1,1
+hyperhidrosis,12,24,1
+hyperkalemia,503,657,31
+hyperlipidemia,2,3,0
+hypernatremia,18,74,28
+hyperopia,36,108,10
+hyperosmotic hyperketotic state,3,5,2
+hypertension of pregnancy,36,56,4
+hypertensive heart disease,804,902,35
+hypertrophic obstructive cardiomyopathy (hocm),4,6,3
+hypocalcemia,13,46,11
+hypoglycemia,1215,1215,25
+hypokalemia,387,478,56
+hyponatremia,312,495,67
+hypothermia,6,13,2
+hypothyroidism,33,74,2
+hypovolemia,287,424,45
+idiopathic absence of menstruation,292,493,26
+idiopathic excessive menstruation,832,906,129
+idiopathic infrequent menstruation,10,50,33
+idiopathic irregular menstrual cycle,815,908,131
+idiopathic nonmenstrual bleeding,25,98,2
+idiopathic painful menstruation,805,906,108
+ileus,292,449,94
+impetigo,523,683,61
+impulse control disorder,167,335,152
+indigestion,291,447,80
+induced abortion,157,287,46
+infection of open wound,7,35,2
+infectious gastroenteritis,1212,1212,320
+ingrown toe nail,469,604,20
+inguinal hernia,373,402,35
+injury of the ankle,132,182,18
+injury to internal organ,34,131,31
+injury to the abdomen,14,64,10
+injury to the arm,1209,1209,59
+injury to the face,279,455,15
+injury to the finger,5,7,1
+injury to the hand,71,126,40
+injury to the hip,8,16,4
+injury to the knee,20,53,27
+injury to the leg,1206,1206,50
+injury to the shoulder,317,510,30
+injury to the spinal cord,8,29,5
+injury to the trunk,803,905,28
+insect bite,516,669,71
+insulin overdose,1,9,9
+interstitial lung disease,336,511,131
+intertrigo (skin condition),42,105,105
+intestinal cancer,16,49,0
+intestinal disease,186,383,95
+intestinal malabsorption,66,161,12
+intestinal obstruction,288,445,51
+intracerebral hemorrhage,466,603,53
+intracranial abscess,3,12,11
+intracranial hemorrhage,151,322,83
+intussusception,3,4,1
+iridocyclitis,301,496,92
+iron deficiency anemia,530,683,7
+irritable bowel syndrome,323,510,30
+ischemia of the bowel,97,283,156
+ischemic heart disease,797,886,50
+itching of unknown cause,312,504,20
+jaw disorder,168,336,14
+joint effusion,292,449,21
+juvenile rheumatoid arthritis,13,33,12
+kaposi sarcoma,1,1,1
+kidney cancer,24,80,6
+kidney disease due to longstanding hypertension,7,17,1
+kidney failure,161,282,13
+kidney stone,792,904,349
+knee ligament or meniscus tear,64,106,1
+labyrinthitis,504,654,20
+lactose intolerance,41,137,3
+laryngitis,522,678,44
+lateral epicondylitis (tennis elbow),175,337,58
+leukemia,6,10,0
+lewy body dementia,23,79,66
+lice,14,65,2
+lichen planus,1,9,0
+lichen simplex,18,59,7
+lipoma,517,684,25
+liver cancer,18,49,21
+liver disease,1209,1209,43
+lumbago,69,156,23
+lung cancer,47,51,4
+lung contusion,6,15,14
+lyme disease,86,211,7
+lymphadenitis,290,453,16
+lymphangitis,1,3,3
+lymphedema,315,505,25
+lymphogranuloma venereum,5,20,3
+lymphoma,41,133,3
+macular degeneration,817,909,301
+magnesium deficiency,7,35,22
+malaria,5,15,1
+male genitalia infection,40,138,2
+malignant hypertension,83,181,25
+marijuana abuse,1210,1210,294
+mastectomy,4,17,0
+mastoiditis,43,144,48
+meckel diverticulum,1,4,0
+melanoma,156,271,19
+meniere disease,160,281,35
+meningioma,7,18,10
+meningitis,159,297,54
+menopause,28,76,4
+metabolic disorder,9,34,2
+metastatic cancer,19,27,1
+migraine,203,221,26
+missed abortion,260,375,51
+mitral valve disease,304,504,79
+mittelschmerz,29,53,13
+molluscum contagiosum,313,511,151
+mononeuritis,530,676,77
+mononucleosis,159,331,35
+moyamoya disease,2,12,12
+mucositis,156,289,28
+multiple myeloma,19,51,4
+multiple sclerosis,825,910,70
+mumps,8,45,8
+muscle spasm,522,678,116
+muscular dystrophy,12,45,0
+myasthenia gravis,50,134,5
+myelodysplastic syndrome,2,3,0
+myocarditis,1,1,1
+myoclonus,6,11,0
+myopia,292,448,85
+myositis,41,137,40
+narcolepsy,79,186,19
+nasal polyp,164,356,35
+necrotizing fasciitis,2,3,1
+neonatal jaundice,17,34,4
+nerve impingement near the shoulder,159,280,33
+neuralgia,529,684,318
+neurofibromatosis,9,30,4
+neuropathy due to drugs,12,40,1
+neurosis,801,902,112
+nonalcoholic liver disease (nash),18,62,6
+noninfectious gastroenteritis,1206,1206,341
+normal pressure hydrocephalus,7,26,3
+nose disorder,1218,1218,142
+obesity,2,3,0
+obsessive compulsive disorder (ocd),286,454,37
+obstructive sleep apnea (osa),1196,1196,14
+omphalitis,1,7,0
+onychomycosis,309,505,82
+open wound due to trauma,1,1,0
+open wound from surgical incision,4,7,1
+open wound of the abdomen,2,3,0
+open wound of the arm,7,10,0
+open wound of the back,6,9,1
+open wound of the cheek,1,1,0
+open wound of the chest,1,1,1
+open wound of the ear,17,33,1
+open wound of the eye,16,32,30
+open wound of the face,1,3,0
+open wound of the finger,4,4,4
+open wound of the foot,27,27,6
+open wound of the hand,4,4,4
+open wound of the head,1,1,1
+open wound of the jaw,1,2,0
+open wound of the knee,1,1,1
+open wound of the lip,12,26,8
+open wound of the mouth,29,95,6
+open wound of the neck,15,32,10
+open wound of the nose,8,11,7
+open wound of the shoulder,2,4,0
+oppositional disorder,389,431,29
+optic neuritis,5,10,3
+oral leukoplakia,2,4,0
+oral mucosal lesion,492,606,54
+oral thrush (yeast infection),529,681,33
+orbital cellulitis,80,170,11
+orthostatic hypotension,146,283,36
+osteoarthritis,796,896,55
+osteochondroma,82,211,17
+osteochondrosis,42,109,28
+osteomyelitis,75,188,5
+osteoporosis,272,378,6
+otitis externa (swimmer's ear),808,904,81
+otitis media,807,910,164
+otosclerosis,3,19,19
+ovarian cancer,9,19,19
+ovarian cyst,293,499,156
+ovarian torsion,34,67,6
+overflow incontinence,81,212,28
+pain after an operation,806,908,86
+pain disorder affecting the neck,266,387,21
+pancreatic cancer,84,204,10
+panic attack,67,188,11
+panic disorder,810,909,59
+parasitic disease,27,74,0
+parathyroid adenoma,8,18,1
+parkinson disease,315,513,28
+paronychia,277,438,14
+paroxysmal supraventricular tachycardia,261,375,61
+paroxysmal ventricular tachycardia,517,671,180
+pelvic fistula,2,5,0
+pelvic inflammatory disease,804,900,143
+pelvic organ prolapse,291,438,52
+pemphigus,2,7,0
+pericarditis,38,147,12
+peripheral arterial disease,101,113,6
+peripheral arterial embolism,47,135,8
+peripheral nerve disorder,1215,1215,74
+perirectal infection,41,137,6
+peritonitis,179,381,48
+peritonsillar abscess,85,246,25
+persistent vomiting of unknown cause,87,186,43
+personality disorder,816,911,473
+peyronie disease,12,21,0
+pharyngitis,11,19,2
+phimosis,35,60,10
+pilonidal cyst,168,339,4
+pinguecula,5,6,0
+pinworm infection,36,87,18
+pituitary adenoma,10,29,3
+pituitary disorder,10,30,2
+pityriasis rosea,41,71,20
+placenta previa,5,9,1
+placental abruption,4,14,0
+plantar fasciitis,87,199,13
+pleural effusion,480,607,56
+pneumoconiosis,6,14,7
+pneumonia,1212,1212,266
+pneumothorax,155,296,28
+poisoning due to analgesics,35,66,1
+poisoning due to anticonvulsants,10,41,10
+poisoning due to antidepressants,8,29,11
+poisoning due to antihypertensives,3,17,6
+poisoning due to antimicrobial drugs,34,97,5
+poisoning due to antipsychotics,2,10,4
+poisoning due to ethylene glycol,7,24,12
+poisoning due to gas,69,194,37
+poisoning due to opioids,3,9,2
+poisoning due to sedatives,46,126,71
+polycystic kidney disease,118,183,32
+polycystic ovarian syndrome (pcos),148,268,10
+polycythemia vera,14,49,2
+polymyalgia rheumatica,47,136,5
+post-traumatic stress disorder (ptsd),492,607,458
+postoperative infection,42,111,7
+postpartum depression,306,494,35
+preeclampsia,204,217,18
+pregnancy,13,13,6
+premature atrial contractions (pacs),81,220,59
+premature ovarian failure,17,48,1
+premature rupture of amniotic membrane,2,9,1
+premature ventricular contractions (pvcs),159,325,26
+premenstrual tension syndrome,42,137,1
+presbyacusis,23,55,12
+presbyopia,70,212,62
+priapism,4,6,0
+primary immunodeficiency,13,36,0
+primary insomnia,77,190,14
+primary kidney disease,16,34,0
+primary thrombocythemia,1,3,0
+problem during pregnancy,820,913,86
+prostate cancer,104,135,23
+prostatitis,510,681,71
+protein deficiency,16,64,9
+pseudohypoparathyroidism,6,12,1
+pseudotumor cerebri,16,48,24
+psoriasis,825,912,250
+psychosexual disorder,87,168,14
+psychotic disorder,802,902,446
+pterygium,76,215,45
+pulmonary congestion,304,497,82
+pulmonary embolism,791,880,37
+pulmonary eosinophilia,84,185,15
+pulmonary fibrosis,67,118,54
+pulmonary hypertension,284,446,25
+pulmonic valve disease,1,11,0
+pyelonephritis,803,903,301
+pyloric stenosis,5,16,1
+pyogenic skin infection,834,911,64
+raynaud disease,3,12,12
+reactive arthritis,1,10,0
+rectal disorder,808,902,98
+restless leg syndrome,156,283,37
+retinal detachment,154,280,247
+retinopathy due to high blood pressure,47,138,26
+rhabdomyolysis,12,16,3
+rheumatic fever,1,2,0
+rheumatoid arthritis,518,678,23
+rocky mountain spotted fever,1,1,0
+rosacea,521,678,123
+rotator cuff injury,39,111,29
+salivary gland disorder,11,62,20
+sarcoidosis,161,330,20
+scabies,83,187,9
+scar,91,256,171
+scarlet fever,37,90,21
+schizophrenia,811,890,392
+sciatica,521,668,62
+scleritis,16,46,7
+scleroderma,170,338,53
+scoliosis,86,171,16
+scurvy,1,4,0
+seasonal allergies (hay fever),816,910,42
+sebaceous cyst,821,913,69
+seborrheic dermatitis,800,880,143
+seborrheic keratosis,782,870,515
+sensorineural hearing loss,529,681,88
+sepsis,824,909,55
+septic arthritis,21,62,34
+shingles (herpes zoster),244,379,7
+sialoadenitis,318,509,22
+sick sinus syndrome,120,158,91
+sickle cell anemia,136,226,5
+sickle cell crisis,808,913,75
+sinus bradycardia,814,909,195
+sjogren syndrome,32,92,6
+skin cancer,519,661,278
+skin disorder,520,676,524
+skin pigmentation disorder,805,909,566
+skin polyp,807,897,607
+smoking or tobacco addiction,792,883,14
+social phobia,309,511,197
+soft tissue sarcoma,89,171,34
+somatization disorder,20,79,11
+spermatocele,22,81,5
+spherocytosis,2,5,1
+spina bifida,37,82,0
+spinal stenosis,1207,1207,323
+spinocerebellar ataxia,6,8,3
+spondylitis,292,451,44
+spondylolisthesis,514,673,123
+spondylosis,1216,1216,312
+spontaneous abortion,1212,1212,182
+sporotrichosis,1,3,3
+sprain or strain,1212,1212,94
+stenosis of the tear duct,23,102,9
+stomach cancer,65,155,34
+strep throat,1210,1210,83
+stress incontinence,91,255,22
+stricture of the esophagus,32,86,16
+stroke,478,642,86
+stye,832,908,37
+subacute thyroiditis,12,30,1
+subarachnoid hemorrhage,45,140,14
+subconjunctival hemorrhage,143,249,56
+subdural hemorrhage,44,139,13
+substance-related mental disorder,88,213,115
+syndrome of inappropriate secretion of adh (siadh),3,4,1
+syphilis,8,30,0
+syringomyelia,6,14,4
+systemic lupus erythematosis (sle),46,159,6
+teething syndrome,290,438,34
+temporary or benign blood in urine,803,897,305
+temporomandibular joint disorder,172,341,45
+tendinitis,533,678,57
+tension headache,158,279,12
+testicular cancer,2,10,0
+testicular disorder,17,61,0
+testicular torsion,39,90,5
+thalassemia,1,1,0
+thoracic aortic aneurysm,86,168,21
+thoracic outlet syndrome,48,180,18
+threatened pregnancy,818,905,182
+thrombocytopenia,68,126,2
+thrombophlebitis,292,451,8
+thyroid cancer,5,9,0
+thyroid disease,7,17,1
+thyroid nodule,78,216,7
+tic (movement) disorder,39,87,21
+tietze syndrome,171,333,51
+tinnitus of unknown cause,159,279,90
+tonsillar hypertrophy,171,339,45
+tonsillitis,286,446,14
+tooth abscess,529,669,122
+tooth disorder,511,671,186
+torticollis,159,280,10
+tourette syndrome,13,31,3
+toxic multinodular goiter,23,79,11
+toxoplasmosis,3,12,2
+tracheitis,70,189,60
+transient ischemic attack,525,655,58
+trichiasis,12,30,2
+trichinosis,1,10,0
+trichomonas infection,161,339,45
+tricuspid valve disease,1,9,9
+trigeminal neuralgia,78,201,16
+trigger finger (finger disorder),42,87,11
+tuberculosis,10,23,0
+tuberous sclerosis,3,6,2
+turner syndrome,1,1,0
+typhoid fever,1,1,0
+ulcerative colitis,269,377,55
+urethral disorder,151,315,73
+urethral stricture,157,279,35
+urethral valves,14,35,8
+urethritis,299,453,60
+urge incontinence,293,495,66
+urinary tract infection,815,910,213
+urinary tract obstruction,532,683,110
+uterine atony,194,219,24
+uterine cancer,2,5,0
+uterine fibroids,288,450,94
+uveitis,4,19,1
+vacterl syndrome,1,9,9
+vaginal cyst,1215,1215,201
+vaginal yeast infection,494,608,76
+vaginismus,31,77,38
+vaginitis,821,909,122
+valley fever,6,9,0
+varicocele of the testicles,530,682,14
+varicose veins,101,113,14
+vasculitis,163,299,15
+venous insufficiency,168,336,15
+vertebrobasilar insufficiency,5,23,15
+vesicoureteral reflux,7,10,5
+viral exanthem,492,601,74
+viral hepatitis,20,35,4
+viral warts,289,453,150
+vitamin a deficiency,1,5,0
+vitamin b12 deficiency,24,80,6
+vitamin d deficiency,4,17,1
+vitreous degeneration,169,341,315
+vitreous hemorrhage,24,27,25
+vocal cord polyp,21,90,15
+volvulus,5,11,2
+von willebrand disease,2,5,0
+vulvar cancer,3,6,0
+vulvar disorder,44,160,30
+vulvodynia,1218,1218,107
+wernicke korsakoff syndrome,3,6,6
+white blood cell disease,313,504,64
+whooping cough,13,43,43
+wilson disease,3,14,1
+yeast infection,291,470,36
+zenker diverticulum,3,11,1

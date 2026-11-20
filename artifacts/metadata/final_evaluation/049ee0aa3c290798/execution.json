@@ -1,0 +1,13 @@
+{
+  "code_sha256": {
+    "src/data/colab_runtime.py": "e0f4c57b68a3506d77b02e108b3ecc7dd239ef43c425571367832602dee5a8a5",
+    "src/models/ensemble.py": "ee3121f04b187845fbff937add77a527d2761df14e035e94f48100b1d647443c",
+    "src/models/final_evaluation.py": "c86b7d1e223be4450e00fd504acdfb2bba7c4054ffbb6ddd99eca7999d107f58",
+    "src/models/final_evaluation_protocol.py": "3927df5867af569eb8ce44f506ff770e41aef3c5099df709bda1f214ba8294b2"
+  },
+  "deployment_candidate": "lr_tuned_c2",
+  "owner_authorization": "AUTHORIZE ONE-TIME LOCKED TEST final-locked-test-v1 049ee0aa3c2907985c3d3a03ed222b1d6e1efb5921bbbc2d04ec0dea9baa8947",
+  "protocol_sha256": "049ee0aa3c2907985c3d3a03ed222b1d6e1efb5921bbbc2d04ec0dea9baa8947",
+  "started_utc": "2026-10-30T02:57:50.421745+00:00",
+  "status": "started"
+}

@@ -1,0 +1,139 @@
+{
+  "artifact_path": "/content/drive/MyDrive/ML_Projects/disease-prediction-ml/artifacts/models/phase3/baseline-v1-f8a5bfdb7b4c12cd/linear_svc/pipeline.joblib",
+  "created_utc": "2026-10-28T07:37:53.972074+00:00",
+  "environment": {
+    "cpu": "Intel(R) Xeon(R) CPU @ 2.20GHz",
+    "gpu": [],
+    "gpu_used_by_estimators": false,
+    "logical_cpus": 2,
+    "numpy": "2.1.3",
+    "pandas": "2.2.3",
+    "platform": "Linux",
+    "python": "3.13.18",
+    "ram_available_gb": 11.2,
+    "ram_total_gb": 12.671,
+    "sklearn": "1.6.1"
+  },
+  "fit_metadata_sha256": "4ce0c3119fc141a9639cbbf298d713bd2b182c999e1b2161ba09163079595532",
+  "fit_seconds": 80.59616576999997,
+  "identity": {
+    "config": {
+      "expected_phase2": {
+        "classes": 587,
+        "features": 375,
+        "records": 187434,
+        "sha256": "afde00ce35bf4fd31c9c76edcc3c8b64104e53fb81dd98d4a56d7b3a884b16b3"
+      },
+      "models": {
+        "bernoulli_nb": {
+          "alpha": 1.0,
+          "binarize": null
+        },
+        "knn": {
+          "algorithm": "brute",
+          "metric": "manhattan",
+          "n_neighbors": 5,
+          "weights": "distance"
+        },
+        "linear_svc": {
+          "C": 1.0,
+          "dual": "auto",
+          "max_iter": 3000,
+          "tol": 0.001
+        },
+        "logistic_regression": {
+          "C": 1.0,
+          "max_iter": 200,
+          "solver": "saga",
+          "tol": 0.001
+        },
+        "random_forest": {
+          "max_depth": 24,
+          "max_features": "sqrt",
+          "max_leaf_nodes": 512,
+          "min_samples_leaf": 2,
+          "n_estimators": 100
+        }
+      },
+      "phase": 3,
+      "resources": {
+        "blas_threads": 1,
+        "max_workers": 2,
+        "min_available_ram_gb": 2.0,
+        "prediction_batch_size": 64,
+        "working_memory_mb": 128
+      },
+      "run_tag": "baseline-v1",
+      "seed": 42,
+      "selection_metric": "macro_f1",
+      "zero_division": 0
+    },
+    "experiment_id": "baseline-v1-f8a5bfdb7b4c12cd",
+    "feature_schema_identity": "dd07a3c73dd41558daa9c08e816e0a93d9efc4155f98b7e2b73325bffe31c5c0",
+    "label_mapping_identity": "d2ef711e5e04062e8b5b949ce434b1383e1ca2fef6eb31a0865acb2f470ab5b5",
+    "phase": 3,
+    "phase2_manifest_sha256": "50308d250d874b1b653a71c31f38dece0ec9fbb4dbc9d94f68bc1461e80b8fe9",
+    "processed_fingerprint": "afde00ce35bf4fd31c9c76edcc3c8b64104e53fb81dd98d4a56d7b3a884b16b3",
+    "source_sha256": {
+      "src/data/audit.py": "41ff075c529ecf7200caf3717b660f655bc344e558d52d1448045aa2dd91672f",
+      "src/data/loader.py": "37397527ec5b5d48e233776fa5ef040a4bc476e23a45dd26d81ed5144c5ab17b",
+      "src/data/paths.py": "89ab450a76fffe92bb30fd6aa11b69567d69293916da2fda78123a8f29249eeb",
+      "src/data/preprocessing.py": "648c43f722a1c30e49e7f3279431c8136bbc5396f42ec9b51212679663fb845d",
+      "src/models/runtime.py": "ae3f4258bfd1029ed13aa1021e3905fee8cfdd53b5651a18f770e74e766ca500",
+      "src/models/training.py": "d48022c38d06712e028387e99a1563da8782af408749f436da54d17c825dc652"
+    },
+    "training_data_fingerprint": "3dfd77eb71ad3a2917a3a390917953f437ae6afb5220ac9feb28fec132e11e12",
+    "validation_data_fingerprint": "a203b9c0f1f124fa25d4cae6f5299d986bba23859ceca80660bc8bcb843570f2",
+    "versions": {
+      "joblib": "1.6.0",
+      "numpy": "2.1.3",
+      "python": "3.13.18",
+      "scipy": "1.16.3",
+      "sklearn": "1.6.1"
+    }
+  },
+  "metrics": {
+    "accuracy": 0.8307965860597439,
+    "macro_f1": 0.7842218617528385,
+    "macro_precision": 0.8152059711563796,
+    "macro_recall": 0.7813986571375208,
+    "weighted_f1": 0.8298659883862443
+  },
+  "model": "linear_svc",
+  "n_input_features": 375,
+  "n_retained_features": 318,
+  "parameters": {
+    "C": 1.0,
+    "class_weight": null,
+    "dual": "auto",
+    "fit_intercept": true,
+    "intercept_scaling": 1,
+    "loss": "squared_hinge",
+    "max_iter": 3000,
+    "multi_class": "ovr",
+    "penalty": "l2",
+    "random_state": 42,
+    "tol": 0.001,
+    "verbose": 0
+  },
+  "pipeline_sha256": "8b3cb64d8a9bc991ac96e489bb410388258b9517e4285f009b8fac5c84a6db17",
+  "prediction_batch_size": 64,
+  "prediction_seconds": 1.8265035239999179,
+  "predictions_sha256": "dba5ad41107b0eeb3604948528b7d270b2a2511fc2738fa291ad00a80f57e20a",
+  "representation": "CSR float64, binary values already on the same scale; no centering",
+  "sampled_peak_rss_mb": 1313.3828125,
+  "seed": 42,
+  "status": "completed",
+  "supports_predict_proba": false,
+  "test_payload_opened": false,
+  "validation_only": true,
+  "validation_sampled_peak_rss_mb": 468.76953125,
+  "variance_threshold": 0,
+  "warnings": [
+    "DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).",
+    "DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).",
+    "ResourceWarning: Unclosed socket <zmq.Socket(zmq.PUSH) at 0x7b47685dfe70>",
+    "DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).",
+    "DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC)."
+  ]
+}

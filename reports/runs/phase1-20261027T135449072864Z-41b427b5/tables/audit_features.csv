@@ -1,0 +1,378 @@
+﻿feature,input_dtype,memory_dtype,meaning,n_unique_nonmissing,missing_count,missing_pct,is_binary_observed,invalid_binary_count,invalid_examples,min,max,dominant_fraction,constant,near_constant,present_count,present_fraction
+anxiety and nervousness,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9607645427119399,False,False,9689,0.03923545728806009
+depression,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9572536394743769,False,False,10556,0.04274636052562311
+shortness of breath,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.913559699528235,False,False,21346,0.08644030047176497
+depressive or psychotic symptoms,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9389985624329305,False,False,15064,0.06100143756706959
+sharp chest pain,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.902747575371034,False,False,24016,0.09725242462896597
+dizziness,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9300573002085485,False,False,17272,0.06994269979145154
+insomnia,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9605904148697079,False,False,9732,0.03940958513029217
+abnormal involuntary movements,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9594282127599263,False,False,10019,0.0405717872400737
+chest tightness,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.962129219056875,False,False,9352,0.03787078094312499
+palpitations,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9751240154690316,False,False,6143,0.024875984530968433
+irregular heartbeat,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9748891453562534,False,False,6201,0.025110854643746582
+breathing fast,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9981048411589625,False,True,468,0.001895158841037478
+hoarse voice,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9865395128469903,False,False,3324,0.01346048715300978
+sore throat,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9432869667334831,False,False,14005,0.05671303326651683
+difficulty speaking,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9749336896879872,False,False,6190,0.025066310312012795
+cough,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.901613719654174,False,False,24296,0.098386280345826
+nasal congestion,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9343983478102411,False,False,16200,0.06560165218975886
+throat swelling,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9926744821721436,False,True,1809,0.007325517827856405
+diminished hearing,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9779424568223694,False,False,5447,0.022057543177630645
+lump in throat,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9978942679544028,False,True,520,0.002105732045597198
+throat feels tight,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9902488408350038,False,True,2408,0.009751159164996255
+difficulty in swallowing,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.977472716596813,False,False,5563,0.022527283403186944
+skin swelling,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9385895644779202,False,False,15165,0.061410435522079816
+retention of urine,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.966259693454008,False,False,8332,0.03374030654599202
+groin mass,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9917269027516249,False,True,2043,0.008273097248375143
+leg pain,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.934442892141975,False,False,16189,0.06555710785802507
+hip pain,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9610318087023426,False,False,9623,0.03896819129765737
+suprapubic pain,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9662880398469295,False,False,8325,0.03371196015307052
+blood in stool,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9699082791714755,False,False,7431,0.03009172082852457
+lack of growth,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9866731458421916,False,False,3291,0.013326854157808418
+emotional symptoms,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9974731215452833,False,True,624,0.0025268784547166374
+elbow weakness,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9986474721091742,False,True,334,0.0013525278908258925
+back weakness,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9988054020125939,False,True,295,0.0011945979874061026
+pus in sputum,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",1,0,0.0,True,0,,0.0,0.0,1.0,True,True,0,0.0
+symptoms of the scrotum and testes,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.991512280062362,False,True,2096,0.008487719937637936
+swelling of scrotum,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9925327502075361,False,True,1844,0.007467249792463909
+pain in testicles,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9900463665998501,False,True,2458,0.009953633400149832
+flatulence,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9964364534612971,False,True,880,0.00356354653870295
+pus draining from ear,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9967847091457612,False,True,794,0.003215290854238798
+jaundice,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9935856162303347,False,True,1584,0.00641438376966531
+mass in scrotum,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9947599667942254,False,True,1294,0.005240033205774565
+white discharge from eye,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9869444613172974,False,False,3224,0.013055538682702626
+irritable infant,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9909494016886351,False,True,2235,0.009050598311364878
+abusing alcohol,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9707222255967928,False,False,7230,0.029277774403207193
+fainting,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9717669926501853,False,False,6972,0.028233007349814737
+hostile behavior,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.967681062584786,False,False,7981,0.03231893741521391
+drug abuse,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9783433558079734,False,False,5348,0.021656644192026564
+sharp abdominal pain,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.869173297697868,False,False,32307,0.13082670230213206
+feeling ill,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9824414343274819,False,False,4336,0.01755856567251817
+vomiting,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.887124663386584,False,False,27874,0.11287533661341595
+headache,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.8999007876247748,False,False,24719,0.10009921237522525
+nausea,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9040798558383446,False,False,23687,0.09592014416165542
+diarrhea,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9575937961894349,False,False,10472,0.042406203810565105
+vaginal itching,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9786997104618437,False,False,5260,0.02130028953815627
+vaginal dryness,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9987325112879386,False,True,313,0.00126748871206139
+painful urination,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9650367490736804,False,False,8634,0.034963250926319626
+involuntary urination,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9745813845188199,False,False,6277,0.02541861548118002
+pain during intercourse,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9940877523335155,False,True,1460,0.0059122476664844395
+frequent urination,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9708882544696188,False,False,7189,0.029111745530381258
+lower abdominal pain,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9395168964749235,False,False,14936,0.06048310352507644
+vaginal discharge,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9728158091882808,False,False,6713,0.02718419081171921
+blood in urine,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9731964607503695,False,False,6619,0.026803539249630484
+hot flashes,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9926866306262528,False,True,1806,0.0073133693737471904
+intermenstrual bleeding,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9742047824414344,False,False,6370,0.02579521755856567
+hand or finger pain,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9722367328757415,False,False,6856,0.027763267124258438
+wrist pain,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.980242564133714,False,False,4879,0.019757435866286015
+hand or finger swelling,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9805624734252566,False,False,4800,0.019437526574743364
+arm pain,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9529490372350119,False,False,11619,0.04705096276498816
+wrist swelling,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9857782097228128,False,False,3512,0.014221790277187228
+arm stiffness or tightness,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9899937232987103,False,False,2471,0.01000627670128976
+arm swelling,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9873089149405738,False,False,3134,0.012691085059426187
+hand or finger stiffness or tightness,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9927068780497682,False,True,1801,0.007293121950231833
+wrist stiffness or tightness,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9989673814007167,False,True,255,0.0010326185992832412
+lip swelling,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9762902670635162,False,False,5855,0.023709732936483832
+toothache,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9891757273886898,False,False,2673,0.01082427261131021
+abnormal appearing skin,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.93348721375205,False,False,16425,0.06651278624794994
+skin lesion,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9500293587640972,False,False,12340,0.04997064123590273
+acne or pimples,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9675393306201786,False,False,8016,0.032460669379821415
+dry lips,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9985219380833789,False,True,365,0.0014780619166211099
+facial pain,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9671546295733868,False,False,8111,0.032845370426613216
+mouth ulcer,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9877705561967239,False,False,3020,0.012229443803276034
+skin growth,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9582457632266295,False,False,10311,0.04175423677337059
+eye deviation,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9965174431553585,False,True,860,0.0034825568446415194
+diminished vision,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9644981676081719,False,False,8767,0.035501832391828136
+double vision,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9814412116058232,False,False,4583,0.01855878839417684
+cross-eyed,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9987203628338294,False,True,316,0.0012796371661706048
+symptoms of eye,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9660936645811821,False,False,8373,0.033906335418817955
+pain in eye,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9617202211018648,False,False,9453,0.03827977889813521
+eye moves abnormally,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9978051792909353,False,True,542,0.0021948207090647714
+abnormal movement of eyelid,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9915689728482051,False,True,2082,0.008431027151794935
+foreign body sensation in eye,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9777399825872157,False,False,5497,0.022260017412784223
+irregular appearing scalp,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9675150337119601,False,False,8022,0.032484966288039846
+swollen lymph nodes,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9924031666970378,False,True,1876,0.007596833302962198
+back pain,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.911684788110713,False,False,21809,0.08831521188928709
+neck pain,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9585413756099537,False,False,10238,0.04145862439004637
+low back pain,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9552410455769503,False,False,11053,0.04475895442304967
+pain of the anus,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9867986798679867,False,False,3260,0.013201320132013201
+pain during pregnancy,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9789507785134341,False,False,5198,0.021049221486565836
+pelvic pain,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9616635283160218,False,False,9467,0.03833647168397821
+impotence,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9901597521715362,False,True,2430,0.009840247828463829
+infant spitting up,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9996760412237543,False,True,80,0.0003239587762457227
+vomiting blood,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.986584057178724,False,False,3313,0.013415942821275992
+regurgitation,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9899167830893518,False,False,2490,0.01008321691064812
+burning abdominal pain,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9474336390694285,False,False,12981,0.052566360930571585
+restlessness,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9899775253598979,False,False,2475,0.010022474640102048
+symptoms of infants,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.999040272125372,False,True,237,0.0009597278746279536
+wheezing,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9803235538277754,False,False,4859,0.019676446172224586
+peripheral edema,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.96478568102209,False,False,8696,0.03521431897791006
+neck mass,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9918402883233108,False,True,2015,0.00815971167668914
+ear pain,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9571402539026909,False,False,10584,0.042859746097309116
+jaw swelling,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.990544453218328,False,True,2335,0.009455546781672033
+mouth dryness,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9961003462309421,False,True,963,0.0038996537690578876
+neck swelling,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9911478264390856,False,True,2186,0.008852173560914374
+knee pain,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9675190831966632,False,False,8021,0.03248091680333678
+foot or toe pain,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9713013019093321,False,False,7087,0.02869869809066796
+bowlegged or knock-kneed,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9997529814331126,False,True,61,0.0002470185668873636
+ankle pain,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9838182591265261,False,False,3996,0.01618174087347385
+bones are painful,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9841867622345056,False,False,3905,0.015813237765494342
+knee weakness,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9953066472291401,False,True,1159,0.0046933527708599085
+elbow pain,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9806920569357549,False,False,4768,0.019307943064245076
+knee swelling,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9845795622507036,False,False,3808,0.015420437749296401
+skin moles,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9742169308955435,False,False,6367,0.02578306910445646
+knee lump or mass,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9960719998380206,False,True,970,0.003928000161979388
+weight gain,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.987940634554253,False,False,2978,0.012059365445747029
+problems with movement,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9639676851120695,False,False,8898,0.03603231488793051
+knee stiffness or tightness,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9949381441211606,False,True,1250,0.0050618558788394176
+leg swelling,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9757557350827107,False,False,5987,0.024244264917289274
+foot or toe swelling,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.982732997226103,False,False,4264,0.017267002773897023
+heartburn,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9718439328595436,False,False,6953,0.028156067140456376
+smoking problems,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9920387130737613,False,True,1966,0.007961286926238636
+muscle pain,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9925287007228331,False,True,1845,0.00747129927716698
+infant feeding problem,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.997056024620867,False,True,727,0.0029439753791330055
+recent weight loss,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9994087752333516,False,True,146,0.000591224766648444
+problems with shape or size of breast,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9998096742189556,False,True,47,0.0001903257810443621
+underweight,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",1,0,0.0,True,0,,0.0,0.0,1.0,True,True,0,0.0
+difficulty eating,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9986069772621434,False,True,344,0.0013930227378566077
+scanty menstrual flow,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9999514061835632,False,True,12,4.859381643685841e-05
+vaginal pain,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9882159995140618,False,False,2910,0.011784000485938164
+vaginal redness,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9948369070035838,False,True,1275,0.005163092996416206
+vulvar irritation,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9978011298062321,False,True,543,0.0021988701937678433
+weakness,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9532244021948207,False,False,11551,0.04677559780517929
+decreased heart rate,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9911275790155702,False,True,2191,0.008872420984429731
+increased heart rate,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9871226386442326,False,False,3180,0.012877361355767478
+bleeding or discharge from nipple,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9986798679867986,False,True,326,0.0013201320132013201
+ringing in ear,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9889773026382392,False,False,2722,0.011022697361760717
+plugged feeling in ear,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9828544817671951,False,False,4234,0.017145518232804875
+itchy ear(s),int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9951041729939866,False,True,1209,0.004895827006013485
+frontal headache,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9927230759885805,False,True,1797,0.0072769240114195465
+fluid in ear,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9872319747312155,False,False,3153,0.012768025268784547
+neck stiffness or tightness,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9954969730101845,False,True,1112,0.004503026989815546
+spots or clouds in vision,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9788576403652636,False,False,5221,0.021142359634736478
+eye redness,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9753912814594343,False,False,6077,0.024608718540565712
+lacrimation,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9703415740347041,False,False,7324,0.029658425965295915
+itchiness of eye,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9720585555488064,False,False,6900,0.027941444451193585
+blindness,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9924801069063962,False,True,1857,0.007519893093603839
+eye burns or stings,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9875235376298366,False,False,3081,0.012476462370163397
+itchy eyelid,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9979347628014336,False,True,510,0.0020652371985664824
+feeling cold,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9995950515296929,False,True,100,0.00040494847030715344
+decreased appetite,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9717710421348883,False,False,6971,0.028228957865111665
+excessive appetite,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9975946060863755,False,True,594,0.002405393913624491
+excessive anger,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9723339205086152,False,False,6832,0.02766607949138472
+loss of sensation,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9578894085727592,False,False,10399,0.042110591427240884
+focal weakness,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9881836036364373,False,False,2918,0.011816396363562737
+slurring words,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9929376986778432,False,True,1744,0.007062301322156755
+symptoms of the face,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9907509769381846,False,True,2284,0.009249023061815385
+disturbance of memory,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9785903743748608,False,False,5287,0.021409625625139202
+paresthesia,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9734029844702262,False,False,6568,0.026597015529773838
+side pain,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9574561137095304,False,False,10506,0.04254388629046954
+fever,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9174148089655592,False,False,20394,0.08258519103444087
+shoulder pain,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9685395533418373,False,False,7769,0.03146044665816275
+shoulder stiffness or tightness,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9936868533479115,False,True,1559,0.006313146652088522
+shoulder weakness,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9992184494523072,False,True,193,0.0007815505476928061
+arm cramps or spasms,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",1,0,0.0,True,0,,0.0,0.0,1.0,True,True,0,0.0
+shoulder swelling,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9994087752333516,False,True,146,0.000591224766648444
+tongue lesions,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9959586142663346,False,True,998,0.004041385733665391
+leg cramps or spasms,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9920630099819798,False,True,1960,0.007936990018020207
+abnormal appearing tongue,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",1,0,0.0,True,0,,0.0,0.0,1.0,True,True,0,0.0
+ache all over,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.97050760290753,False,False,7283,0.029492397092469983
+lower body pain,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9695073801858713,False,False,7530,0.030492619814128652
+problems during pregnancy,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9828099374354613,False,False,4245,0.01719006256453866
+spotting or bleeding during pregnancy,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9891230840875499,False,False,2686,0.01087691591245014
+cramps and spasms,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9780639413634615,False,False,5417,0.0219360586365385
+upper abdominal pain,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9741561886249974,False,False,6382,0.02584381137500253
+stomach bloating,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9910506388062119,False,True,2210,0.008949361193788091
+changes in stool appearance,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9903986717690174,False,True,2371,0.009601328230982607
+unusual color or odor to urine,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9962299297414404,False,True,931,0.003770070258559598
+kidney mass,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9975784081475633,False,True,598,0.0024215918524367773
+swollen abdomen,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9973597359735974,False,True,652,0.0026402640264026403
+symptoms of prostate,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9939338719147989,False,True,1498,0.006066128085201158
+leg stiffness or tightness,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9945898884366964,False,True,1336,0.00541011156330357
+difficulty breathing,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9670857883334346,False,False,8128,0.03291421166656543
+rib pain,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9918281398692016,False,True,2018,0.008171860130798356
+joint pain,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9824049889651542,False,False,4345,0.017595011034845814
+muscle stiffness or tightness,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9992508453299318,False,True,185,0.0007491546700682338
+pallor,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",1,0,0.0,True,0,,0.0,0.0,1.0,True,True,0,0.0
+hand or finger lump or mass,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9958978719957885,False,True,1013,0.004102128004211464
+chills,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9745935329729292,False,False,6274,0.025406467027070806
+groin pain,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9902204944420823,False,True,2415,0.009779505557917754
+fatigue,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9748972443256596,False,False,6199,0.02510275567434044
+abdominal distention,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9992589442993379,False,True,183,0.0007410557006620908
+regurgitation.1,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9831136487881917,False,False,4170,0.016886351211808297
+symptoms of the kidneys,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9947802142177408,False,True,1289,0.005219785782259207
+melena,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9915770718176112,False,True,2080,0.008422928182388791
+flushing,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9996274474073175,False,True,92,0.00037255259268258113
+coughing up sputum,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.989135232541659,False,False,2683,0.010864767458340927
+seizures,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9844418797707991,False,False,3842,0.015558120229200834
+delusions or hallucinations,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9709854421024925,False,False,7165,0.029014557897507544
+shoulder cramps or spasms,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",1,0,0.0,True,0,,0.0,0.0,1.0,True,True,0,0.0
+joint stiffness or tightness,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",1,0,0.0,True,0,,0.0,0.0,1.0,True,True,0,0.0
+pain or soreness of breast,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9973475875194882,False,True,655,0.002652412480511855
+excessive urination at night,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9929417481625463,False,True,1743,0.007058251837453684
+bleeding from eye,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9975865071169694,False,True,596,0.0024134928830306344
+rectal bleeding,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.982453582781591,False,False,4333,0.017546417218408956
+constipation,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9847253437000142,False,False,3772,0.015274656299985827
+temper problems,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9727024236165948,False,False,6741,0.02729757638340521
+coryza,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9681346048715301,False,False,7869,0.0318653951284699
+wrist weakness,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9999838020611878,False,True,4,1.6197938812286138e-05
+eye strain,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",1,0,0.0,True,0,,0.0,0.0,1.0,True,True,0,0.0
+hemoptysis,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9912976573730993,False,True,2149,0.008702342626900728
+lymphedema,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9891271335722529,False,False,2685,0.010872866427747069
+skin on leg or foot looks infected,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9941403956346555,False,True,1447,0.00585960436534451
+allergic reaction,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9759825062260827,False,False,5931,0.024017493773917268
+congestion in chest,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9942618801757477,False,True,1417,0.005738119824252364
+muscle swelling,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.998926886553686,False,True,265,0.0010731134463139566
+pus in urine,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",1,0,0.0,True,0,,0.0,0.0,1.0,True,True,0,0.0
+abnormal size or shape of ear,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",1,0,0.0,True,0,,0.0,0.0,1.0,True,True,0,0.0
+low back weakness,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9999797525764846,False,True,5,2.024742351535767e-05
+sleepiness,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9884711170503554,False,False,2847,0.011528882949644657
+apnea,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9934114883881026,False,True,1627,0.006588511611897386
+abnormal breathing sounds,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9890866387252222,False,False,2695,0.010913361274777784
+excessive growth,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9998542185506895,False,True,36,0.00014578144931057523
+elbow cramps or spasms,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",1,0,0.0,True,0,,0.0,0.0,1.0,True,True,0,0.0
+feeling hot and cold,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",1,0,0.0,True,0,,0.0,0.0,1.0,True,True,0,0.0
+blood clots during menstrual periods,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9890542428475977,False,False,2703,0.010945757152402357
+absence of menstruation,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9976310514487031,False,True,585,0.0023689485512968476
+pulling at ears,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9856567251817206,False,False,3542,0.014343274818279374
+gum pain,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9913179047966146,False,True,2144,0.008682095203385368
+redness in ear,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9877624572273178,False,False,3022,0.012237542772682176
+fluid retention,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9828585312518981,False,False,4233,0.017141468748101803
+flu-like syndrome,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9957642390005872,False,True,1046,0.004235760999412825
+sinus congestion,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9905323047642187,False,True,2338,0.009467695235781247
+painful sinuses,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9903257810443621,False,True,2389,0.009674218955637895
+fears and phobias,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.983186539512847,False,False,4152,0.01681346048715301
+recent pregnancy,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9970884204984916,False,True,719,0.002911579501508433
+uterine contractions,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9944036121403551,False,True,1382,0.00559638785964486
+burning chest pain,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9969790844115086,False,True,746,0.0030209155884913645
+back cramps or spasms,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9948247585494746,False,True,1278,0.0051752414505254205
+stiffness all over,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9960112575674746,False,True,985,0.003988742432525461
+"muscle cramps, contractures, or spasms",int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9965133936706554,False,True,861,0.003486606329344591
+low back cramps or spasms,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9995829030755836,False,True,103,0.00041709692441636804
+back mass or lump,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9940148616088603,False,True,1478,0.0059851383911397275
+nosebleed,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9939622183077204,False,True,1491,0.006037781692279657
+long menstrual periods,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9897871995788536,False,False,2522,0.010212800421146409
+heavy menstrual flow,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9859158922027172,False,False,3478,0.014084107797282796
+unpredictable menstruation,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9906092449735772,False,True,2319,0.009390755026422887
+painful menstruation,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9914677357306283,False,True,2107,0.008532264269371722
+infertility,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9951770637186418,False,True,1191,0.004822936281358197
+frequent menstruation,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9961732369555975,False,True,945,0.0038267630444025996
+sweating,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9847901354552633,False,False,3756,0.015209864544736683
+mass on eyelid,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.995302597744437,False,True,1160,0.0046974022555629795
+swollen eye,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.98097552086497,False,False,4698,0.019024479135030067
+eyelid swelling,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9933628945716657,False,True,1639,0.006637105428334245
+eyelid lesion or rash,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9979347628014336,False,True,510,0.0020652371985664824
+unwanted hair,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9999109113365324,False,True,22,8.908866346757375e-05
+symptoms of bladder,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9882645933304987,False,False,2898,0.011735406669501305
+irregular appearing nails,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9917957439915771,False,True,2026,0.008204256008422927
+itching of skin,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9580351900220697,False,False,10363,0.041964809977930305
+hurts to breath,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9899734758751949,False,False,2476,0.010026524124805118
+nailbiting,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",1,0,0.0,True,0,,0.0,0.0,1.0,True,True,0,0.0
+"skin dryness, peeling, scaliness, or roughness",int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9681427038409363,False,False,7867,0.03185729615906376
+skin on arm or hand looks infected,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9979833566178704,False,True,498,0.002016643382129624
+skin irritation,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.980351900220697,False,False,4852,0.019648099779303083
+itchy scalp,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9926137399015975,False,True,1824,0.007386260098402478
+hip swelling,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",1,0,0.0,True,0,,0.0,0.0,1.0,True,True,0,0.0
+incontinence of stool,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9999635546376724,False,True,9,3.644536232764381e-05
+foot or toe cramps or spasms,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",1,0,0.0,True,0,,0.0,0.0,1.0,True,True,0,0.0
+warts,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9881350098200004,False,False,2930,0.011864990179999596
+bumps on penis,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9986150762315495,False,True,342,0.0013849237684504646
+too little hair,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9949097977282391,False,True,1257,0.005090202271760919
+foot or toe lump or mass,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9998542185506895,False,True,36,0.00014578144931057523
+skin rash,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9498876267994898,False,False,12375,0.050112373200510235
+mass or swelling around the anus,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9981372370365871,False,True,460,0.0018627629634129057
+low back swelling,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",1,0,0.0,True,0,,0.0,0.0,1.0,True,True,0,0.0
+ankle swelling,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9915811213023142,False,True,2079,0.00841887869768572
+hip lump or mass,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",1,0,0.0,True,0,,0.0,0.0,1.0,True,True,0,0.0
+drainage in throat,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9995950515296929,False,True,100,0.00040494847030715344
+dry or flaky scalp,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9981453360059932,False,True,458,0.0018546639940067626
+premenstrual tension or irritability,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9997529814331126,False,True,61,0.0002470185668873636
+feeling hot,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9999959505152969,False,True,1,4.0494847030715345e-06
+feet turned in,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",1,0,0.0,True,0,,0.0,0.0,1.0,True,True,0,0.0
+foot or toe stiffness or tightness,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9987325112879386,False,True,313,0.00126748871206139
+pelvic pressure,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9999190103059385,False,True,20,8.098969406143068e-05
+elbow swelling,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9919496244102938,False,True,1988,0.00805037558970621
+elbow stiffness or tightness,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",1,0,0.0,True,0,,0.0,0.0,1.0,True,True,0,0.0
+early or late onset of menopause,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9991698556358704,False,True,205,0.0008301443641296645
+mass on ear,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",1,0,0.0,True,0,,0.0,0.0,1.0,True,True,0,0.0
+bleeding from ear,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9972139545242867,False,True,688,0.0027860454757132154
+hand or finger weakness,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.996719917390512,False,True,810,0.0032800826094879425
+low self-esteem,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9893296078074065,False,False,2635,0.010670392192593492
+throat irritation,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",1,0,0.0,True,0,,0.0,0.0,1.0,True,True,0,0.0
+itching of the anus,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9962218307720343,False,True,933,0.0037781692279657414
+swollen or red tonsils,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9972463504019113,False,True,680,0.0027536495980886432
+irregular belly button,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9990321731559659,False,True,239,0.0009678268440340967
+swollen tongue,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",1,0,0.0,True,0,,0.0,0.0,1.0,True,True,0,0.0
+lip sore,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.999603150499099,False,True,98,0.00039684950090101035
+vulvar sore,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9996071999838021,False,True,97,0.00039280001619793883
+hip stiffness or tightness,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9975217153617202,False,True,612,0.0024782846382797787
+mouth pain,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9898438923646966,False,False,2508,0.010156107635303408
+arm weakness,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9939824657312357,False,True,1486,0.0060175342687643
+leg lump or mass,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.999546457713256,False,True,112,0.0004535422867440118
+disturbance of smell or taste,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",1,0,0.0,True,0,,0.0,0.0,1.0,True,True,0,0.0
+discharge in stools,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",1,0,0.0,True,0,,0.0,0.0,1.0,True,True,0,0.0
+penis pain,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9980683957966349,False,True,477,0.0019316042033651218
+loss of sex drive,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9968333029621981,False,True,782,0.0031666970378019395
+obsessions and compulsions,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9931037275506692,False,True,1703,0.006896272449330823
+antisocial behavior,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9918200408997955,False,True,2020,0.0081799591002045
+neck cramps or spasms,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9994573690497884,False,True,134,0.0005426309502115855
+pupils unequal,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",1,0,0.0,True,0,,0.0,0.0,1.0,True,True,0,0.0
+poor circulation,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.999773228856628,False,True,56,0.0002267711433720059
+thirst,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9999959505152969,False,True,1,4.0494847030715345e-06
+sleepwalking,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",1,0,0.0,True,0,,0.0,0.0,1.0,True,True,0,0.0
+skin oiliness,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",1,0,0.0,True,0,,0.0,0.0,1.0,True,True,0,0.0
+sneezing,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9951811132033449,False,True,1190,0.004818886796655125
+bladder mass,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9997246350401912,False,True,68,0.00027536495980886433
+knee cramps or spasms,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",1,0,0.0,True,0,,0.0,0.0,1.0,True,True,0,0.0
+premature ejaculation,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9996476948308328,False,True,87,0.0003523051691672235
+leg weakness,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9902366923808945,False,True,2411,0.009763307619105469
+posture problems,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",1,0,0.0,True,0,,0.0,0.0,1.0,True,True,0,0.0
+bleeding in mouth,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",1,0,0.0,True,0,,0.0,0.0,1.0,True,True,0,0.0
+tongue bleeding,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",1,0,0.0,True,0,,0.0,0.0,1.0,True,True,0,0.0
+change in skin mole size or color,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",1,0,0.0,True,0,,0.0,0.0,1.0,True,True,0,0.0
+penis redness,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.998979529854826,False,True,252,0.0010204701451740265
+penile discharge,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9987568081961571,False,True,307,0.001243191803842961
+shoulder lump or mass,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.998582680353925,False,True,350,0.001417319646075037
+polyuria,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",1,0,0.0,True,0,,0.0,0.0,1.0,True,True,0,0.0
+cloudy eye,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.997793030836826,False,True,545,0.002206969163173986
+hysterical behavior,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.994966490514082,False,True,1243,0.005033509485917917
+arm lump or mass,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9967644617222459,False,True,799,0.0032355382777541557
+nightmares,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9979226143473243,False,True,513,0.002077385652675697
+bleeding gums,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9961651379861912,False,True,947,0.003834862013808743
+pain in gums,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9930794306424507,False,True,1709,0.006920569357549252
+bedwetting,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.999319686569884,False,True,168,0.0006803134301160178
+diaper rash,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9961975338638158,False,True,939,0.0038024661361841707
+lump or mass of breast,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9984854927210512,False,True,374,0.0015145072789487539
+vaginal bleeding after menopause,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9996314968920205,False,True,91,0.0003685031079795096
+infrequent menstruation,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",1,0,0.0,True,0,,0.0,0.0,1.0,True,True,0,0.0
+mass on vulva,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",1,0,0.0,True,0,,0.0,0.0,1.0,True,True,0,0.0
+jaw pain,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",1,0,0.0,True,0,,0.0,0.0,1.0,True,True,0,0.0
+itching of scrotum,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9999838020611878,False,True,4,1.6197938812286138e-05
+postpartum problems of the breast,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.998979529854826,False,True,252,0.0010204701451740265
+eyelid retracted,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",1,0,0.0,True,0,,0.0,0.0,1.0,True,True,0,0.0
+hesitancy,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9968575998704164,False,True,776,0.0031424001295835106
+elbow lump or mass,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",1,0,0.0,True,0,,0.0,0.0,1.0,True,True,0,0.0
+muscle weakness,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9998623175200956,False,True,34,0.00013768247990443217
+throat redness,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9990524205794813,False,True,234,0.000947579420518739
+joint swelling,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9986150762315495,False,True,342,0.0013849237684504646
+tongue pain,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",1,0,0.0,True,0,,0.0,0.0,1.0,True,True,0,0.0
+redness in or around nose,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9990645690335904,False,True,231,0.0009354309664095244
+wrinkles on skin,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9991739051205734,False,True,204,0.0008260948794265929
+foot or toe weakness,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9995626556520683,False,True,108,0.0004373443479317257
+hand or finger cramps or spasms,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9998096742189556,False,True,47,0.0001903257810443621
+back stiffness or tightness,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9981574844601024,False,True,455,0.001842515539897548
+wrist lump or mass,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9986272246856588,False,True,339,0.00137277531434125
+skin pain,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9999959505152969,False,True,1,4.0494847030715345e-06
+low back stiffness or tightness,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",1,0,0.0,True,0,,0.0,0.0,1.0,True,True,0,0.0
+low urine output,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9966389276964506,False,True,830,0.0033610723035493732
+skin on head or neck looks infected,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",1,0,0.0,True,0,,0.0,0.0,1.0,True,True,0,0.0
+stuttering or stammering,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",1,0,0.0,True,0,,0.0,0.0,1.0,True,True,0,0.0
+problems with orgasm,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",1,0,0.0,True,0,,0.0,0.0,1.0,True,True,0,0.0
+nose deformity,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",1,0,0.0,True,0,,0.0,0.0,1.0,True,True,0,0.0
+lump over jaw,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",1,0,0.0,True,0,,0.0,0.0,1.0,True,True,0,0.0
+sore in nose,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9986150762315495,False,True,342,0.0013849237684504646
+hip weakness,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",1,0,0.0,True,0,,0.0,0.0,1.0,True,True,0,0.0
+back swelling,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",1,0,0.0,True,0,,0.0,0.0,1.0,True,True,0,0.0
+ankle stiffness or tightness,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",1,0,0.0,True,0,,0.0,0.0,1.0,True,True,0,0.0
+ankle weakness,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",2,0,0.0,True,0,,0.0,1.0,0.9999271092753447,False,True,18,7.289072465528761e-05
+neck weakness,int64,uint8,"Symptom indicator; English name, no verified clinical dictionary",1,0,0.0,True,0,,0.0,0.0,1.0,True,True,0,0.0

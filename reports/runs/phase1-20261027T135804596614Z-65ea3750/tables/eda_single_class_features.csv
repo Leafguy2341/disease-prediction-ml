@@ -1,0 +1,41 @@
+﻿feature,present_count,present_fraction,diseases_with_symptom,dominant_disease,dominant_disease_rows,dominant_disease_share_when_present,support_at_least_5
+hip stiffness or tightness,612,0.0024782846382797787,1,arthritis of the hip,612,1.0,True
+breathing fast,468,0.001895158841037478,1,panic disorder,468,1.0,True
+dry or flaky scalp,458,0.0018546639940067626,1,seborrheic dermatitis,458,1.0,True
+back stiffness or tightness,455,0.001842515539897548,1,chronic back pain,455,1.0,True
+shoulder lump or mass,350,0.001417319646075037,1,lipoma,350,1.0,True
+joint swelling,342,0.0013849237684504646,1,rheumatoid arthritis,342,1.0,True
+sore in nose,342,0.0013849237684504646,1,impetigo,342,1.0,True
+wrist lump or mass,339,0.00137277531434125,1,ganglion cyst,339,1.0,True
+postpartum problems of the breast,252,0.0010204701451740265,1,breast infection (mastitis),252,1.0,True
+symptoms of infants,237,0.0009597278746279536,1,teething syndrome,237,1.0,True
+throat redness,234,0.000947579420518739,1,tonsillitis,234,1.0,True
+early or late onset of menopause,205,0.0008301443641296645,1,osteoporosis,205,1.0,True
+wrinkles on skin,204,0.0008260948794265929,1,atrophic skin condition,204,1.0,True
+abdominal distention,183,0.0007410557006620908,1,cirrhosis,183,1.0,True
+bedwetting,168,0.0006803134301160178,1,bladder obstruction,168,1.0,True
+neck cramps or spasms,134,0.0005426309502115855,1,torticollis,134,1.0,True
+low back cramps or spasms,103,0.00041709692441636804,1,lumbago,103,1.0,True
+lip sore,98,0.00039684950090101035,1,cold sore,98,1.0,True
+vulvar sore,97,0.00039280001619793883,1,female genitalia infection,97,1.0,True
+flushing,92,0.00037255259268258113,1,prostate cancer,92,1.0,True
+premature ejaculation,87,0.0003523051691672235,1,psychosexual disorder,87,1.0,True
+infant spitting up,80,0.0003239587762457227,1,foreign body in the throat,80,1.0,True
+bladder mass,68,0.00027536495980886433,1,bladder cancer,68,1.0,True
+bowlegged or knock-kneed,61,0.0002470185668873636,1,osteochondrosis,61,1.0,True
+premenstrual tension or irritability,61,0.0002470185668873636,1,premenstrual tension syndrome,61,1.0,True
+poor circulation,56,0.0002267711433720059,1,peripheral arterial disease,56,1.0,True
+hand or finger cramps or spasms,47,0.0001903257810443621,1,trigger finger (finger disorder),47,1.0,True
+problems with shape or size of breast,47,0.0001903257810443621,1,gynecomastia,47,1.0,True
+excessive growth,36,0.00014578144931057523,1,hormone disorder,36,1.0,True
+muscle weakness,34,0.00013768247990443217,1,epilepsy,34,1.0,True
+unwanted hair,22,8.908866346757375e-05,1,hirsutism,22,1.0,True
+ankle weakness,18,7.289072465528761e-05,1,fracture of the ankle,18,1.0,True
+scanty menstrual flow,12,4.859381643685841e-05,1,female infertility of unknown cause,12,1.0,True
+incontinence of stool,9,3.644536232764381e-05,1,decubitus ulcer,9,1.0,True
+low back weakness,5,2.024742351535767e-05,1,blepharospasm,5,1.0,True
+itching of scrotum,4,1.6197938812286138e-05,1,pinguecula,4,1.0,False
+wrist weakness,4,1.6197938812286138e-05,1,amyloidosis,4,1.0,False
+feeling hot,1,4.0494847030715345e-06,1,heat stroke,1,1.0,False
+skin pain,1,4.0494847030715345e-06,1,chronic ulcer,1,1.0,False
+thirst,1,4.0494847030715345e-06,1,diabetes,1,1.0,False
