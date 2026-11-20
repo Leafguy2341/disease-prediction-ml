@@ -1,0 +1,57 @@
+{
+  "checkpoints": [
+    {
+      "checkpoint": "knn_tuned",
+      "experiment_id": "tuned-v1-b8a5602679b3dc5c",
+      "features": 375,
+      "pipeline_sha256": "1d84f44c5d3eec025d7f9fc574fb80eba58b0e38fbb6927ed7090ebe9446b976",
+      "status": "PASS"
+    },
+    {
+      "checkpoint": "lr_baseline",
+      "experiment_id": "baseline-v1-f8a5bfdb7b4c12cd",
+      "features": 375,
+      "pipeline_sha256": "54f124240fd2bb8fb61c39594a55663e1b67f5f5b67595faeaa350504d0376da",
+      "status": "PASS"
+    },
+    {
+      "checkpoint": "lr_tuned_c2",
+      "experiment_id": "tuned-v1-b8a5602679b3dc5c",
+      "features": 375,
+      "pipeline_sha256": "4cac3bfd78dfe2849a855130d264c7bebc14d6e8d8e305b15015141663300ac6",
+      "status": "PASS"
+    },
+    {
+      "checkpoint": "svc_tuned",
+      "experiment_id": "tuned-v1-b8a5602679b3dc5c",
+      "features": 375,
+      "pipeline_sha256": "1ac35a1e68225142c6ff60332d8fcf973a57cc0f84c18be320f396830c32fe89",
+      "status": "PASS"
+    }
+  ],
+  "code_sha256": {
+    "src/data/colab_runtime.py": "e0f4c57b68a3506d77b02e108b3ecc7dd239ef43c425571367832602dee5a8a5",
+    "src/models/ensemble.py": "ee3121f04b187845fbff937add77a527d2761df14e035e94f48100b1d647443c",
+    "src/models/final_evaluation.py": "c86b7d1e223be4450e00fd504acdfb2bba7c4054ffbb6ddd99eca7999d107f58",
+    "src/models/final_evaluation_protocol.py": "3927df5867af569eb8ce44f506ff770e41aef3c5099df709bda1f214ba8294b2"
+  },
+  "execution_status": "NOT STARTED",
+  "guards": {
+    "model_or_feature_fit_attempts": 0,
+    "protected_write_attempts": 0,
+    "test_payload_access": 0
+  },
+  "protocol_sha256": "049ee0aa3c2907985c3d3a03ed222b1d6e1efb5921bbbc2d04ec0dea9baa8947",
+  "status": "PASS",
+  "storage_root": "/content/drive/MyDrive/ML_Projects/disease-prediction-ml",
+  "test_identity_from_metadata_only": {
+    "bytes": 292558,
+    "classes": 587,
+    "features": 375,
+    "groups": 25128,
+    "records": 28066,
+    "relative": "data/processed/test.csv.gz",
+    "sha256": "d71a040a6ead853931cfc75452e456906e5277a3081dc97e8af5688ed4268dd0"
+  },
+  "test_payload_opened": false
+}

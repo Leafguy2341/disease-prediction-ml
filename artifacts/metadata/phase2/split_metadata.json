@@ -1,0 +1,8042 @@
+{
+  "class_eligibility_after_approved_schema": [
+    {
+      "disease": "abdominal aortic aneurysm",
+      "eligible": true,
+      "unique_vectors": 40
+    },
+    {
+      "disease": "abdominal hernia",
+      "eligible": true,
+      "unique_vectors": 180
+    },
+    {
+      "disease": "abscess of nose",
+      "eligible": true,
+      "unique_vectors": 151
+    },
+    {
+      "disease": "abscess of the lung",
+      "eligible": false,
+      "unique_vectors": 5
+    },
+    {
+      "disease": "abscess of the pharynx",
+      "eligible": true,
+      "unique_vectors": 164
+    },
+    {
+      "disease": "acanthosis nigricans",
+      "eligible": false,
+      "unique_vectors": 9
+    },
+    {
+      "disease": "acariasis",
+      "eligible": true,
+      "unique_vectors": 10
+    },
+    {
+      "disease": "achalasia",
+      "eligible": true,
+      "unique_vectors": 25
+    },
+    {
+      "disease": "acne",
+      "eligible": true,
+      "unique_vectors": 306
+    },
+    {
+      "disease": "actinic keratosis",
+      "eligible": true,
+      "unique_vectors": 808
+    },
+    {
+      "disease": "acute bronchiolitis",
+      "eligible": true,
+      "unique_vectors": 1204
+    },
+    {
+      "disease": "acute bronchitis",
+      "eligible": true,
+      "unique_vectors": 1213
+    },
+    {
+      "disease": "acute bronchospasm",
+      "eligible": true,
+      "unique_vectors": 812
+    },
+    {
+      "disease": "acute fatty liver of pregnancy (aflp)",
+      "eligible": false,
+      "unique_vectors": 2
+    },
+    {
+      "disease": "acute glaucoma",
+      "eligible": true,
+      "unique_vectors": 148
+    },
+    {
+      "disease": "acute kidney injury",
+      "eligible": true,
+      "unique_vectors": 808
+    },
+    {
+      "disease": "acute otitis media",
+      "eligible": true,
+      "unique_vectors": 537
+    },
+    {
+      "disease": "acute pancreatitis",
+      "eligible": true,
+      "unique_vectors": 1207
+    },
+    {
+      "disease": "acute respiratory distress syndrome (ards)",
+      "eligible": true,
+      "unique_vectors": 300
+    },
+    {
+      "disease": "acute sinusitis",
+      "eligible": true,
+      "unique_vectors": 828
+    },
+    {
+      "disease": "acute stress reaction",
+      "eligible": true,
+      "unique_vectors": 799
+    },
+    {
+      "disease": "adhesive capsulitis of the shoulder",
+      "eligible": true,
+      "unique_vectors": 33
+    },
+    {
+      "disease": "adjustment reaction",
+      "eligible": true,
+      "unique_vectors": 311
+    },
+    {
+      "disease": "adrenal adenoma",
+      "eligible": false,
+      "unique_vectors": 8
+    },
+    {
+      "disease": "adrenal cancer",
+      "eligible": false,
+      "unique_vectors": 1
+    },
+    {
+      "disease": "alcohol abuse",
+      "eligible": true,
+      "unique_vectors": 313
+    },
+    {
+      "disease": "alcohol intoxication",
+      "eligible": true,
+      "unique_vectors": 160
+    },
+    {
+      "disease": "alcohol withdrawal",
+      "eligible": true,
+      "unique_vectors": 520
+    },
+    {
+      "disease": "alcoholic liver disease",
+      "eligible": true,
+      "unique_vectors": 99
+    },
+    {
+      "disease": "allergy",
+      "eligible": true,
+      "unique_vectors": 803
+    },
+    {
+      "disease": "allergy to animals",
+      "eligible": true,
+      "unique_vectors": 11
+    },
+    {
+      "disease": "alopecia",
+      "eligible": true,
+      "unique_vectors": 173
+    },
+    {
+      "disease": "alzheimer disease",
+      "eligible": true,
+      "unique_vectors": 172
+    },
+    {
+      "disease": "amblyopia",
+      "eligible": true,
+      "unique_vectors": 16
+    },
+    {
+      "disease": "amyloidosis",
+      "eligible": false,
+      "unique_vectors": 2
+    },
+    {
+      "disease": "amyotrophic lateral sclerosis (als)",
+      "eligible": true,
+      "unique_vectors": 14
+    },
+    {
+      "disease": "anal fissure",
+      "eligible": true,
+      "unique_vectors": 141
+    },
+    {
+      "disease": "anal fistula",
+      "eligible": false,
+      "unique_vectors": 8
+    },
+    {
+      "disease": "anemia",
+      "eligible": true,
+      "unique_vectors": 157
+    },
+    {
+      "disease": "anemia due to chronic kidney disease",
+      "eligible": true,
+      "unique_vectors": 34
+    },
+    {
+      "disease": "anemia due to malignancy",
+      "eligible": false,
+      "unique_vectors": 6
+    },
+    {
+      "disease": "anemia of chronic disease",
+      "eligible": false,
+      "unique_vectors": 8
+    },
+    {
+      "disease": "angina",
+      "eligible": true,
+      "unique_vectors": 826
+    },
+    {
+      "disease": "ankylosing spondylitis",
+      "eligible": true,
+      "unique_vectors": 479
+    },
+    {
+      "disease": "anxiety",
+      "eligible": true,
+      "unique_vectors": 1198
+    },
+    {
+      "disease": "aortic valve disease",
+      "eligible": true,
+      "unique_vectors": 284
+    },
+    {
+      "disease": "aphakia",
+      "eligible": false,
+      "unique_vectors": 4
+    },
+    {
+      "disease": "aphthous ulcer",
+      "eligible": true,
+      "unique_vectors": 137
+    },
+    {
+      "disease": "aplastic anemia",
+      "eligible": true,
+      "unique_vectors": 32
+    },
+    {
+      "disease": "appendicitis",
+      "eligible": true,
+      "unique_vectors": 808
+    },
+    {
+      "disease": "arrhythmia",
+      "eligible": true,
+      "unique_vectors": 124
+    },
+    {
+      "disease": "arthritis of the hip",
+      "eligible": true,
+      "unique_vectors": 1210
+    },
+    {
+      "disease": "ascending cholangitis",
+      "eligible": true,
+      "unique_vectors": 19
+    },
+    {
+      "disease": "asperger syndrome",
+      "eligible": true,
+      "unique_vectors": 173
+    },
+    {
+      "disease": "aspergillosis",
+      "eligible": false,
+      "unique_vectors": 1
+    },
+    {
+      "disease": "asthma",
+      "eligible": true,
+      "unique_vectors": 814
+    },
+    {
+      "disease": "astigmatism",
+      "eligible": true,
+      "unique_vectors": 156
+    },
+    {
+      "disease": "atelectasis",
+      "eligible": true,
+      "unique_vectors": 34
+    },
+    {
+      "disease": "athlete's foot",
+      "eligible": true,
+      "unique_vectors": 180
+    },
+    {
+      "disease": "atonic bladder",
+      "eligible": true,
+      "unique_vectors": 21
+    },
+    {
+      "disease": "atrial fibrillation",
+      "eligible": true,
+      "unique_vectors": 68
+    },
+    {
+      "disease": "atrial flutter",
+      "eligible": true,
+      "unique_vectors": 134
+    },
+    {
+      "disease": "atrophic skin condition",
+      "eligible": true,
+      "unique_vectors": 283
+    },
+    {
+      "disease": "atrophic vaginitis",
+      "eligible": true,
+      "unique_vectors": 162
+    },
+    {
+      "disease": "atrophy of the corpus cavernosum",
+      "eligible": true,
+      "unique_vectors": 13
+    },
+    {
+      "disease": "attention deficit hyperactivity disorder (adhd)",
+      "eligible": true,
+      "unique_vectors": 310
+    },
+    {
+      "disease": "autism",
+      "eligible": true,
+      "unique_vectors": 306
+    },
+    {
+      "disease": "autonomic nervous system disorder",
+      "eligible": true,
+      "unique_vectors": 19
+    },
+    {
+      "disease": "avascular necrosis",
+      "eligible": false,
+      "unique_vectors": 6
+    },
+    {
+      "disease": "balanitis",
+      "eligible": true,
+      "unique_vectors": 298
+    },
+    {
+      "disease": "bell palsy",
+      "eligible": true,
+      "unique_vectors": 534
+    },
+    {
+      "disease": "benign kidney cyst",
+      "eligible": true,
+      "unique_vectors": 90
+    },
+    {
+      "disease": "benign paroxysmal positional vertical (bppv)",
+      "eligible": true,
+      "unique_vectors": 285
+    },
+    {
+      "disease": "benign prostatic hyperplasia (bph)",
+      "eligible": true,
+      "unique_vectors": 1206
+    },
+    {
+      "disease": "benign vaginal discharge (leukorrhea)",
+      "eligible": true,
+      "unique_vectors": 525
+    },
+    {
+      "disease": "bipolar disorder",
+      "eligible": true,
+      "unique_vectors": 537
+    },
+    {
+      "disease": "birth trauma",
+      "eligible": false,
+      "unique_vectors": 3
+    },
+    {
+      "disease": "bladder cancer",
+      "eligible": true,
+      "unique_vectors": 66
+    },
+    {
+      "disease": "bladder disorder",
+      "eligible": true,
+      "unique_vectors": 303
+    },
+    {
+      "disease": "bladder obstruction",
+      "eligible": true,
+      "unique_vectors": 155
+    },
+    {
+      "disease": "blepharitis",
+      "eligible": true,
+      "unique_vectors": 802
+    },
+    {
+      "disease": "blepharospasm",
+      "eligible": false,
+      "unique_vectors": 3
+    },
+    {
+      "disease": "bone cancer",
+      "eligible": true,
+      "unique_vectors": 22
+    },
+    {
+      "disease": "bone disorder",
+      "eligible": true,
+      "unique_vectors": 91
+    },
+    {
+      "disease": "bone spur of the calcaneous",
+      "eligible": true,
+      "unique_vectors": 13
+    },
+    {
+      "disease": "brachial neuritis",
+      "eligible": true,
+      "unique_vectors": 824
+    },
+    {
+      "disease": "brain cancer",
+      "eligible": true,
+      "unique_vectors": 140
+    },
+    {
+      "disease": "breast cancer",
+      "eligible": false,
+      "unique_vectors": 6
+    },
+    {
+      "disease": "breast cyst",
+      "eligible": false,
+      "unique_vectors": 9
+    },
+    {
+      "disease": "breast infection (mastitis)",
+      "eligible": true,
+      "unique_vectors": 309
+    },
+    {
+      "disease": "broken tooth",
+      "eligible": true,
+      "unique_vectors": 80
+    },
+    {
+      "disease": "bunion",
+      "eligible": true,
+      "unique_vectors": 12
+    },
+    {
+      "disease": "burn",
+      "eligible": true,
+      "unique_vectors": 30
+    },
+    {
+      "disease": "bursitis",
+      "eligible": true,
+      "unique_vectors": 1208
+    },
+    {
+      "disease": "callus",
+      "eligible": true,
+      "unique_vectors": 322
+    },
+    {
+      "disease": "carbon monoxide poisoning",
+      "eligible": true,
+      "unique_vectors": 37
+    },
+    {
+      "disease": "carcinoid syndrome",
+      "eligible": false,
+      "unique_vectors": 1
+    },
+    {
+      "disease": "cardiac arrest",
+      "eligible": true,
+      "unique_vectors": 155
+    },
+    {
+      "disease": "cardiomyopathy",
+      "eligible": true,
+      "unique_vectors": 156
+    },
+    {
+      "disease": "carpal tunnel syndrome",
+      "eligible": true,
+      "unique_vectors": 819
+    },
+    {
+      "disease": "cat scratch disease",
+      "eligible": false,
+      "unique_vectors": 2
+    },
+    {
+      "disease": "cataract",
+      "eligible": true,
+      "unique_vectors": 484
+    },
+    {
+      "disease": "celiac disease",
+      "eligible": true,
+      "unique_vectors": 25
+    },
+    {
+      "disease": "cellulitis or abscess of mouth",
+      "eligible": true,
+      "unique_vectors": 62
+    },
+    {
+      "disease": "central atherosclerosis",
+      "eligible": false,
+      "unique_vectors": 8
+    },
+    {
+      "disease": "central retinal artery or vein occlusion",
+      "eligible": true,
+      "unique_vectors": 37
+    },
+    {
+      "disease": "cerebral edema",
+      "eligible": true,
+      "unique_vectors": 36
+    },
+    {
+      "disease": "cerebral palsy",
+      "eligible": true,
+      "unique_vectors": 47
+    },
+    {
+      "disease": "cervical cancer",
+      "eligible": true,
+      "unique_vectors": 31
+    },
+    {
+      "disease": "cervical disorder",
+      "eligible": false,
+      "unique_vectors": 9
+    },
+    {
+      "disease": "cervicitis",
+      "eligible": true,
+      "unique_vectors": 184
+    },
+    {
+      "disease": "chalazion",
+      "eligible": true,
+      "unique_vectors": 524
+    },
+    {
+      "disease": "chickenpox",
+      "eligible": true,
+      "unique_vectors": 37
+    },
+    {
+      "disease": "chlamydia",
+      "eligible": true,
+      "unique_vectors": 47
+    },
+    {
+      "disease": "cholecystitis",
+      "eligible": true,
+      "unique_vectors": 1032
+    },
+    {
+      "disease": "choledocholithiasis",
+      "eligible": true,
+      "unique_vectors": 288
+    },
+    {
+      "disease": "cholesteatoma",
+      "eligible": false,
+      "unique_vectors": 6
+    },
+    {
+      "disease": "chondromalacia of the patella",
+      "eligible": true,
+      "unique_vectors": 37
+    },
+    {
+      "disease": "chorioretinitis",
+      "eligible": true,
+      "unique_vectors": 22
+    },
+    {
+      "disease": "chronic back pain",
+      "eligible": true,
+      "unique_vectors": 805
+    },
+    {
+      "disease": "chronic constipation",
+      "eligible": true,
+      "unique_vectors": 827
+    },
+    {
+      "disease": "chronic glaucoma",
+      "eligible": true,
+      "unique_vectors": 522
+    },
+    {
+      "disease": "chronic inflammatory demyelinating polyneuropathy (cidp)",
+      "eligible": false,
+      "unique_vectors": 6
+    },
+    {
+      "disease": "chronic kidney disease",
+      "eligible": false,
+      "unique_vectors": 8
+    },
+    {
+      "disease": "chronic knee pain",
+      "eligible": true,
+      "unique_vectors": 150
+    },
+    {
+      "disease": "chronic obstructive pulmonary disease (copd)",
+      "eligible": true,
+      "unique_vectors": 812
+    },
+    {
+      "disease": "chronic otitis media",
+      "eligible": true,
+      "unique_vectors": 521
+    },
+    {
+      "disease": "chronic pain disorder",
+      "eligible": true,
+      "unique_vectors": 528
+    },
+    {
+      "disease": "chronic pancreatitis",
+      "eligible": true,
+      "unique_vectors": 149
+    },
+    {
+      "disease": "chronic rheumatic fever",
+      "eligible": true,
+      "unique_vectors": 77
+    },
+    {
+      "disease": "chronic sinusitis",
+      "eligible": true,
+      "unique_vectors": 507
+    },
+    {
+      "disease": "chronic ulcer",
+      "eligible": false,
+      "unique_vectors": 1
+    },
+    {
+      "disease": "cirrhosis",
+      "eligible": true,
+      "unique_vectors": 96
+    },
+    {
+      "disease": "coagulation (bleeding) disorder",
+      "eligible": true,
+      "unique_vectors": 24
+    },
+    {
+      "disease": "cold sore",
+      "eligible": true,
+      "unique_vectors": 79
+    },
+    {
+      "disease": "colonic polyp",
+      "eligible": true,
+      "unique_vectors": 168
+    },
+    {
+      "disease": "colorectal cancer",
+      "eligible": true,
+      "unique_vectors": 15
+    },
+    {
+      "disease": "common cold",
+      "eligible": true,
+      "unique_vectors": 813
+    },
+    {
+      "disease": "complex regional pain syndrome",
+      "eligible": true,
+      "unique_vectors": 1217
+    },
+    {
+      "disease": "concussion",
+      "eligible": true,
+      "unique_vectors": 1191
+    },
+    {
+      "disease": "conduct disorder",
+      "eligible": true,
+      "unique_vectors": 517
+    },
+    {
+      "disease": "conductive hearing loss",
+      "eligible": true,
+      "unique_vectors": 485
+    },
+    {
+      "disease": "congenital heart defect",
+      "eligible": true,
+      "unique_vectors": 11
+    },
+    {
+      "disease": "congenital malformation syndrome",
+      "eligible": false,
+      "unique_vectors": 6
+    },
+    {
+      "disease": "conjunctivitis",
+      "eligible": true,
+      "unique_vectors": 825
+    },
+    {
+      "disease": "conjunctivitis due to allergy",
+      "eligible": true,
+      "unique_vectors": 1215
+    },
+    {
+      "disease": "conjunctivitis due to bacteria",
+      "eligible": true,
+      "unique_vectors": 44
+    },
+    {
+      "disease": "conjunctivitis due to virus",
+      "eligible": true,
+      "unique_vectors": 521
+    },
+    {
+      "disease": "connective tissue disorder",
+      "eligible": false,
+      "unique_vectors": 2
+    },
+    {
+      "disease": "contact dermatitis",
+      "eligible": true,
+      "unique_vectors": 823
+    },
+    {
+      "disease": "conversion disorder",
+      "eligible": false,
+      "unique_vectors": 7
+    },
+    {
+      "disease": "cornea infection",
+      "eligible": true,
+      "unique_vectors": 816
+    },
+    {
+      "disease": "corneal abrasion",
+      "eligible": true,
+      "unique_vectors": 307
+    },
+    {
+      "disease": "corneal disorder",
+      "eligible": true,
+      "unique_vectors": 524
+    },
+    {
+      "disease": "coronary atherosclerosis",
+      "eligible": true,
+      "unique_vectors": 100
+    },
+    {
+      "disease": "cranial nerve palsy",
+      "eligible": true,
+      "unique_vectors": 172
+    },
+    {
+      "disease": "crohn disease",
+      "eligible": true,
+      "unique_vectors": 185
+    },
+    {
+      "disease": "croup",
+      "eligible": true,
+      "unique_vectors": 807
+    },
+    {
+      "disease": "crushing injury",
+      "eligible": true,
+      "unique_vectors": 37
+    },
+    {
+      "disease": "cryptococcosis",
+      "eligible": false,
+      "unique_vectors": 1
+    },
+    {
+      "disease": "cryptorchidism",
+      "eligible": false,
+      "unique_vectors": 3
+    },
+    {
+      "disease": "cushing syndrome",
+      "eligible": false,
+      "unique_vectors": 2
+    },
+    {
+      "disease": "cyst of the eyelid",
+      "eligible": false,
+      "unique_vectors": 7
+    },
+    {
+      "disease": "cystic fibrosis",
+      "eligible": false,
+      "unique_vectors": 8
+    },
+    {
+      "disease": "cysticercosis",
+      "eligible": true,
+      "unique_vectors": 11
+    },
+    {
+      "disease": "cystitis",
+      "eligible": true,
+      "unique_vectors": 1219
+    },
+    {
+      "disease": "de quervain disease",
+      "eligible": true,
+      "unique_vectors": 62
+    },
+    {
+      "disease": "decubitus ulcer",
+      "eligible": false,
+      "unique_vectors": 8
+    },
+    {
+      "disease": "deep vein thrombosis (dvt)",
+      "eligible": true,
+      "unique_vectors": 89
+    },
+    {
+      "disease": "degenerative disc disease",
+      "eligible": true,
+      "unique_vectors": 810
+    },
+    {
+      "disease": "delirium",
+      "eligible": true,
+      "unique_vectors": 460
+    },
+    {
+      "disease": "dementia",
+      "eligible": true,
+      "unique_vectors": 175
+    },
+    {
+      "disease": "dengue fever",
+      "eligible": false,
+      "unique_vectors": 1
+    },
+    {
+      "disease": "dental caries",
+      "eligible": true,
+      "unique_vectors": 1185
+    },
+    {
+      "disease": "depression",
+      "eligible": true,
+      "unique_vectors": 830
+    },
+    {
+      "disease": "dermatitis due to sun exposure",
+      "eligible": true,
+      "unique_vectors": 293
+    },
+    {
+      "disease": "developmental disability",
+      "eligible": true,
+      "unique_vectors": 825
+    },
+    {
+      "disease": "deviated nasal septum",
+      "eligible": true,
+      "unique_vectors": 488
+    },
+    {
+      "disease": "diabetes",
+      "eligible": false,
+      "unique_vectors": 1
+    },
+    {
+      "disease": "diabetes insipidus",
+      "eligible": false,
+      "unique_vectors": 2
+    },
+    {
+      "disease": "diabetic ketoacidosis",
+      "eligible": true,
+      "unique_vectors": 526
+    },
+    {
+      "disease": "diabetic kidney disease",
+      "eligible": false,
+      "unique_vectors": 1
+    },
+    {
+      "disease": "diabetic peripheral neuropathy",
+      "eligible": true,
+      "unique_vectors": 294
+    },
+    {
+      "disease": "diabetic retinopathy",
+      "eligible": true,
+      "unique_vectors": 295
+    },
+    {
+      "disease": "diaper rash",
+      "eligible": true,
+      "unique_vectors": 809
+    },
+    {
+      "disease": "dislocation of the ankle",
+      "eligible": false,
+      "unique_vectors": 9
+    },
+    {
+      "disease": "dislocation of the elbow",
+      "eligible": true,
+      "unique_vectors": 65
+    },
+    {
+      "disease": "dislocation of the finger",
+      "eligible": true,
+      "unique_vectors": 15
+    },
+    {
+      "disease": "dislocation of the foot",
+      "eligible": false,
+      "unique_vectors": 3
+    },
+    {
+      "disease": "dislocation of the hip",
+      "eligible": false,
+      "unique_vectors": 3
+    },
+    {
+      "disease": "dislocation of the knee",
+      "eligible": false,
+      "unique_vectors": 3
+    },
+    {
+      "disease": "dislocation of the patella",
+      "eligible": false,
+      "unique_vectors": 2
+    },
+    {
+      "disease": "dislocation of the shoulder",
+      "eligible": true,
+      "unique_vectors": 38
+    },
+    {
+      "disease": "dislocation of the vertebra",
+      "eligible": true,
+      "unique_vectors": 11
+    },
+    {
+      "disease": "dislocation of the wrist",
+      "eligible": true,
+      "unique_vectors": 10
+    },
+    {
+      "disease": "dissociative disorder",
+      "eligible": true,
+      "unique_vectors": 23
+    },
+    {
+      "disease": "diverticulitis",
+      "eligible": true,
+      "unique_vectors": 1214
+    },
+    {
+      "disease": "diverticulosis",
+      "eligible": true,
+      "unique_vectors": 518
+    },
+    {
+      "disease": "down syndrome",
+      "eligible": true,
+      "unique_vectors": 39
+    },
+    {
+      "disease": "drug abuse",
+      "eligible": true,
+      "unique_vectors": 471
+    },
+    {
+      "disease": "drug abuse (barbiturates)",
+      "eligible": true,
+      "unique_vectors": 33
+    },
+    {
+      "disease": "drug abuse (cocaine)",
+      "eligible": true,
+      "unique_vectors": 214
+    },
+    {
+      "disease": "drug abuse (methamphetamine)",
+      "eligible": true,
+      "unique_vectors": 155
+    },
+    {
+      "disease": "drug abuse (opioids)",
+      "eligible": true,
+      "unique_vectors": 486
+    },
+    {
+      "disease": "drug poisoning due to medication",
+      "eligible": true,
+      "unique_vectors": 93
+    },
+    {
+      "disease": "drug reaction",
+      "eligible": true,
+      "unique_vectors": 811
+    },
+    {
+      "disease": "drug withdrawal",
+      "eligible": true,
+      "unique_vectors": 93
+    },
+    {
+      "disease": "dry eye of unknown cause",
+      "eligible": true,
+      "unique_vectors": 787
+    },
+    {
+      "disease": "dumping syndrome",
+      "eligible": false,
+      "unique_vectors": 3
+    },
+    {
+      "disease": "dyshidrosis",
+      "eligible": true,
+      "unique_vectors": 25
+    },
+    {
+      "disease": "dysthymic disorder",
+      "eligible": true,
+      "unique_vectors": 317
+    },
+    {
+      "disease": "ear drum damage",
+      "eligible": true,
+      "unique_vectors": 819
+    },
+    {
+      "disease": "ear wax impaction",
+      "eligible": true,
+      "unique_vectors": 529
+    },
+    {
+      "disease": "eating disorder",
+      "eligible": true,
+      "unique_vectors": 302
+    },
+    {
+      "disease": "ectopic pregnancy",
+      "eligible": true,
+      "unique_vectors": 177
+    },
+    {
+      "disease": "ectropion",
+      "eligible": true,
+      "unique_vectors": 13
+    },
+    {
+      "disease": "eczema",
+      "eligible": true,
+      "unique_vectors": 1207
+    },
+    {
+      "disease": "edward syndrome",
+      "eligible": false,
+      "unique_vectors": 2
+    },
+    {
+      "disease": "emphysema",
+      "eligible": false,
+      "unique_vectors": 6
+    },
+    {
+      "disease": "empyema",
+      "eligible": false,
+      "unique_vectors": 3
+    },
+    {
+      "disease": "encephalitis",
+      "eligible": true,
+      "unique_vectors": 24
+    },
+    {
+      "disease": "endocarditis",
+      "eligible": true,
+      "unique_vectors": 33
+    },
+    {
+      "disease": "endometrial cancer",
+      "eligible": true,
+      "unique_vectors": 26
+    },
+    {
+      "disease": "endometrial hyperplasia",
+      "eligible": true,
+      "unique_vectors": 15
+    },
+    {
+      "disease": "endometriosis",
+      "eligible": true,
+      "unique_vectors": 267
+    },
+    {
+      "disease": "endophthalmitis",
+      "eligible": true,
+      "unique_vectors": 37
+    },
+    {
+      "disease": "envenomation from spider or animal bite",
+      "eligible": true,
+      "unique_vectors": 302
+    },
+    {
+      "disease": "ependymoma",
+      "eligible": false,
+      "unique_vectors": 6
+    },
+    {
+      "disease": "epididymitis",
+      "eligible": true,
+      "unique_vectors": 320
+    },
+    {
+      "disease": "epidural hemorrhage",
+      "eligible": false,
+      "unique_vectors": 2
+    },
+    {
+      "disease": "epilepsy",
+      "eligible": true,
+      "unique_vectors": 56
+    },
+    {
+      "disease": "erectile dysfunction",
+      "eligible": true,
+      "unique_vectors": 478
+    },
+    {
+      "disease": "erythema multiforme",
+      "eligible": true,
+      "unique_vectors": 16
+    },
+    {
+      "disease": "esophageal cancer",
+      "eligible": true,
+      "unique_vectors": 19
+    },
+    {
+      "disease": "esophageal varices",
+      "eligible": false,
+      "unique_vectors": 1
+    },
+    {
+      "disease": "esophagitis",
+      "eligible": true,
+      "unique_vectors": 1215
+    },
+    {
+      "disease": "essential tremor",
+      "eligible": true,
+      "unique_vectors": 74
+    },
+    {
+      "disease": "eustachian tube dysfunction (ear disorder)",
+      "eligible": true,
+      "unique_vectors": 810
+    },
+    {
+      "disease": "extrapyramidal effect of drugs",
+      "eligible": true,
+      "unique_vectors": 32
+    },
+    {
+      "disease": "eye alignment disorder",
+      "eligible": true,
+      "unique_vectors": 289
+    },
+    {
+      "disease": "factitious disorder",
+      "eligible": false,
+      "unique_vectors": 4
+    },
+    {
+      "disease": "female genitalia infection",
+      "eligible": true,
+      "unique_vectors": 79
+    },
+    {
+      "disease": "female infertility of unknown cause",
+      "eligible": true,
+      "unique_vectors": 15
+    },
+    {
+      "disease": "fetal alcohol syndrome",
+      "eligible": false,
+      "unique_vectors": 3
+    },
+    {
+      "disease": "fibroadenoma",
+      "eligible": true,
+      "unique_vectors": 42
+    },
+    {
+      "disease": "fibrocystic breast disease",
+      "eligible": false,
+      "unique_vectors": 7
+    },
+    {
+      "disease": "fibromyalgia",
+      "eligible": true,
+      "unique_vectors": 503
+    },
+    {
+      "disease": "flat feet",
+      "eligible": true,
+      "unique_vectors": 13
+    },
+    {
+      "disease": "floaters",
+      "eligible": true,
+      "unique_vectors": 15
+    },
+    {
+      "disease": "flu",
+      "eligible": true,
+      "unique_vectors": 521
+    },
+    {
+      "disease": "fluid overload",
+      "eligible": true,
+      "unique_vectors": 171
+    },
+    {
+      "disease": "folate deficiency",
+      "eligible": true,
+      "unique_vectors": 13
+    },
+    {
+      "disease": "food allergy",
+      "eligible": true,
+      "unique_vectors": 285
+    },
+    {
+      "disease": "foreign body in the ear",
+      "eligible": true,
+      "unique_vectors": 18
+    },
+    {
+      "disease": "foreign body in the eye",
+      "eligible": true,
+      "unique_vectors": 155
+    },
+    {
+      "disease": "foreign body in the gastrointestinal tract",
+      "eligible": true,
+      "unique_vectors": 45
+    },
+    {
+      "disease": "foreign body in the nose",
+      "eligible": false,
+      "unique_vectors": 1
+    },
+    {
+      "disease": "foreign body in the throat",
+      "eligible": true,
+      "unique_vectors": 70
+    },
+    {
+      "disease": "foreign body in the vagina",
+      "eligible": false,
+      "unique_vectors": 4
+    },
+    {
+      "disease": "fracture of the ankle",
+      "eligible": true,
+      "unique_vectors": 36
+    },
+    {
+      "disease": "fracture of the arm",
+      "eligible": true,
+      "unique_vectors": 391
+    },
+    {
+      "disease": "fracture of the facial bones",
+      "eligible": true,
+      "unique_vectors": 290
+    },
+    {
+      "disease": "fracture of the finger",
+      "eligible": false,
+      "unique_vectors": 8
+    },
+    {
+      "disease": "fracture of the foot",
+      "eligible": true,
+      "unique_vectors": 14
+    },
+    {
+      "disease": "fracture of the hand",
+      "eligible": true,
+      "unique_vectors": 98
+    },
+    {
+      "disease": "fracture of the jaw",
+      "eligible": true,
+      "unique_vectors": 33
+    },
+    {
+      "disease": "fracture of the leg",
+      "eligible": true,
+      "unique_vectors": 531
+    },
+    {
+      "disease": "fracture of the neck",
+      "eligible": true,
+      "unique_vectors": 23
+    },
+    {
+      "disease": "fracture of the patella",
+      "eligible": true,
+      "unique_vectors": 32
+    },
+    {
+      "disease": "fracture of the pelvis",
+      "eligible": true,
+      "unique_vectors": 86
+    },
+    {
+      "disease": "fracture of the rib",
+      "eligible": true,
+      "unique_vectors": 791
+    },
+    {
+      "disease": "fracture of the shoulder",
+      "eligible": true,
+      "unique_vectors": 83
+    },
+    {
+      "disease": "fracture of the skull",
+      "eligible": true,
+      "unique_vectors": 17
+    },
+    {
+      "disease": "fracture of the vertebra",
+      "eligible": true,
+      "unique_vectors": 156
+    },
+    {
+      "disease": "friedrich ataxia",
+      "eligible": false,
+      "unique_vectors": 2
+    },
+    {
+      "disease": "frostbite",
+      "eligible": false,
+      "unique_vectors": 3
+    },
+    {
+      "disease": "fungal infection of the hair",
+      "eligible": true,
+      "unique_vectors": 1212
+    },
+    {
+      "disease": "fungal infection of the skin",
+      "eligible": true,
+      "unique_vectors": 533
+    },
+    {
+      "disease": "g6pd enzyme deficiency",
+      "eligible": false,
+      "unique_vectors": 1
+    },
+    {
+      "disease": "galactorrhea of unknown cause",
+      "eligible": false,
+      "unique_vectors": 8
+    },
+    {
+      "disease": "gallstone",
+      "eligible": true,
+      "unique_vectors": 654
+    },
+    {
+      "disease": "ganglion cyst",
+      "eligible": true,
+      "unique_vectors": 530
+    },
+    {
+      "disease": "gas gangrene",
+      "eligible": false,
+      "unique_vectors": 1
+    },
+    {
+      "disease": "gastritis",
+      "eligible": true,
+      "unique_vectors": 377
+    },
+    {
+      "disease": "gastroduodenal ulcer",
+      "eligible": true,
+      "unique_vectors": 526
+    },
+    {
+      "disease": "gastroesophageal reflux disease (gerd)",
+      "eligible": true,
+      "unique_vectors": 203
+    },
+    {
+      "disease": "gastrointestinal hemorrhage",
+      "eligible": true,
+      "unique_vectors": 1214
+    },
+    {
+      "disease": "gastroparesis",
+      "eligible": true,
+      "unique_vectors": 47
+    },
+    {
+      "disease": "genital herpes",
+      "eligible": true,
+      "unique_vectors": 81
+    },
+    {
+      "disease": "gestational diabetes",
+      "eligible": true,
+      "unique_vectors": 17
+    },
+    {
+      "disease": "glaucoma",
+      "eligible": true,
+      "unique_vectors": 313
+    },
+    {
+      "disease": "glucocorticoid deficiency",
+      "eligible": false,
+      "unique_vectors": 4
+    },
+    {
+      "disease": "goiter",
+      "eligible": true,
+      "unique_vectors": 19
+    },
+    {
+      "disease": "gonorrhea",
+      "eligible": true,
+      "unique_vectors": 40
+    },
+    {
+      "disease": "gout",
+      "eligible": true,
+      "unique_vectors": 1211
+    },
+    {
+      "disease": "granuloma inguinale",
+      "eligible": false,
+      "unique_vectors": 2
+    },
+    {
+      "disease": "graves disease",
+      "eligible": true,
+      "unique_vectors": 92
+    },
+    {
+      "disease": "guillain barre syndrome",
+      "eligible": true,
+      "unique_vectors": 13
+    },
+    {
+      "disease": "gum disease",
+      "eligible": true,
+      "unique_vectors": 803
+    },
+    {
+      "disease": "gynecomastia",
+      "eligible": true,
+      "unique_vectors": 65
+    },
+    {
+      "disease": "hammer toe",
+      "eligible": false,
+      "unique_vectors": 8
+    },
+    {
+      "disease": "hashimoto thyroiditis",
+      "eligible": false,
+      "unique_vectors": 1
+    },
+    {
+      "disease": "head and neck cancer",
+      "eligible": true,
+      "unique_vectors": 166
+    },
+    {
+      "disease": "head injury",
+      "eligible": true,
+      "unique_vectors": 129
+    },
+    {
+      "disease": "headache after lumbar puncture",
+      "eligible": true,
+      "unique_vectors": 77
+    },
+    {
+      "disease": "heart attack",
+      "eligible": true,
+      "unique_vectors": 810
+    },
+    {
+      "disease": "heart block",
+      "eligible": true,
+      "unique_vectors": 476
+    },
+    {
+      "disease": "heart contusion",
+      "eligible": false,
+      "unique_vectors": 2
+    },
+    {
+      "disease": "heart failure",
+      "eligible": true,
+      "unique_vectors": 813
+    },
+    {
+      "disease": "heat exhaustion",
+      "eligible": true,
+      "unique_vectors": 138
+    },
+    {
+      "disease": "heat stroke",
+      "eligible": false,
+      "unique_vectors": 1
+    },
+    {
+      "disease": "hemangioma",
+      "eligible": true,
+      "unique_vectors": 514
+    },
+    {
+      "disease": "hemarthrosis",
+      "eligible": false,
+      "unique_vectors": 6
+    },
+    {
+      "disease": "hematoma",
+      "eligible": true,
+      "unique_vectors": 15
+    },
+    {
+      "disease": "hemiplegia",
+      "eligible": true,
+      "unique_vectors": 310
+    },
+    {
+      "disease": "hemochromatosis",
+      "eligible": false,
+      "unique_vectors": 3
+    },
+    {
+      "disease": "hemolytic anemia",
+      "eligible": false,
+      "unique_vectors": 8
+    },
+    {
+      "disease": "hemophilia",
+      "eligible": false,
+      "unique_vectors": 8
+    },
+    {
+      "disease": "hemorrhoids",
+      "eligible": true,
+      "unique_vectors": 818
+    },
+    {
+      "disease": "hepatic encephalopathy",
+      "eligible": true,
+      "unique_vectors": 19
+    },
+    {
+      "disease": "hepatitis due to a toxin",
+      "eligible": true,
+      "unique_vectors": 163
+    },
+    {
+      "disease": "herniated disk",
+      "eligible": true,
+      "unique_vectors": 828
+    },
+    {
+      "disease": "herpangina",
+      "eligible": true,
+      "unique_vectors": 302
+    },
+    {
+      "disease": "hiatal hernia",
+      "eligible": true,
+      "unique_vectors": 632
+    },
+    {
+      "disease": "hidradenitis suppurativa",
+      "eligible": true,
+      "unique_vectors": 36
+    },
+    {
+      "disease": "high blood pressure",
+      "eligible": false,
+      "unique_vectors": 1
+    },
+    {
+      "disease": "hirschsprung disease",
+      "eligible": false,
+      "unique_vectors": 4
+    },
+    {
+      "disease": "hirsutism",
+      "eligible": false,
+      "unique_vectors": 7
+    },
+    {
+      "disease": "histoplasmosis",
+      "eligible": false,
+      "unique_vectors": 2
+    },
+    {
+      "disease": "hormone disorder",
+      "eligible": true,
+      "unique_vectors": 10
+    },
+    {
+      "disease": "hpv",
+      "eligible": false,
+      "unique_vectors": 3
+    },
+    {
+      "disease": "human immunodeficiency virus infection (hiv)",
+      "eligible": false,
+      "unique_vectors": 1
+    },
+    {
+      "disease": "huntington disease",
+      "eligible": false,
+      "unique_vectors": 1
+    },
+    {
+      "disease": "hydatidiform mole",
+      "eligible": true,
+      "unique_vectors": 18
+    },
+    {
+      "disease": "hydrocele of the testicle",
+      "eligible": true,
+      "unique_vectors": 140
+    },
+    {
+      "disease": "hydrocephalus",
+      "eligible": true,
+      "unique_vectors": 72
+    },
+    {
+      "disease": "hydronephrosis",
+      "eligible": true,
+      "unique_vectors": 165
+    },
+    {
+      "disease": "hypercalcemia",
+      "eligible": false,
+      "unique_vectors": 6
+    },
+    {
+      "disease": "hypercholesterolemia",
+      "eligible": false,
+      "unique_vectors": 8
+    },
+    {
+      "disease": "hyperemesis gravidarum",
+      "eligible": true,
+      "unique_vectors": 815
+    },
+    {
+      "disease": "hypergammaglobulinemia",
+      "eligible": false,
+      "unique_vectors": 1
+    },
+    {
+      "disease": "hyperhidrosis",
+      "eligible": true,
+      "unique_vectors": 12
+    },
+    {
+      "disease": "hyperkalemia",
+      "eligible": true,
+      "unique_vectors": 503
+    },
+    {
+      "disease": "hyperlipidemia",
+      "eligible": false,
+      "unique_vectors": 2
+    },
+    {
+      "disease": "hypernatremia",
+      "eligible": true,
+      "unique_vectors": 18
+    },
+    {
+      "disease": "hyperopia",
+      "eligible": true,
+      "unique_vectors": 36
+    },
+    {
+      "disease": "hyperosmotic hyperketotic state",
+      "eligible": false,
+      "unique_vectors": 3
+    },
+    {
+      "disease": "hypertension of pregnancy",
+      "eligible": true,
+      "unique_vectors": 36
+    },
+    {
+      "disease": "hypertensive heart disease",
+      "eligible": true,
+      "unique_vectors": 804
+    },
+    {
+      "disease": "hypertrophic obstructive cardiomyopathy (hocm)",
+      "eligible": false,
+      "unique_vectors": 4
+    },
+    {
+      "disease": "hypocalcemia",
+      "eligible": true,
+      "unique_vectors": 13
+    },
+    {
+      "disease": "hypoglycemia",
+      "eligible": true,
+      "unique_vectors": 1215
+    },
+    {
+      "disease": "hypokalemia",
+      "eligible": true,
+      "unique_vectors": 387
+    },
+    {
+      "disease": "hyponatremia",
+      "eligible": true,
+      "unique_vectors": 312
+    },
+    {
+      "disease": "hypothermia",
+      "eligible": false,
+      "unique_vectors": 6
+    },
+    {
+      "disease": "hypothyroidism",
+      "eligible": true,
+      "unique_vectors": 33
+    },
+    {
+      "disease": "hypovolemia",
+      "eligible": true,
+      "unique_vectors": 287
+    },
+    {
+      "disease": "idiopathic absence of menstruation",
+      "eligible": true,
+      "unique_vectors": 292
+    },
+    {
+      "disease": "idiopathic excessive menstruation",
+      "eligible": true,
+      "unique_vectors": 832
+    },
+    {
+      "disease": "idiopathic infrequent menstruation",
+      "eligible": true,
+      "unique_vectors": 10
+    },
+    {
+      "disease": "idiopathic irregular menstrual cycle",
+      "eligible": true,
+      "unique_vectors": 815
+    },
+    {
+      "disease": "idiopathic nonmenstrual bleeding",
+      "eligible": true,
+      "unique_vectors": 25
+    },
+    {
+      "disease": "idiopathic painful menstruation",
+      "eligible": true,
+      "unique_vectors": 805
+    },
+    {
+      "disease": "ileus",
+      "eligible": true,
+      "unique_vectors": 292
+    },
+    {
+      "disease": "impetigo",
+      "eligible": true,
+      "unique_vectors": 523
+    },
+    {
+      "disease": "impulse control disorder",
+      "eligible": true,
+      "unique_vectors": 167
+    },
+    {
+      "disease": "indigestion",
+      "eligible": true,
+      "unique_vectors": 291
+    },
+    {
+      "disease": "induced abortion",
+      "eligible": true,
+      "unique_vectors": 157
+    },
+    {
+      "disease": "infection of open wound",
+      "eligible": false,
+      "unique_vectors": 7
+    },
+    {
+      "disease": "infectious gastroenteritis",
+      "eligible": true,
+      "unique_vectors": 1212
+    },
+    {
+      "disease": "ingrown toe nail",
+      "eligible": true,
+      "unique_vectors": 469
+    },
+    {
+      "disease": "inguinal hernia",
+      "eligible": true,
+      "unique_vectors": 373
+    },
+    {
+      "disease": "injury of the ankle",
+      "eligible": true,
+      "unique_vectors": 132
+    },
+    {
+      "disease": "injury to internal organ",
+      "eligible": true,
+      "unique_vectors": 34
+    },
+    {
+      "disease": "injury to the abdomen",
+      "eligible": true,
+      "unique_vectors": 14
+    },
+    {
+      "disease": "injury to the arm",
+      "eligible": true,
+      "unique_vectors": 1209
+    },
+    {
+      "disease": "injury to the face",
+      "eligible": true,
+      "unique_vectors": 279
+    },
+    {
+      "disease": "injury to the finger",
+      "eligible": false,
+      "unique_vectors": 5
+    },
+    {
+      "disease": "injury to the hand",
+      "eligible": true,
+      "unique_vectors": 71
+    },
+    {
+      "disease": "injury to the hip",
+      "eligible": false,
+      "unique_vectors": 8
+    },
+    {
+      "disease": "injury to the knee",
+      "eligible": true,
+      "unique_vectors": 20
+    },
+    {
+      "disease": "injury to the leg",
+      "eligible": true,
+      "unique_vectors": 1206
+    },
+    {
+      "disease": "injury to the shoulder",
+      "eligible": true,
+      "unique_vectors": 317
+    },
+    {
+      "disease": "injury to the spinal cord",
+      "eligible": false,
+      "unique_vectors": 8
+    },
+    {
+      "disease": "injury to the trunk",
+      "eligible": true,
+      "unique_vectors": 803
+    },
+    {
+      "disease": "insect bite",
+      "eligible": true,
+      "unique_vectors": 516
+    },
+    {
+      "disease": "insulin overdose",
+      "eligible": false,
+      "unique_vectors": 1
+    },
+    {
+      "disease": "interstitial lung disease",
+      "eligible": true,
+      "unique_vectors": 336
+    },
+    {
+      "disease": "intertrigo (skin condition)",
+      "eligible": true,
+      "unique_vectors": 42
+    },
+    {
+      "disease": "intestinal cancer",
+      "eligible": true,
+      "unique_vectors": 16
+    },
+    {
+      "disease": "intestinal disease",
+      "eligible": true,
+      "unique_vectors": 117
+    },
+    {
+      "disease": "intestinal malabsorption",
+      "eligible": true,
+      "unique_vectors": 66
+    },
+    {
+      "disease": "intestinal obstruction",
+      "eligible": true,
+      "unique_vectors": 288
+    },
+    {
+      "disease": "intracerebral hemorrhage",
+      "eligible": true,
+      "unique_vectors": 466
+    },
+    {
+      "disease": "intracranial abscess",
+      "eligible": false,
+      "unique_vectors": 3
+    },
+    {
+      "disease": "intracranial hemorrhage",
+      "eligible": true,
+      "unique_vectors": 151
+    },
+    {
+      "disease": "intussusception",
+      "eligible": false,
+      "unique_vectors": 3
+    },
+    {
+      "disease": "iridocyclitis",
+      "eligible": true,
+      "unique_vectors": 301
+    },
+    {
+      "disease": "iron deficiency anemia",
+      "eligible": true,
+      "unique_vectors": 380
+    },
+    {
+      "disease": "irritable bowel syndrome",
+      "eligible": true,
+      "unique_vectors": 323
+    },
+    {
+      "disease": "ischemia of the bowel",
+      "eligible": true,
+      "unique_vectors": 97
+    },
+    {
+      "disease": "ischemic heart disease",
+      "eligible": true,
+      "unique_vectors": 797
+    },
+    {
+      "disease": "itching of unknown cause",
+      "eligible": true,
+      "unique_vectors": 312
+    },
+    {
+      "disease": "jaw disorder",
+      "eligible": true,
+      "unique_vectors": 168
+    },
+    {
+      "disease": "joint effusion",
+      "eligible": true,
+      "unique_vectors": 292
+    },
+    {
+      "disease": "juvenile rheumatoid arthritis",
+      "eligible": true,
+      "unique_vectors": 13
+    },
+    {
+      "disease": "kaposi sarcoma",
+      "eligible": false,
+      "unique_vectors": 1
+    },
+    {
+      "disease": "kidney cancer",
+      "eligible": true,
+      "unique_vectors": 24
+    },
+    {
+      "disease": "kidney disease due to longstanding hypertension",
+      "eligible": false,
+      "unique_vectors": 7
+    },
+    {
+      "disease": "kidney failure",
+      "eligible": true,
+      "unique_vectors": 161
+    },
+    {
+      "disease": "kidney stone",
+      "eligible": true,
+      "unique_vectors": 792
+    },
+    {
+      "disease": "knee ligament or meniscus tear",
+      "eligible": true,
+      "unique_vectors": 64
+    },
+    {
+      "disease": "labyrinthitis",
+      "eligible": true,
+      "unique_vectors": 504
+    },
+    {
+      "disease": "lactose intolerance",
+      "eligible": true,
+      "unique_vectors": 41
+    },
+    {
+      "disease": "laryngitis",
+      "eligible": true,
+      "unique_vectors": 522
+    },
+    {
+      "disease": "lateral epicondylitis (tennis elbow)",
+      "eligible": true,
+      "unique_vectors": 175
+    },
+    {
+      "disease": "leukemia",
+      "eligible": false,
+      "unique_vectors": 6
+    },
+    {
+      "disease": "lewy body dementia",
+      "eligible": true,
+      "unique_vectors": 23
+    },
+    {
+      "disease": "lice",
+      "eligible": true,
+      "unique_vectors": 14
+    },
+    {
+      "disease": "lichen planus",
+      "eligible": false,
+      "unique_vectors": 1
+    },
+    {
+      "disease": "lichen simplex",
+      "eligible": true,
+      "unique_vectors": 18
+    },
+    {
+      "disease": "lipoma",
+      "eligible": true,
+      "unique_vectors": 517
+    },
+    {
+      "disease": "liver cancer",
+      "eligible": true,
+      "unique_vectors": 18
+    },
+    {
+      "disease": "liver disease",
+      "eligible": true,
+      "unique_vectors": 1209
+    },
+    {
+      "disease": "lumbago",
+      "eligible": true,
+      "unique_vectors": 69
+    },
+    {
+      "disease": "lung cancer",
+      "eligible": true,
+      "unique_vectors": 47
+    },
+    {
+      "disease": "lung contusion",
+      "eligible": false,
+      "unique_vectors": 6
+    },
+    {
+      "disease": "lyme disease",
+      "eligible": true,
+      "unique_vectors": 86
+    },
+    {
+      "disease": "lymphadenitis",
+      "eligible": true,
+      "unique_vectors": 290
+    },
+    {
+      "disease": "lymphangitis",
+      "eligible": false,
+      "unique_vectors": 1
+    },
+    {
+      "disease": "lymphedema",
+      "eligible": true,
+      "unique_vectors": 315
+    },
+    {
+      "disease": "lymphogranuloma venereum",
+      "eligible": false,
+      "unique_vectors": 5
+    },
+    {
+      "disease": "lymphoma",
+      "eligible": true,
+      "unique_vectors": 25
+    },
+    {
+      "disease": "macular degeneration",
+      "eligible": true,
+      "unique_vectors": 817
+    },
+    {
+      "disease": "magnesium deficiency",
+      "eligible": false,
+      "unique_vectors": 7
+    },
+    {
+      "disease": "malaria",
+      "eligible": false,
+      "unique_vectors": 5
+    },
+    {
+      "disease": "male genitalia infection",
+      "eligible": true,
+      "unique_vectors": 40
+    },
+    {
+      "disease": "malignant hypertension",
+      "eligible": true,
+      "unique_vectors": 83
+    },
+    {
+      "disease": "marijuana abuse",
+      "eligible": true,
+      "unique_vectors": 1210
+    },
+    {
+      "disease": "mastectomy",
+      "eligible": false,
+      "unique_vectors": 4
+    },
+    {
+      "disease": "mastoiditis",
+      "eligible": true,
+      "unique_vectors": 43
+    },
+    {
+      "disease": "meckel diverticulum",
+      "eligible": false,
+      "unique_vectors": 1
+    },
+    {
+      "disease": "melanoma",
+      "eligible": true,
+      "unique_vectors": 156
+    },
+    {
+      "disease": "meniere disease",
+      "eligible": true,
+      "unique_vectors": 160
+    },
+    {
+      "disease": "meningioma",
+      "eligible": false,
+      "unique_vectors": 7
+    },
+    {
+      "disease": "meningitis",
+      "eligible": true,
+      "unique_vectors": 159
+    },
+    {
+      "disease": "menopause",
+      "eligible": true,
+      "unique_vectors": 28
+    },
+    {
+      "disease": "metabolic disorder",
+      "eligible": false,
+      "unique_vectors": 9
+    },
+    {
+      "disease": "metastatic cancer",
+      "eligible": true,
+      "unique_vectors": 19
+    },
+    {
+      "disease": "migraine",
+      "eligible": true,
+      "unique_vectors": 203
+    },
+    {
+      "disease": "missed abortion",
+      "eligible": true,
+      "unique_vectors": 260
+    },
+    {
+      "disease": "mitral valve disease",
+      "eligible": true,
+      "unique_vectors": 304
+    },
+    {
+      "disease": "mittelschmerz",
+      "eligible": true,
+      "unique_vectors": 29
+    },
+    {
+      "disease": "molluscum contagiosum",
+      "eligible": true,
+      "unique_vectors": 313
+    },
+    {
+      "disease": "mononeuritis",
+      "eligible": true,
+      "unique_vectors": 530
+    },
+    {
+      "disease": "mononucleosis",
+      "eligible": true,
+      "unique_vectors": 159
+    },
+    {
+      "disease": "moyamoya disease",
+      "eligible": false,
+      "unique_vectors": 2
+    },
+    {
+      "disease": "mucositis",
+      "eligible": true,
+      "unique_vectors": 156
+    },
+    {
+      "disease": "multiple myeloma",
+      "eligible": true,
+      "unique_vectors": 19
+    },
+    {
+      "disease": "multiple sclerosis",
+      "eligible": true,
+      "unique_vectors": 825
+    },
+    {
+      "disease": "mumps",
+      "eligible": false,
+      "unique_vectors": 8
+    },
+    {
+      "disease": "muscle spasm",
+      "eligible": true,
+      "unique_vectors": 522
+    },
+    {
+      "disease": "muscular dystrophy",
+      "eligible": true,
+      "unique_vectors": 12
+    },
+    {
+      "disease": "myasthenia gravis",
+      "eligible": true,
+      "unique_vectors": 50
+    },
+    {
+      "disease": "myelodysplastic syndrome",
+      "eligible": false,
+      "unique_vectors": 2
+    },
+    {
+      "disease": "myocarditis",
+      "eligible": false,
+      "unique_vectors": 1
+    },
+    {
+      "disease": "myoclonus",
+      "eligible": false,
+      "unique_vectors": 6
+    },
+    {
+      "disease": "myopia",
+      "eligible": true,
+      "unique_vectors": 292
+    },
+    {
+      "disease": "myositis",
+      "eligible": true,
+      "unique_vectors": 41
+    },
+    {
+      "disease": "narcolepsy",
+      "eligible": true,
+      "unique_vectors": 79
+    },
+    {
+      "disease": "nasal polyp",
+      "eligible": true,
+      "unique_vectors": 164
+    },
+    {
+      "disease": "necrotizing fasciitis",
+      "eligible": false,
+      "unique_vectors": 2
+    },
+    {
+      "disease": "neonatal jaundice",
+      "eligible": true,
+      "unique_vectors": 17
+    },
+    {
+      "disease": "nerve impingement near the shoulder",
+      "eligible": true,
+      "unique_vectors": 159
+    },
+    {
+      "disease": "neuralgia",
+      "eligible": true,
+      "unique_vectors": 529
+    },
+    {
+      "disease": "neurofibromatosis",
+      "eligible": false,
+      "unique_vectors": 9
+    },
+    {
+      "disease": "neuropathy due to drugs",
+      "eligible": true,
+      "unique_vectors": 12
+    },
+    {
+      "disease": "neurosis",
+      "eligible": true,
+      "unique_vectors": 801
+    },
+    {
+      "disease": "nonalcoholic liver disease (nash)",
+      "eligible": true,
+      "unique_vectors": 18
+    },
+    {
+      "disease": "noninfectious gastroenteritis",
+      "eligible": true,
+      "unique_vectors": 1206
+    },
+    {
+      "disease": "normal pressure hydrocephalus",
+      "eligible": false,
+      "unique_vectors": 7
+    },
+    {
+      "disease": "nose disorder",
+      "eligible": true,
+      "unique_vectors": 1218
+    },
+    {
+      "disease": "obesity",
+      "eligible": false,
+      "unique_vectors": 2
+    },
+    {
+      "disease": "obsessive compulsive disorder (ocd)",
+      "eligible": true,
+      "unique_vectors": 286
+    },
+    {
+      "disease": "obstructive sleep apnea (osa)",
+      "eligible": true,
+      "unique_vectors": 1196
+    },
+    {
+      "disease": "omphalitis",
+      "eligible": false,
+      "unique_vectors": 1
+    },
+    {
+      "disease": "onychomycosis",
+      "eligible": true,
+      "unique_vectors": 309
+    },
+    {
+      "disease": "open wound due to trauma",
+      "eligible": false,
+      "unique_vectors": 1
+    },
+    {
+      "disease": "open wound from surgical incision",
+      "eligible": false,
+      "unique_vectors": 4
+    },
+    {
+      "disease": "open wound of the abdomen",
+      "eligible": false,
+      "unique_vectors": 2
+    },
+    {
+      "disease": "open wound of the arm",
+      "eligible": false,
+      "unique_vectors": 7
+    },
+    {
+      "disease": "open wound of the back",
+      "eligible": false,
+      "unique_vectors": 6
+    },
+    {
+      "disease": "open wound of the cheek",
+      "eligible": false,
+      "unique_vectors": 1
+    },
+    {
+      "disease": "open wound of the chest",
+      "eligible": false,
+      "unique_vectors": 1
+    },
+    {
+      "disease": "open wound of the ear",
+      "eligible": true,
+      "unique_vectors": 17
+    },
+    {
+      "disease": "open wound of the eye",
+      "eligible": true,
+      "unique_vectors": 16
+    },
+    {
+      "disease": "open wound of the face",
+      "eligible": false,
+      "unique_vectors": 1
+    },
+    {
+      "disease": "open wound of the finger",
+      "eligible": false,
+      "unique_vectors": 4
+    },
+    {
+      "disease": "open wound of the foot",
+      "eligible": true,
+      "unique_vectors": 27
+    },
+    {
+      "disease": "open wound of the hand",
+      "eligible": false,
+      "unique_vectors": 4
+    },
+    {
+      "disease": "open wound of the head",
+      "eligible": false,
+      "unique_vectors": 1
+    },
+    {
+      "disease": "open wound of the jaw",
+      "eligible": false,
+      "unique_vectors": 1
+    },
+    {
+      "disease": "open wound of the knee",
+      "eligible": false,
+      "unique_vectors": 1
+    },
+    {
+      "disease": "open wound of the lip",
+      "eligible": true,
+      "unique_vectors": 12
+    },
+    {
+      "disease": "open wound of the mouth",
+      "eligible": true,
+      "unique_vectors": 29
+    },
+    {
+      "disease": "open wound of the neck",
+      "eligible": true,
+      "unique_vectors": 15
+    },
+    {
+      "disease": "open wound of the nose",
+      "eligible": false,
+      "unique_vectors": 8
+    },
+    {
+      "disease": "open wound of the shoulder",
+      "eligible": false,
+      "unique_vectors": 2
+    },
+    {
+      "disease": "oppositional disorder",
+      "eligible": true,
+      "unique_vectors": 389
+    },
+    {
+      "disease": "optic neuritis",
+      "eligible": false,
+      "unique_vectors": 5
+    },
+    {
+      "disease": "oral leukoplakia",
+      "eligible": false,
+      "unique_vectors": 2
+    },
+    {
+      "disease": "oral mucosal lesion",
+      "eligible": true,
+      "unique_vectors": 492
+    },
+    {
+      "disease": "oral thrush (yeast infection)",
+      "eligible": true,
+      "unique_vectors": 529
+    },
+    {
+      "disease": "orbital cellulitis",
+      "eligible": true,
+      "unique_vectors": 80
+    },
+    {
+      "disease": "orthostatic hypotension",
+      "eligible": true,
+      "unique_vectors": 146
+    },
+    {
+      "disease": "osteoarthritis",
+      "eligible": true,
+      "unique_vectors": 796
+    },
+    {
+      "disease": "osteochondroma",
+      "eligible": true,
+      "unique_vectors": 82
+    },
+    {
+      "disease": "osteochondrosis",
+      "eligible": true,
+      "unique_vectors": 42
+    },
+    {
+      "disease": "osteomyelitis",
+      "eligible": true,
+      "unique_vectors": 75
+    },
+    {
+      "disease": "osteoporosis",
+      "eligible": true,
+      "unique_vectors": 272
+    },
+    {
+      "disease": "otitis externa (swimmer's ear)",
+      "eligible": true,
+      "unique_vectors": 808
+    },
+    {
+      "disease": "otitis media",
+      "eligible": true,
+      "unique_vectors": 807
+    },
+    {
+      "disease": "otosclerosis",
+      "eligible": false,
+      "unique_vectors": 3
+    },
+    {
+      "disease": "ovarian cancer",
+      "eligible": false,
+      "unique_vectors": 9
+    },
+    {
+      "disease": "ovarian cyst",
+      "eligible": true,
+      "unique_vectors": 293
+    },
+    {
+      "disease": "ovarian torsion",
+      "eligible": true,
+      "unique_vectors": 34
+    },
+    {
+      "disease": "overflow incontinence",
+      "eligible": true,
+      "unique_vectors": 81
+    },
+    {
+      "disease": "pain after an operation",
+      "eligible": true,
+      "unique_vectors": 806
+    },
+    {
+      "disease": "pain disorder affecting the neck",
+      "eligible": true,
+      "unique_vectors": 266
+    },
+    {
+      "disease": "pancreatic cancer",
+      "eligible": true,
+      "unique_vectors": 84
+    },
+    {
+      "disease": "panic attack",
+      "eligible": true,
+      "unique_vectors": 67
+    },
+    {
+      "disease": "panic disorder",
+      "eligible": true,
+      "unique_vectors": 810
+    },
+    {
+      "disease": "parasitic disease",
+      "eligible": true,
+      "unique_vectors": 27
+    },
+    {
+      "disease": "parathyroid adenoma",
+      "eligible": false,
+      "unique_vectors": 8
+    },
+    {
+      "disease": "parkinson disease",
+      "eligible": true,
+      "unique_vectors": 315
+    },
+    {
+      "disease": "paronychia",
+      "eligible": true,
+      "unique_vectors": 277
+    },
+    {
+      "disease": "paroxysmal supraventricular tachycardia",
+      "eligible": true,
+      "unique_vectors": 261
+    },
+    {
+      "disease": "paroxysmal ventricular tachycardia",
+      "eligible": true,
+      "unique_vectors": 517
+    },
+    {
+      "disease": "pelvic fistula",
+      "eligible": false,
+      "unique_vectors": 2
+    },
+    {
+      "disease": "pelvic inflammatory disease",
+      "eligible": true,
+      "unique_vectors": 804
+    },
+    {
+      "disease": "pelvic organ prolapse",
+      "eligible": true,
+      "unique_vectors": 291
+    },
+    {
+      "disease": "pemphigus",
+      "eligible": false,
+      "unique_vectors": 2
+    },
+    {
+      "disease": "pericarditis",
+      "eligible": true,
+      "unique_vectors": 38
+    },
+    {
+      "disease": "peripheral arterial disease",
+      "eligible": true,
+      "unique_vectors": 101
+    },
+    {
+      "disease": "peripheral arterial embolism",
+      "eligible": true,
+      "unique_vectors": 47
+    },
+    {
+      "disease": "peripheral nerve disorder",
+      "eligible": true,
+      "unique_vectors": 1215
+    },
+    {
+      "disease": "perirectal infection",
+      "eligible": true,
+      "unique_vectors": 41
+    },
+    {
+      "disease": "peritonitis",
+      "eligible": true,
+      "unique_vectors": 179
+    },
+    {
+      "disease": "peritonsillar abscess",
+      "eligible": true,
+      "unique_vectors": 85
+    },
+    {
+      "disease": "persistent vomiting of unknown cause",
+      "eligible": true,
+      "unique_vectors": 87
+    },
+    {
+      "disease": "personality disorder",
+      "eligible": true,
+      "unique_vectors": 816
+    },
+    {
+      "disease": "peyronie disease",
+      "eligible": true,
+      "unique_vectors": 12
+    },
+    {
+      "disease": "pharyngitis",
+      "eligible": true,
+      "unique_vectors": 11
+    },
+    {
+      "disease": "phimosis",
+      "eligible": true,
+      "unique_vectors": 35
+    },
+    {
+      "disease": "pilonidal cyst",
+      "eligible": true,
+      "unique_vectors": 168
+    },
+    {
+      "disease": "pinguecula",
+      "eligible": false,
+      "unique_vectors": 5
+    },
+    {
+      "disease": "pinworm infection",
+      "eligible": true,
+      "unique_vectors": 36
+    },
+    {
+      "disease": "pituitary adenoma",
+      "eligible": true,
+      "unique_vectors": 10
+    },
+    {
+      "disease": "pituitary disorder",
+      "eligible": true,
+      "unique_vectors": 10
+    },
+    {
+      "disease": "pityriasis rosea",
+      "eligible": true,
+      "unique_vectors": 41
+    },
+    {
+      "disease": "placenta previa",
+      "eligible": false,
+      "unique_vectors": 5
+    },
+    {
+      "disease": "placental abruption",
+      "eligible": false,
+      "unique_vectors": 4
+    },
+    {
+      "disease": "plantar fasciitis",
+      "eligible": true,
+      "unique_vectors": 87
+    },
+    {
+      "disease": "pleural effusion",
+      "eligible": true,
+      "unique_vectors": 480
+    },
+    {
+      "disease": "pneumoconiosis",
+      "eligible": false,
+      "unique_vectors": 6
+    },
+    {
+      "disease": "pneumonia",
+      "eligible": true,
+      "unique_vectors": 1212
+    },
+    {
+      "disease": "pneumothorax",
+      "eligible": true,
+      "unique_vectors": 155
+    },
+    {
+      "disease": "poisoning due to analgesics",
+      "eligible": true,
+      "unique_vectors": 35
+    },
+    {
+      "disease": "poisoning due to anticonvulsants",
+      "eligible": true,
+      "unique_vectors": 10
+    },
+    {
+      "disease": "poisoning due to antidepressants",
+      "eligible": false,
+      "unique_vectors": 8
+    },
+    {
+      "disease": "poisoning due to antihypertensives",
+      "eligible": false,
+      "unique_vectors": 3
+    },
+    {
+      "disease": "poisoning due to antimicrobial drugs",
+      "eligible": true,
+      "unique_vectors": 34
+    },
+    {
+      "disease": "poisoning due to antipsychotics",
+      "eligible": false,
+      "unique_vectors": 2
+    },
+    {
+      "disease": "poisoning due to ethylene glycol",
+      "eligible": false,
+      "unique_vectors": 7
+    },
+    {
+      "disease": "poisoning due to gas",
+      "eligible": true,
+      "unique_vectors": 69
+    },
+    {
+      "disease": "poisoning due to opioids",
+      "eligible": false,
+      "unique_vectors": 3
+    },
+    {
+      "disease": "poisoning due to sedatives",
+      "eligible": true,
+      "unique_vectors": 46
+    },
+    {
+      "disease": "polycystic kidney disease",
+      "eligible": true,
+      "unique_vectors": 118
+    },
+    {
+      "disease": "polycystic ovarian syndrome (pcos)",
+      "eligible": true,
+      "unique_vectors": 148
+    },
+    {
+      "disease": "polycythemia vera",
+      "eligible": true,
+      "unique_vectors": 14
+    },
+    {
+      "disease": "polymyalgia rheumatica",
+      "eligible": true,
+      "unique_vectors": 47
+    },
+    {
+      "disease": "post-traumatic stress disorder (ptsd)",
+      "eligible": true,
+      "unique_vectors": 492
+    },
+    {
+      "disease": "postoperative infection",
+      "eligible": true,
+      "unique_vectors": 42
+    },
+    {
+      "disease": "postpartum depression",
+      "eligible": true,
+      "unique_vectors": 306
+    },
+    {
+      "disease": "preeclampsia",
+      "eligible": true,
+      "unique_vectors": 204
+    },
+    {
+      "disease": "pregnancy",
+      "eligible": true,
+      "unique_vectors": 13
+    },
+    {
+      "disease": "premature atrial contractions (pacs)",
+      "eligible": true,
+      "unique_vectors": 81
+    },
+    {
+      "disease": "premature ovarian failure",
+      "eligible": true,
+      "unique_vectors": 17
+    },
+    {
+      "disease": "premature rupture of amniotic membrane",
+      "eligible": false,
+      "unique_vectors": 2
+    },
+    {
+      "disease": "premature ventricular contractions (pvcs)",
+      "eligible": true,
+      "unique_vectors": 159
+    },
+    {
+      "disease": "premenstrual tension syndrome",
+      "eligible": true,
+      "unique_vectors": 42
+    },
+    {
+      "disease": "presbyacusis",
+      "eligible": true,
+      "unique_vectors": 23
+    },
+    {
+      "disease": "presbyopia",
+      "eligible": true,
+      "unique_vectors": 70
+    },
+    {
+      "disease": "priapism",
+      "eligible": false,
+      "unique_vectors": 4
+    },
+    {
+      "disease": "primary immunodeficiency",
+      "eligible": true,
+      "unique_vectors": 13
+    },
+    {
+      "disease": "primary insomnia",
+      "eligible": true,
+      "unique_vectors": 77
+    },
+    {
+      "disease": "primary kidney disease",
+      "eligible": true,
+      "unique_vectors": 16
+    },
+    {
+      "disease": "primary thrombocythemia",
+      "eligible": false,
+      "unique_vectors": 1
+    },
+    {
+      "disease": "problem during pregnancy",
+      "eligible": true,
+      "unique_vectors": 820
+    },
+    {
+      "disease": "prostate cancer",
+      "eligible": true,
+      "unique_vectors": 104
+    },
+    {
+      "disease": "prostatitis",
+      "eligible": true,
+      "unique_vectors": 510
+    },
+    {
+      "disease": "protein deficiency",
+      "eligible": true,
+      "unique_vectors": 16
+    },
+    {
+      "disease": "pseudohypoparathyroidism",
+      "eligible": false,
+      "unique_vectors": 6
+    },
+    {
+      "disease": "pseudotumor cerebri",
+      "eligible": true,
+      "unique_vectors": 16
+    },
+    {
+      "disease": "psoriasis",
+      "eligible": true,
+      "unique_vectors": 825
+    },
+    {
+      "disease": "psychosexual disorder",
+      "eligible": true,
+      "unique_vectors": 87
+    },
+    {
+      "disease": "psychotic disorder",
+      "eligible": true,
+      "unique_vectors": 802
+    },
+    {
+      "disease": "pterygium",
+      "eligible": true,
+      "unique_vectors": 76
+    },
+    {
+      "disease": "pulmonary congestion",
+      "eligible": true,
+      "unique_vectors": 304
+    },
+    {
+      "disease": "pulmonary embolism",
+      "eligible": true,
+      "unique_vectors": 791
+    },
+    {
+      "disease": "pulmonary eosinophilia",
+      "eligible": true,
+      "unique_vectors": 84
+    },
+    {
+      "disease": "pulmonary fibrosis",
+      "eligible": true,
+      "unique_vectors": 67
+    },
+    {
+      "disease": "pulmonary hypertension",
+      "eligible": true,
+      "unique_vectors": 284
+    },
+    {
+      "disease": "pulmonic valve disease",
+      "eligible": false,
+      "unique_vectors": 1
+    },
+    {
+      "disease": "pyelonephritis",
+      "eligible": true,
+      "unique_vectors": 803
+    },
+    {
+      "disease": "pyloric stenosis",
+      "eligible": false,
+      "unique_vectors": 5
+    },
+    {
+      "disease": "pyogenic skin infection",
+      "eligible": true,
+      "unique_vectors": 834
+    },
+    {
+      "disease": "raynaud disease",
+      "eligible": false,
+      "unique_vectors": 3
+    },
+    {
+      "disease": "reactive arthritis",
+      "eligible": false,
+      "unique_vectors": 1
+    },
+    {
+      "disease": "rectal disorder",
+      "eligible": true,
+      "unique_vectors": 808
+    },
+    {
+      "disease": "restless leg syndrome",
+      "eligible": true,
+      "unique_vectors": 156
+    },
+    {
+      "disease": "retinal detachment",
+      "eligible": true,
+      "unique_vectors": 154
+    },
+    {
+      "disease": "retinopathy due to high blood pressure",
+      "eligible": true,
+      "unique_vectors": 47
+    },
+    {
+      "disease": "rhabdomyolysis",
+      "eligible": true,
+      "unique_vectors": 12
+    },
+    {
+      "disease": "rheumatic fever",
+      "eligible": false,
+      "unique_vectors": 1
+    },
+    {
+      "disease": "rheumatoid arthritis",
+      "eligible": true,
+      "unique_vectors": 518
+    },
+    {
+      "disease": "rocky mountain spotted fever",
+      "eligible": false,
+      "unique_vectors": 1
+    },
+    {
+      "disease": "rosacea",
+      "eligible": true,
+      "unique_vectors": 521
+    },
+    {
+      "disease": "rotator cuff injury",
+      "eligible": true,
+      "unique_vectors": 39
+    },
+    {
+      "disease": "salivary gland disorder",
+      "eligible": true,
+      "unique_vectors": 11
+    },
+    {
+      "disease": "sarcoidosis",
+      "eligible": true,
+      "unique_vectors": 161
+    },
+    {
+      "disease": "scabies",
+      "eligible": true,
+      "unique_vectors": 83
+    },
+    {
+      "disease": "scar",
+      "eligible": true,
+      "unique_vectors": 91
+    },
+    {
+      "disease": "scarlet fever",
+      "eligible": true,
+      "unique_vectors": 37
+    },
+    {
+      "disease": "schizophrenia",
+      "eligible": true,
+      "unique_vectors": 811
+    },
+    {
+      "disease": "sciatica",
+      "eligible": true,
+      "unique_vectors": 521
+    },
+    {
+      "disease": "scleritis",
+      "eligible": true,
+      "unique_vectors": 16
+    },
+    {
+      "disease": "scleroderma",
+      "eligible": true,
+      "unique_vectors": 170
+    },
+    {
+      "disease": "scoliosis",
+      "eligible": true,
+      "unique_vectors": 86
+    },
+    {
+      "disease": "scurvy",
+      "eligible": false,
+      "unique_vectors": 1
+    },
+    {
+      "disease": "seasonal allergies (hay fever)",
+      "eligible": true,
+      "unique_vectors": 816
+    },
+    {
+      "disease": "sebaceous cyst",
+      "eligible": true,
+      "unique_vectors": 821
+    },
+    {
+      "disease": "seborrheic dermatitis",
+      "eligible": true,
+      "unique_vectors": 800
+    },
+    {
+      "disease": "seborrheic keratosis",
+      "eligible": true,
+      "unique_vectors": 782
+    },
+    {
+      "disease": "sensorineural hearing loss",
+      "eligible": true,
+      "unique_vectors": 529
+    },
+    {
+      "disease": "sepsis",
+      "eligible": true,
+      "unique_vectors": 824
+    },
+    {
+      "disease": "septic arthritis",
+      "eligible": true,
+      "unique_vectors": 21
+    },
+    {
+      "disease": "shingles (herpes zoster)",
+      "eligible": true,
+      "unique_vectors": 244
+    },
+    {
+      "disease": "sialoadenitis",
+      "eligible": true,
+      "unique_vectors": 318
+    },
+    {
+      "disease": "sick sinus syndrome",
+      "eligible": true,
+      "unique_vectors": 120
+    },
+    {
+      "disease": "sickle cell anemia",
+      "eligible": true,
+      "unique_vectors": 136
+    },
+    {
+      "disease": "sickle cell crisis",
+      "eligible": true,
+      "unique_vectors": 808
+    },
+    {
+      "disease": "sinus bradycardia",
+      "eligible": true,
+      "unique_vectors": 814
+    },
+    {
+      "disease": "sjogren syndrome",
+      "eligible": true,
+      "unique_vectors": 32
+    },
+    {
+      "disease": "skin cancer",
+      "eligible": true,
+      "unique_vectors": 519
+    },
+    {
+      "disease": "skin disorder",
+      "eligible": true,
+      "unique_vectors": 520
+    },
+    {
+      "disease": "skin pigmentation disorder",
+      "eligible": true,
+      "unique_vectors": 805
+    },
+    {
+      "disease": "skin polyp",
+      "eligible": true,
+      "unique_vectors": 807
+    },
+    {
+      "disease": "smoking or tobacco addiction",
+      "eligible": true,
+      "unique_vectors": 792
+    },
+    {
+      "disease": "social phobia",
+      "eligible": true,
+      "unique_vectors": 309
+    },
+    {
+      "disease": "soft tissue sarcoma",
+      "eligible": true,
+      "unique_vectors": 89
+    },
+    {
+      "disease": "somatization disorder",
+      "eligible": true,
+      "unique_vectors": 20
+    },
+    {
+      "disease": "spermatocele",
+      "eligible": true,
+      "unique_vectors": 22
+    },
+    {
+      "disease": "spherocytosis",
+      "eligible": false,
+      "unique_vectors": 2
+    },
+    {
+      "disease": "spina bifida",
+      "eligible": true,
+      "unique_vectors": 37
+    },
+    {
+      "disease": "spinal stenosis",
+      "eligible": true,
+      "unique_vectors": 1207
+    },
+    {
+      "disease": "spinocerebellar ataxia",
+      "eligible": false,
+      "unique_vectors": 6
+    },
+    {
+      "disease": "spondylitis",
+      "eligible": true,
+      "unique_vectors": 292
+    },
+    {
+      "disease": "spondylolisthesis",
+      "eligible": true,
+      "unique_vectors": 514
+    },
+    {
+      "disease": "spondylosis",
+      "eligible": true,
+      "unique_vectors": 1216
+    },
+    {
+      "disease": "spontaneous abortion",
+      "eligible": true,
+      "unique_vectors": 1212
+    },
+    {
+      "disease": "sporotrichosis",
+      "eligible": false,
+      "unique_vectors": 1
+    },
+    {
+      "disease": "sprain or strain",
+      "eligible": true,
+      "unique_vectors": 1212
+    },
+    {
+      "disease": "stenosis of the tear duct",
+      "eligible": true,
+      "unique_vectors": 23
+    },
+    {
+      "disease": "stomach cancer",
+      "eligible": true,
+      "unique_vectors": 65
+    },
+    {
+      "disease": "strep throat",
+      "eligible": true,
+      "unique_vectors": 1210
+    },
+    {
+      "disease": "stress incontinence",
+      "eligible": true,
+      "unique_vectors": 91
+    },
+    {
+      "disease": "stricture of the esophagus",
+      "eligible": true,
+      "unique_vectors": 19
+    },
+    {
+      "disease": "stroke",
+      "eligible": true,
+      "unique_vectors": 478
+    },
+    {
+      "disease": "stye",
+      "eligible": true,
+      "unique_vectors": 832
+    },
+    {
+      "disease": "subacute thyroiditis",
+      "eligible": true,
+      "unique_vectors": 12
+    },
+    {
+      "disease": "subarachnoid hemorrhage",
+      "eligible": true,
+      "unique_vectors": 45
+    },
+    {
+      "disease": "subconjunctival hemorrhage",
+      "eligible": true,
+      "unique_vectors": 143
+    },
+    {
+      "disease": "subdural hemorrhage",
+      "eligible": true,
+      "unique_vectors": 44
+    },
+    {
+      "disease": "substance-related mental disorder",
+      "eligible": true,
+      "unique_vectors": 88
+    },
+    {
+      "disease": "syndrome of inappropriate secretion of adh (siadh)",
+      "eligible": false,
+      "unique_vectors": 3
+    },
+    {
+      "disease": "syphilis",
+      "eligible": false,
+      "unique_vectors": 8
+    },
+    {
+      "disease": "syringomyelia",
+      "eligible": false,
+      "unique_vectors": 6
+    },
+    {
+      "disease": "systemic lupus erythematosis (sle)",
+      "eligible": true,
+      "unique_vectors": 46
+    },
+    {
+      "disease": "teething syndrome",
+      "eligible": true,
+      "unique_vectors": 290
+    },
+    {
+      "disease": "temporary or benign blood in urine",
+      "eligible": true,
+      "unique_vectors": 612
+    },
+    {
+      "disease": "temporomandibular joint disorder",
+      "eligible": true,
+      "unique_vectors": 172
+    },
+    {
+      "disease": "tendinitis",
+      "eligible": true,
+      "unique_vectors": 533
+    },
+    {
+      "disease": "tension headache",
+      "eligible": true,
+      "unique_vectors": 158
+    },
+    {
+      "disease": "testicular cancer",
+      "eligible": false,
+      "unique_vectors": 2
+    },
+    {
+      "disease": "testicular disorder",
+      "eligible": true,
+      "unique_vectors": 17
+    },
+    {
+      "disease": "testicular torsion",
+      "eligible": true,
+      "unique_vectors": 39
+    },
+    {
+      "disease": "thalassemia",
+      "eligible": false,
+      "unique_vectors": 1
+    },
+    {
+      "disease": "thoracic aortic aneurysm",
+      "eligible": true,
+      "unique_vectors": 86
+    },
+    {
+      "disease": "thoracic outlet syndrome",
+      "eligible": true,
+      "unique_vectors": 48
+    },
+    {
+      "disease": "threatened pregnancy",
+      "eligible": true,
+      "unique_vectors": 818
+    },
+    {
+      "disease": "thrombocytopenia",
+      "eligible": true,
+      "unique_vectors": 68
+    },
+    {
+      "disease": "thrombophlebitis",
+      "eligible": true,
+      "unique_vectors": 292
+    },
+    {
+      "disease": "thyroid cancer",
+      "eligible": false,
+      "unique_vectors": 5
+    },
+    {
+      "disease": "thyroid disease",
+      "eligible": false,
+      "unique_vectors": 7
+    },
+    {
+      "disease": "thyroid nodule",
+      "eligible": true,
+      "unique_vectors": 78
+    },
+    {
+      "disease": "tic (movement) disorder",
+      "eligible": true,
+      "unique_vectors": 39
+    },
+    {
+      "disease": "tietze syndrome",
+      "eligible": true,
+      "unique_vectors": 171
+    },
+    {
+      "disease": "tinnitus of unknown cause",
+      "eligible": true,
+      "unique_vectors": 159
+    },
+    {
+      "disease": "tonsillar hypertrophy",
+      "eligible": true,
+      "unique_vectors": 171
+    },
+    {
+      "disease": "tonsillitis",
+      "eligible": true,
+      "unique_vectors": 286
+    },
+    {
+      "disease": "tooth abscess",
+      "eligible": true,
+      "unique_vectors": 529
+    },
+    {
+      "disease": "tooth disorder",
+      "eligible": true,
+      "unique_vectors": 511
+    },
+    {
+      "disease": "torticollis",
+      "eligible": true,
+      "unique_vectors": 159
+    },
+    {
+      "disease": "tourette syndrome",
+      "eligible": true,
+      "unique_vectors": 13
+    },
+    {
+      "disease": "toxic multinodular goiter",
+      "eligible": true,
+      "unique_vectors": 23
+    },
+    {
+      "disease": "toxoplasmosis",
+      "eligible": false,
+      "unique_vectors": 3
+    },
+    {
+      "disease": "tracheitis",
+      "eligible": true,
+      "unique_vectors": 70
+    },
+    {
+      "disease": "transient ischemic attack",
+      "eligible": true,
+      "unique_vectors": 525
+    },
+    {
+      "disease": "trichiasis",
+      "eligible": true,
+      "unique_vectors": 12
+    },
+    {
+      "disease": "trichinosis",
+      "eligible": false,
+      "unique_vectors": 1
+    },
+    {
+      "disease": "trichomonas infection",
+      "eligible": true,
+      "unique_vectors": 161
+    },
+    {
+      "disease": "tricuspid valve disease",
+      "eligible": false,
+      "unique_vectors": 1
+    },
+    {
+      "disease": "trigeminal neuralgia",
+      "eligible": true,
+      "unique_vectors": 78
+    },
+    {
+      "disease": "trigger finger (finger disorder)",
+      "eligible": true,
+      "unique_vectors": 42
+    },
+    {
+      "disease": "tuberculosis",
+      "eligible": true,
+      "unique_vectors": 10
+    },
+    {
+      "disease": "tuberous sclerosis",
+      "eligible": false,
+      "unique_vectors": 3
+    },
+    {
+      "disease": "turner syndrome",
+      "eligible": false,
+      "unique_vectors": 1
+    },
+    {
+      "disease": "typhoid fever",
+      "eligible": false,
+      "unique_vectors": 1
+    },
+    {
+      "disease": "ulcerative colitis",
+      "eligible": true,
+      "unique_vectors": 269
+    },
+    {
+      "disease": "urethral disorder",
+      "eligible": true,
+      "unique_vectors": 151
+    },
+    {
+      "disease": "urethral stricture",
+      "eligible": true,
+      "unique_vectors": 157
+    },
+    {
+      "disease": "urethral valves",
+      "eligible": true,
+      "unique_vectors": 14
+    },
+    {
+      "disease": "urethritis",
+      "eligible": true,
+      "unique_vectors": 299
+    },
+    {
+      "disease": "urge incontinence",
+      "eligible": true,
+      "unique_vectors": 293
+    },
+    {
+      "disease": "urinary tract infection",
+      "eligible": true,
+      "unique_vectors": 815
+    },
+    {
+      "disease": "urinary tract obstruction",
+      "eligible": true,
+      "unique_vectors": 532
+    },
+    {
+      "disease": "uterine atony",
+      "eligible": true,
+      "unique_vectors": 194
+    },
+    {
+      "disease": "uterine cancer",
+      "eligible": false,
+      "unique_vectors": 2
+    },
+    {
+      "disease": "uterine fibroids",
+      "eligible": true,
+      "unique_vectors": 288
+    },
+    {
+      "disease": "uveitis",
+      "eligible": false,
+      "unique_vectors": 4
+    },
+    {
+      "disease": "vacterl syndrome",
+      "eligible": false,
+      "unique_vectors": 1
+    },
+    {
+      "disease": "vaginal cyst",
+      "eligible": true,
+      "unique_vectors": 1215
+    },
+    {
+      "disease": "vaginal yeast infection",
+      "eligible": true,
+      "unique_vectors": 494
+    },
+    {
+      "disease": "vaginismus",
+      "eligible": true,
+      "unique_vectors": 31
+    },
+    {
+      "disease": "vaginitis",
+      "eligible": true,
+      "unique_vectors": 821
+    },
+    {
+      "disease": "valley fever",
+      "eligible": false,
+      "unique_vectors": 6
+    },
+    {
+      "disease": "varicocele of the testicles",
+      "eligible": true,
+      "unique_vectors": 530
+    },
+    {
+      "disease": "varicose veins",
+      "eligible": true,
+      "unique_vectors": 101
+    },
+    {
+      "disease": "vasculitis",
+      "eligible": true,
+      "unique_vectors": 163
+    },
+    {
+      "disease": "venous insufficiency",
+      "eligible": true,
+      "unique_vectors": 168
+    },
+    {
+      "disease": "vertebrobasilar insufficiency",
+      "eligible": false,
+      "unique_vectors": 5
+    },
+    {
+      "disease": "vesicoureteral reflux",
+      "eligible": false,
+      "unique_vectors": 7
+    },
+    {
+      "disease": "viral exanthem",
+      "eligible": true,
+      "unique_vectors": 492
+    },
+    {
+      "disease": "viral hepatitis",
+      "eligible": true,
+      "unique_vectors": 20
+    },
+    {
+      "disease": "viral warts",
+      "eligible": true,
+      "unique_vectors": 289
+    },
+    {
+      "disease": "vitamin a deficiency",
+      "eligible": false,
+      "unique_vectors": 1
+    },
+    {
+      "disease": "vitamin b12 deficiency",
+      "eligible": true,
+      "unique_vectors": 24
+    },
+    {
+      "disease": "vitamin d deficiency",
+      "eligible": false,
+      "unique_vectors": 4
+    },
+    {
+      "disease": "vitreous degeneration",
+      "eligible": true,
+      "unique_vectors": 169
+    },
+    {
+      "disease": "vitreous hemorrhage",
+      "eligible": true,
+      "unique_vectors": 24
+    },
+    {
+      "disease": "vocal cord polyp",
+      "eligible": true,
+      "unique_vectors": 21
+    },
+    {
+      "disease": "volvulus",
+      "eligible": false,
+      "unique_vectors": 5
+    },
+    {
+      "disease": "von willebrand disease",
+      "eligible": false,
+      "unique_vectors": 2
+    },
+    {
+      "disease": "vulvar cancer",
+      "eligible": false,
+      "unique_vectors": 3
+    },
+    {
+      "disease": "vulvar disorder",
+      "eligible": true,
+      "unique_vectors": 44
+    },
+    {
+      "disease": "vulvodynia",
+      "eligible": true,
+      "unique_vectors": 1218
+    },
+    {
+      "disease": "wernicke korsakoff syndrome",
+      "eligible": false,
+      "unique_vectors": 3
+    },
+    {
+      "disease": "white blood cell disease",
+      "eligible": true,
+      "unique_vectors": 313
+    },
+    {
+      "disease": "whooping cough",
+      "eligible": true,
+      "unique_vectors": 13
+    },
+    {
+      "disease": "wilson disease",
+      "eligible": false,
+      "unique_vectors": 3
+    },
+    {
+      "disease": "yeast infection",
+      "eligible": true,
+      "unique_vectors": 291
+    },
+    {
+      "disease": "zenker diverticulum",
+      "eligible": false,
+      "unique_vectors": 3
+    }
+  ],
+  "class_support": [
+    {
+      "disease": "abdominal aortic aneurysm",
+      "test": 5,
+      "train": 31,
+      "unique_vectors": 40,
+      "validation": 4
+    },
+    {
+      "disease": "abdominal hernia",
+      "test": 29,
+      "train": 124,
+      "unique_vectors": 180,
+      "validation": 27
+    },
+    {
+      "disease": "abscess of nose",
+      "test": 25,
+      "train": 99,
+      "unique_vectors": 151,
+      "validation": 27
+    },
+    {
+      "disease": "abscess of the pharynx",
+      "test": 20,
+      "train": 123,
+      "unique_vectors": 164,
+      "validation": 21
+    },
+    {
+      "disease": "acariasis",
+      "test": 1,
+      "train": 8,
+      "unique_vectors": 10,
+      "validation": 1
+    },
+    {
+      "disease": "achalasia",
+      "test": 5,
+      "train": 19,
+      "unique_vectors": 25,
+      "validation": 1
+    },
+    {
+      "disease": "acne",
+      "test": 53,
+      "train": 206,
+      "unique_vectors": 306,
+      "validation": 47
+    },
+    {
+      "disease": "actinic keratosis",
+      "test": 117,
+      "train": 573,
+      "unique_vectors": 808,
+      "validation": 118
+    },
+    {
+      "disease": "acute bronchiolitis",
+      "test": 199,
+      "train": 828,
+      "unique_vectors": 1204,
+      "validation": 177
+    },
+    {
+      "disease": "acute bronchitis",
+      "test": 192,
+      "train": 828,
+      "unique_vectors": 1213,
+      "validation": 193
+    },
+    {
+      "disease": "acute bronchospasm",
+      "test": 131,
+      "train": 567,
+      "unique_vectors": 812,
+      "validation": 114
+    },
+    {
+      "disease": "acute glaucoma",
+      "test": 27,
+      "train": 104,
+      "unique_vectors": 148,
+      "validation": 17
+    },
+    {
+      "disease": "acute kidney injury",
+      "test": 126,
+      "train": 560,
+      "unique_vectors": 808,
+      "validation": 122
+    },
+    {
+      "disease": "acute otitis media",
+      "test": 77,
+      "train": 379,
+      "unique_vectors": 537,
+      "validation": 81
+    },
+    {
+      "disease": "acute pancreatitis",
+      "test": 181,
+      "train": 848,
+      "unique_vectors": 1207,
+      "validation": 178
+    },
+    {
+      "disease": "acute respiratory distress syndrome (ards)",
+      "test": 37,
+      "train": 212,
+      "unique_vectors": 300,
+      "validation": 51
+    },
+    {
+      "disease": "acute sinusitis",
+      "test": 124,
+      "train": 591,
+      "unique_vectors": 828,
+      "validation": 113
+    },
+    {
+      "disease": "acute stress reaction",
+      "test": 118,
+      "train": 555,
+      "unique_vectors": 799,
+      "validation": 126
+    },
+    {
+      "disease": "adhesive capsulitis of the shoulder",
+      "test": 9,
+      "train": 20,
+      "unique_vectors": 33,
+      "validation": 4
+    },
+    {
+      "disease": "adjustment reaction",
+      "test": 48,
+      "train": 220,
+      "unique_vectors": 311,
+      "validation": 43
+    },
+    {
+      "disease": "alcohol abuse",
+      "test": 55,
+      "train": 206,
+      "unique_vectors": 313,
+      "validation": 52
+    },
+    {
+      "disease": "alcohol intoxication",
+      "test": 22,
+      "train": 116,
+      "unique_vectors": 160,
+      "validation": 22
+    },
+    {
+      "disease": "alcohol withdrawal",
+      "test": 79,
+      "train": 376,
+      "unique_vectors": 520,
+      "validation": 65
+    },
+    {
+      "disease": "alcoholic liver disease",
+      "test": 19,
+      "train": 68,
+      "unique_vectors": 99,
+      "validation": 12
+    },
+    {
+      "disease": "allergy",
+      "test": 124,
+      "train": 554,
+      "unique_vectors": 803,
+      "validation": 125
+    },
+    {
+      "disease": "allergy to animals",
+      "test": 1,
+      "train": 8,
+      "unique_vectors": 11,
+      "validation": 2
+    },
+    {
+      "disease": "alopecia",
+      "test": 20,
+      "train": 128,
+      "unique_vectors": 173,
+      "validation": 25
+    },
+    {
+      "disease": "alzheimer disease",
+      "test": 24,
+      "train": 116,
+      "unique_vectors": 172,
+      "validation": 32
+    },
+    {
+      "disease": "amblyopia",
+      "test": 2,
+      "train": 9,
+      "unique_vectors": 16,
+      "validation": 5
+    },
+    {
+      "disease": "amyotrophic lateral sclerosis (als)",
+      "test": 1,
+      "train": 11,
+      "unique_vectors": 14,
+      "validation": 2
+    },
+    {
+      "disease": "anal fissure",
+      "test": 25,
+      "train": 94,
+      "unique_vectors": 141,
+      "validation": 22
+    },
+    {
+      "disease": "anemia",
+      "test": 22,
+      "train": 113,
+      "unique_vectors": 157,
+      "validation": 22
+    },
+    {
+      "disease": "anemia due to chronic kidney disease",
+      "test": 5,
+      "train": 26,
+      "unique_vectors": 34,
+      "validation": 3
+    },
+    {
+      "disease": "angina",
+      "test": 123,
+      "train": 577,
+      "unique_vectors": 826,
+      "validation": 126
+    },
+    {
+      "disease": "ankylosing spondylitis",
+      "test": 73,
+      "train": 342,
+      "unique_vectors": 479,
+      "validation": 64
+    },
+    {
+      "disease": "anxiety",
+      "test": 173,
+      "train": 853,
+      "unique_vectors": 1198,
+      "validation": 172
+    },
+    {
+      "disease": "aortic valve disease",
+      "test": 40,
+      "train": 195,
+      "unique_vectors": 284,
+      "validation": 49
+    },
+    {
+      "disease": "aphthous ulcer",
+      "test": 19,
+      "train": 91,
+      "unique_vectors": 137,
+      "validation": 27
+    },
+    {
+      "disease": "aplastic anemia",
+      "test": 3,
+      "train": 24,
+      "unique_vectors": 32,
+      "validation": 5
+    },
+    {
+      "disease": "appendicitis",
+      "test": 128,
+      "train": 544,
+      "unique_vectors": 808,
+      "validation": 136
+    },
+    {
+      "disease": "arrhythmia",
+      "test": 10,
+      "train": 91,
+      "unique_vectors": 124,
+      "validation": 23
+    },
+    {
+      "disease": "arthritis of the hip",
+      "test": 170,
+      "train": 867,
+      "unique_vectors": 1210,
+      "validation": 173
+    },
+    {
+      "disease": "ascending cholangitis",
+      "test": 2,
+      "train": 15,
+      "unique_vectors": 19,
+      "validation": 2
+    },
+    {
+      "disease": "asperger syndrome",
+      "test": 22,
+      "train": 131,
+      "unique_vectors": 173,
+      "validation": 20
+    },
+    {
+      "disease": "asthma",
+      "test": 118,
+      "train": 561,
+      "unique_vectors": 814,
+      "validation": 135
+    },
+    {
+      "disease": "astigmatism",
+      "test": 25,
+      "train": 105,
+      "unique_vectors": 156,
+      "validation": 26
+    },
+    {
+      "disease": "atelectasis",
+      "test": 4,
+      "train": 22,
+      "unique_vectors": 34,
+      "validation": 8
+    },
+    {
+      "disease": "athlete's foot",
+      "test": 23,
+      "train": 127,
+      "unique_vectors": 180,
+      "validation": 30
+    },
+    {
+      "disease": "atonic bladder",
+      "test": 5,
+      "train": 14,
+      "unique_vectors": 21,
+      "validation": 2
+    },
+    {
+      "disease": "atrial fibrillation",
+      "test": 9,
+      "train": 48,
+      "unique_vectors": 68,
+      "validation": 11
+    },
+    {
+      "disease": "atrial flutter",
+      "test": 20,
+      "train": 98,
+      "unique_vectors": 134,
+      "validation": 16
+    },
+    {
+      "disease": "atrophic skin condition",
+      "test": 48,
+      "train": 184,
+      "unique_vectors": 283,
+      "validation": 51
+    },
+    {
+      "disease": "atrophic vaginitis",
+      "test": 28,
+      "train": 111,
+      "unique_vectors": 162,
+      "validation": 23
+    },
+    {
+      "disease": "atrophy of the corpus cavernosum",
+      "test": 4,
+      "train": 8,
+      "unique_vectors": 13,
+      "validation": 1
+    },
+    {
+      "disease": "attention deficit hyperactivity disorder (adhd)",
+      "test": 39,
+      "train": 220,
+      "unique_vectors": 310,
+      "validation": 51
+    },
+    {
+      "disease": "autism",
+      "test": 47,
+      "train": 197,
+      "unique_vectors": 306,
+      "validation": 62
+    },
+    {
+      "disease": "autonomic nervous system disorder",
+      "test": 1,
+      "train": 17,
+      "unique_vectors": 19,
+      "validation": 1
+    },
+    {
+      "disease": "balanitis",
+      "test": 50,
+      "train": 205,
+      "unique_vectors": 298,
+      "validation": 43
+    },
+    {
+      "disease": "bell palsy",
+      "test": 83,
+      "train": 372,
+      "unique_vectors": 534,
+      "validation": 79
+    },
+    {
+      "disease": "benign kidney cyst",
+      "test": 16,
+      "train": 59,
+      "unique_vectors": 90,
+      "validation": 15
+    },
+    {
+      "disease": "benign paroxysmal positional vertical (bppv)",
+      "test": 45,
+      "train": 199,
+      "unique_vectors": 285,
+      "validation": 41
+    },
+    {
+      "disease": "benign prostatic hyperplasia (bph)",
+      "test": 177,
+      "train": 852,
+      "unique_vectors": 1206,
+      "validation": 177
+    },
+    {
+      "disease": "benign vaginal discharge (leukorrhea)",
+      "test": 88,
+      "train": 353,
+      "unique_vectors": 525,
+      "validation": 84
+    },
+    {
+      "disease": "bipolar disorder",
+      "test": 85,
+      "train": 370,
+      "unique_vectors": 537,
+      "validation": 82
+    },
+    {
+      "disease": "bladder cancer",
+      "test": 14,
+      "train": 44,
+      "unique_vectors": 66,
+      "validation": 8
+    },
+    {
+      "disease": "bladder disorder",
+      "test": 52,
+      "train": 207,
+      "unique_vectors": 303,
+      "validation": 44
+    },
+    {
+      "disease": "bladder obstruction",
+      "test": 32,
+      "train": 105,
+      "unique_vectors": 155,
+      "validation": 18
+    },
+    {
+      "disease": "blepharitis",
+      "test": 134,
+      "train": 549,
+      "unique_vectors": 802,
+      "validation": 119
+    },
+    {
+      "disease": "bone cancer",
+      "test": 4,
+      "train": 16,
+      "unique_vectors": 22,
+      "validation": 2
+    },
+    {
+      "disease": "bone disorder",
+      "test": 13,
+      "train": 59,
+      "unique_vectors": 91,
+      "validation": 19
+    },
+    {
+      "disease": "bone spur of the calcaneous",
+      "test": 2,
+      "train": 9,
+      "unique_vectors": 13,
+      "validation": 2
+    },
+    {
+      "disease": "brachial neuritis",
+      "test": 139,
+      "train": 569,
+      "unique_vectors": 824,
+      "validation": 116
+    },
+    {
+      "disease": "brain cancer",
+      "test": 19,
+      "train": 101,
+      "unique_vectors": 140,
+      "validation": 20
+    },
+    {
+      "disease": "breast infection (mastitis)",
+      "test": 47,
+      "train": 210,
+      "unique_vectors": 309,
+      "validation": 52
+    },
+    {
+      "disease": "broken tooth",
+      "test": 14,
+      "train": 61,
+      "unique_vectors": 80,
+      "validation": 5
+    },
+    {
+      "disease": "bunion",
+      "test": 2,
+      "train": 9,
+      "unique_vectors": 12,
+      "validation": 1
+    },
+    {
+      "disease": "burn",
+      "test": 7,
+      "train": 18,
+      "unique_vectors": 30,
+      "validation": 5
+    },
+    {
+      "disease": "bursitis",
+      "test": 183,
+      "train": 846,
+      "unique_vectors": 1208,
+      "validation": 179
+    },
+    {
+      "disease": "callus",
+      "test": 45,
+      "train": 216,
+      "unique_vectors": 322,
+      "validation": 61
+    },
+    {
+      "disease": "carbon monoxide poisoning",
+      "test": 2,
+      "train": 33,
+      "unique_vectors": 37,
+      "validation": 2
+    },
+    {
+      "disease": "cardiac arrest",
+      "test": 31,
+      "train": 106,
+      "unique_vectors": 155,
+      "validation": 18
+    },
+    {
+      "disease": "cardiomyopathy",
+      "test": 20,
+      "train": 112,
+      "unique_vectors": 156,
+      "validation": 24
+    },
+    {
+      "disease": "carpal tunnel syndrome",
+      "test": 129,
+      "train": 566,
+      "unique_vectors": 819,
+      "validation": 124
+    },
+    {
+      "disease": "cataract",
+      "test": 78,
+      "train": 339,
+      "unique_vectors": 484,
+      "validation": 67
+    },
+    {
+      "disease": "celiac disease",
+      "test": 2,
+      "train": 18,
+      "unique_vectors": 25,
+      "validation": 5
+    },
+    {
+      "disease": "cellulitis or abscess of mouth",
+      "test": 7,
+      "train": 48,
+      "unique_vectors": 62,
+      "validation": 7
+    },
+    {
+      "disease": "central retinal artery or vein occlusion",
+      "test": 8,
+      "train": 22,
+      "unique_vectors": 37,
+      "validation": 7
+    },
+    {
+      "disease": "cerebral edema",
+      "test": 3,
+      "train": 27,
+      "unique_vectors": 36,
+      "validation": 6
+    },
+    {
+      "disease": "cerebral palsy",
+      "test": 9,
+      "train": 31,
+      "unique_vectors": 47,
+      "validation": 7
+    },
+    {
+      "disease": "cervical cancer",
+      "test": 6,
+      "train": 21,
+      "unique_vectors": 31,
+      "validation": 4
+    },
+    {
+      "disease": "cervicitis",
+      "test": 22,
+      "train": 128,
+      "unique_vectors": 184,
+      "validation": 34
+    },
+    {
+      "disease": "chalazion",
+      "test": 82,
+      "train": 368,
+      "unique_vectors": 524,
+      "validation": 74
+    },
+    {
+      "disease": "chickenpox",
+      "test": 5,
+      "train": 27,
+      "unique_vectors": 37,
+      "validation": 5
+    },
+    {
+      "disease": "chlamydia",
+      "test": 6,
+      "train": 33,
+      "unique_vectors": 47,
+      "validation": 8
+    },
+    {
+      "disease": "cholecystitis",
+      "test": 158,
+      "train": 717,
+      "unique_vectors": 1032,
+      "validation": 157
+    },
+    {
+      "disease": "choledocholithiasis",
+      "test": 45,
+      "train": 200,
+      "unique_vectors": 288,
+      "validation": 43
+    },
+    {
+      "disease": "chondromalacia of the patella",
+      "test": 5,
+      "train": 26,
+      "unique_vectors": 37,
+      "validation": 6
+    },
+    {
+      "disease": "chorioretinitis",
+      "test": 1,
+      "train": 18,
+      "unique_vectors": 22,
+      "validation": 3
+    },
+    {
+      "disease": "chronic back pain",
+      "test": 113,
+      "train": 579,
+      "unique_vectors": 805,
+      "validation": 113
+    },
+    {
+      "disease": "chronic constipation",
+      "test": 130,
+      "train": 576,
+      "unique_vectors": 827,
+      "validation": 121
+    },
+    {
+      "disease": "chronic glaucoma",
+      "test": 77,
+      "train": 371,
+      "unique_vectors": 522,
+      "validation": 74
+    },
+    {
+      "disease": "chronic knee pain",
+      "test": 29,
+      "train": 101,
+      "unique_vectors": 150,
+      "validation": 20
+    },
+    {
+      "disease": "chronic obstructive pulmonary disease (copd)",
+      "test": 111,
+      "train": 577,
+      "unique_vectors": 812,
+      "validation": 124
+    },
+    {
+      "disease": "chronic otitis media",
+      "test": 81,
+      "train": 366,
+      "unique_vectors": 521,
+      "validation": 74
+    },
+    {
+      "disease": "chronic pain disorder",
+      "test": 81,
+      "train": 364,
+      "unique_vectors": 528,
+      "validation": 83
+    },
+    {
+      "disease": "chronic pancreatitis",
+      "test": 26,
+      "train": 95,
+      "unique_vectors": 149,
+      "validation": 28
+    },
+    {
+      "disease": "chronic rheumatic fever",
+      "test": 11,
+      "train": 56,
+      "unique_vectors": 77,
+      "validation": 10
+    },
+    {
+      "disease": "chronic sinusitis",
+      "test": 80,
+      "train": 351,
+      "unique_vectors": 507,
+      "validation": 76
+    },
+    {
+      "disease": "cirrhosis",
+      "test": 20,
+      "train": 60,
+      "unique_vectors": 96,
+      "validation": 16
+    },
+    {
+      "disease": "coagulation (bleeding) disorder",
+      "test": 2,
+      "train": 17,
+      "unique_vectors": 24,
+      "validation": 5
+    },
+    {
+      "disease": "cold sore",
+      "test": 14,
+      "train": 53,
+      "unique_vectors": 79,
+      "validation": 12
+    },
+    {
+      "disease": "colonic polyp",
+      "test": 19,
+      "train": 127,
+      "unique_vectors": 168,
+      "validation": 22
+    },
+    {
+      "disease": "colorectal cancer",
+      "test": 2,
+      "train": 11,
+      "unique_vectors": 15,
+      "validation": 2
+    },
+    {
+      "disease": "common cold",
+      "test": 118,
+      "train": 576,
+      "unique_vectors": 813,
+      "validation": 119
+    },
+    {
+      "disease": "complex regional pain syndrome",
+      "test": 195,
+      "train": 840,
+      "unique_vectors": 1217,
+      "validation": 182
+    },
+    {
+      "disease": "concussion",
+      "test": 181,
+      "train": 795,
+      "unique_vectors": 1191,
+      "validation": 215
+    },
+    {
+      "disease": "conduct disorder",
+      "test": 89,
+      "train": 359,
+      "unique_vectors": 517,
+      "validation": 69
+    },
+    {
+      "disease": "conductive hearing loss",
+      "test": 72,
+      "train": 343,
+      "unique_vectors": 485,
+      "validation": 70
+    },
+    {
+      "disease": "congenital heart defect",
+      "test": 1,
+      "train": 9,
+      "unique_vectors": 11,
+      "validation": 1
+    },
+    {
+      "disease": "conjunctivitis",
+      "test": 112,
+      "train": 596,
+      "unique_vectors": 825,
+      "validation": 117
+    },
+    {
+      "disease": "conjunctivitis due to allergy",
+      "test": 190,
+      "train": 865,
+      "unique_vectors": 1215,
+      "validation": 160
+    },
+    {
+      "disease": "conjunctivitis due to bacteria",
+      "test": 7,
+      "train": 35,
+      "unique_vectors": 44,
+      "validation": 2
+    },
+    {
+      "disease": "conjunctivitis due to virus",
+      "test": 68,
+      "train": 378,
+      "unique_vectors": 521,
+      "validation": 75
+    },
+    {
+      "disease": "contact dermatitis",
+      "test": 134,
+      "train": 566,
+      "unique_vectors": 823,
+      "validation": 123
+    },
+    {
+      "disease": "cornea infection",
+      "test": 128,
+      "train": 563,
+      "unique_vectors": 816,
+      "validation": 125
+    },
+    {
+      "disease": "corneal abrasion",
+      "test": 52,
+      "train": 205,
+      "unique_vectors": 307,
+      "validation": 50
+    },
+    {
+      "disease": "corneal disorder",
+      "test": 70,
+      "train": 378,
+      "unique_vectors": 524,
+      "validation": 76
+    },
+    {
+      "disease": "coronary atherosclerosis",
+      "test": 13,
+      "train": 71,
+      "unique_vectors": 100,
+      "validation": 16
+    },
+    {
+      "disease": "cranial nerve palsy",
+      "test": 35,
+      "train": 112,
+      "unique_vectors": 172,
+      "validation": 25
+    },
+    {
+      "disease": "crohn disease",
+      "test": 24,
+      "train": 136,
+      "unique_vectors": 185,
+      "validation": 25
+    },
+    {
+      "disease": "croup",
+      "test": 131,
+      "train": 556,
+      "unique_vectors": 807,
+      "validation": 120
+    },
+    {
+      "disease": "crushing injury",
+      "test": 7,
+      "train": 23,
+      "unique_vectors": 37,
+      "validation": 7
+    },
+    {
+      "disease": "cysticercosis",
+      "test": 4,
+      "train": 6,
+      "unique_vectors": 11,
+      "validation": 1
+    },
+    {
+      "disease": "cystitis",
+      "test": 180,
+      "train": 877,
+      "unique_vectors": 1219,
+      "validation": 162
+    },
+    {
+      "disease": "de quervain disease",
+      "test": 10,
+      "train": 42,
+      "unique_vectors": 62,
+      "validation": 10
+    },
+    {
+      "disease": "deep vein thrombosis (dvt)",
+      "test": 10,
+      "train": 65,
+      "unique_vectors": 89,
+      "validation": 14
+    },
+    {
+      "disease": "degenerative disc disease",
+      "test": 110,
+      "train": 567,
+      "unique_vectors": 810,
+      "validation": 133
+    },
+    {
+      "disease": "delirium",
+      "test": 69,
+      "train": 322,
+      "unique_vectors": 460,
+      "validation": 69
+    },
+    {
+      "disease": "dementia",
+      "test": 22,
+      "train": 128,
+      "unique_vectors": 175,
+      "validation": 25
+    },
+    {
+      "disease": "dental caries",
+      "test": 158,
+      "train": 831,
+      "unique_vectors": 1185,
+      "validation": 196
+    },
+    {
+      "disease": "depression",
+      "test": 124,
+      "train": 585,
+      "unique_vectors": 830,
+      "validation": 121
+    },
+    {
+      "disease": "dermatitis due to sun exposure",
+      "test": 44,
+      "train": 208,
+      "unique_vectors": 293,
+      "validation": 41
+    },
+    {
+      "disease": "developmental disability",
+      "test": 144,
+      "train": 577,
+      "unique_vectors": 825,
+      "validation": 104
+    },
+    {
+      "disease": "deviated nasal septum",
+      "test": 77,
+      "train": 338,
+      "unique_vectors": 488,
+      "validation": 73
+    },
+    {
+      "disease": "diabetic ketoacidosis",
+      "test": 68,
+      "train": 386,
+      "unique_vectors": 526,
+      "validation": 72
+    },
+    {
+      "disease": "diabetic peripheral neuropathy",
+      "test": 42,
+      "train": 207,
+      "unique_vectors": 294,
+      "validation": 45
+    },
+    {
+      "disease": "diabetic retinopathy",
+      "test": 48,
+      "train": 194,
+      "unique_vectors": 295,
+      "validation": 53
+    },
+    {
+      "disease": "diaper rash",
+      "test": 123,
+      "train": 566,
+      "unique_vectors": 809,
+      "validation": 120
+    },
+    {
+      "disease": "dislocation of the elbow",
+      "test": 12,
+      "train": 45,
+      "unique_vectors": 65,
+      "validation": 8
+    },
+    {
+      "disease": "dislocation of the finger",
+      "test": 1,
+      "train": 12,
+      "unique_vectors": 15,
+      "validation": 2
+    },
+    {
+      "disease": "dislocation of the shoulder",
+      "test": 7,
+      "train": 26,
+      "unique_vectors": 38,
+      "validation": 5
+    },
+    {
+      "disease": "dislocation of the vertebra",
+      "test": 2,
+      "train": 8,
+      "unique_vectors": 11,
+      "validation": 1
+    },
+    {
+      "disease": "dislocation of the wrist",
+      "test": 2,
+      "train": 7,
+      "unique_vectors": 10,
+      "validation": 1
+    },
+    {
+      "disease": "dissociative disorder",
+      "test": 5,
+      "train": 14,
+      "unique_vectors": 23,
+      "validation": 4
+    },
+    {
+      "disease": "diverticulitis",
+      "test": 181,
+      "train": 843,
+      "unique_vectors": 1214,
+      "validation": 190
+    },
+    {
+      "disease": "diverticulosis",
+      "test": 85,
+      "train": 339,
+      "unique_vectors": 518,
+      "validation": 94
+    },
+    {
+      "disease": "down syndrome",
+      "test": 2,
+      "train": 31,
+      "unique_vectors": 39,
+      "validation": 6
+    },
+    {
+      "disease": "drug abuse",
+      "test": 76,
+      "train": 328,
+      "unique_vectors": 471,
+      "validation": 67
+    },
+    {
+      "disease": "drug abuse (barbiturates)",
+      "test": 4,
+      "train": 27,
+      "unique_vectors": 33,
+      "validation": 2
+    },
+    {
+      "disease": "drug abuse (cocaine)",
+      "test": 28,
+      "train": 152,
+      "unique_vectors": 214,
+      "validation": 34
+    },
+    {
+      "disease": "drug abuse (methamphetamine)",
+      "test": 26,
+      "train": 101,
+      "unique_vectors": 155,
+      "validation": 28
+    },
+    {
+      "disease": "drug abuse (opioids)",
+      "test": 64,
+      "train": 353,
+      "unique_vectors": 486,
+      "validation": 69
+    },
+    {
+      "disease": "drug poisoning due to medication",
+      "test": 15,
+      "train": 71,
+      "unique_vectors": 93,
+      "validation": 7
+    },
+    {
+      "disease": "drug reaction",
+      "test": 139,
+      "train": 569,
+      "unique_vectors": 811,
+      "validation": 103
+    },
+    {
+      "disease": "drug withdrawal",
+      "test": 13,
+      "train": 68,
+      "unique_vectors": 93,
+      "validation": 12
+    },
+    {
+      "disease": "dry eye of unknown cause",
+      "test": 115,
+      "train": 553,
+      "unique_vectors": 787,
+      "validation": 119
+    },
+    {
+      "disease": "dyshidrosis",
+      "test": 3,
+      "train": 17,
+      "unique_vectors": 25,
+      "validation": 5
+    },
+    {
+      "disease": "dysthymic disorder",
+      "test": 49,
+      "train": 211,
+      "unique_vectors": 317,
+      "validation": 57
+    },
+    {
+      "disease": "ear drum damage",
+      "test": 128,
+      "train": 569,
+      "unique_vectors": 819,
+      "validation": 122
+    },
+    {
+      "disease": "ear wax impaction",
+      "test": 86,
+      "train": 365,
+      "unique_vectors": 529,
+      "validation": 78
+    },
+    {
+      "disease": "eating disorder",
+      "test": 47,
+      "train": 214,
+      "unique_vectors": 302,
+      "validation": 41
+    },
+    {
+      "disease": "ectopic pregnancy",
+      "test": 23,
+      "train": 130,
+      "unique_vectors": 177,
+      "validation": 24
+    },
+    {
+      "disease": "ectropion",
+      "test": 1,
+      "train": 9,
+      "unique_vectors": 13,
+      "validation": 3
+    },
+    {
+      "disease": "eczema",
+      "test": 184,
+      "train": 858,
+      "unique_vectors": 1207,
+      "validation": 165
+    },
+    {
+      "disease": "encephalitis",
+      "test": 1,
+      "train": 21,
+      "unique_vectors": 24,
+      "validation": 2
+    },
+    {
+      "disease": "endocarditis",
+      "test": 5,
+      "train": 21,
+      "unique_vectors": 33,
+      "validation": 7
+    },
+    {
+      "disease": "endometrial cancer",
+      "test": 4,
+      "train": 17,
+      "unique_vectors": 26,
+      "validation": 5
+    },
+    {
+      "disease": "endometrial hyperplasia",
+      "test": 2,
+      "train": 10,
+      "unique_vectors": 15,
+      "validation": 3
+    },
+    {
+      "disease": "endometriosis",
+      "test": 41,
+      "train": 186,
+      "unique_vectors": 267,
+      "validation": 40
+    },
+    {
+      "disease": "endophthalmitis",
+      "test": 8,
+      "train": 23,
+      "unique_vectors": 37,
+      "validation": 6
+    },
+    {
+      "disease": "envenomation from spider or animal bite",
+      "test": 58,
+      "train": 205,
+      "unique_vectors": 302,
+      "validation": 39
+    },
+    {
+      "disease": "epididymitis",
+      "test": 40,
+      "train": 224,
+      "unique_vectors": 320,
+      "validation": 56
+    },
+    {
+      "disease": "epilepsy",
+      "test": 13,
+      "train": 38,
+      "unique_vectors": 56,
+      "validation": 5
+    },
+    {
+      "disease": "erectile dysfunction",
+      "test": 66,
+      "train": 340,
+      "unique_vectors": 478,
+      "validation": 72
+    },
+    {
+      "disease": "erythema multiforme",
+      "test": 1,
+      "train": 12,
+      "unique_vectors": 16,
+      "validation": 3
+    },
+    {
+      "disease": "esophageal cancer",
+      "test": 4,
+      "train": 10,
+      "unique_vectors": 19,
+      "validation": 5
+    },
+    {
+      "disease": "esophagitis",
+      "test": 198,
+      "train": 844,
+      "unique_vectors": 1215,
+      "validation": 173
+    },
+    {
+      "disease": "essential tremor",
+      "test": 13,
+      "train": 52,
+      "unique_vectors": 74,
+      "validation": 9
+    },
+    {
+      "disease": "eustachian tube dysfunction (ear disorder)",
+      "test": 137,
+      "train": 549,
+      "unique_vectors": 810,
+      "validation": 124
+    },
+    {
+      "disease": "extrapyramidal effect of drugs",
+      "test": 3,
+      "train": 27,
+      "unique_vectors": 32,
+      "validation": 2
+    },
+    {
+      "disease": "eye alignment disorder",
+      "test": 43,
+      "train": 204,
+      "unique_vectors": 289,
+      "validation": 42
+    },
+    {
+      "disease": "female genitalia infection",
+      "test": 11,
+      "train": 56,
+      "unique_vectors": 79,
+      "validation": 12
+    },
+    {
+      "disease": "female infertility of unknown cause",
+      "test": 1,
+      "train": 9,
+      "unique_vectors": 15,
+      "validation": 5
+    },
+    {
+      "disease": "fibroadenoma",
+      "test": 8,
+      "train": 28,
+      "unique_vectors": 42,
+      "validation": 6
+    },
+    {
+      "disease": "fibromyalgia",
+      "test": 90,
+      "train": 347,
+      "unique_vectors": 503,
+      "validation": 66
+    },
+    {
+      "disease": "flat feet",
+      "test": 2,
+      "train": 9,
+      "unique_vectors": 13,
+      "validation": 2
+    },
+    {
+      "disease": "floaters",
+      "test": 2,
+      "train": 8,
+      "unique_vectors": 15,
+      "validation": 5
+    },
+    {
+      "disease": "flu",
+      "test": 78,
+      "train": 354,
+      "unique_vectors": 521,
+      "validation": 89
+    },
+    {
+      "disease": "fluid overload",
+      "test": 25,
+      "train": 126,
+      "unique_vectors": 171,
+      "validation": 20
+    },
+    {
+      "disease": "folate deficiency",
+      "test": 4,
+      "train": 8,
+      "unique_vectors": 13,
+      "validation": 1
+    },
+    {
+      "disease": "food allergy",
+      "test": 43,
+      "train": 186,
+      "unique_vectors": 285,
+      "validation": 56
+    },
+    {
+      "disease": "foreign body in the ear",
+      "test": 3,
+      "train": 14,
+      "unique_vectors": 18,
+      "validation": 1
+    },
+    {
+      "disease": "foreign body in the eye",
+      "test": 24,
+      "train": 107,
+      "unique_vectors": 155,
+      "validation": 24
+    },
+    {
+      "disease": "foreign body in the gastrointestinal tract",
+      "test": 7,
+      "train": 34,
+      "unique_vectors": 45,
+      "validation": 4
+    },
+    {
+      "disease": "foreign body in the throat",
+      "test": 9,
+      "train": 49,
+      "unique_vectors": 70,
+      "validation": 12
+    },
+    {
+      "disease": "fracture of the ankle",
+      "test": 4,
+      "train": 28,
+      "unique_vectors": 36,
+      "validation": 4
+    },
+    {
+      "disease": "fracture of the arm",
+      "test": 66,
+      "train": 264,
+      "unique_vectors": 391,
+      "validation": 61
+    },
+    {
+      "disease": "fracture of the facial bones",
+      "test": 50,
+      "train": 210,
+      "unique_vectors": 290,
+      "validation": 30
+    },
+    {
+      "disease": "fracture of the foot",
+      "test": 1,
+      "train": 12,
+      "unique_vectors": 14,
+      "validation": 1
+    },
+    {
+      "disease": "fracture of the hand",
+      "test": 13,
+      "train": 79,
+      "unique_vectors": 98,
+      "validation": 6
+    },
+    {
+      "disease": "fracture of the jaw",
+      "test": 6,
+      "train": 24,
+      "unique_vectors": 33,
+      "validation": 3
+    },
+    {
+      "disease": "fracture of the leg",
+      "test": 81,
+      "train": 367,
+      "unique_vectors": 531,
+      "validation": 83
+    },
+    {
+      "disease": "fracture of the neck",
+      "test": 2,
+      "train": 18,
+      "unique_vectors": 23,
+      "validation": 3
+    },
+    {
+      "disease": "fracture of the patella",
+      "test": 2,
+      "train": 24,
+      "unique_vectors": 32,
+      "validation": 6
+    },
+    {
+      "disease": "fracture of the pelvis",
+      "test": 14,
+      "train": 60,
+      "unique_vectors": 86,
+      "validation": 12
+    },
+    {
+      "disease": "fracture of the rib",
+      "test": 128,
+      "train": 539,
+      "unique_vectors": 791,
+      "validation": 124
+    },
+    {
+      "disease": "fracture of the shoulder",
+      "test": 10,
+      "train": 65,
+      "unique_vectors": 83,
+      "validation": 8
+    },
+    {
+      "disease": "fracture of the skull",
+      "test": 1,
+      "train": 15,
+      "unique_vectors": 17,
+      "validation": 1
+    },
+    {
+      "disease": "fracture of the vertebra",
+      "test": 25,
+      "train": 99,
+      "unique_vectors": 156,
+      "validation": 32
+    },
+    {
+      "disease": "fungal infection of the hair",
+      "test": 189,
+      "train": 836,
+      "unique_vectors": 1212,
+      "validation": 187
+    },
+    {
+      "disease": "fungal infection of the skin",
+      "test": 85,
+      "train": 357,
+      "unique_vectors": 533,
+      "validation": 91
+    },
+    {
+      "disease": "gallstone",
+      "test": 118,
+      "train": 455,
+      "unique_vectors": 654,
+      "validation": 81
+    },
+    {
+      "disease": "ganglion cyst",
+      "test": 79,
+      "train": 367,
+      "unique_vectors": 530,
+      "validation": 84
+    },
+    {
+      "disease": "gastritis",
+      "test": 59,
+      "train": 256,
+      "unique_vectors": 377,
+      "validation": 62
+    },
+    {
+      "disease": "gastroduodenal ulcer",
+      "test": 78,
+      "train": 373,
+      "unique_vectors": 526,
+      "validation": 75
+    },
+    {
+      "disease": "gastroesophageal reflux disease (gerd)",
+      "test": 25,
+      "train": 138,
+      "unique_vectors": 203,
+      "validation": 40
+    },
+    {
+      "disease": "gastrointestinal hemorrhage",
+      "test": 189,
+      "train": 843,
+      "unique_vectors": 1214,
+      "validation": 182
+    },
+    {
+      "disease": "gastroparesis",
+      "test": 5,
+      "train": 34,
+      "unique_vectors": 47,
+      "validation": 8
+    },
+    {
+      "disease": "genital herpes",
+      "test": 15,
+      "train": 56,
+      "unique_vectors": 81,
+      "validation": 10
+    },
+    {
+      "disease": "gestational diabetes",
+      "test": 3,
+      "train": 12,
+      "unique_vectors": 17,
+      "validation": 2
+    },
+    {
+      "disease": "glaucoma",
+      "test": 41,
+      "train": 222,
+      "unique_vectors": 313,
+      "validation": 50
+    },
+    {
+      "disease": "goiter",
+      "test": 6,
+      "train": 9,
+      "unique_vectors": 19,
+      "validation": 4
+    },
+    {
+      "disease": "gonorrhea",
+      "test": 7,
+      "train": 25,
+      "unique_vectors": 40,
+      "validation": 8
+    },
+    {
+      "disease": "gout",
+      "test": 168,
+      "train": 846,
+      "unique_vectors": 1211,
+      "validation": 197
+    },
+    {
+      "disease": "graves disease",
+      "test": 16,
+      "train": 62,
+      "unique_vectors": 92,
+      "validation": 14
+    },
+    {
+      "disease": "guillain barre syndrome",
+      "test": 1,
+      "train": 9,
+      "unique_vectors": 13,
+      "validation": 3
+    },
+    {
+      "disease": "gum disease",
+      "test": 126,
+      "train": 541,
+      "unique_vectors": 803,
+      "validation": 136
+    },
+    {
+      "disease": "gynecomastia",
+      "test": 10,
+      "train": 47,
+      "unique_vectors": 65,
+      "validation": 8
+    },
+    {
+      "disease": "head and neck cancer",
+      "test": 28,
+      "train": 106,
+      "unique_vectors": 166,
+      "validation": 32
+    },
+    {
+      "disease": "head injury",
+      "test": 12,
+      "train": 100,
+      "unique_vectors": 129,
+      "validation": 17
+    },
+    {
+      "disease": "headache after lumbar puncture",
+      "test": 14,
+      "train": 46,
+      "unique_vectors": 77,
+      "validation": 17
+    },
+    {
+      "disease": "heart attack",
+      "test": 124,
+      "train": 572,
+      "unique_vectors": 810,
+      "validation": 114
+    },
+    {
+      "disease": "heart block",
+      "test": 60,
+      "train": 341,
+      "unique_vectors": 476,
+      "validation": 75
+    },
+    {
+      "disease": "heart failure",
+      "test": 114,
+      "train": 597,
+      "unique_vectors": 813,
+      "validation": 102
+    },
+    {
+      "disease": "heat exhaustion",
+      "test": 20,
+      "train": 101,
+      "unique_vectors": 138,
+      "validation": 17
+    },
+    {
+      "disease": "hemangioma",
+      "test": 60,
+      "train": 362,
+      "unique_vectors": 514,
+      "validation": 92
+    },
+    {
+      "disease": "hematoma",
+      "test": 3,
+      "train": 10,
+      "unique_vectors": 15,
+      "validation": 2
+    },
+    {
+      "disease": "hemiplegia",
+      "test": 44,
+      "train": 211,
+      "unique_vectors": 310,
+      "validation": 55
+    },
+    {
+      "disease": "hemorrhoids",
+      "test": 137,
+      "train": 573,
+      "unique_vectors": 818,
+      "validation": 108
+    },
+    {
+      "disease": "hepatic encephalopathy",
+      "test": 5,
+      "train": 12,
+      "unique_vectors": 19,
+      "validation": 2
+    },
+    {
+      "disease": "hepatitis due to a toxin",
+      "test": 32,
+      "train": 109,
+      "unique_vectors": 163,
+      "validation": 22
+    },
+    {
+      "disease": "herniated disk",
+      "test": 122,
+      "train": 586,
+      "unique_vectors": 828,
+      "validation": 120
+    },
+    {
+      "disease": "herpangina",
+      "test": 50,
+      "train": 201,
+      "unique_vectors": 302,
+      "validation": 51
+    },
+    {
+      "disease": "hiatal hernia",
+      "test": 102,
+      "train": 440,
+      "unique_vectors": 632,
+      "validation": 90
+    },
+    {
+      "disease": "hidradenitis suppurativa",
+      "test": 3,
+      "train": 27,
+      "unique_vectors": 36,
+      "validation": 6
+    },
+    {
+      "disease": "hormone disorder",
+      "test": 1,
+      "train": 8,
+      "unique_vectors": 10,
+      "validation": 1
+    },
+    {
+      "disease": "hydatidiform mole",
+      "test": 4,
+      "train": 13,
+      "unique_vectors": 18,
+      "validation": 1
+    },
+    {
+      "disease": "hydrocele of the testicle",
+      "test": 18,
+      "train": 96,
+      "unique_vectors": 140,
+      "validation": 26
+    },
+    {
+      "disease": "hydrocephalus",
+      "test": 10,
+      "train": 54,
+      "unique_vectors": 72,
+      "validation": 8
+    },
+    {
+      "disease": "hydronephrosis",
+      "test": 25,
+      "train": 111,
+      "unique_vectors": 165,
+      "validation": 29
+    },
+    {
+      "disease": "hyperemesis gravidarum",
+      "test": 137,
+      "train": 575,
+      "unique_vectors": 815,
+      "validation": 103
+    },
+    {
+      "disease": "hyperhidrosis",
+      "test": 3,
+      "train": 7,
+      "unique_vectors": 12,
+      "validation": 2
+    },
+    {
+      "disease": "hyperkalemia",
+      "test": 67,
+      "train": 349,
+      "unique_vectors": 503,
+      "validation": 87
+    },
+    {
+      "disease": "hypernatremia",
+      "test": 1,
+      "train": 14,
+      "unique_vectors": 18,
+      "validation": 3
+    },
+    {
+      "disease": "hyperopia",
+      "test": 3,
+      "train": 24,
+      "unique_vectors": 36,
+      "validation": 9
+    },
+    {
+      "disease": "hypertension of pregnancy",
+      "test": 4,
+      "train": 26,
+      "unique_vectors": 36,
+      "validation": 6
+    },
+    {
+      "disease": "hypertensive heart disease",
+      "test": 110,
+      "train": 566,
+      "unique_vectors": 804,
+      "validation": 128
+    },
+    {
+      "disease": "hypocalcemia",
+      "test": 1,
+      "train": 8,
+      "unique_vectors": 13,
+      "validation": 4
+    },
+    {
+      "disease": "hypoglycemia",
+      "test": 204,
+      "train": 803,
+      "unique_vectors": 1215,
+      "validation": 208
+    },
+    {
+      "disease": "hypokalemia",
+      "test": 56,
+      "train": 272,
+      "unique_vectors": 387,
+      "validation": 59
+    },
+    {
+      "disease": "hyponatremia",
+      "test": 39,
+      "train": 226,
+      "unique_vectors": 312,
+      "validation": 47
+    },
+    {
+      "disease": "hypothyroidism",
+      "test": 9,
+      "train": 17,
+      "unique_vectors": 33,
+      "validation": 7
+    },
+    {
+      "disease": "hypovolemia",
+      "test": 49,
+      "train": 197,
+      "unique_vectors": 287,
+      "validation": 41
+    },
+    {
+      "disease": "idiopathic absence of menstruation",
+      "test": 50,
+      "train": 190,
+      "unique_vectors": 292,
+      "validation": 52
+    },
+    {
+      "disease": "idiopathic excessive menstruation",
+      "test": 133,
+      "train": 572,
+      "unique_vectors": 832,
+      "validation": 127
+    },
+    {
+      "disease": "idiopathic infrequent menstruation",
+      "test": 2,
+      "train": 6,
+      "unique_vectors": 10,
+      "validation": 2
+    },
+    {
+      "disease": "idiopathic irregular menstrual cycle",
+      "test": 108,
+      "train": 562,
+      "unique_vectors": 815,
+      "validation": 145
+    },
+    {
+      "disease": "idiopathic nonmenstrual bleeding",
+      "test": 1,
+      "train": 18,
+      "unique_vectors": 25,
+      "validation": 6
+    },
+    {
+      "disease": "idiopathic painful menstruation",
+      "test": 121,
+      "train": 552,
+      "unique_vectors": 805,
+      "validation": 132
+    },
+    {
+      "disease": "ileus",
+      "test": 42,
+      "train": 210,
+      "unique_vectors": 292,
+      "validation": 40
+    },
+    {
+      "disease": "impetigo",
+      "test": 62,
+      "train": 390,
+      "unique_vectors": 523,
+      "validation": 71
+    },
+    {
+      "disease": "impulse control disorder",
+      "test": 29,
+      "train": 109,
+      "unique_vectors": 167,
+      "validation": 29
+    },
+    {
+      "disease": "indigestion",
+      "test": 45,
+      "train": 209,
+      "unique_vectors": 291,
+      "validation": 37
+    },
+    {
+      "disease": "induced abortion",
+      "test": 22,
+      "train": 115,
+      "unique_vectors": 157,
+      "validation": 20
+    },
+    {
+      "disease": "infectious gastroenteritis",
+      "test": 175,
+      "train": 870,
+      "unique_vectors": 1212,
+      "validation": 167
+    },
+    {
+      "disease": "ingrown toe nail",
+      "test": 72,
+      "train": 321,
+      "unique_vectors": 469,
+      "validation": 76
+    },
+    {
+      "disease": "inguinal hernia",
+      "test": 49,
+      "train": 267,
+      "unique_vectors": 373,
+      "validation": 57
+    },
+    {
+      "disease": "injury of the ankle",
+      "test": 13,
+      "train": 107,
+      "unique_vectors": 132,
+      "validation": 12
+    },
+    {
+      "disease": "injury to internal organ",
+      "test": 9,
+      "train": 20,
+      "unique_vectors": 34,
+      "validation": 5
+    },
+    {
+      "disease": "injury to the abdomen",
+      "test": 3,
+      "train": 10,
+      "unique_vectors": 14,
+      "validation": 1
+    },
+    {
+      "disease": "injury to the arm",
+      "test": 186,
+      "train": 826,
+      "unique_vectors": 1209,
+      "validation": 197
+    },
+    {
+      "disease": "injury to the face",
+      "test": 37,
+      "train": 199,
+      "unique_vectors": 279,
+      "validation": 43
+    },
+    {
+      "disease": "injury to the hand",
+      "test": 10,
+      "train": 46,
+      "unique_vectors": 71,
+      "validation": 15
+    },
+    {
+      "disease": "injury to the knee",
+      "test": 6,
+      "train": 13,
+      "unique_vectors": 20,
+      "validation": 1
+    },
+    {
+      "disease": "injury to the leg",
+      "test": 183,
+      "train": 849,
+      "unique_vectors": 1206,
+      "validation": 174
+    },
+    {
+      "disease": "injury to the shoulder",
+      "test": 52,
+      "train": 217,
+      "unique_vectors": 317,
+      "validation": 48
+    },
+    {
+      "disease": "injury to the trunk",
+      "test": 116,
+      "train": 569,
+      "unique_vectors": 803,
+      "validation": 118
+    },
+    {
+      "disease": "insect bite",
+      "test": 78,
+      "train": 363,
+      "unique_vectors": 516,
+      "validation": 75
+    },
+    {
+      "disease": "interstitial lung disease",
+      "test": 47,
+      "train": 236,
+      "unique_vectors": 336,
+      "validation": 53
+    },
+    {
+      "disease": "intertrigo (skin condition)",
+      "test": 5,
+      "train": 29,
+      "unique_vectors": 42,
+      "validation": 8
+    },
+    {
+      "disease": "intestinal cancer",
+      "test": 1,
+      "train": 13,
+      "unique_vectors": 16,
+      "validation": 2
+    },
+    {
+      "disease": "intestinal disease",
+      "test": 23,
+      "train": 76,
+      "unique_vectors": 117,
+      "validation": 18
+    },
+    {
+      "disease": "intestinal malabsorption",
+      "test": 6,
+      "train": 48,
+      "unique_vectors": 66,
+      "validation": 12
+    },
+    {
+      "disease": "intestinal obstruction",
+      "test": 47,
+      "train": 200,
+      "unique_vectors": 288,
+      "validation": 41
+    },
+    {
+      "disease": "intracerebral hemorrhage",
+      "test": 71,
+      "train": 324,
+      "unique_vectors": 466,
+      "validation": 71
+    },
+    {
+      "disease": "intracranial hemorrhage",
+      "test": 24,
+      "train": 104,
+      "unique_vectors": 151,
+      "validation": 23
+    },
+    {
+      "disease": "iridocyclitis",
+      "test": 49,
+      "train": 208,
+      "unique_vectors": 301,
+      "validation": 44
+    },
+    {
+      "disease": "iron deficiency anemia",
+      "test": 48,
+      "train": 274,
+      "unique_vectors": 380,
+      "validation": 58
+    },
+    {
+      "disease": "irritable bowel syndrome",
+      "test": 58,
+      "train": 210,
+      "unique_vectors": 323,
+      "validation": 55
+    },
+    {
+      "disease": "ischemia of the bowel",
+      "test": 21,
+      "train": 67,
+      "unique_vectors": 97,
+      "validation": 9
+    },
+    {
+      "disease": "ischemic heart disease",
+      "test": 107,
+      "train": 557,
+      "unique_vectors": 797,
+      "validation": 133
+    },
+    {
+      "disease": "itching of unknown cause",
+      "test": 52,
+      "train": 224,
+      "unique_vectors": 312,
+      "validation": 36
+    },
+    {
+      "disease": "jaw disorder",
+      "test": 18,
+      "train": 129,
+      "unique_vectors": 168,
+      "validation": 21
+    },
+    {
+      "disease": "joint effusion",
+      "test": 45,
+      "train": 204,
+      "unique_vectors": 292,
+      "validation": 43
+    },
+    {
+      "disease": "juvenile rheumatoid arthritis",
+      "test": 3,
+      "train": 9,
+      "unique_vectors": 13,
+      "validation": 1
+    },
+    {
+      "disease": "kidney cancer",
+      "test": 1,
+      "train": 14,
+      "unique_vectors": 24,
+      "validation": 9
+    },
+    {
+      "disease": "kidney failure",
+      "test": 27,
+      "train": 107,
+      "unique_vectors": 161,
+      "validation": 27
+    },
+    {
+      "disease": "kidney stone",
+      "test": 107,
+      "train": 562,
+      "unique_vectors": 792,
+      "validation": 123
+    },
+    {
+      "disease": "knee ligament or meniscus tear",
+      "test": 15,
+      "train": 41,
+      "unique_vectors": 64,
+      "validation": 8
+    },
+    {
+      "disease": "labyrinthitis",
+      "test": 80,
+      "train": 345,
+      "unique_vectors": 504,
+      "validation": 79
+    },
+    {
+      "disease": "lactose intolerance",
+      "test": 4,
+      "train": 28,
+      "unique_vectors": 41,
+      "validation": 9
+    },
+    {
+      "disease": "laryngitis",
+      "test": 76,
+      "train": 370,
+      "unique_vectors": 522,
+      "validation": 76
+    },
+    {
+      "disease": "lateral epicondylitis (tennis elbow)",
+      "test": 26,
+      "train": 125,
+      "unique_vectors": 175,
+      "validation": 24
+    },
+    {
+      "disease": "lewy body dementia",
+      "test": 4,
+      "train": 17,
+      "unique_vectors": 23,
+      "validation": 2
+    },
+    {
+      "disease": "lice",
+      "test": 6,
+      "train": 7,
+      "unique_vectors": 14,
+      "validation": 1
+    },
+    {
+      "disease": "lichen simplex",
+      "test": 2,
+      "train": 12,
+      "unique_vectors": 18,
+      "validation": 4
+    },
+    {
+      "disease": "lipoma",
+      "test": 75,
+      "train": 339,
+      "unique_vectors": 517,
+      "validation": 103
+    },
+    {
+      "disease": "liver cancer",
+      "test": 5,
+      "train": 9,
+      "unique_vectors": 18,
+      "validation": 4
+    },
+    {
+      "disease": "liver disease",
+      "test": 144,
+      "train": 875,
+      "unique_vectors": 1209,
+      "validation": 190
+    },
+    {
+      "disease": "lumbago",
+      "test": 11,
+      "train": 49,
+      "unique_vectors": 69,
+      "validation": 9
+    },
+    {
+      "disease": "lung cancer",
+      "test": 9,
+      "train": 31,
+      "unique_vectors": 47,
+      "validation": 7
+    },
+    {
+      "disease": "lyme disease",
+      "test": 14,
+      "train": 60,
+      "unique_vectors": 86,
+      "validation": 12
+    },
+    {
+      "disease": "lymphadenitis",
+      "test": 34,
+      "train": 210,
+      "unique_vectors": 290,
+      "validation": 46
+    },
+    {
+      "disease": "lymphedema",
+      "test": 66,
+      "train": 212,
+      "unique_vectors": 315,
+      "validation": 37
+    },
+    {
+      "disease": "lymphoma",
+      "test": 4,
+      "train": 16,
+      "unique_vectors": 25,
+      "validation": 5
+    },
+    {
+      "disease": "macular degeneration",
+      "test": 131,
+      "train": 554,
+      "unique_vectors": 817,
+      "validation": 132
+    },
+    {
+      "disease": "male genitalia infection",
+      "test": 10,
+      "train": 24,
+      "unique_vectors": 40,
+      "validation": 6
+    },
+    {
+      "disease": "malignant hypertension",
+      "test": 12,
+      "train": 60,
+      "unique_vectors": 83,
+      "validation": 11
+    },
+    {
+      "disease": "marijuana abuse",
+      "test": 189,
+      "train": 832,
+      "unique_vectors": 1210,
+      "validation": 189
+    },
+    {
+      "disease": "mastoiditis",
+      "test": 10,
+      "train": 27,
+      "unique_vectors": 43,
+      "validation": 6
+    },
+    {
+      "disease": "melanoma",
+      "test": 23,
+      "train": 107,
+      "unique_vectors": 156,
+      "validation": 26
+    },
+    {
+      "disease": "meniere disease",
+      "test": 24,
+      "train": 110,
+      "unique_vectors": 160,
+      "validation": 26
+    },
+    {
+      "disease": "meningitis",
+      "test": 23,
+      "train": 105,
+      "unique_vectors": 159,
+      "validation": 31
+    },
+    {
+      "disease": "menopause",
+      "test": 3,
+      "train": 21,
+      "unique_vectors": 28,
+      "validation": 4
+    },
+    {
+      "disease": "metastatic cancer",
+      "test": 3,
+      "train": 11,
+      "unique_vectors": 19,
+      "validation": 5
+    },
+    {
+      "disease": "migraine",
+      "test": 20,
+      "train": 147,
+      "unique_vectors": 203,
+      "validation": 36
+    },
+    {
+      "disease": "missed abortion",
+      "test": 32,
+      "train": 190,
+      "unique_vectors": 260,
+      "validation": 38
+    },
+    {
+      "disease": "mitral valve disease",
+      "test": 41,
+      "train": 217,
+      "unique_vectors": 304,
+      "validation": 46
+    },
+    {
+      "disease": "mittelschmerz",
+      "test": 4,
+      "train": 23,
+      "unique_vectors": 29,
+      "validation": 2
+    },
+    {
+      "disease": "molluscum contagiosum",
+      "test": 34,
+      "train": 235,
+      "unique_vectors": 313,
+      "validation": 44
+    },
+    {
+      "disease": "mononeuritis",
+      "test": 95,
+      "train": 354,
+      "unique_vectors": 530,
+      "validation": 81
+    },
+    {
+      "disease": "mononucleosis",
+      "test": 21,
+      "train": 114,
+      "unique_vectors": 159,
+      "validation": 24
+    },
+    {
+      "disease": "mucositis",
+      "test": 27,
+      "train": 104,
+      "unique_vectors": 156,
+      "validation": 25
+    },
+    {
+      "disease": "multiple myeloma",
+      "test": 3,
+      "train": 14,
+      "unique_vectors": 19,
+      "validation": 2
+    },
+    {
+      "disease": "multiple sclerosis",
+      "test": 116,
+      "train": 597,
+      "unique_vectors": 825,
+      "validation": 112
+    },
+    {
+      "disease": "muscle spasm",
+      "test": 74,
+      "train": 349,
+      "unique_vectors": 522,
+      "validation": 99
+    },
+    {
+      "disease": "muscular dystrophy",
+      "test": 1,
+      "train": 10,
+      "unique_vectors": 12,
+      "validation": 1
+    },
+    {
+      "disease": "myasthenia gravis",
+      "test": 11,
+      "train": 32,
+      "unique_vectors": 50,
+      "validation": 7
+    },
+    {
+      "disease": "myopia",
+      "test": 39,
+      "train": 208,
+      "unique_vectors": 292,
+      "validation": 45
+    },
+    {
+      "disease": "myositis",
+      "test": 5,
+      "train": 26,
+      "unique_vectors": 41,
+      "validation": 10
+    },
+    {
+      "disease": "narcolepsy",
+      "test": 13,
+      "train": 53,
+      "unique_vectors": 79,
+      "validation": 13
+    },
+    {
+      "disease": "nasal polyp",
+      "test": 17,
+      "train": 112,
+      "unique_vectors": 164,
+      "validation": 35
+    },
+    {
+      "disease": "neonatal jaundice",
+      "test": 3,
+      "train": 10,
+      "unique_vectors": 17,
+      "validation": 4
+    },
+    {
+      "disease": "nerve impingement near the shoulder",
+      "test": 24,
+      "train": 113,
+      "unique_vectors": 159,
+      "validation": 22
+    },
+    {
+      "disease": "neuralgia",
+      "test": 84,
+      "train": 373,
+      "unique_vectors": 529,
+      "validation": 72
+    },
+    {
+      "disease": "neuropathy due to drugs",
+      "test": 1,
+      "train": 8,
+      "unique_vectors": 12,
+      "validation": 3
+    },
+    {
+      "disease": "neurosis",
+      "test": 125,
+      "train": 569,
+      "unique_vectors": 801,
+      "validation": 107
+    },
+    {
+      "disease": "nonalcoholic liver disease (nash)",
+      "test": 3,
+      "train": 12,
+      "unique_vectors": 18,
+      "validation": 3
+    },
+    {
+      "disease": "noninfectious gastroenteritis",
+      "test": 176,
+      "train": 858,
+      "unique_vectors": 1206,
+      "validation": 172
+    },
+    {
+      "disease": "nose disorder",
+      "test": 174,
+      "train": 869,
+      "unique_vectors": 1218,
+      "validation": 175
+    },
+    {
+      "disease": "obsessive compulsive disorder (ocd)",
+      "test": 39,
+      "train": 204,
+      "unique_vectors": 286,
+      "validation": 43
+    },
+    {
+      "disease": "obstructive sleep apnea (osa)",
+      "test": 166,
+      "train": 844,
+      "unique_vectors": 1196,
+      "validation": 186
+    },
+    {
+      "disease": "onychomycosis",
+      "test": 34,
+      "train": 233,
+      "unique_vectors": 309,
+      "validation": 42
+    },
+    {
+      "disease": "open wound of the ear",
+      "test": 4,
+      "train": 11,
+      "unique_vectors": 17,
+      "validation": 2
+    },
+    {
+      "disease": "open wound of the eye",
+      "test": 3,
+      "train": 11,
+      "unique_vectors": 16,
+      "validation": 2
+    },
+    {
+      "disease": "open wound of the foot",
+      "test": 3,
+      "train": 19,
+      "unique_vectors": 27,
+      "validation": 5
+    },
+    {
+      "disease": "open wound of the lip",
+      "test": 1,
+      "train": 8,
+      "unique_vectors": 12,
+      "validation": 3
+    },
+    {
+      "disease": "open wound of the mouth",
+      "test": 4,
+      "train": 18,
+      "unique_vectors": 29,
+      "validation": 7
+    },
+    {
+      "disease": "open wound of the neck",
+      "test": 4,
+      "train": 8,
+      "unique_vectors": 15,
+      "validation": 3
+    },
+    {
+      "disease": "oppositional disorder",
+      "test": 54,
+      "train": 277,
+      "unique_vectors": 389,
+      "validation": 58
+    },
+    {
+      "disease": "oral mucosal lesion",
+      "test": 74,
+      "train": 326,
+      "unique_vectors": 492,
+      "validation": 92
+    },
+    {
+      "disease": "oral thrush (yeast infection)",
+      "test": 75,
+      "train": 376,
+      "unique_vectors": 529,
+      "validation": 78
+    },
+    {
+      "disease": "orbital cellulitis",
+      "test": 14,
+      "train": 50,
+      "unique_vectors": 80,
+      "validation": 16
+    },
+    {
+      "disease": "orthostatic hypotension",
+      "test": 20,
+      "train": 101,
+      "unique_vectors": 146,
+      "validation": 25
+    },
+    {
+      "disease": "osteoarthritis",
+      "test": 101,
+      "train": 585,
+      "unique_vectors": 796,
+      "validation": 110
+    },
+    {
+      "disease": "osteochondroma",
+      "test": 13,
+      "train": 54,
+      "unique_vectors": 82,
+      "validation": 15
+    },
+    {
+      "disease": "osteochondrosis",
+      "test": 1,
+      "train": 36,
+      "unique_vectors": 42,
+      "validation": 5
+    },
+    {
+      "disease": "osteomyelitis",
+      "test": 12,
+      "train": 45,
+      "unique_vectors": 75,
+      "validation": 18
+    },
+    {
+      "disease": "osteoporosis",
+      "test": 43,
+      "train": 183,
+      "unique_vectors": 272,
+      "validation": 46
+    },
+    {
+      "disease": "otitis externa (swimmer's ear)",
+      "test": 115,
+      "train": 571,
+      "unique_vectors": 808,
+      "validation": 122
+    },
+    {
+      "disease": "otitis media",
+      "test": 130,
+      "train": 554,
+      "unique_vectors": 807,
+      "validation": 123
+    },
+    {
+      "disease": "ovarian cyst",
+      "test": 40,
+      "train": 217,
+      "unique_vectors": 293,
+      "validation": 36
+    },
+    {
+      "disease": "ovarian torsion",
+      "test": 2,
+      "train": 25,
+      "unique_vectors": 34,
+      "validation": 7
+    },
+    {
+      "disease": "overflow incontinence",
+      "test": 9,
+      "train": 64,
+      "unique_vectors": 81,
+      "validation": 8
+    },
+    {
+      "disease": "pain after an operation",
+      "test": 109,
+      "train": 571,
+      "unique_vectors": 806,
+      "validation": 126
+    },
+    {
+      "disease": "pain disorder affecting the neck",
+      "test": 37,
+      "train": 190,
+      "unique_vectors": 266,
+      "validation": 39
+    },
+    {
+      "disease": "pancreatic cancer",
+      "test": 17,
+      "train": 54,
+      "unique_vectors": 84,
+      "validation": 13
+    },
+    {
+      "disease": "panic attack",
+      "test": 3,
+      "train": 53,
+      "unique_vectors": 67,
+      "validation": 11
+    },
+    {
+      "disease": "panic disorder",
+      "test": 128,
+      "train": 568,
+      "unique_vectors": 810,
+      "validation": 114
+    },
+    {
+      "disease": "parasitic disease",
+      "test": 4,
+      "train": 20,
+      "unique_vectors": 27,
+      "validation": 3
+    },
+    {
+      "disease": "parkinson disease",
+      "test": 45,
+      "train": 214,
+      "unique_vectors": 315,
+      "validation": 56
+    },
+    {
+      "disease": "paronychia",
+      "test": 42,
+      "train": 195,
+      "unique_vectors": 277,
+      "validation": 40
+    },
+    {
+      "disease": "paroxysmal supraventricular tachycardia",
+      "test": 38,
+      "train": 186,
+      "unique_vectors": 261,
+      "validation": 37
+    },
+    {
+      "disease": "paroxysmal ventricular tachycardia",
+      "test": 68,
+      "train": 364,
+      "unique_vectors": 517,
+      "validation": 85
+    },
+    {
+      "disease": "pelvic inflammatory disease",
+      "test": 115,
+      "train": 580,
+      "unique_vectors": 804,
+      "validation": 109
+    },
+    {
+      "disease": "pelvic organ prolapse",
+      "test": 47,
+      "train": 201,
+      "unique_vectors": 291,
+      "validation": 43
+    },
+    {
+      "disease": "pericarditis",
+      "test": 6,
+      "train": 27,
+      "unique_vectors": 38,
+      "validation": 5
+    },
+    {
+      "disease": "peripheral arterial disease",
+      "test": 21,
+      "train": 67,
+      "unique_vectors": 101,
+      "validation": 13
+    },
+    {
+      "disease": "peripheral arterial embolism",
+      "test": 7,
+      "train": 33,
+      "unique_vectors": 47,
+      "validation": 7
+    },
+    {
+      "disease": "peripheral nerve disorder",
+      "test": 191,
+      "train": 843,
+      "unique_vectors": 1215,
+      "validation": 181
+    },
+    {
+      "disease": "perirectal infection",
+      "test": 6,
+      "train": 30,
+      "unique_vectors": 41,
+      "validation": 5
+    },
+    {
+      "disease": "peritonitis",
+      "test": 30,
+      "train": 130,
+      "unique_vectors": 179,
+      "validation": 19
+    },
+    {
+      "disease": "peritonsillar abscess",
+      "test": 19,
+      "train": 55,
+      "unique_vectors": 85,
+      "validation": 11
+    },
+    {
+      "disease": "persistent vomiting of unknown cause",
+      "test": 12,
+      "train": 60,
+      "unique_vectors": 87,
+      "validation": 15
+    },
+    {
+      "disease": "personality disorder",
+      "test": 129,
+      "train": 552,
+      "unique_vectors": 816,
+      "validation": 135
+    },
+    {
+      "disease": "peyronie disease",
+      "test": 1,
+      "train": 10,
+      "unique_vectors": 12,
+      "validation": 1
+    },
+    {
+      "disease": "pharyngitis",
+      "test": 1,
+      "train": 9,
+      "unique_vectors": 11,
+      "validation": 1
+    },
+    {
+      "disease": "phimosis",
+      "test": 4,
+      "train": 25,
+      "unique_vectors": 35,
+      "validation": 6
+    },
+    {
+      "disease": "pilonidal cyst",
+      "test": 25,
+      "train": 115,
+      "unique_vectors": 168,
+      "validation": 28
+    },
+    {
+      "disease": "pinworm infection",
+      "test": 5,
+      "train": 28,
+      "unique_vectors": 36,
+      "validation": 3
+    },
+    {
+      "disease": "pituitary adenoma",
+      "test": 2,
+      "train": 6,
+      "unique_vectors": 10,
+      "validation": 2
+    },
+    {
+      "disease": "pituitary disorder",
+      "test": 1,
+      "train": 8,
+      "unique_vectors": 10,
+      "validation": 1
+    },
+    {
+      "disease": "pityriasis rosea",
+      "test": 7,
+      "train": 24,
+      "unique_vectors": 41,
+      "validation": 10
+    },
+    {
+      "disease": "plantar fasciitis",
+      "test": 17,
+      "train": 58,
+      "unique_vectors": 87,
+      "validation": 12
+    },
+    {
+      "disease": "pleural effusion",
+      "test": 54,
+      "train": 343,
+      "unique_vectors": 480,
+      "validation": 83
+    },
+    {
+      "disease": "pneumonia",
+      "test": 183,
+      "train": 863,
+      "unique_vectors": 1212,
+      "validation": 166
+    },
+    {
+      "disease": "pneumothorax",
+      "test": 26,
+      "train": 112,
+      "unique_vectors": 155,
+      "validation": 17
+    },
+    {
+      "disease": "poisoning due to analgesics",
+      "test": 2,
+      "train": 27,
+      "unique_vectors": 35,
+      "validation": 6
+    },
+    {
+      "disease": "poisoning due to anticonvulsants",
+      "test": 1,
+      "train": 7,
+      "unique_vectors": 10,
+      "validation": 2
+    },
+    {
+      "disease": "poisoning due to antimicrobial drugs",
+      "test": 3,
+      "train": 23,
+      "unique_vectors": 34,
+      "validation": 8
+    },
+    {
+      "disease": "poisoning due to gas",
+      "test": 8,
+      "train": 52,
+      "unique_vectors": 69,
+      "validation": 9
+    },
+    {
+      "disease": "poisoning due to sedatives",
+      "test": 8,
+      "train": 36,
+      "unique_vectors": 46,
+      "validation": 2
+    },
+    {
+      "disease": "polycystic kidney disease",
+      "test": 15,
+      "train": 89,
+      "unique_vectors": 118,
+      "validation": 14
+    },
+    {
+      "disease": "polycystic ovarian syndrome (pcos)",
+      "test": 23,
+      "train": 109,
+      "unique_vectors": 148,
+      "validation": 16
+    },
+    {
+      "disease": "polycythemia vera",
+      "test": 3,
+      "train": 10,
+      "unique_vectors": 14,
+      "validation": 1
+    },
+    {
+      "disease": "polymyalgia rheumatica",
+      "test": 7,
+      "train": 32,
+      "unique_vectors": 47,
+      "validation": 8
+    },
+    {
+      "disease": "post-traumatic stress disorder (ptsd)",
+      "test": 82,
+      "train": 348,
+      "unique_vectors": 492,
+      "validation": 62
+    },
+    {
+      "disease": "postoperative infection",
+      "test": 9,
+      "train": 27,
+      "unique_vectors": 42,
+      "validation": 6
+    },
+    {
+      "disease": "postpartum depression",
+      "test": 39,
+      "train": 217,
+      "unique_vectors": 306,
+      "validation": 50
+    },
+    {
+      "disease": "preeclampsia",
+      "test": 34,
+      "train": 138,
+      "unique_vectors": 204,
+      "validation": 32
+    },
+    {
+      "disease": "pregnancy",
+      "test": 1,
+      "train": 11,
+      "unique_vectors": 13,
+      "validation": 1
+    },
+    {
+      "disease": "premature atrial contractions (pacs)",
+      "test": 11,
+      "train": 59,
+      "unique_vectors": 81,
+      "validation": 11
+    },
+    {
+      "disease": "premature ovarian failure",
+      "test": 1,
+      "train": 13,
+      "unique_vectors": 17,
+      "validation": 3
+    },
+    {
+      "disease": "premature ventricular contractions (pvcs)",
+      "test": 29,
+      "train": 111,
+      "unique_vectors": 159,
+      "validation": 19
+    },
+    {
+      "disease": "premenstrual tension syndrome",
+      "test": 1,
+      "train": 33,
+      "unique_vectors": 42,
+      "validation": 8
+    },
+    {
+      "disease": "presbyacusis",
+      "test": 4,
+      "train": 16,
+      "unique_vectors": 23,
+      "validation": 3
+    },
+    {
+      "disease": "presbyopia",
+      "test": 8,
+      "train": 50,
+      "unique_vectors": 70,
+      "validation": 12
+    },
+    {
+      "disease": "primary immunodeficiency",
+      "test": 2,
+      "train": 10,
+      "unique_vectors": 13,
+      "validation": 1
+    },
+    {
+      "disease": "primary insomnia",
+      "test": 16,
+      "train": 59,
+      "unique_vectors": 77,
+      "validation": 2
+    },
+    {
+      "disease": "primary kidney disease",
+      "test": 1,
+      "train": 12,
+      "unique_vectors": 16,
+      "validation": 3
+    },
+    {
+      "disease": "problem during pregnancy",
+      "test": 123,
+      "train": 576,
+      "unique_vectors": 820,
+      "validation": 121
+    },
+    {
+      "disease": "prostate cancer",
+      "test": 18,
+      "train": 71,
+      "unique_vectors": 104,
+      "validation": 15
+    },
+    {
+      "disease": "prostatitis",
+      "test": 80,
+      "train": 356,
+      "unique_vectors": 510,
+      "validation": 74
+    },
+    {
+      "disease": "protein deficiency",
+      "test": 2,
+      "train": 9,
+      "unique_vectors": 16,
+      "validation": 5
+    },
+    {
+      "disease": "pseudotumor cerebri",
+      "test": 4,
+      "train": 9,
+      "unique_vectors": 16,
+      "validation": 3
+    },
+    {
+      "disease": "psoriasis",
+      "test": 115,
+      "train": 584,
+      "unique_vectors": 825,
+      "validation": 126
+    },
+    {
+      "disease": "psychosexual disorder",
+      "test": 12,
+      "train": 63,
+      "unique_vectors": 87,
+      "validation": 12
+    },
+    {
+      "disease": "psychotic disorder",
+      "test": 131,
+      "train": 539,
+      "unique_vectors": 802,
+      "validation": 132
+    },
+    {
+      "disease": "pterygium",
+      "test": 9,
+      "train": 56,
+      "unique_vectors": 76,
+      "validation": 11
+    },
+    {
+      "disease": "pulmonary congestion",
+      "test": 36,
+      "train": 213,
+      "unique_vectors": 304,
+      "validation": 55
+    },
+    {
+      "disease": "pulmonary embolism",
+      "test": 108,
+      "train": 568,
+      "unique_vectors": 791,
+      "validation": 115
+    },
+    {
+      "disease": "pulmonary eosinophilia",
+      "test": 13,
+      "train": 53,
+      "unique_vectors": 84,
+      "validation": 18
+    },
+    {
+      "disease": "pulmonary fibrosis",
+      "test": 7,
+      "train": 51,
+      "unique_vectors": 67,
+      "validation": 9
+    },
+    {
+      "disease": "pulmonary hypertension",
+      "test": 38,
+      "train": 188,
+      "unique_vectors": 284,
+      "validation": 58
+    },
+    {
+      "disease": "pyelonephritis",
+      "test": 108,
+      "train": 586,
+      "unique_vectors": 803,
+      "validation": 109
+    },
+    {
+      "disease": "pyogenic skin infection",
+      "test": 118,
+      "train": 596,
+      "unique_vectors": 834,
+      "validation": 120
+    },
+    {
+      "disease": "rectal disorder",
+      "test": 116,
+      "train": 583,
+      "unique_vectors": 808,
+      "validation": 109
+    },
+    {
+      "disease": "restless leg syndrome",
+      "test": 31,
+      "train": 106,
+      "unique_vectors": 156,
+      "validation": 19
+    },
+    {
+      "disease": "retinal detachment",
+      "test": 26,
+      "train": 104,
+      "unique_vectors": 154,
+      "validation": 24
+    },
+    {
+      "disease": "retinopathy due to high blood pressure",
+      "test": 6,
+      "train": 35,
+      "unique_vectors": 47,
+      "validation": 6
+    },
+    {
+      "disease": "rhabdomyolysis",
+      "test": 1,
+      "train": 10,
+      "unique_vectors": 12,
+      "validation": 1
+    },
+    {
+      "disease": "rheumatoid arthritis",
+      "test": 80,
+      "train": 345,
+      "unique_vectors": 518,
+      "validation": 93
+    },
+    {
+      "disease": "rosacea",
+      "test": 79,
+      "train": 359,
+      "unique_vectors": 521,
+      "validation": 83
+    },
+    {
+      "disease": "rotator cuff injury",
+      "test": 4,
+      "train": 28,
+      "unique_vectors": 39,
+      "validation": 7
+    },
+    {
+      "disease": "salivary gland disorder",
+      "test": 1,
+      "train": 6,
+      "unique_vectors": 11,
+      "validation": 4
+    },
+    {
+      "disease": "sarcoidosis",
+      "test": 30,
+      "train": 115,
+      "unique_vectors": 161,
+      "validation": 16
+    },
+    {
+      "disease": "scabies",
+      "test": 12,
+      "train": 59,
+      "unique_vectors": 83,
+      "validation": 12
+    },
+    {
+      "disease": "scar",
+      "test": 13,
+      "train": 63,
+      "unique_vectors": 91,
+      "validation": 15
+    },
+    {
+      "disease": "scarlet fever",
+      "test": 4,
+      "train": 24,
+      "unique_vectors": 37,
+      "validation": 9
+    },
+    {
+      "disease": "schizophrenia",
+      "test": 119,
+      "train": 572,
+      "unique_vectors": 811,
+      "validation": 120
+    },
+    {
+      "disease": "sciatica",
+      "test": 78,
+      "train": 371,
+      "unique_vectors": 521,
+      "validation": 72
+    },
+    {
+      "disease": "scleritis",
+      "test": 4,
+      "train": 10,
+      "unique_vectors": 16,
+      "validation": 2
+    },
+    {
+      "disease": "scleroderma",
+      "test": 21,
+      "train": 114,
+      "unique_vectors": 170,
+      "validation": 35
+    },
+    {
+      "disease": "scoliosis",
+      "test": 7,
+      "train": 62,
+      "unique_vectors": 86,
+      "validation": 17
+    },
+    {
+      "disease": "seasonal allergies (hay fever)",
+      "test": 114,
+      "train": 598,
+      "unique_vectors": 816,
+      "validation": 104
+    },
+    {
+      "disease": "sebaceous cyst",
+      "test": 121,
+      "train": 592,
+      "unique_vectors": 821,
+      "validation": 108
+    },
+    {
+      "disease": "seborrheic dermatitis",
+      "test": 118,
+      "train": 593,
+      "unique_vectors": 800,
+      "validation": 89
+    },
+    {
+      "disease": "seborrheic keratosis",
+      "test": 105,
+      "train": 571,
+      "unique_vectors": 782,
+      "validation": 106
+    },
+    {
+      "disease": "sensorineural hearing loss",
+      "test": 79,
+      "train": 368,
+      "unique_vectors": 529,
+      "validation": 82
+    },
+    {
+      "disease": "sepsis",
+      "test": 117,
+      "train": 590,
+      "unique_vectors": 824,
+      "validation": 117
+    },
+    {
+      "disease": "septic arthritis",
+      "test": 1,
+      "train": 14,
+      "unique_vectors": 21,
+      "validation": 6
+    },
+    {
+      "disease": "shingles (herpes zoster)",
+      "test": 33,
+      "train": 169,
+      "unique_vectors": 244,
+      "validation": 42
+    },
+    {
+      "disease": "sialoadenitis",
+      "test": 58,
+      "train": 220,
+      "unique_vectors": 318,
+      "validation": 40
+    },
+    {
+      "disease": "sick sinus syndrome",
+      "test": 19,
+      "train": 87,
+      "unique_vectors": 120,
+      "validation": 14
+    },
+    {
+      "disease": "sickle cell anemia",
+      "test": 13,
+      "train": 100,
+      "unique_vectors": 136,
+      "validation": 23
+    },
+    {
+      "disease": "sickle cell crisis",
+      "test": 133,
+      "train": 560,
+      "unique_vectors": 808,
+      "validation": 115
+    },
+    {
+      "disease": "sinus bradycardia",
+      "test": 109,
+      "train": 585,
+      "unique_vectors": 814,
+      "validation": 120
+    },
+    {
+      "disease": "sjogren syndrome",
+      "test": 5,
+      "train": 24,
+      "unique_vectors": 32,
+      "validation": 3
+    },
+    {
+      "disease": "skin cancer",
+      "test": 81,
+      "train": 344,
+      "unique_vectors": 519,
+      "validation": 94
+    },
+    {
+      "disease": "skin disorder",
+      "test": 78,
+      "train": 370,
+      "unique_vectors": 520,
+      "validation": 72
+    },
+    {
+      "disease": "skin pigmentation disorder",
+      "test": 106,
+      "train": 573,
+      "unique_vectors": 805,
+      "validation": 126
+    },
+    {
+      "disease": "skin polyp",
+      "test": 106,
+      "train": 583,
+      "unique_vectors": 807,
+      "validation": 118
+    },
+    {
+      "disease": "smoking or tobacco addiction",
+      "test": 129,
+      "train": 541,
+      "unique_vectors": 792,
+      "validation": 122
+    },
+    {
+      "disease": "social phobia",
+      "test": 46,
+      "train": 208,
+      "unique_vectors": 309,
+      "validation": 55
+    },
+    {
+      "disease": "soft tissue sarcoma",
+      "test": 11,
+      "train": 60,
+      "unique_vectors": 89,
+      "validation": 18
+    },
+    {
+      "disease": "somatization disorder",
+      "test": 4,
+      "train": 12,
+      "unique_vectors": 20,
+      "validation": 4
+    },
+    {
+      "disease": "spermatocele",
+      "test": 6,
+      "train": 14,
+      "unique_vectors": 22,
+      "validation": 2
+    },
+    {
+      "disease": "spina bifida",
+      "test": 7,
+      "train": 23,
+      "unique_vectors": 37,
+      "validation": 7
+    },
+    {
+      "disease": "spinal stenosis",
+      "test": 162,
+      "train": 853,
+      "unique_vectors": 1207,
+      "validation": 192
+    },
+    {
+      "disease": "spondylitis",
+      "test": 52,
+      "train": 195,
+      "unique_vectors": 292,
+      "validation": 45
+    },
+    {
+      "disease": "spondylolisthesis",
+      "test": 75,
+      "train": 349,
+      "unique_vectors": 514,
+      "validation": 90
+    },
+    {
+      "disease": "spondylosis",
+      "test": 171,
+      "train": 872,
+      "unique_vectors": 1216,
+      "validation": 173
+    },
+    {
+      "disease": "spontaneous abortion",
+      "test": 172,
+      "train": 854,
+      "unique_vectors": 1212,
+      "validation": 186
+    },
+    {
+      "disease": "sprain or strain",
+      "test": 185,
+      "train": 849,
+      "unique_vectors": 1212,
+      "validation": 178
+    },
+    {
+      "disease": "stenosis of the tear duct",
+      "test": 2,
+      "train": 17,
+      "unique_vectors": 23,
+      "validation": 4
+    },
+    {
+      "disease": "stomach cancer",
+      "test": 7,
+      "train": 52,
+      "unique_vectors": 65,
+      "validation": 6
+    },
+    {
+      "disease": "strep throat",
+      "test": 172,
+      "train": 864,
+      "unique_vectors": 1210,
+      "validation": 174
+    },
+    {
+      "disease": "stress incontinence",
+      "test": 12,
+      "train": 69,
+      "unique_vectors": 91,
+      "validation": 10
+    },
+    {
+      "disease": "stricture of the esophagus",
+      "test": 2,
+      "train": 16,
+      "unique_vectors": 19,
+      "validation": 1
+    },
+    {
+      "disease": "stroke",
+      "test": 72,
+      "train": 337,
+      "unique_vectors": 478,
+      "validation": 69
+    },
+    {
+      "disease": "stye",
+      "test": 138,
+      "train": 564,
+      "unique_vectors": 832,
+      "validation": 130
+    },
+    {
+      "disease": "subacute thyroiditis",
+      "test": 1,
+      "train": 10,
+      "unique_vectors": 12,
+      "validation": 1
+    },
+    {
+      "disease": "subarachnoid hemorrhage",
+      "test": 5,
+      "train": 33,
+      "unique_vectors": 45,
+      "validation": 7
+    },
+    {
+      "disease": "subconjunctival hemorrhage",
+      "test": 16,
+      "train": 109,
+      "unique_vectors": 143,
+      "validation": 18
+    },
+    {
+      "disease": "subdural hemorrhage",
+      "test": 8,
+      "train": 31,
+      "unique_vectors": 44,
+      "validation": 5
+    },
+    {
+      "disease": "substance-related mental disorder",
+      "test": 20,
+      "train": 51,
+      "unique_vectors": 88,
+      "validation": 17
+    },
+    {
+      "disease": "systemic lupus erythematosis (sle)",
+      "test": 8,
+      "train": 32,
+      "unique_vectors": 46,
+      "validation": 6
+    },
+    {
+      "disease": "teething syndrome",
+      "test": 37,
+      "train": 213,
+      "unique_vectors": 290,
+      "validation": 40
+    },
+    {
+      "disease": "temporary or benign blood in urine",
+      "test": 76,
+      "train": 441,
+      "unique_vectors": 612,
+      "validation": 95
+    },
+    {
+      "disease": "temporomandibular joint disorder",
+      "test": 25,
+      "train": 127,
+      "unique_vectors": 172,
+      "validation": 20
+    },
+    {
+      "disease": "tendinitis",
+      "test": 84,
+      "train": 369,
+      "unique_vectors": 533,
+      "validation": 80
+    },
+    {
+      "disease": "tension headache",
+      "test": 26,
+      "train": 109,
+      "unique_vectors": 158,
+      "validation": 23
+    },
+    {
+      "disease": "testicular disorder",
+      "test": 6,
+      "train": 10,
+      "unique_vectors": 17,
+      "validation": 1
+    },
+    {
+      "disease": "testicular torsion",
+      "test": 4,
+      "train": 32,
+      "unique_vectors": 39,
+      "validation": 3
+    },
+    {
+      "disease": "thoracic aortic aneurysm",
+      "test": 11,
+      "train": 58,
+      "unique_vectors": 86,
+      "validation": 17
+    },
+    {
+      "disease": "thoracic outlet syndrome",
+      "test": 8,
+      "train": 35,
+      "unique_vectors": 48,
+      "validation": 5
+    },
+    {
+      "disease": "threatened pregnancy",
+      "test": 125,
+      "train": 584,
+      "unique_vectors": 818,
+      "validation": 109
+    },
+    {
+      "disease": "thrombocytopenia",
+      "test": 10,
+      "train": 49,
+      "unique_vectors": 68,
+      "validation": 9
+    },
+    {
+      "disease": "thrombophlebitis",
+      "test": 42,
+      "train": 198,
+      "unique_vectors": 292,
+      "validation": 52
+    },
+    {
+      "disease": "thyroid nodule",
+      "test": 11,
+      "train": 55,
+      "unique_vectors": 78,
+      "validation": 12
+    },
+    {
+      "disease": "tic (movement) disorder",
+      "test": 7,
+      "train": 26,
+      "unique_vectors": 39,
+      "validation": 6
+    },
+    {
+      "disease": "tietze syndrome",
+      "test": 27,
+      "train": 125,
+      "unique_vectors": 171,
+      "validation": 19
+    },
+    {
+      "disease": "tinnitus of unknown cause",
+      "test": 30,
+      "train": 102,
+      "unique_vectors": 159,
+      "validation": 27
+    },
+    {
+      "disease": "tonsillar hypertrophy",
+      "test": 29,
+      "train": 123,
+      "unique_vectors": 171,
+      "validation": 19
+    },
+    {
+      "disease": "tonsillitis",
+      "test": 42,
+      "train": 205,
+      "unique_vectors": 286,
+      "validation": 39
+    },
+    {
+      "disease": "tooth abscess",
+      "test": 60,
+      "train": 380,
+      "unique_vectors": 529,
+      "validation": 89
+    },
+    {
+      "disease": "tooth disorder",
+      "test": 79,
+      "train": 355,
+      "unique_vectors": 511,
+      "validation": 77
+    },
+    {
+      "disease": "torticollis",
+      "test": 19,
+      "train": 115,
+      "unique_vectors": 159,
+      "validation": 25
+    },
+    {
+      "disease": "tourette syndrome",
+      "test": 2,
+      "train": 10,
+      "unique_vectors": 13,
+      "validation": 1
+    },
+    {
+      "disease": "toxic multinodular goiter",
+      "test": 4,
+      "train": 11,
+      "unique_vectors": 23,
+      "validation": 8
+    },
+    {
+      "disease": "tracheitis",
+      "test": 6,
+      "train": 52,
+      "unique_vectors": 70,
+      "validation": 12
+    },
+    {
+      "disease": "transient ischemic attack",
+      "test": 76,
+      "train": 359,
+      "unique_vectors": 525,
+      "validation": 90
+    },
+    {
+      "disease": "trichiasis",
+      "test": 1,
+      "train": 10,
+      "unique_vectors": 12,
+      "validation": 1
+    },
+    {
+      "disease": "trichomonas infection",
+      "test": 19,
+      "train": 121,
+      "unique_vectors": 161,
+      "validation": 21
+    },
+    {
+      "disease": "trigeminal neuralgia",
+      "test": 10,
+      "train": 54,
+      "unique_vectors": 78,
+      "validation": 14
+    },
+    {
+      "disease": "trigger finger (finger disorder)",
+      "test": 7,
+      "train": 30,
+      "unique_vectors": 42,
+      "validation": 5
+    },
+    {
+      "disease": "tuberculosis",
+      "test": 1,
+      "train": 7,
+      "unique_vectors": 10,
+      "validation": 2
+    },
+    {
+      "disease": "ulcerative colitis",
+      "test": 42,
+      "train": 178,
+      "unique_vectors": 269,
+      "validation": 49
+    },
+    {
+      "disease": "urethral disorder",
+      "test": 26,
+      "train": 108,
+      "unique_vectors": 151,
+      "validation": 17
+    },
+    {
+      "disease": "urethral stricture",
+      "test": 23,
+      "train": 114,
+      "unique_vectors": 157,
+      "validation": 20
+    },
+    {
+      "disease": "urethral valves",
+      "test": 1,
+      "train": 12,
+      "unique_vectors": 14,
+      "validation": 1
+    },
+    {
+      "disease": "urethritis",
+      "test": 50,
+      "train": 215,
+      "unique_vectors": 299,
+      "validation": 34
+    },
+    {
+      "disease": "urge incontinence",
+      "test": 42,
+      "train": 205,
+      "unique_vectors": 293,
+      "validation": 46
+    },
+    {
+      "disease": "urinary tract infection",
+      "test": 107,
+      "train": 584,
+      "unique_vectors": 815,
+      "validation": 124
+    },
+    {
+      "disease": "urinary tract obstruction",
+      "test": 78,
+      "train": 371,
+      "unique_vectors": 532,
+      "validation": 83
+    },
+    {
+      "disease": "uterine atony",
+      "test": 28,
+      "train": 136,
+      "unique_vectors": 194,
+      "validation": 30
+    },
+    {
+      "disease": "uterine fibroids",
+      "test": 39,
+      "train": 216,
+      "unique_vectors": 288,
+      "validation": 33
+    },
+    {
+      "disease": "vaginal cyst",
+      "test": 187,
+      "train": 855,
+      "unique_vectors": 1215,
+      "validation": 173
+    },
+    {
+      "disease": "vaginal yeast infection",
+      "test": 78,
+      "train": 346,
+      "unique_vectors": 494,
+      "validation": 70
+    },
+    {
+      "disease": "vaginismus",
+      "test": 7,
+      "train": 19,
+      "unique_vectors": 31,
+      "validation": 5
+    },
+    {
+      "disease": "vaginitis",
+      "test": 126,
+      "train": 557,
+      "unique_vectors": 821,
+      "validation": 138
+    },
+    {
+      "disease": "varicocele of the testicles",
+      "test": 91,
+      "train": 380,
+      "unique_vectors": 530,
+      "validation": 59
+    },
+    {
+      "disease": "varicose veins",
+      "test": 12,
+      "train": 79,
+      "unique_vectors": 101,
+      "validation": 10
+    },
+    {
+      "disease": "vasculitis",
+      "test": 22,
+      "train": 113,
+      "unique_vectors": 163,
+      "validation": 28
+    },
+    {
+      "disease": "venous insufficiency",
+      "test": 26,
+      "train": 116,
+      "unique_vectors": 168,
+      "validation": 26
+    },
+    {
+      "disease": "viral exanthem",
+      "test": 77,
+      "train": 335,
+      "unique_vectors": 492,
+      "validation": 80
+    },
+    {
+      "disease": "viral hepatitis",
+      "test": 2,
+      "train": 16,
+      "unique_vectors": 20,
+      "validation": 2
+    },
+    {
+      "disease": "viral warts",
+      "test": 44,
+      "train": 199,
+      "unique_vectors": 289,
+      "validation": 46
+    },
+    {
+      "disease": "vitamin b12 deficiency",
+      "test": 1,
+      "train": 21,
+      "unique_vectors": 24,
+      "validation": 2
+    },
+    {
+      "disease": "vitreous degeneration",
+      "test": 28,
+      "train": 120,
+      "unique_vectors": 169,
+      "validation": 21
+    },
+    {
+      "disease": "vitreous hemorrhage",
+      "test": 4,
+      "train": 18,
+      "unique_vectors": 24,
+      "validation": 2
+    },
+    {
+      "disease": "vocal cord polyp",
+      "test": 3,
+      "train": 14,
+      "unique_vectors": 21,
+      "validation": 4
+    },
+    {
+      "disease": "vulvar disorder",
+      "test": 4,
+      "train": 32,
+      "unique_vectors": 44,
+      "validation": 8
+    },
+    {
+      "disease": "vulvodynia",
+      "test": 205,
+      "train": 836,
+      "unique_vectors": 1218,
+      "validation": 177
+    },
+    {
+      "disease": "white blood cell disease",
+      "test": 44,
+      "train": 218,
+      "unique_vectors": 313,
+      "validation": 51
+    },
+    {
+      "disease": "whooping cough",
+      "test": 1,
+      "train": 9,
+      "unique_vectors": 13,
+      "validation": 3
+    },
+    {
+      "disease": "yeast infection",
+      "test": 53,
+      "train": 189,
+      "unique_vectors": 291,
+      "validation": 49
+    }
+  ],
+  "coverage_repairs": 18,
+  "group_definition": "complete remaining symptom vector, excluding disease label and row metadata",
+  "group_id_encoding": "zero-based first-seen exact equality after eligibility; bound to dataset fingerprint and feature order",
+  "method": "seeded_group_quota_coverage_repair_v1",
+  "output_row_order": "first surviving raw occurrence, stable order within each split",
+  "prior_full_dataset_eda": true,
+  "seed": 42,
+  "source_row_encoding": "1-based raw DATA row; CSV header excluded",
+  "splits": [
+    {
+      "classes": 587,
+      "dedup_records": 131248,
+      "groups": 117211,
+      "pct_records": 70.02358163406852,
+      "split": "train"
+    },
+    {
+      "classes": 587,
+      "dedup_records": 28120,
+      "groups": 25127,
+      "pct_records": 15.002614253550583,
+      "split": "validation"
+    },
+    {
+      "classes": 587,
+      "dedup_records": 28066,
+      "groups": 25128,
+      "pct_records": 14.973804112380892,
+      "split": "test"
+    }
+  ],
+  "target_ratios": [
+    0.7,
+    0.15,
+    0.15
+  ],
+  "test_usage": "locked after Phase 2; final evaluation only, never feature or hyperparameter selection",
+  "validation": {
+    "conflicting_groups_preserved": 12728,
+    "deterministic_assignment_recomputed": true,
+    "deterministic_seed42_reproduction": true,
+    "exact_duplicate_rows": 0,
+    "fitted_transformers": [],
+    "group_overlaps": {
+      "train / test": 0,
+      "train / validation": 0,
+      "validation / test": 0
+    },
+    "missing_classes": {
+      "test": [],
+      "train": [],
+      "validation": []
+    },
+    "singleton_test_classes": 41,
+    "singleton_validation_classes": 33,
+    "symptom_vector_overlaps": {
+      "train / test": 0,
+      "train / validation": 0,
+      "validation / test": 0
+    },
+    "test_locked": true
+  }
+}

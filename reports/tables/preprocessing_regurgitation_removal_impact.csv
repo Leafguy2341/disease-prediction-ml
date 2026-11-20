@@ -1,0 +1,17 @@
+﻿disease,unique_vectors_before,unique_vectors_after,dedup_records_with_either,vectors_lost,pct_vectors_lost,eligible_before,eligible_after
+temporary or benign blood in urine,803,612,407,191,23.785803237858033,True,True
+hiatal hernia,815,632,409,183,22.45398773006135,True,True
+cholecystitis,1204,1032,609,172,14.285714285714285,True,True
+gallstone,812,654,512,158,19.458128078817737,True,True
+gastritis,527,377,265,150,28.46299810246679,True,True
+iron deficiency anemia,530,380,264,150,28.30188679245283,True,True
+gastroesophageal reflux disease (gerd),302,203,160,99,32.78145695364238,True,True
+crohn disease,273,185,138,88,32.234432234432234,True,True
+abdominal hernia,265,180,136,85,32.075471698113205,True,True
+intestinal disease,186,117,105,69,37.096774193548384,True,True
+cirrhosis,163,96,83,67,41.104294478527606,True,True
+gastroparesis,74,47,40,27,36.486486486486484,True,True
+celiac disease,43,25,23,18,41.86046511627907,True,True
+lymphoma,41,25,21,16,39.02439024390244,True,True
+stricture of the esophagus,32,19,18,13,40.625,True,True
+foreign body in the nose,1,1,1,0,0.0,False,False

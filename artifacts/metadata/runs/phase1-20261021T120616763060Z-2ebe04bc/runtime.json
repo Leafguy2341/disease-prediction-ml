@@ -1,0 +1,14 @@
+{
+  "project_root": "/content/disease-prediction-ml",
+  "storage_root": "/content/drive/MyDrive/ML_Projects/disease-prediction-ml",
+  "raw_dir": "/content/drive/MyDrive/ML_Projects/disease-prediction-ml/data/raw",
+  "output_root": "/content/drive/MyDrive/ML_Projects/disease-prediction-ml",
+  "runtime": "colab",
+  "drive_mount": "/content/drive",
+  "cache_dir": "/content/disease-prediction-ml-cache",
+  "copy_raw_to_local": true,
+  "source_csv": "/content/drive/MyDrive/ML_Projects/disease-prediction-ml/data/raw/Disease and symptoms dataset.csv",
+  "read_csv": "/content/disease-prediction-ml-cache/8de90603ebada467fc2703db2ee4292856e52d64e94982ef926df22fa0c21320/Disease and symptoms dataset.csv",
+  "source_sha256": "8de90603ebada467fc2703db2ee4292856e52d64e94982ef926df22fa0c21320",
+  "run_id": "phase1-20261021T120616763060Z-2ebe04bc"
+}

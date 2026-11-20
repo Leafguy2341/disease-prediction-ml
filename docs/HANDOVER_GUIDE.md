@@ -1,5 +1,15 @@
 # Hướng dẫn bàn giao dự án
 
+## Phân phối dataset/checkpoint qua GitHub và Git LFS hiện hành
+
+Theo yêu cầu owner, Git hiện phân phối toàn bộ assets đã đồng bộ cần cho notebooks/API: raw/processed splits, đầy đủ5baseline và5tuned checkpoints, Phase2 metadata, ensemble definitions/manifests, saved predictions, completed final evaluation và reports. CSV raw190MB và10pipeline.joblib dùng Git LFS; không đổi nội dung/SHA hoặc viết lại history. Cài Git LFS, clone/pull repository, chạy `git lfs install --local` và `git lfs pull` trong code root.
+
+Đối chiếu read-only: `python -B -m scripts.verify_repository_data --allow-locked-bytes`. Inventory [repository_data_manifest.json](../artifacts/metadata/repository_data_manifest.json) chứa size/SHA từng file,11LFS payloads, kết quả đối chiếu folder data cũ và149mục migration. Không parse test/NPZ/joblib để thống kê hoặc đánh giá; test bytes chỉ được stream phục vụ kiểm integrity/publication. Giữ execution marker và manifest final nguyên bản.
+
+Các mô tả “Git chỉ có code; cần data ZIP riêng” bên dưới là lịch sử. File ZIP/manifest release cũ không được sửa. Không copy43file source/config/script legacy vào code mới; chỉ data/artifact/report được đối chiếu. Embedding cache của07, Python environments, secrets, dist/ZIP và cache không được đưa lên. Cache embedding thiếu được notebook chuẩn bị lại theo public revision đã khóa.
+
+Điểm giới hạn: verify file PASS không có nghĩa mọi cell đã được thực thi. Notebook00–06 còn locator Colab cũ `MyDrive/ML_Projects/disease-prediction-ml`, trong khi Drive của owner có storage ở `disease-prediction-ml-data`; cần setup root phù hợp trước chạy, không sửa cell đã chạy và gắn output cũ vào code mới. Không tự đồng bộ hoặc thay nội dung Drive trong lần publish Git. GitHub ZIP có thể chứa pointers; clone + LFS pull là đường bàn giao được kiểm.
+
 ## Dictionary release hiện hành
 
 `configs/synonyms.json` hiện có375feature active/400alias Việt theo phê duyệt owner. Bàn giao kèm [activation-20261118](../reports/terminology/activation-20261118/manifest.json) để biết checksum, bản sao nguyên byte trước/sau và coverage CSV. Khởi động lại API khi đổi dictionary; không train model, thay schema hoặc copy config lịch sử135active đè lên bản mới. Các số135active/240pending trong các đoạn bàn giao cũ là lịch sử, không phải runtime hiện hành. Alias activation không đồng nghĩa đã được chuyên gia y khoa xác nhận.

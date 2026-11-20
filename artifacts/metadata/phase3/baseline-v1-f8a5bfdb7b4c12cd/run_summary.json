@@ -1,0 +1,195 @@
+{
+  "comparison_csv": "/content/drive/MyDrive/ML_Projects/disease-prediction-ml/reports/tables/phase3_baseline-v1-f8a5bfdb7b4c12cd_validation_comparison.csv",
+  "comparison_sha256": "958ee981e032493db4662234dadbef922c483513fc120722c0abdcb8d9023836",
+  "environment": {
+    "cpu": "Intel(R) Xeon(R) CPU @ 2.20GHz",
+    "drive_read_write_verified": true,
+    "gpu": [],
+    "gpu_used_by_estimators": false,
+    "logical_cpus": 2,
+    "numpy": "2.1.3",
+    "output_root": "/content/drive/MyDrive/ML_Projects/disease-prediction-ml",
+    "pandas": "2.2.3",
+    "platform": "Linux",
+    "python": "3.13.18",
+    "ram_available_gb": 11.437,
+    "ram_total_gb": 12.671,
+    "runtime": "colab",
+    "sklearn": "1.6.1",
+    "source_root": "/content/disease-prediction-ml-runtime",
+    "test_payload_opened": false
+  },
+  "experiment_id": "baseline-v1-f8a5bfdb7b4c12cd",
+  "figures": [
+    {
+      "name": "validation_performance",
+      "path": "/content/drive/MyDrive/ML_Projects/disease-prediction-ml/reports/figures/phase3_baseline-v1-f8a5bfdb7b4c12cd_validation_performance.png",
+      "sha256": "3da470385cd193011b35ea798e345a2f8878571621917e7f2e08b4ba11d6af7f"
+    },
+    {
+      "name": "fit_prediction_time",
+      "path": "/content/drive/MyDrive/ML_Projects/disease-prediction-ml/reports/figures/phase3_baseline-v1-f8a5bfdb7b4c12cd_fit_prediction_time.png",
+      "sha256": "d91b433f9cdef95c3cafe509679c84f2c644e601a12904d9ba6a039529aaabe1"
+    },
+    {
+      "name": "difficult_classes",
+      "path": "/content/drive/MyDrive/ML_Projects/disease-prediction-ml/reports/figures/phase3_baseline-v1-f8a5bfdb7b4c12cd_difficult_classes.png",
+      "sha256": "cb3dae9980a71aa7f6d911b775d56469c12d41fdec5eead3db01b706320dd50c"
+    }
+  ],
+  "identity": {
+    "config": {
+      "expected_phase2": {
+        "classes": 587,
+        "features": 375,
+        "records": 187434,
+        "sha256": "afde00ce35bf4fd31c9c76edcc3c8b64104e53fb81dd98d4a56d7b3a884b16b3"
+      },
+      "models": {
+        "bernoulli_nb": {
+          "alpha": 1.0,
+          "binarize": null
+        },
+        "knn": {
+          "algorithm": "brute",
+          "metric": "manhattan",
+          "n_neighbors": 5,
+          "weights": "distance"
+        },
+        "linear_svc": {
+          "C": 1.0,
+          "dual": "auto",
+          "max_iter": 3000,
+          "tol": 0.001
+        },
+        "logistic_regression": {
+          "C": 1.0,
+          "max_iter": 200,
+          "solver": "saga",
+          "tol": 0.001
+        },
+        "random_forest": {
+          "max_depth": 24,
+          "max_features": "sqrt",
+          "max_leaf_nodes": 512,
+          "min_samples_leaf": 2,
+          "n_estimators": 100
+        }
+      },
+      "phase": 3,
+      "resources": {
+        "blas_threads": 1,
+        "max_workers": 2,
+        "min_available_ram_gb": 2.0,
+        "prediction_batch_size": 64,
+        "working_memory_mb": 128
+      },
+      "run_tag": "baseline-v1",
+      "seed": 42,
+      "selection_metric": "macro_f1",
+      "zero_division": 0
+    },
+    "experiment_id": "baseline-v1-f8a5bfdb7b4c12cd",
+    "feature_schema_identity": "dd07a3c73dd41558daa9c08e816e0a93d9efc4155f98b7e2b73325bffe31c5c0",
+    "label_mapping_identity": "d2ef711e5e04062e8b5b949ce434b1383e1ca2fef6eb31a0865acb2f470ab5b5",
+    "phase": 3,
+    "phase2_manifest_sha256": "50308d250d874b1b653a71c31f38dece0ec9fbb4dbc9d94f68bc1461e80b8fe9",
+    "processed_fingerprint": "afde00ce35bf4fd31c9c76edcc3c8b64104e53fb81dd98d4a56d7b3a884b16b3",
+    "source_sha256": {
+      "src/data/audit.py": "41ff075c529ecf7200caf3717b660f655bc344e558d52d1448045aa2dd91672f",
+      "src/data/loader.py": "37397527ec5b5d48e233776fa5ef040a4bc476e23a45dd26d81ed5144c5ab17b",
+      "src/data/paths.py": "89ab450a76fffe92bb30fd6aa11b69567d69293916da2fda78123a8f29249eeb",
+      "src/data/preprocessing.py": "648c43f722a1c30e49e7f3279431c8136bbc5396f42ec9b51212679663fb845d",
+      "src/models/runtime.py": "ae3f4258bfd1029ed13aa1021e3905fee8cfdd53b5651a18f770e74e766ca500",
+      "src/models/training.py": "d48022c38d06712e028387e99a1563da8782af408749f436da54d17c825dc652"
+    },
+    "training_data_fingerprint": "3dfd77eb71ad3a2917a3a390917953f437ae6afb5220ac9feb28fec132e11e12",
+    "validation_data_fingerprint": "a203b9c0f1f124fa25d4cae6f5299d986bba23859ceca80660bc8bcb843570f2",
+    "versions": {
+      "joblib": "1.6.0",
+      "numpy": "2.1.3",
+      "python": "3.13.18",
+      "scipy": "1.16.3",
+      "sklearn": "1.6.1"
+    }
+  },
+  "models": [
+    {
+      "checkpoint_dir": "/content/drive/MyDrive/ML_Projects/disease-prediction-ml/artifacts/models/phase3/baseline-v1-f8a5bfdb7b4c12cd/logistic_regression",
+      "error": null,
+      "metrics": {
+        "accuracy": 0.8370910384068279,
+        "macro_f1": 0.7878081402467481,
+        "macro_precision": 0.8274197939731976,
+        "macro_recall": 0.7791885208694249,
+        "weighted_f1": 0.836675385063782
+      },
+      "model": "logistic_regression",
+      "status": "completed",
+      "supports_predict_proba": true
+    },
+    {
+      "checkpoint_dir": "/content/drive/MyDrive/ML_Projects/disease-prediction-ml/artifacts/models/phase3/baseline-v1-f8a5bfdb7b4c12cd/random_forest",
+      "error": null,
+      "metrics": {
+        "accuracy": 0.7005334281650071,
+        "macro_f1": 0.4919973343873884,
+        "macro_precision": 0.6596511601097594,
+        "macro_recall": 0.4412297767946841,
+        "weighted_f1": 0.699310655240865
+      },
+      "model": "random_forest",
+      "status": "completed",
+      "supports_predict_proba": true
+    },
+    {
+      "checkpoint_dir": "/content/drive/MyDrive/ML_Projects/disease-prediction-ml/artifacts/models/phase3/baseline-v1-f8a5bfdb7b4c12cd/linear_svc",
+      "error": null,
+      "metrics": {
+        "accuracy": 0.8307965860597439,
+        "macro_f1": 0.7842218617528385,
+        "macro_precision": 0.8152059711563796,
+        "macro_recall": 0.7813986571375208,
+        "weighted_f1": 0.8298659883862443
+      },
+      "model": "linear_svc",
+      "status": "completed",
+      "supports_predict_proba": false
+    },
+    {
+      "checkpoint_dir": "/content/drive/MyDrive/ML_Projects/disease-prediction-ml/artifacts/models/phase3/baseline-v1-f8a5bfdb7b4c12cd/knn",
+      "error": null,
+      "metrics": {
+        "accuracy": 0.7831436699857752,
+        "macro_f1": 0.731034377228807,
+        "macro_precision": 0.7836199704534296,
+        "macro_recall": 0.7319204579409303,
+        "weighted_f1": 0.786804015086416
+      },
+      "model": "knn",
+      "status": "completed",
+      "supports_predict_proba": true
+    },
+    {
+      "checkpoint_dir": "/content/drive/MyDrive/ML_Projects/disease-prediction-ml/artifacts/models/phase3/baseline-v1-f8a5bfdb7b4c12cd/bernoulli_nb",
+      "error": null,
+      "metrics": {
+        "accuracy": 0.8148648648648649,
+        "macro_f1": 0.5993405304596529,
+        "macro_precision": 0.6722970794148826,
+        "macro_recall": 0.5738751330999489,
+        "weighted_f1": 0.8052504814551471
+      },
+      "model": "bernoulli_nb",
+      "status": "completed",
+      "supports_predict_proba": true
+    }
+  ],
+  "phase": 3,
+  "phase4_ready": true,
+  "selection_metric": "macro_f1",
+  "soft_voting": "LinearSVC has no predict_proba. Use compatible probability models or training-only group-aware calibration in a later phase; no fabricated probabilities.",
+  "test_payload_opened": false,
+  "validation_only": true,
+  "zero_division": 0
+}

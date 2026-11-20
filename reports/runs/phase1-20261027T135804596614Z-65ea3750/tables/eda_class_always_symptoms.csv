@@ -1,0 +1,218 @@
+﻿disease,symptom,class_rows
+abscess of the lung,depressive or psychotic symptoms,19
+acute fatty liver of pregnancy (aflp),emotional symptoms,9
+adrenal cancer,dizziness,3
+adrenal cancer,diminished hearing,3
+amyloidosis,anxiety and nervousness,4
+amyloidosis,wrist weakness,4
+aphakia,symptoms of eye,9
+aspergillosis,shortness of breath,10
+aspergillosis,knee lump or mass,10
+avascular necrosis,drug abuse,10
+birth trauma,depressive or psychotic symptoms,11
+blepharospasm,headache,6
+carcinoid syndrome,involuntary urination,2
+carcinoid syndrome,knee lump or mass,2
+cat scratch disease,skin swelling,3
+cat scratch disease,groin mass,3
+cholesteatoma,nasal congestion,31
+chronic inflammatory demyelinating polyneuropathy (cidp),dizziness,18
+chronic ulcer,skin lesion,1
+chronic ulcer,skin pain,1
+congenital malformation syndrome,diminished hearing,13
+connective tissue disorder,difficulty in swallowing,3
+connective tissue disorder,feeling ill,3
+conversion disorder,anxiety and nervousness,20
+cryptococcosis,depressive or psychotic symptoms,11
+cryptococcosis,cross-eyed,11
+cryptorchidism,lack of growth,5
+cushing syndrome,emotional symptoms,9
+cyst of the eyelid,diminished vision,18
+dengue fever,sore throat,3
+dengue fever,wrist pain,3
+diabetes,weight gain,1
+diabetes,thirst,1
+diabetes insipidus,dizziness,12
+diabetic kidney disease,blood in stool,2
+diabetic kidney disease,impotence,2
+dislocation of the foot,vomiting,19
+dislocation of the hip,abusing alcohol,6
+dislocation of the knee,knee pain,3
+dislocation of the patella,knee pain,3
+dislocation of the patella,knee stiffness or tightness,3
+dumping syndrome,vomiting,4
+edward syndrome,suprapubic pain,6
+empyema,sharp chest pain,6
+empyema,leg pain,6
+ependymoma,headache,19
+epidural hemorrhage,depressive or psychotic symptoms,10
+epidural hemorrhage,dizziness,10
+esophageal varices,dizziness,3
+esophageal varices,nausea,3
+factitious disorder,depression,13
+fetal alcohol syndrome,depressive or psychotic symptoms,7
+foreign body in the nose,nasal congestion,1
+foreign body in the nose,regurgitation.1,1
+friedrich ataxia,cough,5
+friedrich ataxia,knee lump or mass,5
+frostbite,sharp chest pain,12
+g6pd enzyme deficiency,cough,6
+g6pd enzyme deficiency,emotional symptoms,6
+galactorrhea of unknown cause,anxiety and nervousness,11
+gas gangrene,sharp abdominal pain,1
+gas gangrene,wrist pain,1
+granuloma inguinale,sharp chest pain,10
+hashimoto thyroiditis,abnormal involuntary movements,2
+hashimoto thyroiditis,weight gain,2
+heart contusion,depression,11
+heat stroke,dizziness,1
+heat stroke,feeling hot,1
+hemarthrosis,frequent urination,9
+hemochromatosis,difficulty speaking,3
+high blood pressure,sharp chest pain,1
+high blood pressure,headache,1
+histoplasmosis,cough,5
+histoplasmosis,elbow weakness,5
+hpv,involuntary urination,13
+human immunodeficiency virus infection (hiv),drug abuse,2
+human immunodeficiency virus infection (hiv),fears and phobias,2
+human immunodeficiency virus infection (hiv),nightmares,2
+huntington disease,anxiety and nervousness,1
+huntington disease,elbow weakness,1
+hypercalcemia,retention of urine,10
+hypergammaglobulinemia,blood in stool,1
+hypergammaglobulinemia,fatigue,1
+hyperhidrosis,cough,24
+hyperlipidemia,sharp chest pain,3
+hyperlipidemia,smoking problems,3
+hyperosmotic hyperketotic state,cough,5
+hypertrophic obstructive cardiomyopathy (hocm),anxiety and nervousness,6
+hypocalcemia,sharp chest pain,46
+hypothermia,fainting,13
+infection of open wound,hand or finger swelling,35
+insulin overdose,depressive or psychotic symptoms,9
+insulin overdose,emotional symptoms,9
+intracranial abscess,headache,12
+intussusception,blood in stool,4
+kaposi sarcoma,depression,1
+kaposi sarcoma,elbow weakness,1
+leukemia,muscle stiffness or tightness,10
+lichen planus,difficulty speaking,9
+lichen planus,abnormal appearing skin,9
+lichen planus,skin growth,9
+lung contusion,shortness of breath,15
+lymphangitis,arm pain,3
+lymphangitis,neck swelling,3
+magnesium deficiency,sharp chest pain,35
+malaria,fainting,15
+meckel diverticulum,lower abdominal pain,4
+meckel diverticulum,knee lump or mass,4
+meningioma,dizziness,18
+moyamoya disease,depressive or psychotic symptoms,12
+myelodysplastic syndrome,difficulty speaking,3
+myocarditis,sharp chest pain,1
+myocarditis,dizziness,1
+myocarditis,palpitations,1
+myoclonus,insomnia,11
+necrotizing fasciitis,leg pain,3
+necrotizing fasciitis,hip pain,3
+normal pressure hydrocephalus,palpitations,26
+obesity,weight gain,3
+obesity,sleepiness,3
+omphalitis,emotional symptoms,7
+omphalitis,flatulence,7
+omphalitis,irregular belly button,7
+open wound due to trauma,wrist swelling,1
+open wound due to trauma,skin on arm or hand looks infected,1
+open wound of the abdomen,sharp abdominal pain,3
+open wound of the cheek,wrist pain,1
+open wound of the cheek,facial pain,1
+open wound of the chest,sharp chest pain,1
+open wound of the chest,drug abuse,1
+open wound of the face,wrist swelling,3
+open wound of the face,facial pain,3
+open wound of the head,abusing alcohol,1
+open wound of the head,headache,1
+open wound of the jaw,wrist swelling,2
+open wound of the jaw,lip swelling,2
+open wound of the knee,leg pain,1
+open wound of the knee,leg swelling,1
+open wound of the lip,mouth ulcer,26
+open wound of the nose,diminished hearing,11
+open wound of the shoulder,abusing alcohol,4
+open wound of the shoulder,shoulder pain,4
+optic neuritis,headache,10
+oral leukoplakia,skin swelling,4
+oral leukoplakia,tongue lesions,4
+otosclerosis,emotional symptoms,19
+parathyroid adenoma,throat feels tight,18
+pelvic fistula,dizziness,5
+pelvic fistula,elbow weakness,5
+pemphigus,hand or finger pain,7
+pemphigus,skin lesion,7
+peyronie disease,mass in scrotum,21
+pharyngitis,hoarse voice,19
+pinguecula,headache,6
+placental abruption,nausea,14
+pneumoconiosis,dizziness,14
+poisoning due to antihypertensives,sharp abdominal pain,17
+poisoning due to antipsychotics,anxiety and nervousness,10
+poisoning due to antipsychotics,sharp chest pain,10
+poisoning due to ethylene glycol,depression,24
+poisoning due to opioids,dizziness,9
+poisoning due to opioids,difficulty speaking,9
+premature rupture of amniotic membrane,sharp abdominal pain,9
+premature rupture of amniotic membrane,uterine contractions,9
+priapism,abusing alcohol,6
+primary thrombocythemia,dizziness,3
+primary thrombocythemia,flatulence,3
+primary thrombocythemia,fatigue,3
+pseudohypoparathyroidism,leg pain,12
+pulmonic valve disease,shortness of breath,11
+pulmonic valve disease,emotional symptoms,11
+raynaud disease,hand or finger pain,12
+reactive arthritis,hip pain,10
+reactive arthritis,knee lump or mass,10
+rhabdomyolysis,leg pain,16
+rheumatic fever,knee lump or mass,2
+rheumatic fever,itchiness of eye,2
+rocky mountain spotted fever,headache,1
+rocky mountain spotted fever,wrist pain,1
+scurvy,sharp abdominal pain,4
+scurvy,knee lump or mass,4
+spherocytosis,cough,5
+spherocytosis,elbow weakness,5
+spinocerebellar ataxia,anxiety and nervousness,8
+sporotrichosis,wrist pain,3
+sporotrichosis,knee pain,3
+syndrome of inappropriate secretion of adh (siadh),feeling ill,4
+syringomyelia,fainting,14
+testicular cancer,anxiety and nervousness,10
+testicular cancer,diminished hearing,10
+thalassemia,insomnia,1
+thalassemia,elbow weakness,1
+trichiasis,diminished vision,30
+trichinosis,nasal congestion,10
+trichinosis,knee lump or mass,10
+tricuspid valve disease,anxiety and nervousness,9
+tricuspid valve disease,emotional symptoms,9
+tuberous sclerosis,depressive or psychotic symptoms,6
+turner syndrome,depression,1
+turner syndrome,emotional symptoms,1
+typhoid fever,wrist pain,1
+typhoid fever,fever,1
+uterine cancer,groin mass,5
+uterine cancer,vaginal bleeding after menopause,5
+vacterl syndrome,suprapubic pain,9
+vacterl syndrome,emotional symptoms,9
+valley fever,hand or finger pain,9
+vertebrobasilar insufficiency,back pain,23
+vitamin a deficiency,hand or finger pain,5
+vitamin a deficiency,knee lump or mass,5
+volvulus,depressive or psychotic symptoms,11
+von willebrand disease,blood in stool,5
+von willebrand disease,muscle swelling,5
+vulvar cancer,insomnia,6
+wernicke korsakoff syndrome,anxiety and nervousness,6
+wilson disease,insomnia,14
+zenker diverticulum,sore throat,11

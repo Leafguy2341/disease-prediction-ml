@@ -1,0 +1,17 @@
+{
+  "source": "benchmark.json in the same run folder",
+  "benchmark_sha256": "d94591be179291810c0648d7775b2db94acb90262da1b064c879d8c4c176b4d1",
+  "figures": {
+    "methods_overview.png": "365f2246f2bd06c98394b9def0d1ce8600b25870f98e93baa26be96ae71cef1d",
+    "development_extraction.png": "d4c4e8a98d83ce95a258bc0c2a822d0b262843aa201cc6139678981faad2f7f1",
+    "development_retrieval.png": "d53f8d265e2df297c7e8cb9fc7e1eaed656aced2a12e90a9db967695453ff25a",
+    "development_latency.png": "8e114f6e0fad54dcd5fe6e32aef3eb43497bb7090a0b9dc377f2d9fe254615bf",
+    "development_coverage_confirmation.png": "066ca544df7c671b6aca12c31f409db99d2314bdf0beb418f138efb56e89c123",
+    "reserved_synthetic_evaluation_extraction.png": "32f859f7113ff586bb05d9384f2856623a09460409187c7250d0469bf34cfb21",
+    "reserved_synthetic_evaluation_retrieval.png": "5ea1147cba30fcc8b512b7082c7f87036b30742c2e3d2d269672f4de58698dae",
+    "reserved_synthetic_evaluation_latency.png": "ac8017fbc958e6cc0e0df0e4d6549318dff5b4bfe62488de6d0079f6d60eb8aa",
+    "reserved_synthetic_evaluation_coverage_confirmation.png": "2aea6c0a9439dcd930686b6d285e81dcd9cf36aa848cb9ee85ee461ffc2c5f37"
+  },
+  "comparison_sha256": "ee2fe1a92b32d578377ec256914eb8534b33d39c7adcb2364e2eff9e1c4897c5",
+  "complete": true
+}

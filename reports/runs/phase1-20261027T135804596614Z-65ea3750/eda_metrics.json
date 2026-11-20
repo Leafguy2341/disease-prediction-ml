@@ -1,0 +1,38 @@
+{
+  "class_count_quantiles": {
+    "0.0": 1.0,
+    "0.01": 1.0,
+    "0.05": 3.0,
+    "0.25": 30.0,
+    "0.5": 168.0,
+    "0.75": 505.0,
+    "0.95": 913.0,
+    "0.99": 1215.0,
+    "1.0": 1219.0
+  },
+  "imbalance_max_min_ratio": 1219.0,
+  "majority_class_fraction": 0.0049363218530442,
+  "top20_class_fraction": 0.09834173601409221,
+  "class_sample_mean": 319.46313065976716,
+  "active_symptoms_quantiles": {
+    "0.0": 1.0,
+    "0.25": 4.0,
+    "0.5": 5.0,
+    "0.75": 6.0,
+    "0.95": 8.0,
+    "1.0": 12.0
+  },
+  "active_symptoms_mean": 5.3328514446536674,
+  "all_zero_rows": 0,
+  "single_symptom_rows": 443,
+  "always_absent_symptoms": 49,
+  "always_present_symptoms": 0,
+  "single_class_symptoms": 40,
+  "single_class_symptoms_support_ge5": 35,
+  "high_absolute_correlation_pairs": 0,
+  "high_correlation_pairs_joint_ge10": 0,
+  "rows_in_repeated_patterns_fraction": 0.4913806718095122,
+  "excess_repeated_patterns_fraction": 0.3120411427645832,
+  "conflicting_rows_fraction": 0.1608779282836259,
+  "recommendation": "CONDITIONAL GO"
+}

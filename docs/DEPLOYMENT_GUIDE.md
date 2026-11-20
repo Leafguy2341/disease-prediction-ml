@@ -1,5 +1,11 @@
 # Chạy ứng dụng local và notebooks Colab
 
+## Nhận dữ liệu và checkpoint từ GitHub
+
+Repository hiện có frozen datasets/models/reports thay vì chỉ source. Trên clone mới dùng Git LFS đã cài, `git lfs install --local` rồi `git lfs pull`; kiểm `python -B -m scripts.verify_repository_data --allow-locked-bytes` trước smoke. CSV raw và10pipelines là LFS, các file khác theo [inventory](../artifacts/metadata/repository_data_manifest.json). Nếu thấy pointer hoặc file thiếu, LFS pull phải hoàn tất; không tạo checkpoint giả, thay manifest hoặc fallback model. Sau đó dùng đúng Python3.13.17/ML pins như hướng dẫn API.
+
+Inventory PASS chỉ xác nhận file/identity, không xác nhận Colab startup. Các locator Drive trong notebook đã chạy giữ nguyên; Drive thực tế của owner dùng thư mục `disease-prediction-ml-data`, khác locator cũ `disease-prediction-ml`. Không Run All để sửa đường dẫn hoặc tái tạo artifact. Embedding cache07 vẫn chuẩn bị từ pinned public model nếu chưa có. Các đoạn bàn giao “source Git + data ZIP riêng” bên dưới là lịch sử, không còn điều kiện bắt buộc cho assets có trong inventory mới.
+
 ## Từ điển hiện hành: 375/375 feature active
 
 Theo phê duyệt trực tiếp của owner, đã bật240feature còn pending, tổng375feature/400alias Việt. Giữ nguyên135feature active trước đó, toàn bộ chuỗi alias, tên hiển thị, question policy, parser, validator, quality gate, schema375/class587 và các checkpoint. Không thêm Semantic/Hybrid. Không yêu cầu owner duyệt từng thuật ngữ để kích hoạt; needs_review/source_status tiếp tục mô tả giới hạn ngôn ngữ/y khoa, không chặn runtime hoặc giả định expert validation.

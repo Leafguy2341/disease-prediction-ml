@@ -1,0 +1,4 @@
+reference,candidate,both_correct,both_wrong,rescues,new_errors,equal_group_accuracy_reference,equal_group_accuracy_candidate,equal_group_delta,groups_improved,groups_worsened,groups_equal
+lr_baseline,lr_tuned_c2,23534,4259,156,117,0.9057887899667986,0.907450551588565,0.0016617616217663974,100,61,24967
+lr_tuned_c2,hard_tuned_lr_svc_knn,23499,4220,156,191,0.907450551588565,0.9064231452423908,-0.0010274063461742542,71,106,24951
+lr_baseline,hard_tuned_lr_svc_knn,23398,4158,257,253,0.9057887899667986,0.9064231452423908,0.0006343552755921426,146,142,24840

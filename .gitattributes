@@ -7,3 +7,7 @@
 # Preserve their bytes; lint application/source files normally.
 reports/terminology/activation-20261104/baseline.tests.txt whitespace=-blank-at-eol,-blank-at-eof,-space-before-tab,cr-at-eol
 reports/terminology/activation-20261104/batch-1.tests.txt whitespace=-blank-at-eol,-blank-at-eof,-space-before-tab,cr-at-eol
+
+# Frozen data/checkpoint payloads: keep original bytes, transport with Git LFS.
+"data/raw/Disease and symptoms dataset.csv" filter=lfs diff=lfs merge=lfs -text
+artifacts/models/**/pipeline.joblib filter=lfs diff=lfs merge=lfs -text
